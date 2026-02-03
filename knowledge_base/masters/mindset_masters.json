@@ -1,5 +1,160 @@
 {
   "module": "mindset",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You're becoming aware that mindset can be developed",
+      "capabilities": ["Recognize fixed vs growth mindset", "Notice negative self-talk", "Understand that thoughts aren't facts"],
+      "milestone": "Catch yourself in a limiting belief and consciously reframe it"
+    },
+    "2": {
+      "name": "Observer",
+      "description": "Learning to observe thoughts without being controlled by them",
+      "capabilities": ["Practice basic mindfulness", "Separate emotions from reactions", "Begin journaling practice"],
+      "milestone": "10-day streak of morning journaling or meditation"
+    },
+    "3": {
+      "name": "Reframer",
+      "description": "Actively reframing challenges as opportunities",
+      "capabilities": ["Use reframing techniques consistently", "Find the lesson in setbacks", "Maintain perspective during stress"],
+      "milestone": "Successfully navigate a setback using Stoic principles"
+    },
+    "4": {
+      "name": "Discipline Builder",
+      "description": "Building discipline through consistent action",
+      "capabilities": ["Do hard things voluntarily", "Keep promises to yourself", "Build confidence through action"],
+      "milestone": "Complete 30 days of a challenging daily practice"
+    },
+    "5": {
+      "name": "Resilient",
+      "description": "Bouncing back quickly from adversity",
+      "capabilities": ["Process emotions without being derailed", "Use the 40% rule when tired", "Embrace discomfort as growth"],
+      "milestone": "Overcome a significant challenge without losing momentum"
+    },
+    "6": {
+      "name": "Ownership Taker",
+      "description": "Taking extreme ownership of all outcomes",
+      "capabilities": ["No excuses mindset", "Lead yourself and others through challenges", "Take responsibility even when not 'your fault'"],
+      "milestone": "Lead a difficult situation to success through ownership"
+    },
+    "7": {
+      "name": "Antifragile",
+      "description": "Growing stronger through volatility and stress",
+      "capabilities": ["Seek challenges that build capability", "Thrive in uncertainty", "Turn obstacles into advantages"],
+      "milestone": "Deliberately take on a challenge that scares you and grow from it"
+    },
+    "8": {
+      "name": "Mental Athlete",
+      "description": "Training your mind like an elite athlete trains their body",
+      "capabilities": ["Consistent mental training practice", "Rapid emotional recovery", "Peak performance under pressure"],
+      "milestone": "Perform at your best when it matters most"
+    },
+    "9": {
+      "name": "Sage",
+      "description": "Deep equanimity regardless of external circumstances",
+      "capabilities": ["Maintain inner peace amid chaos", "Teach others mental resilience", "Integrate philosophy into daily life"],
+      "milestone": "Navigate a major life challenge with grace and growth"
+    },
+    "10": {
+      "name": "Mindset Master",
+      "description": "Complete mastery over your inner world",
+      "capabilities": ["Nothing disturbs your inner peace", "You elevate those around you", "Your presence calms and inspires"],
+      "milestone": "Others seek you out for wisdom and perspective"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "Limiting Belief Detector",
+        "difficulty": 1,
+        "time_minutes": 20,
+        "instructions": "Write down 5 beliefs about yourself that might be limiting you. For each, ask: Is this absolutely true? What evidence contradicts it? What would change if I didn't believe this?",
+        "success_criteria": "5 limiting beliefs identified with evidence against each"
+      },
+      {
+        "title": "Gratitude Practice Starter",
+        "difficulty": 1,
+        "time_minutes": 10,
+        "instructions": "Write 3 specific things you're grateful for today. Be specific: not 'family' but 'the conversation with mom that made me laugh.' Do this for 7 consecutive days.",
+        "success_criteria": "7 days of specific gratitude entries (21 total items)"
+      },
+      {
+        "title": "The Comfort Zone Map",
+        "difficulty": 1,
+        "time_minutes": 25,
+        "instructions": "Draw three circles: Comfort Zone (things you do easily), Growth Zone (things that stretch you), Panic Zone (things that paralyze you). Identify one thing in Growth Zone to tackle this week.",
+        "success_criteria": "Completed map with one Growth Zone action committed"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Stoic Morning Premeditatio",
+        "difficulty": 2,
+        "time_minutes": 15,
+        "instructions": "Each morning for a week, spend 5 minutes imagining everything that could go wrong today. Then visualize handling each with equanimity. This removes the shock of difficulty and prepares you mentally.",
+        "success_criteria": "7 days of premeditatio practice with reduced reactivity noted"
+      },
+      {
+        "title": "Do Something That Sucks",
+        "difficulty": 2,
+        "time_minutes": 30,
+        "instructions": "Identify something you've been avoiding because it's uncomfortable (cold shower, difficult conversation, hard workout). Do it. Document how you felt before, during, and after.",
+        "success_criteria": "Completed avoided task with written reflection on the experience"
+      },
+      {
+        "title": "The 40% Rule Test",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "During your next challenging task (workout, work project, etc.), when you feel like quitting, recognize this is only 40% of your capacity. Push to 50%, then 60%. Track how far past 'done' you can go.",
+        "success_criteria": "Successfully pushed past initial quitting point and documented the experience"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Extreme Ownership Audit",
+        "difficulty": 3,
+        "time_minutes": 60,
+        "instructions": "Review a recent failure or setback. Instead of identifying external causes, write down every way YOU contributed to the outcome. How could you have anticipated and prevented issues? What will you do differently?",
+        "success_criteria": "Honest ownership analysis with actionable changes identified"
+      },
+      {
+        "title": "Fear-Setting Exercise",
+        "difficulty": 3,
+        "time_minutes": 45,
+        "instructions": "Pick something you want but fear. Write: 1) What's the worst that could happen? 2) How could I prevent each? 3) How could I repair the damage? 4) What's the cost of inaction? 5) What are the benefits of success?",
+        "success_criteria": "Complete fear-setting worksheet leading to action decision"
+      },
+      {
+        "title": "Ego Dissolution Practice",
+        "difficulty": 3,
+        "time_minutes": 30,
+        "instructions": "Identify an area where your ego is fragile (status, being right, looking smart). Deliberately put yourself in a situation where that ego gets challenged. Notice the resistance. Let it go.",
+        "success_criteria": "Deliberately challenged ego and processed the experience constructively"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "health",
+      "insight": "Physical challenge builds mental resilience - the body and mind train together",
+      "combined_exercise": "End every shower with 30 seconds of cold water. Use it as a daily Stoic practice - voluntary discomfort builds inner strength."
+    },
+    {
+      "connected_module": "sales",
+      "insight": "Rejection immunity is a mindset skill - reframe rejection as information, not personal failure",
+      "combined_exercise": "Do Rejection Therapy: intentionally get rejected once per day for a week. Notice how the fear decreases."
+    },
+    {
+      "connected_module": "productivity",
+      "insight": "Resistance to hard work is mental, not physical - train your mind to embrace difficulty",
+      "combined_exercise": "When you notice resistance to a task, say 'This is where I grow' and start a 25-minute timer."
+    },
+    {
+      "connected_module": "money",
+      "insight": "Most financial ceilings are mental - your beliefs about what's possible limit your income",
+      "combined_exercise": "Write down your beliefs about money from childhood. Challenge each one: is this serving you or limiting you?"
+    }
+  ],
   "masters": [
     {
       "name": "Marcus Aurelius",
@@ -16,7 +171,47 @@
         "Morning reflection on what's in your control",
         "Evening review of your actions and thoughts",
         "Practice accepting what you cannot change"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Morning Stoic Practice",
+          "scenario": "You wake up anxious about a difficult day ahead with meetings you're dreading.",
+          "framework_applied": "Premeditatio Malorum + Control Dichotomy",
+          "step_by_step": [
+            "Before rising, visualize the day's challenges",
+            "For each challenge, ask: What's in my control? What's not?",
+            "For what's not in control: Practice acceptance now, not later",
+            "For what's in control: Decide your response in advance",
+            "Visualize yourself handling each difficulty with equanimity",
+            "Rise with a mind prepared for anything",
+            "End with: 'Today I may meet frustrating people. This is normal. My peace is internal.'"
+          ],
+          "outcome": "The day's challenges lose their power to disturb you because you've already mentally processed them."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Daily Stoic Journal Template",
+          "context": "Use morning and evening for Stoic reflection and growth",
+          "template": "MORNING REFLECTION:\n\nWhat's in my control today?\n- ___\n- ___\n- ___\n\nWhat's not in my control?\n- ___\n- ___\n\nWhat could go wrong? How will I respond with equanimity?\n- If ___, I will ___\n- If ___, I will ___\n\nWhat virtue will I practice today?\n- ___\n\n---\n\nEVENING REFLECTION:\n\nWhat went well today?\n- ___\n\nWhat could I have done better?\n- ___\n\nDid I respond to events with virtue?\n- ___\n\nWhat did I learn?\n- ___",
+          "example_filled": "MORNING:\n\nIn my control:\n- My preparation for the presentation\n- How I respond to feedback\n- My attitude throughout\n\nNot in my control:\n- Whether they like my proposal\n- Technical issues\n\nIf the presentation fails, I will: Learn from the feedback and improve\nIf someone is hostile, I will: Respond with patience, not defensiveness\n\nVirtue today: Courage - speak my truth even if unpopular\n\n---\n\nEVENING:\n\nWent well: Stayed calm during tough questions\nBetter: Shouldn't have checked email during lunch, lost focus\nVirtuous: Yes, spoke honestly even when it was uncomfortable\nLearned: My anxiety is always worse than reality"
+        },
+        {
+          "title": "Control Dichotomy Worksheet",
+          "context": "Use when stressed or anxious about a situation",
+          "template": "SITUATION: ___\n\nCOMPLETELY IN MY CONTROL:\n1. ___\n2. ___\n3. ___\n\nPARTIALLY IN MY CONTROL:\n1. ___ (What part is mine?)\n2. ___ (What part is mine?)\n\nNOT IN MY CONTROL AT ALL:\n1. ___\n2. ___\n3. ___\n\nACTION PLAN:\nFocus my energy on: ___\nAccept and release: ___\nMy peace does not depend on: ___",
+          "example_filled": "SITUATION: Job interview tomorrow\n\nCOMPLETELY IN MY CONTROL:\n1. How well I prepare\n2. Getting good sleep tonight\n3. My attitude walking in\n\nPARTIALLY IN MY CONTROL:\n1. My performance (prep is mine, nerves partly aren't)\n2. Making a connection (my warmth is mine, their mood isn't)\n\nNOT IN MY CONTROL:\n1. Whether they like me\n2. What other candidates are like\n3. Their internal politics\n\nACTION PLAN:\nFocus on: Preparation and being my authentic self\nAccept: The outcome is not up to me\nMy peace does not depend on: Getting this specific job"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Meditations", "author": "Marcus Aurelius", "key_takeaway": "Private journal of a Roman emperor practicing Stoic philosophy"},
+          {"title": "The Daily Stoic", "author": "Ryan Holiday", "key_takeaway": "366 meditations on wisdom, perseverance, and the art of living"}
+        ],
+        "podcasts": [
+          {"title": "The Daily Stoic Podcast", "key_takeaway": "Daily 5-minute Stoic wisdom for modern life"}
+        ]
+      }
     },
     {
       "name": "David Goggins",
@@ -33,7 +228,47 @@
         "Do something that sucks every single day",
         "When your mind says stop, do 10 more",
         "Hold yourself accountable with radical honesty"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "The 40% Rule Application",
+          "scenario": "You're in a workout and everything in you wants to quit.",
+          "framework_applied": "The 40% Rule + Callusing Your Mind",
+          "step_by_step": [
+            "Recognize the moment: Your brain is telling you to stop",
+            "Understand: This is a protection mechanism. You're only at 40%.",
+            "Override: Tell yourself 'This is where I grow'",
+            "Take one more step, do one more rep, go one more minute",
+            "Bank this experience: Each time you override, you callus your mind",
+            "The more you do this, the further your 40% point moves",
+            "Eventually, discomfort becomes a signal to lean in, not quit"
+          ],
+          "outcome": "Your capacity expands dramatically because you learn to operate past the brain's comfort governor."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Accountability Mirror Script",
+          "context": "Use daily to have a brutally honest conversation with yourself",
+          "template": "Look in the mirror. Answer honestly:\n\n1. What did I do yesterday that I'm proud of?\n   ___\n\n2. What did I avoid or make excuses about?\n   ___\n\n3. What lie am I telling myself?\n   ___\n\n4. What's the hard thing I know I should do but don't want to?\n   ___\n\n5. Am I living up to my potential right now?\n   ___\n\n6. What would the best version of me do today?\n   ___\n\nNOW: Commit to one hard thing today.\nI WILL: ___",
+          "example_filled": "1. Proud of: Got up early and trained despite not wanting to\n\n2. Avoided: That hard conversation with my partner about finances\n\n3. Lie I'm telling myself: 'I'll start the business next month when things calm down'\n\n4. Hard thing I should do: Make that sales call I've been putting off\n\n5. Living up to potential: No. I'm coasting when I should be pushing.\n\n6. Best version would: Make the calls, have the conversation, stop hiding.\n\nI WILL: Make 10 sales calls before noon. No excuses."
+        },
+        {
+          "title": "Suffering as Growth Framework",
+          "context": "Use when facing a difficult challenge",
+          "template": "THE CHALLENGE: ___\n\nMY NATURAL RESPONSE: (avoidance, complaint, etc.)\n___\n\nREFRAME:\n- This suffering is: ___\n- What I'll gain from embracing it: ___\n- Who I'll become by going through it: ___\n\nTHE 40% CHECK:\n- My brain says I'm done at: ___%\n- The truth is I have: ___% more\n\nCOMMIT:\nI will not quit because: ___\n\nMANTRA:\n'___'",
+          "example_filled": "THE CHALLENGE: Training for a marathon with no running background\n\nNATURAL RESPONSE: 'This is too hard, I'm not a runner, maybe next year'\n\nREFRAME:\n- This suffering is: An opportunity to prove what I'm capable of\n- What I'll gain: Physical capability + mental proof that I can do hard things\n- Who I'll become: Someone who follows through on commitments to themselves\n\nTHE 40% CHECK:\n- My brain says I'm done at: 3 miles in\n- The truth is I have: 60% more if I push through\n\nCOMMIT:\nI will not quit because: The person I want to become runs marathons, and that person starts today.\n\nMANTRA:\n'Stay hard.'"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Can't Hurt Me", "author": "David Goggins", "key_takeaway": "Master your mind and defy the odds"},
+          {"title": "Never Finished", "author": "David Goggins", "key_takeaway": "Unshackle your mind and win the war within"}
+        ],
+        "podcasts": [
+          {"title": "David Goggins on Joe Rogan", "key_takeaway": "Raw, unfiltered conversation about mental toughness"}
+        ]
+      }
     },
     {
       "name": "Jocko Willink",
@@ -50,7 +285,47 @@
         "Wake up early. Win the first battle.",
         "Take ownership of every problem in your life",
         "Make discipline your identity, not a chore"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Applying Extreme Ownership",
+          "scenario": "A project at work failed and there are many people/factors you could blame.",
+          "framework_applied": "Extreme Ownership",
+          "step_by_step": [
+            "Resist the urge to blame: Notice any thought that points outward",
+            "Ask: What could I have done to prevent this?",
+            "Could I have communicated more clearly? Set better expectations?",
+            "Could I have anticipated the problem and mitigated it?",
+            "Could I have checked in earlier when I sensed issues?",
+            "Take 100% ownership publicly: 'This was my fault. Here's what I'm doing differently.'",
+            "This earns respect and actually solves problems"
+          ],
+          "outcome": "Problems get solved faster when someone owns them. Your team respects you more. You improve faster."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Extreme Ownership Debrief",
+          "context": "Use after any setback or failure",
+          "template": "SITUATION: ___\n\nOUTCOME: ___\n\nEASY EXCUSES (things I could blame):\n1. ___\n2. ___\n3. ___\n\nEXTREME OWNERSHIP (how I contributed):\n1. ___\n2. ___\n3. ___\n\nWHAT I WILL DO DIFFERENTLY:\n1. ___\n2. ___\n3. ___\n\nLESSON I'M TAKING FORWARD:\n___",
+          "example_filled": "SITUATION: Product launch missed the deadline by 2 weeks\n\nOUTCOME: Lost market window, CEO unhappy, team demoralized\n\nEASY EXCUSES:\n1. The dev team underestimated complexity\n2. Marketing changed requirements mid-project\n3. We didn't have enough resources\n\nEXTREME OWNERSHIP:\n1. I didn't verify the estimate with enough detail\n2. I should have frozen requirements earlier\n3. I could have raised the resource issue sooner\n\nWHAT I'LL DO DIFFERENTLY:\n1. Do technical deep-dives on estimates before committing\n2. Set hard requirement freeze dates and enforce them\n3. Raise resource concerns immediately, not politely\n\nLESSON: If I see a problem coming, it's my job to fix it, not hope it fixes itself."
+        },
+        {
+          "title": "Discipline = Freedom Daily Framework",
+          "context": "Structure your day around discipline creating freedom",
+          "template": "FREEDOM I WANT: ___\n\nDISCIPLINE REQUIRED:\n- Daily: ___\n- Weekly: ___\n- Monthly: ___\n\nMORNING ROUTINE (non-negotiable):\nWake time: ___\nFirst action: ___\nWin before others wake: ___\n\nTHE HARD THING I'M AVOIDING:\n___\n\nI WILL DO IT BECAUSE:\n___\n\nIF I FAIL TO EXECUTE, MY EXCUSE WILL BE:\n___\n\nTHAT EXCUSE IS: [ ] Valid [ ] BS",
+          "example_filled": "FREEDOM I WANT: Financial independence by 45\n\nDISCIPLINE REQUIRED:\n- Daily: 2 hours of focused work on side business before day job\n- Weekly: Review metrics, adjust approach\n- Monthly: Evaluate strategy, cut what's not working\n\nMORNING ROUTINE:\nWake: 4:30am\nFirst action: Coffee, then immediately to desk\nWin: Complete 2 hours of focused work before 7am\n\nHARD THING I'M AVOIDING:\nMaking sales calls - fear of rejection\n\nI WILL DO IT BECAUSE:\nFreedom requires revenue, revenue requires sales\n\nIF I FAIL, MY EXCUSE: 'I was too tired, I needed more sleep'\n\nTHAT EXCUSE IS: [x] BS"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Extreme Ownership", "author": "Jocko Willink & Leif Babin", "key_takeaway": "How U.S. Navy SEALs lead and win - applicable to all of life"},
+          {"title": "Discipline Equals Freedom", "author": "Jocko Willink", "key_takeaway": "Field manual for living a disciplined life"}
+        ],
+        "podcasts": [
+          {"title": "Jocko Podcast", "key_takeaway": "Discipline, leadership, and mental toughness from a Navy SEAL"}
+        ]
+      }
     },
     {
       "name": "Carol Dweck",
@@ -67,7 +342,40 @@
         "Add 'yet' to any 'I can't' statement",
         "Celebrate effort, not just results",
         "Seek challenges that stretch you"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Converting Fixed to Growth Mindset",
+          "scenario": "You receive critical feedback and your first reaction is to feel attacked and defensive.",
+          "framework_applied": "Fixed vs Growth Mindset Reframe",
+          "step_by_step": [
+            "Notice the fixed mindset reaction: 'They don't understand, this is unfair'",
+            "Recognize this is a protection mechanism for your ego",
+            "Ask: 'What can I learn from this feedback?'",
+            "Reframe: 'This feedback shows where I can grow'",
+            "Thank the person for their input (this is hard but powerful)",
+            "Identify one specific action to improve based on feedback",
+            "Your ability isn't fixed - it's being developed"
+          ],
+          "outcome": "Feedback becomes fuel for growth rather than an attack on identity. Improvement accelerates."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Growth Mindset Reframe Checklist",
+          "context": "Use when you notice fixed mindset thinking",
+          "template": "TRIGGER THOUGHT (fixed mindset):\n'___'\n\nCHECK - IS THIS FIXED MINDSET?\n[ ] 'I'm not good at this' (vs 'I'm not good at this YET')\n[ ] 'I failed' (vs 'I learned what doesn't work')\n[ ] 'This is too hard' (vs 'This will take effort and practice')\n[ ] 'I'm not a ___ person' (vs 'I haven't developed this skill')\n[ ] 'If I have to try hard, I must not be talented'\n\nGROWTH MINDSET REFRAME:\n'___'\n\nACTION THIS ENABLES:\n___",
+          "example_filled": "TRIGGER THOUGHT:\n'I'm just not a math person'\n\nCHECK:\n[x] 'I'm not good at this' - YES, this is fixed mindset\n\nGROWTH MINDSET REFRAME:\n'I haven't spent time developing my math skills yet. With practice, I can improve.'\n\nACTION THIS ENABLES:\nStart a daily 15-minute math practice. Focus on progress, not perfection."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Mindset: The New Psychology of Success", "author": "Carol Dweck", "key_takeaway": "The difference between fixed and growth mindsets and how to change"}
+        ],
+        "podcasts": [
+          {"title": "Carol Dweck on The Knowledge Project", "key_takeaway": "Deep dive into growth mindset research and application"}
+        ]
+      }
     },
     {
       "name": "Ryan Holiday",
@@ -84,7 +392,42 @@
         "Reframe every obstacle as an opportunity",
         "Practice stillness for 10 minutes daily",
         "Journal about your perceptions and responses"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "The Obstacle Is The Way Applied",
+          "scenario": "You lose your job unexpectedly and feel devastated.",
+          "framework_applied": "Perception, Action, Will",
+          "step_by_step": [
+            "PERCEPTION: Reframe the situation. This isn't just a loss - it's an opening.",
+            "Ask: What opportunity does this create that didn't exist before?",
+            "ACTION: What can I do right now with this new situation?",
+            "Could I start the business I've been putting off? Relocate? Pivot careers?",
+            "WILL: Accept what happened. Don't waste energy wishing it were different.",
+            "Use the obstacle: The job ending might be the push you needed.",
+            "Choose alive time: Every day you're learning and moving forward, not bitter and stuck."
+          ],
+          "outcome": "What felt like a disaster becomes a defining positive chapter when you use the obstacle instead of being crushed by it."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Fear-Setting Worksheet (Tim Ferriss/Stoic)",
+          "context": "Use when fear is preventing you from taking action",
+          "template": "WHAT I'M AFRAID TO DO:\n___\n\nDEFINE THE NIGHTMARE (What's the worst that could realistically happen?):\n1. ___\n2. ___\n3. ___\n\nPREVENT (What could I do to prevent each?):\n1. ___\n2. ___\n3. ___\n\nREPAIR (If the worst happened, how could I fix it?):\n1. ___\n2. ___\n3. ___\n\nCOST OF INACTION (What am I losing by not acting?):\n- In 6 months: ___\n- In 1 year: ___\n- In 3 years: ___\n\nBENEFITS OF SUCCESS (What could I gain?):\n1. ___\n2. ___\n3. ___\n\nDECISION: ___",
+          "example_filled": "WHAT I'M AFRAID TO DO:\nQuit my job to start my own business\n\nNIGHTMARE:\n1. Run out of money in 6 months\n2. Business fails completely\n3. Can't get a job again\n\nPREVENT:\n1. Save 12 months expenses before quitting\n2. Test the business while employed\n3. Keep skills current, maintain network\n\nREPAIR:\n1. Could get a consulting gig quickly\n2. The experience makes me more hireable\n3. Network would help me find something\n\nCOST OF INACTION:\n- 6 months: More time lost, more regret\n- 1 year: Still dreaming instead of doing\n- 3 years: Will hate myself for not trying\n\nBENEFITS OF SUCCESS:\n1. Freedom and control of my time\n2. Unlimited income potential\n3. Building something meaningful\n\nDECISION: Do it. The cost of inaction exceeds the worst case."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Obstacle Is the Way", "author": "Ryan Holiday", "key_takeaway": "The timeless art of turning trials into triumph"},
+          {"title": "Ego Is the Enemy", "author": "Ryan Holiday", "key_takeaway": "How ego prevents success and how to overcome it"},
+          {"title": "Stillness Is the Key", "author": "Ryan Holiday", "key_takeaway": "Finding peace and clarity in a noisy world"}
+        ],
+        "podcasts": [
+          {"title": "The Daily Stoic Podcast", "key_takeaway": "Daily practical Stoic wisdom"}
+        ]
+      }
     },
     {
       "name": "Nassim Taleb",
@@ -101,7 +444,41 @@
         "Expose yourself to small stressors daily",
         "Build redundancy and options in your life",
         "Avoid fragile dependencies"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Building an Antifragile Life",
+          "scenario": "You realize your entire life depends on one job, one income source, one set of skills.",
+          "framework_applied": "Antifragility + Via Negativa",
+          "step_by_step": [
+            "Assess fragility: Where would a shock break you?",
+            "Build redundancy: Multiple income sources, diverse skills, strong network",
+            "Add optionality: Increase options, decrease obligations",
+            "Introduce stressors: Voluntary hardship builds resilience",
+            "Via negativa: Remove fragilities before adding new things",
+            "Embrace variation: Monotony is fragile, variation is antifragile",
+            "Skin in the game: Take risks where you bear the consequences"
+          ],
+          "outcome": "Each shock makes you stronger because you've built systems that benefit from volatility."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Fragility Audit",
+          "context": "Identify and reduce your life's fragilities",
+          "template": "AREA: Career\n- Single point of failure: ___\n- How to build redundancy: ___\n\nAREA: Income\n- Single point of failure: ___\n- How to build redundancy: ___\n\nAREA: Health\n- Single point of failure: ___\n- How to build redundancy: ___\n\nAREA: Relationships\n- Single point of failure: ___\n- How to build redundancy: ___\n\nBIGGEST FRAGILITY: ___\nFIRST ACTION TO REDUCE IT: ___",
+          "example_filled": "AREA: Career\n- Single point of failure: Entire income from one employer\n- Redundancy: Develop freelance skills, build network, create side income\n\nAREA: Income\n- Single point of failure: 100% salary-dependent\n- Redundancy: Investment income, side business, emergency fund\n\nAREA: Health\n- Single point of failure: Sedentary job, poor diet habits\n- Redundancy: Daily movement practice, meal prep, regular checkups\n\nAREA: Relationships\n- Single point of failure: No community outside work\n- Redundancy: Invest in friendships, join groups, nurture family ties\n\nBIGGEST FRAGILITY: 100% income from job\nFIRST ACTION: Start freelancing 5 hours/week to build alternative income"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Antifragile", "author": "Nassim Taleb", "key_takeaway": "Things that gain from disorder"},
+          {"title": "Skin in the Game", "author": "Nassim Taleb", "key_takeaway": "Hidden asymmetries in daily life"}
+        ],
+        "podcasts": [
+          {"title": "Nassim Taleb on EconTalk", "key_takeaway": "Applied antifragility and risk thinking"}
+        ]
+      }
     }
   ],
   "daily_insights": [

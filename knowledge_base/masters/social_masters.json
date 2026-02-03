@@ -1,5 +1,160 @@
 {
   "module": "dating",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You recognize that social skills can be developed through practice",
+      "capabilities": ["Understand that charisma is learnable", "Recognize basic social dynamics", "Accept that improvement requires uncomfortable practice"],
+      "milestone": "Start one conversation with a stranger this week"
+    },
+    "2": {
+      "name": "Beginner",
+      "description": "Taking first steps to improve social interactions",
+      "capabilities": ["Make basic small talk", "Remember names with intention", "Show genuine interest through questions"],
+      "milestone": "Have a meaningful conversation with someone new at an event"
+    },
+    "3": {
+      "name": "Practitioner",
+      "description": "Actively practicing social skills in daily interactions",
+      "capabilities": ["Use active listening consistently", "Give genuine compliments", "Navigate group conversations"],
+      "milestone": "Initiate and maintain a new friendship"
+    },
+    "4": {
+      "name": "Connector",
+      "description": "Building genuine connections with a variety of people",
+      "capabilities": ["Build rapport quickly", "Read social situations", "Create comfortable environments for others"],
+      "milestone": "Be introduced to someone as 'great at connecting with people'"
+    },
+    "5": {
+      "name": "Influencer",
+      "description": "Naturally influencing social dynamics positively",
+      "capabilities": ["Lead conversations effectively", "Handle difficult social situations", "Make others feel valued and heard"],
+      "milestone": "Become someone others seek out for social advice"
+    },
+    "6": {
+      "name": "Network Builder",
+      "description": "Building and maintaining a strong social network",
+      "capabilities": ["Create valuable connections for others", "Maintain relationships systematically", "Navigate professional and personal social worlds"],
+      "milestone": "Have a network of 50+ meaningful connections"
+    },
+    "7": {
+      "name": "Social Artist",
+      "description": "Effortlessly navigating any social situation",
+      "capabilities": ["Command attention when needed", "Make anyone feel comfortable", "Turn strangers into friends quickly"],
+      "milestone": "Feel confident walking into any social situation"
+    },
+    "8": {
+      "name": "Relationship Architect",
+      "description": "Building deep, lasting relationships strategically",
+      "capabilities": ["Create lasting bonds", "Navigate complex relationship dynamics", "Balance authenticity with social intelligence"],
+      "milestone": "Have multiple deep friendships that enrich your life"
+    },
+    "9": {
+      "name": "Social Leader",
+      "description": "Leading social groups and creating community",
+      "capabilities": ["Bring people together", "Resolve social conflicts", "Create inclusive environments"],
+      "milestone": "Lead a community or group that people love being part of"
+    },
+    "10": {
+      "name": "Social Master",
+      "description": "Effortless, authentic connection with anyone",
+      "capabilities": ["Genuine comfort with all people", "Deep emotional intelligence", "Your presence elevates any social situation"],
+      "milestone": "People describe you as someone who makes everyone feel important"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "The Name Game",
+        "difficulty": 1,
+        "time_minutes": 15,
+        "instructions": "When you meet someone new, repeat their name immediately: 'Nice to meet you, Sarah.' Use it twice more in the conversation. After, write it down with one memorable fact about them.",
+        "success_criteria": "Remember and use 3 new names correctly this week"
+      },
+      {
+        "title": "Compliment Challenge",
+        "difficulty": 1,
+        "time_minutes": 20,
+        "instructions": "Give 3 genuine, specific compliments today. Not 'nice shirt' but 'that's a bold color choice, it really suits you.' Notice their reaction.",
+        "success_criteria": "3 genuine compliments given with positive reception"
+      },
+      {
+        "title": "Question Deep Dive",
+        "difficulty": 1,
+        "time_minutes": 30,
+        "instructions": "In your next conversation, ask 3 follow-up questions for every statement they make. Go from 'What do you do?' to 'What got you into that?' to 'What do you enjoy most about it?'",
+        "success_criteria": "Complete one conversation with 3-level follow-up questions"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Mirroring Practice",
+        "difficulty": 2,
+        "time_minutes": 30,
+        "instructions": "Practice Chris Voss's mirroring technique in 5 conversations. Repeat the last 1-3 words they said as a question. Watch how it opens people up.",
+        "success_criteria": "5 conversations using mirroring with noted responses"
+      },
+      {
+        "title": "Vulnerability Exchange",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "In a conversation with someone you'd like to know better, share something slightly vulnerable about yourself. Notice if they reciprocate. This builds trust and connection.",
+        "success_criteria": "One vulnerable share with positive reciprocation"
+      },
+      {
+        "title": "Conversation Starter Toolkit",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Create a personal toolkit of 10 conversation starters that work for you. Test each in real situations. Keep the ones that consistently work.",
+        "success_criteria": "10 tested conversation starters with notes on effectiveness"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Tactical Empathy Deep Dive",
+        "difficulty": 3,
+        "time_minutes": 60,
+        "instructions": "In a high-stakes conversation (negotiation, difficult relationship discussion), use labeling: 'It seems like you're feeling...' or 'It sounds like...' Track how it defuses tension.",
+        "success_criteria": "Used tactical empathy to navigate a difficult conversation successfully"
+      },
+      {
+        "title": "Host Your Own Event",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Organize a small gathering (dinner party, activity, meetup). Practice being the social hub: introduce people, ensure everyone feels included, facilitate conversations.",
+        "success_criteria": "Successfully hosted an event where guests connected meaningfully"
+      },
+      {
+        "title": "Network Audit and Outreach",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "List your top 20 relationships. Rate each on depth (1-10) and recency of contact. Reach out to 5 who scored low but matter to you. Rekindle the connections.",
+        "success_criteria": "5 meaningful reconnections made with follow-up plans"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "sales",
+      "insight": "Social skills and sales skills are nearly identical - both are about understanding others and creating trust",
+      "combined_exercise": "Use active listening techniques in a sales conversation. Notice how it improves outcomes."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Social anxiety is a mindset issue - confidence comes from reframing rejection and embracing discomfort",
+      "combined_exercise": "Before a social event, practice Stoic premeditatio: visualize handling any awkward situation with grace."
+    },
+    {
+      "connected_module": "business",
+      "insight": "Your network is your net worth - relationships are the foundation of business success",
+      "combined_exercise": "Reach out to someone in your network with a genuine offer to help them, expecting nothing in return."
+    },
+    {
+      "connected_module": "lifestyle",
+      "insight": "Your social environment shapes who you become - design it intentionally",
+      "combined_exercise": "Audit your top 5 relationships. Are they elevating you? Consider how to spend more time with people who inspire you."
+    }
+  ],
   "masters": [
     {
       "name": "Dale Carnegie",
@@ -16,7 +171,46 @@
         "Remember and use people's names",
         "Ask questions and truly listen to answers",
         "Give genuine appreciation daily"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "The Interest Formula",
+          "scenario": "You're at a networking event and don't know how to start conversations.",
+          "framework_applied": "Become genuinely interested + Let them talk about themselves",
+          "step_by_step": [
+            "Shift your goal: Not 'make them like me' but 'learn something interesting about them'",
+            "Open with genuine curiosity: 'What brings you here tonight?'",
+            "Follow the energy: Notice what they light up about and go deeper there",
+            "Use their name: 'That's fascinating, Sarah. How did you get into that?'",
+            "Make them feel important: 'I've never thought about it that way before'",
+            "The conversation flows because they're talking about their favorite subject: themselves",
+            "They walk away thinking YOU were interesting (because you were interested)"
+          ],
+          "outcome": "You become the person everyone remembers because you made them feel heard and valued."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Conversation Starter Kit",
+          "context": "Use these proven openers and follow-ups in any social situation",
+          "template": "OPENERS (pick one):\n- 'What brings you here tonight?'\n- 'I don't think we've met - I'm [name]'\n- 'That's a great [item/accessory] - what's the story behind it?'\n- 'What's keeping you busy these days?'\n\nFOLLOW-UP QUESTIONS:\n- 'What do you enjoy most about that?'\n- 'How did you get into that?'\n- 'What's been the biggest surprise about it?'\n- 'What would you do differently if you started over?'\n\nDEEPENING QUESTIONS:\n- 'What made you decide to pursue that?'\n- 'What advice would you give to someone just starting?'\n- 'What's next for you?'\n\nCLOSING:\n- 'This has been really interesting. I'd love to continue this conversation - can I get your contact?'",
+          "example_filled": "At a conference:\n\nOPENER: 'What brings you to this conference?'\nResponse: 'I'm speaking on panel about AI in healthcare.'\n\nFOLLOW-UP: 'That's fascinating - how did you get into that intersection?'\nResponse: 'I was a doctor who got frustrated with how slow healthcare adopted tech...'\n\nDEEPENING: 'What's the biggest misconception people have about AI in healthcare?'\nResponse: [They go deep, feel heard, and remember you]'\n\nCLOSING: 'I've learned more in 10 minutes than in the last session. Could we grab coffee sometime?'"
+        },
+        {
+          "title": "Remembering Names System",
+          "context": "Never forget a name again with this systematic approach",
+          "template": "WHEN YOU HEAR THEIR NAME:\n1. Repeat it immediately: 'Nice to meet you, ___'\n2. Use it in conversation twice more\n3. Make a mental association (rhyme, visual, celebrity)\n\nBEFORE YOU PART:\n4. Use their name again: 'Great talking with you, ___'\n\nIMMEDIATELY AFTER:\n5. Write it down with:\n   - Context (where/when)\n   - One memorable fact\n   - Physical characteristic\n   - Anything they mentioned caring about\n\nBEFORE NEXT MEETING:\n6. Review your notes\n\nASSOCIATION EXAMPLES:\n- Sarah = Sarah Jessica Parker\n- Mike = Microphone (he's a speaker)\n- Grace = She was graceful in her movements",
+          "example_filled": "MET: Sarah Chen at marketing conference\nCONTEXT: Panel on content strategy, sat next to me\nFACT: Just moved to Austin from SF, loves hiking\nPHYSICAL: Bright red glasses, very animated\nCARES ABOUT: Building authentic brand communities\n\nASSOCIATION: Sarah Chen = 'Chen' sounds like 'Zen', she had a calm presence despite being animated\n\nNEXT TIME: 'Sarah! How's Austin treating you? Found any good hiking spots yet?'"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "How to Win Friends and Influence People", "author": "Dale Carnegie", "key_takeaway": "The timeless classic on building relationships through genuine interest in others"}
+        ],
+        "podcasts": [
+          {"title": "Carnegie Institute Podcast", "key_takeaway": "Modern applications of Carnegie's principles"}
+        ]
+      }
     },
     {
       "name": "Robert Greene",
@@ -33,7 +227,41 @@
         "Observe social dynamics before acting",
         "Speak less, listen more",
         "Create value that makes others seek you out"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Strategic Social Positioning",
+          "scenario": "You're in a competitive environment and need to build influence without seeming threatening.",
+          "framework_applied": "Never outshine the master + Win through actions",
+          "step_by_step": [
+            "Observe the power structure: Who has real influence? Who are the gatekeepers?",
+            "Make allies of those in power by making them look good",
+            "Never compete directly for credit - let your work speak",
+            "Build your reputation through results, not words",
+            "When you do speak, say less than necessary - create mystery",
+            "Let others come to you by being uniquely valuable",
+            "The position you want comes through strategic patience"
+          ],
+          "outcome": "You build influence steadily without triggering competitive responses that could derail your progress."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Social Dynamics Observation Template",
+          "context": "Use when entering a new social environment",
+          "template": "BEFORE ENGAGING:\n\nWho holds actual power here?\n- ___\n\nWho are the gatekeepers?\n- ___\n\nWhat are the unwritten rules?\n- ___\n\nWhat value can I uniquely provide?\n- ___\n\nWho should I NOT outshine?\n- ___\n\nMY STRATEGY:\n- I will position myself as: ___\n- I will avoid: ___\n- I will be known for: ___",
+          "example_filled": "New job at tech company:\n\nWho holds power: CEO obviously, but also VP of Engineering (everyone respects her opinion)\n\nGatekeepers: EA to CEO, Senior Architect who's been here 10 years\n\nUnwritten rules: Don't suggest changes until you've been here 3 months. Recognition goes to team, not individuals.\n\nMy unique value: Deep expertise in scaling systems, which they struggle with\n\nDon't outshine: My direct manager - make him look good first\n\nSTRATEGY:\n- Position: Helpful expert who makes others successful\n- Avoid: Showing off knowledge in meetings\n- Known for: Being the person who solves hard problems quietly"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The 48 Laws of Power", "author": "Robert Greene", "key_takeaway": "Understanding power dynamics throughout history"},
+          {"title": "The Laws of Human Nature", "author": "Robert Greene", "key_takeaway": "Understanding yourself and others through psychology and history"}
+        ],
+        "podcasts": [
+          {"title": "Robert Greene on The Knowledge Project", "key_takeaway": "How to develop social intelligence and strategic thinking"}
+        ]
+      }
     },
     {
       "name": "Chris Voss",
@@ -50,7 +278,40 @@
         "Mirror someone's last 3 words in conversation",
         "Label emotions: 'It seems like you...'",
         "Aim to understand before being understood"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Using Tactical Empathy to Defuse Conflict",
+          "scenario": "Someone is angry at you and attacking. Your natural response is to defend or counter-attack.",
+          "framework_applied": "Labeling + Active Listening + 'That's right'",
+          "step_by_step": [
+            "Don't defend. Let them finish completely.",
+            "Label their emotion: 'It sounds like you're really frustrated about this.'",
+            "Wait for them to confirm with words or body language",
+            "Mirror their words: Repeat their last few words as a question",
+            "They will elaborate and feel heard",
+            "Continue labeling and mirroring until they say 'That's right'",
+            "'That's right' means they feel understood. Now productive conversation can begin."
+          ],
+          "outcome": "Conflict defuses because people can't stay angry when they feel genuinely understood."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Active Listening Toolkit",
+          "context": "Techniques to make anyone feel deeply heard",
+          "template": "MIRRORING:\nRepeat their last 1-3 words as a question.\nThem: 'I'm just exhausted from this project.'\nYou: 'Exhausted from this project?'\n[They elaborate]\n\nLABELING:\n'It seems like...'\n'It sounds like...'\n'It looks like...'\n\nExamples:\n- 'It seems like this has been weighing on you.'\n- 'It sounds like you're caught between two priorities.'\n- 'It looks like you're not getting the support you need.'\n\nTHE GOAL: Get them to say 'That's right'\nNot 'You're right' (that's dismissive)\nBut 'That's right' (that means they feel understood)\n\nAFTER 'THAT'S RIGHT':\nNow they're ready to listen to you.",
+          "example_filled": "Colleague: 'I'm so frustrated. I've been working on this for weeks and nobody seems to care.'\n\nMirror: 'Nobody seems to care?'\n\nColleague: 'Yeah, I present updates and people are on their phones. The project keeps getting deprioritized.'\n\nLabel: 'It sounds like you're feeling invisible despite doing important work.'\n\nColleague: 'That's right. Exactly.'\n\n[Now they're ready to hear your perspective or help]"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Never Split the Difference", "author": "Chris Voss", "key_takeaway": "FBI hostage negotiation techniques for everyday life"}
+        ],
+        "podcasts": [
+          {"title": "The Chris Voss Show", "key_takeaway": "Weekly practical negotiation and communication advice"}
+        ]
+      }
     },
     {
       "name": "Vanessa Van Edwards",
@@ -67,7 +328,41 @@
         "Use hand gestures when speaking",
         "Triple your nods—it encourages others to talk",
         "Make eye contact for 60-70% of conversation"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Engineering a Great First Impression",
+          "scenario": "You have an important meeting and need to make a strong first impression.",
+          "framework_applied": "7-Second Window + Warmth-Competence Matrix",
+          "step_by_step": [
+            "The 7 seconds: Your first impression is made before you speak",
+            "Preparation: Know their name, have one thing in common ready",
+            "Body language: Square your body toward them, make eye contact, genuine smile",
+            "The launch stance: Hands visible (not in pockets), shoulders back, chin level",
+            "First words: Use their name, give a genuine micro-compliment",
+            "Show warmth: Eyebrow flash (quick raise), nodding, open posture",
+            "Show competence: Steady voice, purposeful gestures, confident handshake"
+          ],
+          "outcome": "You control the frame of the interaction from the first moment, making everything that follows easier."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Charisma Checklist",
+          "context": "Run through before any important social situation",
+          "template": "BEFORE THE INTERACTION:\n[ ] Know their name and one fact about them\n[ ] Clear intention for the conversation\n[ ] Power pose for 2 minutes (if possible)\n\nFIRST 7 SECONDS:\n[ ] Eyebrow flash (quick raise) when you see them\n[ ] Genuine smile (reaches your eyes)\n[ ] Square your body toward them\n[ ] Hands visible, open posture\n[ ] Clear, confident 'Hi [Name]!'\n\nDURING:\n[ ] Eye contact 60-70% of time\n[ ] Triple your nods (encourages them to talk)\n[ ] Use hand gestures when making points\n[ ] Lean in slightly when they share something important\n[ ] Use their name 2-3 times\n\nCLOSING:\n[ ] Use their name one more time\n[ ] Clear next step if appropriate\n[ ] Leave them feeling good",
+          "example_filled": "Job interview prep:\n\nBEFORE:\n[x] Know: Sarah Chen, VP Product, was at Google, passionate about accessibility\n[x] Intention: Learn about role and demonstrate strategic thinking\n[x] Power posed in bathroom for 2 min\n\nFIRST 7 SECONDS:\n[x] Eyebrow flash when she opened door\n[x] Genuine smile, thought of something funny to trigger real smile\n[x] Squared toward her, not angled\n[x] Hands visible, confident handshake\n[x] 'Sarah, great to finally meet you in person!'\n\nDURING:\n[x] Maintained eye contact, especially when she was speaking\n[x] Nodded to encourage her\n[x] Used hands for emphasis on key points\n[x] Leaned in when she mentioned accessibility challenges\n\nCLOSING:\n[x] 'Sarah, this has been a great conversation.'\n[x] Asked about next steps\n[x] Left her smiling"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Captivate", "author": "Vanessa Van Edwards", "key_takeaway": "The science of succeeding with people"},
+          {"title": "Cues", "author": "Vanessa Van Edwards", "key_takeaway": "Master the secret language of charismatic communication"}
+        ],
+        "podcasts": [
+          {"title": "Science of People", "key_takeaway": "Research-backed tips on communication and body language"}
+        ]
+      }
     },
     {
       "name": "Mark Manson",
@@ -84,7 +379,41 @@
         "Express your genuine opinion, even if unpopular",
         "Set and maintain clear boundaries",
         "Be vulnerable—share real thoughts and feelings"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Building Connection Through Vulnerability",
+          "scenario": "Your conversations stay surface level and you never form deep connections.",
+          "framework_applied": "Strategic Vulnerability + Authenticity",
+          "step_by_step": [
+            "Recognize: Surface conversations create surface relationships",
+            "Take the first step: Share something mildly vulnerable about yourself",
+            "The vulnerability should be real but not overwhelming",
+            "Example: 'I'm actually kind of nervous about this presentation tomorrow'",
+            "This gives permission for them to be vulnerable too",
+            "Match their level: If they open up more, you can too",
+            "The connection deepens because you're both being real"
+          ],
+          "outcome": "Deep, authentic relationships instead of a collection of acquaintances."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Boundary-Setting Script",
+          "context": "How to say no and set boundaries without damaging relationships",
+          "template": "THE SITUATION: ___\n\nWHAT I WANT TO SAY NO TO: ___\n\nMY HONEST REASON: ___\n\nTHE SCRIPT:\n'Thank you for [acknowledging their ask]. I'm not going to be able to [specific thing], because [honest reason]. What I can do is [alternative if appropriate].'\n\nNO JUSTIFICATION NEEDED:\nYou don't need to explain or apologize excessively. A simple, direct answer is respectful.\n\nIF THEY PUSH BACK:\n'I understand, and I appreciate you asking. The answer is still no.'\n\nREMEMBER:\nSaying no to this is saying yes to something else you value more.",
+          "example_filled": "SITUATION: Friend wants me to help them move on Saturday, but I desperately need rest\n\nSAYING NO TO: Spending my Saturday moving boxes\n\nHONEST REASON: I've been running on empty and need recovery time\n\nSCRIPT: 'I appreciate you thinking of me. I'm not going to be able to help Saturday - I'm running on empty and need to recover. I can help you find a moving company though, or I could be available next weekend for unpacking.'\n\nIF PUSH BACK: 'I hear you, and I wish I could help. But I need to take care of myself right now. The answer is still no.'"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Subtle Art of Not Giving a F*ck", "author": "Mark Manson", "key_takeaway": "A counterintuitive approach to living a good life"},
+          {"title": "Models: Attract Women Through Honesty", "author": "Mark Manson", "key_takeaway": "How to be attractive through authenticity, not manipulation"}
+        ],
+        "podcasts": [
+          {"title": "Mark Manson's Blog/Newsletter", "key_takeaway": "Regular essays on relationships, self-improvement, and life philosophy"}
+        ]
+      }
     }
   ],
   "daily_insights": [

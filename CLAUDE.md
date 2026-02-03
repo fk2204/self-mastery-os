@@ -123,7 +123,47 @@ Add to appropriate `knowledge_base/masters/*_masters.json`:
   "name": "Master Name",
   "expertise": "Their area of expertise",
   "key_principles": ["Principle 1", "Principle 2"],
-  "daily_practices": ["Practice 1", "Practice 2"]
+  "daily_practices": ["Practice 1", "Practice 2"],
+  "worked_examples": [{
+    "title": "Example Title",
+    "scenario": "Situation description...",
+    "framework_applied": "Framework name",
+    "step_by_step": ["Step 1", "Step 2"],
+    "outcome": "Expected result"
+  }],
+  "scripts_templates": [{
+    "title": "Template Title",
+    "context": "When to use this",
+    "template": "The actual template with ___ blanks",
+    "example_filled": "Example with blanks filled"
+  }],
+  "resources": {
+    "books": [{"title": "Book", "author": "Author", "key_takeaway": "Main insight"}],
+    "podcasts": [{"title": "Podcast", "episode": "Episode name", "key_takeaway": "Main insight"}]
+  }
+}
+```
+
+### Module-Level Schema (Enhanced)
+Each module JSON file also contains:
+```json
+{
+  "module": "money",
+  "level_definitions": {
+    "1": {"name": "Beginner", "description": "...", "capabilities": [...], "milestone": "..."},
+    "10": {"name": "Master", "description": "...", "capabilities": [...], "milestone": "..."}
+  },
+  "progressive_exercises": {
+    "beginner": [{"title": "...", "difficulty": 1, "time_minutes": 30, "instructions": "...", "success_criteria": "..."}],
+    "intermediate": [...],
+    "advanced": [...]
+  },
+  "cross_module_connections": [{
+    "connected_module": "sales",
+    "insight": "How these modules relate",
+    "combined_exercise": "Practice combining both skills"
+  }],
+  "masters": [...]
 }
 ```
 

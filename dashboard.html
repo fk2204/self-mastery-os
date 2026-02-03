@@ -793,8 +793,28 @@
         .master-card-expertise {
             font-size: 0.75rem;
             color: var(--text-muted);
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
+
+        .master-card-badges {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .master-card-badge {
+            font-size: 0.6rem;
+            padding: 0.2rem 0.5rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 4px;
+            color: var(--text-muted);
+        }
+
+        .master-card-badge.examples { border-color: var(--accent-blue); color: var(--accent-blue); }
+        .master-card-badge.scripts { border-color: var(--accent-purple); color: var(--accent-purple); }
+        .master-card-badge.resources { border-color: var(--accent-cyan); color: var(--accent-cyan); }
 
         .master-card-principle {
             font-family: 'Crimson Pro', serif;
@@ -877,6 +897,670 @@
 
         .modal-body {
             padding: 1.5rem;
+        }
+
+        /* Master Modal Tabs */
+        .master-tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid var(--border-subtle);
+            margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+            padding: 0 1.5rem;
+        }
+
+        .master-tab {
+            padding: 1rem 1.25rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .master-tab:hover {
+            color: var(--text-secondary);
+        }
+
+        .master-tab.active {
+            color: var(--gold-primary);
+            border-bottom-color: var(--gold-primary);
+        }
+
+        .master-tab-content {
+            display: none;
+        }
+
+        .master-tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        /* Template Viewer */
+        .template-card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .template-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .template-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1rem;
+            color: var(--text-primary);
+            letter-spacing: 0.05em;
+        }
+
+        .template-context {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .template-content {
+            background: var(--bg-deep);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            white-space: pre-wrap;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .template-content .blank {
+            background: rgba(212, 168, 71, 0.2);
+            color: var(--gold-primary);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            border-bottom: 2px dashed var(--gold-dim);
+        }
+
+        .template-example {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 0.75rem;
+        }
+
+        .template-example-label {
+            font-size: 0.65rem;
+            color: var(--success);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .template-example-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .copy-btn {
+            padding: 0.4rem 0.75rem;
+            font-size: 0.7rem;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-accent);
+            border-radius: 6px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .copy-btn:hover {
+            background: var(--gold-primary);
+            border-color: var(--gold-primary);
+            color: var(--bg-void);
+        }
+
+        .copy-btn.copied {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+
+        /* Worked Example Card */
+        .example-card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .example-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .example-scenario {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background: var(--bg-deep);
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-blue);
+        }
+
+        .example-framework {
+            font-size: 0.7rem;
+            color: var(--accent-purple);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .example-steps {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .example-steps li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .example-steps li:last-child {
+            border-bottom: none;
+        }
+
+        .example-steps li::before {
+            content: counter(step);
+            counter-increment: step;
+            position: absolute;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            background: var(--gold-dim);
+            color: var(--bg-void);
+            border-radius: 50%;
+            font-size: 0.65rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .example-steps {
+            counter-reset: step;
+        }
+
+        .example-outcome {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            font-size: 0.85rem;
+            color: var(--success);
+        }
+
+        .example-outcome-label {
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+
+        /* Resource Card */
+        .resource-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            margin-bottom: 0.75rem;
+        }
+
+        .resource-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: var(--bg-deep);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .resource-info {
+            flex-grow: 1;
+        }
+
+        .resource-title {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .resource-author {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .resource-takeaway {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        /* Level Indicator */
+        .level-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.25rem;
+        }
+
+        .level-name {
+            font-size: 0.7rem;
+            color: var(--gold-primary);
+            font-weight: 500;
+        }
+
+        /* Progressive Exercise Selector */
+        .difficulty-selector {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .difficulty-btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            background: var(--bg-elevated);
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .difficulty-btn:hover {
+            border-color: var(--border-accent);
+            color: var(--text-secondary);
+        }
+
+        .difficulty-btn.active {
+            background: var(--gold-primary);
+            border-color: var(--gold-primary);
+            color: var(--bg-void);
+        }
+
+        .difficulty-btn.beginner.active { background: var(--success); border-color: var(--success); }
+        .difficulty-btn.intermediate.active { background: var(--warning); border-color: var(--warning); }
+        .difficulty-btn.advanced.active { background: var(--danger); border-color: var(--danger); }
+
+        /* Exercise Card */
+        .exercise-card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .exercise-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .exercise-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        .exercise-meta {
+            display: flex;
+            gap: 0.75rem;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .exercise-difficulty {
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .exercise-difficulty.d1 { background: rgba(34, 197, 94, 0.2); color: var(--success); }
+        .exercise-difficulty.d2 { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+        .exercise-difficulty.d3 { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
+
+        .exercise-instructions {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .exercise-success {
+            background: var(--bg-deep);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            font-size: 0.8rem;
+        }
+
+        .exercise-success-label {
+            font-size: 0.65rem;
+            color: var(--success);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+        }
+
+        .exercise-success-text {
+            color: var(--text-muted);
+        }
+
+        /* Cross Module Connection Card */
+        .connection-card {
+            background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-surface) 100%);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .connection-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .connection-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .connection-module {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+
+        .connection-insight {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+
+        .connection-exercise {
+            background: var(--bg-deep);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-left: 3px solid var(--gold-dim);
+        }
+
+        /* Interactive Challenge */
+        .challenge-response {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .challenge-response-label {
+            font-size: 0.7rem;
+            color: var(--gold-primary);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .challenge-input {
+            width: 100%;
+            min-height: 80px;
+            padding: 0.875rem 1rem;
+            background: var(--bg-deep);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            resize: vertical;
+            transition: all 0.2s ease;
+            margin-bottom: 0.75rem;
+        }
+
+        .challenge-input:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 0 3px rgba(212, 168, 71, 0.1);
+        }
+
+        .challenge-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .challenge-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .challenge-actions .btn {
+            flex: 1;
+        }
+
+        .challenge-saved {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin-top: 0.75rem;
+        }
+
+        .challenge-saved-label {
+            font-size: 0.65rem;
+            color: var(--success);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .challenge-saved-text {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .challenge-history {
+            margin-top: 1rem;
+        }
+
+        .challenge-history-item {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .challenge-history-date {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .challenge-history-challenge {
+            font-size: 0.8rem;
+            color: var(--gold-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .challenge-history-response {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Gratitude Journal */
+        .gratitude-card {
+            background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(212, 168, 71, 0.05) 100%);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .gratitude-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-dim), var(--gold-primary), var(--gold-dim));
+            border-radius: 12px 12px 0 0;
+        }
+
+        .gratitude-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .gratitude-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .gratitude-number {
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dim) 100%);
+            color: var(--bg-void);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+            margin-top: 0.5rem;
+        }
+
+        .gratitude-input {
+            flex-grow: 1;
+            padding: 0.75rem 1rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            resize: none;
+            min-height: 44px;
+        }
+
+        .gratitude-input:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 0 3px rgba(212, 168, 71, 0.1);
+        }
+
+        .gratitude-input::placeholder {
+            color: var(--text-muted);
+        }
+
+        .gratitude-saved {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: var(--success);
+            margin-top: 0.75rem;
+        }
+
+        .gratitude-streak {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--gold-primary);
+            margin-top: 0.5rem;
+        }
+
+        .gratitude-history-item {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .gratitude-history-date {
+            font-size: 0.75rem;
+            color: var(--gold-primary);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .gratitude-history-list {
+            list-style: none;
+        }
+
+        .gratitude-history-list li {
+            padding: 0.35rem 0;
+            padding-left: 1.25rem;
+            position: relative;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .gratitude-history-list li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--gold-dim);
+            font-size: 0.7rem;
         }
 
         .modal-footer {
@@ -1357,11 +2041,64 @@
                             </div>
                             <div class="challenge-module" id="dashChallengeModule">LOADING</div>
                             <div class="challenge-text" id="dashChallengeText">Loading challenge...</div>
-                            <button class="btn btn-success btn-block" onclick="completeChallenge()">
-                                Mark Complete
-                            </button>
+                            <div class="challenge-response">
+                                <div class="challenge-response-label">Your Response / Notes</div>
+                                <textarea class="challenge-input" id="dashChallengeResponse" placeholder="Write your answer, notes, or results here..."></textarea>
+                                <div class="challenge-actions">
+                                    <button class="btn" onclick="saveChallengeResponse('dash')">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
+                                        </svg>
+                                        Save Progress
+                                    </button>
+                                    <button class="btn btn-success" onclick="completeChallenge('dash')">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <polyline points="20 6 9 17 4 12"/>
+                                        </svg>
+                                        Complete
+                                    </button>
+                                </div>
+                                <div id="dashChallengeSaved" style="display: none;"></div>
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Gratitude Journal -->
+                <div class="card gratitude-card" style="margin-top: 1.5rem; position: relative;">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                            DAILY GRATITUDE
+                        </div>
+                        <div class="card-badge" id="gratitudeStreak">0 day streak</div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        What are you grateful for today?
+                    </p>
+                    <div class="gratitude-list">
+                        <div class="gratitude-item">
+                            <span class="gratitude-number">1</span>
+                            <input type="text" class="gratitude-input" id="gratitude1" placeholder="I'm grateful for...">
+                        </div>
+                        <div class="gratitude-item">
+                            <span class="gratitude-number">2</span>
+                            <input type="text" class="gratitude-input" id="gratitude2" placeholder="I'm grateful for...">
+                        </div>
+                        <div class="gratitude-item">
+                            <span class="gratitude-number">3</span>
+                            <input type="text" class="gratitude-input" id="gratitude3" placeholder="I'm grateful for...">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block" onclick="saveGratitude()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
+                        </svg>
+                        Save Gratitude
+                    </button>
+                    <div id="gratitudeSaved" style="display: none;"></div>
                 </div>
             </section>
 
@@ -1386,9 +2123,25 @@
                         </div>
                         <div class="challenge-module" id="wisdomChallengeModule">LOADING</div>
                         <div class="challenge-text" id="wisdomChallengeText">Loading challenge...</div>
-                        <button class="btn btn-success btn-block" onclick="completeChallenge()">
-                            Mark Challenge Complete
-                        </button>
+                        <div class="challenge-response">
+                            <div class="challenge-response-label">Your Response / Notes</div>
+                            <textarea class="challenge-input" id="wisdomChallengeResponse" placeholder="Write your answer, notes, or results here..."></textarea>
+                            <div class="challenge-actions">
+                                <button class="btn" onclick="saveChallengeResponse('wisdom')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
+                                    </svg>
+                                    Save Progress
+                                </button>
+                                <button class="btn btn-success" onclick="completeChallenge('wisdom')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                    Complete
+                                </button>
+                            </div>
+                            <div id="wisdomChallengeSaved" style="display: none;"></div>
+                        </div>
                     </div>
 
                     <div class="card power-question-card">
@@ -1396,6 +2149,16 @@
                             <div class="card-title">POWER QUESTION</div>
                         </div>
                         <div class="power-question-text" id="wisdomQuestion">"Loading..."</div>
+                        <div class="challenge-response" style="margin-top: 1.5rem;">
+                            <div class="challenge-response-label">Your Reflection</div>
+                            <textarea class="challenge-input" id="powerQuestionResponse" placeholder="Reflect on this question..."></textarea>
+                            <button class="btn btn-block" onclick="savePowerQuestionResponse()">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
+                                </svg>
+                                Save Reflection
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -1513,6 +2276,40 @@
                         </div>
                         <div id="statsStreakList">
                             <!-- Streak stats rendered here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                            </svg>
+                            CHALLENGE HISTORY
+                        </div>
+                        <div class="card-badge" id="challengeCount">0 completed</div>
+                    </div>
+                    <div id="challengeHistoryList">
+                        <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
+                            Complete challenges to see your history here
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                            GRATITUDE JOURNAL
+                        </div>
+                        <div class="card-badge" id="gratitudeCount">0 entries</div>
+                    </div>
+                    <div id="gratitudeHistoryList">
+                        <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
+                            Write your daily gratitudes to see your history here
                         </div>
                     </div>
                 </div>
@@ -1742,7 +2539,7 @@
 
     <!-- Master Detail Modal -->
     <div class="modal-overlay" id="masterModal">
-        <div class="modal" style="max-width: 700px;">
+        <div class="modal" style="max-width: 800px;">
             <div class="modal-header">
                 <h2 class="modal-title" id="masterModalName">MASTER NAME</h2>
                 <button class="modal-close" onclick="closeModal('masterModal')">
@@ -1752,7 +2549,15 @@
                 </button>
             </div>
             <div class="modal-body" id="masterModalBody">
-                <!-- Master details rendered here -->
+                <div class="master-tabs" id="masterTabs">
+                    <div class="master-tab active" data-tab="principles" onclick="switchMasterTab('principles')">Principles</div>
+                    <div class="master-tab" data-tab="examples" onclick="switchMasterTab('examples')">Examples</div>
+                    <div class="master-tab" data-tab="scripts" onclick="switchMasterTab('scripts')">Scripts</div>
+                    <div class="master-tab" data-tab="resources" onclick="switchMasterTab('resources')">Resources</div>
+                </div>
+                <div id="masterTabContent">
+                    <!-- Tab content rendered here -->
+                </div>
             </div>
         </div>
     </div>
@@ -1772,7 +2577,7 @@
                 focusModules: ["money", "sales", "productivity"],
                 moduleLevels: {
                     money: 5, sales: 4, finance: 6, productivity: 6,
-                    business: 5, mindset: 7, dating: 5, lifestyle: 5
+                    business: 5, mindset: 7, dating: 5, lifestyle: 5, health: 8
                 }
             },
             habits: [
@@ -1806,7 +2611,8 @@
             business: { name: "Business & Career", color: "#f59e0b", icon: "B" },
             mindset: { name: "Mindset & Wisdom", color: "#ec4899", icon: "M" },
             dating: { name: "Social & Dating", color: "#06b6d4", icon: "D" },
-            lifestyle: { name: "Lifestyle Design", color: "#84cc16", icon: "L" }
+            lifestyle: { name: "Lifestyle Design", color: "#84cc16", icon: "L" },
+            health: { name: "Health & Fitness", color: "#ef4444", icon: "H" }
         };
 
         const mastersData = {
@@ -1841,6 +2647,10 @@
             ],
             lifestyle: [
                 { name: "Tim Ferriss", expertise: "Lifestyle design, optimization", principles: ["Focus on being productive instead of busy.", "What we fear doing most is usually what we most need to do.", "Lack of time is lack of priorities."], practices: ["Define the worst case—it's usually not that bad", "Eliminate before optimizing"] }
+            ],
+            health: [
+                { name: "Andrew Huberman", expertise: "Neuroscience, protocols, optimization", principles: ["Morning sunlight exposure is the most powerful tool for optimizing circadian rhythm.", "Non-sleep deep rest (NSDR) can restore focus and energy.", "Cold exposure triggers dopamine release that lasts for hours."], practices: ["Get sunlight within 30-60 minutes of waking", "Practice NSDR or meditation daily"] },
+                { name: "Peter Attia", expertise: "Longevity, healthspan, medicine 3.0", principles: ["The goal is to die young as old as possible.", "Zone 2 cardio is the foundation of metabolic health.", "Stability and mobility are non-negotiable as you age."], practices: ["150+ minutes of Zone 2 cardio weekly", "Train for the Centenarian Decathlon"] }
             ]
         };
 
@@ -1852,7 +2662,8 @@
             finance: ["Calculate your current savings rate.", "Review subscriptions and cancel one.", "Automate one additional savings transfer."],
             business: ["Validate one idea by talking to 3 potential customers.", "Use ICE scoring on 3 ideas.", "Send one cold email to someone you want to learn from."],
             dating: ["Start a conversation with one stranger.", "Give three genuine compliments.", "Practice active listening in your next conversation."],
-            lifestyle: ["Remove one item that tempts bad behavior.", "Go 24 hours without social media.", "Declutter one area completely."]
+            lifestyle: ["Remove one item that tempts bad behavior.", "Go 24 hours without social media.", "Declutter one area completely."],
+            health: ["Get morning sunlight within 30 minutes of waking.", "Do 30 minutes of Zone 2 cardio.", "Practice a 10-minute NSDR protocol."]
         };
 
         const powerQuestions = [
@@ -1873,6 +2684,353 @@
             { from: "I need motivation", to: "I need discipline", why: "Motivation is fleeting. Discipline is reliable." },
             { from: "It's too hard", to: "It's supposed to be hard", why: "Hard is what makes it valuable." }
         ];
+
+        // Inline fallback level definitions (works without loading JSON)
+        const fallbackLevelDefinitions = {
+            money: {
+                1: { name: "Awareness", description: "Becoming aware that trading time for money has limits", capabilities: ["Understand income vs wealth", "Know your hourly rate"], milestone: "Calculate your true hourly rate" },
+                2: { name: "Foundation", description: "Building basic wealth-creation knowledge", capabilities: ["Understand compounding", "Identify high-value skills"], milestone: "Create a skill development plan" },
+                3: { name: "Skill Builder", description: "Actively developing income-multiplying skills", capabilities: ["Learning high-leverage skills", "Basic networking"], milestone: "Complete one paid project with new skill" },
+                4: { name: "Value Creator", description: "Creating value beyond direct time exchange", capabilities: ["Package skills into offers", "Basic pricing"], milestone: "Generate first income from packaged knowledge" },
+                5: { name: "Leverage Seeker", description: "Building leverage through code, media, or capital", capabilities: ["Creating content/code", "Building systems"], milestone: "Create one asset that generates passive income" },
+                6: { name: "System Builder", description: "Building repeatable wealth systems", capabilities: ["Multiple income streams", "Delegation"], milestone: "Passive income exceeds 25% of total" },
+                7: { name: "Equity Thinker", description: "Thinking in terms of ownership", capabilities: ["Building equity stakes", "Compounding mindset"], milestone: "Own equity in revenue-generating asset" },
+                8: { name: "Wealth Architect", description: "Designing wealth systems at scale", capabilities: ["Multiple leverage types", "Capital allocation"], milestone: "Passive income covers living expenses" },
+                9: { name: "Freedom Builder", description: "Wealth provides significant freedom", capabilities: ["Work is optional", "Capital compounds"], milestone: "Can take 6+ months off" },
+                10: { name: "Wealth Master", description: "Complete financial freedom", capabilities: ["Wealth grows automatically", "Legacy building"], milestone: "Focus shifts to impact" }
+            },
+            sales: {
+                1: { name: "Awareness", description: "Understanding sales as a learnable skill", capabilities: ["Know basic sales concepts"], milestone: "Make your first sales attempt" },
+                3: { name: "Practitioner", description: "Regularly practicing sales skills", capabilities: ["Handle basic objections", "Follow up consistently"], milestone: "Close your first deal" },
+                5: { name: "Competent", description: "Consistently closing deals", capabilities: ["Overcome most objections", "Build rapport quickly"], milestone: "Hit monthly sales targets" },
+                7: { name: "Expert", description: "High conversion rates", capabilities: ["Complex negotiations", "Teach others"], milestone: "Train a new salesperson" },
+                10: { name: "Master", description: "Effortless persuasion", capabilities: ["Close difficult deals", "Strategic selling"], milestone: "Build a sales team" }
+            },
+            finance: {
+                1: { name: "Survival", description: "Living paycheck to paycheck", capabilities: ["Basic budgeting"], milestone: "Create first budget" },
+                3: { name: "Stability", description: "Emergency fund started", capabilities: ["Track expenses", "Reduce debt"], milestone: "Save first $1000" },
+                5: { name: "Growth", description: "Investing consistently", capabilities: ["Understand markets", "Tax optimization"], milestone: "Invest 15% of income" },
+                7: { name: "Abundance", description: "Multiple investment streams", capabilities: ["Portfolio management", "Tax strategies"], milestone: "Net worth exceeds annual income" },
+                10: { name: "Freedom", description: "Financial independence", capabilities: ["Passive income covers expenses"], milestone: "Work is optional" }
+            },
+            productivity: {
+                1: { name: "Reactive", description: "Day controlled by others", capabilities: ["Basic task lists"], milestone: "Complete a to-do list" },
+                3: { name: "Organized", description: "Systems in place", capabilities: ["Calendar blocking", "Prioritization"], milestone: "Consistent morning routine" },
+                5: { name: "Focused", description: "Deep work is regular", capabilities: ["2+ hours focused daily", "Eliminate distractions"], milestone: "Complete major project" },
+                7: { name: "Optimized", description: "High output consistently", capabilities: ["Energy management", "Automation"], milestone: "Double output vs previous year" },
+                10: { name: "Master", description: "Effortless productivity", capabilities: ["Systems run themselves", "Focus at will"], milestone: "Achieve major life goal" }
+            },
+            business: {
+                1: { name: "Explorer", description: "Exploring business ideas", capabilities: ["Identify opportunities"], milestone: "Generate 10 business ideas" },
+                3: { name: "Validator", description: "Testing ideas with customers", capabilities: ["Customer interviews", "MVP creation"], milestone: "Get first paying customer" },
+                5: { name: "Builder", description: "Building sustainable business", capabilities: ["Product-market fit", "Basic operations"], milestone: "Consistent monthly revenue" },
+                7: { name: "Scaler", description: "Growing beyond yourself", capabilities: ["Team building", "Systems"], milestone: "Business runs without you daily" },
+                10: { name: "Leader", description: "Industry influence", capabilities: ["Strategic thinking", "Multiple ventures"], milestone: "Successful exit or major scale" }
+            },
+            mindset: {
+                1: { name: "Unaware", description: "Thoughts control you", capabilities: ["Basic self-awareness"], milestone: "Start journaling" },
+                3: { name: "Aware", description: "Noticing thought patterns", capabilities: ["Identify limiting beliefs", "Basic reframing"], milestone: "Change one limiting belief" },
+                5: { name: "Disciplined", description: "Consistent practices", capabilities: ["Daily discipline", "Emotional regulation"], milestone: "30-day discipline streak" },
+                7: { name: "Resilient", description: "Bounce back quickly", capabilities: ["Handle adversity", "Growth mindset"], milestone: "Turn major setback into opportunity" },
+                10: { name: "Master", description: "Mind serves you", capabilities: ["Peace under pressure", "Inspire others"], milestone: "Consistent equanimity" }
+            },
+            dating: {
+                1: { name: "Isolated", description: "Limited social engagement", capabilities: ["Basic conversation"], milestone: "Start one conversation with stranger" },
+                3: { name: "Social", description: "Comfortable in groups", capabilities: ["Remember names", "Active listening"], milestone: "Make 3 new connections" },
+                5: { name: "Connected", description: "Strong social network", capabilities: ["Build rapport easily", "Maintain relationships"], milestone: "Regular social activities" },
+                7: { name: "Magnetic", description: "Natural charisma", capabilities: ["Influence without trying", "Deep connections"], milestone: "Build meaningful relationships" },
+                10: { name: "Master", description: "Social abundance", capabilities: ["Connect anyone to anyone", "Natural leader"], milestone: "Known as a connector" }
+            },
+            lifestyle: {
+                1: { name: "Default", description: "Living by default", capabilities: ["Basic awareness"], milestone: "Define ideal day" },
+                3: { name: "Intentional", description: "Making conscious choices", capabilities: ["Environment design", "Habit basics"], milestone: "Implement one life design change" },
+                5: { name: "Designed", description: "Life matches values", capabilities: ["Systems for goals", "Energy management"], milestone: "Ideal week structure" },
+                7: { name: "Optimized", description: "High performance lifestyle", capabilities: ["Work-life integration", "Travel freedom"], milestone: "Location independence" },
+                10: { name: "Freedom", description: "Complete life design mastery", capabilities: ["Time abundance", "Purpose alignment"], milestone: "Living your ideal life" }
+            },
+            health: {
+                1: { name: "Neglected", description: "Health is an afterthought", capabilities: ["Basic awareness"], milestone: "Get baseline health check" },
+                3: { name: "Active", description: "Regular movement", capabilities: ["Exercise habit", "Basic nutrition"], milestone: "Consistent workout routine" },
+                5: { name: "Fit", description: "Above average fitness", capabilities: ["Strength training", "Sleep optimization"], milestone: "Hit major fitness milestone" },
+                7: { name: "Optimized", description: "Peak performance", capabilities: ["Advanced protocols", "Biohacking basics"], milestone: "All biomarkers optimal" },
+                8: { name: "Athlete", description: "High-level fitness maintained", capabilities: ["Zone 2 mastery", "Recovery protocols"], milestone: "Compete or achieve athletic goal" },
+                10: { name: "Master", description: "Longevity focused excellence", capabilities: ["Centenarian Decathlon ready", "Healthspan maximized"], milestone: "Biological age younger than chronological" }
+            }
+        };
+
+        // Inline progressive exercises (works without server)
+        const inlineExercises = {
+            money: {
+                beginner: [
+                    { title: "Calculate Your True Hourly Rate", difficulty: 1, time_minutes: 20, instructions: "Add up ALL hours you spend on work (commute, prep, recovery). Divide your annual income by total hours. Compare to what you thought.", success_criteria: "Written calculation with reflection on the gap" },
+                    { title: "Identify Your Specific Knowledge", difficulty: 1, time_minutes: 30, instructions: "List 10 things you know that feel obvious to you but others frequently ask about.", success_criteria: "List of 10 items with 3+ that could be monetized" }
+                ],
+                intermediate: [
+                    { title: "Create Your First Digital Asset", difficulty: 2, time_minutes: 120, instructions: "Turn one piece of your specific knowledge into a digital asset: template, checklist, mini-guide.", success_criteria: "One completed digital asset ready to share" },
+                    { title: "Build a Value Equation Offer", difficulty: 2, time_minutes: 60, instructions: "Using Hormozi's Value Equation, design an offer. Calculate Dream Outcome, Likelihood, Time Delay, Effort.", success_criteria: "Written offer with all four components optimized" }
+                ],
+                advanced: [
+                    { title: "Design Your Leverage Stack", difficulty: 3, time_minutes: 90, instructions: "Map out how you'll combine Labor, Capital, Code, Media leverage. Create a 12-month plan.", success_criteria: "Written 12-month leverage building plan with milestones" }
+                ]
+            },
+            sales: {
+                beginner: [
+                    { title: "Write Your Opening Script", difficulty: 1, time_minutes: 30, instructions: "Write a 30-second opening that hooks attention and establishes credibility.", success_criteria: "Memorized opening you can deliver confidently" },
+                    { title: "Top 5 Objection Responses", difficulty: 1, time_minutes: 45, instructions: "List the 5 objections you hear most. Write tactical empathy responses for each.", success_criteria: "5 objection responses using labeling and mirroring" }
+                ],
+                intermediate: [
+                    { title: "Record and Review 3 Calls", difficulty: 2, time_minutes: 90, instructions: "Record yourself on 3 sales calls. Review for tonality, pacing, and objection handling.", success_criteria: "Written notes on 3 improvements to make" },
+                    { title: "Build a Follow-up Sequence", difficulty: 2, time_minutes: 60, instructions: "Create a 7-touch follow-up sequence with varied channels and value-adds.", success_criteria: "Complete sequence ready to implement" }
+                ],
+                advanced: [
+                    { title: "Role-play Complex Negotiation", difficulty: 3, time_minutes: 60, instructions: "Have someone throw every objection at you. Practice tactical empathy responses.", success_criteria: "Handle 10 objections without breaking frame" }
+                ]
+            },
+            productivity: {
+                beginner: [
+                    { title: "Design Your Shutdown Ritual", difficulty: 1, time_minutes: 20, instructions: "Create a 5-step end-of-day ritual that closes open loops and prepares tomorrow.", success_criteria: "Written ritual you can complete in 10 minutes" },
+                    { title: "Time Block Tomorrow", difficulty: 1, time_minutes: 15, instructions: "Block your entire day tomorrow in 30-90 minute chunks. Include deep work blocks.", success_criteria: "Full day time-blocked with 2+ hours of deep work" }
+                ],
+                intermediate: [
+                    { title: "Habit Stack 3 New Behaviors", difficulty: 2, time_minutes: 30, instructions: "Identify 3 habits you want to build. Stack each onto an existing habit.", success_criteria: "3 habit stacks written: After [CURRENT], I will [NEW]" },
+                    { title: "Eliminate 5 Time Wasters", difficulty: 2, time_minutes: 45, instructions: "Track your time for a day. Identify 5 activities that waste time. Eliminate or reduce.", success_criteria: "5 concrete changes implemented" }
+                ],
+                advanced: [
+                    { title: "Build a Personal Operating System", difficulty: 3, time_minutes: 120, instructions: "Document your ideal week structure, daily routines, decision frameworks.", success_criteria: "Complete system documented and implemented for 1 week" }
+                ]
+            },
+            mindset: {
+                beginner: [
+                    { title: "Daily Stoic Journal", difficulty: 1, time_minutes: 15, instructions: "Morning: What could go wrong today? How will I handle it? Evening: What did I learn?", success_criteria: "7 consecutive days of journaling" },
+                    { title: "Reframe 5 Limiting Beliefs", difficulty: 1, time_minutes: 30, instructions: "List 5 beliefs holding you back. Reframe each into an empowering alternative.", success_criteria: "5 reframes you can recite from memory" }
+                ],
+                intermediate: [
+                    { title: "Do Something That Scares You", difficulty: 2, time_minutes: 60, instructions: "Identify something you've been avoiding due to fear. Do it today.", success_criteria: "Action completed with reflection on what you learned" },
+                    { title: "24-Hour No Complaint Challenge", difficulty: 2, time_minutes: 1440, instructions: "Go 24 hours without complaining, criticizing, or gossiping.", success_criteria: "Full 24 hours completed with written reflection" }
+                ],
+                advanced: [
+                    { title: "Fear-Setting Exercise", difficulty: 3, time_minutes: 60, instructions: "For a scary decision: Define worst case, prevention, repair, and benefits of action vs inaction.", success_criteria: "Complete Tim Ferriss fear-setting worksheet" }
+                ]
+            },
+            business: {
+                beginner: [
+                    { title: "Talk to 3 Potential Customers", difficulty: 1, time_minutes: 90, instructions: "Find 3 people who might have the problem you want to solve. Ask about their pain points.", success_criteria: "3 conversations with notes on patterns" },
+                    { title: "Write Your PR/FAQ", difficulty: 1, time_minutes: 45, instructions: "Write a press release for your idea as if it's already successful. Then list FAQs.", success_criteria: "1-page PR/FAQ document" }
+                ],
+                intermediate: [
+                    { title: "Build an MVP in a Weekend", difficulty: 2, time_minutes: 480, instructions: "Create the simplest version of your idea that delivers value. Launch it.", success_criteria: "MVP live and shared with 10 potential users" },
+                    { title: "First Principles Analysis", difficulty: 2, time_minutes: 60, instructions: "Take a problem in your industry. Break it down to fundamental truths. Rebuild solution.", success_criteria: "Written analysis with at least one novel insight" }
+                ],
+                advanced: [
+                    { title: "Design Your Business Model", difficulty: 3, time_minutes: 120, instructions: "Complete a Business Model Canvas for your idea. Validate each assumption.", success_criteria: "Complete canvas with validation plan for key assumptions" }
+                ]
+            },
+            finance: {
+                beginner: [
+                    { title: "Calculate Your FI Number", difficulty: 1, time_minutes: 20, instructions: "Annual expenses × 25 = your Financial Independence number. How far away are you?", success_criteria: "Written FI number with current gap analysis" },
+                    { title: "Subscription Audit", difficulty: 1, time_minutes: 30, instructions: "List every recurring payment. Cancel anything you haven't used in 30 days.", success_criteria: "At least 2 subscriptions cancelled" }
+                ],
+                intermediate: [
+                    { title: "Automate Your Finances", difficulty: 2, time_minutes: 60, instructions: "Set up automatic transfers for savings, investments, and bills on payday.", success_criteria: "All major money movements automated" },
+                    { title: "Negotiate One Bill", difficulty: 2, time_minutes: 30, instructions: "Call one service provider and negotiate a lower rate.", success_criteria: "Saved money or documented attempt" }
+                ],
+                advanced: [
+                    { title: "Create a Wealth Building Plan", difficulty: 3, time_minutes: 90, instructions: "Map your path from current net worth to FI number with specific milestones.", success_criteria: "Written 10-year plan with annual checkpoints" }
+                ]
+            },
+            dating: {
+                beginner: [
+                    { title: "Start 3 Conversations", difficulty: 1, time_minutes: 60, instructions: "Start a conversation with 3 strangers today. Just be curious about them.", success_criteria: "3 conversations of at least 2 minutes each" },
+                    { title: "Remember 5 Names", difficulty: 1, time_minutes: 30, instructions: "Learn and remember 5 new people's names today. Use them in conversation.", success_criteria: "5 names you can recall at end of day" }
+                ],
+                intermediate: [
+                    { title: "Practice Active Listening", difficulty: 2, time_minutes: 45, instructions: "In every conversation today, summarize what the person said before responding.", success_criteria: "Used summarizing in 5+ conversations" },
+                    { title: "Give 5 Genuine Compliments", difficulty: 2, time_minutes: 30, instructions: "Give 5 specific, genuine compliments to different people.", success_criteria: "5 compliments that made people smile" }
+                ],
+                advanced: [
+                    { title: "Host a Small Gathering", difficulty: 3, time_minutes: 180, instructions: "Organize a dinner or activity with 4-6 people, mixing friend groups.", success_criteria: "Event completed with positive feedback" }
+                ]
+            },
+            lifestyle: {
+                beginner: [
+                    { title: "Define Your Ideal Day", difficulty: 1, time_minutes: 30, instructions: "Write out your perfect day in detail. Morning to night. What would make it 10/10?", success_criteria: "Detailed ideal day written out" },
+                    { title: "Environment Audit", difficulty: 1, time_minutes: 45, instructions: "Walk through your space. Remove 5 things that tempt bad behavior. Add 5 that support good behavior.", success_criteria: "10 environment changes made" }
+                ],
+                intermediate: [
+                    { title: "24-Hour Digital Detox", difficulty: 2, time_minutes: 1440, instructions: "No social media, news, or entertainment for 24 hours.", success_criteria: "Full 24 hours completed with reflection" },
+                    { title: "Design Your Ideal Week", difficulty: 2, time_minutes: 60, instructions: "Block out your ideal week: work, health, relationships, learning, rest.", success_criteria: "Weekly template created and scheduled" }
+                ],
+                advanced: [
+                    { title: "30-Day Experiment", difficulty: 3, time_minutes: 43200, instructions: "Design and complete a 30-day experiment to test a lifestyle change.", success_criteria: "30 days completed with results documented" }
+                ]
+            },
+            health: {
+                beginner: [
+                    { title: "Morning Sunlight Protocol", difficulty: 1, time_minutes: 15, instructions: "Get outside within 30 minutes of waking. 10 min sunlight, no sunglasses.", success_criteria: "7 consecutive days completed" },
+                    { title: "Sleep Audit", difficulty: 1, time_minutes: 30, instructions: "Track your sleep for a week. Identify your optimal bedtime and wake time.", success_criteria: "Optimal sleep schedule identified" }
+                ],
+                intermediate: [
+                    { title: "Zone 2 Cardio Session", difficulty: 2, time_minutes: 45, instructions: "Do 45 min of cardio where you can still hold a conversation. Track heart rate.", success_criteria: "Session completed in Zone 2 (60-70% max HR)" },
+                    { title: "Cold Exposure", difficulty: 2, time_minutes: 15, instructions: "End your shower with 30 seconds of cold water. Build to 2 minutes over a week.", success_criteria: "2 minutes of cold exposure achieved" }
+                ],
+                advanced: [
+                    { title: "Design Your Centenarian Decathlon", difficulty: 3, time_minutes: 60, instructions: "List 10 physical activities you want to do at age 100. Train for them now.", success_criteria: "10 activities listed with current training plan" }
+                ]
+            }
+        };
+
+        // Inline cross-module connections
+        const inlineConnections = {
+            money: [
+                { connected_module: "sales", insight: "Sales skills are the fastest path to increased income - you can double your rates with better positioning", combined_exercise: "Practice pitching your specific knowledge in a 60-second value statement" },
+                { connected_module: "productivity", insight: "Deep work compounds wealth - one focused hour can produce more than 8 distracted hours", combined_exercise: "Block 2 hours for your highest-value skill development" },
+                { connected_module: "mindset", insight: "Your beliefs about money determine your ceiling - most wealth limits are self-imposed", combined_exercise: "Write down 5 beliefs about wealth and challenge each one" }
+            ],
+            sales: [
+                { connected_module: "mindset", insight: "Rejection is data, not failure. Your mindset determines your persistence", combined_exercise: "Reframe your last 5 rejections as learning opportunities" },
+                { connected_module: "money", insight: "Sales skills transfer to negotiating salary, rates, and business deals", combined_exercise: "Negotiate something today using tactical empathy" }
+            ],
+            productivity: [
+                { connected_module: "mindset", insight: "Discipline creates freedom - the structure enables creativity", combined_exercise: "Build one productive habit using the 2-minute rule" },
+                { connected_module: "health", insight: "Energy management enables time management - you can't focus when depleted", combined_exercise: "Optimize sleep for one week and track productivity changes" }
+            ],
+            mindset: [
+                { connected_module: "productivity", insight: "Your identity drives your habits - become the person who does the thing", combined_exercise: "Define who you need to become to achieve your goals" },
+                { connected_module: "health", insight: "Physical challenges build mental toughness - the body leads the mind", combined_exercise: "Do one physically uncomfortable thing today" }
+            ],
+            business: [
+                { connected_module: "sales", insight: "Every founder is in sales - you're always selling vision, product, or yourself", combined_exercise: "Practice your company pitch in 30 seconds, 2 minutes, and 10 minutes" },
+                { connected_module: "money", insight: "Business is the vehicle for wealth - jobs have income ceilings", combined_exercise: "Identify one way to turn your job skills into a business" }
+            ],
+            finance: [
+                { connected_module: "mindset", insight: "Financial freedom is a mindset before it's a number", combined_exercise: "Define what 'enough' means for you" },
+                { connected_module: "lifestyle", insight: "Your spending reflects your values - audit for alignment", combined_exercise: "Compare your spending to your stated priorities" }
+            ],
+            dating: [
+                { connected_module: "mindset", insight: "Confidence comes from competence - social skills are built, not born", combined_exercise: "Practice one conversation skill for a week" },
+                { connected_module: "lifestyle", insight: "Your environment shapes your social opportunities", combined_exercise: "Join one community aligned with your interests" }
+            ],
+            lifestyle: [
+                { connected_module: "productivity", insight: "Environment design beats willpower every time", combined_exercise: "Optimize one space for your most important activity" },
+                { connected_module: "mindset", insight: "Fear-setting prevents regret - define the downside clearly", combined_exercise: "Do a fear-setting exercise on one lifestyle change you've been avoiding" }
+            ],
+            health: [
+                { connected_module: "productivity", insight: "Sleep is the foundation - everything degrades without it", combined_exercise: "Implement a non-negotiable bedtime for one week" },
+                { connected_module: "mindset", insight: "Physical discipline builds mental discipline - start with the body", combined_exercise: "Add one healthy habit using habit stacking" }
+            ]
+        };
+
+        // ============================================
+        // ENHANCED MASTERS DATA (loaded from JSON files)
+        // ============================================
+        let enhancedMastersData = {};
+        let levelDefinitions = {};
+
+        // Load enhanced data from JSON files
+        async function loadEnhancedMastersData() {
+            const modules = ['money', 'sales', 'finance', 'productivity', 'business', 'mindset', 'social', 'lifestyle', 'health'];
+            const moduleFileMap = {
+                money: 'money_masters.json',
+                sales: 'sales_masters.json',
+                finance: 'finance_masters.json',
+                productivity: 'productivity_masters.json',
+                business: 'business_masters.json',
+                mindset: 'mindset_masters.json',
+                social: 'social_masters.json',
+                dating: 'social_masters.json',
+                lifestyle: 'lifestyle_masters.json',
+                health: 'health_masters.json'
+            };
+
+            for (const mod of Object.keys(moduleFileMap)) {
+                try {
+                    const response = await fetch(`knowledge_base/masters/${moduleFileMap[mod]}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        enhancedMastersData[mod] = data;
+                        if (data.level_definitions) {
+                            levelDefinitions[mod] = data.level_definitions;
+                        }
+                    }
+                } catch (e) {
+                    console.log(`Could not load enhanced data for ${mod}`);
+                }
+            }
+        }
+
+        // Get level name for a module
+        function getLevelName(moduleKey, level) {
+            // Try loaded data first
+            if (levelDefinitions[moduleKey] && levelDefinitions[moduleKey][level]) {
+                return levelDefinitions[moduleKey][level].name;
+            }
+            // Try inline fallback data
+            if (fallbackLevelDefinitions[moduleKey] && fallbackLevelDefinitions[moduleKey][level]) {
+                return fallbackLevelDefinitions[moduleKey][level].name;
+            }
+            // Find closest level in fallback
+            if (fallbackLevelDefinitions[moduleKey]) {
+                const levels = Object.keys(fallbackLevelDefinitions[moduleKey]).map(Number).sort((a, b) => a - b);
+                for (let i = levels.length - 1; i >= 0; i--) {
+                    if (levels[i] <= level) {
+                        return fallbackLevelDefinitions[moduleKey][levels[i]].name;
+                    }
+                }
+            }
+            // Generic fallback
+            const generic = {
+                1: 'Beginner', 2: 'Novice', 3: 'Apprentice', 4: 'Practitioner', 5: 'Competent',
+                6: 'Proficient', 7: 'Advanced', 8: 'Expert', 9: 'Master', 10: 'Grandmaster'
+            };
+            return generic[level] || 'Level ' + level;
+        }
+
+        // Get level definition details
+        function getLevelDefinition(moduleKey, level) {
+            // Try loaded data first
+            if (levelDefinitions[moduleKey] && levelDefinitions[moduleKey][level]) {
+                return levelDefinitions[moduleKey][level];
+            }
+            // Try inline fallback data - exact match
+            if (fallbackLevelDefinitions[moduleKey] && fallbackLevelDefinitions[moduleKey][level]) {
+                return fallbackLevelDefinitions[moduleKey][level];
+            }
+            // Find closest level in fallback
+            if (fallbackLevelDefinitions[moduleKey]) {
+                const levels = Object.keys(fallbackLevelDefinitions[moduleKey]).map(Number).sort((a, b) => a - b);
+                for (let i = levels.length - 1; i >= 0; i--) {
+                    if (levels[i] <= level) {
+                        return fallbackLevelDefinitions[moduleKey][levels[i]];
+                    }
+                }
+            }
+            return null;
+        }
+
+        // Find enhanced master data
+        function findEnhancedMaster(name, moduleKey) {
+            const moduleData = enhancedMastersData[moduleKey];
+            if (moduleData && moduleData.masters) {
+                return moduleData.masters.find(m => m.name === name);
+            }
+            return null;
+        }
+
+        // Get module data (level definitions, exercises, connections)
+        function getModuleData(moduleKey) {
+            // Try enhanced data first, then use inline fallback
+            if (enhancedMastersData[moduleKey]) {
+                return enhancedMastersData[moduleKey];
+            }
+            // Build fallback from inline data
+            if (inlineExercises[moduleKey] || inlineConnections[moduleKey]) {
+                return {
+                    progressive_exercises: inlineExercises[moduleKey] || null,
+                    cross_module_connections: inlineConnections[moduleKey] || null
+                };
+            }
+            return null;
+        }
 
         // ============================================
         // UTILITY FUNCTIONS
@@ -2021,8 +3179,308 @@
             document.getElementById('wisdomMindsetWhy').textContent = wisdom.shift.why;
         }
 
-        function completeChallenge() {
-            showToast('Challenge completed! Great work.');
+        function saveChallengeResponse(source) {
+            const inputId = source === 'dash' ? 'dashChallengeResponse' : 'wisdomChallengeResponse';
+            const savedId = source === 'dash' ? 'dashChallengeSaved' : 'wisdomChallengeSaved';
+            const response = document.getElementById(inputId).value.trim();
+
+            if (!response) {
+                showToast('Please write something before saving', 'warning');
+                return;
+            }
+
+            // Save to today's challenge log
+            if (!appData.todayLog.challenges) {
+                appData.todayLog.challenges = [];
+            }
+
+            const challengeEntry = {
+                module: appData.currentWisdom?.challengeModule || 'general',
+                challenge: appData.currentWisdom?.challenge || 'Daily challenge',
+                response: response,
+                timestamp: new Date().toISOString(),
+                completed: false
+            };
+
+            // Check if we already have this challenge today
+            const existingIdx = appData.todayLog.challenges.findIndex(c =>
+                c.challenge === challengeEntry.challenge
+            );
+
+            if (existingIdx >= 0) {
+                appData.todayLog.challenges[existingIdx].response = response;
+                appData.todayLog.challenges[existingIdx].timestamp = challengeEntry.timestamp;
+            } else {
+                appData.todayLog.challenges.push(challengeEntry);
+            }
+
+            saveToStorage();
+
+            // Show saved confirmation
+            const savedDiv = document.getElementById(savedId);
+            savedDiv.innerHTML = `
+                <div class="challenge-saved">
+                    <div class="challenge-saved-label">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        PROGRESS SAVED
+                    </div>
+                    <div class="challenge-saved-text">${response.substring(0, 100)}${response.length > 100 ? '...' : ''}</div>
+                </div>
+            `;
+            savedDiv.style.display = 'block';
+
+            showToast('Progress saved!');
+
+            // Sync both inputs
+            document.getElementById('dashChallengeResponse').value = response;
+            document.getElementById('wisdomChallengeResponse').value = response;
+        }
+
+        function completeChallenge(source) {
+            const inputId = source === 'dash' ? 'dashChallengeResponse' : 'wisdomChallengeResponse';
+            const response = document.getElementById(inputId).value.trim();
+
+            // Save the response first
+            if (response) {
+                saveChallengeResponse(source);
+            }
+
+            // Mark as completed
+            if (appData.todayLog.challenges?.length > 0) {
+                const lastChallenge = appData.todayLog.challenges[appData.todayLog.challenges.length - 1];
+                lastChallenge.completed = true;
+                lastChallenge.completedAt = new Date().toISOString();
+            } else {
+                // Create a completed challenge entry even without response
+                if (!appData.todayLog.challenges) {
+                    appData.todayLog.challenges = [];
+                }
+                appData.todayLog.challenges.push({
+                    module: appData.currentWisdom?.challengeModule || 'general',
+                    challenge: appData.currentWisdom?.challenge || 'Daily challenge',
+                    response: response || '',
+                    timestamp: new Date().toISOString(),
+                    completed: true,
+                    completedAt: new Date().toISOString()
+                });
+            }
+
+            // Add to challenge history for stats
+            if (!appData.challengeHistory) {
+                appData.challengeHistory = [];
+            }
+            appData.challengeHistory.push({
+                date: new Date().toISOString().split('T')[0],
+                module: appData.currentWisdom?.challengeModule || 'general',
+                challenge: appData.currentWisdom?.challenge || 'Daily challenge',
+                response: response || '',
+                completedAt: new Date().toISOString()
+            });
+
+            // Keep only last 30 days of history
+            if (appData.challengeHistory.length > 30) {
+                appData.challengeHistory = appData.challengeHistory.slice(-30);
+            }
+
+            saveToStorage();
+            showToast('Challenge completed! Great work. +1 to your streak!');
+        }
+
+        function savePowerQuestionResponse() {
+            const response = document.getElementById('powerQuestionResponse').value.trim();
+
+            if (!response) {
+                showToast('Please write your reflection before saving', 'warning');
+                return;
+            }
+
+            if (!appData.todayLog.reflections) {
+                appData.todayLog.reflections = [];
+            }
+
+            appData.todayLog.reflections.push({
+                type: 'power_question',
+                question: appData.currentWisdom?.question || 'Power question',
+                response: response,
+                timestamp: new Date().toISOString()
+            });
+
+            saveToStorage();
+            showToast('Reflection saved!');
+        }
+
+        function loadTodayChallengeProgress() {
+            // Load any saved challenge responses for today
+            if (appData.todayLog.challenges?.length > 0) {
+                const lastChallenge = appData.todayLog.challenges[appData.todayLog.challenges.length - 1];
+                if (lastChallenge.challenge === appData.currentWisdom?.challenge && lastChallenge.response) {
+                    document.getElementById('dashChallengeResponse').value = lastChallenge.response;
+                    document.getElementById('wisdomChallengeResponse').value = lastChallenge.response;
+                }
+            }
+        }
+
+        // ============================================
+        // GRATITUDE JOURNAL
+        // ============================================
+        function saveGratitude() {
+            const gratitudes = [
+                document.getElementById('gratitude1').value.trim(),
+                document.getElementById('gratitude2').value.trim(),
+                document.getElementById('gratitude3').value.trim()
+            ].filter(g => g);
+
+            if (gratitudes.length === 0) {
+                showToast('Please write at least one thing you\'re grateful for', 'warning');
+                return;
+            }
+
+            const today = new Date().toISOString().split('T')[0];
+
+            // Initialize gratitude history if needed
+            if (!appData.gratitudeHistory) {
+                appData.gratitudeHistory = [];
+            }
+
+            // Check if we already have an entry for today
+            const todayIndex = appData.gratitudeHistory.findIndex(g => g.date === today);
+
+            const entry = {
+                date: today,
+                gratitudes: gratitudes,
+                timestamp: new Date().toISOString()
+            };
+
+            if (todayIndex >= 0) {
+                appData.gratitudeHistory[todayIndex] = entry;
+            } else {
+                appData.gratitudeHistory.push(entry);
+            }
+
+            // Calculate streak
+            updateGratitudeStreak();
+
+            // Keep only last 90 days
+            if (appData.gratitudeHistory.length > 90) {
+                appData.gratitudeHistory = appData.gratitudeHistory.slice(-90);
+            }
+
+            saveToStorage();
+
+            // Show saved confirmation
+            const savedDiv = document.getElementById('gratitudeSaved');
+            savedDiv.innerHTML = `
+                <div class="gratitude-saved">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    Gratitude saved! Keep the positive momentum going.
+                </div>
+            `;
+            savedDiv.style.display = 'block';
+
+            showToast('Gratitude saved! You\'re building a powerful habit.');
+        }
+
+        function loadTodayGratitude() {
+            const today = new Date().toISOString().split('T')[0];
+
+            if (appData.gratitudeHistory) {
+                const todayEntry = appData.gratitudeHistory.find(g => g.date === today);
+                if (todayEntry) {
+                    todayEntry.gratitudes.forEach((g, i) => {
+                        const input = document.getElementById(`gratitude${i + 1}`);
+                        if (input) input.value = g;
+                    });
+
+                    // Show that it's already saved
+                    const savedDiv = document.getElementById('gratitudeSaved');
+                    savedDiv.innerHTML = `
+                        <div class="gratitude-saved">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Today's gratitude saved
+                        </div>
+                    `;
+                    savedDiv.style.display = 'block';
+                }
+            }
+
+            updateGratitudeStreak();
+        }
+
+        function updateGratitudeStreak() {
+            if (!appData.gratitudeHistory || appData.gratitudeHistory.length === 0) {
+                document.getElementById('gratitudeStreak').textContent = '0 day streak';
+                return;
+            }
+
+            // Sort by date descending
+            const sorted = [...appData.gratitudeHistory].sort((a, b) =>
+                new Date(b.date) - new Date(a.date)
+            );
+
+            let streak = 0;
+            let checkDate = new Date();
+            checkDate.setHours(0, 0, 0, 0);
+
+            for (const entry of sorted) {
+                const entryDate = new Date(entry.date);
+                entryDate.setHours(0, 0, 0, 0);
+
+                const diffDays = Math.floor((checkDate - entryDate) / (1000 * 60 * 60 * 24));
+
+                if (diffDays === 0 || diffDays === 1) {
+                    streak++;
+                    checkDate = entryDate;
+                    checkDate.setDate(checkDate.getDate() - 1);
+                } else {
+                    break;
+                }
+            }
+
+            const streakText = streak === 1 ? '1 day streak' : `${streak} day streak`;
+            document.getElementById('gratitudeStreak').textContent = streakText;
+
+            // Store streak in appData
+            appData.gratitudeStreak = streak;
+        }
+
+        function loadGratitudeHistory() {
+            const historyList = document.getElementById('gratitudeHistoryList');
+            const countBadge = document.getElementById('gratitudeCount');
+            const history = appData.gratitudeHistory || [];
+
+            countBadge.textContent = `${history.length} entries`;
+
+            if (history.length === 0) {
+                historyList.innerHTML = `
+                    <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
+                        Write your daily gratitudes to see your history here
+                    </div>
+                `;
+                return;
+            }
+
+            // Show most recent first, limit to 10
+            historyList.innerHTML = history.slice().reverse().slice(0, 10).map(entry => {
+                const date = new Date(entry.date).toLocaleDateString('en-US', {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric'
+                });
+                return `
+                    <div class="gratitude-history-item">
+                        <div class="gratitude-history-date">${date}</div>
+                        <ul class="gratitude-history-list">
+                            ${entry.gratitudes.map(g => `<li>${g}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }).join('');
         }
 
         // ============================================
@@ -2098,6 +3556,7 @@
                 const level = appData.profile.moduleLevels[key] || 5;
                 const target = appData.profile.focusModules.includes(key) ? level + 2 : level + 1;
                 const percentage = (level / 10) * 100;
+                const levelName = getLevelName(key, level);
 
                 return `
                     <div class="module-card" onclick="showModuleDetail('${key}')">
@@ -2107,6 +3566,9 @@
                                 <div class="module-title">${config.name}</div>
                                 <div class="module-level">${appData.profile.focusModules.includes(key) ? '⭐ FOCUS' : ''}</div>
                             </div>
+                        </div>
+                        <div class="level-indicator">
+                            <span class="level-name" style="color: ${config.color};">${levelName}</span>
                         </div>
                         <div class="module-bar">
                             <div class="module-bar-fill" style="width: ${percentage}%; background: ${config.color};"></div>
@@ -2121,7 +3583,121 @@
         }
 
         function showModuleDetail(moduleKey) {
-            showToast(`Opening ${moduleConfig[moduleKey].name} details...`, 'warning');
+            const moduleData = getModuleData(moduleKey);
+            const level = appData.profile.moduleLevels[moduleKey] || 5;
+            const levelDef = getLevelDefinition(moduleKey, level);
+            const config = moduleConfig[moduleKey];
+
+            // Create module detail modal content
+            let content = `
+                <div style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                    Your current level in ${config.name}
+                </div>
+            `;
+
+            // Level info - works with fallback data
+            if (levelDef) {
+                content += `
+                    <div class="card" style="margin-bottom: 1.5rem; border-color: ${config.color};">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="font-family: 'Bebas Neue'; font-size: 3rem; color: ${config.color};">${level}</div>
+                            <div>
+                                <div style="font-family: 'Bebas Neue'; font-size: 1.25rem; color: var(--text-primary);">${levelDef.name}</div>
+                                <div style="font-size: 0.85rem; color: var(--text-secondary);">${levelDef.description}</div>
+                            </div>
+                        </div>
+                        ${levelDef.capabilities ? `
+                            <div style="margin-bottom: 1rem;">
+                                <div style="font-size: 0.7rem; color: var(--text-muted); letter-spacing: 0.1em; margin-bottom: 0.5rem;">CAPABILITIES</div>
+                                ${levelDef.capabilities.map(c => `
+                                    <div style="font-size: 0.85rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="color: var(--success);">✓</span> ${c}
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+                        ${levelDef.milestone ? `
+                            <div style="background: rgba(212, 168, 71, 0.1); border: 1px solid rgba(212, 168, 71, 0.2); border-radius: 8px; padding: 0.75rem 1rem;">
+                                <div style="font-size: 0.65rem; color: var(--gold-primary); letter-spacing: 0.1em; margin-bottom: 0.25rem;">MILESTONE TO REACH NEXT LEVEL</div>
+                                <div style="font-size: 0.9rem; color: var(--text-secondary);">${levelDef.milestone}</div>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }
+
+            // Progressive exercises (from enhanced data if available)
+            if (moduleData?.progressive_exercises) {
+                content += `
+                    <div style="font-family: 'Bebas Neue'; font-size: 1rem; color: var(--gold-primary); margin-bottom: 0.75rem; letter-spacing: 0.1em;">PROGRESSIVE EXERCISES</div>
+                    <div class="difficulty-selector" id="difficultySelector">
+                        <button class="difficulty-btn beginner active" onclick="switchDifficulty('${moduleKey}', 'beginner')">Beginner</button>
+                        <button class="difficulty-btn intermediate" onclick="switchDifficulty('${moduleKey}', 'intermediate')">Intermediate</button>
+                        <button class="difficulty-btn advanced" onclick="switchDifficulty('${moduleKey}', 'advanced')">Advanced</button>
+                    </div>
+                    <div id="exercisesList">${renderExercises(moduleData.progressive_exercises.beginner)}</div>
+                `;
+            }
+
+            // Cross-module connections (from enhanced data if available)
+            if (moduleData?.cross_module_connections?.length) {
+                content += `
+                    <div style="font-family: 'Bebas Neue'; font-size: 1rem; color: var(--gold-primary); margin: 1.5rem 0 0.75rem 0; letter-spacing: 0.1em;">CONNECTED MODULES</div>
+                    ${moduleData.cross_module_connections.map(conn => {
+                        const connConfig = moduleConfig[conn.connected_module] || { color: '#888', icon: '?' };
+                        return `
+                            <div class="connection-card">
+                                <div class="connection-header">
+                                    <div class="connection-icon" style="background: ${connConfig.color}20; color: ${connConfig.color};">${connConfig.icon}</div>
+                                    <div class="connection-module" style="color: ${connConfig.color};">${connConfig.name || conn.connected_module}</div>
+                                </div>
+                                <div class="connection-insight">${conn.insight}</div>
+                                <div class="connection-exercise">${conn.combined_exercise}</div>
+                            </div>
+                        `;
+                    }).join('')}
+                `;
+            }
+
+
+            // Show in a modal (reuse master modal)
+            document.getElementById('masterModalName').textContent = config.name.toUpperCase();
+            document.getElementById('masterModalBody').innerHTML = content;
+            openModal('masterModal');
+        }
+
+        function renderExercises(exercises) {
+            if (!exercises?.length) return '<div style="color: var(--text-muted);">No exercises available</div>';
+
+            return exercises.map(ex => `
+                <div class="exercise-card">
+                    <div class="exercise-header">
+                        <div class="exercise-title">${ex.title}</div>
+                        <div class="exercise-meta">
+                            <span class="exercise-difficulty d${ex.difficulty}">Level ${ex.difficulty}</span>
+                            <span>${ex.time_minutes} min</span>
+                        </div>
+                    </div>
+                    <div class="exercise-instructions">${ex.instructions}</div>
+                    <div class="exercise-success">
+                        <div class="exercise-success-label">Success Criteria</div>
+                        <div class="exercise-success-text">${ex.success_criteria}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function switchDifficulty(moduleKey, difficulty) {
+            // Update button states
+            document.querySelectorAll('.difficulty-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.classList.contains(difficulty));
+            });
+
+            // Render exercises
+            const moduleData = getModuleData(moduleKey);
+            if (moduleData?.progressive_exercises?.[difficulty]) {
+                document.getElementById('exercisesList').innerHTML = renderExercises(moduleData.progressive_exercises[difficulty]);
+            }
         }
 
         // ============================================
@@ -2157,25 +3733,75 @@
                     <span style="color: var(--warning); font-weight: 600;">🔥 ${habit.streak} days</span>
                 </div>
             `).join('');
+
+            // Challenge history
+            const historyList = document.getElementById('challengeHistoryList');
+            const challengeCount = document.getElementById('challengeCount');
+            const history = appData.challengeHistory || [];
+
+            challengeCount.textContent = `${history.length} completed`;
+
+            if (history.length === 0) {
+                historyList.innerHTML = `
+                    <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
+                        Complete challenges to see your history here
+                    </div>
+                `;
+            } else {
+                // Show most recent first
+                historyList.innerHTML = history.slice().reverse().slice(0, 10).map(item => {
+                    const date = new Date(item.completedAt).toLocaleDateString('en-US', {
+                        month: 'short', day: 'numeric'
+                    });
+                    const config = moduleConfig[item.module] || { color: '#888', name: item.module };
+                    return `
+                        <div class="challenge-history-item">
+                            <div class="challenge-history-date">
+                                <span style="color: ${config.color}; font-weight: 500;">${config.name}</span>
+                                <span style="margin-left: 0.5rem;">${date}</span>
+                            </div>
+                            <div class="challenge-history-challenge">${item.challenge}</div>
+                            ${item.response ? `<div class="challenge-history-response">${item.response.substring(0, 150)}${item.response.length > 150 ? '...' : ''}</div>` : ''}
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            // Gratitude history
+            loadGratitudeHistory();
         }
 
         // ============================================
         // MASTERS
         // ============================================
+        let currentMasterData = null;
+        let currentMasterModule = null;
+
         function loadMastersPage() {
             const grid = document.getElementById('mastersGrid');
             let allMasters = [];
 
             Object.entries(mastersData).forEach(([module, masters]) => {
                 masters.forEach(master => {
-                    allMasters.push({ ...master, module });
+                    // Check for enhanced data
+                    const enhanced = findEnhancedMaster(master.name, module);
+                    const examplesCount = enhanced?.worked_examples?.length || 0;
+                    const scriptsCount = enhanced?.scripts_templates?.length || 0;
+                    const hasResources = enhanced?.resources && (enhanced.resources.books?.length || enhanced.resources.podcasts?.length);
+
+                    allMasters.push({ ...master, module, examplesCount, scriptsCount, hasResources });
                 });
             });
 
             grid.innerHTML = allMasters.map(master => `
-                <div class="master-card" onclick="showMasterDetail('${master.name}', '${master.module}')">
+                <div class="master-card" onclick="showMasterDetail('${master.name.replace(/'/g, "\\'")}', '${master.module}')">
                     <div class="master-card-name">${master.name}</div>
                     <div class="master-card-expertise">${master.expertise}</div>
+                    <div class="master-card-badges">
+                        ${master.examplesCount > 0 ? `<span class="master-card-badge examples">${master.examplesCount} examples</span>` : ''}
+                        ${master.scriptsCount > 0 ? `<span class="master-card-badge scripts">${master.scriptsCount} scripts</span>` : ''}
+                        ${master.hasResources ? `<span class="master-card-badge resources">resources</span>` : ''}
+                    </div>
                     <div class="master-card-principle">"${master.principles[0]}"</div>
                 </div>
             `).join('');
@@ -2184,16 +3810,72 @@
         function showMasterDetail(name, module) {
             const masters = mastersData[module];
             const master = masters.find(m => m.name === name);
+            const enhanced = findEnhancedMaster(name, module);
 
             if (!master) return;
 
+            currentMasterData = { basic: master, enhanced };
+            currentMasterModule = module;
+
             document.getElementById('masterModalName').textContent = master.name.toUpperCase();
-            document.getElementById('masterModalBody').innerHTML = `
-                <div style="color: var(--text-muted); margin-bottom: 1.5rem;">${master.expertise}</div>
+
+            // Determine which tabs to show
+            const hasExamples = enhanced?.worked_examples?.length > 0;
+            const hasScripts = enhanced?.scripts_templates?.length > 0;
+            const hasResources = enhanced?.resources && (enhanced.resources.books?.length || enhanced.resources.podcasts?.length);
+
+            // Build tabs HTML
+            const tabsHtml = `
+                <div class="master-tabs" id="masterTabs">
+                    <div class="master-tab active" data-tab="principles" onclick="switchMasterTab('principles')">Principles</div>
+                    ${hasExamples ? '<div class="master-tab" data-tab="examples" onclick="switchMasterTab(\'examples\')">Examples</div>' : ''}
+                    ${hasScripts ? '<div class="master-tab" data-tab="scripts" onclick="switchMasterTab(\'scripts\')">Scripts</div>' : ''}
+                    ${hasResources ? '<div class="master-tab" data-tab="resources" onclick="switchMasterTab(\'resources\')">Resources</div>' : ''}
+                </div>
+                <div id="masterTabContent"></div>
+            `;
+
+            document.getElementById('masterModalBody').innerHTML = tabsHtml;
+            switchMasterTab('principles');
+
+            openModal('masterModal');
+        }
+
+        function switchMasterTab(tabName) {
+            // Update tab active states
+            document.querySelectorAll('.master-tab').forEach(tab => {
+                tab.classList.toggle('active', tab.dataset.tab === tabName);
+            });
+
+            const content = document.getElementById('masterTabContent');
+            const { basic, enhanced } = currentMasterData;
+
+            switch(tabName) {
+                case 'principles':
+                    content.innerHTML = renderPrinciplesTab(basic, enhanced);
+                    break;
+                case 'examples':
+                    content.innerHTML = renderExamplesTab(enhanced);
+                    break;
+                case 'scripts':
+                    content.innerHTML = renderScriptsTab(enhanced);
+                    break;
+                case 'resources':
+                    content.innerHTML = renderResourcesTab(enhanced);
+                    break;
+            }
+        }
+
+        function renderPrinciplesTab(basic, enhanced) {
+            const principles = enhanced?.key_principles || basic.principles;
+            const practices = enhanced?.daily_practices || basic.practices;
+
+            return `
+                <div style="color: var(--text-muted); margin-bottom: 1.5rem;">${basic.expertise}</div>
 
                 <div style="margin-bottom: 1.5rem;">
                     <div style="font-family: 'Bebas Neue'; font-size: 1rem; color: var(--gold-primary); margin-bottom: 0.75rem; letter-spacing: 0.1em;">KEY PRINCIPLES</div>
-                    ${master.principles.map((p, i) => `
+                    ${principles.map((p, i) => `
                         <div style="font-family: 'Crimson Pro', serif; font-size: 1.1rem; font-style: italic; padding: 1rem; background: var(--bg-elevated); border-radius: 8px; margin-bottom: 0.5rem; border-left: 3px solid var(--gold-primary);">
                             "${p}"
                         </div>
@@ -2202,7 +3884,7 @@
 
                 <div>
                     <div style="font-family: 'Bebas Neue'; font-size: 1rem; color: var(--gold-primary); margin-bottom: 0.75rem; letter-spacing: 0.1em;">DAILY PRACTICES</div>
-                    ${master.practices.map(p => `
+                    ${practices.map(p => `
                         <div style="padding: 0.75rem 1rem; background: var(--bg-elevated); border-radius: 8px; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
                             <span style="color: var(--success);">→</span>
                             ${p}
@@ -2210,8 +3892,117 @@
                     `).join('')}
                 </div>
             `;
+        }
 
-            openModal('masterModal');
+        function renderExamplesTab(enhanced) {
+            if (!enhanced?.worked_examples?.length) {
+                return '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">No worked examples available</div>';
+            }
+
+            return enhanced.worked_examples.map(example => `
+                <div class="example-card">
+                    <div class="example-title">${example.title}</div>
+                    <div class="example-scenario">${example.scenario}</div>
+                    <div class="example-framework">Framework: ${example.framework_applied}</div>
+                    <ol class="example-steps">
+                        ${example.step_by_step.map(step => `<li>${step}</li>`).join('')}
+                    </ol>
+                    <div class="example-outcome">
+                        <div class="example-outcome-label">Outcome</div>
+                        ${example.outcome}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderScriptsTab(enhanced) {
+            if (!enhanced?.scripts_templates?.length) {
+                return '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">No scripts or templates available</div>';
+            }
+
+            return enhanced.scripts_templates.map((script, idx) => `
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-title">${script.title}</div>
+                        <button class="copy-btn" onclick="copyTemplate(${idx})">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            Copy
+                        </button>
+                    </div>
+                    <div class="template-context">${script.context}</div>
+                    <div class="template-content" id="template-${idx}">${formatTemplateContent(script.template)}</div>
+                    ${script.example_filled ? `
+                        <div class="template-example">
+                            <div class="template-example-label">Example</div>
+                            <div class="template-example-text">${script.example_filled}</div>
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        function renderResourcesTab(enhanced) {
+            if (!enhanced?.resources) {
+                return '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">No resources available</div>';
+            }
+
+            let html = '';
+
+            if (enhanced.resources.books?.length) {
+                html += `<div style="font-family: 'Bebas Neue'; font-size: 1rem; color: var(--gold-primary); margin-bottom: 0.75rem; letter-spacing: 0.1em;">BOOKS</div>`;
+                html += enhanced.resources.books.map(book => `
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <div class="resource-info">
+                            <div class="resource-title">${book.title}</div>
+                            <div class="resource-author">by ${book.author}</div>
+                            ${book.key_takeaway ? `<div class="resource-takeaway">"${book.key_takeaway}"</div>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            if (enhanced.resources.podcasts?.length) {
+                html += `<div style="font-family: 'Bebas Neue'; font-size: 1rem; color: var(--gold-primary); margin: 1.5rem 0 0.75rem 0; letter-spacing: 0.1em;">PODCASTS</div>`;
+                html += enhanced.resources.podcasts.map(pod => `
+                    <div class="resource-card">
+                        <div class="resource-icon">🎙️</div>
+                        <div class="resource-info">
+                            <div class="resource-title">${pod.title}</div>
+                            ${pod.episode ? `<div class="resource-author">${pod.episode}</div>` : ''}
+                            ${pod.key_takeaway ? `<div class="resource-takeaway">"${pod.key_takeaway}"</div>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            return html || '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">No resources available</div>';
+        }
+
+        function formatTemplateContent(template) {
+            // Replace blanks like ___ or [blank] with styled spans
+            return template
+                .replace(/___+/g, '<span class="blank">___________</span>')
+                .replace(/\[([^\]]+)\]/g, '<span class="blank">[$1]</span>');
+        }
+
+        function copyTemplate(idx) {
+            const enhanced = currentMasterData.enhanced;
+            if (!enhanced?.scripts_templates?.[idx]) return;
+
+            const template = enhanced.scripts_templates[idx].template;
+            navigator.clipboard.writeText(template).then(() => {
+                const btn = event.target.closest('.copy-btn');
+                btn.classList.add('copied');
+                btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Copied!`;
+                setTimeout(() => {
+                    btn.classList.remove('copied');
+                    btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copy`;
+                }, 2000);
+            });
         }
 
         // ============================================
@@ -2432,15 +4223,20 @@
         // ============================================
         // INITIALIZATION
         // ============================================
-        function init() {
+        async function init() {
             loadFromStorage();
             updateDateTime();
             setInterval(updateDateTime, 1000);
+
+            // Load enhanced masters data from JSON files (non-blocking)
+            loadEnhancedMastersData().catch(() => console.log('Enhanced data not loaded - using fallbacks'));
 
             const wisdom = generateWisdom();
             updateWisdomUI(wisdom);
             renderHabits('dashHabitList');
             updateDashboardStats();
+            loadTodayChallengeProgress();
+            loadTodayGratitude();
 
             // Set up range input listeners
             ['amSleepHours', 'amSleepQuality', 'amEnergy', 'pmDayScore'].forEach(id => {

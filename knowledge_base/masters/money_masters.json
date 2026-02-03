@@ -1,5 +1,160 @@
 {
   "module": "money",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You're becoming aware that trading time for money has limits",
+      "capabilities": ["Understand the difference between income and wealth", "Identify your current hourly rate", "Recognize leverage opportunities"],
+      "milestone": "Calculate your true hourly rate and identify one skill gap"
+    },
+    "2": {
+      "name": "Foundation",
+      "description": "Building basic wealth-creation knowledge",
+      "capabilities": ["Understand compound interest", "Identify high-value skills", "Recognize income vs wealth"],
+      "milestone": "Create a personal skill development plan"
+    },
+    "3": {
+      "name": "Skill Builder",
+      "description": "Actively developing income-multiplying skills",
+      "capabilities": ["Learning one high-leverage skill", "Understanding market value", "Basic networking for opportunities"],
+      "milestone": "Complete one paid project using a new skill"
+    },
+    "4": {
+      "name": "Value Creator",
+      "description": "Creating value beyond direct time exchange",
+      "capabilities": ["Package skills into offers", "Basic pricing strategy", "Client acquisition fundamentals"],
+      "milestone": "Generate first income from packaged knowledge/skill"
+    },
+    "5": {
+      "name": "Leverage Seeker",
+      "description": "Actively building leverage through code, media, or capital",
+      "capabilities": ["Creating content or code that works without you", "Building small systems", "Delegating low-value tasks"],
+      "milestone": "Create one asset that generates income while you sleep"
+    },
+    "6": {
+      "name": "System Builder",
+      "description": "Building repeatable systems for wealth creation",
+      "capabilities": ["Multiple income streams", "Team or automation leverage", "Strategic time allocation"],
+      "milestone": "Income from systems exceeds 25% of total income"
+    },
+    "7": {
+      "name": "Equity Thinker",
+      "description": "Thinking in terms of ownership and equity",
+      "capabilities": ["Building or acquiring equity stakes", "Long-term compounding mindset", "Strategic partnership building"],
+      "milestone": "Own equity in at least one revenue-generating asset"
+    },
+    "8": {
+      "name": "Wealth Architect",
+      "description": "Designing and building wealth systems at scale",
+      "capabilities": ["Multiple leverage types combined", "Capital allocation strategy", "Building lasting business moats"],
+      "milestone": "Passive income covers basic living expenses"
+    },
+    "9": {
+      "name": "Freedom Builder",
+      "description": "Wealth systems provide significant freedom",
+      "capabilities": ["Work is optional", "Capital compounds automatically", "Mentoring others in wealth creation"],
+      "milestone": "Can take 6+ months off without income impact"
+    },
+    "10": {
+      "name": "Wealth Master",
+      "description": "Complete financial freedom with generational wealth potential",
+      "capabilities": ["Wealth grows faster than spending", "Creating opportunities for others", "Legacy building"],
+      "milestone": "Net worth compounds automatically; focus shifts to impact"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "Calculate Your True Hourly Rate",
+        "difficulty": 1,
+        "time_minutes": 20,
+        "instructions": "Add up ALL hours you spend on work (commute, prep, recovery, thinking about work). Divide your annual income by total hours. Compare to what you thought your hourly rate was.",
+        "success_criteria": "Written calculation showing true hourly rate and reflection on the gap"
+      },
+      {
+        "title": "Identify Your Specific Knowledge",
+        "difficulty": 1,
+        "time_minutes": 30,
+        "instructions": "List 10 things you know that feel obvious to you but others frequently ask about. These are clues to your specific knowledge.",
+        "success_criteria": "List of 10 items with at least 3 that could potentially be monetized"
+      },
+      {
+        "title": "Wealth vs Income Audit",
+        "difficulty": 1,
+        "time_minutes": 15,
+        "instructions": "List all your income sources. Mark which ones require your time (income) vs which generate money without you (wealth). Calculate the ratio.",
+        "success_criteria": "Complete income audit with wealth/income ratio calculated"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Create Your First Digital Asset",
+        "difficulty": 2,
+        "time_minutes": 120,
+        "instructions": "Turn one piece of your specific knowledge into a digital asset: a template, checklist, mini-guide, or video. Something that can help others without requiring your live presence.",
+        "success_criteria": "One completed digital asset ready to share or sell"
+      },
+      {
+        "title": "Build a Value Equation Offer",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Using Hormozi's Value Equation, design an offer for your skill. Calculate Dream Outcome, Perceived Likelihood, Time Delay, and Effort/Sacrifice for your client.",
+        "success_criteria": "Written offer with all four value equation components optimized"
+      },
+      {
+        "title": "Network Up Challenge",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Identify 5 people who earn 10x what you earn. Research how you could provide value to them. Reach out to at least 2 with a value-first message.",
+        "success_criteria": "2 personalized outreach messages sent to high-value connections"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Design Your Leverage Stack",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Map out how you'll combine the four types of leverage: Labor, Capital, Code, Media. Create a 12-month plan to build at least 2 leverage types.",
+        "success_criteria": "Written 12-month leverage building plan with specific milestones"
+      },
+      {
+        "title": "Grand Slam Offer Workshop",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Build a complete Grand Slam Offer: Define your target market, list all their problems, create solutions for each, add bonuses that reduce risk, set pricing that feels like a steal.",
+        "success_criteria": "Complete Grand Slam Offer document ready to test with prospects"
+      },
+      {
+        "title": "Passive Income Machine Blueprint",
+        "difficulty": 3,
+        "time_minutes": 120,
+        "instructions": "Design a system that could generate $1000/month passively within 12 months. Map every component: product, traffic, conversion, delivery, support.",
+        "success_criteria": "Complete blueprint with realistic timeline and required resources"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "sales",
+      "insight": "Sales skills are the fastest path to increased income - you can double your rates with better positioning and negotiation",
+      "combined_exercise": "Practice pitching your specific knowledge in a 60-second value statement. Test it on 5 people this week."
+    },
+    {
+      "connected_module": "productivity",
+      "insight": "Deep work compounds wealth - one focused hour can produce more value than 8 distracted hours",
+      "combined_exercise": "Block 2 hours for your highest-value skill development. Track what you produce vs unfocused time."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Your beliefs about money determine your ceiling - most wealth limits are self-imposed",
+      "combined_exercise": "Write down 5 beliefs you hold about wealth. Challenge each one: is this a fact or a limiting belief?"
+    },
+    {
+      "connected_module": "business",
+      "insight": "Wealth at scale requires business thinking - individual income has natural limits",
+      "combined_exercise": "Take your best skill and design a business model around it that doesn't require your time for every dollar"
+    }
+  ],
   "masters": [
     {
       "name": "Naval Ravikant",
@@ -17,7 +172,60 @@
         "Spend 1 hour learning something that compounds",
         "Build something that can work without you",
         "Invest in relationships with high-integrity people"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Building Leverage Through Content",
+          "scenario": "You're a software developer earning $150k trading time for money. You want to break free from the time-for-money trap.",
+          "framework_applied": "Specific knowledge + Media leverage + Code leverage",
+          "step_by_step": [
+            "Identify your specific knowledge: You've debugged hundreds of production systems and developed intuitions others lack",
+            "Start creating content: Write Twitter threads about debugging war stories (media leverage - costs nothing to replicate)",
+            "Build tools: Create open-source debugging utilities that showcase your expertise (code leverage)",
+            "Attract opportunities: Companies start reaching out for consulting at 3x your hourly rate",
+            "Productize: Turn your debugging framework into a course/product that sells while you sleep",
+            "Scale: The content keeps working, the tools keep attracting users, the course keeps selling"
+          ],
+          "outcome": "Within 2 years: consulting income at 3x previous rate, plus $5k/month from products, working fewer hours"
+        },
+        {
+          "title": "Compounding Through Specific Knowledge",
+          "scenario": "You notice you're always the one people ask about a specific topic at work, but you never thought to monetize it.",
+          "framework_applied": "Specific knowledge identification + Accountability + Long-term games",
+          "step_by_step": [
+            "Recognize the signal: When colleagues constantly ask you about X, that's your specific knowledge",
+            "Take accountability: Put your name on it publicly - start a newsletter, podcast, or blog about X",
+            "Play long-term: Don't expect immediate returns, compound your reputation over 2-3 years",
+            "Document everything: Turn your knowledge into reusable assets (templates, frameworks, processes)",
+            "Let opportunities find you: As your reputation grows, high-value opportunities appear"
+          ],
+          "outcome": "Your specific knowledge becomes your moat - others can't compete because they don't have your unique combination of skills and experience"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Specific Knowledge Discovery Script",
+          "context": "Use to identify your unique differentiator that can become the foundation for wealth creation",
+          "template": "1. What do I know that feels obvious to me but confuses others? ___\n2. What do people consistently ask me for help with? ___\n3. What could I talk about for 30 minutes without preparation? ___\n4. What skills did I develop through unique life experiences? ___\n5. Where do my interests and abilities intersect with market needs? ___",
+          "example_filled": "1. How to debug production systems under pressure - it's intuitive to me now\n2. Code architecture decisions, system design, incident response\n3. Distributed systems failure modes and recovery patterns\n4. Learned resilience from years of on-call rotations at fast-growing startups\n5. Companies desperately need people who can fix systems fast - I can teach this"
+        },
+        {
+          "title": "Leverage Audit Template",
+          "context": "Evaluate your current leverage situation and identify opportunities",
+          "template": "LABOR LEVERAGE:\n- Do I have a team? ___\n- Am I building others' skills? ___\n\nCAPITAL LEVERAGE:\n- Do I have money working for me? ___\n- Am I reinvesting in growth? ___\n\nCODE LEVERAGE:\n- Have I built software/tools? ___\n- Can I automate my expertise? ___\n\nMEDIA LEVERAGE:\n- Am I creating content? ___\n- Does my content work while I sleep? ___\n\nBIGGEST OPPORTUNITY: ___",
+          "example_filled": "LABOR: No team yet, but could hire VA for $500/month to 10x output\nCAPITAL: Investing 20% of income, could increase to 30%\nCODE: Built internal tools - could open source or productize\nMEDIA: Zero content creation - BIGGEST GAP\nBIGGEST OPPORTUNITY: Start creating content around my debugging expertise"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Almanack of Naval Ravikant", "author": "Eric Jorgenson", "key_takeaway": "Wealth is assets that earn while you sleep - focus on equity, not income"},
+          {"title": "How to Get Rich (without getting lucky)", "author": "Naval Ravikant (Tweetstorm)", "key_takeaway": "The complete framework for modern wealth creation through leverage and specific knowledge"}
+        ],
+        "podcasts": [
+          {"title": "Naval on The Knowledge Project", "key_takeaway": "Deep dive on specific knowledge and playing long-term games"},
+          {"title": "Naval on Joe Rogan", "key_takeaway": "Accessible introduction to Naval's wealth and happiness philosophy"}
+        ]
+      }
     },
     {
       "name": "Alex Hormozi",
@@ -35,7 +243,61 @@
         "Do 100 outreach touches",
         "Improve your offer daily",
         "Stack skills that multiply each other"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Building a Grand Slam Offer",
+          "scenario": "You're a fitness coach charging $100/month and struggling to get clients. You need to transform your offer.",
+          "framework_applied": "Value Equation: (Dream Outcome × Perceived Likelihood) / (Time Delay × Effort & Sacrifice)",
+          "step_by_step": [
+            "Define the Dream Outcome: Not 'fitness coaching' but 'Lose 30 lbs in 90 days and keep it off forever'",
+            "Increase Perceived Likelihood: Add guarantee - 'Lose 30 lbs or I'll coach you free until you do'",
+            "Decrease Time Delay: 'See changes in your first week or money back'",
+            "Decrease Effort: 'I'll create your meal plan, shopping lists, and tell you exactly what to eat each day'",
+            "Add bonuses that address objections: Recipe book, accountability check-ins, private community",
+            "Name it powerfully: 'The 90-Day Total Body Transformation System'",
+            "Price based on value, not time: If client values losing 30 lbs at $10k, price at $2k feels like a steal"
+          ],
+          "outcome": "Price increases from $100/month to $2000 for 90 days, close rate actually increases because offer is irresistible"
+        },
+        {
+          "title": "Volume Negates Luck in Action",
+          "scenario": "You're trying to grow your consulting business but only doing 2-3 outreach messages per day.",
+          "framework_applied": "Volume × Conversion Rate = Results",
+          "step_by_step": [
+            "Diagnose: At 3 outreach/day with 1% response rate = 0.03 conversations/day = ~1/month",
+            "10X the volume: 30 outreach/day = 300/month = 3 conversations/month",
+            "Further 10X: 100 outreach/day = 3000/month = 30 conversations/month",
+            "Improve quality while scaling: Test different messages, track what works",
+            "Compound: Better targeting + better message + more volume = exponential results",
+            "Systematize: Create templates, hire help, automate where possible"
+          ],
+          "outcome": "Going from 3 to 100 daily touches increases pipeline by 33x. Even with lower conversion, results compound dramatically."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Value Equation Calculator",
+          "context": "Use to design offers that feel like a steal at any price point",
+          "template": "DREAM OUTCOME (What do they really want?):\n___\n\nPERCEIVED LIKELIHOOD (Why will they believe it's possible?):\n- Social proof: ___\n- Guarantee: ___\n- Credentials: ___\n\nTIME DELAY (How fast will they see results?):\n- First win: ___\n- Full transformation: ___\n\nEFFORT & SACRIFICE (What do you do FOR them?):\n- Done-for-you elements: ___\n- Reduced friction: ___\n\nFINAL OFFER NAME: ___\nPRICE POINT: ___",
+          "example_filled": "DREAM OUTCOME: Land a $150k+ software job without a CS degree\n\nPERCEIVED LIKELIHOOD:\n- Social proof: 47 students hired at FAANG in last 6 months\n- Guarantee: Get hired or get your money back + I'll coach you free for 6 more months\n- Credentials: Former Google interviewer, hired 100+ engineers\n\nTIME DELAY:\n- First win: Mock interview confidence in week 1\n- Full transformation: Job offer within 90 days\n\nEFFORT & SACRIFICE:\n- Done-for-you: Custom study plan, resume rewrite, LinkedIn optimization\n- Reduced friction: Daily 15-min modules, not 4-hour lectures\n\nFINAL OFFER NAME: The $150K Engineer Accelerator\nPRICE POINT: $3,000 (2% of first year salary increase)"
+        },
+        {
+          "title": "100 Touches Daily System",
+          "context": "Framework for hitting massive outreach volume consistently",
+          "template": "MORNING BLOCK (50 touches):\n- Platform 1: ___ touches of type ___\n- Platform 2: ___ touches of type ___\n\nAFTERNOON BLOCK (30 touches):\n- Follow-ups: ___\n- Warm outreach: ___\n\nEVENING BLOCK (20 touches):\n- Engagement: ___\n- Community: ___\n\nTRACKING:\n- Total sent: ___\n- Responses: ___\n- Conversations: ___\n- Conversion rate: ___",
+          "example_filled": "MORNING BLOCK (50 touches):\n- LinkedIn: 30 connection requests + personalized notes\n- Email: 20 cold emails to target list\n\nAFTERNOON BLOCK (30 touches):\n- Follow-ups: 15 day-3 follow-ups, 10 day-7 follow-ups\n- Warm outreach: 5 referral requests from happy clients\n\nEVENING BLOCK (20 touches):\n- Engagement: 10 thoughtful comments on prospect posts\n- Community: 10 value-add comments in industry groups\n\nTRACKING: Spreadsheet updated daily, weekly review every Sunday"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "$100M Offers", "author": "Alex Hormozi", "key_takeaway": "How to create offers so good people feel stupid saying no"},
+          {"title": "$100M Leads", "author": "Alex Hormozi", "key_takeaway": "How to get strangers to want to buy your stuff"}
+        ],
+        "podcasts": [
+          {"title": "The Game Podcast", "key_takeaway": "Weekly tactical business advice from Hormozi's experience scaling businesses"}
+        ]
+      }
     },
     {
       "name": "Warren Buffett",
@@ -52,7 +314,40 @@
         "Read 500 pages a day",
         "Think in decades, not days",
         "Say no to protect your time for what matters"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Compounding Knowledge Over Decades",
+          "scenario": "You're early in your career and wondering whether to spend time learning or earning more now.",
+          "framework_applied": "Invest in yourself + Compound interest on knowledge",
+          "step_by_step": [
+            "Recognize: Knowledge compounds like money - each new piece connects to existing pieces",
+            "Commit to reading: Even 1 hour/day = 365 hours/year = 30+ books = top 1% of learners",
+            "Be patient: The first year feels slow, by year 5 you're making connections others can't see",
+            "Choose wisely: Focus on timeless knowledge (psychology, economics, history) over trends",
+            "Apply immediately: Read something, apply it that day, compound the learning",
+            "Build a latticework: Connect knowledge across disciplines like Munger's mental models"
+          ],
+          "outcome": "After 10 years of consistent learning, your decision-making quality is dramatically higher than peers who stopped learning after school"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Investment in Self Audit",
+          "context": "Evaluate whether you're prioritizing the highest-ROI investment: yourself",
+          "template": "SKILL INVESTMENTS THIS MONTH:\n- Hours spent learning: ___\n- Books/courses completed: ___\n- Skills actively developing: ___\n\nRELATIONSHIP INVESTMENTS:\n- Time with people better than me: ___\n- Mentors/advisors consulted: ___\n- Valuable connections made: ___\n\nHEALTH INVESTMENTS:\n- Protecting my ability to compound: ___\n\nBIGGEST GAP: ___\nNEXT ACTION: ___",
+          "example_filled": "SKILL INVESTMENTS: 20 hours learning, 2 books, developing sales skills\nRELATIONSHIP INVESTMENTS: 4 hours with mentor, joined mastermind group\nHEALTH INVESTMENTS: Consistent sleep, daily exercise\nBIGGEST GAP: Not enough time with people 10x ahead of me\nNEXT ACTION: Attend industry conference next month"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Essays of Warren Buffett", "author": "Warren Buffett", "key_takeaway": "Timeless principles on value, patience, and long-term thinking"},
+          {"title": "The Snowball", "author": "Alice Schroeder", "key_takeaway": "How Buffett built his wealth through decades of compounding"}
+        ],
+        "podcasts": [
+          {"title": "Berkshire Hathaway Annual Meeting", "key_takeaway": "Direct wisdom from Buffett and Munger on business and life"}
+        ]
+      }
     },
     {
       "name": "Charlie Munger",
@@ -69,7 +364,39 @@
         "Read across disciplines",
         "Invert problems to find solutions",
         "Avoid stupidity rather than seeking brilliance"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Inversion in Career Decisions",
+          "scenario": "You're trying to figure out how to succeed in your career.",
+          "framework_applied": "Inversion - instead of asking how to succeed, ask how to fail",
+          "step_by_step": [
+            "Invert the question: Instead of 'How do I succeed?' ask 'How would I guarantee failure?'",
+            "List failure paths: Be unreliable, stop learning, burn bridges, avoid hard conversations, blame others",
+            "Invert each one: Be relentlessly reliable, never stop learning, build relationships carefully, have hard conversations early, take ownership",
+            "Focus on avoiding failure: Often easier than achieving brilliance",
+            "Apply daily: Each morning, ask 'What would make today a disaster?' and avoid those things"
+          ],
+          "outcome": "By systematically avoiding ways to fail, you end up in the top percentile almost automatically"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Inversion Problem-Solving Template",
+          "context": "Use when stuck on a problem or decision",
+          "template": "GOAL: ___\n\nINVERTED QUESTION: How would I guarantee the opposite?\n\nFAILURE PATHS:\n1. ___\n2. ___\n3. ___\n4. ___\n5. ___\n\nINVERTED SOLUTIONS (avoid these failures):\n1. ___\n2. ___\n3. ___\n4. ___\n5. ___\n\nSIMPLE RULE TO FOLLOW: ___",
+          "example_filled": "GOAL: Build a successful consulting business\n\nINVERTED QUESTION: How would I guarantee my consulting business fails?\n\nFAILURE PATHS:\n1. Overpromise and underdeliver\n2. Take on any client with a pulse\n3. Never ask for referrals\n4. Compete on price\n5. Stop learning and become obsolete\n\nINVERTED SOLUTIONS:\n1. Underpromise, overdeliver every time\n2. Only work with ideal clients who value expertise\n3. Systematically ask every happy client for referrals\n4. Compete on value and specialization\n5. Dedicate 20% of time to learning and R&D\n\nSIMPLE RULE: Do the opposite of what would make me fail"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Poor Charlie's Almanack", "author": "Charlie Munger", "key_takeaway": "The complete collection of Munger's mental models and wisdom"},
+          {"title": "Seeking Wisdom", "author": "Peter Bevelin", "key_takeaway": "Organized compilation of Munger's thinking frameworks"}
+        ],
+        "podcasts": [
+          {"title": "Daily Journal Annual Meeting", "key_takeaway": "Annual Q&A where Munger shares unfiltered wisdom"}
+        ]
+      }
     },
     {
       "name": "MrBeast (Jimmy Donaldson)",
@@ -86,7 +413,40 @@
         "Study your industry obsessively",
         "Reinvest in your skills and assets",
         "Get 1% better every single day"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Obsessive Improvement in Your Craft",
+          "scenario": "You want to build media leverage but don't know where to start.",
+          "framework_applied": "Deliberate practice + Reinvestment + Long-term thinking",
+          "step_by_step": [
+            "Study obsessively: Watch/read 100 pieces of content in your niche, analyze what works",
+            "Start creating: Accept the first 50-100 will be bad - that's the cost of admission",
+            "Reinvest everything: Put revenue back into better equipment, skills, team",
+            "Find obsessed peers: Join or create a group of people as committed as you",
+            "Optimize for learning: Each piece of content is an experiment, track what works",
+            "Play long-term: Think in years, not weeks - compound improvement over time"
+          ],
+          "outcome": "After 2-3 years of consistent improvement, you'll be in the top 1% of your niche simply because most people quit"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Content Reinvestment Calculator",
+          "context": "Plan how to reinvest revenue back into growth",
+          "template": "CURRENT REVENUE: $___/month\n\nREINVESTMENT ALLOCATION:\n- Equipment/Tools (___%)): $___\n- Skills/Education (___%)): $___\n- Team/Delegation (___%)): $___\n- Promotion/Growth (___%)): $___\n- Savings/Buffer (___%)): $___\n\nCOMPOUND EFFECT:\n- If I reinvest ___% for ___ months...\n- Expected improvement: ___",
+          "example_filled": "CURRENT REVENUE: $5,000/month\n\nREINVESTMENT ALLOCATION:\n- Equipment/Tools (20%): $1,000 - better camera, lighting\n- Skills/Education (15%): $750 - courses, coaching\n- Team/Delegation (30%): $1,500 - editor, VA\n- Promotion/Growth (20%): $1,000 - ads, collaborations\n- Savings/Buffer (15%): $750 - runway and emergencies\n\nCOMPOUND EFFECT:\nReinvesting 85% for 12 months = 10x improvement in quality and reach"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "MrBeast's Creator Philosophy", "author": "Various Interviews", "key_takeaway": "Obsessive improvement and long-term thinking beat talent"}
+        ],
+        "podcasts": [
+          {"title": "MrBeast on Colin and Samir", "key_takeaway": "Deep dive into content strategy and business building"},
+          {"title": "MrBeast on Lex Fridman", "key_takeaway": "Philosophy behind becoming the biggest YouTuber"}
+        ]
+      }
     }
   ],
   "daily_insights": [

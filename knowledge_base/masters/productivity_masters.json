@@ -1,5 +1,160 @@
 {
   "module": "productivity",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You recognize the difference between busy and productive",
+      "capabilities": ["Identify time-wasting activities", "Understand the cost of distraction", "Set basic priorities"],
+      "milestone": "Track your time for one week and identify your biggest time wasters"
+    },
+    "2": {
+      "name": "Foundation",
+      "description": "Building basic productivity systems",
+      "capabilities": ["Maintain a simple task management system", "Plan your day the night before", "Batch similar tasks"],
+      "milestone": "Complete one week using a consistent daily planning routine"
+    },
+    "3": {
+      "name": "Habit Builder",
+      "description": "Developing consistent productivity habits",
+      "capabilities": ["Start days with intention", "Protect focused work time", "Use the 2-minute rule"],
+      "milestone": "Maintain a morning routine for 30 consecutive days"
+    },
+    "4": {
+      "name": "Focus Practitioner",
+      "description": "Reliably entering focused states for meaningful work",
+      "capabilities": ["Complete 90-minute deep work sessions", "Manage energy not just time", "Recognize and resist distraction triggers"],
+      "milestone": "Average 2+ hours of deep work daily for a month"
+    },
+    "5": {
+      "name": "Systems Thinker",
+      "description": "Building systems that make productivity automatic",
+      "capabilities": ["Design environments for focus", "Create recurring routines and rituals", "Automate repetitive decisions"],
+      "milestone": "Build a complete weekly system covering all responsibilities"
+    },
+    "6": {
+      "name": "Deep Worker",
+      "description": "Deep work is your default mode of operation",
+      "capabilities": ["4+ hours of deep work daily", "Rapid context switching recovery", "Protect creative energy"],
+      "milestone": "Consistently produce high-quality creative output"
+    },
+    "7": {
+      "name": "Multiplier",
+      "description": "Your systems multiply your personal output",
+      "capabilities": ["Leverage delegation effectively", "Build systems others can operate", "Focus only on highest-leverage activities"],
+      "milestone": "Your systems produce results without daily involvement"
+    },
+    "8": {
+      "name": "Master Operator",
+      "description": "Operating at peak effectiveness across all domains",
+      "capabilities": ["Integrate all life areas into coherent system", "Adapt systems to changing demands", "Teach productivity to others"],
+      "milestone": "Others seek you out to learn your productivity methods"
+    },
+    "9": {
+      "name": "Flow State Artist",
+      "description": "Entering and maintaining flow at will",
+      "capabilities": ["Design environments for flow", "Recover from interruptions instantly", "Sustain high performance indefinitely"],
+      "milestone": "Flow state is your default working mode"
+    },
+    "10": {
+      "name": "Productivity Master",
+      "description": "Effortless, sustained high performance is your natural state",
+      "capabilities": ["Inspire peak performance in others", "Design productivity systems at scale", "Balance extreme productivity with recovery"],
+      "milestone": "Your productivity philosophy influences others' systems"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "Time Audit Challenge",
+        "difficulty": 1,
+        "time_minutes": 15,
+        "instructions": "For one day, log every activity in 15-minute blocks. At the end, categorize each block: Deep Work, Shallow Work, Distraction, Recovery. Calculate your ratios.",
+        "success_criteria": "Complete time log with category analysis and one insight about where time actually goes"
+      },
+      {
+        "title": "MIT (Most Important Task) Practice",
+        "difficulty": 1,
+        "time_minutes": 10,
+        "instructions": "Before bed tonight, write down your ONE most important task for tomorrow. Do it first thing before checking email or messages. Repeat for 5 days.",
+        "success_criteria": "5 consecutive days of completing MIT before reactive work"
+      },
+      {
+        "title": "Distraction Trigger Log",
+        "difficulty": 1,
+        "time_minutes": 20,
+        "instructions": "Each time you get distracted today, immediately write down: What you were doing, what triggered the distraction, and what you distracted yourself with. Review patterns at end of day.",
+        "success_criteria": "Logged 5+ distraction events with triggers identified"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Deep Work Sprint",
+        "difficulty": 2,
+        "time_minutes": 90,
+        "instructions": "Block 90 minutes with zero interruptions: phone in another room, notifications off, door closed. Work on one cognitively demanding task. Rate your focus 1-10 afterward.",
+        "success_criteria": "Complete 90-minute session with focus rating 7+ and meaningful progress on task"
+      },
+      {
+        "title": "Shutdown Ritual Creation",
+        "difficulty": 2,
+        "time_minutes": 30,
+        "instructions": "Design and implement a shutdown ritual: capture incomplete tasks, review tomorrow's calendar, set MIT, explicitly say 'shutdown complete.' Practice for one week.",
+        "success_criteria": "Written shutdown ritual checklist used for 5+ consecutive workdays"
+      },
+      {
+        "title": "Habit Stacking System",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Identify 3 habits you want to build. Stack each onto an existing habit: 'After I [current habit], I will [new habit].' Write the formulas and practice for a week.",
+        "success_criteria": "3 habit stacks designed and executed for 7 consecutive days"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Time Block Your Entire Week",
+        "difficulty": 3,
+        "time_minutes": 60,
+        "instructions": "On Sunday, time-block your entire week: every hour assigned to a specific activity type. Include deep work blocks, shallow work batches, meetings, and recovery. Follow it and note deviations.",
+        "success_criteria": "Complete week time-blocked in advance, followed with 80%+ adherence"
+      },
+      {
+        "title": "Environment Design Audit",
+        "difficulty": 3,
+        "time_minutes": 120,
+        "instructions": "Evaluate your workspace: What triggers distraction? What's missing that would enable focus? Redesign the space for optimal deep work. Remove friction from good behaviors, add friction to bad ones.",
+        "success_criteria": "Physical workspace redesigned with before/after photos and rationale"
+      },
+      {
+        "title": "Build Your Personal Operating System",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Document your complete productivity system: morning routine, daily planning, deep work protocol, communication batching, weekly review, shutdown ritual. Create a manual you could hand to someone else.",
+        "success_criteria": "Written Personal Operating System document covering all productivity components"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "money",
+      "insight": "Your income is capped by your ability to produce high-value output - deep work directly increases earning capacity",
+      "combined_exercise": "Calculate your effective hourly rate during deep work vs shallow work. Use this to prioritize focus time."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Productivity is as much about psychology as technique - inner resistance often sabotages outer systems",
+      "combined_exercise": "When you notice yourself avoiding deep work, journal: what emotion am I avoiding? Then do 25 minutes anyway."
+    },
+    {
+      "connected_module": "health",
+      "insight": "Energy management is more important than time management - you can't focus your way out of exhaustion",
+      "combined_exercise": "Track your energy levels hourly for a day. Schedule your most important work for your peak energy windows."
+    },
+    {
+      "connected_module": "lifestyle",
+      "insight": "Environment shapes behavior more than willpower - design your space for focus rather than relying on discipline",
+      "combined_exercise": "Identify 3 environmental changes that would make distraction harder and deep work easier. Implement today."
+    }
+  ],
   "masters": [
     {
       "name": "Cal Newport",
@@ -16,7 +171,47 @@
         "Schedule 3-4 hours of uninterrupted deep work",
         "Quit social media or severely limit it",
         "Embrace boredom—don't fill every moment"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "The Deep Work Protocol",
+          "scenario": "You have a demanding project but keep getting fragmented by messages, emails, and meetings.",
+          "framework_applied": "Deep Work Philosophy + Time Blocking",
+          "step_by_step": [
+            "Choose your deep work philosophy: rhythmic (same time daily), bimodal (dedicated deep days), journalistic (grab time when available)",
+            "Block your deep work time: Start with 90-minute sessions, build to 4 hours",
+            "Create a shutdown ritual: At session end, capture loose threads and officially close",
+            "Batch shallow work: Designate specific times for email, messages, admin",
+            "Protect ruthlessly: Treat deep work blocks as unmovable appointments",
+            "Track and celebrate: Log deep work hours weekly, aim for consistent increases"
+          ],
+          "outcome": "You accomplish in 4 focused hours what previously took 8+ scattered hours. Quality of work increases dramatically."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Deep Work Shutdown Ritual Checklist",
+          "context": "Use at the end of each workday to close loops and release work from your mind",
+          "template": "[ ] Check email one final time - respond or defer\n[ ] Review task list - capture any new items\n[ ] Check calendar for tomorrow - prep needed?\n[ ] Identify tomorrow's #1 MIT\n[ ] Review today's wins (even small ones)\n[ ] Clear physical workspace\n[ ] SAY OUT LOUD: 'Shutdown complete.'\n\nNOTE: Once shutdown is complete, NO WORK THOUGHTS.\nIf a thought intrudes, tell yourself: 'I'll deal with that tomorrow.'\nThe ritual proves to your brain that loose ends are captured.",
+          "example_filled": "[x] Email checked - 3 replied, 2 deferred to morning\n[x] Task list updated - added 2 items from today's meetings\n[x] Calendar reviewed - 9am meeting needs prep, doc drafted\n[x] Tomorrow's MIT: Finish client proposal\n[x] Today's wins: Completed research, had great call\n[x] Desk cleared\n[x] Said 'Shutdown complete'\n\n--Evening: Thought about proposal popped up, reminded myself it's captured, let it go--"
+        },
+        {
+          "title": "Time Blocking Template",
+          "context": "Plan your day in advance by assigning every hour to a specific activity",
+          "template": "DATE: ___\n\nMORNING BLOCK (___am - ___am):\n[_____] Deep Work: ___\n\nMID-MORNING (___am - ___pm):\n[_____] ___\n\nLUNCH + RECOVERY:\n[_____] ___\n\nAFTERNOON BLOCK 1 (___pm - ___pm):\n[_____] ___\n\nAFTERNOON BLOCK 2 (___pm - ___pm):\n[_____] Shallow work batch: email, messages, admin\n\nSHUTDOWN (___pm):\n[ ] Complete shutdown ritual\n\nRULES:\n- If a block goes over, adjust remaining blocks\n- If something urgent appears, swap blocks, don't abandon\n- Protect deep work blocks at all costs",
+          "example_filled": "DATE: Monday Feb 3\n\nMORNING BLOCK (6:00am - 9:00am):\n[x] Deep Work: Write product specification\n\nMID-MORNING (9:00am - 11:00am):\n[x] Team standup + collaborative work\n\nLUNCH + RECOVERY:\n[x] Walk, no phone, actual rest\n\nAFTERNOON BLOCK 1 (12:30pm - 2:30pm):\n[x] Deep Work: Code review and architecture\n\nAFTERNOON BLOCK 2 (2:30pm - 4:00pm):\n[x] Shallow batch: 45 emails processed, slack caught up\n\nSHUTDOWN (4:00pm):\n[x] Ritual complete, evening protected"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Deep Work", "author": "Cal Newport", "key_takeaway": "In a distracted world, the ability to focus deeply is both rare and valuable"},
+          {"title": "Digital Minimalism", "author": "Cal Newport", "key_takeaway": "Use technology intentionally, not reactively"},
+          {"title": "A World Without Email", "author": "Cal Newport", "key_takeaway": "Rethink workflows to reduce the constant communication drain"}
+        ],
+        "podcasts": [
+          {"title": "Deep Questions Podcast", "key_takeaway": "Weekly advice on deep work, digital minimalism, and the deep life"}
+        ]
+      }
     },
     {
       "name": "James Clear",
@@ -33,7 +228,46 @@
         "Stack new habits onto existing ones",
         "Make good habits obvious and easy",
         "Track habits visually—never break the chain"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Building a Habit Stack",
+          "scenario": "You want to build multiple new habits but they keep falling apart after a few days.",
+          "framework_applied": "Habit Stacking + The Four Laws of Behavior Change",
+          "step_by_step": [
+            "Identify a strong existing habit as an anchor (e.g., morning coffee)",
+            "Create a habit stack formula: 'After I [CURRENT HABIT], I will [NEW HABIT]'",
+            "Make it obvious: Put cues in your environment",
+            "Make it attractive: Pair with something you enjoy",
+            "Make it easy: Start with 2-minute version",
+            "Make it satisfying: Track with visual marker (X on calendar)",
+            "Never miss twice: One skip is an accident, two is a new habit"
+          ],
+          "outcome": "New habits stick because they're anchored to existing routines and optimized for your brain's habit loops"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Habit Stacking Formula Template",
+          "context": "Use to attach new habits to existing routines for automatic execution",
+          "template": "ANCHOR HABIT (already automatic):\n___\n\nNEW HABIT TO BUILD:\n___\n\nHABIT STACK FORMULA:\n'After I [ANCHOR], I will [NEW HABIT].'\n\nMAKE IT OBVIOUS:\n- Cue placement: ___\n\nMAKE IT ATTRACTIVE:\n- Temptation bundle: ___\n\nMAKE IT EASY:\n- 2-minute version: ___\n\nMAKE IT SATISFYING:\n- Immediate reward: ___\n- Tracking method: ___",
+          "example_filled": "ANCHOR HABIT: Morning coffee\n\nNEW HABIT: Journaling\n\nFORMULA: 'After I pour my morning coffee, I will write one sentence in my journal.'\n\nMAKE IT OBVIOUS:\n- Journal placed next to coffee maker\n\nMAKE IT ATTRACTIVE:\n- I only drink coffee while journaling (temptation bundle)\n\nMAKE IT EASY:\n- 2-minute version: Just one sentence minimum\n\nMAKE IT SATISFYING:\n- Immediate: The coffee I love + completion feeling\n- Tracking: X on wall calendar above desk"
+        },
+        {
+          "title": "Identity-Based Habit Design",
+          "context": "Design habits that reinforce who you want to become",
+          "template": "WHO DO I WANT TO BECOME?\nI am a person who ___\n\nWHAT WOULD THAT PERSON DO?\nA person like that would ___\n\nSMALLEST ACTION THAT PROVES THIS IDENTITY:\n___\n\nDAILY HABIT:\nEvery day I will ___ because I am a person who ___\n\nEVIDENCE COLLECTION:\nEach time I do this, I prove to myself that ___",
+          "example_filled": "WHO DO I WANT TO BECOME?\nI am a person who is healthy and fit.\n\nWHAT WOULD THAT PERSON DO?\nA person like that would move their body daily.\n\nSMALLEST ACTION:\nPut on workout clothes every morning.\n\nDAILY HABIT:\nEvery day I will put on workout clothes after brushing teeth because I am a person who prioritizes health.\n\nEVIDENCE COLLECTION:\nEach time I do this, I prove to myself that I'm the kind of person who shows up for their health."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Atomic Habits", "author": "James Clear", "key_takeaway": "Small habits compound into remarkable results over time"}
+        ],
+        "podcasts": [
+          {"title": "James Clear on Tim Ferriss", "key_takeaway": "Deep dive into the systems behind building lasting habits"}
+        ]
+      }
     },
     {
       "name": "Tim Ferriss",
@@ -50,7 +284,41 @@
         "Identify the 20% of activities producing 80% of results",
         "Batch similar tasks together",
         "Do the most important task before 11am"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "The 80/20 Work Audit",
+          "scenario": "You're working 50+ hours but output doesn't match effort.",
+          "framework_applied": "Pareto Analysis + Elimination",
+          "step_by_step": [
+            "List all your activities from the past week with hours spent",
+            "Rate each: Which produced 80% of your results/income?",
+            "Identify the vital few (usually 2-3 activities)",
+            "Ask: What if I could only do these 2-3 things?",
+            "Eliminate: What activities produced <20% of value?",
+            "Automate: What can be systematized?",
+            "Delegate: What can someone else do for you?"
+          ],
+          "outcome": "Cut work hours by 40% while increasing output by eliminating low-value activities"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "80/20 Analysis Template",
+          "context": "Use weekly to identify your highest-leverage activities",
+          "template": "ACTIVITIES THIS WEEK:\n1. ___ (___hrs) - Result: ___\n2. ___ (___hrs) - Result: ___\n3. ___ (___hrs) - Result: ___\n[Continue for all activities]\n\nTOP 20% (Vital Few):\n___\n\nBOTTOM 80% (Trivial Many):\n___\n\nELIMINATE:\n___\n\nAUTOMATE:\n___\n\nDELEGATE:\n___\n\nNEXT WEEK: Spend 80% of time on ___",
+          "example_filled": "ACTIVITIES THIS WEEK:\n1. Client calls (8hrs) - Result: $15k closed\n2. Email (12hrs) - Result: Mostly reactive\n3. Content creation (4hrs) - Result: 2 leads\n4. Admin (6hrs) - Result: Required but low value\n5. Meetings (10hrs) - Result: 1 productive, 4 waste\n\nTOP 20% (Vital Few):\n- Client calls, content creation\n\nBOTTOM 80%:\n- Most email, admin, 4/5 meetings\n\nELIMINATE:\n- 4 unproductive meetings\n\nAUTOMATE:\n- Email templates, scheduling\n\nDELEGATE:\n- Admin to VA\n\nNEXT WEEK: 80% time on calls + content"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The 4-Hour Workweek", "author": "Tim Ferriss", "key_takeaway": "Escape the 9-5, live anywhere, join the new rich through 80/20 thinking"},
+          {"title": "Tools of Titans", "author": "Tim Ferriss", "key_takeaway": "Distilled wisdom from 200+ world-class performers"}
+        ],
+        "podcasts": [
+          {"title": "The Tim Ferriss Show", "key_takeaway": "Deep-dive interviews with world-class performers on their routines and habits"}
+        ]
+      }
     },
     {
       "name": "David Allen",
@@ -67,7 +335,40 @@
         "Capture everything into a trusted system",
         "Process inbox to zero daily",
         "Weekly review: get clear, get current, get creative"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Building a Trusted Capture System",
+          "scenario": "You have ideas and tasks swirling in your head, causing stress and dropped balls.",
+          "framework_applied": "GTD Capture + Process + Organize",
+          "step_by_step": [
+            "Choose your capture tools: physical notepad, phone app, or both",
+            "Capture everything: Every thought, idea, task, reminder - get it out of your head",
+            "Process daily: For each item, ask 'What is this?' and 'What's the next action?'",
+            "Two-minute rule: If it takes less than 2 minutes, do it now",
+            "Organize the rest: Calendar (time-specific), Next Actions (context-based), Projects (multi-step outcomes)",
+            "Weekly review: Every week, process all inboxes, review all projects, get clear",
+            "Trust the system: Once it's captured, stop thinking about it"
+          ],
+          "outcome": "Your mind is clear because everything is in a system you trust. Stress decreases, focus increases."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "GTD Weekly Review Checklist",
+          "context": "Use every week to maintain your productivity system",
+          "template": "GET CLEAR:\n[ ] Collect loose papers and materials\n[ ] Empty your head - capture any open loops\n[ ] Process all inboxes to zero\n\nGET CURRENT:\n[ ] Review next actions lists - mark complete/delete\n[ ] Review calendar (past 2 weeks) - anything to capture?\n[ ] Review calendar (next 2 weeks) - prep needed?\n[ ] Review projects list - any stuck?\n[ ] Review Waiting For list - follow up needed?\n[ ] Review Someday/Maybe list - activate anything?\n\nGET CREATIVE:\n[ ] Review goals and areas of focus\n[ ] Is there anything bold I should add?\n[ ] What would make next week a 10/10?\n\nCOMPLETION: All inboxes at zero, all lists current, feeling clear.",
+          "example_filled": "[x] Collected papers from desk and bag\n[x] Brain dump: 7 items captured\n[x] Email at zero, notes processed\n[x] Next actions reviewed - 5 complete, 3 deleted\n[x] Past calendar reviewed - 2 follow-ups captured\n[x] Upcoming: Big presentation Thursday - prep added\n[x] Projects: Website launch stuck - scheduled focus time\n[x] Waiting: 3 items need follow-up Monday\n[x] Someday: Activated learning Spanish - scheduled first session\n[x] Goals reviewed - on track\n[x] Bold add: Reach out to dream client\n[x] Perfect week: Ship the feature + deep work daily\n\nFEELING: Clear, calm, ready for the week."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Getting Things Done", "author": "David Allen", "key_takeaway": "The art of stress-free productivity through complete capture and trusted systems"}
+        ],
+        "podcasts": [
+          {"title": "GTD Podcast", "key_takeaway": "Ongoing advice for implementing and maintaining GTD"}
+        ]
+      }
     },
     {
       "name": "Nir Eyal",
@@ -84,7 +385,40 @@
         "Timebox your entire day",
         "Identify internal triggers driving distraction",
         "Create barriers to distraction tech"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Becoming Indistractable",
+          "scenario": "You keep getting pulled into your phone, social media, and endless browsing.",
+          "framework_applied": "Internal Triggers + External Triggers + Pacts",
+          "step_by_step": [
+            "Master internal triggers: When you feel urge to distract, ask 'What am I trying to avoid?'",
+            "Name the discomfort: Usually boredom, anxiety, or uncertainty",
+            "Surf the urge: Instead of acting on it, observe it for 10 minutes - it usually passes",
+            "Hack external triggers: Remove apps, turn off notifications, use website blockers",
+            "Make pacts: Effort pact (add friction), price pact (penalty for distraction), identity pact ('I don't use my phone during meals')",
+            "Schedule traction: If it's not on your calendar, it's not protected"
+          ],
+          "outcome": "Distraction becomes a choice, not an automatic response. You regain control of your attention."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Distraction Trigger Journal",
+          "context": "Use to understand and master what drives your distraction",
+          "template": "WHEN: (time of distraction)\nWHAT I WAS DOING:\nINTERNAL TRIGGER: (what discomfort was I avoiding?)\n- [ ] Boredom\n- [ ] Anxiety\n- [ ] Uncertainty\n- [ ] Fatigue\n- [ ] Other: ___\n\nEXTERNAL TRIGGER: (what pulled my attention?)\n- [ ] Notification\n- [ ] Person\n- [ ] Environmental cue\n- [ ] Other: ___\n\nWHAT I DISTRACTED WITH:\n\nWHAT I'LL DO DIFFERENTLY:\n___",
+          "example_filled": "WHEN: 2:30pm\nWHAT I WAS DOING: Working on difficult report\nINTERNAL TRIGGER: [x] Uncertainty - wasn't sure how to proceed\nEXTERNAL TRIGGER: [x] Phone on desk\nWHAT I DISTRACTED WITH: Twitter for 25 minutes\nWHAT I'LL DO DIFFERENTLY: \n1. Phone in drawer during deep work\n2. When uncertain, write down 'What specifically am I stuck on?' before allowing break"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Indistractable", "author": "Nir Eyal", "key_takeaway": "How to control your attention and choose your life"},
+          {"title": "Hooked", "author": "Nir Eyal", "key_takeaway": "Understanding how products capture attention (to defend against it)"}
+        ],
+        "podcasts": [
+          {"title": "Nir and Far", "key_takeaway": "Ongoing research and advice on behavioral design and attention"}
+        ]
+      }
     }
   ],
   "daily_insights": [

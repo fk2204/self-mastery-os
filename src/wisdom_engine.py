@@ -278,3 +278,114 @@ class WisdomEngine:
                     "expertise": master.get("expertise", "")
                 })
         return all_masters
+
+    def get_worked_example(self, module: str = None) -> Optional[Dict]:
+        """Get a random worked example from a module or focus modules."""
+        if module:
+            modules_to_check = [module]
+        else:
+            modules_to_check = self.profile.get("focus_modules", list(self.masters_data.keys()))
+
+        all_examples = []
+        for mod in modules_to_check:
+            if mod in self.masters_data:
+                for master in self.masters_data[mod].get("masters", []):
+                    examples = master.get("worked_examples", [])
+                    for ex in examples:
+                        all_examples.append({
+                            **ex,
+                            "master": master["name"],
+                            "module": mod
+                        })
+
+        return random.choice(all_examples) if all_examples else None
+
+    def get_script_template(self, module: str = None) -> Optional[Dict]:
+        """Get a random script/template from a module or focus modules."""
+        if module:
+            modules_to_check = [module]
+        else:
+            modules_to_check = self.profile.get("focus_modules", list(self.masters_data.keys()))
+
+        all_templates = []
+        for mod in modules_to_check:
+            if mod in self.masters_data:
+                for master in self.masters_data[mod].get("masters", []):
+                    templates = master.get("scripts_templates", [])
+                    for tmpl in templates:
+                        all_templates.append({
+                            **tmpl,
+                            "master": master["name"],
+                            "module": mod
+                        })
+
+        return random.choice(all_templates) if all_templates else None
+
+    def get_level_definition(self, module: str, level: int) -> Optional[Dict]:
+        """Get level definition for a module at a specific level."""
+        if module not in self.masters_data:
+            return None
+
+        level_defs = self.masters_data[module].get("level_definitions", {})
+        return level_defs.get(str(level), None)
+
+    def get_progressive_exercise(self, module: str, difficulty: str = "beginner") -> Optional[Dict]:
+        """Get a progressive exercise from a module at specified difficulty."""
+        if module not in self.masters_data:
+            return None
+
+        exercises = self.masters_data[module].get("progressive_exercises", {})
+        difficulty_exercises = exercises.get(difficulty, [])
+
+        if not difficulty_exercises:
+            return None
+
+        exercise = random.choice(difficulty_exercises)
+        return {
+            **exercise,
+            "module": module,
+            "difficulty_level": difficulty
+        }
+
+    def get_cross_module_connection(self, module: str) -> Optional[Dict]:
+        """Get a cross-module connection insight for a module."""
+        if module not in self.masters_data:
+            return None
+
+        connections = self.masters_data[module].get("cross_module_connections", [])
+        return random.choice(connections) if connections else None
+
+    def get_master_resources(self, module: str, master_name: str) -> Optional[Dict]:
+        """Get resources (books, podcasts) for a specific master."""
+        if module not in self.masters_data:
+            return None
+
+        masters = self.masters_data[module].get("masters", [])
+        for master in masters:
+            if master["name"].lower() == master_name.lower():
+                return master.get("resources", None)
+
+        return None
+
+    def print_worked_example(self, example: Dict):
+        """Print a formatted worked example."""
+        print(f"\n{Colors.BOLD}{Colors.CYAN}[WORKED EXAMPLE]{Colors.ENDC}")
+        print(f"{Colors.YELLOW}{example['title']}{Colors.ENDC}")
+        print(f"From: {example['master']} ({example['module'].title()})")
+        print(f"\n{Colors.DIM}Scenario:{Colors.ENDC} {example['scenario']}")
+        print(f"\n{Colors.GREEN}Framework:{Colors.ENDC} {example['framework_applied']}")
+        print(f"\n{Colors.BOLD}Steps:{Colors.ENDC}")
+        for i, step in enumerate(example.get('step_by_step', []), 1):
+            print(f"  {i}. {step}")
+        print(f"\n{Colors.GREEN}Outcome:{Colors.ENDC} {example.get('outcome', 'N/A')}")
+
+    def print_script_template(self, template: Dict):
+        """Print a formatted script/template."""
+        print(f"\n{Colors.BOLD}{Colors.CYAN}[SCRIPT/TEMPLATE]{Colors.ENDC}")
+        print(f"{Colors.YELLOW}{template['title']}{Colors.ENDC}")
+        print(f"From: {template['master']} ({template['module'].title()})")
+        print(f"\n{Colors.DIM}Context:{Colors.ENDC} {template['context']}")
+        print(f"\n{Colors.BOLD}Template:{Colors.ENDC}")
+        print(f"{Colors.CYAN}{template['template']}{Colors.ENDC}")
+        if template.get('example_filled'):
+            print(f"\n{Colors.GREEN}Example:{Colors.ENDC} {template['example_filled']}")

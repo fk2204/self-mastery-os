@@ -1,5 +1,160 @@
 {
   "module": "business",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You're exploring entrepreneurship and business fundamentals",
+      "capabilities": ["Identify problems worth solving", "Understand basic business models", "Recognize that ideas are cheap, execution is everything"],
+      "milestone": "Interview 5 potential customers about their problems"
+    },
+    "2": {
+      "name": "Explorer",
+      "description": "Actively exploring business opportunities",
+      "capabilities": ["Validate ideas before building", "Calculate basic unit economics", "Understand customer segments"],
+      "milestone": "Get someone to pay you for something (even $1)"
+    },
+    "3": {
+      "name": "Builder",
+      "description": "Building your first real business or product",
+      "capabilities": ["Create minimum viable products", "Get early customer feedback", "Iterate based on reality"],
+      "milestone": "Launch a product and get 10 paying customers"
+    },
+    "4": {
+      "name": "Revenue Generator",
+      "description": "Consistently generating revenue from your business",
+      "capabilities": ["Repeatable sales process", "Basic marketing and acquisition", "Simple operations that scale"],
+      "milestone": "Reach $1k/month recurring revenue"
+    },
+    "5": {
+      "name": "Systems Builder",
+      "description": "Building systems that reduce your direct involvement",
+      "capabilities": ["Document and delegate processes", "Hire first team members or contractors", "Focus on highest-leverage activities"],
+      "milestone": "Business runs for a week without you"
+    },
+    "6": {
+      "name": "Scale Artist",
+      "description": "Scaling what works, eliminating what doesn't",
+      "capabilities": ["Optimize customer acquisition", "Build predictable growth engine", "Manage team effectively"],
+      "milestone": "Reach $10k/month with consistent growth"
+    },
+    "7": {
+      "name": "Strategic Thinker",
+      "description": "Thinking strategically about moats and competitive advantage",
+      "capabilities": ["Build defensible advantages", "Make strategic partnerships", "Think long-term about positioning"],
+      "milestone": "Build a clear competitive moat"
+    },
+    "8": {
+      "name": "Business Leader",
+      "description": "Leading a real company with team and culture",
+      "capabilities": ["Build and lead teams", "Create company culture", "Attract and retain talent"],
+      "milestone": "Team operates effectively without daily oversight"
+    },
+    "9": {
+      "name": "Visionary",
+      "description": "Creating something that changes your industry",
+      "capabilities": ["Set long-term vision others rally behind", "Make bold bets that pay off", "Build lasting institutions"],
+      "milestone": "Your business meaningfully impacts your industry"
+    },
+    "10": {
+      "name": "Business Master",
+      "description": "Building legendary businesses or teaching others to do so",
+      "capabilities": ["Build multiple successful businesses", "Advise and invest in others", "Leave lasting business legacy"],
+      "milestone": "Your business thinking influences how others build"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "Problem Interview Sprint",
+        "difficulty": 1,
+        "time_minutes": 60,
+        "instructions": "Talk to 5 people in a target market. Ask: What's your biggest challenge with [topic]? What have you tried? How much does this cost you? Take notes. Don't pitch - just learn.",
+        "success_criteria": "5 conversations documented with patterns identified"
+      },
+      {
+        "title": "Idea Validation Scorecard",
+        "difficulty": 1,
+        "time_minutes": 30,
+        "instructions": "Take your business idea. Score it on: Market size (1-10), Personal interest (1-10), Problem severity (1-10), Ability to reach customers (1-10), Competitive landscape (1-10). Multiply scores.",
+        "success_criteria": "Completed scorecard with honest assessment"
+      },
+      {
+        "title": "First Principles Problem Analysis",
+        "difficulty": 1,
+        "time_minutes": 45,
+        "instructions": "Pick a problem you want to solve. List every assumption about how it's currently solved. For each assumption, ask 'Why?' until you hit fundamental truths. Look for hidden opportunities.",
+        "success_criteria": "Written analysis with at least one non-obvious insight"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Pre-Sell Your Offer",
+        "difficulty": 2,
+        "time_minutes": 120,
+        "instructions": "Before building anything, create a landing page or offer document. Try to get 3 people to commit (deposit, letter of intent, or strong verbal). If you can't sell it, don't build it.",
+        "success_criteria": "Landing page live with at least 1 signup or commitment"
+      },
+      {
+        "title": "Customer Discovery Interview Deep Dive",
+        "difficulty": 2,
+        "time_minutes": 90,
+        "instructions": "Conduct 3 in-depth customer interviews (30 min each). Use the Mom Test principles: no pitching, ask about past behavior not future intentions, understand their workflow.",
+        "success_criteria": "3 detailed interview transcripts with actionable insights"
+      },
+      {
+        "title": "Unit Economics Calculator",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Calculate: Customer Acquisition Cost (CAC), Lifetime Value (LTV), Payback Period, Gross Margin. Is LTV > 3x CAC? Can you afford the payback period?",
+        "success_criteria": "Complete unit economics with decision about viability"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Build Your Competitive Moat",
+        "difficulty": 3,
+        "time_minutes": 120,
+        "instructions": "Identify which moats you could build: network effects, switching costs, brand, scale, technology, data, regulatory. Pick 2 to focus on. Create a plan to strengthen them.",
+        "success_criteria": "Moat strategy document with 6-month action plan"
+      },
+      {
+        "title": "Contrarian Truth Discovery",
+        "difficulty": 3,
+        "time_minutes": 60,
+        "instructions": "Ask yourself Peter Thiel's question: 'What important truth do very few people agree with you on?' As it relates to your industry, what do you believe that would be controversial?",
+        "success_criteria": "Written contrarian thesis with supporting logic"
+      },
+      {
+        "title": "Business Model Canvas",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Complete a full business model canvas: Customer Segments, Value Propositions, Channels, Customer Relationships, Revenue Streams, Key Resources, Key Activities, Key Partners, Cost Structure.",
+        "success_criteria": "Completed canvas with all 9 sections filled and validated"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "sales",
+      "insight": "A business without sales is a hobby. Your ability to sell determines your ceiling.",
+      "combined_exercise": "This week, personally sell to 10 potential customers. Learn what objections arise and how to handle them."
+    },
+    {
+      "connected_module": "money",
+      "insight": "Business is the fastest path to wealth - it's the vehicle, personal finance is just the maintenance.",
+      "combined_exercise": "Calculate: If this business works, what's your potential equity value in 5 years? Use that to motivate through hard times."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Entrepreneurship is a mental game - resilience matters more than brilliance.",
+      "combined_exercise": "List 10 things that could go wrong. For each, write 'If X happens, I will Y.' Pre-decide your responses."
+    },
+    {
+      "connected_module": "productivity",
+      "insight": "As a founder, your time is your most constrained resource - ruthless prioritization is survival.",
+      "combined_exercise": "List everything you do in your business. Circle the 3 things only you can do. Delegate or eliminate the rest."
+    }
+  ],
   "masters": [
     {
       "name": "Elon Musk",
@@ -16,7 +171,41 @@
         "Question every assumption",
         "Work on the hardest problem first",
         "Move fast and iterate constantly"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "First Principles for Cost Reduction",
+          "scenario": "Your product costs too much to be competitive. The industry says 'that's just what things cost.'",
+          "framework_applied": "First Principles Thinking",
+          "step_by_step": [
+            "List every component of your cost",
+            "For each, ask: Why does this cost this much?",
+            "Break down to raw materials/fundamentals",
+            "What would this cost if we rebuilt from scratch?",
+            "Identify where convention adds unnecessary cost",
+            "Rebuild the solution from fundamentals",
+            "Achieve 10x cost reduction by ignoring 'how it's always been done'"
+          ],
+          "outcome": "SpaceX reduced rocket launch costs by 10x by manufacturing in-house what others outsourced, simply by reasoning from first principles."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "First Principles Problem Analysis",
+          "context": "Use when industry convention says something is impossible or too expensive",
+          "template": "PROBLEM: ___\n\nCONVENTIONAL WISDOM SAYS: ___\n\nBREAK DOWN TO FUNDAMENTALS:\n1. What are the basic elements required?\n   - ___\n   - ___\n   - ___\n\n2. What do these fundamentally cost?\n   - ___\n   - ___\n   - ___\n\n3. Where does convention add unnecessary cost/complexity?\n   - ___\n   - ___\n\n4. If we rebuilt from scratch, what would it look like?\n   - ___\n\nNEW SOLUTION: ___",
+          "example_filled": "PROBLEM: Batteries for EVs cost too much\n\nCONVENTIONAL WISDOM: Batteries cost $600/kWh, that's just the market\n\nBREAK DOWN TO FUNDAMENTALS:\n1. Basic elements: Lithium, cobalt, nickel, aluminum, steel, polymers\n2. Raw material cost: ~$80/kWh\n3. Convention adds:\n   - Multiple middlemen marking up\n   - Inefficient cell design\n   - Over-engineering for old use cases\n\n4. From scratch:\n   - Vertically integrate supply chain\n   - Redesign cell format for EV-specific needs\n   - Scale manufacturing radically\n\nNEW SOLUTION: Target $100/kWh through vertical integration and new cell design"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Elon Musk (Biography)", "author": "Ashlee Vance", "key_takeaway": "The mindset and methods behind building multiple revolutionary companies"},
+          {"title": "Elon Musk (Biography)", "author": "Walter Isaacson", "key_takeaway": "Updated look at Musk's approach to innovation and management"}
+        ],
+        "podcasts": [
+          {"title": "Elon Musk on Lex Fridman", "key_takeaway": "Deep dive into first principles thinking and company building"}
+        ]
+      }
     },
     {
       "name": "Jeff Bezos",
@@ -33,7 +222,41 @@
         "Start with the customer and work backwards",
         "Make decisions with 70% of information needed",
         "Think in 5-7 year time horizons"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Working Backwards from the Customer",
+          "scenario": "You have a product idea but aren't sure if customers actually want it.",
+          "framework_applied": "Working Backwards + PR/FAQ Method",
+          "step_by_step": [
+            "Write the press release first: What would the announcement say?",
+            "Write the FAQ: What questions would customers and internal teams ask?",
+            "Define the customer experience: Walk through every touchpoint",
+            "If you can't write a compelling press release, the idea isn't clear enough",
+            "Use the FAQ to identify risks and unknowns",
+            "Build only after the narrative is crisp",
+            "This prevents building things nobody wants"
+          ],
+          "outcome": "Amazon uses this for every new product. It forces clarity on customer value before engineering begins."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "PR/FAQ Template (Working Backwards)",
+          "context": "Use before building any new product or feature",
+          "template": "[INTERNAL PRESS RELEASE]\n\nHeadline: ___\nSubhead: One sentence describing the customer and benefit\n\nProblem: What problem does this solve? (2-3 sentences)\n\nSolution: How does the product solve it? (2-3 sentences)\n\nQuote from leader: Why we're excited about this\n\nHow it works: Simple explanation a customer would understand\n\nCustomer quote: What would a happy customer say?\n\nCall to action: How to get started\n\n[FAQ - EXTERNAL]\n1. What is this?\n2. Why should I care?\n3. How does it work?\n4. What does it cost?\n5. How is it different from alternatives?\n\n[FAQ - INTERNAL]\n1. Why will this succeed?\n2. What are the biggest risks?\n3. What's the hardest part to build?\n4. What resources do we need?\n5. How will we measure success?",
+          "example_filled": "HEADLINE: SmartReceipt Eliminates Expense Report Hassle\n\nSUBHEAD: Business travelers can now snap a photo of receipts and have expense reports filed automatically.\n\nPROBLEM: Business travelers spend 2+ hours monthly on expense reports, a task everyone hates and often delays reimbursement.\n\nSOLUTION: SmartReceipt uses AI to read receipts, categorize expenses, and file compliant reports - all from a phone photo.\n\nQUOTE: 'We believe no one should spend their Sunday night organizing receipts.' - Product Lead\n\nHOW IT WORKS: Take photo → AI extracts data → Auto-files to your company's system\n\nCUSTOMER QUOTE: 'I went from 2 hours to 2 minutes. I just take photos and forget about it.'\n\nCTA: Download the app and connect your corporate account."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Everything Store", "author": "Brad Stone", "key_takeaway": "How Bezos built Amazon through customer obsession and long-term thinking"},
+          {"title": "Working Backwards", "author": "Colin Bryar & Bill Carr", "key_takeaway": "Amazon's internal practices from former executives"}
+        ],
+        "podcasts": [
+          {"title": "Bezos Annual Letters", "key_takeaway": "Read all shareholder letters for pure strategic thinking"}
+        ]
+      }
     },
     {
       "name": "Peter Thiel",
@@ -50,7 +273,40 @@
         "Ask: What's a belief I hold that most people disagree with?",
         "Build something 10x better, not incrementally better",
         "Focus resources on the one thing that matters most"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Finding Your Contrarian Truth",
+          "scenario": "You want to build a startup but every idea seems to already exist.",
+          "framework_applied": "Zero to One + Contrarian Question",
+          "step_by_step": [
+            "Ask: What important truth do very few people agree with you on?",
+            "Your answer should be something that most people disagree with but you believe is true",
+            "A good answer takes the form: 'Most people believe X, but the truth is the opposite of X'",
+            "Your contrarian truth becomes your startup thesis",
+            "Build for the world where your contrarian truth is right",
+            "If you're right, you have a monopoly. If everyone agreed, there would be competition."
+          ],
+          "outcome": "PayPal succeeded because Thiel believed: 'Most people think payments are solved by banks. The truth is the internet will create entirely new payment systems.'"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Contrarian Truth Discovery Template",
+          "context": "Use to find unique startup opportunities others are missing",
+          "template": "THE QUESTION:\nWhat important truth do very few people agree with me on?\n\nCONVENTIONAL WISDOM IN MY INDUSTRY:\n1. Most people believe: ___\n2. Most people believe: ___\n3. Most people believe: ___\n\nMY CONTRARIAN TRUTHS:\n1. But I believe: ___\n   Evidence: ___\n2. But I believe: ___\n   Evidence: ___\n3. But I believe: ___\n   Evidence: ___\n\nBUSINESS IMPLICATION:\nIf my contrarian truth #___ is right, the opportunity is: ___\n\nMONOPOLY POTENTIAL:\nIf I'm right and others are wrong, I will be the only one building for this reality.",
+          "example_filled": "CONVENTIONAL WISDOM IN AI:\n1. Most believe: AI will replace human workers\n2. Most believe: The best AI products need the most data\n3. Most believe: AI is only for big tech companies\n\nMY CONTRARIAN TRUTHS:\n1. AI will augment humans, not replace them. Evidence: Every past automation created more jobs.\n2. The best AI products need domain expertise, not just data. Evidence: Specialized models outperform general ones.\n3. The biggest AI opportunities are in boring industries. Evidence: Less competition, more inefficiency.\n\nBUSINESS IMPLICATION:\nIf #3 is right, the opportunity is: AI for small business accounting, plumbing scheduling, etc.\n\nMONOPOLY: While everyone fights for consumer AI, I build for plumbers who've been ignored."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Zero to One", "author": "Peter Thiel", "key_takeaway": "Notes on startups, or how to build the future"},
+          {"title": "The Diversity Myth", "author": "Peter Thiel", "key_takeaway": "Early contrarian thinking from his Stanford days"}
+        ],
+        "podcasts": [
+          {"title": "Peter Thiel on Tim Ferriss", "key_takeaway": "Deep dive into contrarian thinking and company building"}
+        ]
+      }
     },
     {
       "name": "Paul Graham",
@@ -67,7 +323,41 @@
         "Talk to at least one user/customer today",
         "Ship something, even if small",
         "Focus on making something people actually want"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Doing Things That Don't Scale",
+          "scenario": "You're building a startup and worried about efficiency and automation from day one.",
+          "framework_applied": "Do Things That Don't Scale",
+          "step_by_step": [
+            "Forget about scale initially - first, prove people want it",
+            "Recruit users one by one: email, call, visit them personally",
+            "Provide white-glove service: do things manually that you'll later automate",
+            "Airbnb founders personally photographed listings, Stripe founders installed their SDK on laptops",
+            "Use the manual effort to learn what to build",
+            "Only automate after you understand the process perfectly",
+            "Early inefficiency = learning. Premature optimization = death."
+          ],
+          "outcome": "By doing things manually first, you learn what really matters before investing in automation that might be wrong."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Customer Discovery Interview Script (The Mom Test)",
+          "context": "Learn what customers really need without pitching or biasing their answers",
+          "template": "RULES:\n- Don't mention your idea until the end\n- Ask about their life, not your idea\n- Ask about the past, not the future\n- Talk less, listen more\n\nOPENING:\n'I'm trying to understand how [domain] works for people like you.'\n\nCORE QUESTIONS:\n1. 'Walk me through the last time you [did the thing]...'\n2. 'What was the hardest part?'\n3. 'Why was that hard?'\n4. 'What have you tried to solve that?'\n5. 'What didn't work about those solutions?'\n6. 'How much does this problem cost you (time/money/stress)?'\n7. 'Have you looked for a solution in the last [month]?'\n\nCLOSING:\n'I'm actually working on something in this space. Can I tell you about it and get your honest reaction?'\n\nAFTER:\n- Would they pay for it? Ask for commitment.\n- Would they use it? Ask for specific next step.",
+          "example_filled": "DOMAIN: Expense reports for business travelers\n\nOPENING: 'I'm trying to understand how expense reports work for people who travel for work.'\n\n1. 'Walk me through the last time you filed an expense report...'\n   -> 'I had a pile of receipts from my trip, spent 2 hours Sunday night sorting them...'\n\n2. 'What was the hardest part?'\n   -> 'Matching receipts to transactions and categorizing everything correctly'\n\n3. 'Why was that hard?'\n   -> 'Our system has 50 categories and I never know which one to use'\n\n4. 'What have you tried?'\n   -> 'I tried an app but it didn't integrate with our system'\n\n5. 'What didn't work?'\n   -> 'Still had to manually enter everything twice'\n\n6. 'What does this cost you?'\n   -> '2-3 hours monthly, plus delayed reimbursements'\n\n7. 'Looked for solutions recently?'\n   -> 'Googled last month but gave up'"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Paul Graham Essays", "author": "Paul Graham (paulgraham.com)", "key_takeaway": "The collected wisdom of YC's founder - must-read for any founder"},
+          {"title": "Hackers & Painters", "author": "Paul Graham", "key_takeaway": "Essays on creativity, startups, and making things"}
+        ],
+        "podcasts": [
+          {"title": "How to Start a Startup (YC)", "key_takeaway": "Stanford course with Paul Graham and other YC partners"}
+        ]
+      }
     },
     {
       "name": "Sam Altman",
@@ -84,7 +374,41 @@
         "Work on high-leverage activities only",
         "Make yourself a force multiplier for your team",
         "Think about what compounds"
-      ]
+      ],
+      "worked_examples": [
+        {
+          "title": "Choosing a Hard Problem Over an Easy One",
+          "scenario": "You're deciding between a simple app and a technically challenging project.",
+          "framework_applied": "Hard vs Easy Startup Paradox",
+          "step_by_step": [
+            "Recognize: Easy problems attract more competition",
+            "Hard problems (technical, regulatory, coordination) create natural moats",
+            "Recruiting is easier for hard problems - great people want meaningful challenges",
+            "Investors are more interested in hard problems - higher potential returns",
+            "Easy startups feel easy at first, then get brutally hard (competition)",
+            "Hard startups feel hard at first, then get easier (moats compound)",
+            "Choose the hard problem you're uniquely positioned to solve"
+          ],
+          "outcome": "OpenAI chose the 'impossible' problem of AGI. That hard choice attracted world-class talent and eliminated most competition."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Startup Idea Evaluation Framework",
+          "context": "Evaluate whether a startup idea is worth pursuing",
+          "template": "IDEA: ___\n\nMARKET SIZE:\n- How big is this market? ___\n- Is it growing? ___\n\nPROBLEM SEVERITY:\n- How painful is this problem? (1-10) ___\n- How often do people experience it? ___\n- Are people actively looking for solutions? ___\n\nSOLUTION QUALITY:\n- Is this 10x better than alternatives? ___\n- Why hasn't this been built before? ___\n\nFOUNDER-MARKET FIT:\n- Why are you uniquely suited to solve this? ___\n- What do you know that others don't? ___\n\nEXECUTION COMPLEXITY:\n- Is this a hard startup or an easy one? ___\n- What makes it defensible? ___\n\nFINAL ASSESSMENT:\n- Would I work on this for 10 years? ___\n- Score: ___ / 50",
+          "example_filled": "IDEA: AI-powered legal document review\n\nMARKET SIZE:\n- Legal services: $300B market\n- Document review: $40B subsegment, growing 15%/year\n\nPROBLEM SEVERITY:\n- Pain: 9/10 (lawyers hate document review)\n- Frequency: Every deal, every case\n- Actively looking: Yes, firms spend millions\n\nSOLUTION QUALITY:\n- 10x better: Yes - hours instead of days\n- Why not built: Required recent AI advances\n\nFOUNDER-MARKET FIT:\n- I'm a lawyer who became an ML engineer\n- I know the pain points competitors miss\n\nEXECUTION:\n- Hard startup: requires domain expertise + ML + enterprise sales\n- Defensible: data moat, switching costs, relationships\n\nFINAL: Yes, I'd do this for 10 years. Score: 44/50"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Startup Playbook", "author": "Sam Altman (blog)", "key_takeaway": "Sam's distilled advice for founders"},
+          {"title": "How to Be Successful", "author": "Sam Altman (blog)", "key_takeaway": "13 principles for personal and professional success"}
+        ],
+        "podcasts": [
+          {"title": "Sam Altman on Lex Fridman", "key_takeaway": "Deep dive on AI, startups, and the future"}
+        ]
+      }
     }
   ],
   "daily_insights": [
