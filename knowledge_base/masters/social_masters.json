@@ -1,0 +1,114 @@
+{
+  "module": "dating",
+  "masters": [
+    {
+      "name": "Dale Carnegie",
+      "expertise": "Winning friends, influence, likeability",
+      "key_principles": [
+        "You can make more friends in two months by becoming interested in other people than in two years trying to get people interested in you.",
+        "A person's name is to that person the sweetest sound in any language.",
+        "Talk in terms of the other person's interests.",
+        "Make the other person feel important—and do it sincerely.",
+        "Be a good listener. Encourage others to talk about themselves.",
+        "The only way to get the best of an argument is to avoid it."
+      ],
+      "daily_practices": [
+        "Remember and use people's names",
+        "Ask questions and truly listen to answers",
+        "Give genuine appreciation daily"
+      ]
+    },
+    {
+      "name": "Robert Greene",
+      "expertise": "Power dynamics, seduction, mastery",
+      "key_principles": [
+        "Never outshine the master.",
+        "Always say less than necessary.",
+        "Make other people come to you—use bait if necessary.",
+        "Learn to keep people dependent on you.",
+        "Avoid the unhappy and unlucky.",
+        "Win through your actions, never through argument."
+      ],
+      "daily_practices": [
+        "Observe social dynamics before acting",
+        "Speak less, listen more",
+        "Create value that makes others seek you out"
+      ]
+    },
+    {
+      "name": "Chris Voss",
+      "expertise": "Tactical empathy, negotiation, connection",
+      "key_principles": [
+        "Empathy is not about agreeing—it's about understanding.",
+        "The fastest way to build rapport is to make the other person feel heard.",
+        "Labeling emotions defuses them.",
+        "Mirroring creates connection without effort.",
+        "Never be mean to someone who could hurt you by doing nothing.",
+        "The key to gaining the upper hand is giving the other side the illusion of control."
+      ],
+      "daily_practices": [
+        "Mirror someone's last 3 words in conversation",
+        "Label emotions: 'It seems like you...'",
+        "Aim to understand before being understood"
+      ]
+    },
+    {
+      "name": "Vanessa Van Edwards",
+      "expertise": "People science, charisma, body language",
+      "key_principles": [
+        "Charisma is a learnable skill, not a born trait.",
+        "First impressions are made in 7 seconds and are very hard to change.",
+        "Facial expressions are the most powerful communication tool.",
+        "Warmth + competence = the charisma formula.",
+        "Hand gestures increase trust and understanding by 60%.",
+        "Vocal power matters: lower pitch conveys confidence."
+      ],
+      "daily_practices": [
+        "Use hand gestures when speaking",
+        "Triple your nods—it encourages others to talk",
+        "Make eye contact for 60-70% of conversation"
+      ]
+    },
+    {
+      "name": "Mark Manson",
+      "expertise": "Honesty, boundaries, authentic connection",
+      "key_principles": [
+        "The only way to be truly confident is to simply become comfortable with being unconfident.",
+        "You are defined by what you're willing to struggle for.",
+        "Healthy relationships are built on boundaries, not neediness.",
+        "Rejection is just information, not a verdict on your worth.",
+        "Stop looking for the right person. Become the right person.",
+        "Vulnerability is not weakness—it's the birthplace of connection."
+      ],
+      "daily_practices": [
+        "Express your genuine opinion, even if unpopular",
+        "Set and maintain clear boundaries",
+        "Be vulnerable—share real thoughts and feelings"
+      ]
+    }
+  ],
+  "daily_insights": [
+    "The person who needs the interaction least has the most power.",
+    "Confidence is not 'they will like me.' It's 'I'll be fine either way.'",
+    "You can't connect if you're performing. Be real.",
+    "The best conversationalists ask great questions and actually listen.",
+    "Your body language speaks before your mouth opens.",
+    "Rejection is redirection. It's saving you from the wrong fit.",
+    "People remember how you made them feel, not what you said.",
+    "Quality over quantity. One deep connection beats ten shallow ones.",
+    "Social skills are skills. They can be practiced and improved.",
+    "The most attractive trait is genuine interest in others."
+  ],
+  "skill_challenges": [
+    "Start a conversation with one stranger today.",
+    "Give three genuine compliments to different people.",
+    "Practice active listening: don't plan your response while they talk.",
+    "Use someone's name three times in conversation today.",
+    "Make eye contact with confidence in your next interaction.",
+    "Ask follow-up questions instead of waiting to talk.",
+    "Approach someone who intimidates you and say hello.",
+    "Share one vulnerable truth about yourself with someone.",
+    "Attend a social event and talk to at least 3 new people.",
+    "Practice mirroring body language in your next conversation."
+  ]
+}

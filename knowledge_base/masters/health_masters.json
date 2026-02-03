@@ -1,0 +1,114 @@
+{
+  "module": "health",
+  "masters": [
+    {
+      "name": "Andrew Huberman",
+      "expertise": "Neuroscience, sleep optimization, protocols",
+      "key_principles": [
+        "Get sunlight in your eyes within the first hour of waking. It sets your circadian rhythm.",
+        "Avoid bright lights between 10pm and 4am. It suppresses melatonin and disrupts sleep.",
+        "Non-sleep deep rest (NSDR) is a powerful tool for recovery and focus.",
+        "Cold exposure increases dopamine by 250% for hours. It builds resilience.",
+        "Caffeine should be delayed 90-120 minutes after waking for optimal energy.",
+        "Exercise is the most powerful tool we have for brain health and neuroplasticity."
+      ],
+      "daily_practices": [
+        "Morning sunlight exposure (10-30 min)",
+        "Cold shower or cold exposure",
+        "Delay caffeine 90 min after waking"
+      ]
+    },
+    {
+      "name": "Matthew Walker",
+      "expertise": "Sleep science, recovery, performance",
+      "key_principles": [
+        "Sleep is the single most effective thing you can do to reset your brain and body.",
+        "Routinely sleeping less than 6 hours a night weakens your immune system substantially.",
+        "The shorter your sleep, the shorter your life.",
+        "There is no major organ in the body or brain that isn't enhanced by sleep.",
+        "REM sleep is critical for emotional regulation and creativity.",
+        "Alcohol is one of the most powerful suppressors of REM sleep."
+      ],
+      "daily_practices": [
+        "Keep a consistent sleep schedule, even weekends",
+        "Keep bedroom cool (65-68°F / 18-20°C)",
+        "Avoid alcohol and caffeine before bed"
+      ]
+    },
+    {
+      "name": "Peter Attia",
+      "expertise": "Longevity, metabolic health, performance",
+      "key_principles": [
+        "The four horsemen of chronic disease: heart disease, cancer, neurodegenerative disease, metabolic disease.",
+        "Zone 2 cardio is the foundation of metabolic health and longevity.",
+        "Muscle is the organ of longevity. Preserve and build it.",
+        "Stability and mobility decline with age unless actively maintained.",
+        "What you do in your 40s determines your health in your 80s.",
+        "Emotional health is the fifth horseman. Don't neglect it."
+      ],
+      "daily_practices": [
+        "Zone 2 cardio (3-4 hours per week)",
+        "Strength training to maintain muscle",
+        "Focus on stability and mobility, not just strength"
+      ]
+    },
+    {
+      "name": "Rhonda Patrick",
+      "expertise": "Nutrition, longevity, micronutrients",
+      "key_principles": [
+        "Time-restricted eating can improve metabolic health significantly.",
+        "Sulforaphane (from broccoli sprouts) is one of the most powerful natural compounds.",
+        "Omega-3 fatty acids are critical for brain health and reducing inflammation.",
+        "Heat shock proteins from sauna use improve cardiovascular and brain health.",
+        "Vitamin D deficiency is widespread and linked to many chronic diseases.",
+        "Exercise creates new brain cells. It's the closest thing to a fountain of youth."
+      ],
+      "daily_practices": [
+        "Eat nutrient-dense whole foods",
+        "Consider time-restricted eating (10-12 hour window)",
+        "Prioritize omega-3s and vitamin D"
+      ]
+    },
+    {
+      "name": "Wim Hof",
+      "expertise": "Cold exposure, breathing, mental resilience",
+      "key_principles": [
+        "The cold is your warm friend.",
+        "Breathwork can directly influence your autonomic nervous system.",
+        "We can consciously influence our immune response through practice.",
+        "Discomfort is the way. Embrace it.",
+        "The mind is the master. The body will follow.",
+        "Go into the cold. It will show you who you really are."
+      ],
+      "daily_practices": [
+        "End showers with 30-60 seconds of cold",
+        "Practice breathwork (Wim Hof method)",
+        "Embrace discomfort as training"
+      ]
+    }
+  ],
+  "daily_insights": [
+    "Sleep is when your brain cleans itself. Shortcut it at your peril.",
+    "Your body is adapting to whatever you consistently do. Make it count.",
+    "Energy is not something you have. It's something you create through habits.",
+    "The best workout is the one you actually do consistently.",
+    "Sunlight, movement, and sleep are free. Use them.",
+    "Recovery is when gains happen. Training is just the stimulus.",
+    "You can't outwork a bad diet or outsupplement bad sleep.",
+    "Small daily health habits compound into massive long-term results.",
+    "Your energy level dictates everything else. Protect it.",
+    "The body keeps the score. Take care of it."
+  ],
+  "skill_challenges": [
+    "Get 10 minutes of sunlight within 1 hour of waking.",
+    "End your shower with 30 seconds of cold water.",
+    "Track your sleep for one week. Identify one improvement.",
+    "Drink 2 liters of water today. Notice your energy.",
+    "Take a 20-minute walk. No phone.",
+    "Go to bed 30 minutes earlier tonight.",
+    "Do 5 minutes of stretching or mobility work.",
+    "Eat protein with every meal today.",
+    "No screens 1 hour before bed tonight.",
+    "Do 3 minutes of deep breathing exercises."
+  ]
+}

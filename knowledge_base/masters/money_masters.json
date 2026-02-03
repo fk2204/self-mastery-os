@@ -1,0 +1,116 @@
+{
+  "module": "money",
+  "masters": [
+    {
+      "name": "Naval Ravikant",
+      "expertise": "Wealth creation, leverage, startups",
+      "key_principles": [
+        "Seek wealth, not money or status. Wealth is having assets that earn while you sleep.",
+        "You're not going to get rich renting out your time. You must own equity.",
+        "Arm yourself with specific knowledge, accountability, and leverage.",
+        "Code and media are permissionless leverage. They're the leverage of the new rich.",
+        "Play long-term games with long-term people.",
+        "Pick an industry where you can play long-term games with long-term people.",
+        "The Internet has massively broadened the possible space of careers. Most people haven't figured this out yet."
+      ],
+      "daily_practices": [
+        "Spend 1 hour learning something that compounds",
+        "Build something that can work without you",
+        "Invest in relationships with high-integrity people"
+      ]
+    },
+    {
+      "name": "Alex Hormozi",
+      "expertise": "Business scaling, offers, value creation",
+      "key_principles": [
+        "The goal is to make your offer so good people feel stupid saying no.",
+        "Volume negates luck. Do more.",
+        "Skills are the only assets that can't be taken from you.",
+        "The fastest way to get rich is to solve a painful problem for people who can pay.",
+        "Price is what you pay, value is what you get. Increase the gap.",
+        "Most businesses fail because of obscurity, not because the product sucks.",
+        "Discipline is choosing between what you want now and what you want most."
+      ],
+      "daily_practices": [
+        "Do 100 outreach touches",
+        "Improve your offer daily",
+        "Stack skills that multiply each other"
+      ]
+    },
+    {
+      "name": "Warren Buffett",
+      "expertise": "Investing, compounding, value",
+      "key_principles": [
+        "The most important investment you can make is in yourself.",
+        "Risk comes from not knowing what you're doing.",
+        "It's better to hang out with people better than you.",
+        "The difference between successful people and really successful people is that really successful people say no to almost everything.",
+        "Someone is sitting in the shade today because someone planted a tree a long time ago.",
+        "Price is what you pay. Value is what you get."
+      ],
+      "daily_practices": [
+        "Read 500 pages a day",
+        "Think in decades, not days",
+        "Say no to protect your time for what matters"
+      ]
+    },
+    {
+      "name": "Charlie Munger",
+      "expertise": "Mental models, decision-making, multidisciplinary thinking",
+      "key_principles": [
+        "Spend each day trying to be a little wiser than you were when you woke up.",
+        "The best thing a human can do is to help another human know more.",
+        "Invert, always invert. Turn a situation or problem upside down.",
+        "You don't have to be brilliant, only a little bit wiser than the other guys, on average, for a long time.",
+        "Knowing what you don't know is more useful than being brilliant.",
+        "Take a simple idea and take it seriously."
+      ],
+      "daily_practices": [
+        "Read across disciplines",
+        "Invert problems to find solutions",
+        "Avoid stupidity rather than seeking brilliance"
+      ]
+    },
+    {
+      "name": "MrBeast (Jimmy Donaldson)",
+      "expertise": "Content leverage, virality, reinvestment",
+      "key_principles": [
+        "Reinvest everything back into getting better.",
+        "Study your craft obsessively. Watch 1000 videos, analyze what works.",
+        "The first 100 videos will suck. Make them anyway.",
+        "Optimize for the long term. Short-term thinking kills businesses.",
+        "Surround yourself with people who are obsessed like you.",
+        "Every video should be better than the last."
+      ],
+      "daily_practices": [
+        "Study your industry obsessively",
+        "Reinvest in your skills and assets",
+        "Get 1% better every single day"
+      ]
+    }
+  ],
+  "daily_insights": [
+    "Your income is directly proportional to the value you provide times the number of people you provide it to.",
+    "Skills compound. Every hour you invest in learning pays dividends forever.",
+    "The bottleneck to your income is usually a skill you're avoiding learning.",
+    "Rich people buy time. Poor people sell time. Which are you doing?",
+    "If you can't explain how you'll make money while you sleep, you'll work until you die.",
+    "The market pays for value, not effort. Focus on outcomes, not hours.",
+    "Your network is your net worth. But only if you provide value first.",
+    "The best investment is in skills that produce income. Everything else is secondary.",
+    "Don't trade time for money. Trade value for money, then scale the value.",
+    "Every rich person got rich by solving problems. What problem are you solving?"
+  ],
+  "skill_challenges": [
+    "Identify one skill that would 2x your income. Spend 30 minutes learning it today.",
+    "Find one way to add value to someone more successful than you. Do it today.",
+    "Calculate your true hourly rate (annual income / hours worked). Now find one way to increase it.",
+    "List 3 ways you could make money while you sleep. Pick one to start building.",
+    "Reach out to someone who makes 10x what you make. Ask one specific question.",
+    "Find something you do manually that could be automated or delegated. Start the process.",
+    "Identify your most profitable skill. Spend 1 hour getting better at it.",
+    "Write down exactly how you will make your next $1000. Be specific.",
+    "Find one expense that doesn't contribute to your growth. Eliminate it.",
+    "Study one successful person in your field for 30 minutes. Extract one actionable insight."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "module": "productivity",
+  "masters": [
+    {
+      "name": "Cal Newport",
+      "expertise": "Deep work, digital minimalism, focus",
+      "key_principles": [
+        "Deep work is the ability to focus without distraction on a cognitively demanding task.",
+        "Clarity about what matters provides clarity about what does not.",
+        "If you don't produce, you won't thrive—no matter how skilled or talented you are.",
+        "The ability to perform deep work is becoming increasingly rare and increasingly valuable.",
+        "What we choose to focus on and what we choose to ignore—plays in defining the quality of our life.",
+        "Two core abilities for thriving: mastering hard things quickly and producing at an elite level."
+      ],
+      "daily_practices": [
+        "Schedule 3-4 hours of uninterrupted deep work",
+        "Quit social media or severely limit it",
+        "Embrace boredom—don't fill every moment"
+      ]
+    },
+    {
+      "name": "James Clear",
+      "expertise": "Atomic habits, behavior change, 1% improvement",
+      "key_principles": [
+        "You do not rise to the level of your goals. You fall to the level of your systems.",
+        "Every action is a vote for the type of person you wish to become.",
+        "Habits are the compound interest of self-improvement.",
+        "Make it obvious, attractive, easy, and satisfying.",
+        "The task of building a good habit is like cultivating a delicate flower one day at a time.",
+        "Success is the product of daily habits, not once-in-a-lifetime transformations."
+      ],
+      "daily_practices": [
+        "Stack new habits onto existing ones",
+        "Make good habits obvious and easy",
+        "Track habits visually—never break the chain"
+      ]
+    },
+    {
+      "name": "Tim Ferriss",
+      "expertise": "80/20, lifestyle design, meta-learning",
+      "key_principles": [
+        "Focus on being productive instead of busy.",
+        "Pareto principle: 80% of outputs come from 20% of inputs.",
+        "What we fear doing most is usually what we most need to do.",
+        "The question isn't 'What do I want?' It's 'What would excite me?'",
+        "Lack of time is lack of priorities.",
+        "The opposite of happiness is not sadness—it's boredom."
+      ],
+      "daily_practices": [
+        "Identify the 20% of activities producing 80% of results",
+        "Batch similar tasks together",
+        "Do the most important task before 11am"
+      ]
+    },
+    {
+      "name": "David Allen",
+      "expertise": "GTD, stress-free productivity, capture systems",
+      "key_principles": [
+        "Your mind is for having ideas, not holding them.",
+        "You can do anything, but not everything.",
+        "The two-minute rule: If it takes less than two minutes, do it now.",
+        "Your brain is a terrible office—get everything out of it.",
+        "Review is the secret sauce of GTD.",
+        "You don't manage time. You manage your actions within time."
+      ],
+      "daily_practices": [
+        "Capture everything into a trusted system",
+        "Process inbox to zero daily",
+        "Weekly review: get clear, get current, get creative"
+      ]
+    },
+    {
+      "name": "Nir Eyal",
+      "expertise": "Indistractable, attention management, triggers",
+      "key_principles": [
+        "The opposite of distraction is not focus. It's traction.",
+        "Time management is pain management.",
+        "You can't call something a distraction unless you know what it's distracting you from.",
+        "Master internal triggers. Discomfort drives distraction.",
+        "Make time for traction. Plan your day in timeboxes.",
+        "Hack back external triggers. Remove what doesn't serve you."
+      ],
+      "daily_practices": [
+        "Timebox your entire day",
+        "Identify internal triggers driving distraction",
+        "Create barriers to distraction tech"
+      ]
+    }
+  ],
+  "daily_insights": [
+    "What gets scheduled gets done. If it's not on your calendar, it's not real.",
+    "Your first hour sets the tone for your day. Win the morning.",
+    "Multitasking is a myth. It's just fast switching that destroys focus.",
+    "The most productive people aren't busier. They're more focused.",
+    "Deep work produces results. Shallow work produces busyness.",
+    "Every time you check your phone, you pay a 23-minute attention tax.",
+    "Energy management matters more than time management.",
+    "The hardest part is starting. Action creates motivation.",
+    "Saying yes to one thing means saying no to everything else.",
+    "Your to-do list should have 3 items, not 30."
+  ],
+  "skill_challenges": [
+    "Do 90 minutes of deep work with zero interruptions.",
+    "Turn off all notifications for 4 hours. Notice how often you want to check.",
+    "Identify your top 3 tasks for tomorrow before you end today.",
+    "Use the 2-minute rule: anything under 2 minutes, do it now.",
+    "Batch all email/messages into 2-3 check times today.",
+    "Single-task for your entire morning. No switching.",
+    "Identify one time-wasting activity. Eliminate it today.",
+    "Plan tomorrow using time blocks. Follow the plan.",
+    "Do your hardest task first thing in the morning.",
+    "Review your week: What 20% of activities produced 80% of results?"
+  ]
+}

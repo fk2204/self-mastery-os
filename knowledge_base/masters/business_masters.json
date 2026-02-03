@@ -1,0 +1,114 @@
+{
+  "module": "business",
+  "masters": [
+    {
+      "name": "Elon Musk",
+      "expertise": "First principles thinking, moonshots, execution",
+      "key_principles": [
+        "First principles thinking: Boil things down to fundamental truths and reason up from there.",
+        "If something is important enough, you do it even if the odds are not in your favor.",
+        "Failure is an option here. If things are not failing, you are not innovating enough.",
+        "Work like hell. 80-100 hour weeks every week.",
+        "When something is important enough, you do it even if the odds are not in your favor.",
+        "Constantly think about how you could be doing things better."
+      ],
+      "daily_practices": [
+        "Question every assumption",
+        "Work on the hardest problem first",
+        "Move fast and iterate constantly"
+      ]
+    },
+    {
+      "name": "Jeff Bezos",
+      "expertise": "Long-term thinking, customer obsession, Day 1 mentality",
+      "key_principles": [
+        "Focus on customers, not competitors.",
+        "It's always Day 1. Day 2 is stasis, followed by death.",
+        "Make high-velocity decisions. Most decisions are reversible.",
+        "Invent on behalf of customers. They won't tell you what they need.",
+        "Your margin is my opportunity.",
+        "If you never want to be criticized, for goodness' sake don't do anything new."
+      ],
+      "daily_practices": [
+        "Start with the customer and work backwards",
+        "Make decisions with 70% of information needed",
+        "Think in 5-7 year time horizons"
+      ]
+    },
+    {
+      "name": "Peter Thiel",
+      "expertise": "Contrarian thinking, monopolies, zero to one",
+      "key_principles": [
+        "Competition is for losers. Build a monopoly.",
+        "The best investment in a portfolio equals or outperforms the rest combined.",
+        "What important truth do very few people agree with you on?",
+        "Going from 0 to 1 is harder and more valuable than 1 to N.",
+        "A startup messed up at its foundation cannot be fixed.",
+        "The most contrarian thing is not to oppose the crowd but to think for yourself."
+      ],
+      "daily_practices": [
+        "Ask: What's a belief I hold that most people disagree with?",
+        "Build something 10x better, not incrementally better",
+        "Focus resources on the one thing that matters most"
+      ]
+    },
+    {
+      "name": "Paul Graham",
+      "expertise": "Startups, Y Combinator, building",
+      "key_principles": [
+        "Make something people want.",
+        "Launch fast and iterate.",
+        "Talk to users. Build what they need.",
+        "Do things that don't scale in the beginning.",
+        "The best founders have a chip on their shoulder.",
+        "If you're not embarrassed by your first version, you launched too late."
+      ],
+      "daily_practices": [
+        "Talk to at least one user/customer today",
+        "Ship something, even if small",
+        "Focus on making something people actually want"
+      ]
+    },
+    {
+      "name": "Sam Altman",
+      "expertise": "Startups, scale, exponential thinking",
+      "key_principles": [
+        "Compounding is magic. Long-term thinking wins.",
+        "It's easier to do a hard startup than an easy startup.",
+        "The most important thing is to build something people want.",
+        "Great execution is at least 10x more important than a great idea.",
+        "Hire slowly, fire quickly.",
+        "Focus is a force multiplier."
+      ],
+      "daily_practices": [
+        "Work on high-leverage activities only",
+        "Make yourself a force multiplier for your team",
+        "Think about what compounds"
+      ]
+    }
+  ],
+  "daily_insights": [
+    "Ideas are worth nothing. Execution is everything.",
+    "The best time to start was yesterday. The second best time is now.",
+    "If you're not embarrassed by your first version, you launched too late.",
+    "Talk to customers before building. Validate before investing.",
+    "Revenue solves all problems. Get to revenue fast.",
+    "Your competition is irrelevant. Focus on your customer.",
+    "Speed is a feature. Move fast, break things, learn faster.",
+    "The best business moats are built on skills others can't copy.",
+    "Great businesses solve painful problems for people who can pay.",
+    "Think in decades, act in days."
+  ],
+  "skill_challenges": [
+    "Validate one business idea by talking to 3 potential customers.",
+    "Use ICE scoring on 3 ideas. Pick the highest score to explore.",
+    "Write a one-page business model for an idea you have.",
+    "Find a problem people complain about. Brainstorm 3 solutions.",
+    "Research one successful business in your space. What can you learn?",
+    "Calculate the unit economics of a business idea.",
+    "Send one cold email to someone you want to learn from.",
+    "Identify the 20% of features that would deliver 80% of value.",
+    "Map out the minimum viable version of your best idea.",
+    "Set a 30-day sprint goal for one project. Write it down."
+  ]
+}

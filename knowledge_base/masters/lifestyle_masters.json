@@ -1,0 +1,114 @@
+{
+  "module": "lifestyle",
+  "masters": [
+    {
+      "name": "Tim Ferriss",
+      "expertise": "Lifestyle design, 4-hour philosophy, optimization",
+      "key_principles": [
+        "The goal is not to simply eliminate the bad, but to pursue and experience the best.",
+        "Life doesn't have to be so hard. Most people choose to make it hard.",
+        "What we fear doing most is usually what we most need to do.",
+        "Being busy is a form of laziness—lazy thinking and indiscriminate action.",
+        "Focus on being productive instead of busy.",
+        "People will choose unhappiness over uncertainty."
+      ],
+      "daily_practices": [
+        "Define the worst case—it's usually not that bad",
+        "Design your ideal day, then engineer it",
+        "Eliminate before optimizing"
+      ]
+    },
+    {
+      "name": "Essentialism (Greg McKeown)",
+      "expertise": "Less but better, disciplined pursuit of less",
+      "key_principles": [
+        "Less but better.",
+        "If it isn't a clear yes, then it's a clear no.",
+        "Essentialism is not about how to get more things done; it's about how to get the right things done.",
+        "The pursuit of success can be a catalyst for failure.",
+        "You cannot overestimate the unimportance of practically everything.",
+        "If you don't prioritize your life, someone else will."
+      ],
+      "daily_practices": [
+        "Say no to anything that isn't essential",
+        "Create space to think and reflect",
+        "Do fewer things better"
+      ]
+    },
+    {
+      "name": "Marie Kondo",
+      "expertise": "Decluttering, spark joy, intentional living",
+      "key_principles": [
+        "The space in which we live should be for the person we are becoming now.",
+        "Keep only those things that speak to the heart and discard items that no longer spark joy.",
+        "Tidying is a celebration, a grand send-off for those things that served their purpose.",
+        "When you put your house in order, you put your affairs and your past in order too.",
+        "The question of what you want to own is actually the question of how you want to live your life.",
+        "Life truly begins after you have put your house in order."
+      ],
+      "daily_practices": [
+        "Before buying, ask: Does this spark joy?",
+        "Return everything to its home after use",
+        "Regularly purge what no longer serves you"
+      ]
+    },
+    {
+      "name": "James Clear (on environment)",
+      "expertise": "Environment design, behavior architecture",
+      "key_principles": [
+        "Environment is the invisible hand that shapes behavior.",
+        "Make the cues of good habits obvious in your environment.",
+        "Reduce the friction associated with good behaviors.",
+        "Increase the friction associated with bad behaviors.",
+        "People often choose products not because of what they are, but because of where they are.",
+        "Redesign your environment rather than relying on willpower."
+      ],
+      "daily_practices": [
+        "Design your environment for success",
+        "Remove friction from good habits",
+        "Add friction to bad habits"
+      ]
+    },
+    {
+      "name": "Cal Newport (on digital life)",
+      "expertise": "Digital minimalism, intentional tech use",
+      "key_principles": [
+        "Digital minimalism: A philosophy of technology use based on understanding the value of each tool.",
+        "The key is to see solitude as a positive state—not loneliness but a gift.",
+        "The cost of a thing is the amount of life you exchange for it.",
+        "Clutter is the enemy of clarity.",
+        "High-quality leisure beats digital distraction every time.",
+        "Reclaim your attention as your most valuable resource."
+      ],
+      "daily_practices": [
+        "No phone for first and last hour of day",
+        "Schedule social media, don't react to it",
+        "Replace low-quality digital with high-quality analog"
+      ]
+    }
+  ],
+  "daily_insights": [
+    "Your environment shapes your behavior more than your willpower.",
+    "Saying no to good things lets you say yes to great things.",
+    "Every item you own owns a piece of your attention.",
+    "Design your space for who you want to become, not who you were.",
+    "The phone is the greatest distraction device ever invented. Control it.",
+    "Friction is the difference between what you should do and what you actually do.",
+    "Clutter is postponed decisions. Make them now.",
+    "Your morning routine is your day in miniature. Design it with intention.",
+    "The cost of everything is the life you exchange for it.",
+    "Less options, better outcomes. Constrain to liberate."
+  ],
+  "skill_challenges": [
+    "Remove one item from your environment that tempts bad behavior.",
+    "Make one good habit more obvious (put workout clothes by bed, etc.).",
+    "Go 24 hours without social media. Notice the urges.",
+    "Declutter one drawer, shelf, or area completely.",
+    "Design your ideal morning routine on paper. Try it tomorrow.",
+    "Identify your biggest distraction. Add friction to access it.",
+    "Unsubscribe from 10 emails that don't add value.",
+    "Set up your workspace for deep focus. Remove all distractions.",
+    "Delete one app that wastes your time.",
+    "Audit your last 24 hours. How much was intentional vs reactive?"
+  ]
+}

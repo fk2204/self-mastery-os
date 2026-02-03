@@ -1,0 +1,79 @@
+{
+  "date": "2026-02-03",
+  "created_at": "2026-02-03T08:06:56.873928",
+  "am_checkin": {
+    "time": "2026-02-03T08:09:26.700928",
+    "sleep_hours": 7.0,
+    "sleep_quality": 6,
+    "energy_level": 6,
+    "top_3_priorities": [
+      "work on my side hustle",
+      "practice my english speaking skills",
+      "try to find a working aprtner"
+    ],
+    "win_definition": "to have a clear goal how to mmake a more influence in my life"
+  },
+  "planned_actions": [
+    {
+      "module": "money",
+      "module_name": "Money & Wealth",
+      "text": "Send 1 networking message to valuable contact",
+      "time": 10,
+      "difficulty": 2,
+      "completed": false
+    },
+    {
+      "module": "money",
+      "module_name": "Money & Wealth",
+      "text": "Research one new income opportunity",
+      "time": 20,
+      "difficulty": 2,
+      "completed": false
+    },
+    {
+      "module": "sales",
+      "module_name": "Sales & Persuasion",
+      "text": "Ask for 1 referral from existing contact",
+      "time": 10,
+      "difficulty": 2,
+      "completed": false
+    },
+    {
+      "module": "sales",
+      "module_name": "Sales & Persuasion",
+      "text": "Follow up with 3 warm leads",
+      "time": 20,
+      "difficulty": 2,
+      "completed": false
+    },
+    {
+      "module": "health",
+      "module_name": "Health & Fitness",
+      "text": "Meal prep for tomorrow",
+      "time": 30,
+      "difficulty": 2,
+      "completed": false
+    },
+    {
+      "module": "health",
+      "module_name": "Health & Fitness",
+      "text": "No phone 1 hour before bed",
+      "time": 0,
+      "difficulty": 2,
+      "completed": false
+    }
+  ],
+  "completed_actions": [],
+  "pm_reflection": null,
+  "metrics": {
+    "deep_work_hours": 0,
+    "workouts": 0,
+    "sales_calls": 0,
+    "social_interactions": 0,
+    "steps": 0,
+    "water_liters": 0
+  },
+  "habits": {},
+  "notes": "",
+  "updated_at": "2026-02-03T08:09:26.700940"
+}

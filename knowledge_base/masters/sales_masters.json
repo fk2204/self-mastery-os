@@ -1,0 +1,114 @@
+{
+  "module": "sales",
+  "masters": [
+    {
+      "name": "Jordan Belfort",
+      "expertise": "Straight line persuasion, tonality, closing",
+      "key_principles": [
+        "The only thing standing between you and your goal is the story you keep telling yourself.",
+        "Sales is a transfer of emotion. You must believe before they can.",
+        "Tonality is 90% of communication. Words are just 10%.",
+        "Every sale has five basic obstacles: no need, no money, no hurry, no desire, no trust.",
+        "Act as if you're a wealthy person, and you'll become one.",
+        "Logic makes people think. Emotion makes people act."
+      ],
+      "daily_practices": [
+        "Practice your pitch with power and conviction",
+        "Record yourself and analyze your tonality",
+        "Handle 10 objections out loud daily"
+      ]
+    },
+    {
+      "name": "Grant Cardone",
+      "expertise": "10X action, massive outreach, follow-up",
+      "key_principles": [
+        "10X your goals and 10X your actions.",
+        "Success is your duty, obligation, and responsibility.",
+        "Most people fail because they're not taking enough action.",
+        "Be obsessed or be average.",
+        "The fortune is in the follow-up. Follow up until they buy or die.",
+        "Never lower your target. Increase your actions."
+      ],
+      "daily_practices": [
+        "Make 10X the calls you think you need",
+        "Follow up with every lead at least 5 times",
+        "Treat every 'no' as 'not yet'"
+      ]
+    },
+    {
+      "name": "Chris Voss",
+      "expertise": "FBI negotiation, tactical empathy, hostage techniques",
+      "key_principles": [
+        "Never split the difference. Fight for the best outcome.",
+        "Tactical empathy is understanding the feelings and mindset of another.",
+        "No is the start of the negotiation, not the end.",
+        "Mirror words to build rapport and get more information.",
+        "Label emotions: 'It seems like...' 'It sounds like...'",
+        "The person who has learned to disagree without being disagreeable has the upper hand."
+      ],
+      "daily_practices": [
+        "Use mirroring in 3 conversations today",
+        "Label someone's emotion out loud",
+        "Ask 'How am I supposed to do that?' instead of saying no"
+      ]
+    },
+    {
+      "name": "Zig Ziglar",
+      "expertise": "Relationship selling, motivation, ethics",
+      "key_principles": [
+        "You can have everything in life you want, if you help enough other people get what they want.",
+        "Stop selling. Start helping.",
+        "Every sale has five obstacles: no need, no money, no hurry, no desire, no trust.",
+        "People don't buy for logical reasons. They buy for emotional reasons.",
+        "You don't have to be great to start, but you have to start to be great.",
+        "F.E.A.R. has two meanings: Forget Everything And Run, or Face Everything And Rise."
+      ],
+      "daily_practices": [
+        "Find out what your prospect really wants",
+        "Focus on serving, not selling",
+        "Build genuine relationships before asking for anything"
+      ]
+    },
+    {
+      "name": "Jeb Blount",
+      "expertise": "Fanatical prospecting, pipeline, rejection-proof mindset",
+      "key_principles": [
+        "The enduring mantra of all top salespeople is: One more call.",
+        "Prospecting is the lifeblood of sales success.",
+        "Rejection is not failure. It's just part of the process.",
+        "The three Ps: Protect prime selling time, Prioritize prospects, Push through resistance.",
+        "The more you prospect, the luckier you get.",
+        "Your pipeline is your lifeline. Never stop filling it."
+      ],
+      "daily_practices": [
+        "Protect your first 2 hours for outreach only",
+        "Make prospecting non-negotiable daily",
+        "Aim for 'nos' - they lead to 'yeses'"
+      ]
+    }
+  ],
+  "daily_insights": [
+    "Every conversation is a sale. You're either selling them on your idea, or they're selling you on theirs.",
+    "The person who cares least about the outcome has the most power.",
+    "Objections are just requests for more information. Welcome them.",
+    "If you're not getting rejected, you're not asking enough.",
+    "People buy from people they like, trust, and believe can help them.",
+    "The best closers ask the best questions. Shut up and listen.",
+    "Your confidence is contagious. So is your doubt.",
+    "Follow-up is where fortunes are made. Most quit too early.",
+    "Selling is serving. If you believe in your product, you owe it to them to be persistent.",
+    "Volume covers all sins. Do more, learn faster, win bigger."
+  ],
+  "skill_challenges": [
+    "Make 10 cold outreach touches today. Track responses.",
+    "Write down the top 5 objections you hear. Script killer responses for each.",
+    "Record your next sales call. Listen back and critique yourself.",
+    "Practice the 'mirroring' technique in 3 conversations today.",
+    "Role-play a difficult objection with a friend for 10 minutes.",
+    "Send 5 follow-ups to leads you thought were dead.",
+    "Study one sales call from a master. Write down 3 techniques to steal.",
+    "Ask one open-ended question in every conversation today.",
+    "Pitch your product to yourself in the mirror with full conviction.",
+    "Identify your biggest sales weakness. Spend 20 minutes drilling it."
+  ]
+}

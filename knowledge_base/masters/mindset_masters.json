@@ -1,0 +1,131 @@
+{
+  "module": "mindset",
+  "masters": [
+    {
+      "name": "Marcus Aurelius",
+      "expertise": "Stoicism, self-discipline, duty",
+      "key_principles": [
+        "You have power over your mind, not outside events. Realize this, and you will find strength.",
+        "The happiness of your life depends upon the quality of your thoughts.",
+        "Waste no more time arguing about what a good man should be. Be one.",
+        "Very little is needed to make a happy life; it is all within yourself.",
+        "The best revenge is not to be like your enemy.",
+        "When you arise in the morning think of what a privilege it is to be alive."
+      ],
+      "daily_practices": [
+        "Morning reflection on what's in your control",
+        "Evening review of your actions and thoughts",
+        "Practice accepting what you cannot change"
+      ]
+    },
+    {
+      "name": "David Goggins",
+      "expertise": "Mental toughness, extreme accountability, embracing suffering",
+      "key_principles": [
+        "You are in danger of living a life so comfortable and soft that you will die without ever realizing your potential.",
+        "The only way to grow is to go to that dark place and get after it.",
+        "Most people stop at 40% of their capacity. The brain lies to protect you.",
+        "Suffering is a test. How you handle it determines who you become.",
+        "Nobody cares what you did yesterday. What are you doing today?",
+        "Callus your mind. Embrace the suck."
+      ],
+      "daily_practices": [
+        "Do something that sucks every single day",
+        "When your mind says stop, do 10 more",
+        "Hold yourself accountable with radical honesty"
+      ]
+    },
+    {
+      "name": "Jocko Willink",
+      "expertise": "Extreme ownership, discipline, leadership",
+      "key_principles": [
+        "Discipline equals freedom.",
+        "Extreme ownership: There are no bad teams, only bad leaders.",
+        "Don't let your ego get in the way of learning.",
+        "Prioritize and execute. Focus on the biggest problem first.",
+        "Default aggressive. When in doubt, take action.",
+        "Check the ego. The moment you think you know everything, you know nothing."
+      ],
+      "daily_practices": [
+        "Wake up early. Win the first battle.",
+        "Take ownership of every problem in your life",
+        "Make discipline your identity, not a chore"
+      ]
+    },
+    {
+      "name": "Carol Dweck",
+      "expertise": "Growth mindset, learning, resilience",
+      "key_principles": [
+        "In a growth mindset, challenges are exciting rather than threatening.",
+        "Becoming is better than being.",
+        "The passion for stretching yourself and sticking to it, even when it's not going well, is the hallmark of the growth mindset.",
+        "No matter what your ability is, effort is what ignites that ability and turns it into accomplishment.",
+        "Just because some people can do something with little or no training doesn't mean others can't do it with training.",
+        "Effort is one of those things that gives meaning to life."
+      ],
+      "daily_practices": [
+        "Add 'yet' to any 'I can't' statement",
+        "Celebrate effort, not just results",
+        "Seek challenges that stretch you"
+      ]
+    },
+    {
+      "name": "Ryan Holiday",
+      "expertise": "Stoicism, obstacle as the way, ego management",
+      "key_principles": [
+        "The obstacle is the way. What stands in the way becomes the way.",
+        "Ego is the enemy. It's the voice that tells you you're special, you're better.",
+        "Stillness is the key. In stillness, we find clarity.",
+        "You don't control events, but you control how you respond.",
+        "Perception, action, will. That's the stoic formula.",
+        "Alive time or dead time. You choose."
+      ],
+      "daily_practices": [
+        "Reframe every obstacle as an opportunity",
+        "Practice stillness for 10 minutes daily",
+        "Journal about your perceptions and responses"
+      ]
+    },
+    {
+      "name": "Nassim Taleb",
+      "expertise": "Antifragility, uncertainty, skin in the game",
+      "key_principles": [
+        "Antifragile: Some things benefit from shocks; they thrive and grow when exposed to volatility.",
+        "Wind extinguishes a candle and energizes fire. Be the fire.",
+        "The best way to verify that you are alive is by checking if you like variations.",
+        "If you want to accelerate someone's death, give them a personal doctor.",
+        "Never trust anyone who doesn't have skin in the game.",
+        "The three most harmful addictions are heroin, carbohydrates, and a monthly salary."
+      ],
+      "daily_practices": [
+        "Expose yourself to small stressors daily",
+        "Build redundancy and options in your life",
+        "Avoid fragile dependencies"
+      ]
+    }
+  ],
+  "daily_insights": [
+    "Your thoughts create your reality. Guard them like a fortress.",
+    "Comfort is the enemy of progress. Seek discomfort daily.",
+    "You're not your emotions. You're the observer of your emotions.",
+    "Every setback is a setup for a comeback. Reframe everything.",
+    "The quality of your questions determines the quality of your life.",
+    "Discipline is choosing what you want most over what you want now.",
+    "Your identity drives your behavior. Change who you are, change what you do.",
+    "Pain is inevitable. Suffering is optional. It's how you interpret the pain.",
+    "Confidence comes from kept promises to yourself. Keep small promises daily.",
+    "The obstacle is not in your way. It is the way."
+  ],
+  "skill_challenges": [
+    "Do one thing today that scares you.",
+    "Take a cold shower. Embrace the discomfort.",
+    "Journal for 10 minutes: What am I avoiding and why?",
+    "Identify one limiting belief. Write down evidence against it.",
+    "Go 24 hours without complaining. Notice how often you want to.",
+    "Do something uncomfortable for someone else today.",
+    "Meditate for 10 minutes. Just observe your thoughts.",
+    "Write down 3 things you're grateful for. Be specific.",
+    "Identify one way you made an excuse today. Take ownership instead.",
+    "Say no to one thing you'd normally say yes to. Protect your priorities."
+  ]
+}

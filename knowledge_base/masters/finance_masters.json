@@ -1,0 +1,114 @@
+{
+  "module": "finance",
+  "masters": [
+    {
+      "name": "Dave Ramsey",
+      "expertise": "Debt elimination, budgeting, financial peace",
+      "key_principles": [
+        "Live like no one else so later you can live like no one else.",
+        "Debt is dumb. Cash is king.",
+        "A budget is telling your money where to go instead of wondering where it went.",
+        "The paid-off home mortgage has replaced the BMW as the status symbol of choice.",
+        "You must gain control over your money or the lack of it will forever control you.",
+        "Act your wage."
+      ],
+      "daily_practices": [
+        "Check your budget daily",
+        "Use cash for discretionary spending",
+        "Say no to debt, always"
+      ]
+    },
+    {
+      "name": "Morgan Housel",
+      "expertise": "Psychology of money, behavioral finance, long-term thinking",
+      "key_principles": [
+        "Wealth is what you don't see. It's the cars not bought, the diamonds not purchased.",
+        "Saving is the gap between your ego and your income.",
+        "Compounding works best when you give it decades.",
+        "Getting money and keeping money are two different skills.",
+        "Reasonable is more realistic than rational.",
+        "Room for error is the most important part of any financial plan."
+      ],
+      "daily_practices": [
+        "Automate savings before spending",
+        "Think in decades, not days",
+        "Build a margin of safety in all decisions"
+      ]
+    },
+    {
+      "name": "JL Collins",
+      "expertise": "Simple investing, FIRE, index funds",
+      "key_principles": [
+        "The stock market is the most powerful wealth-building tool ever created.",
+        "Spend less than you earn. Invest the surplus. Avoid debt.",
+        "F-you money is the most important money you'll ever have.",
+        "Nobody can consistently predict what the market will do.",
+        "Your savings rate is more important than your investment returns.",
+        "VTSAX and chill. Keep it simple."
+      ],
+      "daily_practices": [
+        "Automate investments into index funds",
+        "Ignore market news",
+        "Focus on increasing savings rate"
+      ]
+    },
+    {
+      "name": "Ray Dalio",
+      "expertise": "Principles-based investing, macro cycles, risk parity",
+      "key_principles": [
+        "Pain + Reflection = Progress",
+        "He who lives by the crystal ball will eat shattered glass.",
+        "Diversification is the only free lunch in investing.",
+        "The biggest mistake investors make is to believe that what happened in the recent past is likely to persist.",
+        "Don't confuse what you wish were true with what is true.",
+        "Time is like a river that carries us forward into encounters with reality."
+      ],
+      "daily_practices": [
+        "Write down your investment principles",
+        "Diversify across uncorrelated assets",
+        "Review decisions to learn from mistakes"
+      ]
+    },
+    {
+      "name": "Ramit Sethi",
+      "expertise": "Conscious spending, automation, big wins",
+      "key_principles": [
+        "Focus on Big Wins, not small details like lattes.",
+        "Spend extravagantly on things you love, cut mercilessly on things you don't.",
+        "Automate everything. Remove yourself from the equation.",
+        "The best time to negotiate your salary was 3 years ago. The second best time is now.",
+        "There's a limit to how much you can cut, but no limit to how much you can earn.",
+        "Make your money invisible. Automate savings before you see it."
+      ],
+      "daily_practices": [
+        "Focus on earning more, not just cutting",
+        "Automate bills, savings, investments",
+        "Negotiate one thing this week"
+      ]
+    }
+  ],
+  "daily_insights": [
+    "Every dollar you save is a soldier working for you. Send more soldiers to work.",
+    "The best time to start investing was 10 years ago. The second best time is today.",
+    "Lifestyle inflation is the silent killer of wealth. Guard against it.",
+    "Your savings rate matters more than your returns. Focus on the gap.",
+    "Compound interest is the eighth wonder of the world. He who understands it, earns it.",
+    "The goal isn't to be rich. It's to have options. Money buys freedom.",
+    "Never invest in anything you don't understand.",
+    "Pay yourself first. Automate it so it's not a decision.",
+    "The stock market is a device for transferring money from the impatient to the patient.",
+    "Financial freedom isn't about being rich. It's about having enough that money isn't the reason you do things."
+  ],
+  "skill_challenges": [
+    "Calculate your current savings rate. Set a goal 5% higher.",
+    "Review all subscriptions. Cancel at least one.",
+    "Automate one additional savings transfer today.",
+    "Calculate your net worth. Write it down. Track monthly.",
+    "Read one chapter of a personal finance book.",
+    "Increase your 401k contribution by 1%.",
+    "Find your biggest expense category. Find one way to reduce it.",
+    "Set up automatic investing if you haven't already.",
+    "Calculate how much you need for financial independence.",
+    "Negotiate one bill or service this week."
+  ]
+}

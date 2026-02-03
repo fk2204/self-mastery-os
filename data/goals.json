@@ -1,0 +1,61 @@
+{
+  "lifetime_vision": "Financial freedom, elite-level skills, high-value network, and complete life mastery",
+  "yearly_goals": [
+    "Reach $150K+ total income through multiple streams",
+    "Master sales and close deals consistently",
+    "Build a strong investment portfolio",
+    "Develop a powerful professional network"
+  ],
+  "quarterly_goals": {
+    "money": {
+      "goal": "Add $3K/month in side income through high-income skills",
+      "target_level": 7,
+      "start_level": 5,
+      "created_at": "2025-02-03T10:00:00"
+    },
+    "sales": {
+      "goal": "Master cold outreach, close 5 new clients, handle any objection",
+      "target_level": 7,
+      "start_level": 4,
+      "created_at": "2025-02-03T10:00:00"
+    },
+    "finance": {
+      "goal": "50% savings rate, max tax-advantaged accounts, build investment system",
+      "target_level": 7,
+      "start_level": 5,
+      "created_at": "2025-02-03T10:00:00"
+    },
+    "productivity": {
+      "goal": "4+ hours deep work daily, bulletproof morning routine",
+      "target_level": 8,
+      "start_level": 6,
+      "created_at": "2025-02-03T10:00:00"
+    },
+    "business": {
+      "goal": "Launch 1 validated side project, build idea evaluation system",
+      "target_level": 7,
+      "start_level": 5,
+      "created_at": "2025-02-03T10:00:00"
+    },
+    "dating": {
+      "goal": "Expand social circle, 2 new quality connections per week",
+      "target_level": 7,
+      "start_level": 5,
+      "created_at": "2025-02-03T10:00:00"
+    },
+    "mindset": {
+      "goal": "Daily journaling habit, master emotional regulation",
+      "target_level": 8,
+      "start_level": 6,
+      "created_at": "2025-02-03T10:00:00"
+    },
+    "lifestyle": {
+      "goal": "Optimize environment for focus, eliminate friction and distractions",
+      "target_level": 7,
+      "start_level": 5,
+      "created_at": "2025-02-03T10:00:00"
+    }
+  },
+  "monthly_goals": [],
+  "weekly_goals": []
+}

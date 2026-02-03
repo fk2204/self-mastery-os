@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELF-MASTERY OS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-void: #0a0a0b;
+            --bg-deep: #111113;
+            --bg-surface: #18181b;
+            --bg-elevated: #1f1f23;
+            --bg-hover: #27272a;
+            --border-subtle: #2a2a2f;
+            --border-accent: #3a3a42;
+            --text-primary: #fafafa;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --gold-primary: #d4a847;
+            --gold-light: #f0d078;
+            --gold-dim: #8b7355;
+            --success: #22c55e;
+            --success-dim: #166534;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --accent-pink: #ec4899;
+            --accent-cyan: #06b6d4;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--bg-void);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background:
+                radial-gradient(ellipse 80% 50% at 20% -10%, rgba(212, 168, 71, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 80% 100%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .grid-pattern {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image:
+                linear-gradient(var(--border-subtle) 1px, transparent 1px),
+                linear-gradient(90deg, var(--border-subtle) 1px, transparent 1px);
+            background-size: 60px 60px;
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Layout */
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 280px;
+            background: var(--bg-surface);
+            border-right: 1px solid var(--border-subtle);
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+        }
+
+        .sidebar-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .logo {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.75rem;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dim) 100%);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+
+        .nav-section {
+            padding: 1rem 0;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+
+        .nav-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            letter-spacing: 0.2em;
+            padding: 0.5rem 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.875rem 1.5rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .nav-item:hover {
+            background: var(--bg-elevated);
+            color: var(--text-primary);
+        }
+
+        .nav-item.active {
+            background: var(--bg-elevated);
+            color: var(--gold-primary);
+            border-left-color: var(--gold-primary);
+        }
+
+        .nav-item svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .nav-item-text {
+            font-size: 0.875rem;
+        }
+
+        .nav-badge {
+            margin-left: auto;
+            font-size: 0.65rem;
+            padding: 0.2rem 0.5rem;
+            background: var(--gold-primary);
+            color: var(--bg-void);
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex-grow: 1;
+            margin-left: 280px;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        /* Page Header */
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .page-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+        }
+
+        .page-subtitle {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .date-display {
+            text-align: right;
+        }
+
+        .current-date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .current-time {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--gold-primary);
+        }
+
+        /* Page Sections */
+        .page-section {
+            display: none;
+        }
+
+        .page-section.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: var(--border-accent);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .card-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-title svg {
+            color: var(--gold-primary);
+        }
+
+        .card-badge {
+            font-size: 0.65rem;
+            padding: 0.25rem 0.5rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 4px;
+            color: var(--text-muted);
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            background: var(--bg-elevated);
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover {
+            background: var(--bg-hover);
+            border-color: var(--border-accent);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dim) 100%);
+            border-color: var(--gold-primary);
+            color: var(--bg-void);
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(212, 168, 71, 0.3);
+        }
+
+        .btn-success {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+
+        .btn-lg {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+        }
+
+        .btn-block {
+            width: 100%;
+            justify-content: center;
+        }
+
+        /* Inputs */
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 0 3px rgba(212, 168, 71, 0.1);
+        }
+
+        .form-textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .form-range {
+            width: 100%;
+            margin: 0.5rem 0;
+        }
+
+        .range-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .range-value {
+            text-align: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--gold-primary);
+            margin: 0.5rem 0;
+        }
+
+        /* Wisdom Section */
+        .wisdom-hero {
+            background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-deep) 100%);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wisdom-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-dim), var(--gold-primary), var(--gold-dim));
+        }
+
+        .master-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(212, 168, 71, 0.1);
+            border: 1px solid rgba(212, 168, 71, 0.2);
+            border-radius: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .master-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1rem;
+            color: var(--gold-primary);
+            letter-spacing: 0.05em;
+        }
+
+        .master-expertise {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .wisdom-quote {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.75rem;
+            line-height: 1.5;
+            color: var(--text-primary);
+            font-style: italic;
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--gold-primary);
+        }
+
+        .wisdom-practice {
+            background: var(--bg-elevated);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-top: 1.5rem;
+        }
+
+        .practice-label {
+            font-size: 0.65rem;
+            color: var(--gold-primary);
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+        }
+
+        .practice-text {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+        }
+
+        /* Challenge Card */
+        .challenge-card {
+            background: var(--bg-surface);
+            border: 2px solid var(--gold-dim);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+
+        .challenge-module {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.7rem;
+            color: var(--gold-primary);
+            padding: 0.3rem 0.75rem;
+            background: rgba(212, 168, 71, 0.1);
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .challenge-text {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .challenge-complete-btn {
+            width: 100%;
+        }
+
+        /* Power Question */
+        .power-question-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .power-question-text {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        /* Mindset Shift */
+        .mindset-grid {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .mindset-box {
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .mindset-from {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        .mindset-to {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+        .mindset-label {
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            margin-bottom: 0.75rem;
+        }
+
+        .mindset-from .mindset-label { color: var(--danger); }
+        .mindset-to .mindset-label { color: var(--success); }
+
+        .mindset-text {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            font-style: italic;
+        }
+
+        .mindset-arrow {
+            font-size: 2rem;
+            color: var(--gold-primary);
+        }
+
+        .mindset-why {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-subtle);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        /* Habit List */
+        .habit-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .habit-item:hover {
+            border-color: var(--border-accent);
+            transform: translateX(4px);
+        }
+
+        .habit-item.completed {
+            opacity: 0.6;
+        }
+
+        .habit-item.completed .habit-name {
+            text-decoration: line-through;
+            color: var(--text-muted);
+        }
+
+        .habit-checkbox {
+            width: 26px;
+            height: 26px;
+            border: 2px solid var(--border-accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+        }
+
+        .habit-item.completed .habit-checkbox {
+            background: var(--success);
+            border-color: var(--success);
+        }
+
+        .habit-checkbox svg {
+            width: 16px;
+            height: 16px;
+            color: white;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.2s ease;
+        }
+
+        .habit-item.completed .habit-checkbox svg {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .habit-info {
+            flex-grow: 1;
+        }
+
+        .habit-name {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .habit-meta {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .habit-streak {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            font-size: 0.85rem;
+            color: var(--warning);
+            font-weight: 500;
+        }
+
+        /* Module Cards */
+        .module-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.25rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .module-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-2px);
+        }
+
+        .module-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .module-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.25rem;
+        }
+
+        .module-title {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        .module-level {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .module-bar {
+            height: 8px;
+            background: var(--bg-deep);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 0.75rem;
+        }
+
+        .module-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .module-score {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+        }
+
+        .module-score-current {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .module-score-target {
+            color: var(--text-muted);
+        }
+
+        /* Stats Grid */
+        .stat-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            color: var(--gold-primary);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            margin-top: 0.5rem;
+        }
+
+        .stat-change {
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .stat-change.positive { color: var(--success); }
+        .stat-change.negative { color: var(--danger); }
+
+        /* Masters Library */
+        .master-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .master-card:hover {
+            border-color: var(--gold-dim);
+            transform: translateY(-4px);
+        }
+
+        .master-card-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .master-card-expertise {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .master-card-principle {
+            font-family: 'Crimson Pro', serif;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            transform: scale(0.9) translateY(20px);
+            transition: all 0.3s ease;
+        }
+
+        .modal-overlay.active .modal {
+            transform: scale(1) translateY(0);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .modal-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.1em;
+        }
+
+        .modal-close {
+            width: 36px;
+            height: 36px;
+            border: none;
+            background: var(--bg-elevated);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .modal-close:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .modal-footer {
+            padding: 1.5rem;
+            border-top: 1px solid var(--border-subtle);
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+        }
+
+        /* Check-in Steps */
+        .checkin-step {
+            display: none;
+        }
+
+        .checkin-step.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .step-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .step-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--bg-elevated);
+            border: 2px solid var(--border-subtle);
+        }
+
+        .step-dot.active {
+            background: var(--gold-primary);
+            border-color: var(--gold-primary);
+        }
+
+        .step-dot.completed {
+            background: var(--success);
+            border-color: var(--success);
+        }
+
+        /* Priority Input */
+        .priority-input {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .priority-number {
+            width: 32px;
+            height: 32px;
+            background: var(--gold-primary);
+            color: var(--bg-void);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .priority-input input {
+            flex-grow: 1;
+        }
+
+        /* Wins/Lessons List */
+        .reflection-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .reflection-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .reflection-item input {
+            flex-grow: 1;
+        }
+
+        .add-item-btn {
+            background: none;
+            border: 1px dashed var(--border-accent);
+            color: var(--text-muted);
+            padding: 0.75rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .add-item-btn:hover {
+            border-color: var(--gold-primary);
+            color: var(--gold-primary);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-deep);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-accent);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        /* Weekly Review */
+        .review-section {
+            margin-bottom: 2rem;
+        }
+
+        .review-section-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Toast Notifications */
+        .toast-container {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 2000;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .toast {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            animation: slideIn 0.3s ease;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .toast.success { border-left: 3px solid var(--success); }
+        .toast.error { border-left: 3px solid var(--danger); }
+        .toast.warning { border-left: 3px solid var(--warning); }
+
+        .toast-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .toast.success .toast-icon { color: var(--success); }
+        .toast.error .toast-icon { color: var(--danger); }
+        .toast.warning .toast-icon { color: var(--warning); }
+
+        /* Progress Ring */
+        .progress-ring-container {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .progress-ring {
+            position: relative;
+            width: 160px;
+            height: 160px;
+        }
+
+        .progress-ring svg {
+            transform: rotate(-90deg);
+        }
+
+        .progress-ring-bg {
+            fill: none;
+            stroke: var(--bg-deep);
+            stroke-width: 10;
+        }
+
+        .progress-ring-fill {
+            fill: none;
+            stroke: var(--gold-primary);
+            stroke-width: 10;
+            stroke-linecap: round;
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            transition: stroke-dashoffset 1s ease;
+        }
+
+        .progress-ring-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .progress-ring-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 3rem;
+            color: var(--text-primary);
+            line-height: 1;
+        }
+
+        .progress-ring-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 900px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .mindset-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mindset-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-pattern"></div>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    MASTERY OS
+                </div>
+            </div>
+
+            <nav class="nav-section">
+                <div class="nav-label">Daily</div>
+                <div class="nav-item active" onclick="showPage('dashboard')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span class="nav-item-text">Dashboard</span>
+                </div>
+                <div class="nav-item" onclick="showPage('wisdom')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>
+                    </svg>
+                    <span class="nav-item-text">Daily Wisdom</span>
+                    <span class="nav-badge">NEW</span>
+                </div>
+                <div class="nav-item" onclick="openMorningCheckin()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <span class="nav-item-text">Morning Check-in</span>
+                </div>
+                <div class="nav-item" onclick="openEveningReflection()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                    <span class="nav-item-text">Evening Reflection</span>
+                </div>
+
+                <div class="nav-label">Track</div>
+                <div class="nav-item" onclick="showPage('habits')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    <span class="nav-item-text">Habits</span>
+                    <span class="nav-badge" id="habitsBadge">0/0</span>
+                </div>
+                <div class="nav-item" onclick="showPage('modules')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                    <span class="nav-item-text">Modules</span>
+                </div>
+
+                <div class="nav-label">Review</div>
+                <div class="nav-item" onclick="openWeeklyReview()">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span class="nav-item-text">Weekly Review</span>
+                </div>
+                <div class="nav-item" onclick="showPage('stats')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                    <span class="nav-item-text">Analytics</span>
+                </div>
+
+                <div class="nav-label">Learn</div>
+                <div class="nav-item" onclick="showPage('masters')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                    <span class="nav-item-text">Masters Library</span>
+                </div>
+
+                <div class="nav-label">Settings</div>
+                <div class="nav-item" onclick="showPage('settings')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    <span class="nav-item-text">Settings</span>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <div>
+                    <h1 class="page-title" id="pageTitle">COMMAND CENTER</h1>
+                    <p class="page-subtitle" id="pageSubtitle">Your daily mission control</p>
+                </div>
+                <div class="date-display">
+                    <div class="current-date" id="currentDate"></div>
+                    <div class="current-time" id="currentTime"></div>
+                </div>
+            </div>
+
+            <!-- Dashboard Page -->
+            <section class="page-section active" id="page-dashboard">
+                <div class="grid-4" style="margin-bottom: 1.5rem;">
+                    <div class="stat-card">
+                        <div class="stat-value" id="statStreak">0</div>
+                        <div class="stat-label">DAY STREAK</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statDeepWork">0h</div>
+                        <div class="stat-label">DEEP WORK TODAY</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statHabits">0%</div>
+                        <div class="stat-label">HABITS COMPLETE</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statAvgScore">0</div>
+                        <div class="stat-label">AVG DAY SCORE</div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div>
+                        <!-- Today's Wisdom -->
+                        <div class="wisdom-hero">
+                            <div class="master-badge">
+                                <span class="master-name" id="dashMasterName">Loading...</span>
+                                <span class="master-expertise" id="dashMasterExpertise"></span>
+                            </div>
+                            <div class="wisdom-quote" id="dashWisdomQuote">"Loading wisdom..."</div>
+                            <div class="wisdom-practice">
+                                <div class="practice-label">APPLY TODAY</div>
+                                <div class="practice-text" id="dashPractice">Loading...</div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Actions -->
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                    </svg>
+                                    QUICK ACTIONS
+                                </div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                                <button class="btn btn-primary" onclick="openMorningCheckin()">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="5"/><path d="M12 1v2"/>
+                                    </svg>
+                                    Morning Check-in
+                                </button>
+                                <button class="btn" onclick="openEveningReflection()">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3"/>
+                                    </svg>
+                                    Evening Reflection
+                                </button>
+                                <button class="btn" onclick="refreshWisdom()">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                                    </svg>
+                                    New Wisdom
+                                </button>
+                                <button class="btn" onclick="showPage('masters')">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                                    </svg>
+                                    Masters
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!-- Today's Habits -->
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    </svg>
+                                    TODAY'S HABITS
+                                </div>
+                                <span class="card-badge" id="dashHabitProgress">0/0</span>
+                            </div>
+                            <div id="dashHabitList">
+                                <!-- Habits rendered here -->
+                            </div>
+                        </div>
+
+                        <!-- Skill Challenge -->
+                        <div class="challenge-card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                                    </svg>
+                                    TODAY'S CHALLENGE
+                                </div>
+                            </div>
+                            <div class="challenge-module" id="dashChallengeModule">LOADING</div>
+                            <div class="challenge-text" id="dashChallengeText">Loading challenge...</div>
+                            <button class="btn btn-success btn-block" onclick="completeChallenge()">
+                                Mark Complete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Wisdom Page -->
+            <section class="page-section" id="page-wisdom">
+                <div class="wisdom-hero" style="margin-bottom: 2rem;">
+                    <div class="master-badge">
+                        <span class="master-name" id="wisdomMasterName">Loading...</span>
+                        <span class="master-expertise" id="wisdomMasterExpertise"></span>
+                    </div>
+                    <div class="wisdom-quote" id="wisdomQuote">"Loading wisdom..."</div>
+                    <div class="wisdom-practice">
+                        <div class="practice-label">APPLY TODAY</div>
+                        <div class="practice-text" id="wisdomPractice">Loading...</div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="challenge-card">
+                        <div class="card-header">
+                            <div class="card-title">TODAY'S SKILL CHALLENGE</div>
+                        </div>
+                        <div class="challenge-module" id="wisdomChallengeModule">LOADING</div>
+                        <div class="challenge-text" id="wisdomChallengeText">Loading challenge...</div>
+                        <button class="btn btn-success btn-block" onclick="completeChallenge()">
+                            Mark Challenge Complete
+                        </button>
+                    </div>
+
+                    <div class="card power-question-card">
+                        <div class="card-header">
+                            <div class="card-title">POWER QUESTION</div>
+                        </div>
+                        <div class="power-question-text" id="wisdomQuestion">"Loading..."</div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <div class="card-header">
+                        <div class="card-title">MINDSET SHIFT</div>
+                    </div>
+                    <div class="mindset-grid">
+                        <div class="mindset-box mindset-from">
+                            <div class="mindset-label">STOP THINKING</div>
+                            <div class="mindset-text" id="wisdomMindsetFrom">"Loading..."</div>
+                        </div>
+                        <div class="mindset-arrow">→</div>
+                        <div class="mindset-box mindset-to">
+                            <div class="mindset-label">START THINKING</div>
+                            <div class="mindset-text" id="wisdomMindsetTo">"Loading..."</div>
+                        </div>
+                    </div>
+                    <div class="mindset-why" id="wisdomMindsetWhy">Loading...</div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button class="btn btn-primary btn-lg" onclick="refreshWisdom()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                        </svg>
+                        Get New Wisdom
+                    </button>
+                </div>
+            </section>
+
+            <!-- Habits Page -->
+            <section class="page-section" id="page-habits">
+                <div class="grid-2">
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">TODAY'S PROGRESS</div>
+                            </div>
+                            <div class="progress-ring-container">
+                                <div class="progress-ring">
+                                    <svg width="160" height="160" viewBox="0 0 160 160">
+                                        <circle class="progress-ring-bg" cx="80" cy="80" r="70"/>
+                                        <circle class="progress-ring-fill" id="habitProgressRing" cx="80" cy="80" r="70"/>
+                                    </svg>
+                                    <div class="progress-ring-text">
+                                        <div class="progress-ring-value" id="habitProgressValue">0%</div>
+                                        <div class="progress-ring-label">COMPLETE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-block" onclick="openAddHabitModal()" style="margin-top: 1rem;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                            Add New Habit
+                        </button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">ALL HABITS</div>
+                            <span class="card-badge" id="allHabitProgress">0/0</span>
+                        </div>
+                        <div id="allHabitList">
+                            <!-- All habits rendered here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modules Page -->
+            <section class="page-section" id="page-modules">
+                <div class="grid-3" id="moduleGrid">
+                    <!-- Module cards rendered here -->
+                </div>
+            </section>
+
+            <!-- Stats Page -->
+            <section class="page-section" id="page-stats">
+                <div class="grid-4" style="margin-bottom: 2rem;">
+                    <div class="stat-card">
+                        <div class="stat-value" id="statsStreak">0</div>
+                        <div class="stat-label">TOTAL DAYS</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statsDeepWork">0h</div>
+                        <div class="stat-label">TOTAL DEEP WORK</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statsHabits">0%</div>
+                        <div class="stat-label">HABIT COMPLETION</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statsAvgScore">0</div>
+                        <div class="stat-label">AVG DAY SCORE</div>
+                    </div>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">MODULE PROGRESS</div>
+                        </div>
+                        <div id="statsModuleList">
+                            <!-- Module stats rendered here -->
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">TOP STREAKS</div>
+                        </div>
+                        <div id="statsStreakList">
+                            <!-- Streak stats rendered here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Masters Page -->
+            <section class="page-section" id="page-masters">
+                <div class="grid-3" id="mastersGrid">
+                    <!-- Master cards rendered here -->
+                </div>
+            </section>
+
+            <!-- Settings Page -->
+            <section class="page-section" id="page-settings">
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">PROFILE</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-input" id="settingsName" value="Boss">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Daily Time Available (minutes)</label>
+                            <input type="number" class="form-input" id="settingsTime" value="90" min="15" max="240">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Coaching Style</label>
+                            <select class="form-select" id="settingsStyle">
+                                <option value="direct">Direct & Intense</option>
+                                <option value="balanced">Balanced</option>
+                                <option value="gentle">Gentle & Supportive</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" onclick="saveSettings()">Save Settings</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">FOCUS MODULES</div>
+                        </div>
+                        <div id="focusModulesList">
+                            <!-- Focus modules checkboxes -->
+                        </div>
+                        <button class="btn btn-primary" onclick="saveFocusModules()" style="margin-top: 1rem;">Save Focus</button>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <div class="card-header">
+                        <div class="card-title">MODULE LEVELS</div>
+                    </div>
+                    <div class="grid-4" id="moduleLevelsGrid">
+                        <!-- Module level inputs -->
+                    </div>
+                    <button class="btn btn-primary" onclick="saveModuleLevels()" style="margin-top: 1rem;">Save Levels</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Morning Check-in Modal -->
+    <div class="modal-overlay" id="morningModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">MORNING CHECK-IN</h2>
+                <button class="modal-close" onclick="closeModal('morningModal')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="step-indicator">
+                    <div class="step-dot active" id="amStep1"></div>
+                    <div class="step-dot" id="amStep2"></div>
+                    <div class="step-dot" id="amStep3"></div>
+                </div>
+
+                <!-- Step 1: Sleep & Energy -->
+                <div class="checkin-step active" id="amCheckinStep1">
+                    <div class="form-group">
+                        <label class="form-label">Hours of Sleep</label>
+                        <input type="range" class="form-range" id="amSleepHours" min="0" max="12" step="0.5" value="7">
+                        <div class="range-value" id="amSleepValue">7 hours</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Sleep Quality (1-10)</label>
+                        <input type="range" class="form-range" id="amSleepQuality" min="1" max="10" value="7">
+                        <div class="range-value" id="amSleepQualityValue">7</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Current Energy Level (1-10)</label>
+                        <input type="range" class="form-range" id="amEnergy" min="1" max="10" value="7">
+                        <div class="range-value" id="amEnergyValue">7</div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Priorities -->
+                <div class="checkin-step" id="amCheckinStep2">
+                    <div class="form-group">
+                        <label class="form-label">Top 3 Priorities for Today</label>
+                        <div class="priority-input">
+                            <span class="priority-number">1</span>
+                            <input type="text" class="form-input" id="amPriority1" placeholder="Most important task...">
+                        </div>
+                        <div class="priority-input">
+                            <span class="priority-number">2</span>
+                            <input type="text" class="form-input" id="amPriority2" placeholder="Second priority...">
+                        </div>
+                        <div class="priority-input">
+                            <span class="priority-number">3</span>
+                            <input type="text" class="form-input" id="amPriority3" placeholder="Third priority...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Win Definition -->
+                <div class="checkin-step" id="amCheckinStep3">
+                    <div class="form-group">
+                        <label class="form-label">What ONE thing would make today a WIN?</label>
+                        <input type="text" class="form-input" id="amWinDefinition" placeholder="If I accomplish this, today is a success...">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Any notes or intentions?</label>
+                        <textarea class="form-textarea" id="amNotes" placeholder="Optional..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="amPrevBtn" onclick="prevAmStep()" style="display: none;">Previous</button>
+                <button class="btn btn-primary" id="amNextBtn" onclick="nextAmStep()">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Evening Reflection Modal -->
+    <div class="modal-overlay" id="eveningModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">EVENING REFLECTION</h2>
+                <button class="modal-close" onclick="closeModal('eveningModal')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="step-indicator">
+                    <div class="step-dot active" id="pmStep1"></div>
+                    <div class="step-dot" id="pmStep2"></div>
+                    <div class="step-dot" id="pmStep3"></div>
+                    <div class="step-dot" id="pmStep4"></div>
+                </div>
+
+                <!-- Step 1: Wins -->
+                <div class="checkin-step active" id="pmCheckinStep1">
+                    <div class="form-group">
+                        <label class="form-label">What were your WINS today?</label>
+                        <div class="reflection-list" id="pmWinsList">
+                            <div class="reflection-item">
+                                <input type="text" class="form-input" placeholder="Something that went well...">
+                            </div>
+                        </div>
+                        <button class="add-item-btn" onclick="addReflectionItem('pmWinsList')">+ Add another win</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Challenges & Lessons -->
+                <div class="checkin-step" id="pmCheckinStep2">
+                    <div class="form-group">
+                        <label class="form-label">What CHALLENGES did you face?</label>
+                        <div class="reflection-list" id="pmChallengesList">
+                            <div class="reflection-item">
+                                <input type="text" class="form-input" placeholder="A challenge or obstacle...">
+                            </div>
+                        </div>
+                        <button class="add-item-btn" onclick="addReflectionItem('pmChallengesList')">+ Add another</button>
+                    </div>
+                    <div class="form-group" style="margin-top: 1.5rem;">
+                        <label class="form-label">What did you LEARN?</label>
+                        <div class="reflection-list" id="pmLessonsList">
+                            <div class="reflection-item">
+                                <input type="text" class="form-input" placeholder="A lesson or insight...">
+                            </div>
+                        </div>
+                        <button class="add-item-btn" onclick="addReflectionItem('pmLessonsList')">+ Add another</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Metrics -->
+                <div class="checkin-step" id="pmCheckinStep3">
+                    <div class="form-group">
+                        <label class="form-label">Hours of Deep Work</label>
+                        <input type="number" class="form-input" id="pmDeepWork" value="0" min="0" max="16" step="0.5">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Sales Calls / Outreach</label>
+                        <input type="number" class="form-input" id="pmSalesCalls" value="0" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Improvement for Tomorrow</label>
+                        <input type="text" class="form-input" id="pmImprovement" placeholder="One thing to do differently...">
+                    </div>
+                </div>
+
+                <!-- Step 4: Day Score -->
+                <div class="checkin-step" id="pmCheckinStep4">
+                    <div class="form-group">
+                        <label class="form-label">Rate Your Day Overall (1-10)</label>
+                        <input type="range" class="form-range" id="pmDayScore" min="1" max="10" value="7">
+                        <div class="range-value" id="pmDayScoreValue">7</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Any final notes?</label>
+                        <textarea class="form-textarea" id="pmNotes" placeholder="Optional reflection..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="pmPrevBtn" onclick="prevPmStep()" style="display: none;">Previous</button>
+                <button class="btn btn-primary" id="pmNextBtn" onclick="nextPmStep()">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Master Detail Modal -->
+    <div class="modal-overlay" id="masterModal">
+        <div class="modal" style="max-width: 700px;">
+            <div class="modal-header">
+                <h2 class="modal-title" id="masterModalName">MASTER NAME</h2>
+                <button class="modal-close" onclick="closeModal('masterModal')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body" id="masterModalBody">
+                <!-- Master details rendered here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script>
+        // ============================================
+        // DATA STORE
+        // ============================================
+        let appData = {
+            profile: {
+                name: "Boss",
+                dailyTime: 90,
+                coachingStyle: "direct",
+                focusModules: ["money", "sales", "productivity"],
+                moduleLevels: {
+                    money: 5, sales: 4, finance: 6, productivity: 6,
+                    business: 5, mindset: 7, dating: 5, lifestyle: 5
+                }
+            },
+            habits: [
+                { id: 1, name: "Morning Routine", module: "productivity", streak: 12, completed: false },
+                { id: 2, name: "Deep Work Block (90+ min)", module: "productivity", streak: 8, completed: false },
+                { id: 3, name: "Sales Outreach (10+ touches)", module: "sales", streak: 5, completed: false },
+                { id: 4, name: "Skill Development (30+ min)", module: "money", streak: 15, completed: false },
+                { id: 5, name: "Journaling", module: "mindset", streak: 20, completed: false },
+                { id: 6, name: "Reading (20+ min)", module: "mindset", streak: 18, completed: false },
+                { id: 7, name: "Networking Action", module: "business", streak: 3, completed: false },
+                { id: 8, name: "No Phone First Hour", module: "lifestyle", streak: 7, completed: false }
+            ],
+            stats: {
+                dayStreak: 12,
+                deepWorkHours: 45,
+                habitCompletion: 75,
+                avgScore: 7.2
+            },
+            todayLog: {
+                amCheckin: null,
+                pmReflection: null
+            },
+            currentWisdom: null
+        };
+
+        const moduleConfig = {
+            money: { name: "Money & Wealth", color: "#d4a847", icon: "$" },
+            sales: { name: "Sales & Persuasion", color: "#3b82f6", icon: "S" },
+            finance: { name: "Personal Finance", color: "#22c55e", icon: "F" },
+            productivity: { name: "Productivity", color: "#8b5cf6", icon: "P" },
+            business: { name: "Business & Career", color: "#f59e0b", icon: "B" },
+            mindset: { name: "Mindset & Wisdom", color: "#ec4899", icon: "M" },
+            dating: { name: "Social & Dating", color: "#06b6d4", icon: "D" },
+            lifestyle: { name: "Lifestyle Design", color: "#84cc16", icon: "L" }
+        };
+
+        const mastersData = {
+            money: [
+                { name: "Naval Ravikant", expertise: "Wealth creation, leverage, startups", principles: ["Seek wealth, not money or status. Wealth is having assets that earn while you sleep.", "You're not going to get rich renting out your time. You must own equity.", "Arm yourself with specific knowledge, accountability, and leverage.", "Code and media are permissionless leverage. They're the leverage of the new rich."], practices: ["Spend 1 hour learning something that compounds", "Build something that can work without you"] },
+                { name: "Alex Hormozi", expertise: "Business scaling, offers, value creation", principles: ["The goal is to make your offer so good people feel stupid saying no.", "Volume negates luck. Do more.", "Skills are the only assets that can't be taken from you.", "The fastest way to get rich is to solve a painful problem for people who can pay."], practices: ["Do 100 outreach touches", "Improve your offer daily"] },
+                { name: "Charlie Munger", expertise: "Mental models, decision-making", principles: ["Spend each day trying to be a little wiser than you were when you woke up.", "Invert, always invert. Turn a situation or problem upside down.", "Knowing what you don't know is more useful than being brilliant."], practices: ["Read across disciplines", "Invert problems to find solutions"] }
+            ],
+            sales: [
+                { name: "Jordan Belfort", expertise: "Straight line persuasion, tonality", principles: ["The only thing standing between you and your goal is the story you keep telling yourself.", "Sales is a transfer of emotion. You must believe before they can.", "Tonality is 90% of communication."], practices: ["Practice your pitch with power and conviction", "Handle 10 objections out loud daily"] },
+                { name: "Grant Cardone", expertise: "10X action, massive outreach", principles: ["10X your goals and 10X your actions.", "Success is your duty, obligation, and responsibility.", "The fortune is in the follow-up."], practices: ["Make 10X the calls you think you need", "Never lower your target, increase your actions"] },
+                { name: "Chris Voss", expertise: "FBI negotiation, tactical empathy", principles: ["Never split the difference.", "Tactical empathy is understanding the feelings and mindset of another.", "No is the start of the negotiation, not the end."], practices: ["Use mirroring in 3 conversations today", "Label someone's emotion out loud"] }
+            ],
+            mindset: [
+                { name: "David Goggins", expertise: "Mental toughness, extreme accountability", principles: ["You are in danger of living a life so comfortable that you will die without ever realizing your potential.", "Most people stop at 40% of their capacity. The brain lies to protect you.", "Callus your mind. Embrace the suck."], practices: ["Do something that sucks every day", "When your mind says stop, do 10 more"] },
+                { name: "Jocko Willink", expertise: "Extreme ownership, discipline", principles: ["Discipline equals freedom.", "Extreme ownership: There are no bad teams, only bad leaders.", "Default aggressive. When in doubt, take action."], practices: ["Wake up early. Win the first battle.", "Take ownership of every problem in your life"] },
+                { name: "Marcus Aurelius", expertise: "Stoicism, self-discipline", principles: ["You have power over your mind, not outside events.", "The happiness of your life depends upon the quality of your thoughts.", "Waste no more time arguing about what a good man should be. Be one."], practices: ["Morning reflection on what's in your control", "Practice accepting what you cannot change"] }
+            ],
+            productivity: [
+                { name: "Cal Newport", expertise: "Deep work, digital minimalism", principles: ["Deep work is the ability to focus without distraction on a cognitively demanding task.", "If you don't produce, you won't thrive.", "The ability to perform deep work is becoming increasingly rare and valuable."], practices: ["Schedule 3-4 hours of uninterrupted deep work", "Embrace boredom—don't fill every moment"] },
+                { name: "James Clear", expertise: "Atomic habits, behavior change", principles: ["You do not rise to the level of your goals. You fall to the level of your systems.", "Every action is a vote for the type of person you wish to become.", "Habits are the compound interest of self-improvement."], practices: ["Stack new habits onto existing ones", "Track habits visually—never break the chain"] }
+            ],
+            business: [
+                { name: "Elon Musk", expertise: "First principles, moonshots", principles: ["First principles thinking: Boil things down to fundamental truths.", "Failure is an option here. If things are not failing, you are not innovating enough.", "Work like hell. 80-100 hour weeks."], practices: ["Question every assumption", "Move fast and iterate constantly"] },
+                { name: "Jeff Bezos", expertise: "Long-term thinking, customer obsession", principles: ["Focus on customers, not competitors.", "It's always Day 1. Day 2 is stasis, followed by death.", "Make high-velocity decisions."], practices: ["Start with the customer and work backwards", "Think in 5-7 year time horizons"] }
+            ],
+            finance: [
+                { name: "Morgan Housel", expertise: "Psychology of money", principles: ["Wealth is what you don't see.", "Saving is the gap between your ego and your income.", "Compounding works best when you give it decades."], practices: ["Automate savings before spending", "Think in decades, not days"] }
+            ],
+            dating: [
+                { name: "Dale Carnegie", expertise: "Winning friends, influence", principles: ["You can make more friends in two months by becoming interested in other people than in two years trying to get people interested in you.", "A person's name is the sweetest sound.", "Make the other person feel important—sincerely."], practices: ["Remember and use people's names", "Ask questions and truly listen"] }
+            ],
+            lifestyle: [
+                { name: "Tim Ferriss", expertise: "Lifestyle design, optimization", principles: ["Focus on being productive instead of busy.", "What we fear doing most is usually what we most need to do.", "Lack of time is lack of priorities."], practices: ["Define the worst case—it's usually not that bad", "Eliminate before optimizing"] }
+            ]
+        };
+
+        const challenges = {
+            money: ["Identify one skill that would 2x your income. Spend 30 minutes learning it today.", "Calculate your true hourly rate. Find one way to increase it.", "Reach out to someone who makes 10x what you make."],
+            sales: ["Make 10 cold outreach touches today.", "Write responses to your top 5 objections.", "Practice mirroring in 3 conversations."],
+            mindset: ["Do one thing today that scares you.", "Journal for 10 minutes: What am I avoiding?", "Go 24 hours without complaining."],
+            productivity: ["Do 90 minutes of deep work with zero interruptions.", "Identify your top 3 tasks before ending today.", "Single-task for your entire morning."],
+            finance: ["Calculate your current savings rate.", "Review subscriptions and cancel one.", "Automate one additional savings transfer."],
+            business: ["Validate one idea by talking to 3 potential customers.", "Use ICE scoring on 3 ideas.", "Send one cold email to someone you want to learn from."],
+            dating: ["Start a conversation with one stranger.", "Give three genuine compliments.", "Practice active listening in your next conversation."],
+            lifestyle: ["Remove one item that tempts bad behavior.", "Go 24 hours without social media.", "Declutter one area completely."]
+        };
+
+        const powerQuestions = [
+            "What would the best version of me do right now?",
+            "What am I avoiding that I know I should do?",
+            "If I only accomplished one thing today, what should it be?",
+            "Am I being productive or just busy?",
+            "What's the ONE thing that would make everything else easier?",
+            "If today repeated for a year, where would I end up?",
+            "What skill, if mastered, would change everything?"
+        ];
+
+        const mindsetShifts = [
+            { from: "I don't have time", to: "It's not a priority", why: "Own your choices. If it mattered, you'd find time." },
+            { from: "I can't do this", to: "I can't do this YET", why: "Growth mindset. Skills are built, not born." },
+            { from: "I failed", to: "I learned what doesn't work", why: "Failure is data. Collect it and adjust." },
+            { from: "I'm not ready", to: "I'll figure it out as I go", why: "Readiness is a myth. Action creates clarity." },
+            { from: "I need motivation", to: "I need discipline", why: "Motivation is fleeting. Discipline is reliable." },
+            { from: "It's too hard", to: "It's supposed to be hard", why: "Hard is what makes it valuable." }
+        ];
+
+        // ============================================
+        // UTILITY FUNCTIONS
+        // ============================================
+        function getRandomItem(arr) {
+            return arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        function saveToStorage() {
+            localStorage.setItem('selfMasteryOS', JSON.stringify(appData));
+        }
+
+        function loadFromStorage() {
+            const saved = localStorage.getItem('selfMasteryOS');
+            if (saved) {
+                appData = { ...appData, ...JSON.parse(saved) };
+            }
+        }
+
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.innerHTML = `
+                <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    ${type === 'success' ? '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>' : '<circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>'}
+                </svg>
+                <span>${message}</span>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => toast.remove(), 4000);
+        }
+
+        // ============================================
+        // TIME & DATE
+        // ============================================
+        function updateDateTime() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
+            document.getElementById('currentTime').textContent = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+        }
+
+        // ============================================
+        // NAVIGATION
+        // ============================================
+        function showPage(pageId) {
+            // Update nav
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            event?.target?.closest('.nav-item')?.classList.add('active');
+
+            // Update page
+            document.querySelectorAll('.page-section').forEach(page => page.classList.remove('active'));
+            document.getElementById(`page-${pageId}`).classList.add('active');
+
+            // Update title
+            const titles = {
+                dashboard: ['COMMAND CENTER', 'Your daily mission control'],
+                wisdom: ['DAILY WISDOM', 'Teachings from the masters'],
+                habits: ['HABIT TRACKER', 'Build your daily systems'],
+                modules: ['LIFE MODULES', 'Track your growth areas'],
+                stats: ['ANALYTICS', 'Your performance data'],
+                masters: ['MASTERS LIBRARY', 'Learn from the greats'],
+                settings: ['SETTINGS', 'Customize your experience']
+            };
+
+            const [title, subtitle] = titles[pageId] || ['', ''];
+            document.getElementById('pageTitle').textContent = title;
+            document.getElementById('pageSubtitle').textContent = subtitle;
+
+            // Load page-specific data
+            if (pageId === 'habits') loadHabitsPage();
+            if (pageId === 'modules') loadModulesPage();
+            if (pageId === 'stats') loadStatsPage();
+            if (pageId === 'masters') loadMastersPage();
+            if (pageId === 'settings') loadSettingsPage();
+        }
+
+        // ============================================
+        // MODALS
+        // ============================================
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+        }
+
+        // ============================================
+        // WISDOM
+        // ============================================
+        function generateWisdom() {
+            const focusModules = appData.profile.focusModules;
+            const randomModule = getRandomItem(focusModules.filter(m => mastersData[m])) || 'mindset';
+            const masters = mastersData[randomModule] || mastersData.mindset;
+            const master = getRandomItem(masters);
+            const teaching = getRandomItem(master.principles);
+            const practice = getRandomItem(master.practices);
+
+            const challengeModule = getRandomItem(Object.keys(challenges));
+            const challenge = getRandomItem(challenges[challengeModule]);
+
+            const question = getRandomItem(powerQuestions);
+            const shift = getRandomItem(mindsetShifts);
+
+            appData.currentWisdom = {
+                master: master.name,
+                expertise: master.expertise,
+                teaching,
+                practice,
+                challengeModule,
+                challenge,
+                question,
+                shift
+            };
+
+            return appData.currentWisdom;
+        }
+
+        function refreshWisdom() {
+            const wisdom = generateWisdom();
+            updateWisdomUI(wisdom);
+            showToast('New wisdom loaded!');
+        }
+
+        function updateWisdomUI(wisdom) {
+            // Dashboard
+            document.getElementById('dashMasterName').textContent = wisdom.master;
+            document.getElementById('dashMasterExpertise').textContent = wisdom.expertise;
+            document.getElementById('dashWisdomQuote').textContent = `"${wisdom.teaching}"`;
+            document.getElementById('dashPractice').textContent = wisdom.practice;
+            document.getElementById('dashChallengeModule').textContent = wisdom.challengeModule.toUpperCase();
+            document.getElementById('dashChallengeText').textContent = wisdom.challenge;
+
+            // Wisdom page
+            document.getElementById('wisdomMasterName').textContent = wisdom.master;
+            document.getElementById('wisdomMasterExpertise').textContent = wisdom.expertise;
+            document.getElementById('wisdomQuote').textContent = `"${wisdom.teaching}"`;
+            document.getElementById('wisdomPractice').textContent = wisdom.practice;
+            document.getElementById('wisdomChallengeModule').textContent = wisdom.challengeModule.toUpperCase();
+            document.getElementById('wisdomChallengeText').textContent = wisdom.challenge;
+            document.getElementById('wisdomQuestion').textContent = `"${wisdom.question}"`;
+            document.getElementById('wisdomMindsetFrom').textContent = `"${wisdom.shift.from}"`;
+            document.getElementById('wisdomMindsetTo').textContent = `"${wisdom.shift.to}"`;
+            document.getElementById('wisdomMindsetWhy').textContent = wisdom.shift.why;
+        }
+
+        function completeChallenge() {
+            showToast('Challenge completed! Great work.');
+        }
+
+        // ============================================
+        // HABITS
+        // ============================================
+        function renderHabits(containerId, showAll = false) {
+            const container = document.getElementById(containerId);
+            const habits = showAll ? appData.habits : appData.habits.slice(0, 6);
+
+            container.innerHTML = habits.map(habit => `
+                <div class="habit-item ${habit.completed ? 'completed' : ''}" onclick="toggleHabit(${habit.id})">
+                    <div class="habit-checkbox">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <div class="habit-info">
+                        <div class="habit-name">${habit.name}</div>
+                        <div class="habit-meta">${moduleConfig[habit.module]?.name || habit.module}</div>
+                    </div>
+                    <div class="habit-streak">🔥 ${habit.streak}</div>
+                </div>
+            `).join('');
+
+            updateHabitProgress();
+        }
+
+        function toggleHabit(id) {
+            const habit = appData.habits.find(h => h.id === id);
+            if (habit) {
+                habit.completed = !habit.completed;
+                if (habit.completed) {
+                    habit.streak++;
+                    showToast(`${habit.name} completed! Streak: ${habit.streak} days`);
+                }
+                renderHabits('dashHabitList');
+                renderHabits('allHabitList', true);
+                saveToStorage();
+            }
+        }
+
+        function updateHabitProgress() {
+            const completed = appData.habits.filter(h => h.completed).length;
+            const total = appData.habits.length;
+            const percentage = Math.round((completed / total) * 100);
+
+            document.getElementById('dashHabitProgress').textContent = `${completed}/${total}`;
+            document.getElementById('habitsBadge').textContent = `${completed}/${total}`;
+            document.getElementById('statHabits').textContent = `${percentage}%`;
+
+            if (document.getElementById('allHabitProgress')) {
+                document.getElementById('allHabitProgress').textContent = `${completed}/${total}`;
+            }
+
+            if (document.getElementById('habitProgressRing')) {
+                const circumference = 2 * Math.PI * 70;
+                const offset = circumference - (percentage / 100) * circumference;
+                document.getElementById('habitProgressRing').style.strokeDashoffset = offset;
+                document.getElementById('habitProgressValue').textContent = `${percentage}%`;
+            }
+        }
+
+        function loadHabitsPage() {
+            renderHabits('allHabitList', true);
+        }
+
+        // ============================================
+        // MODULES
+        // ============================================
+        function loadModulesPage() {
+            const grid = document.getElementById('moduleGrid');
+            grid.innerHTML = Object.entries(moduleConfig).map(([key, config]) => {
+                const level = appData.profile.moduleLevels[key] || 5;
+                const target = appData.profile.focusModules.includes(key) ? level + 2 : level + 1;
+                const percentage = (level / 10) * 100;
+
+                return `
+                    <div class="module-card" onclick="showModuleDetail('${key}')">
+                        <div class="module-header">
+                            <div class="module-icon" style="background: ${config.color}20; color: ${config.color};">${config.icon}</div>
+                            <div>
+                                <div class="module-title">${config.name}</div>
+                                <div class="module-level">${appData.profile.focusModules.includes(key) ? '⭐ FOCUS' : ''}</div>
+                            </div>
+                        </div>
+                        <div class="module-bar">
+                            <div class="module-bar-fill" style="width: ${percentage}%; background: ${config.color};"></div>
+                        </div>
+                        <div class="module-score">
+                            <span class="module-score-current" style="color: ${config.color};">${level}/10</span>
+                            <span class="module-score-target">Target: ${Math.min(target, 10)}</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function showModuleDetail(moduleKey) {
+            showToast(`Opening ${moduleConfig[moduleKey].name} details...`, 'warning');
+        }
+
+        // ============================================
+        // STATS
+        // ============================================
+        function loadStatsPage() {
+            document.getElementById('statsStreak').textContent = appData.stats.dayStreak;
+            document.getElementById('statsDeepWork').textContent = `${appData.stats.deepWorkHours}h`;
+            document.getElementById('statsHabits').textContent = `${appData.stats.habitCompletion}%`;
+            document.getElementById('statsAvgScore').textContent = appData.stats.avgScore;
+
+            // Module stats
+            const moduleList = document.getElementById('statsModuleList');
+            moduleList.innerHTML = Object.entries(moduleConfig).map(([key, config]) => {
+                const level = appData.profile.moduleLevels[key] || 5;
+                return `
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <div style="width: 100px; font-size: 0.8rem; color: var(--text-secondary);">${config.name}</div>
+                        <div style="flex-grow: 1; height: 8px; background: var(--bg-deep); border-radius: 4px; overflow: hidden;">
+                            <div style="width: ${level * 10}%; height: 100%; background: ${config.color}; border-radius: 4px;"></div>
+                        </div>
+                        <div style="font-family: 'Bebas Neue'; font-size: 1.25rem; color: ${config.color};">${level}</div>
+                    </div>
+                `;
+            }).join('');
+
+            // Streak stats
+            const streakList = document.getElementById('statsStreakList');
+            const topStreaks = [...appData.habits].sort((a, b) => b.streak - a.streak).slice(0, 5);
+            streakList.innerHTML = topStreaks.map(habit => `
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: var(--bg-elevated); border-radius: 8px; margin-bottom: 0.5rem;">
+                    <span style="font-size: 0.85rem;">${habit.name}</span>
+                    <span style="color: var(--warning); font-weight: 600;">🔥 ${habit.streak} days</span>
+                </div>
+            `).join('');
+        }
+
+        // ============================================
+        // MASTERS
+        // ============================================
+        function loadMastersPage() {
+            const grid = document.getElementById('mastersGrid');
+            let allMasters = [];
+
+            Object.entries(mastersData).forEach(([module, masters]) => {
+                masters.forEach(master => {
+                    allMasters.push({ ...master, module });
+                });
+            });
+
+            grid.innerHTML = allMasters.map(master => `
+                <div class="master-card" onclick="showMasterDetail('${master.name}', '${master.module}')">
+                    <div class="master-card-name">${master.name}</div>
+                    <div class="master-card-expertise">${master.expertise}</div>
+                    <div class="master-card-principle">"${master.principles[0]}"</div>
+                </div>
+            `).join('');
+        }
+
+        function showMasterDetail(name, module) {
+            const masters = mastersData[module];
+            const master = masters.find(m => m.name === name);
+
+            if (!master) return;
+
+            document.getElementById('masterModalName').textContent = master.name.toUpperCase();
+            document.getElementById('masterModalBody').innerHTML = `
+                <div style="color: var(--text-muted); margin-bottom: 1.5rem;">${master.expertise}</div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <div style="font-family: 'Bebas Neue'; font-size: 1rem; color: var(--gold-primary); margin-bottom: 0.75rem; letter-spacing: 0.1em;">KEY PRINCIPLES</div>
+                    ${master.principles.map((p, i) => `
+                        <div style="font-family: 'Crimson Pro', serif; font-size: 1.1rem; font-style: italic; padding: 1rem; background: var(--bg-elevated); border-radius: 8px; margin-bottom: 0.5rem; border-left: 3px solid var(--gold-primary);">
+                            "${p}"
+                        </div>
+                    `).join('')}
+                </div>
+
+                <div>
+                    <div style="font-family: 'Bebas Neue'; font-size: 1rem; color: var(--gold-primary); margin-bottom: 0.75rem; letter-spacing: 0.1em;">DAILY PRACTICES</div>
+                    ${master.practices.map(p => `
+                        <div style="padding: 0.75rem 1rem; background: var(--bg-elevated); border-radius: 8px; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: var(--success);">→</span>
+                            ${p}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+
+            openModal('masterModal');
+        }
+
+        // ============================================
+        // SETTINGS
+        // ============================================
+        function loadSettingsPage() {
+            document.getElementById('settingsName').value = appData.profile.name;
+            document.getElementById('settingsTime').value = appData.profile.dailyTime;
+            document.getElementById('settingsStyle').value = appData.profile.coachingStyle;
+
+            // Focus modules
+            const focusList = document.getElementById('focusModulesList');
+            focusList.innerHTML = Object.entries(moduleConfig).map(([key, config]) => `
+                <label style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" id="focus_${key}" ${appData.profile.focusModules.includes(key) ? 'checked' : ''} style="width: 18px; height: 18px;">
+                    <span>${config.name}</span>
+                </label>
+            `).join('');
+
+            // Module levels
+            const levelsGrid = document.getElementById('moduleLevelsGrid');
+            levelsGrid.innerHTML = Object.entries(moduleConfig).map(([key, config]) => `
+                <div class="form-group">
+                    <label class="form-label">${config.name}</label>
+                    <input type="number" class="form-input" id="level_${key}" value="${appData.profile.moduleLevels[key] || 5}" min="1" max="10">
+                </div>
+            `).join('');
+        }
+
+        function saveSettings() {
+            appData.profile.name = document.getElementById('settingsName').value;
+            appData.profile.dailyTime = parseInt(document.getElementById('settingsTime').value);
+            appData.profile.coachingStyle = document.getElementById('settingsStyle').value;
+            saveToStorage();
+            showToast('Settings saved!');
+        }
+
+        function saveFocusModules() {
+            appData.profile.focusModules = Object.keys(moduleConfig).filter(key =>
+                document.getElementById(`focus_${key}`)?.checked
+            );
+            saveToStorage();
+            showToast('Focus modules updated!');
+        }
+
+        function saveModuleLevels() {
+            Object.keys(moduleConfig).forEach(key => {
+                const input = document.getElementById(`level_${key}`);
+                if (input) {
+                    appData.profile.moduleLevels[key] = parseInt(input.value) || 5;
+                }
+            });
+            saveToStorage();
+            showToast('Module levels updated!');
+            loadModulesPage();
+        }
+
+        // ============================================
+        // MORNING CHECK-IN
+        // ============================================
+        let amStep = 1;
+
+        function openMorningCheckin() {
+            amStep = 1;
+            updateAmSteps();
+            openModal('morningModal');
+        }
+
+        function updateAmSteps() {
+            for (let i = 1; i <= 3; i++) {
+                document.getElementById(`amStep${i}`).className = `step-dot ${i < amStep ? 'completed' : ''} ${i === amStep ? 'active' : ''}`;
+                document.getElementById(`amCheckinStep${i}`).className = `checkin-step ${i === amStep ? 'active' : ''}`;
+            }
+            document.getElementById('amPrevBtn').style.display = amStep > 1 ? 'inline-flex' : 'none';
+            document.getElementById('amNextBtn').textContent = amStep === 3 ? 'Complete' : 'Next';
+        }
+
+        function nextAmStep() {
+            if (amStep < 3) {
+                amStep++;
+                updateAmSteps();
+            } else {
+                saveMorningCheckin();
+            }
+        }
+
+        function prevAmStep() {
+            if (amStep > 1) {
+                amStep--;
+                updateAmSteps();
+            }
+        }
+
+        function saveMorningCheckin() {
+            appData.todayLog.amCheckin = {
+                sleepHours: parseFloat(document.getElementById('amSleepHours').value),
+                sleepQuality: parseInt(document.getElementById('amSleepQuality').value),
+                energy: parseInt(document.getElementById('amEnergy').value),
+                priorities: [
+                    document.getElementById('amPriority1').value,
+                    document.getElementById('amPriority2').value,
+                    document.getElementById('amPriority3').value
+                ].filter(p => p),
+                winDefinition: document.getElementById('amWinDefinition').value,
+                notes: document.getElementById('amNotes').value,
+                timestamp: new Date().toISOString()
+            };
+
+            saveToStorage();
+            closeModal('morningModal');
+            showToast('Morning check-in complete! Let\'s crush it today.');
+        }
+
+        // Range input listeners
+        document.getElementById('amSleepHours')?.addEventListener('input', (e) => {
+            document.getElementById('amSleepValue').textContent = `${e.target.value} hours`;
+        });
+        document.getElementById('amSleepQuality')?.addEventListener('input', (e) => {
+            document.getElementById('amSleepQualityValue').textContent = e.target.value;
+        });
+        document.getElementById('amEnergy')?.addEventListener('input', (e) => {
+            document.getElementById('amEnergyValue').textContent = e.target.value;
+        });
+
+        // ============================================
+        // EVENING REFLECTION
+        // ============================================
+        let pmStep = 1;
+
+        function openEveningReflection() {
+            pmStep = 1;
+            updatePmSteps();
+            openModal('eveningModal');
+        }
+
+        function updatePmSteps() {
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById(`pmStep${i}`).className = `step-dot ${i < pmStep ? 'completed' : ''} ${i === pmStep ? 'active' : ''}`;
+                document.getElementById(`pmCheckinStep${i}`).className = `checkin-step ${i === pmStep ? 'active' : ''}`;
+            }
+            document.getElementById('pmPrevBtn').style.display = pmStep > 1 ? 'inline-flex' : 'none';
+            document.getElementById('pmNextBtn').textContent = pmStep === 4 ? 'Complete' : 'Next';
+        }
+
+        function nextPmStep() {
+            if (pmStep < 4) {
+                pmStep++;
+                updatePmSteps();
+            } else {
+                saveEveningReflection();
+            }
+        }
+
+        function prevPmStep() {
+            if (pmStep > 1) {
+                pmStep--;
+                updatePmSteps();
+            }
+        }
+
+        function saveEveningReflection() {
+            const getListValues = (containerId) => {
+                return Array.from(document.querySelectorAll(`#${containerId} input`))
+                    .map(input => input.value)
+                    .filter(v => v);
+            };
+
+            appData.todayLog.pmReflection = {
+                wins: getListValues('pmWinsList'),
+                challenges: getListValues('pmChallengesList'),
+                lessons: getListValues('pmLessonsList'),
+                deepWork: parseFloat(document.getElementById('pmDeepWork').value),
+                salesCalls: parseInt(document.getElementById('pmSalesCalls').value),
+                improvement: document.getElementById('pmImprovement').value,
+                dayScore: parseInt(document.getElementById('pmDayScore').value),
+                notes: document.getElementById('pmNotes').value,
+                timestamp: new Date().toISOString()
+            };
+
+            // Update stats
+            appData.stats.dayStreak++;
+            appData.stats.avgScore = ((appData.stats.avgScore * (appData.stats.dayStreak - 1)) + appData.todayLog.pmReflection.dayScore) / appData.stats.dayStreak;
+
+            saveToStorage();
+            closeModal('eveningModal');
+            showToast(`Day complete! Score: ${appData.todayLog.pmReflection.dayScore}/10`);
+            updateDashboardStats();
+        }
+
+        function addReflectionItem(containerId) {
+            const container = document.getElementById(containerId);
+            const div = document.createElement('div');
+            div.className = 'reflection-item';
+            div.innerHTML = `<input type="text" class="form-input" placeholder="Add another...">`;
+            container.appendChild(div);
+        }
+
+        document.getElementById('pmDayScore')?.addEventListener('input', (e) => {
+            document.getElementById('pmDayScoreValue').textContent = e.target.value;
+        });
+
+        // ============================================
+        // WEEKLY REVIEW
+        // ============================================
+        function openWeeklyReview() {
+            showToast('Weekly review feature coming soon!', 'warning');
+        }
+
+        // ============================================
+        // DASHBOARD STATS
+        // ============================================
+        function updateDashboardStats() {
+            document.getElementById('statStreak').textContent = appData.stats.dayStreak;
+            document.getElementById('statDeepWork').textContent = `${appData.todayLog.pmReflection?.deepWork || 0}h`;
+            document.getElementById('statAvgScore').textContent = appData.stats.avgScore.toFixed(1);
+        }
+
+        // ============================================
+        // INITIALIZATION
+        // ============================================
+        function init() {
+            loadFromStorage();
+            updateDateTime();
+            setInterval(updateDateTime, 1000);
+
+            const wisdom = generateWisdom();
+            updateWisdomUI(wisdom);
+            renderHabits('dashHabitList');
+            updateDashboardStats();
+
+            // Set up range input listeners
+            ['amSleepHours', 'amSleepQuality', 'amEnergy', 'pmDayScore'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.dispatchEvent(new Event('input'));
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', init);
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            if (e.key === 'r') refreshWisdom();
+            if (e.key === 'm') openMorningCheckin();
+            if (e.key === 'e') openEveningReflection();
+        });
+    </script>
+</body>
+</html>
