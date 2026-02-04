@@ -84,6 +84,13 @@
         "time_minutes": 30,
         "instructions": "In your next conversation, ask 3 follow-up questions for every statement they make. Go from 'What do you do?' to 'What got you into that?' to 'What do you enjoy most about it?'",
         "success_criteria": "Complete one conversation with 3-level follow-up questions"
+      },
+      {
+        "title": "Daily Appreciation Practice",
+        "difficulty": 1,
+        "time_minutes": 10,
+        "instructions": "For one week, tell your partner (or close friend/family member) one specific thing you appreciate about them each day. Be specific: not 'I appreciate you' but 'I appreciated how you made me coffee this morning without me asking.'",
+        "success_criteria": "7 consecutive days of specific appreciations given"
       }
     ],
     "intermediate": [
@@ -107,6 +114,13 @@
         "time_minutes": 60,
         "instructions": "Create a personal toolkit of 10 conversation starters that work for you. Test each in real situations. Keep the ones that consistently work.",
         "success_criteria": "10 tested conversation starters with notes on effectiveness"
+      },
+      {
+        "title": "Weekly Relationship Check-In",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Schedule a weekly 'state of the union' conversation with your partner. Use this structure: (1) What went well this week in our relationship? (2) What's one thing I could do better? (3) Is there anything unresolved we need to address? (4) What are you looking forward to together? Keep it positive and solution-focused.",
+        "success_criteria": "Complete 4 weekly check-ins with documented insights and improvements"
       }
     ],
     "advanced": [
@@ -130,6 +144,13 @@
         "time_minutes": 90,
         "instructions": "List your top 20 relationships. Rate each on depth (1-10) and recency of contact. Reach out to 5 who scored low but matter to you. Rekindle the connections.",
         "success_criteria": "5 meaningful reconnections made with follow-up plans"
+      },
+      {
+        "title": "Perpetual Problem Dialogue",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Identify a recurring conflict in your relationship that never seems to resolve (69% of conflicts are perpetual). Instead of trying to 'win,' have a conversation about the dreams and values behind each position. Use this structure: (1) Each person shares their position without interruption. (2) Each person explores: 'What does this represent to me? What's my deeper need?' (3) Find the overlapping values. (4) Brainstorm compromises that honor both dreams. The goal is understanding, not agreement.",
+        "success_criteria": "Complete the dialogue on one perpetual problem with documented compromises and reduced conflict intensity"
       }
     ]
   },
@@ -414,6 +435,196 @@
           {"title": "Mark Manson's Blog/Newsletter", "key_takeaway": "Regular essays on relationships, self-improvement, and life philosophy"}
         ]
       }
+    },
+    {
+      "name": "John Gottman",
+      "expertise": "Relationship science, conflict resolution, Four Horsemen",
+      "key_principles": [
+        "The Four Horsemen of relationship apocalypse: Criticism, Contempt, Defensiveness, Stonewalling.",
+        "The antidotes: Gentle start-up, Build culture of appreciation, Take responsibility, Self-soothe.",
+        "The magic ratio is 5:1 - five positive interactions for every negative one.",
+        "Successful couples turn toward each other's bids for attention, not away.",
+        "69% of relationship conflict is perpetual - not solvable. Learn to manage it.",
+        "Small things often: Regular positive moments matter more than grand gestures."
+      ],
+      "daily_practices": [
+        "Make a bid for connection daily: Share something, ask a question, invite interaction",
+        "Respond to partner's bids: Turn toward, not away or against",
+        "Five-to-one rule: Five positives for every negative interaction"
+      ],
+      "worked_examples": [
+        {
+          "title": "Recognizing and Stopping the Four Horsemen",
+          "scenario": "Your arguments always escalate and you don't know why.",
+          "framework_applied": "Four Horsemen + Antidotes",
+          "step_by_step": [
+            "RECOGNIZE the Horseman: Which one shows up in your conflicts?",
+            "1. CRITICISM: Attacking character ('You always...', 'You never...')",
+            "   Antidote: Gentle start-up with 'I' statements. 'I feel X when Y happens'",
+            "2. CONTEMPT: Mockery, sarcasm, name-calling, eye-rolling (most toxic)",
+            "   Antidote: Build culture of appreciation. Express what you admire daily.",
+            "3. DEFENSIVENESS: Playing victim, making excuses, counter-attacking",
+            "   Antidote: Take responsibility, even for 5% of the issue",
+            "4. STONEWALLING: Shutting down, silent treatment, walking away",
+            "   Antidote: Self-soothe when flooded. Take 20-min break, then return",
+            "Practice the antidotes BEFORE the next conflict"
+          ],
+          "outcome": "Conflicts become productive discussions instead of escalating battles. The relationship stabilizes and deepens."
+        },
+        {
+          "title": "The Art of the Repair Attempt",
+          "scenario": "Arguments spiral and you can't de-escalate once they start.",
+          "framework_applied": "Repair Attempts + Emotional Flooding",
+          "step_by_step": [
+            "Notice when you're getting flooded (heart rate >100, can't think clearly)",
+            "Make a repair attempt: A statement or action that de-escalates",
+            "Examples: 'I'm feeling defensive', 'Can we start over?', 'I love you', humor",
+            "Your partner must ACCEPT the repair attempt for it to work",
+            "If repairs keep failing, your friendship foundation is damaged",
+            "Rebuild friendship: Daily check-ins, appreciate out loud, ask open questions",
+            "Practice repairs during calm times so they're easier during conflict"
+          ],
+          "outcome": "You develop a circuit breaker for arguments. Conflicts de-escalate before they cause lasting damage."
+        },
+        {
+          "title": "Managing Perpetual Problems",
+          "scenario": "You keep having the same argument over and over. Nothing changes.",
+          "framework_applied": "Perpetual vs Solvable Problems + Dreams Within Conflict",
+          "step_by_step": [
+            "Realize: 69% of problems are perpetual (based on personality differences)",
+            "These aren't meant to be 'solved' - they're meant to be managed with humor and acceptance",
+            "Example: One partner is neat, one is messy. This won't change.",
+            "Instead of trying to change them, understand the dream behind their position",
+            "Neat partner's dream: 'A calm, organized home makes me feel safe'",
+            "Messy partner's dream: 'Spontaneity and creativity matter more than order'",
+            "Honor both dreams: Create neat zones and creative zones",
+            "The goal isn't agreement, it's understanding and compromise"
+          ],
+          "outcome": "You stop trying to win the argument and start understanding each other. The conflict loses its charge."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Four Horsemen Awareness Checklist",
+          "context": "Use after conflicts to identify patterns",
+          "template": "RECENT CONFLICT ABOUT: ___\n\nDid I use CRITICISM? (Attacking character vs complaining about behavior)\n[ ] Example: ___\nAntidote: How could I have used gentle start-up?\n___\n\nDid I show CONTEMPT? (Disrespect, mockery, superiority)\n[ ] Example: ___\nAntidote: What do I appreciate about my partner?\n___\n\nWas I DEFENSIVE? (Denying responsibility, making excuses)\n[ ] Example: ___\nAntidote: What was my 5% responsibility?\n___\n\nDid I STONEWALL? (Shut down, withdraw, silent treatment)\n[ ] Example: ___\nAntidote: Was I flooded? Did I need a break?\n___\n\nREPAIR ATTEMPTS:\nDid I try to de-escalate? ___\nDid my partner try? ___\nWere repairs accepted? ___\n\nNEXT TIME I WILL:\n___",
+          "example_filled": "CONFLICT: About household chores distribution\n\nCRITICISM?\n[x] 'You never help out around here'\nAntidote: 'I feel overwhelmed when the dishes pile up. Can we figure out a system together?'\n\nCONTEMPT?\n[x] Eye roll when they tried to explain\nAntidote: They work hard too. I appreciate that they cook most dinners.\n\nDEFENSIVE?\n[x] 'Well you don't do X either!'\nAntidote: 'You're right, I haven't been doing my share. Let's both improve.'\n\nSTONEWALL?\n[ ] No\n\nREPAIRS:\nI tried: 'Can we talk about this calmly?' - ignored\nThey tried: 'I'm sorry' - I rejected it because I was still angry\nOutcome: Fight escalated\n\nNEXT TIME:\n1. Notice when I'm flooded, take a break\n2. Start with appreciation, not criticism\n3. Accept repair attempts even when upset"
+        },
+        {
+          "title": "Bid for Connection Tracker",
+          "context": "Build friendship through small daily moments",
+          "template": "BIDS I MADE TODAY:\n1. [Time] [What I said/did] → Partner response: [ ] Toward [ ] Away [ ] Against\n2. [Time] [What I said/did] → Partner response: [ ] Toward [ ] Away [ ] Against\n3. [Time] [What I said/did] → Partner response: [ ] Toward [ ] Away [ ] Against\n\nBIDS PARTNER MADE:\n1. [Time] [What they said/did] → My response: [ ] Toward [ ] Away [ ] Against\n2. [Time] [What they said/did] → My response: [ ] Toward [ ] Away [ ] Against\n3. [Time] [What they said/did] → My response: [ ] Toward [ ] Away [ ] Against\n\nTURN TOWARD RATE:\nMe: ___% (Target: 86%+)\nPartner: ___% (Target: 86%+)\n\nOBSERVATIONS:\n___\n\nTOMORROW I WILL:\n___",
+          "example_filled": "BIDS I MADE:\n1. 7am 'Check out this article' → [x] Toward (read it, commented)\n2. 6pm 'How was your day?' → [x] Toward (shared story for 5 min)\n3. 9pm 'Want to watch that show?' → [ ] Away (said they were tired)\n\nBIDS PARTNER MADE:\n1. 7:30am 'Did you sleep okay?' → [x] Toward (shared I had weird dreams)\n2. 8pm 'Look at this meme' → [ ] Away (was on my phone, just said 'cool')\n3. 9:30pm 'Come cuddle?' → [x] Toward (put down phone, joined)\n\nMy rate: 67% (2/3 toward)\nPartner rate: 67% (2/3 toward)\n\nOBSERVATIONS:\nWe're both turning away when on devices. Need phone-free time.\n\nTOMORROW:\nPut phone down when they talk. Make three bids before noon."
+        },
+        {
+          "title": "Perpetual Problem Discussion",
+          "context": "Use for recurring issues that won't 'solve'",
+          "template": "THE PERPETUAL PROBLEM:\n___\n\nMY POSITION:\n___\n\nMY PARTNER'S POSITION:\n___\n\nTHE DREAM BEHIND MY POSITION:\nWhat does this represent to me? What need does it meet?\n___\n\nTHE DREAM BEHIND THEIR POSITION:\nWhat might this represent to them? What need does it meet?\n___\n\nAREAS OF COMMON GROUND:\n___\n\nPOSSIBLE COMPROMISES THAT HONOR BOTH DREAMS:\n1. ___\n2. ___\n3. ___\n\nWHAT I'M WILLING TO ACCEPT:\n___\n\nQUESTIONS TO ASK MY PARTNER:\n___",
+          "example_filled": "PROBLEM:\nMoney - I want to save aggressively, they want to enjoy life now\n\nMY POSITION:\nSave 50%+ of income, minimal discretionary spending\n\nTHEIR POSITION:\nSave some, but also travel and enjoy experiences now\n\nMY DREAM:\nFinancial security makes me feel safe. I grew up with money stress and never want that again.\n\nTHEIR DREAM:\nLife is short. They saw their parent die young with money saved but unused. Want to live fully now.\n\nCOMMON GROUND:\nWe both want financial stability AND a good life. Neither wants poverty or to waste money.\n\nCOMPROMISES:\n1. Save 40% (between our positions), use 10% for experiences\n2. Fully fund emergency fund and retirement, then loosen up\n3. Budget for experiences: two trips per year, reasonable dining out\n\nI'M WILLING TO:\nAccept that saving less doesn't mean we'll be broke. Their dream is valid too.\n\nQUESTIONS:\n'What's your biggest fear about money?'\n'What would make you feel financially secure?'\n'How can we honor both our needs?'"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Seven Principles for Making Marriage Work", "author": "John Gottman", "key_takeaway": "Research-based framework for building lasting relationships"},
+          {"title": "The Four Horsemen", "author": "John Gottman", "key_takeaway": "Identifying and stopping destructive patterns in relationships"}
+        ],
+        "podcasts": [
+          {"title": "The Gottman Relationship Blog", "key_takeaway": "Weekly research-based relationship advice"}
+        ]
+      }
+    },
+    {
+      "name": "Esther Perel",
+      "expertise": "Intimacy, desire, modern relationships",
+      "key_principles": [
+        "The quality of your relationships determines the quality of your life.",
+        "Desire needs mystery, but love needs closeness. The tension between them is healthy.",
+        "Erotic intimacy isn't about how often, but about presence and attention.",
+        "Affairs happen in good relationships too - they're about seeking a new version of self.",
+        "The secret to desire: Maintain separateness, autonomy, and individual identity.",
+        "Conflict is inevitable. Repair is everything."
+      ],
+      "daily_practices": [
+        "Create space for both closeness and autonomy in relationships",
+        "Be present - put down devices, make eye contact, really see your partner",
+        "Cultivate individual interests and friendships outside the relationship"
+      ],
+      "worked_examples": [
+        {
+          "title": "Rekindling Desire Through Mystery",
+          "scenario": "Long-term relationship feels like roommates, not lovers. Desire has faded.",
+          "framework_applied": "Mating in Captivity - Balancing Closeness and Mystery",
+          "step_by_step": [
+            "Recognize: Too much closeness can kill desire. We need both.",
+            "Closeness: Comfort, security, knowing. 'I love you because I know you.'",
+            "Mystery: Curiosity, distance, unknown. 'I desire you because I don't fully know you.'",
+            "The paradox: We want security AND excitement from the same person",
+            "Create space: Have separate interests, friends, experiences",
+            "Return with stories: 'You went where? Tell me about it.' Be curious.",
+            "Watch your partner in their element: At work, with friends, pursuing passion",
+            "This reminds you they're a whole person, not just 'your partner'",
+            "Desire returns when you see them as separate, not merged"
+          ],
+          "outcome": "Desire reignites because you've created the space that allows you to miss and want each other again."
+        },
+        {
+          "title": "Navigating Betrayal and Repair",
+          "scenario": "Trust has been broken (infidelity, major lie). Can the relationship survive?",
+          "framework_applied": "The State of Affairs - Understanding Betrayal",
+          "step_by_step": [
+            "The hurt partner needs: Truth, acknowledgment, understanding why",
+            "The one who strayed needs: To be able to explain without being shut down",
+            "Create a safe container: Set time to talk (not ambush conversations)",
+            "The strayer explains: What was I seeking? What was I running from?",
+            "Often it's not about the partner - it's about wanting a new version of self",
+            "The hurt partner: Express pain without contempt (hard but necessary)",
+            "Both: Can we create a new relationship from this?",
+            "This isn't about going back to before - that relationship is dead",
+            "It's about consciously building something new, together"
+          ],
+          "outcome": "Some relationships become stronger post-betrayal because they finally address what wasn't working. Others end, but with understanding."
+        },
+        {
+          "title": "The Art of Erotic Intimacy",
+          "scenario": "Physical intimacy feels routine, obligatory, or disconnected.",
+          "framework_applied": "Presence, Attention, and Anticipation",
+          "step_by_step": [
+            "Eroticism isn't about technique, it's about presence",
+            "BEFORE: Anticipation builds desire. Think about your partner during the day.",
+            "Create space: Don't transition from chores to intimacy instantly",
+            "Ritual: Shower, music, candles - mark the transition from daily to erotic",
+            "DURING: Be present. Put away the to-do list in your mind.",
+            "Eye contact. Slow down. Notice your partner.",
+            "Communicate: 'I like when...' 'More of that...' 'Try this...'",
+            "AFTER: Stay present. Don't immediately return to logistics.",
+            "The goal isn't performance, it's connection and mutual pleasure"
+          ],
+          "outcome": "Physical intimacy becomes an experience of real connection instead of a routine task to check off."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Relationship Health Check-In",
+          "context": "Use monthly to maintain relationship vitality",
+          "template": "CLOSENESS (Security, Knowing, Comfort):\nHow connected do we feel? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nMYSTERY (Autonomy, Curiosity, Desire):\nHow much individual space do we have? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nDESIRE:\nHow's our physical intimacy? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nCONFLICT & REPAIR:\nHow do we handle disagreements? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nGROWTH:\nAre we evolving together or apart? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nONE THING TO TRY THIS MONTH:\n___",
+          "example_filled": "CLOSENESS: 8/10\nWorking: Daily check-ins, good communication\nNeeds: More quality time without screens\n\nMYSTERY: 4/10\nWorking: I started rock climbing\nNeeds: We do everything together, need more separation\n\nDESIRE: 5/10\nWorking: We're affectionate\nNeeds: Physical intimacy feels routine, lacking anticipation\n\nCONFLICT: 7/10\nWorking: We talk things out eventually\nNeeds: Still get defensive too quickly\n\nGROWTH: 6/10\nWorking: We're both pursuing careers\nNeeds: Not sharing our individual growth with each other enough\n\nONE THING:\nWeekly 'date report' where we share what we experienced separately"
+        },
+        {
+          "title": "Creating Erotic Space",
+          "context": "Use to transition from daily life to intimate connection",
+          "template": "THE TRANSITION:\nHow do I want to feel? ___\nWhat helps me get there? ___\n\nPRE-RITUAL (Creating Anticipation):\n- Text/message during day: ___\n- Get ready: ___\n- Create environment: ___\n\nTHE APPROACH:\n- First touch: ___\n- First words: ___\n- Setting the tone: ___\n\nDURING (Presence):\n- Stay present by: ___\n- Communicate: ___\n- Notice: ___\n\nAFTER (Connection):\n- Stay a while: ___\n- Express: ___\n- Connect: ___\n\nREFLECTION:\nWhat worked: ___\nWhat to try next time: ___",
+          "example_filled": "TRANSITION:\nFeel: Desired, present, playful\nHelps: Music, dimmed lights, no rush\n\nPRE-RITUAL:\n- Text: 'Thinking about you... see you at 8'\n- Get ready: Shower, nice outfit, feel good\n- Environment: Clean room, candles, music\n\nAPPROACH:\n- First touch: Slow, intentional\n- First words: 'I've been thinking about this all day'\n- Tone: Playful, present, not rushed\n\nDURING:\n- Present by: Eye contact, notice their reactions\n- Communicate: 'I love when you...', 'More of that'\n- Notice: Their sounds, movements, pleasure\n\nAFTER:\n- Stay: 15+ minutes, cuddle, talk\n- Express: 'I love connecting with you like this'\n- Connect: Share something vulnerable\n\nREFLECTION:\nWorked: Taking time to transition made it feel special\nNext: Try morning intimacy instead of always evening"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Mating in Captivity", "author": "Esther Perel", "key_takeaway": "Reconciling the domestic and the erotic"},
+          {"title": "The State of Affairs", "author": "Esther Perel", "key_takeaway": "Rethinking infidelity and what affairs reveal about relationships"}
+        ],
+        "podcasts": [
+          {"title": "Where Should We Begin?", "key_takeaway": "Real couples therapy sessions - learn from others' challenges"}
+        ]
+      }
     }
   ],
   "daily_insights": [
@@ -426,7 +637,12 @@
     "People remember how you made them feel, not what you said.",
     "Quality over quantity. One deep connection beats ten shallow ones.",
     "Social skills are skills. They can be practiced and improved.",
-    "The most attractive trait is genuine interest in others."
+    "The most attractive trait is genuine interest in others.",
+    "In long-term relationships, bids for connection matter more than grand gestures. Turn toward, not away.",
+    "Healthy boundaries aren't walls - they're the fences that let you know where you end and others begin.",
+    "Desire needs mystery, but love needs closeness. The tension between them is where great relationships live.",
+    "The goal isn't to avoid all conflict - it's to repair quickly when ruptures happen.",
+    "Your partner isn't responsible for making you happy. They're responsible for not making you miserable."
   ],
   "skill_challenges": [
     "Start a conversation with one stranger today.",
@@ -438,6 +654,11 @@
     "Approach someone who intimidates you and say hello.",
     "Share one vulnerable truth about yourself with someone.",
     "Attend a social event and talk to at least 3 new people.",
-    "Practice mirroring body language in your next conversation."
+    "Practice mirroring body language in your next conversation.",
+    "The next time conflict arises, use a gentle start-up: 'I feel ___ when ___ happens' instead of 'You always...'",
+    "Make three repair attempts today in any difficult conversation: 'Can we start over?', 'I hear you', or use humor.",
+    "Practice the 5:1 ratio: Give five genuine appreciations to your partner before raising one concern.",
+    "Have a conversation about needs without criticism: Share what you want more of, not what's missing.",
+    "Create intimacy through presence: Put away all devices and give your partner 20 minutes of undivided attention."
   ]
 }

@@ -19,7 +19,10 @@
     "health": 8,
     "lifestyle": 5,
     "business": 5,
-    "productivity": 6
+    "productivity": 6,
+    "emotional_intelligence": 3,
+    "critical_thinking": 3,
+    "communication": 3
   },
   "focus_modules": ["money", "sales", "finance", "productivity", "business"],
   "goals_90_day": {

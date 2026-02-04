@@ -9,7 +9,7 @@ Self-Mastery OS is a personal development tracking system designed to help the u
 - Data-driven progress tracking across all life areas
 - Direct, no-BS coaching style (user preference)
 
-## The 9 Life Modules
+## The 12 Life Modules
 1. **Money & Wealth** - Building wealth, income streams, financial freedom
 2. **Sales & Persuasion** - Closing deals, negotiation, influence
 3. **Personal Finance** - Budgeting, investing, debt management
@@ -19,6 +19,9 @@ Self-Mastery OS is a personal development tracking system designed to help the u
 7. **Lifestyle Design** - Habits, environment, time management
 8. **Business & Career** - Entrepreneurship, leadership, strategy
 9. **Productivity & Systems** - Deep work, focus, systems thinking
+10. **Emotional Intelligence** - EQ, regulation, empathy, relationships
+11. **Critical Thinking** - Mental models, biases, decision-making
+12. **Communication & Influence** - Speaking, listening, presence, persuasion
 
 ## User Profile
 - Name: Boss (or configured name)
@@ -47,12 +50,16 @@ Self-Mastery OS is a personal development tracking system designed to help the u
 12. No Phone First Hour
 
 ### Wisdom Engine
-Delivers daily teachings from 45+ masters including:
-- Naval Ravikant, Alex Hormozi, Warren Buffett (Money)
-- Jordan Belfort, Grant Cardone, Chris Voss (Sales)
-- David Goggins, Jocko Willink, Marcus Aurelius (Mindset)
+Delivers daily teachings from 60+ masters including:
+- Naval Ravikant, Alex Hormozi, Warren Buffett, Brandon Turner, Nic Carter (Money)
+- Jordan Belfort, Grant Cardone, Chris Voss, Jill Konrath, Aaron Ross (Sales)
+- David Goggins, Jocko Willink, Marcus Aurelius, Alan Watts, Carl Jung (Mindset)
 - Cal Newport, James Clear, Tim Ferriss (Productivity)
 - Andrew Huberman, Peter Attia (Health)
+- John Gottman, Esther Perel, Dale Carnegie (Social/Relationships)
+- Daniel Goleman, Susan David, Marc Brackett, Paul Ekman (Emotional Intelligence)
+- Daniel Kahneman, Shane Parrish, Annie Duke (Critical Thinking)
+- Patrick King, Julian Treasure, Vinh Giang, Marshall Rosenberg (Communication)
 - And many more...
 
 ### Dashboard Components
@@ -91,7 +98,10 @@ self-mastery-os/
         ├── social_masters.json
         ├── business_masters.json
         ├── lifestyle_masters.json
-        └── health_masters.json
+        ├── health_masters.json
+        ├── emotional_intelligence_masters.json
+        ├── critical_thinking_masters.json
+        └── communication_masters.json
 ```
 
 ## How to Run
@@ -176,6 +186,34 @@ Update both:
 1. Add to MODULE_NAMES in `src/utils.py`
 2. Create `knowledge_base/masters/{module}_masters.json`
 3. Update dashboard.html DEFAULT_DATA.modules
+
+## Recent Enhancements (Feb 2026)
+
+### New Modules Added
+1. **Emotional Intelligence** - 200+ emotion vocabulary, RULER method (Brackett), emotional agility (David), EQ framework (Goleman), micro-expressions (Ekman)
+2. **Critical Thinking** - 50+ mental models, cognitive biases, System 1/2 thinking (Kahneman), decision frameworks
+3. **Communication & Influence** - Active listening, storytelling, difficult conversations, public speaking, nonviolent communication (Rosenberg)
+
+### Enhanced Existing Modules
+**Money Masters** - Added:
+- Brandon Turner (BiggerPockets real estate: house hacking, BRRRR method, 1% rule)
+- Nic Carter (Crypto/Bitcoin fundamentals, self-custody, digital scarcity)
+
+**Sales Masters** - Added:
+- Jill Konrath (Complex/enterprise sales, stakeholder mapping, value-first prospecting)
+- Aaron Ross (Predictable Revenue system, SDR/AE separation, Cold Calling 2.0)
+
+**Social Masters** - Added:
+- John Gottman (Four Horsemen, repair attempts, perpetual problems, 5:1 ratio)
+- Esther Perel (Mating in Captivity, desire/intimacy balance, modern relationships)
+
+**Mindset Masters** - Added:
+- Alan Watts (Eastern philosophy, present moment, letting go, non-duality)
+- Carl Jung (Shadow work, archetypes, individuation, active imagination)
+
+### Master Count
+- Total Masters: 60+ (up from 45)
+- New expertise areas: EQ, critical thinking, communication, real estate, crypto, relationships, Jungian psychology
 
 ## Important Notes
 - User does NOT need workout tracking (already exercising daily)

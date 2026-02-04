@@ -84,6 +84,13 @@
         "time_minutes": 15,
         "instructions": "List all your income sources. Mark which ones require your time (income) vs which generate money without you (wealth). Calculate the ratio.",
         "success_criteria": "Complete income audit with wealth/income ratio calculated"
+      },
+      {
+        "title": "Quick Property Analysis with the 1% Rule",
+        "difficulty": 1,
+        "time_minutes": 25,
+        "instructions": "Find 5 rental property listings on Zillow or Redfin. For each, calculate: Monthly Rent / Purchase Price. Mark which ones pass the 1% rule (result >= 0.01). This quick filter eliminates 80% of bad deals.",
+        "success_criteria": "5 properties analyzed with 1% rule calculations, notes on which pass/fail"
       }
     ],
     "intermediate": [
@@ -107,6 +114,13 @@
         "time_minutes": 45,
         "instructions": "Identify 5 people who earn 10x what you earn. Research how you could provide value to them. Reach out to at least 2 with a value-first message.",
         "success_criteria": "2 personalized outreach messages sent to high-value connections"
+      },
+      {
+        "title": "Full Rental Property Deal Analysis",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Pick one rental property that passed the 1% rule. Do a complete analysis: calculate all expenses (mortgage, taxes, insurance, maintenance 10%, vacancy 5%, property management 10%, CapEx), subtract from gross rent to get net cash flow. Calculate Cash-on-Cash return (annual cash flow / total cash invested).",
+        "success_criteria": "Complete deal analysis worksheet with all numbers, cash flow projection, and go/no-go decision"
       }
     ],
     "advanced": [
@@ -130,6 +144,13 @@
         "time_minutes": 120,
         "instructions": "Design a system that could generate $1000/month passively within 12 months. Map every component: product, traffic, conversion, delivery, support.",
         "success_criteria": "Complete blueprint with realistic timeline and required resources"
+      },
+      {
+        "title": "House Hack Business Plan",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Create a complete house hacking plan: Research FHA loan requirements (3.5% down), find 3 multi-family properties (2-4 units) in your area, analyze each fully (purchase price, down payment, mortgage, rental income from other units, your net housing cost), compare to your current rent, calculate first-year wealth building (equity, appreciation, tax benefits).",
+        "success_criteria": "Complete house hack business plan with 3 property options analyzed, financing plan, and timeline to execute"
       }
     ]
   },
@@ -447,6 +468,153 @@
           {"title": "MrBeast on Lex Fridman", "key_takeaway": "Philosophy behind becoming the biggest YouTuber"}
         ]
       }
+    },
+    {
+      "name": "Brandon Turner",
+      "expertise": "Real estate investing, BiggerPockets methodology, rental properties",
+      "key_principles": [
+        "House hacking: Live in one unit, rent the others. Your tenant pays your mortgage.",
+        "The 1% rule: Monthly rent should be at least 1% of purchase price for good cash flow.",
+        "BRRRR method: Buy, Rehab, Rent, Refinance, Repeat - infinite returns possible.",
+        "Real estate creates wealth through four ways: cash flow, appreciation, tax benefits, and loan paydown.",
+        "Start small, learn cheap. Your first deal doesn't have to be perfect.",
+        "Location, location, location is wrong. Cash flow, cash flow, cash flow is right."
+      ],
+      "daily_practices": [
+        "Analyze one property deal daily - build your evaluation muscle",
+        "Network with real estate investors regularly",
+        "Study market trends in your target areas"
+      ],
+      "worked_examples": [
+        {
+          "title": "House Hacking for Near-Zero Living Costs",
+          "scenario": "You're paying $2000/month in rent and it feels like throwing money away. You want to build wealth but have limited capital.",
+          "framework_applied": "House Hacking + FHA 3.5% Down",
+          "step_by_step": [
+            "BUY: Purchase a duplex/triplex/fourplex with FHA loan (3.5% down, must live there 1 year)",
+            "EXAMPLE: $300K fourplex, $10,500 down payment, $2,100/month mortgage",
+            "RENT: Rent 3 units at $800 each = $2,400/month income",
+            "RESULT: $2,400 income - $2,100 mortgage = $300/month positive cash flow",
+            "BONUS: You live for free (or get paid $300 to live there)",
+            "WEALTH BUILD: Tenants pay down your mortgage, you gain equity and appreciation",
+            "AFTER 1 YEAR: Move out, rent all 4 units, repeat with next property"
+          ],
+          "outcome": "In one year: Near-zero housing costs, building equity, learning landlording, positioned to scale. This is how you build a real estate empire from nothing."
+        },
+        {
+          "title": "BRRRR Method for Infinite Returns",
+          "scenario": "You have $50K and want to maximize your real estate investing impact.",
+          "framework_applied": "BRRRR - Buy, Rehab, Rent, Refinance, Repeat",
+          "step_by_step": [
+            "BUY: Find distressed property for $100K (worth $150K fixed up)",
+            "REHAB: Invest $25K in renovations, now worth $150K",
+            "RENT: Get tenants in place, generates $1,200/month",
+            "REFINANCE: Bank appraises at $150K, lends 75% = $112,500",
+            "RECOVER: Get back your $100K purchase + $25K rehab = $125K, keep $12,500 difference",
+            "REPEAT: Use that $125K to do it again, while first property cash flows",
+            "SCALE: Do this 3-4 times with same $50K, now own $600K+ in real estate"
+          ],
+          "outcome": "You've turned $50K into a portfolio generating monthly cash flow, with most or all of your capital recovered to deploy again."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Property Analysis Worksheet",
+          "context": "Quickly evaluate if a rental property is a good investment",
+          "template": "PROPERTY ADDRESS: ___\n\nPURCHASE ANALYSIS:\nPurchase price: $___\nDown payment (____%): $___\nClosing costs: $___\nRehab budget: $___\nTOTAL CASH IN: $___\n\nINCOME:\nMonthly rent: $___\nOther income: $___\nGROSS MONTHLY INCOME: $___\n\nEXPENSES:\nMortgage (P&I): $___\nProperty tax: $___\nInsurance: $___\nHOA/Condo fees: $___\nMaintenance (10%): $___\nVacancy (5-10%): $___\nProperty mgmt (10%): $___\nCapEx reserve: $___\nTOTAL MONTHLY EXPENSES: $___\n\nCASH FLOW:\nGross income - Total expenses = $___\n\nRETURN METRICS:\nCash-on-Cash Return: (Annual cash flow / Total cash in) = ___%\n1% Rule: Monthly rent / Purchase price = ___% (want >1%)\n50% Rule: Expenses ≈ 50% of gross rent? ___\n\nDECISION: [ ] Buy [ ] Pass [ ] Negotiate",
+          "example_filled": "PROPERTY: 123 Main St, 3-unit\n\nPURCHASE:\nPrice: $250,000\nDown (25%): $62,500\nClosing: $5,000\nRehab: $15,000\nTOTAL CASH: $82,500\n\nINCOME:\nRent (3 units × $900): $2,700\nOther: $0\nGROSS: $2,700\n\nEXPENSES:\nMortgage: $1,050\nTax: $250\nInsurance: $100\nHOA: $0\nMaintenance: $270\nVacancy (5%): $135\nProp Mgmt: $270\nCapEx: $150\nTOTAL: $2,225\n\nCASH FLOW: $2,700 - $2,225 = $475/month = $5,700/year\n\nRETURNS:\nCash-on-Cash: $5,700 / $82,500 = 6.9% (decent)\n1% Rule: $2,700 / $250,000 = 1.08% (PASS)\n50% Rule: $2,225 / $2,700 = 82% expenses (high but manageable with prop mgmt)\n\nDECISION: [x] Buy - good cash flow, meets 1% rule"
+        },
+        {
+          "title": "House Hacking Calculator",
+          "context": "Determine if house hacking makes sense vs renting",
+          "template": "CURRENT SITUATION:\nRent you pay now: $___/month\nAnnual rent: $___\n\nHOUSE HACK OPTION:\nProperty price: $___\nDown payment (3.5% FHA): $___\nMonthly mortgage (P&I + tax + ins): $___\nNumber of rentable units: ___\nRent per unit: $___\nTotal rental income: $___\n\nYOUR HOUSING COST:\nMortgage: $___\nMinus rental income: -$___\nNET COST: $___\n\nCOMPARISON:\nCurrent rent: $___/month\nHouse hack cost: $___/month\nMONTHLY SAVINGS: $___\nANNUAL SAVINGS: $___\n\nWEALTH BUILDING:\nEquity gained (Year 1): $___\nAppreciation (3%): $___\nTax benefits: $___\n\nDECISION: Is house hacking worth it? ___",
+          "example_filled": "CURRENT:\nRent: $1,800/month\nAnnual: $21,600\n\nHOUSE HACK:\nPrice: $350,000 (fourplex)\nDown (3.5%): $12,250\nMortgage: $2,450/month\nUnits to rent: 3\nRent per unit: $1,000\nTotal income: $3,000\n\nMY COST:\nMortgage: $2,450\nRental income: -$3,000\nNET: -$550 (I get paid $550 to live there!)\n\nCOMPARISON:\nCurrent rent: $1,800\nHouse hack: -$550\nSAVINGS: $2,350/month = $28,200/year\n\nWEALTH:\nEquity: ~$8,000 (loan paydown)\nAppreciation: $10,500 (3%)\nTax benefits: ~$5,000\nTOTAL YEAR 1 BENEFIT: ~$52,000\n\nDECISION: Absolutely worth it. Live free AND build wealth."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Book on Rental Property Investing", "author": "Brandon Turner", "key_takeaway": "Complete guide to building wealth through rental properties"},
+          {"title": "The Book on Managing Rental Properties", "author": "Brandon Turner & Heather Turner", "key_takeaway": "How to find, screen, and manage tenants"}
+        ],
+        "podcasts": [
+          {"title": "BiggerPockets Podcast", "key_takeaway": "Weekly real estate investing strategies and interviews"}
+        ]
+      }
+    },
+    {
+      "name": "Nic Carter",
+      "expertise": "Bitcoin, crypto fundamentals, monetary theory, digital assets",
+      "key_principles": [
+        "Bitcoin is digital scarcity - the first time in history we can prove ownership of digital assets.",
+        "Not your keys, not your coins. Self-custody is fundamental to crypto ownership.",
+        "Bitcoin is a hedge against monetary debasement and currency devaluation.",
+        "Most altcoins are securities or outright scams. Bitcoin is the only truly decentralized crypto.",
+        "Crypto is about separating money from state - it's a political statement, not just technology.",
+        "Time preference: Bitcoin teaches you to think long-term, not trade for quick gains."
+      ],
+      "daily_practices": [
+        "Dollar-cost average into Bitcoin consistently",
+        "Learn about self-custody and security best practices",
+        "Study monetary history and why Bitcoin matters"
+      ],
+      "worked_examples": [
+        {
+          "title": "Bitcoin as Savings Technology",
+          "scenario": "You have savings in a bank account earning 0.5% while inflation is 7%. You're losing purchasing power.",
+          "framework_applied": "Bitcoin as Inflation Hedge + Time Preference",
+          "step_by_step": [
+            "UNDERSTAND: Fiat currency loses value over time due to unlimited printing",
+            "RECOGNIZE: Bitcoin has a hard cap of 21 million coins - provably scarce",
+            "STRATEGY: Allocate 5-10% of savings to Bitcoin as long-term store of value",
+            "APPROACH: Dollar-cost average (DCA) - buy fixed amount weekly/monthly regardless of price",
+            "EXAMPLE: $100/week into Bitcoin, regardless if it's $30K or $60K",
+            "HOLD: Think in 5-10 year timeframes, not days or weeks",
+            "CUSTODY: Learn self-custody (hardware wallet) - 'not your keys, not your coins'",
+            "TAX: Understand that selling triggers capital gains - holding long-term preferred"
+          ],
+          "outcome": "Over 10+ years, Bitcoin has outperformed all assets. You've protected purchasing power and potentially grown wealth significantly."
+        },
+        {
+          "title": "Self-Custody Best Practices",
+          "scenario": "You bought Bitcoin on Coinbase but heard 'not your keys, not your coins.' You want to control your assets.",
+          "framework_applied": "Self-Custody + Security Best Practices",
+          "step_by_step": [
+            "LEARN: When Bitcoin is on an exchange, you don't own it - the exchange does",
+            "HARDWARE WALLET: Buy a Ledger or Trezor (cost: $50-200)",
+            "SETUP: Initialize wallet, write down seed phrase (12-24 words)",
+            "SECURE SEED: Store seed phrase offline (metal backup, multiple secure locations)",
+            "TRANSFER: Move Bitcoin from exchange to your hardware wallet",
+            "VERIFY: Confirm you control the private keys by testing a small transaction",
+            "NEVER: Share seed phrase with anyone, type it on a computer, take a photo of it",
+            "MULTISIG (advanced): Use multisig wallets requiring 2-of-3 or 3-of-5 keys for extra security"
+          ],
+          "outcome": "You now truly own your Bitcoin. No exchange can freeze, confiscate, or lose your funds. You're your own bank."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Bitcoin Allocation Framework",
+          "context": "Determine appropriate Bitcoin allocation in your portfolio",
+          "template": "PORTFOLIO CONTEXT:\nTotal investable assets: $___\nRisk tolerance: [ ] Conservative [ ] Moderate [ ] Aggressive\nTime horizon: ___ years\nCurrent Bitcoin exposure: ___%\n\nALLOCATION GUIDELINES:\n- Conservative (10+ year horizon): 2-5%\n- Moderate (10+ year horizon): 5-10%\n- Aggressive (can stomach 80% drawdowns): 10-20%+\n\nMY TARGET ALLOCATION: ___%\nDollar amount: $___\n\nDCA STRATEGY:\nMonthly investment: $___\nPurchase frequency: [ ] Weekly [ ] Bi-weekly [ ] Monthly\nPlatform: ___\nAutomatic? [ ] Yes [ ] No\n\nEXIT STRATEGY:\nWhen/if I'll sell: ___\nTarget price (if any): $___\nOr holding indefinitely? [ ]\n\nSECURITY:\nCustody plan: [ ] Exchange [ ] Hardware wallet [ ] Multisig\nSeed phrase backup locations: ___",
+          "example_filled": "PORTFOLIO:\nTotal assets: $200,000\nRisk: [x] Moderate\nHorizon: 15 years (retirement)\nCurrent BTC: 2%\n\nTARGET: 8% ($16,000)\n\nDCA:\nMonthly: $500\nFrequency: [x] Weekly ($125/week)\nPlatform: Swan Bitcoin (auto DCA)\nAutomatic: [x] Yes\n\nEXIT:\nNo plan to sell before retirement (15 years)\nTarget: None, evaluating in 2035\nHolding: [x] Indefinitely unless emergency\n\nSECURITY:\nCustody: [x] Hardware wallet (Trezor)\nSeed: Metal backup in home safe + bank safety deposit box\nOnce over $50K in BTC: Consider multisig"
+        },
+        {
+          "title": "Crypto vs Bitcoin Decision Tree",
+          "context": "Should you buy altcoins or stick with Bitcoin?",
+          "template": "INVESTMENT THESIS QUESTIONS:\n\n1. Do you understand the technology deeply? [ ]\n2. Is it truly decentralized (no company/foundation controls it)? [ ]\n3. Has it been around 5+ years without major hacks? [ ]\n4. Is there a real use case beyond speculation? [ ]\n5. Can you explain why it's better than Bitcoin? [ ]\n6. Would regulators classify it as a security? [ ]\n7. Are you investing or speculating? [ ]\n\nIF MOSTLY NO: Stick with Bitcoin\nIF MOSTLY YES: Maybe allocate small % to that specific altcoin\n\nRED FLAGS:\n- Promises of guaranteed returns\n- Anonymous team\n- Lacks audit trail\n- Pre-mine or founder holdings >20%\n- Marketing > technology\n\nBITCOIN ADVANTAGES:\n- Most decentralized\n- Longest track record\n- Most secure network\n- Regulatory clarity\n- Digital gold narrative",
+          "example_filled": "Evaluating Ethereum:\n\n1. Understand tech? [~] Somewhat\n2. Decentralized? [~] Less than Bitcoin (foundation, Vitalik influence)\n3. 5+ years, no hacks? [x] Yes (launched 2015)\n4. Real use case? [x] Smart contracts, DeFi\n5. Better than Bitcoin? [ ] Different purpose, not better\n6. Security classification? [?] Unclear, possible\n7. Investing or speculating? [~] Bit of both\n\nDECISION: Ethereum has real utility but higher risk than Bitcoin\nAPPROACH: 80% Bitcoin, 15% Ethereum, 5% cash for dips\nRATIONALE: Bitcoin as savings, Ethereum as tech bet, mostly Bitcoin for safety"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Bitcoin Standard", "author": "Saifedean Ammous", "key_takeaway": "The decentralized alternative to central banking"},
+          {"title": "Layered Money", "author": "Nik Bhatia", "key_takeaway": "Understanding Bitcoin in the context of monetary history"}
+        ],
+        "podcasts": [
+          {"title": "What Bitcoin Did", "key_takeaway": "Deep conversations on Bitcoin fundamentals"},
+          {"title": "On The Brink with Nic Carter", "key_takeaway": "Nic's podcast on crypto, markets, and monetary policy"}
+        ]
+      }
     }
   ],
   "daily_insights": [
@@ -459,7 +627,12 @@
     "Your network is your net worth. But only if you provide value first.",
     "The best investment is in skills that produce income. Everything else is secondary.",
     "Don't trade time for money. Trade value for money, then scale the value.",
-    "Every rich person got rich by solving problems. What problem are you solving?"
+    "Every rich person got rich by solving problems. What problem are you solving?",
+    "Real estate is the one asset class where you can use leverage, get tax benefits, and have someone else pay your mortgage.",
+    "Your first rental property doesn't need to be perfect - it needs to teach you the game.",
+    "Bitcoin is the first digital asset with provable scarcity. Understanding this changes how you think about money.",
+    "House hacking turns your biggest expense (housing) into your first wealth-building asset.",
+    "Diversification across asset classes (stocks, real estate, crypto) protects you from any single system failing."
   ],
   "skill_challenges": [
     "Identify one skill that would 2x your income. Spend 30 minutes learning it today.",
@@ -471,6 +644,11 @@
     "Identify your most profitable skill. Spend 1 hour getting better at it.",
     "Write down exactly how you will make your next $1000. Be specific.",
     "Find one expense that doesn't contribute to your growth. Eliminate it.",
-    "Study one successful person in your field for 30 minutes. Extract one actionable insight."
+    "Study one successful person in your field for 30 minutes. Extract one actionable insight.",
+    "Analyze one rental property listing today using the 1% rule (rent should be 1% of purchase price).",
+    "Calculate how much you're paying in rent annually. Research if a house hack could reduce this to zero.",
+    "Set up a recurring Bitcoin purchase (DCA) of any amount - $10, $50, $100/week. Start building the habit.",
+    "Use the 50% rule on a property listing: estimate expenses as 50% of rent, then calculate cash flow.",
+    "Research one hardware wallet (Ledger or Trezor) and understand why 'not your keys, not your coins' matters."
   ]
 }

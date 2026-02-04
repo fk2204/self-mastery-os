@@ -244,7 +244,10 @@ MODULE_NAMES = {
     "health": "Health & Fitness",
     "lifestyle": "Lifestyle Design",
     "business": "Business & Career",
-    "productivity": "Productivity & Systems"
+    "productivity": "Productivity & Systems",
+    "emotional_intelligence": "Emotional Intelligence",
+    "critical_thinking": "Critical Thinking",
+    "communication": "Communication & Influence"
 }
 
 MODULE_ICONS = {
@@ -256,7 +259,10 @@ MODULE_ICONS = {
     "health": "H",
     "lifestyle": "L",
     "business": "B",
-    "productivity": "P"
+    "productivity": "P",
+    "emotional_intelligence": "E",
+    "critical_thinking": "C",
+    "communication": "I"
 }
 
 def get_module_name(key: str) -> str:

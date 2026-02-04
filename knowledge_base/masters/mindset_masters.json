@@ -107,6 +107,13 @@
         "time_minutes": 45,
         "instructions": "During your next challenging task (workout, work project, etc.), when you feel like quitting, recognize this is only 40% of your capacity. Push to 50%, then 60%. Track how far past 'done' you can go.",
         "success_criteria": "Successfully pushed past initial quitting point and documented the experience"
+      },
+      {
+        "title": "The Letting Go Practice",
+        "difficulty": 2,
+        "time_minutes": 30,
+        "instructions": "Identify something you're trying to force or control. For 30 minutes, consciously practice non-resistance. Use Alan Watts' approach: What if you stopped trying to grasp this outcome? What if you trusted the process? Write about what shifts when you stop forcing.",
+        "success_criteria": "Identified area of resistance, practiced letting go, documented the shift in perspective"
       }
     ],
     "advanced": [
@@ -130,6 +137,20 @@
         "time_minutes": 30,
         "instructions": "Identify an area where your ego is fragile (status, being right, looking smart). Deliberately put yourself in a situation where that ego gets challenged. Notice the resistance. Let it go.",
         "success_criteria": "Deliberately challenged ego and processed the experience constructively"
+      },
+      {
+        "title": "Deep Shadow Integration",
+        "difficulty": 3,
+        "time_minutes": 60,
+        "instructions": "Using Jung's shadow work: 1) List 5 people who trigger strong negative reactions in you. 2) For each, identify the trait you're judging. 3) Ask honestly: 'How does this trait exist in me?' 4) Write a dialogue with that shadow part using active imagination. 5) Identify one way to integrate this quality constructively.",
+        "success_criteria": "Completed shadow exploration for all 5 triggers with honest self-reflection and integration plan"
+      },
+      {
+        "title": "Present Moment Mastery Day",
+        "difficulty": 3,
+        "time_minutes": 480,
+        "instructions": "For one full day, practice Alan Watts' approach: Whenever anxiety about the future or regret about the past arises, ask 'What problem do I have RIGHT NOW, in this moment?' Return to sensory awareness - breath, sounds, sights. Track how many times you catch yourself time-traveling mentally. Goal: 50+ catch-and-returns.",
+        "success_criteria": "Tracked 50+ returns to present moment with reduced anxiety and increased presence by end of day"
       }
     ]
   },
@@ -479,6 +500,174 @@
           {"title": "Nassim Taleb on EconTalk", "key_takeaway": "Applied antifragility and risk thinking"}
         ]
       }
+    },
+    {
+      "name": "Alan Watts",
+      "expertise": "Eastern philosophy, Zen, living in the present",
+      "key_principles": [
+        "You are the universe experiencing itself.",
+        "The meaning of life is just to be alive. It is so plain and obvious.",
+        "We suffer because we cling to what is impermanent.",
+        "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+        "Life is not a problem to be solved, but a reality to be experienced.",
+        "Trying to define yourself is like trying to bite your own teeth."
+      ],
+      "daily_practices": [
+        "Spend 10 minutes in pure observation - no judgment, just presence",
+        "Notice when you're resisting what is, and let go",
+        "Ask: 'Am I living, or just thinking about living?'"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Art of Letting Go",
+          "scenario": "You're anxious about the future and can't be present.",
+          "framework_applied": "Watts' Present Moment Awareness",
+          "step_by_step": [
+            "Notice: You're living in a future that doesn't exist yet",
+            "Ask yourself: 'What problem do I have right now, in this moment?'",
+            "Usually the answer is: Nothing. The problems are in your imagination of the future.",
+            "This moment, right now, is all you have. Past is memory. Future is imagination.",
+            "Practice: Feel your breath. Notice sounds. See colors. Be here.",
+            "When anxiety returns, gently ask: 'Am I here now, or in an imaginary future?'",
+            "The goal isn't to stop planning. It's to stop suffering about what hasn't happened."
+          ],
+          "outcome": "Anxiety decreases because you're not mentally time-traveling. Life is happening now, and now is manageable."
+        },
+        {
+          "title": "Ego and the Illusion of Separation",
+          "scenario": "You feel isolated, separate from others, and competitive.",
+          "framework_applied": "Watts' Non-Duality",
+          "step_by_step": [
+            "Recognize: The 'separate self' is a useful fiction, not ultimate reality",
+            "You are not a separate entity observing the world. You ARE the world.",
+            "Think of a wave in the ocean. Is it separate from the ocean? Or is it the ocean waving?",
+            "You are the universe expressing itself at this location, through this body",
+            "Competition dissolves: If we're all the same thing, who's competing with whom?",
+            "Connection deepens: Every person is you in a different form",
+            "This doesn't mean losing your individuality. It means understanding its context."
+          ],
+          "outcome": "Loneliness and separation fade. You feel fundamentally connected to everything. Ego games seem pointless."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Present Moment Anchor",
+          "context": "Use when anxious about future or stuck in past",
+          "template": "WHEN MIND WANDERS:\nWhere is my mind right now? [ ] Past [ ] Future [ ] Present\n\nASK:\n'What problem do I have RIGHT NOW, in this moment?'\n___\n\nRETURN TO NOW:\nWhat do I see? ___\nWhat do I hear? ___\nWhat do I feel physically? ___\nWhat is my breath doing? ___\n\nRECOGNIZE:\nThis moment is: [ ] Manageable [ ] Okay [ ] Actually fine\nThe suffering was about: [ ] Past [ ] Future [ ] Story I'm telling\n\nPRACTICE:\nI don't need to fix anything right now. I just need to be here.",
+          "example_filled": "WHERE IS MY MIND:\n[x] Future (worried about tomorrow's presentation)\n\nASK:\nWhat problem right now? None. I'm sitting comfortably, safe, fine.\n\nRETURN:\nSee: Sunlight through window, book on table\nHear: Birds, distant traffic\nFeel: Chair supporting me, relaxed muscles\nBreath: Steady, calm\n\nRECOGNIZE:\nThis moment is: [x] Actually fine\nSuffering was about: [x] Future [x] Story ('I'll fail')\n\nPRACTICE:\nThe presentation will happen when it happens. Right now, there's nothing to fix. I'm here. It's okay."
+        },
+        {
+          "title": "Letting Go Practice",
+          "context": "Use when clinging to outcomes or resisting reality",
+          "template": "WHAT AM I CLINGING TO?\n___\n\nWHY AM I CLINGING?\nWhat do I think will happen if I let go? ___\n\nWHAT IS THE REALITY I'M RESISTING?\n___\n\nWHAT WOULD ACCEPTANCE LOOK LIKE?\n___\n\nWATTS' QUESTION:\n'What would you do if you had nothing to lose and nothing to gain?'\n___\n\nLET GO:\nI release my grip on: ___\nI accept that: ___\nI trust that: ___\n\nNOW WHAT?\nWith open hands, what action feels right? ___",
+          "example_filled": "CLINGING TO:\nThe relationship working out exactly as I imagined\n\nWHY:\nIf I let go, it might end. I'll be alone. I've invested so much.\n\nREALITY I'M RESISTING:\nThe relationship is changing. My partner is changing. I'm changing. Clinging is causing suffering.\n\nACCEPTANCE:\nLetting this relationship evolve naturally, even if it ends. Trusting the process.\n\nIF NOTHING TO LOSE/GAIN:\nI'd communicate honestly, stop people-pleasing, be authentic, and trust that whatever happens is right.\n\nLET GO:\nRelease: My rigid picture of 'how it should be'\nAccept: Change is constant, control is illusory\nTrust: Whatever happens will lead where I need to go\n\nNOW:\nHave an honest conversation about what we both need. No manipulation, just truth."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Way of Zen", "author": "Alan Watts", "key_takeaway": "Introduction to Zen Buddhism and Eastern philosophy"},
+          {"title": "The Wisdom of Insecurity", "author": "Alan Watts", "key_takeaway": "How to find peace in a world of constant change"}
+        ],
+        "podcasts": [
+          {"title": "Alan Watts Audio Collection", "key_takeaway": "Lectures on philosophy, life, and consciousness"}
+        ]
+      }
+    },
+    {
+      "name": "Carl Jung",
+      "expertise": "Depth psychology, shadow work, archetypes, individuation",
+      "key_principles": [
+        "Until you make the unconscious conscious, it will direct your life and you will call it fate.",
+        "The shadow is the person you'd rather not be. Integrate it or it will sabotage you.",
+        "We meet ourselves time and again in a thousand disguises on the path of life.",
+        "The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed.",
+        "Your vision will become clear only when you look into your heart. Who looks outside, dreams. Who looks inside, awakens.",
+        "I am not what happened to me, I am what I choose to become."
+      ],
+      "daily_practices": [
+        "Shadow journaling: What did I judge harshly today? That's my shadow.",
+        "Notice projections: What I criticize in others lives in me",
+        "Active imagination: Dialogue with the parts of yourself you reject"
+      ],
+      "worked_examples": [
+        {
+          "title": "Shadow Work: Integrating What You Reject",
+          "scenario": "You keep getting triggered by the same type of person or behavior.",
+          "framework_applied": "Jungian Shadow Integration",
+          "step_by_step": [
+            "Notice strong reactions: What triggers rage, disgust, or judgment?",
+            "These reactions point to your shadow: the disowned parts of yourself",
+            "Example: You hate 'lazy' people. The shadow: Your own desire to rest.",
+            "Or: You judge 'selfish' people. The shadow: Your own unmet needs.",
+            "Ask: 'How am I this thing I judge?' Be honest.",
+            "The traits you reject in yourself, you project onto others",
+            "Integration: 'I contain this too. How can I accept and integrate it?'",
+            "Not acting on every impulse, but acknowledging all parts exist in you"
+          ],
+          "outcome": "You stop being triggered because you've acknowledged the shadow. Other people become less annoying because you've stopped projecting."
+        },
+        {
+          "title": "Working with Archetypes",
+          "scenario": "You feel stuck playing the same role in life and relationships.",
+          "framework_applied": "Jungian Archetypes",
+          "step_by_step": [
+            "Identify your dominant archetype: What role do you always play?",
+            "Common archetypes: Hero, Caregiver, Sage, Rebel, Lover, Ruler",
+            "Example: You always play the Caregiver - rescuing, fixing, sacrificing",
+            "Ask: What's the gift of this archetype? (Compassion, service)",
+            "Ask: What's the shadow side? (Martyrdom, resentment, burnout)",
+            "What archetype am I suppressing? (Maybe the Rebel - your own needs)",
+            "Integration: Develop the suppressed archetype consciously",
+            "Example: Practice the Rebel - say no, set boundaries, be 'selfish'"
+          ],
+          "outcome": "You become whole by integrating multiple archetypes. You're not stuck playing one role forever."
+        },
+        {
+          "title": "The Individuation Process",
+          "scenario": "You're living according to others' expectations, not your own truth.",
+          "framework_applied": "Jung's Individuation - Becoming Who You Really Are",
+          "step_by_step": [
+            "First half of life: Building ego, achieving, following the script society gave you",
+            "Mid-life crisis: Realizing the script doesn't fit. Who am I really?",
+            "Individuation: The process of becoming your authentic self",
+            "Step 1: Confront the persona (the mask you show the world). Who are you without it?",
+            "Step 2: Integrate the shadow (the parts you've rejected)",
+            "Step 3: Dialogue with anima/animus (the contrasexual side - feeling vs logic)",
+            "Step 4: Meet the Self (the totality of who you are, beyond ego)",
+            "This is a lifelong process, not a destination"
+          ],
+          "outcome": "You stop living someone else's life. You make choices from your core self, not from conditioning."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Shadow Work Journal",
+          "context": "Daily practice to identify and integrate shadow",
+          "template": "WHAT TRIGGERED ME TODAY?\n___\n\nWHO/WHAT DID I JUDGE HARSHLY?\n___\n\nWHAT TRAIT DID I REACT TO?\n___\n\nHOW AM I LIKE THIS?\n(Be honest. Where does this trait live in me?)\n___\n\nWHAT IS THIS SHADOW TRYING TO TELL ME?\n___\n\nHOW CAN I INTEGRATE THIS PART?\n___\n\nCOMPLETION:\nI acknowledge that I contain: ___\nI accept that this is part of being human.\nI will honor this part by: ___",
+          "example_filled": "TRIGGERED BY:\nColleague who talks constantly about their achievements\n\nJUDGED:\nThey're arrogant, self-centered, annoying\n\nTRAIT:\nSelf-promotion, need for recognition\n\nHOW AM I LIKE THIS:\nI want recognition too but I'm 'too humble' to ask. I wait for others to notice, then resent when they don't.\n\nSHADOW MESSAGE:\nYou have needs for recognition that you're not acknowledging. You judge them for doing what you won't let yourself do.\n\nINTEGRATE:\nI can advocate for myself without being arrogant. I can share wins without waiting for permission.\n\nCOMPLETION:\nI contain: The need for recognition and validation\nHonor it by: Sharing one win per week, owning my achievements"
+        },
+        {
+          "title": "Archetype Exploration",
+          "context": "Understand which archetypal energies you embody",
+          "template": "MY DOMINANT ARCHETYPE:\n___\n\nGIFTS OF THIS ARCHETYPE:\n1. ___\n2. ___\n3. ___\n\nSHADOW SIDE:\n1. ___\n2. ___\n3. ___\n\nWHEN DO I OVERPLAY THIS ROLE?\n___\n\nWHAT ARCHETYPE AM I SUPPRESSING?\n___\n\nWHAT WOULD IT LOOK LIKE TO DEVELOP THAT?\n___\n\nINTEGRATION PRACTICE:\nThis week I will embody [suppressed archetype] by:\n___",
+          "example_filled": "DOMINANT: Caregiver\n\nGIFTS:\n1. Compassionate, people feel safe with me\n2. Good at supporting others\n3. Create harmony\n\nSHADOW:\n1. Resentment when needs aren't reciprocated\n2. Burnout from over-giving\n3. Enabling others' helplessness\n\nOVERPLAY:\nWhen I sacrifice my needs to avoid conflict. When I rescue instead of letting people learn.\n\nSUPPRESSING:\nThe Warrior - assertiveness, boundaries, healthy conflict\n\nDEVELOP WARRIOR:\nSet clear boundaries, say no without guilt, stand up for myself\n\nPRACTICE:\nThis week: Say no to one request without over-explaining. Have one difficult conversation I've been avoiding."
+        },
+        {
+          "title": "Active Imagination Dialogue",
+          "context": "Conversation with a disowned part of yourself",
+          "template": "THE PART I'M TALKING TO:\n___\n\nME: Why do you show up in my life?\nTHEM: ___\n\nME: What do you want from me?\nTHEM: ___\n\nME: What are you trying to protect me from?\nTHEM: ___\n\nME: What would happen if I integrated you?\nTHEM: ___\n\nME: What do you need from me?\nTHEM: ___\n\nME: How can we work together?\nTHEM: ___\n\nREFLECTION:\nWhat I learned: ___\nWhat changes now: ___",
+          "example_filled": "THE PART: My Inner Rebel\n\nME: Why show up?\nREBEL: You're living in a cage of your own making. Following rules that don't serve you.\n\nME: What do you want?\nREBEL: Freedom. Authenticity. For you to stop people-pleasing.\n\nME: Protecting me from?\nREBEL: You're trying to protect yourself from rejection by being 'good'. I'm here to remind you that approval isn't worth your soul.\n\nME: If I integrated you?\nREBEL: You'd live more honestly. You'd disappoint some people and find your real tribe.\n\nME: What do you need?\nREBEL: Permission. Listen to me sometimes instead of always the Conformist.\n\nME: Work together how?\nREBEL: Check in with me before saying yes to things. I'll tell you when you're betraying yourself.\n\nLEARNED:\nMy rebellion isn't bad - it's trying to save me from a life of inauthenticity.\n\nCHANGES:\nI'll pause before automatically agreeing to things. Check with Inner Rebel first."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Man and His Symbols", "author": "Carl Jung", "key_takeaway": "Introduction to Jungian psychology and the unconscious"},
+          {"title": "Owning Your Own Shadow", "author": "Robert A. Johnson", "key_takeaway": "Practical guide to Jungian shadow work"}
+        ],
+        "podcasts": [
+          {"title": "This Jungian Life", "key_takeaway": "Applying Jungian concepts to modern life"}
+        ]
+      }
     }
   ],
   "daily_insights": [
@@ -491,7 +680,12 @@
     "Your identity drives your behavior. Change who you are, change what you do.",
     "Pain is inevitable. Suffering is optional. It's how you interpret the pain.",
     "Confidence comes from kept promises to yourself. Keep small promises daily.",
-    "The obstacle is not in your way. It is the way."
+    "The obstacle is not in your way. It is the way.",
+    "What you resist persists. Let go of the struggle and flow with what is.",
+    "The shadow you refuse to face will sabotage your life until you integrate it.",
+    "You are not separate from the universe - you are the universe experiencing itself.",
+    "The more you try to grasp happiness, the more it slips away. Stop chasing, start being.",
+    "Every person who triggers you is showing you a disowned part of yourself."
   ],
   "skill_challenges": [
     "Do one thing today that scares you.",
@@ -503,6 +697,11 @@
     "Meditate for 10 minutes. Just observe your thoughts.",
     "Write down 3 things you're grateful for. Be specific.",
     "Identify one way you made an excuse today. Take ownership instead.",
-    "Say no to one thing you'd normally say yes to. Protect your priorities."
+    "Say no to one thing you'd normally say yes to. Protect your priorities.",
+    "Practice 10 minutes of present-moment awareness. Notice when your mind drifts to past or future.",
+    "Identify one person who triggers you. Journal: What trait in them exists in me?",
+    "Do a letting-go meditation: Breathe in acceptance, breathe out resistance to what is.",
+    "Write about a part of yourself you've rejected. What gift might it offer if integrated?",
+    "Spend 15 minutes doing nothing. No phone, no goals. Just exist and observe."
   ]
 }

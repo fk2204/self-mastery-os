@@ -130,6 +130,27 @@
         "time_minutes": 180,
         "instructions": "Create a comprehensive sales playbook: ideal customer profile, opening scripts, qualifying questions, objection responses, closing techniques, follow-up sequences. This becomes your training manual.",
         "success_criteria": "Written playbook covering all phases of your sales process"
+      },
+      {
+        "title": "Complex Deal Stakeholder Mapping",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Take your largest active opportunity and map every stakeholder involved. For each person, document: their role in the decision, what they care about, their biggest concern, your relationship strength (1-5), and your specific strategy to win them over. Identify gaps and create action items.",
+        "success_criteria": "Complete stakeholder map with 5+ stakeholders documented and specific action plan for each"
+      },
+      {
+        "title": "Enterprise Multi-Threading Exercise",
+        "difficulty": 3,
+        "time_minutes": 120,
+        "instructions": "Select a target enterprise account you want to win. Research 5-7 people across different functions (sales, ops, finance, IT, executive). For each, craft a personalized outreach message that speaks to their specific role and concerns. Execute a coordinated multi-touch campaign over 2 weeks.",
+        "success_criteria": "5+ personalized messages sent across multiple roles, with tracking of responses and next steps"
+      },
+      {
+        "title": "Build Your Predictable Revenue Engine",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Design your own outbound sales system: Define your ICP (ideal customer profile), build a target account list of 50 companies, create a 10-12 touch prospecting cadence with templates for each touch, define handoff criteria to closing, and set up tracking metrics. This is your sales machine blueprint.",
+        "success_criteria": "Complete system documented: ICP definition, 50 target accounts, full cadence with templates, handoff criteria, and KPI dashboard"
       }
     ]
   },
@@ -427,6 +448,154 @@
           {"title": "Sales Gravy", "key_takeaway": "Weekly tactical advice for modern sales professionals"}
         ]
       }
+    },
+    {
+      "name": "Jill Konrath",
+      "expertise": "Complex sales, enterprise selling, decision-makers",
+      "key_principles": [
+        "Selling is about creating value, not pitching products.",
+        "Buyers are crazy-busy. Respect their time or lose the deal.",
+        "Be a resource, not a pest. Bring insights, not brochures.",
+        "Get to the decision-maker fast. Don't get stuck in gatekeepers.",
+        "Your job is to make it easy for them to buy, not hard for them to say no.",
+        "Complex sales require mapping the buying process, not just pushing your sales process."
+      ],
+      "daily_practices": [
+        "Research prospects deeply before reaching out",
+        "Lead with insights and value, not product features",
+        "Focus on the business problem, not your solution"
+      ],
+      "worked_examples": [
+        {
+          "title": "Breaking Into Complex Enterprise Accounts",
+          "scenario": "You're trying to sell to a large enterprise but can't get past gatekeepers.",
+          "framework_applied": "Value-First Prospecting + Executive Framing",
+          "step_by_step": [
+            "Research the company's strategic priorities (earnings calls, press releases, LinkedIn)",
+            "Identify the pain: What challenge is costing them money or opportunity?",
+            "Map the power structure: Who owns this problem? Who has budget authority?",
+            "Craft an executive-level message: Skip features, speak to business outcomes",
+            "Example: 'I noticed you're expanding in APAC. Companies like yours typically struggle with X. We help reduce Y by 40%.'",
+            "Request a brief conversation (15 min) to share insights, not pitch",
+            "Bring a diagnostic framework or industry insights they don't have",
+            "Position as a resource: 'Even if we don't work together, this might be helpful'"
+          ],
+          "outcome": "You get in the door because you're bringing value, not asking for time. Decision-makers respond to business impact."
+        },
+        {
+          "title": "Navigating Multi-Stakeholder Sales",
+          "scenario": "You have one champion, but the deal requires approval from multiple stakeholders you haven't met.",
+          "framework_applied": "Stakeholder Mapping + Champion Enablement",
+          "step_by_step": [
+            "With your champion, map all stakeholders: Who has a say? What do they care about?",
+            "For each stakeholder: What's their win? What's their risk?",
+            "CFO cares about ROI and risk. CTO cares about implementation and integration. End-users care about ease of use.",
+            "Create tailored talking points for your champion to use with each stakeholder",
+            "Build a business case document that addresses each stakeholder's concerns",
+            "Request to present directly to key stakeholders - don't rely solely on your champion",
+            "In presentation, address each person's priorities explicitly",
+            "Example: 'Sarah, I know integration complexity is your concern. Here's how we handle that...'"
+          ],
+          "outcome": "Deal moves forward because every stakeholder feels heard and their concerns are addressed. Your champion has ammunition to sell internally."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Value-First Outreach Email",
+          "context": "Use for cold outreach to busy executives",
+          "template": "SUBJECT: [Insight/Trend] affecting [Their Industry/Company]\n\nHi [Name],\n\nI've been following [Company]'s [specific initiative/challenge] and noticed [specific insight from research].\n\nCompanies in [industry] typically face [specific challenge] when [doing X]. The cost is usually [quantified impact - time/money/opportunity].\n\nWe've helped [similar companies] [specific outcome with numbers].\n\nI have a 15-minute framework that might give you some ideas - even if we never work together.\n\nWorth a quick call?\n\n[Your Name]\n\nP.S. [One more insight or relevant case study]",
+          "example_filled": "SUBJECT: Series B SaaS companies and the 40% rule\n\nHi Jennifer,\n\nI've been following Acme's Series B announcement and noticed you're planning to triple ARR in 18 months.\n\nCompanies at your stage typically hit a wall around $10M ARR when founder-led sales stops scaling. The cost is 6-12 months of missed targets while you figure out repeatable sales.\n\nWe've helped 12 Series B SaaS companies build scalable sales motions - average result is hitting that growth target 4 months faster.\n\nI have a 15-minute diagnostic framework for Series B sales challenges that might give you some ideas - even if we never work together.\n\nWorth a quick call Thursday?\n\nMike\n\nP.S. Here's a case study of how we helped CloudCo go from $8M to $25M ARR in 14 months."
+        },
+        {
+          "title": "Stakeholder Analysis Template",
+          "context": "Use for complex deals with multiple decision-makers",
+          "template": "STAKEHOLDER MAP:\n\n[Name] - [Title]\nRole in Decision: [ ] Economic Buyer [ ] Technical Buyer [ ] User [ ] Influencer [ ] Blocker\n\nWhat they care about:\n- ___\n- ___\n\nTheir win if we succeed:\n___\n\nTheir risk if we fail:\n___\n\nTheir likely objections:\n1. ___\n2. ___\n\nHow we address their concerns:\n1. ___\n2. ___\n\nOur champion's relationship with them:\n___\n\nOur strategy for this stakeholder:\n___\n\n[Repeat for each stakeholder]",
+          "example_filled": "STAKEHOLDER MAP:\n\nSarah Chen - VP Engineering\nRole: [x] Technical Buyer\n\nCares about:\n- Implementation complexity\n- Team adoption\n- Technical debt\n\nHer win: Smooth rollout, happy team, no fires\n\nHer risk: Implementation disaster, team rebellion, her reputation\n\nLikely objections:\n1. 'Our team is already overloaded'\n2. 'Integration will be a nightmare'\n\nHow we address:\n1. We handle 90% of implementation, minimal eng time\n2. Pre-built integrations for their stack, proven in 50+ companies\n\nChampion relationship: Works closely, trusts her technical judgment\n\nStrategy: Get 30-min technical deep dive. Bring solutions engineer. Address integration concerns directly."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "SNAP Selling", "author": "Jill Konrath", "key_takeaway": "Speed up sales and win over crazy-busy buyers"},
+          {"title": "Agile Selling", "author": "Jill Konrath", "key_takeaway": "Get up to speed quickly in today's ever-changing sales world"}
+        ],
+        "podcasts": [
+          {"title": "Selling to Big Companies Podcast", "key_takeaway": "Tactical advice for enterprise sales"}
+        ]
+      }
+    },
+    {
+      "name": "Aaron Ross",
+      "expertise": "Predictable revenue, outbound prospecting, sales systems",
+      "key_principles": [
+        "Predictable Revenue: Separate prospecting from closing. Specialists beat generalists.",
+        "Cold calling 2.0: Target the right people at the right companies, not spray and pray.",
+        "Seed, Net, Spear: Three types of leads require three different motions.",
+        "Your sales team should never prospect. Have dedicated SDRs (Sales Development Reps).",
+        "Measure activity, not just results. Track calls, emails, conversations.",
+        "Build a machine, not a hero culture. Systems beat rock stars."
+      ],
+      "daily_practices": [
+        "Separate prospecting from closing in your calendar",
+        "Track leading indicators (activity) not just lagging (deals closed)",
+        "Focus on ideal customer profile, not any customer"
+      ],
+      "worked_examples": [
+        {
+          "title": "Building a Predictable Revenue Engine",
+          "scenario": "Your sales are feast or famine. You need consistent pipeline.",
+          "framework_applied": "Predictable Revenue Model",
+          "step_by_step": [
+            "Separate roles: Prospectors (SDRs) find and qualify. Closers (AEs) sell.",
+            "Define your Ideal Customer Profile (ICP): Company size, industry, role, pain",
+            "Build a targeted list: 100-500 companies that match ICP perfectly",
+            "Create a cadence: Day 1 email, Day 3 call, Day 5 LinkedIn, Day 7 email, etc.",
+            "SDRs goal: Book qualified meetings, not close deals",
+            "Qualified = has the problem, has budget, has authority, has timeline",
+            "Track metrics: Calls made, emails sent, conversations, meetings booked",
+            "Optimize weekly: What messaging works? What doesn't? Iterate."
+          ],
+          "outcome": "Pipeline becomes predictable. You can forecast: X activity → Y meetings → Z deals. Scale by adding more SDRs."
+        },
+        {
+          "title": "Cold Calling 2.0 - Targeted Outreach",
+          "scenario": "You're wasting time calling the wrong people at the wrong companies.",
+          "framework_applied": "Seed/Net/Spear Lead Generation",
+          "step_by_step": [
+            "SEED (Inbound): People who come to you. Nurture with content and follow-up.",
+            "NET (Referrals): Ask every happy customer for introductions. This is your best source.",
+            "SPEAR (Outbound): Target specific accounts you want to win.",
+            "For SPEAR: Don't spray. Pick 10 dream accounts. Research deeply.",
+            "Multi-thread: Find 3-5 people at each target account. Reach out to all.",
+            "Personalize: Reference company news, mutual connections, specific pain",
+            "Example: 'Saw you're hiring 50 engineers. That usually creates X problem. We help with Y.'",
+            "Persistent: 10-12 touches over 4 weeks. Most give up after 2-3."
+          ],
+          "outcome": "You land bigger deals because you're targeting the right accounts and sticking with them long enough to break through."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Cold Email 2.0 Template",
+          "context": "Use for targeted outbound to ideal customers",
+          "template": "SUBJECT: [Company Name] + [Your Company] ?\n\nHi [First Name],\n\n[Specific compliment or observation about their company]\n\n[Relevant pain point or challenge they likely face]\n\nWe help [companies like theirs] [specific outcome with number].\n\n[Social proof - similar company or impressive metric]\n\nWorth a 15-minute conversation?\n\n[Your Name]\n[Title]\n[Phone]",
+          "example_filled": "SUBJECT: Acme + SalesForce ?\n\nHi Mark,\n\nCongrats on the Series B! Saw you're planning to triple sales headcount.\n\nMost companies at your stage struggle to ramp new reps fast enough - average is 4-6 months to productivity.\n\nWe help high-growth SaaS companies cut ramp time in half through structured onboarding.\n\nChartMogul used our system and got new reps to quota in 8 weeks instead of 16.\n\nWorth a 15-minute conversation?\n\nSarah\nVP Sales, RampFast\n555-1234"
+        },
+        {
+          "title": "SDR Activity Dashboard",
+          "context": "Track leading indicators for predictable pipeline",
+          "template": "DAILY ACTIVITY TRACKER:\n\nDATE: ___\n\nPROSPECTING ACTIVITY:\n- Calls made: ___ (Target: 50)\n- Emails sent: ___ (Target: 30)\n- LinkedIn touches: ___ (Target: 20)\n- Voicemails: ___ (Target: 20)\n\nOUTCOMES:\n- Conversations: ___ (Target: 5)\n- Meetings booked: ___ (Target: 2)\n- Qualification rate: ___% (booked / conversations)\n\nTOP 10 ACCOUNTS STATUS:\n1. [Company] - Status: ___\n2. [Company] - Status: ___\n[...]\n\nWHAT WORKED:\n___\n\nWHAT TO TEST TOMORROW:\n___\n\nWEEKLY METRICS (rolling):\n- Meetings booked: ___ (Target: 10)\n- Show rate: ___% (Target: 80%)\n- Qualified to AE: ___ (Target: 7)\n\nFORECAST:\nAt current activity levels:\n- This week: ___ meetings\n- This month: ___ pipeline created\n- This quarter: ___ closed deals (based on conversion rate)",
+          "example_filled": "DATE: Feb 4, 2026\n\nACTIVITY:\n- Calls: 52 ✓\n- Emails: 35 ✓\n- LinkedIn: 18 (missed target)\n- Voicemails: 22 ✓\n\nOUTCOMES:\n- Conversations: 7 ✓\n- Meetings booked: 3 ✓\n- Qualification: 43% (3/7)\n\nTOP 10:\n1. Acme Corp - Had convo, meeting Thursday\n2. BigCo - Left VM, will try again tomorrow\n3. TechStart - Email opened 3x, no response yet\n\nWORKED:\n- Referencing their recent funding announcement got attention\n- Calling at 8am PST caught more people\n\nTEST TOMORROW:\n- Try video emails for top 5 accounts\n- Call between 4-5pm (end of their day)\n\nWEEKLY:\n- Meetings booked: 12 ✓ (target 10)\n- Show rate: 83% ✓\n- Qualified to AE: 8 ✓\n\nFORECAST:\n- This week: 15 meetings (trending up)\n- This month: $250K pipeline\n- This quarter: 5 closed deals (~$150K)"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Predictable Revenue", "author": "Aaron Ross", "key_takeaway": "Turn your business into a sales machine with Cold Calling 2.0"},
+          {"title": "From Impossible to Inevitable", "author": "Aaron Ross & Jason Lemkin", "key_takeaway": "How to scale a SaaS business from $1M to $100M"}
+        ],
+        "podcasts": [
+          {"title": "Predictable Revenue Podcast", "key_takeaway": "Weekly insights on building scalable sales systems"}
+        ]
+      }
     }
   ],
   "daily_insights": [
@@ -439,7 +608,12 @@
     "Your confidence is contagious. So is your doubt.",
     "Follow-up is where fortunes are made. Most quit too early.",
     "Selling is serving. If you believe in your product, you owe it to them to be persistent.",
-    "Volume covers all sins. Do more, learn faster, win bigger."
+    "Volume covers all sins. Do more, learn faster, win bigger.",
+    "In B2B sales, you're not selling to a person - you're selling to a committee. Map every stakeholder.",
+    "Busy executives buy outcomes, not products. Lead with the business impact, not features.",
+    "Consultative selling means becoming a trusted advisor. Diagnose before you prescribe.",
+    "The best enterprise deals are won before the RFP. Build relationships when they're not buying.",
+    "Specialization beats generalization. The SDR who prospects all day beats the AE who does it part-time."
   ],
   "skill_challenges": [
     "Make 10 cold outreach touches today. Track responses.",
@@ -451,6 +625,11 @@
     "Study one sales call from a master. Write down 3 techniques to steal.",
     "Ask one open-ended question in every conversation today.",
     "Pitch your product to yourself in the mirror with full conviction.",
-    "Identify your biggest sales weakness. Spend 20 minutes drilling it."
+    "Identify your biggest sales weakness. Spend 20 minutes drilling it.",
+    "Map a complex deal: list every stakeholder, their priorities, and your strategy for each.",
+    "Build a prospecting cadence: design a 12-touch sequence across email, phone, and LinkedIn.",
+    "Create your Ideal Customer Profile: define the 5 characteristics of your best-fit accounts.",
+    "Track your pipeline velocity: measure days from first touch to closed deal for your last 5 wins.",
+    "Build a champion enablement deck: create materials your internal champion can use to sell for you."
   ]
 }

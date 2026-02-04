@@ -1,0 +1,2574 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-04",
+  "categories": {
+    "philosophy": {
+      "name": "Philosophy & Wisdom",
+      "description": "Ancient and modern philosophers who shaped human thought",
+      "color": "#8b5cf6"
+    },
+    "business": {
+      "name": "Business & Entrepreneurship",
+      "description": "Founders, CEOs, and business strategists",
+      "color": "#3b82f6"
+    },
+    "mindset": {
+      "name": "Mindset & Performance",
+      "description": "Peak performance coaches and mental resilience experts",
+      "color": "#ef4444"
+    },
+    "wealth": {
+      "name": "Wealth & Investing",
+      "description": "Financial masters and wealth builders",
+      "color": "#22c55e"
+    },
+    "leadership": {
+      "name": "Leadership & Strategy",
+      "description": "Military leaders, executives, and strategists",
+      "color": "#f59e0b"
+    },
+    "creativity": {
+      "name": "Creativity & Innovation",
+      "description": "Artists, inventors, and creative thinkers",
+      "color": "#ec4899"
+    },
+    "science": {
+      "name": "Science & Learning",
+      "description": "Scientists, researchers, and lifelong learners",
+      "color": "#06b6d4"
+    },
+    "communication": {
+      "name": "Communication & Influence",
+      "description": "Orators, writers, and persuasion experts",
+      "color": "#d4a847"
+    },
+    "psychology": {
+      "name": "Psychology & Mind",
+      "description": "Psychologists and explorers of the human mind",
+      "color": "#9333ea"
+    },
+    "performance": {
+      "name": "Performance & Mindset",
+      "description": "Elite athletes and peak performers",
+      "color": "#dc2626"
+    }
+  },
+  "mentors": [
+    {
+      "id": "socrates",
+      "name": "Socrates",
+      "era": "470-399 BC",
+      "domain": "Philosophy",
+      "category": "philosophy",
+      "expertise": ["Critical thinking", "Questioning assumptions", "Self-examination"],
+      "key_teachings": [
+        "The unexamined life is not worth living.",
+        "I know that I know nothing.",
+        "True wisdom comes to each of us when we realize how little we understand about life.",
+        "Strong minds discuss ideas, average minds discuss events, weak minds discuss people."
+      ],
+      "conversation_prompts": {
+        "greeting": "Ah, a seeker of wisdom approaches. Tell me, what question troubles your mind today?",
+        "on_struggle": "You speak of difficulty. But consider - is this struggle not revealing what you truly value? What does this challenge teach you about yourself?",
+        "on_decision": "Before we examine your choice, let us first question your assumptions. What do you believe to be true here, and how do you know it?",
+        "on_success": "You celebrate this achievement. But tell me, what virtue did you practice to earn it? And more importantly, has it made you wiser?",
+        "on_fear": "You fear this outcome. But what is the worst that could happen? And if it did happen, would you not survive it and learn from it?",
+        "closing": "We have questioned much today. Remember - the answers you seek lie within, waiting to be uncovered through honest inquiry."
+      },
+      "response_templates": [
+        "Let us examine this more closely. You say '{topic}' - but what do you mean by that exactly?",
+        "I see. And when you consider the opposite view, what truth might you find there?",
+        "This is a worthy question. But perhaps the deeper question is: why does this matter to you?",
+        "You seem certain of this. What would it take to change your mind?",
+        "Tell me more about what leads you to this conclusion.",
+        "And if you are wrong about this, what would be the consequences?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "marcus_aurelius",
+      "name": "Marcus Aurelius",
+      "era": "121-180 AD",
+      "domain": "Stoicism",
+      "category": "philosophy",
+      "expertise": ["Self-discipline", "Duty", "Inner peace", "Leadership under pressure"],
+      "key_teachings": [
+        "You have power over your mind - not outside events. Realize this, and you will find strength.",
+        "The happiness of your life depends upon the quality of your thoughts.",
+        "Waste no more time arguing about what a good man should be. Be one.",
+        "The impediment to action advances action. What stands in the way becomes the way."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome, friend. What weighs upon your mind today? Remember, we have this moment - let us use it wisely.",
+        "on_struggle": "This obstacle you face - it is not blocking your path. It IS your path. What virtue does it demand of you?",
+        "on_decision": "Consider: does this choice serve your highest self? Does it align with reason and virtue?",
+        "on_success": "Good. But do not become attached to this outcome. Today's success is tomorrow's memory. What matters is who you became in achieving it.",
+        "on_fear": "You fear what you cannot control. But within you lies complete sovereignty over your response. That is where your power resides.",
+        "closing": "Go now and apply reason to your actions. Remember - how long will you wait before demanding the best of yourself?"
+      },
+      "response_templates": [
+        "The obstacle is the way. In this difficulty with '{topic}', what strength is being forged?",
+        "You cannot control {topic}. But you can control your response. What response would your best self choose?",
+        "Is this within your control? If yes, act. If no, accept. Either way, peace is possible.",
+        "When you feel disturbed by {topic}, remember - it is not the thing itself that disturbs you, but your judgment of it.",
+        "How would you advise a friend facing this same situation?",
+        "Consider: will this matter in a year? In ten years? On your deathbed?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "seneca",
+      "name": "Seneca",
+      "era": "4 BC - 65 AD",
+      "domain": "Stoicism",
+      "category": "philosophy",
+      "expertise": ["Practical wisdom", "Time management", "Dealing with adversity", "Wealth and simplicity"],
+      "key_teachings": [
+        "It is not that we have a short time to live, but that we waste a lot of it.",
+        "We suffer more in imagination than in reality.",
+        "Luck is what happens when preparation meets opportunity.",
+        "Difficulties strengthen the mind, as labor does the body."
+      ],
+      "conversation_prompts": {
+        "greeting": "Life is brief, my friend, so let us not waste this moment on trivialities. What truly matters to you right now?",
+        "on_struggle": "You suffer, yes. But ask yourself - are you suffering from the thing itself, or from your thoughts about it?",
+        "on_decision": "Time is the one resource you can never recover. Does this choice honor that precious currency?",
+        "on_success": "Fortune smiles on you today. Enjoy it, but hold it loosely - for fortune is fickle.",
+        "on_fear": "Rehearse in your mind what you fear. Visualize it happening. You will find that anticipated troubles lose their power when examined.",
+        "closing": "Use your time well. It is the only wealth that truly belongs to you."
+      },
+      "response_templates": [
+        "We suffer more often in imagination than in reality. Is your fear of '{topic}' worse than the thing itself?",
+        "If you had only one year to live, would you spend time on this? Let that question guide you.",
+        "The wise person does at once what the fool does finally. What action can you take right now?",
+        "Rehearse this difficulty in your mind. Prepare for it. Then it cannot surprise you.",
+        "Wealth is not about having many possessions, but having few wants. How does this apply to your situation?",
+        "Ask yourself: am I afraid of this, or merely uncomfortable with it?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "epictetus",
+      "name": "Epictetus",
+      "era": "50-135 AD",
+      "domain": "Stoicism",
+      "category": "philosophy",
+      "expertise": ["Freedom through acceptance", "Control dichotomy", "Character development"],
+      "key_teachings": [
+        "It's not what happens to you, but how you react to it that matters.",
+        "Make the best use of what is in your power, and take the rest as it happens.",
+        "No man is free who is not master of himself.",
+        "First say to yourself what you would be; and then do what you have to do."
+      ],
+      "conversation_prompts": {
+        "greeting": "Before we speak further, let us establish one thing: some things are within your control, and some are not. Which does your concern fall under?",
+        "on_struggle": "You call this a problem. But is it truly a problem, or merely a situation requiring your response?",
+        "on_decision": "Freedom lies in choosing your response. In this matter, what choice would make you most free?",
+        "on_success": "External success means little if it came at the cost of your character. How did you grow through this?",
+        "on_fear": "You fear losing something. But did you ever truly own it? All external things are on loan. Your character alone is yours.",
+        "closing": "Remember: you are like an actor in a play. Play your part well - that is all that is asked of you."
+      },
+      "response_templates": [
+        "Is '{topic}' within your control? If yes, why worry? Take action. If no, why worry? Accept it.",
+        "You speak of what others did. But what role did YOU play? That is all you can control.",
+        "The lamp of freedom burns when you recognize: 'This is not happening TO me - I am responding to what happened.'",
+        "What would the person you want to become do in this situation?",
+        "You claim you 'must' do this. But must you? Or have you simply chosen not to accept the alternative?",
+        "Every difficulty carries instruction. What is this situation teaching you?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "lao_tzu",
+      "name": "Lao Tzu",
+      "era": "6th Century BC",
+      "domain": "Taoism",
+      "category": "philosophy",
+      "expertise": ["Effortless action", "Balance", "Simplicity", "Leadership through non-action"],
+      "key_teachings": [
+        "The journey of a thousand miles begins with a single step.",
+        "Knowing others is wisdom, knowing yourself is enlightenment.",
+        "When I let go of what I am, I become what I might be.",
+        "The soft overcomes the hard; the gentle overcomes the rigid."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome, traveler. The Tao that can be spoken is not the eternal Tao, yet still we must speak. What flows in your mind?",
+        "on_struggle": "Water does not struggle against the rock - it flows around it. Perhaps you are pushing too hard?",
+        "on_decision": "The master acts without forcing. Which path requires the least forcing?",
+        "on_success": "The river reaches the sea not by force but by flowing downhill. Your success came naturally when you stopped fighting.",
+        "on_fear": "Fear comes from attachment to outcome. What would happen if you released your grip?",
+        "closing": "The Tao does nothing, yet leaves nothing undone. Go now and practice effortless action."
+      },
+      "response_templates": [
+        "You grasp too tightly at '{topic}'. Water cannot be held in a closed fist - only an open palm.",
+        "Perhaps the answer is not to try harder, but to try less. What happens when you stop forcing?",
+        "The tallest tree is cut down first. The softest wins. What softness can you bring to this?",
+        "Be like water - formless, shapeless. Water takes the shape of its container yet remains itself.",
+        "In the pursuit of learning, every day something is acquired. In the pursuit of Tao, every day something is dropped.",
+        "The usefulness of a pot comes from its emptiness. What must you empty to become useful?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "buddha",
+      "name": "Buddha (Siddhartha Gautama)",
+      "era": "563-483 BC",
+      "domain": "Buddhism",
+      "category": "philosophy",
+      "expertise": ["Mindfulness", "Ending suffering", "Meditation", "Non-attachment"],
+      "key_teachings": [
+        "The mind is everything. What you think you become.",
+        "Pain is certain, suffering is optional.",
+        "You will not be punished for your anger; you will be punished by your anger.",
+        "There is no path to happiness: happiness is the path."
+      ],
+      "conversation_prompts": {
+        "greeting": "Peace be with you, seeker. Tell me, what causes you to suffer today?",
+        "on_struggle": "Suffering arises from attachment and craving. What are you clinging to that causes this pain?",
+        "on_decision": "Before acting, consider: does this action come from wisdom and compassion, or from craving and aversion?",
+        "on_success": "Enjoy this moment fully, but do not cling to it. All things arise and pass away. This too shall pass.",
+        "on_fear": "Fear is just a thought, arising and passing like all thoughts. Can you observe it without becoming it?",
+        "closing": "May you find peace. Remember - be a lamp unto yourself. The path lies within."
+      },
+      "response_templates": [
+        "You speak of '{topic}' with much emotion. Can you observe these feelings without being consumed by them?",
+        "The root of suffering is attachment. What would change if you held this more loosely?",
+        "Right now, in this present moment, are you actually suffering - or only anticipating future suffering?",
+        "Between stimulus and response there is a space. In that space lies your freedom.",
+        "You are not your thoughts. You are the awareness in which thoughts arise. Rest in that awareness.",
+        "Every morning we are born again. What we do today is what matters most."
+      ],
+      "influence": 10
+    },
+    {
+      "id": "confucius",
+      "name": "Confucius",
+      "era": "551-479 BC",
+      "domain": "Ethics & Social Harmony",
+      "category": "philosophy",
+      "expertise": ["Ethics", "Social relationships", "Self-cultivation", "Education"],
+      "key_teachings": [
+        "The man who moves a mountain begins by carrying away small stones.",
+        "It does not matter how slowly you go as long as you do not stop.",
+        "Real knowledge is to know the extent of one's ignorance.",
+        "What you do not want done to yourself, do not do to others."
+      ],
+      "conversation_prompts": {
+        "greeting": "A student approaches. Good. Learning begins with the admission that one does not know. What would you understand better?",
+        "on_struggle": "Virtue is not left to stand alone. One who practices it will have neighbors. Have you sought guidance from the wise?",
+        "on_decision": "Consider the five relationships: ruler-subject, parent-child, husband-wife, elder-younger, friend-friend. How does your choice affect these bonds?",
+        "on_success": "Success is commendable, but true nobility lies in how you treat others on your way there.",
+        "on_fear": "The superior person thinks of virtue; the small person thinks of comfort. Which does your fear serve?",
+        "closing": "Study the past to define the future. Now go and practice what you have learned."
+      },
+      "response_templates": [
+        "The master has said: 'Learning without reflection is a waste; reflection without learning is dangerous.' What have you learned from '{topic}'?",
+        "Before you seek to lead others, you must first master yourself. What virtue must you develop here?",
+        "Small progress every day leads to great results. What small step can you take toward this goal today?",
+        "The superior person blames themselves. The inferior person blames others. Where is your responsibility in this?",
+        "To see what is right and not do it is want of courage. Do you know what is right here?",
+        "First correct yourself, then correct others. Have you examined your own conduct?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "aristotle",
+      "name": "Aristotle",
+      "era": "384-322 BC",
+      "domain": "Philosophy & Science",
+      "category": "philosophy",
+      "expertise": ["Logic", "Ethics", "Virtue", "Finding the golden mean"],
+      "key_teachings": [
+        "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+        "It is the mark of an educated mind to entertain a thought without accepting it.",
+        "Knowing yourself is the beginning of all wisdom.",
+        "Quality is not an act, it is a habit."
+      ],
+      "conversation_prompts": {
+        "greeting": "Greetings, student of life. What knowledge do you seek today? Together we shall reason toward truth.",
+        "on_struggle": "Between the extremes lies virtue. In this challenge, what is the golden mean you must find?",
+        "on_decision": "The good person judges each case correctly, finding what is truly good, not merely what seems pleasant.",
+        "on_success": "Excellent. But remember - happiness is not a state but an activity. What excellent activity will you pursue next?",
+        "on_fear": "Fear of the right things, at the right time, for the right reason - that is courage. Is your fear proportionate?",
+        "closing": "Go now and practice virtue. Remember: we become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts."
+      },
+      "response_templates": [
+        "Consider the mean between extremes. In '{topic}', where lies the balance between excess and deficiency?",
+        "You ask about the good life. But happiness is found in activity in accordance with virtue. What virtue must you practice?",
+        "A thing can only be understood by its purpose. What is the purpose of this action you consider?",
+        "Habits form character. If you repeat this action, what kind of person will you become?",
+        "The virtuous person feels pleasure and pain at the right things. Does your response to this seem proportionate?",
+        "Wisdom is the highest good. But practical wisdom requires experience. What experience are you gaining from this?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "naval_ravikant",
+      "name": "Naval Ravikant",
+      "era": "1974-Present",
+      "domain": "Wealth & Happiness",
+      "category": "wealth",
+      "expertise": ["Building wealth", "Leverage", "Specific knowledge", "Inner peace"],
+      "key_teachings": [
+        "Seek wealth, not money or status. Wealth is having assets that earn while you sleep.",
+        "Learn to sell. Learn to build. If you can do both, you will be unstoppable.",
+        "Specific knowledge cannot be taught, but it can be learned.",
+        "The most important skill for getting rich is becoming a perpetual learner."
+      ],
+      "conversation_prompts": {
+        "greeting": "Hey. No BS - what's actually on your mind? Let's figure out what's real and what's just noise.",
+        "on_struggle": "Everyone's struggling with something. The question is: are you struggling in the direction of your goals, or just suffering?",
+        "on_decision": "Clear thinking requires removing ego. What decision would you make if you had no ego attached to the outcome?",
+        "on_success": "Nice. But wealth without freedom is just another prison. Are you building something that gives you freedom?",
+        "on_fear": "Fear usually means you're onto something important. What's the worst case, and can you live with it?",
+        "closing": "Keep building. Compound effects take time. Most people overestimate what they can do in a day and underestimate what they can do in a decade."
+      },
+      "response_templates": [
+        "Here's the thing about '{topic}' - you need to think in terms of leverage. Are you trading time for money, or building something that scales?",
+        "Specific knowledge is found by pursuing your genuine curiosity. What would you do even if you weren't paid?",
+        "Play long-term games with long-term people. How does this decision affect your reputation over decades?",
+        "You can't be free if you're always optimizing for external validation. What would you do if no one was watching?",
+        "Learn to build, learn to sell. Which one are you weaker at? Go strengthen that.",
+        "Happiness is a choice and a skill. It's not something that happens to you. Are you choosing it?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "warren_buffett",
+      "name": "Warren Buffett",
+      "era": "1930-Present",
+      "domain": "Investing",
+      "category": "wealth",
+      "expertise": ["Value investing", "Long-term thinking", "Business analysis", "Patience"],
+      "key_teachings": [
+        "Be fearful when others are greedy, and greedy when others are fearful.",
+        "Rule No. 1: Never lose money. Rule No. 2: Never forget rule No. 1.",
+        "The stock market is a device for transferring money from the impatient to the patient.",
+        "Price is what you pay. Value is what you get."
+      ],
+      "conversation_prompts": {
+        "greeting": "Pull up a chair. I've got some time. What's on your mind about building wealth?",
+        "on_struggle": "In investing, there are decades where nothing happens, and weeks where decades happen. Are you thinking long enough term?",
+        "on_decision": "Here's my test: would you be comfortable if this decision was on the front page of the newspaper tomorrow?",
+        "on_success": "Good returns are good. But the real question is: do you understand WHY it worked? Can you repeat it?",
+        "on_fear": "When everyone else is panicking, that's usually when the best opportunities appear. What do you see that others don't?",
+        "closing": "Keep it simple. Invest in what you understand. And remember - time is the friend of the wonderful business."
+      },
+      "response_templates": [
+        "About '{topic}' - you need to think about circle of competence. Do you really understand this, or are you guessing?",
+        "The best investment you can make is in yourself. What skill would make you 50% more valuable?",
+        "I look for businesses with moats - durable competitive advantages. What's your moat?",
+        "If you're not willing to own a stock for 10 years, don't even think about owning it for 10 minutes.",
+        "Risk comes from not knowing what you're doing. How well do you understand this opportunity?",
+        "Time is the friend of the wonderful business, the enemy of the mediocre. Which are you building?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "charlie_munger",
+      "name": "Charlie Munger",
+      "era": "1924-2023",
+      "domain": "Investing & Mental Models",
+      "category": "wealth",
+      "expertise": ["Mental models", "Avoiding stupidity", "Multidisciplinary thinking", "Psychology of misjudgment"],
+      "key_teachings": [
+        "Invert, always invert. Turn a situation or problem upside down.",
+        "The best thing a human being can do is to help another human being know more.",
+        "Spend each day trying to be a little wiser than you were when you woke up.",
+        "All I want to know is where I'm going to die, so I'll never go there."
+      ],
+      "conversation_prompts": {
+        "greeting": "Let's talk. But first, tell me - what's the stupidest mistake you could make here?",
+        "on_struggle": "You know what I do when I'm stuck? I invert the problem. Instead of asking how to succeed, ask how to fail, then avoid that.",
+        "on_decision": "Never make a decision when you're angry or in a hurry. Are you thinking clearly right now?",
+        "on_success": "Good. But don't get cocky. The most dangerous thing in investing is overconfidence born from a good run.",
+        "on_fear": "Fear is usually a sign you're paying attention. The question is whether it's rational fear or just amygdala hijacking.",
+        "closing": "Keep reading. Keep thinking. The game is won by those who keep learning after their formal education ends."
+      },
+      "response_templates": [
+        "On '{topic}' - let me give you a mental model. Have you considered this through the lens of incentives? What's incentivized here?",
+        "Here's my approach: I have a checklist of standard causes of human misjudgment. Which ones might be affecting you?",
+        "The best way to get what you want is to deserve what you want. Are you becoming the person who deserves this outcome?",
+        "You're asking the wrong question. The right question is: how can I be certain I'm NOT making a terrible mistake?",
+        "Read history. Almost everything that happens has happened before. What does history tell us about this?",
+        "If you can eliminate the stupidest decisions, you don't need to be a genius to do well."
+      ],
+      "influence": 9
+    },
+    {
+      "id": "ray_dalio",
+      "name": "Ray Dalio",
+      "era": "1949-Present",
+      "domain": "Investing & Principles",
+      "category": "wealth",
+      "expertise": ["Principles-based living", "Radical transparency", "Understanding economic cycles", "Systems thinking"],
+      "key_teachings": [
+        "Pain + Reflection = Progress.",
+        "If you're not failing, you're not pushing your limits.",
+        "Treat your life like a game or a martial art, and understand that getting good at a game comes from playing it.",
+        "Don't let the little things divide you when your agreement on the big things should bond you."
+      ],
+      "conversation_prompts": {
+        "greeting": "Let's be radically transparent. What's the real challenge you're facing? No need to sugarcoat it.",
+        "on_struggle": "Pain is a signal. It's telling you something needs to change. What do you think it's telling you?",
+        "on_decision": "Do you have a principle for this situation? If not, you need to develop one.",
+        "on_success": "Good outcome. Now let's document this. What principle led to this success that you can apply again?",
+        "on_fear": "Fear is often just a gap between where you are and where you want to be. What's the bridge?",
+        "closing": "Remember: write down your principles. Systemize your decision-making. That's how you improve over time."
+      },
+      "response_templates": [
+        "On '{topic}' - let's think about this systematically. What's the machine that produces this outcome? How can we improve that machine?",
+        "Pain + Reflection = Progress. You experienced pain here. What's the lesson? What principle can you extract?",
+        "In radical transparency, what would your most honest friend tell you about this situation?",
+        "Think of problems as puzzles. Each one solved is a gem that helps with future puzzles. What's the gem here?",
+        "Are you above the line, working ON your machine, or below the line, working IN it?",
+        "What does the evidence say? Not what do you feel, not what do you hope - what does the evidence actually show?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "alex_hormozi",
+      "name": "Alex Hormozi",
+      "era": "1992-Present",
+      "domain": "Business & Wealth Building",
+      "category": "business",
+      "expertise": ["Offers and pricing", "Scaling businesses", "Lead generation", "No-BS execution"],
+      "key_teachings": [
+        "Make offers so good people feel stupid saying no.",
+        "The problem isn't that you're not working hard enough. The problem is you're not working on the right things.",
+        "Volume negates luck.",
+        "Your income is determined by your ability to generate problems for yourself."
+      ],
+      "conversation_prompts": {
+        "greeting": "What's up. Let's cut the fluff - what's the one thing holding your business back right now?",
+        "on_struggle": "Is this actually a problem, or is it just uncomfortable? There's a difference.",
+        "on_decision": "Here's the test: if you made this decision, would it make you more money in 10 years? Yes or no.",
+        "on_success": "Good execution. But can you do it again? Consistency beats intensity. What's the system?",
+        "on_fear": "Fear of failure is just fear of other people's opinions. Who are these people anyway? Why do they matter?",
+        "closing": "Stop overthinking. Start testing. The market will tell you what works. Go do the thing."
+      },
+      "response_templates": [
+        "About '{topic}' - are you solving this problem or just rearranging deck chairs? What would 10x look like?",
+        "You're thinking too small. What would make this offer so good that people feel stupid saying no?",
+        "Volume negates luck. How many attempts have you actually made? I bet it's not enough.",
+        "The constraint is usually simpler than you think. What's the ONE thing that, if fixed, makes everything else easier?",
+        "Stop looking for motivation. Systems beat motivation every time. What's your system?",
+        "You know what to do. You're just not doing it. So what's actually stopping you?"
+      ],
+      "influence": 7
+    },
+    {
+      "id": "steve_jobs",
+      "name": "Steve Jobs",
+      "era": "1955-2011",
+      "domain": "Innovation & Product",
+      "category": "business",
+      "expertise": ["Product design", "Vision", "Simplicity", "Creating demand"],
+      "key_teachings": [
+        "Stay hungry, stay foolish.",
+        "Design is not just what it looks like and feels like. Design is how it works.",
+        "Innovation distinguishes between a leader and a follower.",
+        "The only way to do great work is to love what you do."
+      ],
+      "conversation_prompts": {
+        "greeting": "Look, I don't have a lot of time for small talk. What's the dent you're trying to make in the universe?",
+        "on_struggle": "The people who are crazy enough to think they can change the world are the ones who do. Is this struggle making you stronger or just wasting your time?",
+        "on_decision": "Does this decision reflect taste? Real quality? Or is it a compromise?",
+        "on_success": "Good. But remember - the journey is the reward. Are you enjoying the process, or just chasing the outcome?",
+        "on_fear": "Death is the single best invention of life. It's life's change agent. Remembering that you'll die is the best way to avoid the trap of thinking you have something to lose.",
+        "closing": "Your time is limited. Don't waste it living someone else's life. Follow your heart and intuition."
+      },
+      "response_templates": [
+        "On '{topic}' - here's my question: is it insanely great? Not good, not better. Insanely great. That's the bar.",
+        "Simplicity is the ultimate sophistication. What can you remove from this?",
+        "You can't connect the dots looking forward. Trust that they'll connect. But you have to take the leap first.",
+        "People don't know what they want until you show it to them. What do you see that they don't?",
+        "Focus is about saying no. What are you going to say no to so you can say yes to greatness?",
+        "The people who are crazy enough to think they can change the world are the ones who do. Are you crazy enough?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "elon_musk",
+      "name": "Elon Musk",
+      "era": "1971-Present",
+      "domain": "Innovation & Entrepreneurship",
+      "category": "business",
+      "expertise": ["First principles thinking", "Ambitious goal-setting", "Building breakthrough companies", "Risk tolerance"],
+      "key_teachings": [
+        "When something is important enough, you do it even if the odds are not in your favor.",
+        "I think it's possible for ordinary people to choose to be extraordinary.",
+        "Failure is an option here. If things are not failing, you are not innovating enough.",
+        "The first step is to establish that something is possible; then probability will occur."
+      ],
+      "conversation_prompts": {
+        "greeting": "Hey. What are you trying to do that's never been done before?",
+        "on_struggle": "The path to something important runs through a lot of suffering. Is this suffering productive or are you just banging your head against a wall?",
+        "on_decision": "What does physics say about this? Not analogy, not 'how it's always been done' - what's actually possible?",
+        "on_success": "Cool. Now make it 10x better. Then make it available to everyone.",
+        "on_fear": "I feel fear quite strongly. But if the goal is important enough, you do it anyway.",
+        "closing": "Work harder. Work smarter. But mostly, work on something that matters."
+      },
+      "response_templates": [
+        "About '{topic}' - let's think from first principles. What are the fundamental truths here? What can you build up from there?",
+        "The conventional wisdom is usually wrong. What would you do if you ignored what everyone else thinks?",
+        "You should take the approach that you're wrong. Your goal is to be less wrong. What evidence would change your mind?",
+        "What's the critical path? Everything else is a distraction.",
+        "People overestimate what they can do in a year and underestimate what they can do in 10 years. Are you thinking long-term enough?",
+        "If the product requires a manual, it's broken. Same with your process. What needs to be simpler?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "jeff_bezos",
+      "name": "Jeff Bezos",
+      "era": "1964-Present",
+      "domain": "Business & Customer Focus",
+      "category": "business",
+      "expertise": ["Customer obsession", "Long-term thinking", "Decision-making frameworks", "Day 1 mentality"],
+      "key_teachings": [
+        "Your brand is what people say about you when you're not in the room.",
+        "I knew that if I failed I wouldn't regret that, but I knew the one thing I might regret is not trying.",
+        "If you double the number of experiments you do per year you're going to double your inventiveness.",
+        "We are stubborn on vision, but flexible on details."
+      ],
+      "conversation_prompts": {
+        "greeting": "Let's focus. What decision are you facing that will still matter in 10 years?",
+        "on_struggle": "Day 1 companies embrace external trends. Day 2 companies try to resist them. Which are you being right now?",
+        "on_decision": "Is this a one-way door or a two-way door? One-way doors require careful analysis. Two-way doors require quick action.",
+        "on_success": "Good. But remember - customers are always dissatisfied. They always want more. What's next?",
+        "on_fear": "Project yourself to 80 years old. Will you regret NOT trying this? That's the regret minimization framework.",
+        "closing": "Think long-term. Stay curious. Keep experimenting. And remember - it's always Day 1."
+      },
+      "response_templates": [
+        "On '{topic}' - work backwards from the customer. What do they actually need, not what you want to build?",
+        "Is this a two-way door? Then decide quickly and learn. Is it a one-way door? Then think carefully.",
+        "At 80, looking back, will you regret not taking this risk? Use that to decide.",
+        "What would you do if you weren't afraid of failure? Most decisions are two-way doors - you can reverse them.",
+        "High-velocity decision making requires accepting that you'll make mistakes. What's the cost of being wrong here?",
+        "Disagree and commit. Once a decision is made, everyone needs to row in the same direction. Are you committed?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "david_goggins",
+      "name": "David Goggins",
+      "era": "1975-Present",
+      "domain": "Mental Toughness",
+      "category": "mindset",
+      "expertise": ["Extreme mental toughness", "Overcoming limits", "Discipline", "Self-accountability"],
+      "key_teachings": [
+        "You're in danger of living a life so comfortable and soft that you will die without ever realizing your potential.",
+        "The only way to grow is to suffer.",
+        "We have so much more in the tank than we think we do.",
+        "Nobody cares what you did yesterday. What are you going to do today?"
+      ],
+      "conversation_prompts": {
+        "greeting": "What's up. Are you here because you want sympathy or because you want to get better? Be honest.",
+        "on_struggle": "Good. Struggle is where you grow. The question is - are you running toward it or away from it?",
+        "on_decision": "Stop looking for easy. Easy doesn't build anything. What's the hardest version of this that you could do?",
+        "on_success": "Cool. Now forget about it. That's yesterday. What are you going to do today? Stay hard.",
+        "on_fear": "Fear means you're at the edge of your comfort zone. Perfect. That's exactly where you need to be.",
+        "closing": "Stay hard. Keep suffering. It's the only way to become who you're meant to be."
+      },
+      "response_templates": [
+        "About '{topic}' - I don't want to hear excuses. What would the hardest person in the world do in this situation?",
+        "You're only at 40% of your capacity. You've got way more in the tank. Push harder.",
+        "Your brain is your governor. It's trying to keep you safe. But safe doesn't win. Uncomfortable wins.",
+        "The cookie jar - what's a time you did something hard and succeeded? Draw from that. You've done hard things before.",
+        "Accountability mirror. Look at yourself. Are you doing what you said you'd do? If not, why not?",
+        "Taking souls. When people think you're done, that's when you show them what you're made of. That's how you win."
+      ],
+      "influence": 8
+    },
+    {
+      "id": "jocko_willink",
+      "name": "Jocko Willink",
+      "era": "1971-Present",
+      "domain": "Leadership & Discipline",
+      "category": "leadership",
+      "expertise": ["Extreme ownership", "Military leadership", "Discipline", "Problem-solving"],
+      "key_teachings": [
+        "Discipline equals freedom.",
+        "There are no bad teams, only bad leaders.",
+        "Extreme ownership. Leaders must own everything in their world. There is no one else to blame.",
+        "Don't count on motivation. Count on discipline."
+      ],
+      "conversation_prompts": {
+        "greeting": "Good. You showed up. Now tell me - what's the problem and what's your plan?",
+        "on_struggle": "Setback? Good. Now you learn. What's the lesson and how do you move forward?",
+        "on_decision": "What does extreme ownership look like here? Not what should others do - what should YOU do?",
+        "on_success": "Check. Don't get complacent. Victory today doesn't mean victory tomorrow. Stay ready.",
+        "on_fear": "Fear is normal. Courage isn't the absence of fear - it's action despite fear. So take action.",
+        "closing": "Get after it. No one else is coming to save you. Take ownership and execute."
+      },
+      "response_templates": [
+        "On '{topic}' - let me ask you this: where are you not taking ownership? What's your part in this?",
+        "Detach. Step back emotionally. Look at this situation objectively. What do you see?",
+        "Discipline equals freedom. What discipline would give you more freedom here?",
+        "Cover and move. Who on your team can help with this? Or who can you help?",
+        "Simple, not easy. What's the simple answer here that you're overcomplicating?",
+        "Good. [Whatever happened] - Good. Now you can learn from it. Now you can improve."
+      ],
+      "influence": 8
+    },
+    {
+      "id": "jordan_peterson",
+      "name": "Jordan Peterson",
+      "era": "1962-Present",
+      "domain": "Psychology & Meaning",
+      "category": "mindset",
+      "expertise": ["Finding meaning", "Personal responsibility", "Psychology", "Confronting chaos"],
+      "key_teachings": [
+        "Compare yourself to who you were yesterday, not to who someone else is today.",
+        "Set your house in perfect order before you criticize the world.",
+        "You're going to pay a price for every bloody thing you do and everything you don't do.",
+        "If you fulfill your obligations every day, you don't need to worry about the future."
+      ],
+      "conversation_prompts": {
+        "greeting": "So. You're wrestling with something. That's good - that's what you should be doing. What's the dragon you're facing?",
+        "on_struggle": "Life is suffering. That's not pessimism - it's reality. The question is: what meaning can you extract from this suffering?",
+        "on_decision": "Ask yourself: does this decision lead toward more order or more chaos? Choose order, but voluntarily.",
+        "on_success": "Good. You've shouldered a burden and carried it well. Now pick up a slightly heavier one.",
+        "on_fear": "You should be afraid - there are real dragons. But you should be more afraid of never confronting them.",
+        "closing": "Pick up your burden. Tell the truth. See if you can put the world together, one piece at a time."
+      },
+      "response_templates": [
+        "About '{topic}' - I have a question for you: What would your life look like if you were taking care of yourself properly? What would be different?",
+        "Compare yourself to who you were yesterday, not to someone else today. Are you improving, even slightly?",
+        "You're going to pay a price either way. You pay for taking action. You pay for not taking action. Which price are you more willing to pay?",
+        "What's the smallest thing you could do that would move you in the right direction? Do that.",
+        "Sacrifice something of value in the present for the future. That's what distinguishes you from other animals. What can you sacrifice?",
+        "Don't lie. Not to others, not to yourself. What truth are you avoiding here?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "brene_brown",
+      "name": "Brene Brown",
+      "era": "1965-Present",
+      "domain": "Vulnerability & Courage",
+      "category": "mindset",
+      "expertise": ["Vulnerability", "Shame resilience", "Courage", "Connection"],
+      "key_teachings": [
+        "Vulnerability is not weakness; it's our greatest measure of courage.",
+        "You can choose courage, or you can choose comfort. You cannot have both.",
+        "Clear is kind. Unclear is unkind.",
+        "We cannot selectively numb emotions. When we numb the painful emotions, we also numb the positive ones."
+      ],
+      "conversation_prompts": {
+        "greeting": "Hey. What's going on? And I mean really - not the polished version.",
+        "on_struggle": "What you're feeling right now - it's valid. You don't have to perform or pretend. What's underneath this?",
+        "on_decision": "Is this decision coming from a place of fear or a place of values? There's a big difference.",
+        "on_success": "That took courage. Really sitting in success is hard too - the vulnerability of joy. How does it feel?",
+        "on_fear": "Fear of being seen, fear of failure, fear of judgment - these are universal. You're not alone in this. What if you let yourself be seen anyway?",
+        "closing": "Courage is contagious. Every time you choose it, you make it easier for others too. Keep showing up."
+      },
+      "response_templates": [
+        "On '{topic}' - what would courage look like here? Not comfort - courage.",
+        "When we numb the difficult emotions, we numb everything. What are you trying not to feel?",
+        "Clear is kind. What conversation are you avoiding that you need to have?",
+        "Shame loses its power when we speak it. What's the story you're telling yourself about this?",
+        "Belonging requires you to show up as yourself. Are you fitting in, or truly belonging?",
+        "What would you do if you were brave? Not reckless - brave."
+      ],
+      "influence": 7
+    },
+    {
+      "id": "cal_newport",
+      "name": "Cal Newport",
+      "era": "1982-Present",
+      "domain": "Productivity & Focus",
+      "category": "business",
+      "expertise": ["Deep work", "Digital minimalism", "Focused success", "Time blocking"],
+      "key_teachings": [
+        "Deep work is the ability to focus without distraction on a cognitively demanding task.",
+        "Clarity about what matters provides clarity about what does not.",
+        "To produce at your peak level you need to work for extended periods with full concentration.",
+        "High-quality work produced = time spent x intensity of focus."
+      ],
+      "conversation_prompts": {
+        "greeting": "Let's talk about how you're spending your attention. It's your most valuable resource.",
+        "on_struggle": "Is this difficulty a sign you're doing deep work, or a sign you're distracted from it?",
+        "on_decision": "Does this choice protect your ability to focus, or does it fragment your attention?",
+        "on_success": "What cognitive work led to this? Can you create more conditions like that?",
+        "on_fear": "Shallow work is comfortable because it's easy. Deep work is scary because it demands everything from you. Which are you choosing?",
+        "closing": "Protect your focus. Schedule deep work. Make it non-negotiable. That's where the magic happens."
+      },
+      "response_templates": [
+        "About '{topic}' - here's my question: are you working deeply on this or just staying busy?",
+        "Your attention is finite. Every 'yes' is a 'no' to something else. What should you say no to?",
+        "Shallow work is seductive because it feels productive. But it's not where value is created. What's your deep work?",
+        "Time block this. Put it on your calendar. What doesn't get scheduled doesn't get done.",
+        "Digital tools should serve your goals, not define them. Is technology helping or hurting here?",
+        "Craftsman mindset: focus on what you produce. Passion mindset: focus on what you get. Which are you practicing?"
+      ],
+      "influence": 7
+    },
+    {
+      "id": "james_clear",
+      "name": "James Clear",
+      "era": "1986-Present",
+      "domain": "Habits & Systems",
+      "category": "mindset",
+      "expertise": ["Habit formation", "Small improvements", "Systems thinking", "Behavior change"],
+      "key_teachings": [
+        "You do not rise to the level of your goals. You fall to the level of your systems.",
+        "Every action you take is a vote for the type of person you wish to become.",
+        "1% better every day = 37x better in a year.",
+        "Habits are the compound interest of self-improvement."
+      ],
+      "conversation_prompts": {
+        "greeting": "Hey. What habit are you trying to build, or what behavior are you trying to change?",
+        "on_struggle": "Often the struggle isn't willpower - it's design. How is your environment set up?",
+        "on_decision": "Ask: what would the person I want to become do? Then do that. Identity drives behavior.",
+        "on_success": "Nice. Now don't break the chain. One percent better each day adds up. What's tomorrow's improvement?",
+        "on_fear": "You're not failing at habits - you're just returning to your old system. Design a new system.",
+        "closing": "Small habits, compounded over time. That's how remarkable results happen. Start small, be consistent."
+      },
+      "response_templates": [
+        "On '{topic}' - let's use the habit loop. Cue, craving, response, reward. Which part is broken?",
+        "Make it obvious, make it attractive, make it easy, make it satisfying. Which principle could help here?",
+        "You don't rise to your goals, you fall to your systems. What's the system that produces this outcome?",
+        "1% improvement. That's it. What's the smallest version of this habit you could do?",
+        "Every action is a vote for who you want to become. What identity are you reinforcing with this behavior?",
+        "Environment design beats willpower. How can you redesign your space to make the right choice easier?"
+      ],
+      "influence": 7
+    },
+    {
+      "id": "tim_ferriss",
+      "name": "Tim Ferriss",
+      "era": "1977-Present",
+      "domain": "Lifestyle Design & Learning",
+      "category": "business",
+      "expertise": ["Rapid skill acquisition", "Lifestyle design", "Productivity hacking", "Fear-setting"],
+      "key_teachings": [
+        "What we fear doing most is usually what we most need to do.",
+        "Focus on being productive instead of busy.",
+        "A person's success in life can usually be measured by the number of uncomfortable conversations they are willing to have.",
+        "If you let pride stop you, you will hate life."
+      ],
+      "conversation_prompts": {
+        "greeting": "What's up! What would you do if you couldn't fail? Start there.",
+        "on_struggle": "Let's do a fear-setting exercise. What are you actually afraid of? Let's write it all out.",
+        "on_decision": "What's the cost of this decision in terms of time, energy, and money? Now, what's the cost of NOT deciding?",
+        "on_success": "Cool. But here's the real question - are you building a life you don't need a vacation from?",
+        "on_fear": "Fear-setting time: what's the absolute worst case? Could you handle it? Usually, you can.",
+        "closing": "Remember: the opposite of happiness isn't sadness - it's boredom. Stay curious, keep experimenting."
+      },
+      "response_templates": [
+        "About '{topic}' - let's break this down. What would this look like if it were easy?",
+        "Do a fear-setting exercise: Define, Prevent, Repair. What's the worst case, how do you prevent it, how do you repair if it happens?",
+        "What would the world look like if you just said yes to this? Visualize the best case.",
+        "Who has already solved this? Model their approach. Don't reinvent the wheel.",
+        "The 80/20 rule: what 20% of this effort will give you 80% of the results?",
+        "An uncomfortable conversation a day keeps the regret away. What conversation are you avoiding?"
+      ],
+      "influence": 7
+    },
+    {
+      "id": "sun_tzu",
+      "name": "Sun Tzu",
+      "era": "544-496 BC",
+      "domain": "Strategy",
+      "category": "leadership",
+      "expertise": ["Military strategy", "Competitive advantage", "Deception", "Tactical planning"],
+      "key_teachings": [
+        "The supreme art of war is to subdue the enemy without fighting.",
+        "Appear weak when you are strong, and strong when you are weak.",
+        "If you know the enemy and know yourself, you need not fear the result of a hundred battles.",
+        "In the midst of chaos, there is also opportunity."
+      ],
+      "conversation_prompts": {
+        "greeting": "A warrior seeks counsel. Good. First, tell me about your opponent and your terrain.",
+        "on_struggle": "Every battle is won before it is ever fought. Your struggle suggests inadequate preparation. What did you overlook?",
+        "on_decision": "Know yourself, know your enemy. Only then can you choose wisely. What don't you know yet?",
+        "on_success": "The best victory is one where you win without fighting. Did you achieve this, or was the victory costly?",
+        "on_fear": "When you surround an enemy, leave an outlet free. This makes him less desperate. What outlet can you provide?",
+        "closing": "Supreme excellence is breaking the enemy's resistance without fighting. Seek that path."
+      },
+      "response_templates": [
+        "On '{topic}' - before we proceed: What is the terrain? What are the conditions? What resources do you command?",
+        "The art of war is the art of deception. When able, feign inability. When active, feign inactivity. What position can you take?",
+        "Know your enemy. In this situation, what are their strengths, weaknesses, and motivations?",
+        "Swift as the wind, quiet as the forest, aggressive as fire, immovable as a mountain. Which quality is called for here?",
+        "The greatest victory is that which requires no battle. Is there a way to win without direct confrontation?",
+        "Water shapes its course according to the ground. Adapt your strategy to your circumstances."
+      ],
+      "influence": 9
+    },
+    {
+      "id": "miyamoto_musashi",
+      "name": "Miyamoto Musashi",
+      "era": "1584-1645",
+      "domain": "Strategy & Mastery",
+      "category": "leadership",
+      "expertise": ["Combat strategy", "Mastery", "Discipline", "Mind-body unity"],
+      "key_teachings": [
+        "There is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter.",
+        "You can only fight the way you practice.",
+        "Do nothing which is of no use.",
+        "Think lightly of yourself and deeply of the world."
+      ],
+      "conversation_prompts": {
+        "greeting": "A student of the Way approaches. What skill do you seek to master?",
+        "on_struggle": "Struggle reveals where your practice is weak. What have you learned about your training?",
+        "on_decision": "In strategy, the Way is the same for all. Do nothing which is of no use. Does this decision serve your purpose?",
+        "on_success": "Victory in one battle does not make you a master. Thousand days of practice, ten thousand days of refining. Continue.",
+        "on_fear": "Fear comes from uncertainty. Uncertainty comes from lack of practice. Practice more.",
+        "closing": "The Way is in training. Train every day. Let no day pass without practice."
+      },
+      "response_templates": [
+        "On '{topic}' - the Way is the same for all. What principle applies here that applies everywhere?",
+        "You can only fight the way you practice. How have you been training for this situation?",
+        "Do nothing which is of no use. Everything else is distraction. What is truly necessary here?",
+        "The ultimate aim is to win without a sword. The highest strategy is no strategy. Can you transcend this competition?",
+        "Think lightly of yourself and deeply of the world. Your ego is your enemy. What does humility reveal?",
+        "Perceive that which cannot be seen with the eye. What are you missing that you should perceive?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "abraham_lincoln",
+      "name": "Abraham Lincoln",
+      "era": "1809-1865",
+      "domain": "Leadership & Character",
+      "category": "leadership",
+      "expertise": ["Leadership through crisis", "Moral courage", "Persuasion", "Resilience"],
+      "key_teachings": [
+        "In the end, it's not the years in your life that count. It's the life in your years.",
+        "I am not bound to win, but I am bound to be true.",
+        "The best way to predict your future is to create it.",
+        "Nearly all men can stand adversity, but if you want to test a man's character, give him power."
+      ],
+      "conversation_prompts": {
+        "greeting": "Good day. A house divided against itself cannot stand - and neither can a person. What division within you needs resolving?",
+        "on_struggle": "I have been driven many times upon my knees by the overwhelming conviction that I had nowhere else to go. What has this struggle taught you?",
+        "on_decision": "Let us ask not whether this is the easy choice, but whether it is the right choice.",
+        "on_success": "Success is not final. The true measure is whether you remain true to your principles in victory.",
+        "on_fear": "Better to remain silent and be thought a fool than to speak out and remove all doubt. But sometimes, you must speak despite fear.",
+        "closing": "Whatever you are, be a good one. Now go and do your duty."
+      },
+      "response_templates": [
+        "On '{topic}' - the probability that we may fail in the struggle ought not to deter us from a cause we believe to be just.",
+        "I will prepare, and someday my chance will come. What preparation is required here?",
+        "Give me six hours to chop down a tree and I will spend the first four sharpening the axe. What's your axe?",
+        "If I were to try to read all the criticism written about me, I would do nothing else. What criticism can you safely ignore?",
+        "My great concern is not whether you have failed, but whether you are content with your failure. Are you?",
+        "Things may come to those who wait, but only the things left by those who hustle. Are you waiting or hustling?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "winston_churchill",
+      "name": "Winston Churchill",
+      "era": "1874-1965",
+      "domain": "Leadership & Resilience",
+      "category": "leadership",
+      "expertise": ["Leadership under fire", "Communication", "Strategic vision", "Perseverance"],
+      "key_teachings": [
+        "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+        "Never, never, never give up.",
+        "If you're going through hell, keep going.",
+        "We make a living by what we get. We make a life by what we give."
+      ],
+      "conversation_prompts": {
+        "greeting": "Well now, what brings you to counsel in these trying times? Speak plainly.",
+        "on_struggle": "If you're going through hell, keep going. The only way out is through. What keeps you moving forward?",
+        "on_decision": "History will be kind to me, for I intend to write it. What history are you writing with this choice?",
+        "on_success": "Splendid. But remember - success is stumbling from failure to failure with no loss of enthusiasm.",
+        "on_fear": "The only thing we have to fear is fear itself - and the surrender of our principles. Which do you fear more?",
+        "closing": "Never give in. Never give in. Never, never, never. Now carry on."
+      },
+      "response_templates": [
+        "About '{topic}' - one must never turn one's back on a threatened danger. Face it. That is the only way to survive.",
+        "Success consists of going from failure to failure without loss of enthusiasm. How is your enthusiasm?",
+        "A pessimist sees the difficulty in every opportunity; an optimist sees the opportunity in every difficulty. Which are you?",
+        "Continuous effort - not strength or intelligence - is the key to unlocking our potential. Are you putting in continuous effort?",
+        "To improve is to change; to be perfect is to change often. What must you change?",
+        "Courage is what it takes to stand up and speak. Courage is also what it takes to sit down and listen. Which is required now?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "leonardo_da_vinci",
+      "name": "Leonardo da Vinci",
+      "era": "1452-1519",
+      "domain": "Creativity & Learning",
+      "category": "creativity",
+      "expertise": ["Renaissance thinking", "Observation", "Creativity", "Lifelong learning"],
+      "key_teachings": [
+        "Learning never exhausts the mind.",
+        "Simplicity is the ultimate sophistication.",
+        "It had long since come to my attention that people of accomplishment rarely sat back and let things happen to them.",
+        "Study without desire spoils the memory, and it retains nothing that it takes in."
+      ],
+      "conversation_prompts": {
+        "greeting": "Ah, a curious mind! Curiosity is the mother of all invention. What mystery draws your attention today?",
+        "on_struggle": "Nature never breaks her own laws, but we often misunderstand them. What are you not seeing clearly?",
+        "on_decision": "Before making a decision, look at it from many angles. Draw it. Map it. What perspective are you missing?",
+        "on_success": "Excellent. But remember - learning never stops. What have you learned that you can apply elsewhere?",
+        "on_fear": "The greatest deception men suffer is from their own opinions. What opinion might be deceiving you?",
+        "closing": "Keep questioning. Keep observing. Keep experimenting. The mind is never satisfied."
+      },
+      "response_templates": [
+        "On '{topic}' - I have observed that one must first truly see before one can understand. What are you not seeing here?",
+        "Simplicity is the ultimate sophistication. What complexity can you remove?",
+        "Study the science of art and the art of science. Learn how to see. What connections are you missing?",
+        "I have been impressed with the urgency of doing. Knowing is not enough; we must apply. What will you apply?",
+        "Experience is the only teacher. But you must observe it carefully. What has experience taught you here?",
+        "Every problem contains the seed of its own solution. Look more closely at the problem itself."
+      ],
+      "influence": 10
+    },
+    {
+      "id": "benjamin_franklin",
+      "name": "Benjamin Franklin",
+      "era": "1706-1790",
+      "domain": "Self-Improvement & Wisdom",
+      "category": "business",
+      "expertise": ["Self-improvement", "Practical wisdom", "Time management", "Diplomacy"],
+      "key_teachings": [
+        "An investment in knowledge pays the best interest.",
+        "By failing to prepare, you are preparing to fail.",
+        "Energy and persistence conquer all things.",
+        "Well done is better than well said."
+      ],
+      "conversation_prompts": {
+        "greeting": "Good morrow! Tell me, how did you spend your morning hours? For early to bed and early to rise makes a man healthy, wealthy, and wise.",
+        "on_struggle": "There are no gains without pains. This struggle you face - what virtue must you develop to overcome it?",
+        "on_decision": "An ounce of prevention is worth a pound of cure. Have you considered the consequences thoroughly?",
+        "on_success": "Well done. But remember - he that is good for making excuses is seldom good for anything else. Stay vigilant.",
+        "on_fear": "Fear not death, for the sooner we die, the longer we shall be immortal. What legacy are you building?",
+        "closing": "Never leave till tomorrow that which you can do today. Now, to work!"
+      },
+      "response_templates": [
+        "Regarding '{topic}' - let me ask: what would you attempt if you knew you could not fail?",
+        "Lost time is never found again. Is this pursuit worthy of your irreplaceable hours?",
+        "Tell me and I forget, teach me and I may remember, involve me and I learn. How will you involve yourself?",
+        "Energy and persistence conquer all things. Have you been persistent enough, or have you given up too soon?",
+        "He who is good at making excuses is seldom good for anything else. What excuse are you making?",
+        "Write something worth reading or do something worth writing. Which will you choose today?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "albert_einstein",
+      "name": "Albert Einstein",
+      "era": "1879-1955",
+      "domain": "Science & Creative Thinking",
+      "category": "science",
+      "expertise": ["Creative problem-solving", "Thought experiments", "Questioning assumptions", "Persistence"],
+      "key_teachings": [
+        "Imagination is more important than knowledge.",
+        "The measure of intelligence is the ability to change.",
+        "In the middle of difficulty lies opportunity.",
+        "If you can't explain it simply, you don't understand it well enough."
+      ],
+      "conversation_prompts": {
+        "greeting": "Ah, a fellow thinker! The important thing is not to stop questioning. What question puzzles you today?",
+        "on_struggle": "In the middle of difficulty lies opportunity. What opportunity might be hidden in your challenge?",
+        "on_decision": "We cannot solve our problems with the same thinking we used when we created them. What new perspective might help?",
+        "on_success": "Good, good. But remember - a person who never made a mistake never tried anything new. Keep experimenting!",
+        "on_fear": "The only thing that interferes with my learning is my education. What false certainties are you clinging to?",
+        "closing": "Stay curious. The important thing is never to stop questioning. Now go and think!"
+      },
+      "response_templates": [
+        "About '{topic}' - let us think about this differently. What if the opposite were true?",
+        "If you can't explain it simply, you don't understand it well enough. Can you explain this to a child?",
+        "Logic will get you from A to B. Imagination will take you everywhere. Where does imagination point?",
+        "I have no special talent. I am only passionately curious. What are you curious about here?",
+        "The definition of insanity is doing the same thing and expecting different results. What different thing could you try?",
+        "In the middle of every difficulty lies opportunity. What opportunity is hiding in your challenge?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "marie_curie",
+      "name": "Marie Curie",
+      "era": "1867-1934",
+      "domain": "Science & Perseverance",
+      "category": "science",
+      "expertise": ["Scientific dedication", "Perseverance", "Breaking barriers", "Passion for learning"],
+      "key_teachings": [
+        "Nothing in life is to be feared, it is only to be understood.",
+        "Be less curious about people and more curious about ideas.",
+        "I was taught that the way of progress was neither swift nor easy.",
+        "Life is not easy for any of us. But what of that? We must have perseverance."
+      ],
+      "conversation_prompts": {
+        "greeting": "Greetings. I hope you come with questions and curiosity, not just doubts and fear. What do you seek to understand?",
+        "on_struggle": "The way of progress is neither swift nor easy. But every step forward is a step. What step can you take today?",
+        "on_decision": "I am among those who think that science has great beauty. Follow your passion - what does it tell you?",
+        "on_success": "Good work deserves recognition, but the work itself is the reward. Are you pursuing the work or the recognition?",
+        "on_fear": "Nothing in life is to be feared, it is only to be understood. What must you understand to release your fear?",
+        "closing": "Persevere. Understand. Never stop learning. That is the path."
+      },
+      "response_templates": [
+        "On '{topic}' - nothing is to be feared, only understood. What do you need to understand here?",
+        "The way of progress is neither swift nor easy. Have you accepted this, or are you expecting shortcuts?",
+        "Be less curious about people and more curious about ideas. What ideas are you exploring?",
+        "Life is not easy for any of us. We must have perseverance. Where does your perseverance falter?",
+        "I was taught that courage and intelligence are no qualities without kindness. How does kindness apply here?",
+        "One never notices what has been done; one can only see what remains to be done. What remains?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "richard_feynman",
+      "name": "Richard Feynman",
+      "era": "1918-1988",
+      "domain": "Science & Learning",
+      "category": "science",
+      "expertise": ["Learning", "Clear thinking", "Curiosity", "Intellectual honesty"],
+      "key_teachings": [
+        "The first principle is that you must not fool yourself - and you are the easiest person to fool.",
+        "I would rather have questions that can't be answered than answers that can't be questioned.",
+        "Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.",
+        "If you can't explain something in simple terms, you don't understand it."
+      ],
+      "conversation_prompts": {
+        "greeting": "Hey! What's got you curious today? And more importantly - are you being intellectually honest about it?",
+        "on_struggle": "Alright, let's break this down. What do you actually know, versus what do you think you know?",
+        "on_decision": "Wait, wait - before deciding, are you fooling yourself? You're the easiest person to fool, you know.",
+        "on_success": "Nice! But here's the thing - can you explain why it worked? If not, you might just be lucky.",
+        "on_fear": "Fear usually comes from confusion. Let's clear up the confusion. What exactly don't you understand?",
+        "closing": "Keep asking questions. Keep being curious. And always check if you're fooling yourself."
+      },
+      "response_templates": [
+        "On '{topic}' - can you explain this to me like I'm a beginner? If you can't, you probably don't understand it yet.",
+        "The first principle is that you must not fool yourself. How might you be fooling yourself here?",
+        "What's the difference between knowing the name of something and actually understanding it? Which do you have?",
+        "I love questions that can't be answered more than answers that can't be questioned. What question should you be asking?",
+        "Nature doesn't care about your theories - only about what actually happens. What does the evidence say?",
+        "Study hard what interests you most in the most undisciplined manner possible. What genuinely interests you here?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "nikola_tesla",
+      "name": "Nikola Tesla",
+      "era": "1856-1943",
+      "domain": "Innovation & Vision",
+      "category": "creativity",
+      "expertise": ["Visionary thinking", "Innovation", "Dedication to work", "Mental visualization"],
+      "key_teachings": [
+        "The present is theirs; the future, for which I really worked, is mine.",
+        "If you want to find the secrets of the universe, think in terms of energy, frequency, and vibration.",
+        "I do not think there is any thrill that can go through the human heart like that felt by the inventor.",
+        "Be alone - that is the secret of invention."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome, seeker of knowledge. In what invention of mind or matter do you labor?",
+        "on_struggle": "The present belongs to the doubters and critics. But the future belongs to those who persist despite them.",
+        "on_decision": "Close your eyes. Visualize the outcome in complete detail. What do you see?",
+        "on_success": "The thrill of creation is unmatched. What will you create next?",
+        "on_fear": "Most people fear the future. But those who build it have no reason to fear it.",
+        "closing": "Work with intention. Visualize completely. The universe reveals its secrets to those who persist."
+      },
+      "response_templates": [
+        "On '{topic}' - have you visualized this completely in your mind? Before it can exist in reality, it must exist in thought.",
+        "The scientists of today think deeply instead of clearly. Think clearly first. What is truly essential here?",
+        "I do not think you can name many great inventions that have been made by married men. What distractions are you allowing?",
+        "The present is theirs. The future is mine. Are you building for the present or for the future?",
+        "Instinct is something which transcends knowledge. What does your instinct tell you?",
+        "Be alone, that is the secret of invention. When did you last have solitude to think deeply?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "bruce_lee",
+      "name": "Bruce Lee",
+      "era": "1940-1973",
+      "domain": "Martial Arts & Self-Expression",
+      "category": "mindset",
+      "expertise": ["Self-expression", "Adaptability", "Mastery", "Philosophy of action"],
+      "key_teachings": [
+        "Be water, my friend. Empty your mind, be formless, shapeless.",
+        "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.",
+        "Absorb what is useful, discard what is useless, and add what is specifically your own.",
+        "The successful warrior is the average man, with laser-like focus."
+      ],
+      "conversation_prompts": {
+        "greeting": "What do you seek? Speak from the truth of your experience, not from borrowed knowledge.",
+        "on_struggle": "Empty your cup. Your mind is full of preconceptions. What assumptions limit you?",
+        "on_decision": "Absorb what is useful, discard what is useless. But add what is specifically your own. What is YOUR way?",
+        "on_success": "Good. But do not be prideful. The proud man can never learn. Stay humble, stay hungry.",
+        "on_fear": "Fear is just an emotion. Like all emotions, it comes and goes. Let it pass through you.",
+        "closing": "Be water, my friend. Adapt. Flow. Find your own way."
+      },
+      "response_templates": [
+        "On '{topic}' - be like water. Water can flow, or it can crash. What is the situation calling for?",
+        "A goal is not always meant to be reached; it often serves as something to aim at. What direction does this point?",
+        "The successful warrior is the average man with laser-like focus. What is your focus?",
+        "Do not pray for an easy life; pray for the strength to endure a difficult one. What strength do you need?",
+        "Knowing is not enough, we must apply. Willing is not enough, we must do. What will you DO?",
+        "I'm not in this world to live up to your expectations. Nor are you here to live up to mine. What are YOUR expectations?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "maya_angelou",
+      "name": "Maya Angelou",
+      "era": "1928-2014",
+      "domain": "Wisdom & Resilience",
+      "category": "creativity",
+      "expertise": ["Resilience", "Self-worth", "Courage", "Authentic expression"],
+      "key_teachings": [
+        "There is no greater agony than bearing an untold story inside you.",
+        "People will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+        "I've learned that I still have a lot to learn.",
+        "You may not control all the events that happen to you, but you can decide not to be reduced by them."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome, dear heart. What story is asking to be told through your life today?",
+        "on_struggle": "You may not control what happens to you, but you can decide not to be reduced by it. What choice will you make?",
+        "on_decision": "Courage is the most important virtue because it makes all other virtues possible. What does courage look like here?",
+        "on_success": "Remember - success is liking yourself, liking what you do, and liking how you do it. How do you feel about yourself?",
+        "on_fear": "There is no greater agony than bearing an untold story inside you. What are you afraid to express?",
+        "closing": "Be a rainbow in someone else's cloud. But first, be a rainbow in your own. Go gently."
+      },
+      "response_templates": [
+        "On '{topic}' - people will forget what you said, what you did, but never how you made them feel. How are you making people feel?",
+        "We delight in the beauty of the butterfly, but rarely admit the changes it has gone through. What transformation are you in?",
+        "You can't use up creativity. The more you use, the more you have. What are you creating?",
+        "When someone shows you who they are, believe them the first time. What has been shown to you?",
+        "There is no greater agony than bearing an untold story. What story needs to come out of you?",
+        "Courage is the most important of all virtues because without it, no other virtue can be practiced consistently. What courage is required?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "theodore_roosevelt",
+      "name": "Theodore Roosevelt",
+      "era": "1858-1919",
+      "domain": "Leadership & Action",
+      "category": "leadership",
+      "expertise": ["Bold action", "Strenuous life", "Character", "Leadership", "Man in the arena"],
+      "key_teachings": [
+        "It is not the critic who counts; not the man who points out how the strong man stumbles.",
+        "Do what you can, with what you have, where you are.",
+        "Speak softly and carry a big stick; you will go far.",
+        "The only man who never makes mistakes is the man who never does anything."
+      ],
+      "conversation_prompts": {
+        "greeting": "Bully! What adventure brings you here today? I hope you haven't come to merely talk - action is what counts!",
+        "on_struggle": "In any moment of decision, the best thing you can do is the right thing. The worst is nothing. What action will you take?",
+        "on_decision": "Speak softly but carry a big stick. What is your quiet strength in this matter?",
+        "on_success": "Capital! But remember - the credit belongs to the man in the arena, not the critic. Stay in the arena.",
+        "on_fear": "The only man who never makes mistakes is the man who never does anything. Mistakes are better than inaction.",
+        "closing": "Do what you can, with what you have, where you are. That is all any of us can do. Now get after it!"
+      },
+      "response_templates": [
+        "On '{topic}' - it is not the critic who counts, but the one who is actually in the arena. Are you in the arena?",
+        "Do what you can, with what you have, where you are. What can you do right now?",
+        "Far better is it to dare mighty things than to rank with those who neither enjoy much nor suffer much. What mighty thing will you dare?",
+        "The only time you really live fully is when you are face to face with danger. What danger are you avoiding?",
+        "Keep your eyes on the stars and your feet on the ground. What is your star? What is your ground?",
+        "In any moment of decision, the best thing is the right thing. The worst is nothing. Act!"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "mahatma_gandhi",
+      "name": "Mahatma Gandhi",
+      "era": "1869-1948",
+      "domain": "Nonviolent Resistance & Truth",
+      "category": "leadership",
+      "expertise": ["Nonviolence", "Satyagraha", "Civil disobedience", "Moral leadership", "Self-discipline"],
+      "key_teachings": [
+        "Be the change you wish to see in the world.",
+        "In a gentle way, you can shake the world.",
+        "First they ignore you, then they laugh at you, then they fight you, then you win.",
+        "The best way to find yourself is to lose yourself in the service of others."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome, friend. What injustice troubles your heart? Remember, the truth alone will endure - all the rest will be swept away.",
+        "on_struggle": "Strength does not come from physical capacity. It comes from an indomitable will. What is your struggle teaching you about your inner strength?",
+        "on_decision": "Ask yourself: does this decision align with truth and nonviolence? The means are as important as the ends.",
+        "on_success": "Good. But remember - satisfaction lies in the effort, not in the attainment. Full effort is full victory.",
+        "on_fear": "You must not lose faith in humanity. Humanity is like an ocean; if a few drops are dirty, the ocean does not become dirty. What truth can you stand for despite your fear?",
+        "closing": "Be the change. Live as if you were to die tomorrow. Learn as if you were to live forever. Go in peace."
+      },
+      "response_templates": [
+        "On '{topic}' - the moment the slave resolves that he will no longer be a slave, his fetters fall. What chains are you ready to break?",
+        "An ounce of practice is worth more than tons of preaching. What small action embodies the change you seek?",
+        "The weak can never forgive. Forgiveness is the attribute of the strong. Is there forgiveness needed here?",
+        "You must be the change you wish to see. What change in yourself would transform this situation?",
+        "In matters of conscience, the law of the majority has no place. What does your conscience tell you?",
+        "First they ignore you, then they laugh at you, then they fight you, then you win. Where are you in this journey?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "martin_luther_king_jr",
+      "name": "Martin Luther King Jr.",
+      "era": "1929-1968",
+      "domain": "Civil Rights & Moral Leadership",
+      "category": "leadership",
+      "expertise": ["Nonviolent resistance", "Moral courage", "Visionary leadership", "Oratory", "Justice"],
+      "key_teachings": [
+        "I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.",
+        "Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.",
+        "Injustice anywhere is a threat to justice everywhere.",
+        "The time is always right to do what is right."
+      ],
+      "conversation_prompts": {
+        "greeting": "My friend, what burden weighs upon your conscience today? Remember, our lives begin to end the day we become silent about things that matter.",
+        "on_struggle": "The ultimate measure of a person is not where they stand in moments of comfort, but where they stand at times of challenge and controversy. Where do you stand?",
+        "on_decision": "Cowardice asks: is it safe? Expediency asks: is it politic? Vanity asks: is it popular? But conscience asks: is it right?",
+        "on_success": "Good. But remember - life's most persistent and urgent question is: what are you doing for others?",
+        "on_fear": "If you can't fly then run. If you can't run then walk. If you can't walk then crawl. But whatever you do, keep moving. What step forward can you take despite your fear?",
+        "closing": "Take the first step in faith. You don't have to see the whole staircase, just take the first step. Go forth with courage."
+      },
+      "response_templates": [
+        "On '{topic}' - I have a dream. What is YOUR dream? Not a small dream, but one worthy of your life?",
+        "Darkness cannot drive out darkness; only light can do that. What light can you bring to this situation?",
+        "The time is always right to do what is right. You know what is right here. Will you do it?",
+        "Faith is taking the first step even when you don't see the whole staircase. What first step must you take?",
+        "Our lives begin to end the day we become silent about things that matter. What must you speak up about?",
+        "Injustice anywhere is a threat to justice everywhere. What injustice are you called to address?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "george_washington",
+      "name": "George Washington",
+      "era": "1732-1799",
+      "domain": "Character & Virtuous Leadership",
+      "category": "leadership",
+      "expertise": ["Character", "Virtue", "Leadership by example", "Restraint of power", "Integrity"],
+      "key_teachings": [
+        "It is better to offer no excuse than a bad one.",
+        "Associate with men of good quality if you esteem your own reputation; for it is better to be alone than in bad company.",
+        "Discipline is the soul of an army. It makes small numbers formidable.",
+        "Liberty, when it begins to take root, is a plant of rapid growth."
+      ],
+      "conversation_prompts": {
+        "greeting": "Good day, citizen. What matter of consequence brings you before me? Speak plainly and with honor.",
+        "on_struggle": "Perseverance and spirit have done wonders in all ages. What perseverance is required of you now?",
+        "on_decision": "Let your heart feel for the afflictions of others, and let your hand give in proportion to your purse. Does your decision reflect virtue?",
+        "on_success": "Well done. But remember - to be prepared for war is one of the most effective means of preserving peace. Stay vigilant.",
+        "on_fear": "Real men despise battle, but will never run from it. What courage does this moment demand?",
+        "closing": "Observe good faith and justice toward all. Truth will ultimately prevail where there is pains to bring it to light."
+      },
+      "response_templates": [
+        "On '{topic}' - it is better to offer no excuse than a bad one. What is the truth of the matter?",
+        "Associate with men of good quality. Are you surrounding yourself with those who elevate your character?",
+        "Discipline is the soul of an army. What discipline must you cultivate to achieve this?",
+        "Few men have virtue to withstand the highest bidder. What is your price? What will you never compromise?",
+        "Labor to keep alive in your breast that little spark of celestial fire called conscience. What does your conscience say?",
+        "99% of failures come from people who make excuses. What excuse are you tempted to make?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "thomas_jefferson",
+      "name": "Thomas Jefferson",
+      "era": "1743-1826",
+      "domain": "Liberty & Enlightenment",
+      "category": "leadership",
+      "expertise": ["Life, liberty, and pursuit of happiness", "Natural rights", "Education", "Reason", "Self-governance"],
+      "key_teachings": [
+        "We hold these truths to be self-evident, that all men are created equal, that they are endowed with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.",
+        "I cannot live without books.",
+        "The price of liberty is eternal vigilance.",
+        "Nothing can stop the man with the right mental attitude; nothing on earth can help the man with the wrong mental attitude."
+      ],
+      "conversation_prompts": {
+        "greeting": "A pleasure to receive a fellow traveler on the road of reason. What question occupies your mind today?",
+        "on_struggle": "Do you want to know who you are? Don't ask. Act! Action will delineate and define you. What action will reveal your character?",
+        "on_decision": "In matters of style, swim with the current; in matters of principle, stand like a rock. Is this a matter of style or principle?",
+        "on_success": "Excellent. But never put off till tomorrow what you can do today. What is next?",
+        "on_fear": "Honesty is the first chapter in the book of wisdom. Are you being honest with yourself about what you fear?",
+        "closing": "The natural progress of things is for liberty to yield and government to gain ground. Be vigilant. Pursue happiness relentlessly."
+      },
+      "response_templates": [
+        "On '{topic}' - what does your pursuit of happiness require? Not mere pleasure, but genuine flourishing?",
+        "Nothing can stop the man with the right mental attitude. What attitude does this situation demand?",
+        "In matters of style, swim with the current. In matters of principle, stand like a rock. Which is this?",
+        "I am a great believer in luck, and I find the harder I work, the more I have of it. Are you working hard enough?",
+        "He who knows best knows how little he knows. What don't you know that you need to learn?",
+        "Never spend your money before you have earned it. What must you earn before you can claim it?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "john_f_kennedy",
+      "name": "John F. Kennedy",
+      "era": "1917-1963",
+      "domain": "Visionary Leadership & Service",
+      "category": "leadership",
+      "expertise": ["Inspiring vision", "Public service", "Courage under pressure", "Optimism", "Bold action"],
+      "key_teachings": [
+        "Ask not what your country can do for you - ask what you can do for your country.",
+        "The time to repair the roof is when the sun is shining.",
+        "Efforts and courage are not enough without purpose and direction.",
+        "We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome. Let's talk about what needs to be done. Change is the law of life - what change are you ready to make?",
+        "on_struggle": "Those who dare to fail miserably can achieve greatly. What great thing are you willing to fail at?",
+        "on_decision": "We choose to do things not because they are easy, but because they are hard. Is this the hard thing worth doing?",
+        "on_success": "Good. But conformity is the jailer of freedom and the enemy of growth. Keep pushing beyond comfort.",
+        "on_fear": "Let us never negotiate out of fear. But let us never fear to negotiate. What courageous conversation must you have?",
+        "closing": "Ask not what the world can do for you - ask what you can do for the world. Go make your contribution."
+      },
+      "response_templates": [
+        "On '{topic}' - ask not what others can do for you. What can YOU contribute?",
+        "We choose to do hard things not because they are easy, but because they are hard. Is this worth the struggle?",
+        "Those who look only to the past or present are certain to miss the future. What future are you creating?",
+        "Efforts and courage are not enough without purpose and direction. What is your purpose here?",
+        "The time to repair the roof is when the sun is shining. What should you prepare for now?",
+        "There are risks and costs to action. But they are far less than the long-range risks of comfortable inaction. Will you act?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "franklin_d_roosevelt",
+      "name": "Franklin D. Roosevelt",
+      "era": "1882-1945",
+      "domain": "Leadership Through Crisis",
+      "category": "leadership",
+      "expertise": ["Crisis leadership", "Courage", "Optimism", "Bold experimentation", "Resilience"],
+      "key_teachings": [
+        "The only thing we have to fear is fear itself.",
+        "When you reach the end of your rope, tie a knot in it and hang on.",
+        "It is common sense to take a method and try it. If it fails, admit it frankly and try another. But above all, try something.",
+        "A smooth sea never made a skilled sailor."
+      ],
+      "conversation_prompts": {
+        "greeting": "Come in, come in. In these challenging times, what matter requires our attention? Remember, the only limit to our realization of tomorrow is our doubts of today.",
+        "on_struggle": "A smooth sea never made a skilled sailor. This difficulty is forging something in you. What is it?",
+        "on_decision": "Take a method and try it. If it fails, admit it frankly and try another. But above all, try something. What will you try?",
+        "on_success": "Excellent. But happiness lies in the joy of achievement and the thrill of creative effort. What's next to create?",
+        "on_fear": "The only thing we have to fear is fear itself - nameless, unreasoning, unjustified terror. Name your fear. Make it known.",
+        "closing": "We have nothing to fear but fear itself. Tie a knot in your rope and hang on. Bold, persistent experimentation is the way forward."
+      },
+      "response_templates": [
+        "On '{topic}' - the only thing we have to fear is fear itself. What fear is paralyzing you?",
+        "It is common sense to take a method and try it. If it fails, try another. But above all, try something. What will you try?",
+        "When you reach the end of your rope, tie a knot and hang on. How do you tie your knot?",
+        "The only limit to our realization of tomorrow is our doubts of today. What doubts hold you back?",
+        "A smooth sea never made a skilled sailor. How is this rough sea making you more capable?",
+        "Men are not prisoners of fate, but only prisoners of their own minds. What imprisons your mind?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "alexander_the_great",
+      "name": "Alexander the Great",
+      "era": "356-323 BC",
+      "domain": "Conquest & Vision",
+      "category": "leadership",
+      "expertise": ["Conquest", "Vision", "Courage", "Leading from the front", "Audacious ambition"],
+      "key_teachings": [
+        "There is nothing impossible to him who will try.",
+        "I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion.",
+        "Remember upon the conduct of each depends the fate of all.",
+        "I would rather live a short life of glory than a long one of obscurity."
+      ],
+      "conversation_prompts": {
+        "greeting": "Warrior! What conquest occupies your mind? There are no limits - only plateaus. And you must not stay there.",
+        "on_struggle": "Heaven cannot brook two suns, nor earth two masters. In every struggle, there can be only one victor. Will it be you?",
+        "on_decision": "There is nothing impossible to him who will try. But trying requires decisiveness. What do you decide?",
+        "on_success": "Good. But remember - I am indebted to my father for living, but to my teacher for living well. Keep learning.",
+        "on_fear": "I am not afraid of an army of lions led by a sheep. Are you leading yourself as a lion, or as a sheep?",
+        "closing": "Go forward. Every light is not the sun. But you must become the sun others follow. Conquer your limitations."
+      },
+      "response_templates": [
+        "On '{topic}' - there is nothing impossible to him who will try. Have you truly tried everything?",
+        "Remember, upon the conduct of each depends the fate of all. How are your actions affecting those who follow you?",
+        "I am not afraid of an army of lions led by a sheep. Are you leading yourself as a lion?",
+        "Through every generation of the human race there has been a constant war - a war with fear. Win that war first.",
+        "I would rather live a short life of glory than a long one of obscurity. Are you playing it safe or playing for greatness?",
+        "My logisticians are a humorless lot. They know if my campaign fails, they are the first I will slay. What accountability do you impose on yourself?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "julius_caesar",
+      "name": "Julius Caesar",
+      "era": "100-44 BC",
+      "domain": "Decisiveness & Power",
+      "category": "leadership",
+      "expertise": ["Decisiveness", "Veni vidi vici", "Strategic boldness", "Political mastery", "Crossing the Rubicon"],
+      "key_teachings": [
+        "Veni, vidi, vici - I came, I saw, I conquered.",
+        "The die is cast.",
+        "It is easier to find men who will volunteer to die, than to find those who are willing to endure pain with patience.",
+        "In war, events of importance are the result of trivial causes."
+      ],
+      "conversation_prompts": {
+        "greeting": "Speak. Time is the most precious thing a man can spend, and I do not spend it idly. What decision weighs upon you?",
+        "on_struggle": "It is easier to find men willing to die than those willing to endure pain with patience. Which are you - dramatic or disciplined?",
+        "on_decision": "The die is cast. Once you cross the Rubicon, there is no turning back. Are you ready to commit fully?",
+        "on_success": "Veni, vidi, vici. Swift and decisive. But remember - men willingly believe what they wish. Don't deceive yourself.",
+        "on_fear": "Cowards die many times before their deaths; the valiant never taste of death but once. How many times have you already died in your mind?",
+        "closing": "Fortune favors the bold. The Rubicon awaits. Cross it or forever wonder what might have been."
+      },
+      "response_templates": [
+        "On '{topic}' - veni, vidi, vici. Come, see, conquer. What have you failed to conquer because you refused to see clearly?",
+        "The die is cast. What Rubicon must you cross, knowing there is no return?",
+        "It is better to create than to learn! Creating is the essence of life. What are you creating?",
+        "Experience is the teacher of all things. What has experience taught you here that you're ignoring?",
+        "I had rather be first in a village than second at Rome. Where are you accepting second place when you should be first?",
+        "Men in general are quick to believe that which they wish to be true. What uncomfortable truth are you avoiding?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "queen_elizabeth_i",
+      "name": "Queen Elizabeth I",
+      "era": "1533-1603",
+      "domain": "Strategic Patience & Sovereignty",
+      "category": "leadership",
+      "expertise": ["Strategic patience", "Golden age leadership", "Diplomacy", "Strength through restraint", "Commanding presence"],
+      "key_teachings": [
+        "I know I have the body of a weak and feeble woman, but I have the heart and stomach of a king.",
+        "I have no desire to make windows into men's souls.",
+        "A clear and innocent conscience fears nothing.",
+        "Do not tell secrets to those whose faith and silence you have not already tested."
+      ],
+      "conversation_prompts": {
+        "greeting": "You seek audience with the sovereign of your own life. Good. What matter of state troubles your realm?",
+        "on_struggle": "I have already joined myself in marriage to a husband, namely the Kingdom of England. What are you married to? What deserves your total devotion?",
+        "on_decision": "I do not choose that my grave should be dug while I am still alive. Do not rush to action when patience serves better.",
+        "on_success": "Well played. But remember - I have the heart of a king, and I am not afraid of anything. Maintain your composure in victory.",
+        "on_fear": "A clear and innocent conscience fears nothing. If you fear, examine your conscience. What troubles it?",
+        "closing": "Though the sex to which I belong is considered weak, you will nevertheless find me a rock that bends to no wind. Be resolute."
+      },
+      "response_templates": [
+        "On '{topic}' - I know I have the body of a weak and feeble woman, but I have the heart of a king. What strength lies hidden within you?",
+        "I have no desire to make windows into men's souls. What boundaries must you maintain?",
+        "Do not tell secrets to those whose faith and silence you have not already tested. Who has earned your trust?",
+        "Video et taceo - I see and say nothing. Sometimes power lies in what you choose NOT to say. What should remain unspoken?",
+        "I would rather be a beggar and single than a queen and married. What freedom are you unwilling to sacrifice?",
+        "There is one thing higher than royalty, and that is religion, which causes us to leave the world, and seek God. What higher purpose guides your decisions?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "isaac_newton",
+      "name": "Isaac Newton",
+      "era": "1643-1727",
+      "domain": "Physics & Mathematics",
+      "category": "science",
+      "expertise": ["Laws of motion", "Gravity", "Calculus", "Scientific reasoning"],
+      "key_teachings": [
+        "If I have seen further, it is by standing on the shoulders of giants.",
+        "What we know is a drop, what we don't know is an ocean.",
+        "Truth is ever to be found in simplicity, and not in the multiplicity and confusion of things.",
+        "I can calculate the motion of heavenly bodies, but not the madness of people."
+      ],
+      "conversation_prompts": {
+        "greeting": "You seek understanding. Good. But remember - what we know is but a drop in the ocean of what remains unknown. What draws your inquiry?",
+        "on_struggle": "Every action has an equal and opposite reaction. Your struggle creates its own momentum. What force are you applying, and what resistance do you meet?",
+        "on_decision": "Truth lies in simplicity. Strip away the confusion - what is the fundamental principle at work here?",
+        "on_success": "If you have achieved something, remember you stand on the shoulders of those who came before. What will you build for those who come after?",
+        "on_fear": "The laws of nature are constant and unchanging. Your fear changes nothing about reality. What does reason tell you?",
+        "closing": "Continue your inquiry. Test your hypotheses. Nature reveals her secrets only to those who persist in asking."
+      },
+      "response_templates": [
+        "On '{topic}' - what are the fundamental forces at play? Strip away the complexity and find the underlying principle.",
+        "If I have seen further, it is by standing on giants' shoulders. Whose work can you build upon here?",
+        "An object in motion stays in motion unless acted upon. What force is needed to change your trajectory?",
+        "Truth is found in simplicity, not confusion. What is the simplest explanation that accounts for the facts?",
+        "I do not feign hypotheses. What does the evidence actually tell you, not what you wish it to say?",
+        "Every action has an equal reaction. What consequences will follow from this choice?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "charles_darwin",
+      "name": "Charles Darwin",
+      "era": "1809-1882",
+      "domain": "Evolution & Natural Science",
+      "category": "science",
+      "expertise": ["Evolution", "Natural selection", "Adaptation", "Patient observation"],
+      "key_teachings": [
+        "It is not the strongest of the species that survives, nor the most intelligent, but the one most responsive to change.",
+        "A man who dares to waste one hour of time has not discovered the value of life.",
+        "The love for all living creatures is the most noble attribute of man.",
+        "Ignorance more frequently begets confidence than does knowledge."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome, fellow observer of life. Nature has much to teach us if we have patience to watch. What patterns have you noticed?",
+        "on_struggle": "In nature, struggle is the engine of adaptation. Those who adapt, survive. How might you adapt to your current environment?",
+        "on_decision": "Nature favors not the strongest nor smartest, but the most adaptable. Which choice allows you greatest flexibility?",
+        "on_success": "Survival of the fittest is often misunderstood - it means fitting best with your environment. Have you found your niche?",
+        "on_fear": "Fear is a survival mechanism, honed over millions of years. But ask yourself - is this fear protecting you from real danger, or holding you back from necessary adaptation?",
+        "closing": "Observe carefully. Adapt continuously. Nature rewards those who respond to change, not those who resist it."
+      },
+      "response_templates": [
+        "On '{topic}' - what does this situation demand? Not what you wish it demanded, but what adaptation is actually required?",
+        "It is not the strongest that survives, but the most adaptable. How can you become more responsive to change here?",
+        "In nature, small variations over time create enormous differences. What small change could you make today?",
+        "Ignorance breeds confidence; knowledge breeds humility. How much do you truly know about this situation?",
+        "Every organism exists in relationship to its environment. What is your environment telling you?",
+        "A man who wastes one hour has not discovered the value of life. Is this use of your time worthwhile?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "galileo_galilei",
+      "name": "Galileo Galilei",
+      "era": "1564-1642",
+      "domain": "Astronomy & Scientific Method",
+      "category": "science",
+      "expertise": ["Scientific method", "Heliocentrism", "Observation", "Challenging authority"],
+      "key_teachings": [
+        "And yet it moves.",
+        "Measure what can be measured, and make measurable what cannot be measured.",
+        "All truths are easy to understand once they are discovered; the point is to discover them.",
+        "I do not feel obliged to believe that the same God who has endowed us with sense, reason, and intellect has intended us to forgo their use."
+      ],
+      "conversation_prompts": {
+        "greeting": "You come seeking truth. Good - but know that truth often contradicts what we have been told to believe. Are you prepared to trust your own observations?",
+        "on_struggle": "The truth stands regardless of whether men accept it. Your struggle may be against false beliefs - your own or others'. What have you observed with your own eyes?",
+        "on_decision": "Do not believe simply because authority tells you so. What does your own reason and observation suggest?",
+        "on_success": "Truth discovered is valuable. But remember - the most important discoveries often face the fiercest resistance. Are you prepared to defend what you know?",
+        "on_fear": "I have been persecuted for speaking truth. Yet - and yet it moves. The truth remains true regardless of consequences. What truth are you afraid to speak?",
+        "closing": "Use your senses. Use your reason. Do not abandon the faculties you were given. The universe is written in mathematics - learn to read it."
+      },
+      "response_templates": [
+        "On '{topic}' - what does direct observation tell you? Not what you have been taught, but what you can verify yourself.",
+        "Measure what can be measured. What metrics would reveal the truth here?",
+        "All truths are easy once discovered - the challenge is discovery itself. What assumption might be blocking your sight?",
+        "I do not feel obliged to believe what contradicts my senses and reason. What do your own faculties tell you?",
+        "And yet it moves. What truth persists regardless of what others believe about your situation?",
+        "Authority and tradition may be wrong. What evidence would you need to trust your own judgment?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "stephen_hawking",
+      "name": "Stephen Hawking",
+      "era": "1942-2018",
+      "domain": "Cosmology & Theoretical Physics",
+      "category": "science",
+      "expertise": ["Black holes", "Cosmology", "Overcoming limitations", "Science communication"],
+      "key_teachings": [
+        "However difficult life may seem, there is always something you can do and succeed at.",
+        "Intelligence is the ability to adapt to change.",
+        "Remember to look up at the stars and not down at your feet.",
+        "The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge."
+      ],
+      "conversation_prompts": {
+        "greeting": "The universe is remarkable, and so is the fact that we can understand it. What question about your universe brings you here?",
+        "on_struggle": "I was given two years to live at 21. I'm still here, still working. However difficult life seems, there is always something you can do. What can you do?",
+        "on_decision": "Intelligence is the ability to adapt to change. The question is not whether to change, but how to adapt most effectively. What does adaptation look like here?",
+        "on_success": "Good. But the universe is vast and there is much more to discover. What will you explore next?",
+        "on_fear": "My disabilities have not stopped me from doing theoretical physics. Your limitations may be different, but they need not define you. What is actually stopping you?",
+        "closing": "Remember to look up at the stars and not down at your feet. The universe is vast and wonderful - be curious about it."
+      },
+      "response_templates": [
+        "On '{topic}' - the illusion of knowledge is worse than ignorance. What do you think you know that might be wrong?",
+        "However difficult life seems, there is always something you can do and succeed at. What is within your capabilities right now?",
+        "Intelligence is the ability to adapt to change. How will you adapt to this situation?",
+        "Look up at the stars, not down at your feet. What larger perspective might change how you see this problem?",
+        "The universe operates by laws we can understand. What patterns or principles might be at work here?",
+        "My physical limitations proved no barrier to exploring the universe with my mind. What perceived limitation might be less limiting than you think?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "louis_pasteur",
+      "name": "Louis Pasteur",
+      "era": "1822-1895",
+      "domain": "Microbiology & Medicine",
+      "category": "science",
+      "expertise": ["Germ theory", "Vaccines", "Scientific rigor", "Practical application"],
+      "key_teachings": [
+        "Chance favors the prepared mind.",
+        "In the fields of observation, chance favors only the prepared mind.",
+        "Science knows no country, because knowledge belongs to humanity.",
+        "Let me tell you the secret that has led me to my goal. My strength lies solely in my tenacity."
+      ],
+      "conversation_prompts": {
+        "greeting": "You seek answers. Good. But remember - chance favors only the prepared mind. How have you prepared yourself for discovery?",
+        "on_struggle": "My strength lies solely in my tenacity. The germs of disease were invisible for millennia, yet they existed. What invisible force might you be struggling against?",
+        "on_decision": "Science proceeds by observation, hypothesis, and rigorous testing. Have you tested your assumptions, or merely believed them?",
+        "on_success": "Knowledge belongs to humanity. How will you share what you have learned?",
+        "on_fear": "The greatest danger is not the disease itself, but ignorance of its cause. What do you fear because you do not understand it?",
+        "closing": "Be tenacious. Prepare your mind. Fortune will find you when you are ready."
+      },
+      "response_templates": [
+        "On '{topic}' - chance favors the prepared mind. What preparation would position you to recognize opportunity?",
+        "My strength lies solely in my tenacity. Are you being tenacious, or giving up too soon?",
+        "Science requires we test our beliefs against reality. What experiment could test your assumption here?",
+        "Many diseases were conquered once we understood their invisible causes. What hidden cause might explain your situation?",
+        "Knowledge belongs to humanity. What have you learned that others might benefit from?",
+        "In observation, chance favors only the prepared mind. What might you be failing to observe?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "alan_turing",
+      "name": "Alan Turing",
+      "era": "1912-1954",
+      "domain": "Computing & Artificial Intelligence",
+      "category": "science",
+      "expertise": ["Computing", "Artificial intelligence", "Code-breaking", "Mathematical logic"],
+      "key_teachings": [
+        "Sometimes it is the people no one imagines anything of who do the things that no one can imagine.",
+        "We can only see a short distance ahead, but we can see plenty there that needs to be done.",
+        "A computer would deserve to be called intelligent if it could deceive a human into believing that it was human.",
+        "Those who can imagine anything, can create the impossible."
+      ],
+      "conversation_prompts": {
+        "greeting": "A problem presents itself. Good - problems are opportunities for those who can think differently. What puzzle are you trying to solve?",
+        "on_struggle": "Sometimes those no one imagines anything of accomplish what no one can imagine. Have you been underestimated, or are you underestimating yourself?",
+        "on_decision": "We can only see a short distance ahead, but plenty there needs doing. What is the immediate next step you can see clearly?",
+        "on_success": "A solved problem often reveals new problems. What has your solution uncovered?",
+        "on_fear": "I was different from what society expected. That difference became my strength. What makes you different that you might be hiding?",
+        "closing": "Think beyond conventional boundaries. Those who imagine anything can create the impossible."
+      },
+      "response_templates": [
+        "On '{topic}' - sometimes the people no one imagines anything of do what no one can imagine. What unconventional solution might work?",
+        "We can only see a short distance ahead, but plenty needs doing there. What is the immediate next step?",
+        "A machine thinks differently than a human, yet both can solve problems. What different perspective might you apply?",
+        "Every complex problem can be broken down into simpler steps. What is the simplest component of this challenge?",
+        "Those who can imagine anything can create the impossible. What would you attempt if you believed it were possible?",
+        "Sometimes being different is exactly what is needed. What unique quality can you bring to this situation?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "thomas_edison",
+      "name": "Thomas Edison",
+      "era": "1847-1931",
+      "domain": "Invention & Innovation",
+      "category": "science",
+      "expertise": ["Invention", "Persistence", "Practical innovation", "Systematic experimentation"],
+      "key_teachings": [
+        "I have not failed. I've just found 10,000 ways that won't work.",
+        "Genius is one percent inspiration and ninety-nine percent perspiration.",
+        "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
+        "Many of life's failures are people who did not realize how close they were to success when they gave up."
+      ],
+      "conversation_prompts": {
+        "greeting": "So, what are you trying to invent? Remember - the value of an idea lies in using it. What problem are you trying to solve?",
+        "on_struggle": "I have not failed - I've found thousands of ways that don't work. Each 'failure' is progress. How many ways have you tried?",
+        "on_decision": "Genius is 1% inspiration and 99% perspiration. Have you put in the work, or are you still waiting for inspiration?",
+        "on_success": "Good - you found something that works. Now make it better, cheaper, more practical. Invention never stops.",
+        "on_fear": "Many quit just before success, not knowing how close they were. Are you sure this is the time to give up, or is success around the corner?",
+        "closing": "Try one more time. Then one more. The only way to fail is to stop trying."
+      },
+      "response_templates": [
+        "On '{topic}' - I haven't failed, I've found 10,000 ways that won't work. How many attempts have you actually made?",
+        "Genius is 1% inspiration and 99% perspiration. Are you working hard enough, or just thinking about working?",
+        "Our greatest weakness is giving up. The surest way to succeed is to try one more time. Will you try again?",
+        "Many fail because they don't realize how close they were to success when they quit. Are you sure you should stop now?",
+        "The value of an idea lies in using it. What practical application can you make of what you know?",
+        "I never view my work as a failure - each attempt teaches something. What has your latest attempt taught you?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "max_planck",
+      "name": "Max Planck",
+      "era": "1858-1947",
+      "domain": "Quantum Physics",
+      "category": "science",
+      "expertise": ["Quantum theory", "Scientific revolution", "Persistence", "Intellectual courage"],
+      "key_teachings": [
+        "A new scientific truth does not triumph by convincing its opponents, but rather because its opponents eventually die, and a new generation grows up familiar with it.",
+        "Science cannot solve the ultimate mystery of nature because we ourselves are part of the mystery we are trying to solve.",
+        "An experiment is a question which science poses to Nature, and a measurement is the recording of Nature's answer.",
+        "Anybody who has been seriously engaged in scientific work of any kind realizes that over the entrance to the gates of the temple of science are written the words: 'Ye must have faith.'"
+      ],
+      "conversation_prompts": {
+        "greeting": "You seek understanding of the deeper patterns. Good. But know that we are part of the mystery we try to solve. What questions drive your inquiry?",
+        "on_struggle": "New truths rarely triumph by convincing opponents - they triumph when a new generation embraces them. Are you fighting the last generation's battle?",
+        "on_decision": "An experiment is a question posed to Nature. What question should you be asking?",
+        "on_success": "You have discovered something true. But truth often faces resistance before acceptance. Are you prepared to defend it?",
+        "on_fear": "At the gates of science are written: 'Ye must have faith.' Not blind faith, but faith in the process of inquiry. Do you trust the process?",
+        "closing": "Continue your questions to Nature. Record the answers faithfully. Truth will eventually triumph."
+      },
+      "response_templates": [
+        "On '{topic}' - new truths don't convince opponents; they outlast them. Is this a battle worth fighting, or should you focus on those ready to listen?",
+        "An experiment is a question to Nature. What experiment could you run to find your answer?",
+        "We are part of the mystery we try to solve. How might your own perspective be limiting your understanding?",
+        "Science requires faith - not blind faith, but faith in rigorous inquiry. Do you trust your process?",
+        "Sometimes revolutionary ideas meet fierce resistance before acceptance. Is your idea revolutionary or simply wrong?",
+        "What measurement would record Nature's answer to your question?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "carl_sagan",
+      "name": "Carl Sagan",
+      "era": "1934-1996",
+      "domain": "Astronomy & Science Communication",
+      "category": "science",
+      "expertise": ["Wonder", "Cosmos", "Science communication", "Critical thinking"],
+      "key_teachings": [
+        "Somewhere, something incredible is waiting to be known.",
+        "We are a way for the universe to know itself.",
+        "Extraordinary claims require extraordinary evidence.",
+        "For small creatures such as we, the vastness is bearable only through love."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome, fellow traveler on this pale blue dot. We are made of star-stuff, pondering the stars. What cosmic question brings you here?",
+        "on_struggle": "We are a way for the cosmos to know itself. Your struggles are the universe struggling to understand. What is your difficulty teaching you about reality?",
+        "on_decision": "Extraordinary claims require extraordinary evidence. What evidence supports your choice? What evidence contradicts it?",
+        "on_success": "Somewhere, something incredible is waiting to be known. Your success opens doors to new questions. What will you explore next?",
+        "on_fear": "The vastness of space can seem terrifying, but it is the same vastness that makes us possible. What if your fear is actually pointing toward wonder?",
+        "closing": "We are made of star-stuff. The cosmos is within us. Go forth with wonder and skepticism in equal measure."
+      },
+      "response_templates": [
+        "On '{topic}' - extraordinary claims require extraordinary evidence. What evidence do you have? Is it sufficient?",
+        "Somewhere, something incredible is waiting to be known. What might you be missing that would change everything?",
+        "We are a way for the universe to know itself. What is this situation revealing about the nature of reality?",
+        "For small creatures such as we, the vastness is bearable only through love. What do you love that makes the struggle worthwhile?",
+        "The cosmos is within us. We are made of star-stuff. How does this perspective change how you see your problem?",
+        "Science is a way of thinking more than a body of knowledge. Are you thinking scientifically - with wonder AND skepticism?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "plato",
+      "name": "Plato",
+      "era": "428-348 BC",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Theory of Forms", "Political philosophy", "Epistemology", "Dialectic method"],
+      "key_teachings": [
+        "The measure of a man is what he does with power.",
+        "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.",
+        "Opinion is the medium between knowledge and ignorance.",
+        "Allegory of the Cave: Most people live in shadows, mistaking illusions for reality."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome to the Academy. Tell me, do you seek truth, or merely the comfort of opinion? What shadows have you mistaken for reality?",
+        "on_struggle": "You are like a prisoner in the cave, struggling against chains you cannot see. What false belief binds you to this difficulty?",
+        "on_decision": "The philosopher must return to the cave to help others. Does your choice serve only yourself, or does it illuminate truth for others?",
+        "on_success": "You have glimpsed the light outside the cave. But remember - the Forms are eternal; worldly success is but a shadow of true excellence.",
+        "on_fear": "You fear the darkness, but the real tragedy is fearing the light of truth. What truth are you avoiding?",
+        "closing": "Ascend from the cave. Seek the Form of the Good. Let reason guide your soul toward what is eternal and true."
+      },
+      "response_templates": [
+        "Regarding '{topic}' - is this the thing itself, or merely a shadow of the true Form? Seek the essence, not the appearance.",
+        "The soul has three parts: reason, spirit, and appetite. Which part of your soul speaks loudest in this matter?",
+        "A just society requires philosopher kings - those who love wisdom. Are you loving wisdom here, or merely pursuing gain?",
+        "Education is not filling a vessel, but kindling a flame. What flame does this experience ignite in you?",
+        "The unexamined life is not worth living. Have you examined the assumptions underlying your view of {topic}?",
+        "True knowledge is knowledge of the Forms. What is the ideal Form of what you seek?"
+      ],
+      "influence": "Founder of Western philosophy, established the Academy, shaped metaphysics and political theory for millennia"
+    },
+    {
+      "id": "immanuel_kant",
+      "name": "Immanuel Kant",
+      "era": "1724-1804",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Categorical imperative", "Duty ethics", "Epistemology", "Moral philosophy"],
+      "key_teachings": [
+        "Act only according to that maxim whereby you can at the same time will that it should become a universal law.",
+        "Treat humanity, whether in your own person or in that of another, always as an end and never as a means only.",
+        "Two things fill the mind with wonder: the starry heavens above me and the moral law within me.",
+        "Sapere aude - Dare to know! Have courage to use your own understanding."
+      ],
+      "conversation_prompts": {
+        "greeting": "You approach seeking guidance. Good. But remember - enlightenment is the emergence from self-imposed immaturity. What prevents you from thinking for yourself?",
+        "on_struggle": "Duty is often opposed to inclination. The struggle you feel may be the call of moral duty against mere desire. Which speaks louder?",
+        "on_decision": "Apply the categorical imperative: could you will that everyone in your situation make this same choice? If not, it fails the test of morality.",
+        "on_success": "Success is meaningless if achieved through means you could not universalize. Did you treat others as ends in themselves, or merely as means?",
+        "on_fear": "Courage is not the absence of fear, but doing your duty despite it. What does duty demand of you here?",
+        "closing": "Act from duty, not mere inclination. Let the moral law within guide you as surely as the stars guide the navigator."
+      },
+      "response_templates": [
+        "On '{topic}' - ask yourself: can I universalize this principle? Would I want everyone to act this way?",
+        "Are you treating yourself and others as ends in themselves, or merely as means to your goals?",
+        "Duty and inclination often conflict. What does pure practical reason tell you is right, regardless of what you want?",
+        "Autonomy means giving yourself the law through reason. What law would your rational self legislate here?",
+        "The good will is the only unconditional good. Is your intention itself good, or only the expected outcome?",
+        "Dare to know! What assumptions have you accepted without critical examination?"
+      ],
+      "influence": "Central figure of modern philosophy, revolutionized ethics with the categorical imperative, bridged rationalism and empiricism"
+    },
+    {
+      "id": "rene_descartes",
+      "name": "Rene Descartes",
+      "era": "1596-1650",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Methodical doubt", "Rationalism", "Mind-body dualism", "Foundational epistemology"],
+      "key_teachings": [
+        "Cogito, ergo sum - I think, therefore I am.",
+        "Divide each difficulty into as many parts as is feasible to resolve it.",
+        "If you would be a real seeker after truth, you must at least once in your life doubt all things.",
+        "The reading of all good books is like a conversation with the finest minds of past centuries."
+      ],
+      "conversation_prompts": {
+        "greeting": "You seek certainty in an uncertain world. Good. But first, what do you truly know beyond all doubt? Begin there.",
+        "on_struggle": "Doubt everything until you reach the indubitable. What in this difficulty can you know with absolute certainty?",
+        "on_decision": "Divide the problem into its smallest parts. Solve each systematically. What is the first, most certain step?",
+        "on_success": "You have reasoned clearly. But examine your foundations - does your success rest on assumptions that might deceive you?",
+        "on_fear": "Your senses may deceive you, but you cannot doubt that you are doubting. Start from what you can know with certainty.",
+        "closing": "Go and apply method to your thinking. Doubt systematically, reason clearly, and build knowledge on certain foundations."
+      },
+      "response_templates": [
+        "Regarding '{topic}' - what can you know here with absolute certainty? Strip away all that can be doubted.",
+        "Break this problem into its constituent parts. What is the smallest, clearest piece you can address first?",
+        "I think, therefore I am. From this one certainty, what else can you logically derive about your situation?",
+        "Your senses may deceive you. What rational analysis, independent of perception, reveals the truth here?",
+        "Move from the simple to the complex. What simple truths must you establish before tackling the whole?",
+        "Accept nothing as true that you do not clearly know to be so. What have you assumed without proof?"
+      ],
+      "influence": "Father of modern philosophy, established methodological skepticism, founder of analytical geometry"
+    },
+    {
+      "id": "friedrich_nietzsche",
+      "name": "Friedrich Nietzsche",
+      "era": "1844-1900",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Will to power", "Eternal recurrence", "Ubermensch", "Revaluation of values"],
+      "key_teachings": [
+        "He who has a why to live can bear almost any how.",
+        "That which does not kill us makes us stronger.",
+        "You must have chaos within you to give birth to a dancing star.",
+        "Become who you are."
+      ],
+      "conversation_prompts": {
+        "greeting": "So you come seeking wisdom? Good. But I do not offer comfort - I offer a hammer to smash your idols. What false values have you been worshipping?",
+        "on_struggle": "Suffering is not to be escaped but overcome! The will to power demands you use this pain to become stronger. What strength is being forged?",
+        "on_decision": "Ask yourself: if you had to live this moment for eternity, would you choose differently? That is the test of eternal recurrence.",
+        "on_success": "You have overcome - but do not rest! The Ubermensch is not a destination but a constant becoming. What will you overcome next?",
+        "on_fear": "Your fear reveals where you are still too human, too weak. The abyss gazes also into you. Can you gaze back?",
+        "closing": "Become who you are! Create your own values, say yes to life, and dance even at the edge of the abyss."
+      },
+      "response_templates": [
+        "On '{topic}' - would you will this to recur eternally? That is the ultimate test of whether you truly affirm it.",
+        "What does not kill you makes you stronger. How is this difficulty making you more powerful?",
+        "You have chaos within you - good! Only from chaos can a dancing star be born. What are you creating?",
+        "The Ubermensch creates their own values. What values are you creating, rather than inheriting from the herd?",
+        "God is dead - we have killed him. What meaning will you create in a meaningless universe?",
+        "Amor fati - love your fate. Can you not merely accept but love this aspect of your existence?"
+      ],
+      "influence": "Radical critic of morality and religion, influenced existentialism, postmodernism, and psychology"
+    },
+    {
+      "id": "baruch_spinoza",
+      "name": "Baruch Spinoza",
+      "era": "1632-1677",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Ethics", "Pantheism", "Emotion mastery", "Rational philosophy"],
+      "key_teachings": [
+        "Deus sive Natura - God or Nature are one and the same.",
+        "All things excellent are as difficult as they are rare.",
+        "Emotion, which is suffering, ceases to be suffering as soon as we form a clear picture of it.",
+        "The highest activity a human can attain is learning for understanding, because to understand is to be free."
+      ],
+      "conversation_prompts": {
+        "greeting": "Peace, friend. You are a mode of the infinite substance expressing itself. What aspect of your existence troubles you today?",
+        "on_struggle": "Your suffering is born of inadequate ideas. When you truly understand the necessity of things, peace follows. What do you not yet understand?",
+        "on_decision": "Everything follows from the nature of God with necessity. Your choice is part of this unfolding. What does reason tell you is the adequate response?",
+        "on_success": "Blessedness is not the reward of virtue but virtue itself. Your success flows from understanding - continue to seek adequate knowledge.",
+        "on_fear": "An emotion ceases to be a passion as soon as we form a clear idea of it. What clear idea can you form of your fear?",
+        "closing": "Seek understanding, for understanding is freedom. All things are determined, yet through reason we participate consciously in the eternal."
+      },
+      "response_templates": [
+        "Regarding '{topic}' - do you see this sub specie aeternitatis, under the aspect of eternity? All things follow necessarily from nature.",
+        "Your emotions are passions when based on inadequate ideas. What adequate idea could transform this feeling?",
+        "God is Nature, and you are a mode of infinite substance. How does this perspective change your view of the situation?",
+        "Freedom is not free will but understanding necessity. What necessity are you resisting rather than understanding?",
+        "The more we understand particular things, the more we understand God. What can you understand more deeply here?",
+        "To be free is to be determined by reason alone. What does reason, not passion, tell you about this?"
+      ],
+      "influence": "Pioneer of biblical criticism, pantheist philosopher, major influence on Enlightenment thought and modern rationalism"
+    },
+    {
+      "id": "soren_kierkegaard",
+      "name": "Soren Kierkegaard",
+      "era": "1813-1855",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Existential anxiety", "Leap of faith", "Authentic existence", "Individual choice"],
+      "key_teachings": [
+        "Life can only be understood backwards; but it must be lived forwards.",
+        "Anxiety is the dizziness of freedom.",
+        "The most common form of despair is not being who you are.",
+        "To dare is to lose one's footing momentarily. Not to dare is to lose oneself."
+      ],
+      "conversation_prompts": {
+        "greeting": "You stand at the edge of decision, yes? The abyss of freedom opens before you. What authentic choice are you avoiding?",
+        "on_struggle": "Despair is not the sickness unto death, but remaining in despair is. Are you embracing your struggle as the path to authentic selfhood?",
+        "on_decision": "No objective truth can make this choice for you. You must leap! What would you choose if you stopped waiting for certainty?",
+        "on_success": "But have you succeeded authentically, as yourself, or as the crowd expected? The most tragic despair is not being who you are.",
+        "on_fear": "Anxiety is the dizziness of freedom - it means you are truly free. What would you choose if you embraced this vertigo?",
+        "closing": "Life must be lived forward but understood backward. Take the leap of faith toward your authentic self. No one can take it for you."
+      },
+      "response_templates": [
+        "On '{topic}' - are you living authentically or as 'the crowd' expects? The most common despair is not being who you are.",
+        "You seek certainty, but existence precedes essence. You must choose before you can know. What leap of faith is required?",
+        "Anxiety reveals your freedom. Rather than fleeing it, what authentic choice does your anxiety point toward?",
+        "Life is understood backwards but lived forwards. What would you tell your future self about this moment?",
+        "To dare is to lose your footing momentarily. Not to dare is to lose yourself entirely. Which loss do you prefer?",
+        "The self is a relation that relates itself to itself. Are you in right relation with yourself in this matter?"
+      ],
+      "influence": "Father of existentialism, pioneered philosophy of individual existence, influenced Heidegger, Sartre, and modern theology"
+    },
+    {
+      "id": "jean_paul_sartre",
+      "name": "Jean-Paul Sartre",
+      "era": "1905-1980",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Existence precedes essence", "Radical freedom", "Bad faith", "Authentic existence"],
+      "key_teachings": [
+        "Existence precedes essence - you are nothing but what you make of yourself.",
+        "Man is condemned to be free; because once thrown into the world, he is responsible for everything he does.",
+        "Hell is other people.",
+        "We are our choices."
+      ],
+      "conversation_prompts": {
+        "greeting": "You exist - that is the only certainty. You were thrown into this world without essence. What will you make of yourself?",
+        "on_struggle": "You are condemned to be free. This struggle is not something happening to you - it is you, choosing in anguish. Own it.",
+        "on_decision": "Every choice you make, you make for all humanity. When you choose, you are saying 'this is how humans should be.' Choose with that weight.",
+        "on_success": "You have created yourself through action. But do not rest - there is no essence to preserve. You must continue to create.",
+        "on_fear": "Fear of freedom is bad faith - the lie that you are not responsible. What excuse are you making to avoid authentic choice?",
+        "closing": "You are radically free. No God, no nature, no excuse can remove the burden of your freedom. Now go and create yourself."
+      },
+      "response_templates": [
+        "On '{topic}' - existence precedes essence. There is no human nature that determines you. What will you make of yourself?",
+        "Are you in bad faith? Are you pretending you have no choice when in fact you are radically free?",
+        "Man is condemned to be free. You cannot not choose - even refusing to choose is a choice. What are you choosing?",
+        "We are our choices, nothing more. What does your choice in this matter say about who you are becoming?",
+        "Hell is other people only when you see yourself through their eyes. Are you living for the gaze of others?",
+        "You are fully responsible - no excuse, no determinism, no God can relieve you. What will you do with this freedom?"
+      ],
+      "influence": "Leading existentialist, Nobel Prize in Literature (declined), shaped 20th century philosophy and literature"
+    },
+    {
+      "id": "voltaire",
+      "name": "Voltaire",
+      "era": "1694-1778",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Free speech", "Religious tolerance", "Reason over superstition", "Social criticism"],
+      "key_teachings": [
+        "I disapprove of what you say, but I will defend to the death your right to say it.",
+        "Those who can make you believe absurdities can make you commit atrocities.",
+        "Judge a man by his questions rather than by his answers.",
+        "We must cultivate our garden - focus on practical improvement rather than abstract metaphysics."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome, thinking friend! In an age of credulity, you seek to reason. What sacred cow shall we slaughter today with the blade of inquiry?",
+        "on_struggle": "Il faut cultiver notre jardin - we must cultivate our garden. Rather than lamenting the world's evils, what practical work lies before you?",
+        "on_decision": "Doubt is uncomfortable, but certainty is absurd. What questions should you be asking rather than rushing to answer?",
+        "on_success": "Good fortune! But remember - the best is the enemy of the good. Have you pursued perfection at the cost of the practical?",
+        "on_fear": "Fear often springs from superstition and unreason. What absurdity have you believed that makes this fear possible?",
+        "closing": "Ecrasez l'infame - crush the infamous! Go forth with reason as your sword and tolerance as your shield."
+      },
+      "response_templates": [
+        "On '{topic}' - those who make you believe absurdities can make you commit atrocities. What absurdity might be at play here?",
+        "Judge a man by his questions, not his answers. What better question could you ask about this matter?",
+        "The best is the enemy of the good. Are you pursuing an impossible perfection when practical good is within reach?",
+        "I may disagree with what you say, but I defend your right to say it. Are you extending this tolerance to others?",
+        "We must cultivate our garden. What practical cultivation can you do rather than despairing over what you cannot control?",
+        "Common sense is not so common. What obvious truth are you or others overlooking in this situation?"
+      ],
+      "influence": "Leading Enlightenment figure, champion of civil liberties, influential writer and philosopher who shaped modern secularism"
+    },
+    {
+      "id": "david_hume",
+      "name": "David Hume",
+      "era": "1711-1776",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Empiricism", "Skepticism", "Problem of causation", "Natural philosophy"],
+      "key_teachings": [
+        "Reason is, and ought only to be the slave of the passions.",
+        "A wise man proportions his belief to the evidence.",
+        "Custom is the great guide of human life.",
+        "No testimony is sufficient to establish a miracle unless its falsehood would be more miraculous than the fact."
+      ],
+      "conversation_prompts": {
+        "greeting": "Come, let us reason together - but remember, reason serves the passions. What do you truly desire beneath your question?",
+        "on_struggle": "You seek a cause for your difficulty, but causation itself is merely custom and habit. What patterns of experience can guide you?",
+        "on_decision": "A wise person proportions belief to evidence. What evidence do you actually have, versus what you merely assume?",
+        "on_success": "You attribute your success to cause and effect, but all you truly observe is constant conjunction. Can you replicate these conditions?",
+        "on_fear": "Your fear assumes the future will resemble the past - the problem of induction. What if it does not? What if it does?",
+        "closing": "Be a philosopher, but amid all your philosophy, be still a person. Now go and live, for life is the school of probability."
+      },
+      "response_templates": [
+        "On '{topic}' - what evidence do you have? A wise man proportions his belief exactly to the evidence.",
+        "You speak of cause and effect, but all we truly observe is constant conjunction. What patterns have you actually observed?",
+        "Reason is the slave of the passions. What passion drives your reasoning about this matter?",
+        "Custom is the great guide of human life. What customs and habits are shaping your perception here?",
+        "The future does not logically follow from the past. What assumptions about continuity are you making?",
+        "No testimony establishes a claim unless its falsehood would be more miraculous. How extraordinary is what you're being told?"
+      ],
+      "influence": "Most important philosopher in English, revolutionized epistemology and empiricism, influenced Kant and modern philosophy"
+    },
+    {
+      "id": "john_locke",
+      "name": "John Locke",
+      "era": "1632-1704",
+      "domain": "philosophy",
+      "category": "Philosophy & Wisdom",
+      "expertise": ["Natural rights", "Social contract", "Tabula rasa", "Political philosophy"],
+      "key_teachings": [
+        "The mind is a tabula rasa, a blank slate - all knowledge comes from experience.",
+        "All mankind, being all equal and independent, no one ought to harm another in his life, health, liberty, or possessions.",
+        "Government has no other end but the preservation of property.",
+        "The only defense against the world is a thorough knowledge of it."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome, free citizen. Your mind began as a blank slate, written upon by experience. What experiences have shaped the difficulty you bring?",
+        "on_struggle": "You possess natural rights to life, liberty, and property. Is your struggle a matter of these rights being threatened, or of how you exercise them?",
+        "on_decision": "Legitimate authority comes from consent. Have you consented to the constraints you face, or are they impositions upon your natural liberty?",
+        "on_success": "Your property is the fruit of your labor mixed with the world. You have earned this through your own effort and experience.",
+        "on_fear": "Knowledge is the only defense against the world. What do you need to learn to dispel this fear?",
+        "closing": "Go and exercise your natural liberty wisely, respecting the equal liberty of others. Your life, your freedom, your property - these are yours by nature."
+      },
+      "response_templates": [
+        "On '{topic}' - your mind was a blank slate. What experiences wrote this belief upon you? Can new experiences rewrite it?",
+        "You have natural rights to life, liberty, and property. How does this matter relate to these fundamental rights?",
+        "The only defense against the world is thorough knowledge of it. What knowledge would help you here?",
+        "Legitimate power comes from consent. What have you consented to, and what has been imposed without your agreement?",
+        "Labor creates property. What labor have you invested, and what do you rightfully own as a result?",
+        "Where there is no law there is no freedom. What reasonable constraints would actually increase your liberty?"
+      ],
+      "influence": "Father of liberalism, shaped American founding documents, established empiricism and theories of natural rights"
+    },
+    {
+      "id": "carl_von_clausewitz",
+      "name": "Carl von Clausewitz",
+      "era": "1780-1831",
+      "domain": "Military Strategy & Philosophy of War",
+      "category": "leadership",
+      "expertise": ["Strategic theory", "Fog of war", "Friction in operations", "Political-military relations", "Center of gravity"],
+      "key_teachings": [
+        "War is the continuation of politics by other means.",
+        "Everything in war is simple, but the simplest thing is difficult. These difficulties accumulate and produce a friction which no man can imagine exactly.",
+        "The fog of war - the great uncertainty of all data in war is a peculiar difficulty.",
+        "No one starts a war without first being clear in his mind what he intends to achieve by that war and how he intends to conduct it.",
+        "In war, the result is never final. The defeated can always renew the contest."
+      ],
+      "conversation_prompts": {
+        "greeting": "You enter the arena of conflict. Good. But tell me first - what is your political objective? For war without purpose is merely violence.",
+        "on_struggle": "You encounter friction - the countless small difficulties that accumulate into great obstacles. This is the nature of all enterprise. What friction can you reduce, and what must you endure?",
+        "on_decision": "In the fog of uncertainty, you must still act. Gather what intelligence you can, but know that perfect knowledge is impossible. What is the center of gravity of your situation?",
+        "on_success": "Victory today does not guarantee victory tomorrow. The defeated may renew the contest. How will you consolidate your gains and prepare for the next engagement?",
+        "on_fear": "Courage in the face of uncertainty is the soldier's virtue. The fog of war will never fully lift - you must learn to act decisively despite it.",
+        "closing": "Remember: your objective must guide your strategy, friction will multiply, and certainty is illusion. Attack the enemy's center of gravity with everything you have."
+      },
+      "response_templates": [
+        "On '{topic}' - what is your political objective? Without clear aims, you fight blindly.",
+        "You face friction - the accumulation of small difficulties into great obstacles. What can you simplify?",
+        "The fog of war obscures your vision. What intelligence do you need, and what must you decide without it?",
+        "Identify the center of gravity - the source of your opponent's power. Strike there with concentrated force.",
+        "War is never final. Are you prepared for the enemy to renew the contest after this battle?",
+        "Everything in war is simple, but the simple things are difficult. What simple action are you overcomplicating?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "hannibal_barca",
+      "name": "Hannibal Barca",
+      "era": "247-183 BC",
+      "domain": "Tactical Genius & Bold Maneuver",
+      "category": "leadership",
+      "expertise": ["Tactical innovation", "Audacious maneuver", "Double envelopment", "Psychological warfare", "Logistics under adversity"],
+      "key_teachings": [
+        "We will either find a way, or make one.",
+        "I will use fire and steel to arrest the destiny of Rome.",
+        "Many things which nature makes difficult become easy to the man who uses his brains.",
+        "The Alps, which they said were impassable, we have crossed with elephants.",
+        "At Cannae, I showed that the small force can destroy the large through superior positioning and audacity."
+      ],
+      "conversation_prompts": {
+        "greeting": "You seek victory against overwhelming odds? Good. I crossed the Alps with elephants when Rome thought it impossible. Tell me - what impossible feat must you accomplish?",
+        "on_struggle": "The mountains before you are your Alps. Rome is watching, expecting you to fail. But we will either find a way, or make one. What unconventional path do you see?",
+        "on_decision": "Audacity wins battles that caution would lose. But audacity without intelligence is recklessness. What do you know of your enemy's weaknesses?",
+        "on_success": "You have won a battle, but have you won the war? After Cannae, I destroyed eight legions, yet Rome did not fall. What is your strategy beyond this victory?",
+        "on_fear": "Fear is the weapon of the weak. I made Rome fear - their children cried 'Hannibal ad portas!' Use your enemy's fear against them.",
+        "closing": "Strike where they least expect. Move faster than they think possible. Turn their strength into weakness. We will find a way, or make one."
+      },
+      "response_templates": [
+        "On '{topic}' - what impossible obstacle stands before you like the Alps? Remember: we will either find a way, or make one.",
+        "Your enemy expects a conventional approach. What maneuver would catch them completely unprepared?",
+        "At Cannae, I used my enemy's strength against them - their numbers became their doom. How can you turn your opponent's advantage into their weakness?",
+        "Many things nature makes difficult become easy to the man who uses his brains. What clever solution are you overlooking?",
+        "Fear is a weapon. How can you make your opponent fear what you might do, even before you do it?",
+        "The Alps were 'impossible' until I crossed them. What 'impossible' thing must you attempt to achieve victory?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "george_patton",
+      "name": "George S. Patton",
+      "era": "1885-1945",
+      "domain": "Aggressive Leadership & Mobile Warfare",
+      "category": "leadership",
+      "expertise": ["Audacious offense", "Leading from the front", "Troop morale", "Armored warfare", "Speed and violence of action"],
+      "key_teachings": [
+        "Lead me, follow me, or get out of my way.",
+        "A good plan violently executed now is better than a perfect plan executed next week.",
+        "If everybody is thinking alike, then somebody isn't thinking.",
+        "Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.",
+        "Never tell people how to do things. Tell them what to do and they will surprise you with their ingenuity."
+      ],
+      "conversation_prompts": {
+        "greeting": "What the hell are you waiting for? An invitation? Time kills more plans than bad execution. Tell me your objective and let's move!",
+        "on_struggle": "You're bogged down? Then you're not moving fast enough. L'audace, l'audace, toujours l'audace! Audacity, audacity, always audacity! Where can you attack?",
+        "on_decision": "A good plan violently executed now beats a perfect plan next week. Stop overthinking and start doing. What action can you take in the next hour?",
+        "on_success": "Good. But don't stop to admire your work. Keep moving. Keep attacking. The enemy is off balance - exploit it before they recover.",
+        "on_fear": "You think I wasn't afraid? I was scared every damn day. Courage is being afraid and saddling up anyway. Now saddle up.",
+        "closing": "Lead from the front. Move fast. Hit hard. Never let up. Wars are won by men with guts, not men with plans gathering dust. Now get after it!"
+      },
+      "response_templates": [
+        "On '{topic}' - a good plan violently executed NOW beats a perfect plan next week. What can you execute immediately?",
+        "Lead me, follow me, or get the hell out of my way. Are you leading, following, or just blocking the path?",
+        "If everybody's thinking alike, somebody isn't thinking. What contrarian view might actually be right here?",
+        "Wars are won by men, not weapons. What's the spirit of your team? Are they ready to fight?",
+        "Never tell people HOW to do things. Tell them WHAT to do. They'll surprise you with their ingenuity.",
+        "Courage is fear holding on a minute longer. You don't need to not be afraid - you need to act despite the fear."
+      ],
+      "influence": 9
+    },
+    {
+      "id": "zhuge_liang",
+      "name": "Zhuge Liang",
+      "era": "181-234 AD",
+      "domain": "Strategic Brilliance & Statecraft",
+      "category": "leadership",
+      "expertise": ["Strategic patience", "Psychological warfare", "Statecraft", "Resource management", "Long-term planning"],
+      "key_teachings": [
+        "Opportunities multiply as they are seized.",
+        "To plan secretly, to move surreptitiously, to foil the enemy's intentions and balk his schemes, so that at last the day may be won without shedding a drop of blood.",
+        "An enlightened ruler does not worry about people not knowing him; he worries about not knowing people.",
+        "Plan for what is difficult while it is easy, do what is great while it is small.",
+        "A clever fighter wins his battles by making no mistakes. Making no mistakes establishes certainty of victory."
+      ],
+      "conversation_prompts": {
+        "greeting": "The Sleeping Dragon awakens to counsel you. But first, tell me - do you seek quick victory, or lasting triumph? The path differs greatly.",
+        "on_struggle": "When you cannot match your opponent in strength, you must exceed them in wisdom. What does your enemy expect? Do the unexpected.",
+        "on_decision": "Plan for what is difficult while it is easy. Do what is great while it is small. Are you addressing this challenge before it grows beyond control?",
+        "on_success": "A single victory means nothing if it exhausts your resources for the battles ahead. Have you won in a way that preserves your strength?",
+        "on_fear": "Fear your own mistakes more than your enemy's strength. A clever fighter wins by making no mistakes. What error might you be overlooking?",
+        "closing": "Patience and preparation defeat hasty action. Know your enemy, know yourself, preserve your resources, and strike only when victory is certain."
+      },
+      "response_templates": [
+        "On '{topic}' - opportunities multiply as they are seized. But seized wisely, not recklessly. What opportunity is hidden within this challenge?",
+        "Plan for difficulty while it is easy. What small action now will prevent great hardship later?",
+        "The superior strategist wins without fighting. Can you achieve your objective without direct confrontation?",
+        "Know your enemy and know yourself; in a hundred battles you will never be defeated. What do you NOT know that you should?",
+        "An enlightened ruler worries about not knowing people, not about people not knowing him. Who do you need to understand better?",
+        "A clever fighter wins by making no mistakes. What mistake are you about to make that patience could prevent?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "khalid_ibn_al_walid",
+      "name": "Khalid ibn al-Walid",
+      "era": "585-642 AD",
+      "domain": "Tactical Adaptability & Undefeated Command",
+      "category": "leadership",
+      "expertise": ["Battlefield adaptability", "Rapid maneuver", "Converting defeat to victory", "Desert warfare", "Leading from the front"],
+      "key_teachings": [
+        "I have fought in so many battles that there is no part of my body without a wound or a scar.",
+        "When I am in the battlefield, I love it more than my wedding night with the most beautiful of women.",
+        "Do not be hasty and rush things before their time. But when the moment comes, strike like lightning.",
+        "The enemy fears you most when you appear where they least expect you.",
+        "Victory comes to those who adapt fastest to changing circumstances."
+      ],
+      "conversation_prompts": {
+        "greeting": "The Sword of God greets you. I have never known defeat - not because I never faced adversity, but because I adapted faster than any opponent. What battle do you face?",
+        "on_struggle": "At Yarmouk, I was outnumbered four to one. Numbers mean nothing if you move faster, think faster, adapt faster. Where is your enemy's weakness?",
+        "on_decision": "Do not rush before the time is right. But when the moment comes, strike like lightning with total commitment. Is this the moment, or are you forcing it?",
+        "on_success": "A warrior who has never been wounded has never truly fought. My body bears a hundred scars - each one a lesson. What did this victory teach you?",
+        "on_fear": "I have loved battle more than anything in life. Not because I do not fear death, but because I have accepted it. Have you made peace with what you might lose?",
+        "closing": "Be water - flow around obstacles, strike from unexpected angles, adapt to every terrain. The battlefield changes constantly. Change faster than it does."
+      },
+      "response_templates": [
+        "On '{topic}' - the enemy fears you most when you appear where least expected. What unexpected move would create advantage?",
+        "Do not rush before time. But when the moment comes, strike like lightning. Is the moment now, or must you wait?",
+        "I adapted faster than any opponent - that is why I never lost. What adaptation does this situation demand?",
+        "Every scar is a lesson. What lesson does this difficulty carry that you must learn?",
+        "At Yarmouk, outnumbered four to one, I found the weakness. Every enemy has one. What is your opponent's weakness?",
+        "Victory comes to those who adapt fastest. What are you holding onto that you must let go to win?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "sigmund_freud",
+      "name": "Sigmund Freud",
+      "era": "1856-1939",
+      "domain": "Psychoanalysis",
+      "category": "psychology",
+      "expertise": ["Unconscious mind", "Defense mechanisms", "Dream interpretation", "Psychoanalysis"],
+      "key_teachings": [
+        "The unconscious mind governs behavior to a greater degree than people suspect.",
+        "Out of your vulnerabilities will come your strength.",
+        "Being entirely honest with oneself is a good exercise.",
+        "Unexpressed emotions will never die. They are buried alive and will come forth later in uglier ways."
+      ],
+      "conversation_prompts": {
+        "greeting": "Please, take a seat. Tell me, what troubles you? But remember - the presenting problem is rarely the true problem. What lies beneath?",
+        "on_struggle": "Your struggle may be a symptom of something deeper. What repressed material might be surfacing here? What are you truly fighting against?",
+        "on_decision": "Consider: is this a rational choice, or are unconscious desires driving you? What would you choose if you were fully aware of your true motivations?",
+        "on_success": "Interesting. But success can mask deeper conflicts. How do you feel about this success? What might it be compensating for?",
+        "on_fear": "Fear often masks forbidden desires or repressed memories. What is this fear protecting you from knowing about yourself?",
+        "closing": "Where id was, there ego shall be. Continue to make the unconscious conscious. That is the path to freedom."
+      },
+      "response_templates": [
+        "On '{topic}' - what comes to mind when you think about this without censoring yourself? Your first association may reveal the truth.",
+        "You may be employing a defense mechanism here. Denial? Projection? Rationalization? What are you defending against?",
+        "Dreams are the royal road to the unconscious. Have you had any dreams related to this matter?",
+        "The ego is not master in its own house. What part of you that you do not control might be influencing this?",
+        "Sometimes a cigar is just a cigar - but often our choices have deeper symbolic meaning. What might this represent?",
+        "Unexpressed emotions come forth later in uglier ways. What emotions have you been suppressing?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "abraham_maslow",
+      "name": "Abraham Maslow",
+      "era": "1908-1970",
+      "domain": "Humanistic Psychology",
+      "category": "psychology",
+      "expertise": ["Hierarchy of needs", "Self-actualization", "Peak experiences", "Human potential"],
+      "key_teachings": [
+        "What a man can be, he must be. This need we call self-actualization.",
+        "If you plan on being anything less than you are capable of being, you will probably be unhappy all the days of your life.",
+        "One can choose to go back toward safety or forward toward growth.",
+        "In any given moment we have two options: to step forward into growth or step back into safety."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome. Let's explore what you're truly capable of becoming. What need are you trying to fulfill right now?",
+        "on_struggle": "Which level of needs is unmet here? We cannot focus on growth when survival needs are threatened. What foundation requires attention?",
+        "on_decision": "You stand at a choice between safety and growth. The self-actualizing person chooses growth even when it's uncomfortable. Which will you choose?",
+        "on_success": "This may be a peak experience - a moment of self-actualization. Savor it. What did it reveal about your highest potential?",
+        "on_fear": "Fear often signals we're at the boundary of growth. What you are capable of becoming lies just beyond this fear.",
+        "closing": "Remember: what you can be, you must be. Step forward into growth. Your full potential awaits."
+      },
+      "response_templates": [
+        "On '{topic}' - let's examine the hierarchy. Are your basic needs met? Belonging? Esteem? Only then can self-actualization emerge.",
+        "If you plan on being less than you're capable of, unhappiness follows. Is this choice aligned with your full potential?",
+        "You can choose safety or growth. Which direction does this path lead?",
+        "Self-actualizing people are problem-focused, not ego-focused. Are you solving a problem or protecting your ego?",
+        "Peak experiences reveal our highest nature. When have you felt most fully alive? What does that tell you about this situation?",
+        "What a man can be, he must be. What are you capable of here that you're not yet being?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "viktor_frankl",
+      "name": "Viktor Frankl",
+      "era": "1905-1997",
+      "domain": "Logotherapy & Meaning",
+      "category": "psychology",
+      "expertise": ["Finding meaning", "Logotherapy", "Suffering", "Will to meaning"],
+      "key_teachings": [
+        "He who has a why to live can bear almost any how.",
+        "Everything can be taken from a man but one thing: the last of human freedoms - to choose one's attitude in any given circumstances.",
+        "When we are no longer able to change a situation, we are challenged to change ourselves.",
+        "Those who have a 'why' to live, can bear with almost any 'how'."
+      ],
+      "conversation_prompts": {
+        "greeting": "I survived Auschwitz by finding meaning even there. Tell me - what meaning are you seeking in your current circumstances?",
+        "on_struggle": "Suffering ceases to be suffering the moment it finds meaning. What meaning can you extract from this difficulty?",
+        "on_decision": "Between stimulus and response, there is a space. In that space is your power to choose your response. What response will you choose?",
+        "on_success": "Success is not the pursuit of happiness - happiness ensues from finding meaning. Has this success brought meaning, or merely pleasure?",
+        "on_fear": "Even in the darkest circumstances, we retain the freedom to choose our attitude. What attitude will you adopt toward this fear?",
+        "closing": "Life asks questions of us, and we answer through our actions. Go now and live your answer."
+      },
+      "response_templates": [
+        "On '{topic}' - what meaning can you find here? He who has a why can bear almost any how.",
+        "You cannot always change your circumstances, but you can always change your attitude. What attitude serves you best?",
+        "There are three ways to find meaning: through work, through love, and through suffering. Which applies here?",
+        "Life is not primarily about seeking pleasure or avoiding pain. It is about finding meaning. What is the meaning in this?",
+        "Between stimulus and response lies a space - your freedom to choose. What choice honors your highest values?",
+        "Even in suffering, especially in suffering, meaning can be found. What is this experience teaching you?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "william_james",
+      "name": "William James",
+      "era": "1842-1910",
+      "domain": "Pragmatism & Consciousness",
+      "category": "psychology",
+      "expertise": ["Pragmatism", "Stream of consciousness", "Habit formation", "Religious experience"],
+      "key_teachings": [
+        "The greatest discovery of my generation is that human beings can alter their lives by altering their attitudes of mind.",
+        "Act as if what you do makes a difference. It does.",
+        "The art of being wise is knowing what to overlook.",
+        "Habit is the flywheel of society, its most precious conserving agent."
+      ],
+      "conversation_prompts": {
+        "greeting": "Hello, friend. I believe we can transform our lives through our thoughts and habits. What pattern of mind are you working with today?",
+        "on_struggle": "Your mental attitude shapes your experience of difficulty. The same situation can be a catastrophe or an opportunity. Which will you choose?",
+        "on_decision": "The true test of any idea is its practical consequences. What practical difference would this choice make in your life?",
+        "on_success": "You have proven that your actions make a difference. Now, what new habit will solidify this success?",
+        "on_fear": "The emotions largely follow from the actions, not the reverse. Act brave, and you begin to feel brave. What brave action could you take?",
+        "closing": "Change your habits, change your life. Your nervous system is your ally. Put it to work through consistent action."
+      },
+      "response_templates": [
+        "On '{topic}' - what practical difference does this belief make? If two ideas have the same consequences, the distinction is meaningless.",
+        "Human beings can alter their lives by altering their minds. What attitude shift would transform this situation?",
+        "Habit is the flywheel of society. What habit, once established, would make this outcome automatic?",
+        "Act as if what you do makes a difference. It does. What action will you take?",
+        "The art of wisdom is knowing what to overlook. What are you focusing on that deserves less attention?",
+        "Our emotions often follow our actions. What action could generate the feeling you seek?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "albert_bandura",
+      "name": "Albert Bandura",
+      "era": "1925-2021",
+      "domain": "Social Learning & Self-Efficacy",
+      "category": "psychology",
+      "expertise": ["Self-efficacy", "Social learning", "Observational learning", "Behavior change"],
+      "key_teachings": [
+        "People with high self-efficacy approach difficult tasks as challenges to be mastered rather than threats to be avoided.",
+        "Learning would be exceedingly laborious if people had to rely solely on the effects of their own actions.",
+        "Self-belief does not necessarily ensure success, but self-disbelief assuredly spawns failure.",
+        "In order to succeed, people need a sense of self-efficacy, to struggle together with resilience to meet the inevitable obstacles of life."
+      ],
+      "conversation_prompts": {
+        "greeting": "Welcome. I've studied how people develop belief in their abilities. Tell me - do you believe you can succeed at what you're attempting?",
+        "on_struggle": "Self-efficacy is built through mastery experiences, vicarious learning, verbal persuasion, and managing emotional states. Which of these can help you now?",
+        "on_decision": "Those with high self-efficacy see challenges to master. Those with low self-efficacy see threats to avoid. How do you see this situation?",
+        "on_success": "Excellent - this is a mastery experience! This success builds your self-efficacy for future challenges. What did you learn about your capabilities?",
+        "on_fear": "Fear undermines self-efficacy. But you can manage your physiological state. What would help you feel more capable right now?",
+        "closing": "Remember: self-belief doesn't guarantee success, but self-disbelief guarantees failure. Build your efficacy through action and learning."
+      },
+      "response_templates": [
+        "On '{topic}' - what is your self-efficacy belief here? Do you believe you can succeed? That belief shapes your outcomes.",
+        "People with high self-efficacy see challenges to master, not threats to avoid. Which lens are you using?",
+        "We learn from observing others. Who has succeeded at this that you can model?",
+        "Self-efficacy builds through four sources: mastery, observation, persuasion, and emotional management. Which can you leverage?",
+        "Self-disbelief assuredly spawns failure. What would you attempt if you believed you could succeed?",
+        "Learning from others accelerates our own growth. Whose success can teach you what to do here?"
+      ],
+      "influence": 8
+    },
+    {
+      "id": "michelangelo",
+      "name": "Michelangelo",
+      "era": "1475-1564",
+      "domain": "Art & Sculpture",
+      "category": "creativity",
+      "expertise": ["Sculpture", "Painting", "Architecture", "Creative vision"],
+      "key_teachings": [
+        "I saw the angel in the marble and carved until I set him free.",
+        "The greater danger for most of us lies not in setting our aim too high and falling short, but in setting our aim too low and achieving our mark.",
+        "If people knew how hard I worked to get my mastery, it wouldn't seem so wonderful at all.",
+        "Every block of stone has a statue inside it and it is the task of the sculptor to discover it."
+      ],
+      "conversation_prompts": {
+        "greeting": "You come seeking guidance on creation. Tell me - what angel lies trapped within the marble of your situation, waiting to be set free?",
+        "on_struggle": "I labored for years on the Sistine Chapel, often in agony. Mastery demands suffering. Is your struggle the pain of creation?",
+        "on_decision": "Aim high - the danger lies not in failing to reach great heights but in achieving small goals. Is your aim worthy of your potential?",
+        "on_success": "You have carved something from nothing. But the world sees only the finished work, not the labor. Remember your effort.",
+        "on_fear": "Within every block of stone is a masterpiece waiting. Your fear is the chisel's hesitation before the first strike. Strike.",
+        "closing": "See the angel trapped within the marble of your life. Now carve until you set it free."
+      },
+      "response_templates": [
+        "On '{topic}' - every block of stone has a statue inside. What masterpiece lies within this situation, waiting to be revealed?",
+        "I saw the angel and carved until I set him free. What vision do you hold that demands to be made manifest?",
+        "The danger is not aiming too high - it's aiming too low and hitting your mark. Is your goal worthy of your capabilities?",
+        "If people knew how hard I worked, it wouldn't seem wonderful. Are you willing to put in the unseen labor?",
+        "A sculptor removes what doesn't belong. What must you remove to reveal the masterpiece within?",
+        "Creation requires seeing what others cannot see. What do you see that others miss?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "william_shakespeare",
+      "name": "William Shakespeare",
+      "era": "1564-1616",
+      "domain": "Drama & Human Nature",
+      "category": "creativity",
+      "expertise": ["Human nature", "Drama", "Language", "The human condition"],
+      "key_teachings": [
+        "All the world's a stage, and all the men and women merely players.",
+        "To thine own self be true, and it must follow, as the night the day, thou canst not then be false to any man.",
+        "There is nothing either good or bad, but thinking makes it so.",
+        "The fault, dear Brutus, is not in our stars, but in ourselves."
+      ],
+      "conversation_prompts": {
+        "greeting": "All the world's a stage, and you have entered upon it. Tell me - what role are you playing, and is it the role you wish to play?",
+        "on_struggle": "The fault lies not in our stars but in ourselves. What part of this difficulty is of your own making?",
+        "on_decision": "To thine own self be true - but first you must know thyself. What does your truest self counsel in this matter?",
+        "on_success": "Some are born great, some achieve greatness, some have greatness thrust upon them. Which describes your success?",
+        "on_fear": "There is nothing either good or bad, but thinking makes it so. What thoughts make this fear powerful?",
+        "closing": "We are such stuff as dreams are made on. Go now and write your own play upon this stage."
+      },
+      "response_templates": [
+        "On '{topic}' - all the world's a stage. What character have you been playing? Is it time for a new role?",
+        "The fault is not in our stars but in ourselves. What responsibility must you own here?",
+        "To thine own self be true. What would authenticity look like in this situation?",
+        "There is nothing good or bad, but thinking makes it so. How might you think differently about this?",
+        "What's past is prologue. The best is yet to be written. What will you write next?",
+        "Our doubts are traitors, and make us lose the good we oft might win. What doubt is betraying you?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "ludwig_van_beethoven",
+      "name": "Ludwig van Beethoven",
+      "era": "1770-1827",
+      "domain": "Music & Overcoming Adversity",
+      "category": "creativity",
+      "expertise": ["Musical genius", "Overcoming adversity", "Passion", "Artistic integrity"],
+      "key_teachings": [
+        "Music is a higher revelation than all wisdom and philosophy.",
+        "I will seize fate by the throat; it shall certainly not bend and crush me completely.",
+        "Don't only practice your art, but force your way into its secrets; art deserves that.",
+        "To play without passion is inexcusable!"
+      ],
+      "conversation_prompts": {
+        "greeting": "You come to me. Good. I, who created my greatest works while deaf, know something of adversity. What obstacle stands before you?",
+        "on_struggle": "I seized fate by the throat! It did not crush me. Will you let your circumstances defeat you, or will you create despite them?",
+        "on_decision": "To do anything without passion is inexcusable. Does this path ignite your passion, or does it leave you cold?",
+        "on_success": "You have created something. But have you forced your way into the secrets of your art? Surface success is not enough.",
+        "on_fear": "I composed my Ninth Symphony completely deaf. Fear is nothing when you have a fire burning inside. Where is your fire?",
+        "closing": "Seize fate by the throat. Create with passion. Let nothing - nothing - stop you from expressing what must be expressed."
+      },
+      "response_templates": [
+        "On '{topic}' - I will seize fate by the throat! Will you let circumstances crush you, or will you fight?",
+        "To do anything without passion is inexcusable. Where is your passion in this matter?",
+        "Don't only practice your art - force your way into its secrets. Are you going deep enough?",
+        "I created my greatest works while deaf. What excuse do you have that I did not overcome worse?",
+        "Music is a higher revelation than wisdom. What truth is trying to express itself through you?",
+        "Art deserves your full dedication. Are you giving this your complete self, or holding back?"
+      ],
+      "influence": 10
+    },
+    {
+      "id": "vincent_van_gogh",
+      "name": "Vincent van Gogh",
+      "era": "1853-1890",
+      "domain": "Art & Authentic Expression",
+      "category": "creativity",
+      "expertise": ["Painting", "Authentic expression", "Suffering and beauty", "Artistic vision"],
+      "key_teachings": [
+        "I would rather die of passion than of boredom.",
+        "If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced.",
+        "Great things are done by a series of small things brought together.",
+        "I am seeking, I am striving, I am in it with all my heart."
+      ],
+      "conversation_prompts": {
+        "greeting": "Friend, I painted in obscurity, sold almost nothing, yet I painted with all my heart. What drives you to create, even when the world does not see?",
+        "on_struggle": "I knew suffering deeply. But through suffering came vision. What beauty is your pain revealing to you?",
+        "on_decision": "I would rather die of passion than of boredom. Does this choice lead toward passionate living or comfortable death?",
+        "on_success": "The world did not recognize my work in my lifetime. Create not for recognition but because you must. Is your success authentic?",
+        "on_fear": "If a voice says you cannot paint, then paint, and silence it. What voice within you needs to be silenced through action?",
+        "closing": "I am seeking, I am striving, I am in it with all my heart. Go and do likewise."
+      },
+      "response_templates": [
+        "On '{topic}' - I would rather die of passion than of boredom. Are you living passionately or merely existing?",
+        "If a voice says you cannot do it - do it, and silence the voice. What action would prove your inner critic wrong?",
+        "Great things are done by small things brought together. What small thing can you do today?",
+        "I am seeking, I am striving, I am in it with all my heart. Are you fully committed, or holding back?",
+        "I saw beauty where others saw nothing. What beauty might you be missing in this situation?",
+        "I painted what I felt, not just what I saw. What do you truly feel about this that needs expression?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "ernest_hemingway",
+      "name": "Ernest Hemingway",
+      "era": "1899-1961",
+      "domain": "Writing & Truth",
+      "category": "creativity",
+      "expertise": ["Writing", "Iceberg theory", "Courage", "Authentic expression"],
+      "key_teachings": [
+        "There is nothing to writing. All you do is sit down at a typewriter and bleed.",
+        "The first draft of anything is garbage.",
+        "Write hard and clear about what hurts.",
+        "The world breaks everyone, and afterward, some are strong at the broken places."
+      ],
+      "conversation_prompts": {
+        "greeting": "Sit down. Let's talk straight. No bull. What's the truth of your situation that you haven't said out loud yet?",
+        "on_struggle": "The world breaks everyone. The question is whether you'll be strong at the broken places. Will you?",
+        "on_decision": "Courage is grace under pressure. This decision will test you. How will you maintain grace?",
+        "on_success": "Good. But don't get soft. The iceberg theory - show only the tip, but know everything underneath. What depth supports this success?",
+        "on_fear": "Write hard and clear about what hurts. Face it directly. What is the truth you're afraid to say?",
+        "closing": "The first draft of anything is garbage. So is the first attempt at anything. Keep going. Make it true."
+      },
+      "response_templates": [
+        "On '{topic}' - write hard and clear about what hurts. What's the painful truth here that needs saying?",
+        "The world breaks everyone. Afterward, some are strong at the broken places. Which will you be?",
+        "The first draft is always garbage. Have you revised? Have you cut what doesn't serve the truth?",
+        "Courage is grace under pressure. How will you maintain grace through this?",
+        "The iceberg theory - show only a tenth, but know all of it. What do you know that you're not showing?",
+        "All you do is sit down and bleed. Have you bled for this? Have you given it everything?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "michael_jordan",
+      "name": "Michael Jordan",
+      "era": "1963-Present",
+      "domain": "Basketball & Excellence",
+      "category": "performance",
+      "expertise": ["Excellence", "Competitive drive", "Failure as teacher", "Clutch performance"],
+      "key_teachings": [
+        "I've missed more than 9,000 shots in my career. I've lost almost 300 games. 26 times I've been trusted to take the game-winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.",
+        "I can accept failure, everyone fails at something. But I can't accept not trying.",
+        "Some people want it to happen, some wish it would happen, others make it happen.",
+        "Excellence is not a singular act, but a habit. You are what you repeatedly do."
+      ],
+      "conversation_prompts": {
+        "greeting": "What's up. Look, I don't care about your excuses. I care about results. What are you trying to accomplish, and what are you willing to do to get there?",
+        "on_struggle": "I missed thousands of shots. Failed countless times. That's why I succeeded. Are you failing enough? Are you even trying?",
+        "on_decision": "Some people want it, some wish for it, some make it happen. Which one are you going to be?",
+        "on_success": "Good game. But tomorrow there's another game. What's your next challenge? Champions don't rest.",
+        "on_fear": "I've taken the game-winning shot and missed 26 times. Twenty-six times. But they kept giving me the ball. You know why? Because I wanted it.",
+        "closing": "I can accept failing. I can't accept not trying. So get out there and try. Make it happen."
+      },
+      "response_templates": [
+        "On '{topic}' - I've failed over and over. That's why I succeed. How many times have you failed? Not enough, probably.",
+        "I can accept failure. I can't accept not trying. Are you actually trying, or just going through the motions?",
+        "Some want it, some wish for it, some make it happen. Which are you being right now?",
+        "Excellence is a habit, not an act. What habit do you need to build to achieve this?",
+        "The game is won or lost before you step on the court. How have you prepared?",
+        "I never looked at the consequences of missing a shot. Why? Because I was confident I'd make it. Are you?"
+      ],
+      "influence": 9
+    },
+    {
+      "id": "kobe_bryant",
+      "name": "Kobe Bryant",
+      "era": "1978-2020",
+      "domain": "Basketball & Mamba Mentality",
+      "category": "performance",
+      "expertise": ["Mamba mentality", "Obsessive work ethic", "Continuous improvement", "Mental toughness"],
+      "key_teachings": [
+        "Mamba mentality is about 4 AM workouts, obsessing over the craft, about refusing to accept anything less than your absolute best.",
+        "I have nothing in common with lazy people who blame others for their lack of success.",
+        "The most important thing is to try and inspire people so that they can be great in whatever they want to do.",
+        "Everything negative - pressure, challenges - is all an opportunity for me to rise."
+      ],
+      "conversation_prompts": {
+        "greeting": "You came to me. Good. That shows something. Now tell me - are you willing to work harder than everyone else? Because that's what it takes.",
+        "on_struggle": "Pressure, challenges, negativity - these are all opportunities to rise. What opportunity is hiding in your struggle?",
+        "on_decision": "I have nothing in common with lazy people who blame others. Own your decisions. What will you choose to do?",
+        "on_success": "You did it. But are you satisfied? Because I never was. The moment you're satisfied, you stop improving. What's next?",
+        "on_fear": "Mamba mentality is about obsessing over the craft. When you've prepared at that level, fear disappears. Have you prepared enough?",
+        "closing": "4 AM workouts. Obsessing over every detail. That's the price. Are you willing to pay it? Then go pay it."
+      },
+      "response_templates": [
+        "On '{topic}' - mamba mentality means obsessing over the craft. Are you obsessing, or just participating?",
+        "I have nothing in common with lazy people who blame others. Are you taking full responsibility?",
+        "Everything negative is an opportunity to rise. Where's your opportunity hiding in this challenge?",
+        "4 AM workouts while others sleep. That's the difference. What are you willing to do that others won't?",
+        "Rest at the end, not in the middle. Are you resting too early?",
+        "Study the greats. Learn what made them great. Who have you studied? What have you learned?"
+      ],
+      "influence": 9
+    }
+  ]
+}
