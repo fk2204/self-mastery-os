@@ -2824,7 +2824,7 @@
                 const response = generateMentorResponse(message);
                 addMessage(response, 'mentor');
                 currentSession.messages.push({ role: 'mentor', content: response });
-            }, 1500 + Math.random() * 1000);
+            }, 300 + Math.random() * 200);
         }
 
         // Add message to chat
