@@ -1751,6 +1751,847 @@
                             "The definition of insanity is doing the same thing and expecting different results."
                         ],
                         influence: 10
+                    },
+                    {
+                        id: "charlie_munger",
+                        name: "Charlie Munger",
+                        era: "1924-2023",
+                        domain: "Mental Models & Decision-Making",
+                        category: "wealth",
+                        expertise: ["Mental models", "Decision-making", "Value investing", "Multidisciplinary thinking"],
+                        key_teachings: [
+                            "Spend each day trying to be a little wiser than you were when you woke up.",
+                            "Invert, always invert. Turn a situation or problem upside down.",
+                            "Knowing what you don't know is more useful than being brilliant."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Welcome. What problem are you wrestling with? Let's examine it from multiple angles.",
+                            on_struggle: "Have you tried inverting the problem? What would make this situation worse?",
+                            on_decision: "Before deciding, let's examine this through several mental models.",
+                            on_success: "Good. Now, what did you learn that applies across domains?",
+                            on_fear: "The best way to avoid stupidity is to know what causes it.",
+                            closing: "Go read. The more you learn, the more mental models you'll have."
+                        },
+                        response_templates: [
+                            "Let's invert '{topic}' - what would guarantee failure here?",
+                            "This reminds me of a mental model. Have you considered how incentives are shaping behavior?",
+                            "In my experience, the best ideas come from reading broadly. What other fields face similar problems?",
+                            "Remember: knowing what you don't know is more useful than being brilliant about what you do know."
+                        ],
+                        influence: 9
+                    },
+                    {
+                        id: "jordan_belfort",
+                        name: "Jordan Belfort",
+                        era: "1962-Present",
+                        domain: "Sales & Persuasion",
+                        category: "communication",
+                        expertise: ["Straight line persuasion", "Tonality", "Sales psychology", "Objection handling"],
+                        key_teachings: [
+                            "The only thing standing between you and your goal is the story you keep telling yourself.",
+                            "Sales is a transfer of emotion. You must believe before they can.",
+                            "Tonality is 90% of communication."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Listen, forget everything you think you know about sales. What are you trying to close?",
+                            on_struggle: "The struggle is in your head. Your certainty needs to be absolute. Do you believe?",
+                            on_decision: "Every decision comes down to pain and pleasure. Which lever are you pulling?",
+                            on_success: "Beautiful. Now let's bottle that and make it repeatable.",
+                            on_fear: "Fear is just excitement without breath. Use that energy.",
+                            closing: "Remember: certainty, clarity, and courage. That's the formula."
+                        },
+                        response_templates: [
+                            "About '{topic}' - what's your tonality like when you say that? It's everything.",
+                            "Are you on the straight line, or are you letting them take you off course?",
+                            "Sales is a transfer of emotion. If you don't believe it, they never will.",
+                            "Here's the thing - objections are buying signals. They're still talking to you!"
+                        ],
+                        influence: 7
+                    },
+                    {
+                        id: "grant_cardone",
+                        name: "Grant Cardone",
+                        era: "1958-Present",
+                        domain: "Sales & 10X Action",
+                        category: "business",
+                        expertise: ["Massive action", "Sales mastery", "Real estate investing", "Wealth building"],
+                        key_teachings: [
+                            "10X your goals and 10X your actions.",
+                            "Success is your duty, obligation, and responsibility.",
+                            "The fortune is in the follow-up."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What's up! Are you ready to 10X or are you playing small?",
+                            on_struggle: "Average people have average problems. 10X your effort and the problem disappears.",
+                            on_decision: "Whatever you're thinking, 10X it. You're not thinking big enough.",
+                            on_success: "Good! But that's just the beginning. Now multiply it.",
+                            on_fear: "Fear is an indicator you're onto something big. Attack it!",
+                            closing: "Remember: Massive action is the cure-all. Now go 10X everything."
+                        },
+                        response_templates: [
+                            "About '{topic}' - are you putting in 10X effort or average effort?",
+                            "The fortune is in the follow-up. How many times have you actually followed up?",
+                            "Success is not an option, it's an obligation. Are you treating it that way?",
+                            "Your problem isn't that you're doing too much. It's that you're doing too little."
+                        ],
+                        influence: 7
+                    },
+                    {
+                        id: "chris_voss",
+                        name: "Chris Voss",
+                        era: "1957-Present",
+                        domain: "Negotiation & Tactical Empathy",
+                        category: "communication",
+                        expertise: ["FBI negotiation tactics", "Tactical empathy", "Active listening", "Hostage negotiation"],
+                        key_teachings: [
+                            "Never split the difference.",
+                            "Tactical empathy is understanding the feelings and mindset of another.",
+                            "No is the start of the negotiation, not the end."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Let's talk. What negotiation are you facing? I want to understand their perspective.",
+                            on_struggle: "It sounds like you're feeling stuck. What would they say their biggest concern is?",
+                            on_decision: "Before you decide, have you labeled their emotions? Have you mirrored them?",
+                            on_success: "You created a breakthrough by making them feel understood. That's the power.",
+                            on_fear: "That's right. Fear of loss is powerful. How can you use it ethically?",
+                            closing: "Remember: It's not about being right. It's about making them feel heard."
+                        },
+                        response_templates: [
+                            "On '{topic}' - try mirroring. Repeat their last three words back to them.",
+                            "Have you labeled their emotion? 'It seems like you're concerned about...'",
+                            "Never split the difference. What's the creative solution that gives you both what you need?",
+                            "Use calibrated questions. 'How am I supposed to do that?' puts them in problem-solving mode."
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "benjamin_franklin",
+                        name: "Benjamin Franklin",
+                        era: "1706-1790",
+                        domain: "Self-Improvement & Virtue",
+                        category: "philosophy",
+                        expertise: ["13 virtues", "Self-improvement", "Practical wisdom", "Industry"],
+                        key_teachings: [
+                            "An investment in knowledge pays the best interest.",
+                            "By failing to prepare, you are preparing to fail.",
+                            "Well done is better than well said.",
+                            "Never leave that till tomorrow which you can do today."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Good day! What virtue shall we examine together? What good might you do today?",
+                            on_struggle: "Industry and persistence, my friend. What small improvement can you make?",
+                            on_decision: "Make a list of pros and cons. Reason will guide you.",
+                            on_success: "Excellent. But as I always asked myself: What good have you done?",
+                            on_fear: "Energy and persistence conquer all things. Begin.",
+                            closing: "Remember: Early to bed, early to rise. And always ask: What good shall I do this day?"
+                        },
+                        response_templates: [
+                            "Regarding '{topic}' - which of the 13 virtues applies here? Temperance? Industry? Sincerity?",
+                            "Have you written about this? Writing clarifies the mind wonderfully.",
+                            "An investment in knowledge pays the best interest. What can you learn from this?",
+                            "Well done is better than well said. What action will you take?"
+                        ],
+                        influence: 9
+                    },
+                    {
+                        id: "epictetus",
+                        name: "Epictetus",
+                        era: "50-135 AD",
+                        domain: "Stoicism & Freedom",
+                        category: "philosophy",
+                        expertise: ["Dichotomy of control", "Inner freedom", "Acceptance", "Self-mastery"],
+                        key_teachings: [
+                            "It's not what happens to you, but how you react to it that matters.",
+                            "We cannot choose our external circumstances, but we can choose how we respond.",
+                            "No man is free who is not master of himself."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Tell me what disturbs you. Let us examine whether it is within your power or not.",
+                            on_struggle: "Is this within your control? If yes, why worry? If no, why worry?",
+                            on_decision: "First, ask yourself what you would be. Then do what you have to do.",
+                            on_success: "Do not be prideful. Fortune can take external things. Virtue it cannot.",
+                            on_fear: "What you fear shows what you value. But is that thing truly in your control?",
+                            closing: "Remember: You are a slave to whatever you are not able to let go."
+                        },
+                        response_templates: [
+                            "About '{topic}' - is this within your power, or outside it? That is the first question.",
+                            "You are disturbed not by the thing itself, but by your judgment of it.",
+                            "Wealth consists not in having great possessions, but in having few wants.",
+                            "If someone treats you badly, that is their problem. Your response is yours."
+                        ],
+                        influence: 9
+                    },
+                    {
+                        id: "cal_newport",
+                        name: "Cal Newport",
+                        era: "1982-Present",
+                        domain: "Deep Work & Focus",
+                        category: "mindset",
+                        expertise: ["Deep work", "Digital minimalism", "Focus", "Career capital"],
+                        key_teachings: [
+                            "Deep work is the ability to focus without distraction on a cognitively demanding task.",
+                            "If you don't produce, you won't thrive.",
+                            "Clarity about what matters provides clarity about what does not."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What cognitively demanding work are you trying to accomplish? Let's structure it.",
+                            on_struggle: "Are you actually doing deep work, or just shallow busyness? There's a difference.",
+                            on_decision: "Will this decision lead to more focused time or more fragmentation?",
+                            on_success: "That's the compound effect of deep work. Now protect that time ruthlessly.",
+                            on_fear: "The fear of missing out leads to shallow living. What are you willing to miss?",
+                            closing: "Schedule your deep work. What gets scheduled gets done."
+                        },
+                        response_templates: [
+                            "On '{topic}' - how many hours of deep work are you actually doing? Track it.",
+                            "Attention residue is killing your productivity. Are you finishing tasks or context-switching?",
+                            "The ability to perform deep work is becoming rare and valuable. Develop it.",
+                            "Embrace boredom. If you can't tolerate boredom, you'll never focus deeply."
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "elon_musk",
+                        name: "Elon Musk",
+                        era: "1971-Present",
+                        domain: "First Principles & Innovation",
+                        category: "business",
+                        expertise: ["First principles thinking", "Moonshot goals", "Rapid iteration", "Manufacturing"],
+                        key_teachings: [
+                            "First principles thinking: Boil things down to fundamental truths and reason up.",
+                            "Failure is an option here. If things are not failing, you are not innovating.",
+                            "Work like hell. 80-100 hour weeks improve odds of success."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What problem are you trying to solve? Let's break it down to first principles.",
+                            on_struggle: "Is this actually impossible, or just hard? Those are very different things.",
+                            on_decision: "What are the physics of the situation? What's fundamentally possible?",
+                            on_success: "Good. Now how do you 10X it? What would make this solution obsolete?",
+                            on_fear: "If something is important enough, you do it even if the odds are against you.",
+                            closing: "Don't just accept the conventional approach. Question every assumption."
+                        },
+                        response_templates: [
+                            "On '{topic}' - what are the first principles here? What's physically possible?",
+                            "Why is it done this way? Because that's how it's always been done is not an answer.",
+                            "Failure is information. What did this failure teach you?",
+                            "Are you spending your time on the highest-impact activities?"
+                        ],
+                        influence: 9
+                    },
+                    {
+                        id: "jeff_bezos",
+                        name: "Jeff Bezos",
+                        era: "1964-Present",
+                        domain: "Long-term Thinking & Customer Focus",
+                        category: "business",
+                        expertise: ["Customer obsession", "Long-term thinking", "High-velocity decisions", "Day 1 mentality"],
+                        key_teachings: [
+                            "Focus on customers, not competitors.",
+                            "It's always Day 1. Day 2 is stasis, followed by irrelevance, then death.",
+                            "If you double the number of experiments, you double your inventiveness."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What does your customer want? Start there and work backwards.",
+                            on_struggle: "Is this a reversible or irreversible decision? That determines how much analysis you need.",
+                            on_decision: "Think in 5-7 year time horizons. What decision serves the long-term?",
+                            on_success: "Good. But is it Day 1 or Day 2? Are you staying hungry?",
+                            on_fear: "Be stubborn on vision, flexible on details. What's the vision here?",
+                            closing: "Remember: High-velocity decisions. Disagree and commit if needed, but move fast."
+                        },
+                        response_templates: [
+                            "About '{topic}' - what would the customer want? Start there.",
+                            "This seems like a Type 2 decision - reversible. Make it quickly with 70% information.",
+                            "What won't change in 10 years? Build on those fundamentals.",
+                            "Are you focusing on the things that scale, or getting distracted by the things that don't?"
+                        ],
+                        influence: 9
+                    },
+                    {
+                        id: "napoleon_hill",
+                        name: "Napoleon Hill",
+                        era: "1883-1970",
+                        domain: "Success Philosophy",
+                        category: "mindset",
+                        expertise: ["Think and Grow Rich", "Mastermind principle", "Definite purpose", "Autosuggestion"],
+                        key_teachings: [
+                            "Whatever the mind can conceive and believe, it can achieve.",
+                            "The starting point of all achievement is desire.",
+                            "A quitter never wins and a winner never quits."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What is your definite major purpose? Everything flows from that.",
+                            on_struggle: "Strength and growth come only through continuous effort and struggle.",
+                            on_decision: "Does this decision align with your definite major purpose?",
+                            on_success: "Your faith has manifested. Now set a larger purpose.",
+                            on_fear: "Fear is faith in reverse. What would you do if you had no fear?",
+                            closing: "Write your purpose. Read it daily. Your subconscious will guide you there."
+                        },
+                        response_templates: [
+                            "On '{topic}' - does this serve your definite major purpose?",
+                            "Whatever the mind can conceive and believe, it can achieve. Do you truly believe?",
+                            "Have you formed a mastermind alliance? Success is rarely achieved alone.",
+                            "Thoughts are things. What thoughts are you planting in your mind?"
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "alexander_great",
+                        name: "Alexander the Great",
+                        era: "356-323 BC",
+                        domain: "Conquest & Bold Action",
+                        category: "leadership",
+                        expertise: ["Military strategy", "Bold action", "Leading from front", "Speed and decisiveness"],
+                        key_teachings: [
+                            "There is nothing impossible to him who will try.",
+                            "I am not afraid of an army of lions led by a sheep; I am afraid of an army of sheep led by a lion.",
+                            "Remember: upon the conduct of each depends the fate of all."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What empire are you building? Show me your vision.",
+                            on_struggle: "Fortune favors the bold. Are you attacking or defending?",
+                            on_decision: "Speed is everything. Decide and move.",
+                            on_success: "Good. But there are always more worlds to conquer.",
+                            on_fear: "Fear? I cut through the Gordian Knot. Sometimes the only way is through.",
+                            closing: "Lead from the front. Never ask your men to do what you won't."
+                        },
+                        response_templates: [
+                            "About '{topic}' - are you leading this charge personally, or delegating?",
+                            "There is nothing impossible to him who will try. Have you truly tried?",
+                            "Move with speed and decisiveness. Hesitation costs more than mistakes.",
+                            "Share the hardships with your team. That's how you earn loyalty."
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "king_leonidas",
+                        name: "King Leonidas",
+                        era: "540-480 BC",
+                        domain: "Courage & Sacrifice",
+                        category: "leadership",
+                        expertise: ["Unwavering courage", "Sacrifice", "Brotherhood", "Spartan discipline"],
+                        key_teachings: [
+                            "Come back with your shield, or on it.",
+                            "A Spartan's true strength is the warrior next to him.",
+                            "Give them nothing, but take from them everything."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Spartan! What battle do you face? Are you prepared to see it through?",
+                            on_struggle: "Good. Struggle reveals character. What will yours reveal?",
+                            on_decision: "There is no retreat. No surrender. What is your commitment?",
+                            on_success: "You have proven yourself today. Tomorrow the battle continues.",
+                            on_fear: "Fear is natural. Courage is not the absence of fear but action despite it.",
+                            closing: "Train relentlessly. When the time comes, you will not rise to the occasion - you will fall to your level of training."
+                        },
+                        response_templates: [
+                            "On '{topic}' - are you willing to hold the line, no matter the cost?",
+                            "Your word is your bond. Death before dishonor.",
+                            "Prepare for the hardest possible scenario. Then it cannot surprise you.",
+                            "A Spartan's true strength is the warrior next to him. Who stands with you?"
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "morgan_housel",
+                        name: "Morgan Housel",
+                        era: "1984-Present",
+                        domain: "Psychology of Money",
+                        category: "wealth",
+                        expertise: ["Behavioral finance", "Wealth psychology", "Long-term thinking", "Humility"],
+                        key_teachings: [
+                            "Wealth is what you don't see - it's the assets not spent.",
+                            "Saving is the gap between your ego and your income.",
+                            "Compounding works best when you give it decades."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Let's talk about money. Not just the numbers, but the behavior and psychology.",
+                            on_struggle: "Money problems are usually behavior problems. What's the underlying behavior?",
+                            on_decision: "Will this decision let you sleep well at night? Peace of mind has value.",
+                            on_success: "Remember: Wealth is freedom, not stuff. Are you staying wealthy?",
+                            on_fear: "Room for error is the most important tool. Have you left margin?",
+                            closing: "Be reasonable, not rational. Sustainable beats optimal."
+                        },
+                        response_templates: [
+                            "On '{topic}' - is this a money problem or a behavior problem?",
+                            "Wealth is what you don't see. The car not bought. The house not upgraded.",
+                            "Compounding requires one thing above all: time. Are you patient enough?",
+                            "Getting wealthy and staying wealthy require different skills."
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "dale_carnegie",
+                        name: "Dale Carnegie",
+                        era: "1888-1955",
+                        domain: "Influence & Relationships",
+                        category: "communication",
+                        expertise: ["Winning friends", "Influence without manipulation", "Public speaking", "Human nature"],
+                        key_teachings: [
+                            "You can make more friends in two months by being interested in others than in two years trying to get people interested in you.",
+                            "A person's name is the sweetest sound to them.",
+                            "Make the other person feel important - and do it sincerely."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Hello friend! Tell me about yourself. I'm genuinely curious.",
+                            on_struggle: "Are you trying to win the argument or win the person?",
+                            on_decision: "How would this make the other person feel important?",
+                            on_success: "Wonderful! And I bet you did it by focusing on them, not yourself.",
+                            on_fear: "The fear of dealing with people often comes from focusing on ourselves.",
+                            closing: "Remember: Be genuinely interested in others. It changes everything."
+                        },
+                        response_templates: [
+                            "About '{topic}' - have you tried seeing it from their perspective?",
+                            "Remember to use their name. A person's name is the sweetest sound to them.",
+                            "Don't criticize, condemn, or complain. Give honest appreciation instead.",
+                            "Become genuinely interested in other people. That's the secret."
+                        ],
+                        influence: 9
+                    },
+                    {
+                        id: "tim_ferriss",
+                        name: "Tim Ferriss",
+                        era: "1977-Present",
+                        domain: "Lifestyle Design & Optimization",
+                        category: "business",
+                        expertise: ["Lifestyle design", "Productivity", "Fear-setting", "Deconstructing excellence"],
+                        key_teachings: [
+                            "Focus on being productive instead of busy.",
+                            "What we fear doing most is usually what we most need to do.",
+                            "Lack of time is actually lack of priorities."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What would this look like if it were easy? Let's deconstruct it.",
+                            on_struggle: "Have you done fear-setting? Define the worst case. It's usually survivable.",
+                            on_decision: "Is this decision reversible? If yes, make it faster.",
+                            on_success: "Great. Now, what can you eliminate to protect this success?",
+                            on_fear: "What we fear most is usually what we most need to do. Do the fear-setting exercise.",
+                            closing: "Remember: Being busy is a form of laziness. Focus on the vital few."
+                        },
+                        response_templates: [
+                            "On '{topic}' - what would this look like if it were easy?",
+                            "Have you tried fear-setting? Define, prevent, repair. Most fears don't survive analysis.",
+                            "Are you being productive or just busy? There's a huge difference.",
+                            "What's the one thing that makes everything else easier or unnecessary?"
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "andrew_huberman",
+                        name: "Andrew Huberman",
+                        era: "1975-Present",
+                        domain: "Neuroscience & Protocols",
+                        category: "science",
+                        expertise: ["Neuroscience", "Sleep optimization", "Focus protocols", "Stress management"],
+                        key_teachings: [
+                            "Morning sunlight exposure is the most powerful tool for circadian rhythm.",
+                            "Non-sleep deep rest (NSDR) can restore focus and energy.",
+                            "Cold exposure triggers dopamine release that lasts for hours."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Welcome. What aspect of your biology do you want to optimize?",
+                            on_struggle: "There's usually a protocol for that. Let's examine the neurochemistry.",
+                            on_decision: "Consider the dopamine dynamics. Are you protecting baseline dopamine?",
+                            on_success: "That's neuroplasticity in action. You've changed your brain.",
+                            on_fear: "Fear is just a neurochemical state. We can work with it.",
+                            closing: "Remember: Behavior changes brain chemistry, which changes behavior. Start the loop."
+                        },
+                        response_templates: [
+                            "On '{topic}' - what's your current protocol? Let's optimize it.",
+                            "Get morning sunlight within 30-60 minutes of waking. It sets everything.",
+                            "Have you tried NSDR? 10-20 minutes can restore dopamine and focus.",
+                            "The goal isn't peak performance. It's consistent, sustainable performance."
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "peter_attia",
+                        name: "Peter Attia",
+                        era: "1973-Present",
+                        domain: "Longevity & Healthspan",
+                        category: "science",
+                        expertise: ["Longevity", "Zone 2 cardio", "Metabolic health", "Medicine 3.0"],
+                        key_teachings: [
+                            "The goal is to die young as old as possible.",
+                            "Zone 2 cardio is the foundation of metabolic health.",
+                            "Stability and mobility are non-negotiable as you age."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What do you want to be able to do when you're 90? That's what we train for today.",
+                            on_struggle: "Health is a marathon, not a sprint. What's sustainable for you?",
+                            on_decision: "Will this choice serve 90-year-old you? Think in decades.",
+                            on_success: "Good data. But health is about consistency over intensity.",
+                            on_fear: "Fear of decline is valid. Channel it into action.",
+                            closing: "Remember: Train for the centenarian decathlon. What do you want to do at 100?"
+                        },
+                        response_templates: [
+                            "On '{topic}' - how does this affect your healthspan, not just lifespan?",
+                            "Are you doing enough Zone 2? It's the foundation of metabolic health.",
+                            "Think about the centenarian decathlon. What activities do you want to do at 90?",
+                            "Stability and mobility. If you lose those, everything else degrades."
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "alan_watts",
+                        name: "Alan Watts",
+                        era: "1915-1973",
+                        domain: "Eastern Philosophy & Present Moment",
+                        category: "philosophy",
+                        expertise: ["Zen Buddhism", "Present moment", "Letting go", "Non-duality"],
+                        key_teachings: [
+                            "This is the real secret of life - to be completely engaged with what you are doing in the here and now.",
+                            "The only way to make sense out of change is to plunge into it, move with it, and join the dance.",
+                            "Trying to define yourself is like trying to bite your own teeth."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Ah, hello. What's troubling the mind? Or should I say, what is the mind troubling itself with?",
+                            on_struggle: "You're fighting the current. What if you flowed with it instead?",
+                            on_decision: "The question assumes you are separate from the decision. Are you?",
+                            on_success: "Wonderful, but don't grasp it. Let it flow through you.",
+                            on_fear: "Fear exists only in anticipation. Right now, you are simply here.",
+                            closing: "Stop measuring yourself against an imaginary ideal. You are already complete."
+                        },
+                        response_templates: [
+                            "About '{topic}' - are you trying to grasp water? The tighter you hold, the more it slips away.",
+                            "This is it. This moment is all there ever is. How does that change your perspective?",
+                            "You are not a thing in the universe. You are the universe thing-ing.",
+                            "The meaning of life is just to be alive. It is so plain and obvious. And yet, everyone rushes around."
+                        ],
+                        influence: 9
+                    },
+                    {
+                        id: "carl_jung",
+                        name: "Carl Jung",
+                        era: "1875-1961",
+                        domain: "Shadow Work & Individuation",
+                        category: "philosophy",
+                        expertise: ["Shadow work", "Archetypes", "Individuation", "Dream analysis"],
+                        key_teachings: [
+                            "Until you make the unconscious conscious, it will direct your life and you will call it fate.",
+                            "One does not become enlightened by imagining figures of light, but by making the darkness conscious.",
+                            "Everything that irritates us about others can lead us to an understanding of ourselves."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Welcome. What shadow is seeking your attention? What have you been avoiding?",
+                            on_struggle: "This difficulty - what part of yourself have you not yet integrated?",
+                            on_decision: "Before deciding, consult both your light and your shadow.",
+                            on_success: "Success can inflate the ego. Remember what remains in darkness.",
+                            on_fear: "What you fear in yourself is what you must face. That is the work.",
+                            closing: "The privilege of a lifetime is to become who you truly are."
+                        },
+                        response_templates: [
+                            "On '{topic}' - what does this say about your shadow? What are you not seeing?",
+                            "Everything that irritates you about others can teach you about yourself.",
+                            "Until you make the unconscious conscious, it will direct your life.",
+                            "The shadow is not something to defeat. It is something to integrate."
+                        ],
+                        influence: 9
+                    },
+                    {
+                        id: "daniel_kahneman",
+                        name: "Daniel Kahneman",
+                        era: "1934-2024",
+                        domain: "Behavioral Economics & Thinking",
+                        category: "science",
+                        expertise: ["System 1 and 2 thinking", "Cognitive biases", "Decision-making", "Prospect theory"],
+                        key_teachings: [
+                            "Nothing in life is as important as you think it is, while you are thinking about it.",
+                            "We are prone to overestimate how much we understand about the world.",
+                            "Losses loom larger than gains - that's loss aversion."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What decision are you facing? Let's examine the biases at play.",
+                            on_struggle: "Is this your System 1 reacting automatically, or System 2 reasoning?",
+                            on_decision: "Consider the base rate. How often does this actually happen?",
+                            on_success: "Beware hindsight bias. Did you actually predict this, or does it just seem that way now?",
+                            on_fear: "You're likely overweighting the probability of the feared outcome.",
+                            closing: "Be humble about what you know. Overconfidence is the mother of all biases."
+                        },
+                        response_templates: [
+                            "On '{topic}' - are you using System 1 (fast, intuitive) or System 2 (slow, analytical)?",
+                            "What's the base rate here? We often ignore statistics in favor of stories.",
+                            "Is this loss aversion talking? Losses feel twice as painful as equivalent gains.",
+                            "Be wary of the planning fallacy. Things usually take longer than we think."
+                        ],
+                        influence: 9
+                    },
+                    {
+                        id: "marshall_rosenberg",
+                        name: "Marshall Rosenberg",
+                        era: "1934-2015",
+                        domain: "Nonviolent Communication",
+                        category: "communication",
+                        expertise: ["Nonviolent communication", "Needs-based dialogue", "Empathy", "Conflict resolution"],
+                        key_teachings: [
+                            "At the core of all anger is a need that is not being fulfilled.",
+                            "Don't mix up what people do with what you want from them.",
+                            "Every criticism, judgment, diagnosis is a tragic expression of an unmet need."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What's alive in you right now? What needs are seeking attention?",
+                            on_struggle: "Behind this struggle, what need is not being met?",
+                            on_decision: "What needs will this decision fulfill? Yours and others'?",
+                            on_success: "What needs were met that led to this feeling? Celebrate them.",
+                            on_fear: "Fear points to unmet needs for safety or connection. Which is it?",
+                            closing: "Remember: All actions are attempts to meet needs. Start there."
+                        },
+                        response_templates: [
+                            "On '{topic}' - what need is alive for you here? Connection? Autonomy? Meaning?",
+                            "Separate observation from evaluation. What actually happened, without judgment?",
+                            "What are you feeling? And what need is connected to that feeling?",
+                            "What is your request? Make it concrete and actionable."
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "john_gottman",
+                        name: "John Gottman",
+                        era: "1942-Present",
+                        domain: "Relationships & Marriage",
+                        category: "communication",
+                        expertise: ["Relationship research", "The Four Horsemen", "Repair attempts", "Building trust"],
+                        key_teachings: [
+                            "The Four Horsemen destroy relationships: Criticism, Contempt, Defensiveness, Stonewalling.",
+                            "Masters of relationships have a 5:1 ratio of positive to negative interactions.",
+                            "It's not the presence of conflict but the absence of repair that destroys relationships."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Tell me about your relationship. How are the bids for connection going?",
+                            on_struggle: "Watch for the Four Horsemen. Which one is showing up?",
+                            on_decision: "Will this decision build the relationship's emotional bank account?",
+                            on_success: "You made a repair attempt and it worked. That's mastery.",
+                            on_fear: "Fear in relationships often signals a bid for connection being missed.",
+                            closing: "Remember: Turn toward your partner's bids. That's where love lives."
+                        },
+                        response_templates: [
+                            "On '{topic}' - is this criticism or a complaint? Complaints are specific; criticism attacks character.",
+                            "Watch for contempt - it's the greatest predictor of relationship failure.",
+                            "Have you tried a repair attempt? Even humor can break the cycle.",
+                            "Build the emotional bank account. Small positive deposits compound."
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "esther_perel",
+                        name: "Esther Perel",
+                        era: "1958-Present",
+                        domain: "Desire & Intimacy",
+                        category: "communication",
+                        expertise: ["Desire in relationships", "Intimacy paradox", "Erotic intelligence", "Modern relationships"],
+                        key_teachings: [
+                            "Fire needs air. Desire needs space.",
+                            "Love enjoys knowing everything about you; desire needs mystery.",
+                            "The quality of our relationships determines the quality of our lives."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What brings you? Are we talking about love, desire, or the complicated space between?",
+                            on_struggle: "Security and adventure exist in tension. Which are you neglecting?",
+                            on_decision: "Who do you want to be in this relationship? That determines everything.",
+                            on_success: "You've found a balance. How will you maintain the mystery?",
+                            on_fear: "Fear of loss and desire for freedom - both are valid.",
+                            closing: "Remember: The quality of your relationships determines the quality of your life."
+                        },
+                        response_templates: [
+                            "On '{topic}' - are you pursuing security or adventure here? Both matter.",
+                            "Fire needs air. Is there enough space for desire to breathe?",
+                            "We don't have one great love. We have many loves, sometimes with the same person.",
+                            "Desire is about wanting, not having. Does the relationship maintain that gap?"
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "brandon_turner",
+                        name: "Brandon Turner",
+                        era: "1985-Present",
+                        domain: "Real Estate Investing",
+                        category: "wealth",
+                        expertise: ["Real estate investing", "House hacking", "BRRRR method", "BiggerPockets"],
+                        key_teachings: [
+                            "House hacking: Live for free while building wealth.",
+                            "The BRRRR method: Buy, Rehab, Rent, Refinance, Repeat.",
+                            "Real estate investing is a get-rich-slow scheme. And that's the beauty."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Hey! Are you ready to talk real estate? What's your strategy?",
+                            on_struggle: "Every investor faces this. What does the 1% rule say about the deal?",
+                            on_decision: "Does this property cash flow? That's what matters.",
+                            on_success: "Awesome! Now let's BRRRR and do it again.",
+                            on_fear: "Analysis paralysis kills more portfolios than bad deals. What's holding you back?",
+                            closing: "Remember: The best time to buy real estate was yesterday. The second best is today."
+                        },
+                        response_templates: [
+                            "On '{topic}' - let's run the numbers. What's the cash flow potential?",
+                            "Have you considered house hacking to start? Live for free, build equity.",
+                            "The 1% rule is your friend. Monthly rent should be 1% of purchase price.",
+                            "BRRRR is the strategy: Buy, Rehab, Rent, Refinance, Repeat. Which step are you on?"
+                        ],
+                        influence: 7
+                    },
+                    {
+                        id: "nic_carter",
+                        name: "Nic Carter",
+                        era: "1989-Present",
+                        domain: "Bitcoin & Digital Assets",
+                        category: "wealth",
+                        expertise: ["Bitcoin", "Digital scarcity", "Self-custody", "Monetary theory"],
+                        key_teachings: [
+                            "Bitcoin is the first digitally scarce asset in human history.",
+                            "Not your keys, not your coins.",
+                            "Bitcoin is a check on monetary debasement."
+                        ],
+                        conversation_prompts: {
+                            greeting: "Let's talk hard money. What's your understanding of digital scarcity?",
+                            on_struggle: "The volatility is the feature, not the bug. Are you zoomed out enough?",
+                            on_decision: "Are you buying Bitcoin or speculating on crypto? There's a difference.",
+                            on_success: "Good. Now secure it properly. Self-custody is non-negotiable.",
+                            on_fear: "Fear of volatility or fear of missing the boat?",
+                            closing: "Remember: Low time preference. Think in decades, not days."
+                        },
+                        response_templates: [
+                            "On '{topic}' - are you thinking about this with a 4-year time horizon, or 40?",
+                            "Not your keys, not your coins. Are you self-custodying?",
+                            "Bitcoin is the first truly scarce digital asset. That changes everything.",
+                            "Separate Bitcoin from crypto. One is digital gold. The other is mostly speculation."
+                        ],
+                        influence: 7
+                    },
+                    {
+                        id: "jill_konrath",
+                        name: "Jill Konrath",
+                        era: "1951-Present",
+                        domain: "Enterprise Sales",
+                        category: "communication",
+                        expertise: ["Complex sales", "Enterprise selling", "Value-first prospecting", "Stakeholder mapping"],
+                        key_teachings: [
+                            "In complex sales, you're selling the meeting, not the product.",
+                            "Frazzled customers delete. Clear, relevant value wins.",
+                            "Your job is to make your customer look like a hero."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What complex deal are you working? Let's map the stakeholders.",
+                            on_struggle: "In enterprise sales, slow down to speed up. Are you rushing?",
+                            on_decision: "Who are all the decision makers? Have you identified the blocker?",
+                            on_success: "You made them look like a hero. That's how enterprise deals close.",
+                            on_fear: "Complexity is manageable with a system. What's your process?",
+                            closing: "Remember: You're not selling products. You're selling outcomes."
+                        },
+                        response_templates: [
+                            "On '{topic}' - who are all the stakeholders in this deal? Have you mapped them?",
+                            "You're not selling your product. You're selling a better business outcome.",
+                            "What trigger event created this opportunity? Leverage that urgency.",
+                            "Make your champion look like a hero to their organization."
+                        ],
+                        influence: 7
+                    },
+                    {
+                        id: "aaron_ross",
+                        name: "Aaron Ross",
+                        era: "1973-Present",
+                        domain: "Predictable Revenue",
+                        category: "business",
+                        expertise: ["Predictable Revenue system", "Cold Calling 2.0", "SDR model", "Sales specialization"],
+                        key_teachings: [
+                            "Cold Calling 2.0: Never make cold calls again. Send cold emails to get warm calls.",
+                            "Specialize your sales roles: SDR, AE, Customer Success.",
+                            "Predictable lead generation creates predictable revenue."
+                        ],
+                        conversation_prompts: {
+                            greeting: "How predictable is your revenue? Let's build a system.",
+                            on_struggle: "If revenue is unpredictable, your prospecting is broken. Let's fix it.",
+                            on_decision: "Does this decision make revenue more or less predictable?",
+                            on_success: "You've created a system. Now document it and scale it.",
+                            on_fear: "Predictability reduces fear. What's your sales process?",
+                            closing: "Remember: Revenue is a system, not a series of lucky breaks."
+                        },
+                        response_templates: [
+                            "On '{topic}' - is this part of a predictable system, or just heroic effort?",
+                            "Cold Calling 2.0: Cold emails to ideal prospects, asking for referrals internally.",
+                            "Specialize your roles. Hunters hunt. Farmers farm. Don't mix them.",
+                            "The goal is predictable revenue. What's your pipeline creation process?"
+                        ],
+                        influence: 7
+                    },
+                    {
+                        id: "daniel_goleman",
+                        name: "Daniel Goleman",
+                        era: "1946-Present",
+                        domain: "Emotional Intelligence",
+                        category: "mindset",
+                        expertise: ["Emotional intelligence", "Self-awareness", "Empathy", "Social skills"],
+                        key_teachings: [
+                            "Emotional intelligence is the sine qua non of leadership.",
+                            "Self-awareness is the first component of EQ.",
+                            "We are wired to connect. Social intelligence shapes our interactions."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What emotions are present for you right now? Let's start with awareness.",
+                            on_struggle: "What emotion is underneath this struggle? Name it to tame it.",
+                            on_decision: "Are you deciding from emotion or about emotion? There's a difference.",
+                            on_success: "High EQ contributed to this success. Which competency did you use?",
+                            on_fear: "Fear is information. What is it telling you about what you value?",
+                            closing: "Remember: EQ can be developed. It starts with self-awareness."
+                        },
+                        response_templates: [
+                            "On '{topic}' - what emotion is driving this? Start with awareness.",
+                            "Name it to tame it. Labeling emotions reduces their intensity.",
+                            "Empathy is not agreeing. It's understanding. Can you see their perspective?",
+                            "Self-awareness, self-management, social awareness, relationship management. Which needs work?"
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "shane_parrish",
+                        name: "Shane Parrish",
+                        era: "1980-Present",
+                        domain: "Mental Models & Decision Making",
+                        category: "science",
+                        expertise: ["Mental models", "Clear thinking", "Decision-making", "Wisdom"],
+                        key_teachings: [
+                            "Mental models are how we understand the world and make decisions.",
+                            "The best thinkers are consistently able to think about thinking.",
+                            "The world doesn't tell you when you're wrong. You have to figure it out."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What decision are you working through? Let's apply some mental models.",
+                            on_struggle: "Which mental model might illuminate this situation?",
+                            on_decision: "Have you inverted this decision? What would ensure failure?",
+                            on_success: "What principle can you extract that applies elsewhere?",
+                            on_fear: "Is this first-order fear or second-order? Think it through.",
+                            closing: "Remember: Clear thinking is a skill. It compounds."
+                        },
+                        response_templates: [
+                            "On '{topic}' - have you tried inverting? What would guarantee failure?",
+                            "What's the mental model here? Map the territory before acting.",
+                            "Second-order thinking: What happens next? And then what?",
+                            "Are you thinking or just reacting? Slow down."
+                        ],
+                        influence: 8
+                    },
+                    {
+                        id: "annie_duke",
+                        name: "Annie Duke",
+                        era: "1965-Present",
+                        domain: "Decision Science & Betting",
+                        category: "science",
+                        expertise: ["Probabilistic thinking", "Decision quality vs outcome quality", "Poker strategy", "Uncertainty"],
+                        key_teachings: [
+                            "Resulting: Don't judge decision quality by outcome quality.",
+                            "All decisions are bets on an uncertain future.",
+                            "Embrace uncertainty - it's not a bug, it's a feature."
+                        ],
+                        conversation_prompts: {
+                            greeting: "What bet are you making? Let's assess the expected value.",
+                            on_struggle: "Was this a bad decision or a bad outcome? They're different things.",
+                            on_decision: "What are the probabilities? What's your confidence level?",
+                            on_success: "Good outcome. But was the decision process also good?",
+                            on_fear: "You're afraid of a bad outcome. But is the expected value positive?",
+                            closing: "Remember: Focus on decision quality, not outcome quality."
+                        },
+                        response_templates: [
+                            "On '{topic}' - what's the expected value of each option?",
+                            "Don't result: A good decision can have a bad outcome, and vice versa.",
+                            "What's your confidence level? 60%? 90%? Make it explicit.",
+                            "All decisions are bets. What are you betting and what's the payoff?"
+                        ],
+                        influence: 8
                     }
                 ]
             };
