@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-02-05",
+  "ten_year_vision": {
+    "identity_statement": "A self-made millionaire with multiple businesses, deep relationships, and complete lifestyle freedom - living on my terms while helping others achieve the same.",
+    "life_domains": {
+      "wealth": "Financial independence with $5M+ net worth and $500k+ annual passive income",
+      "relationships": "Deep, meaningful connections with family, partner, and inner circle of high-performers",
+      "impact": "Mentoring 1000+ people to achieve their own self-mastery",
+      "health": "Peak physical and mental performance maintained into my 60s+",
+      "lifestyle": "Location-independent, time-rich, doing work I love with people I respect"
+    },
+    "core_values": ["Excellence", "Discipline", "Growth", "Authenticity", "Impact"],
+    "non_negotiables": [
+      "Never compromise integrity for money",
+      "Health comes before wealth",
+      "Family and close relationships are sacred",
+      "Always be learning and growing"
+    ]
+  },
+  "five_year_mission": {
+    "primary_objective": "Build a portfolio of 3 businesses generating $500k+ combined annual revenue with systems that run without me",
+    "supporting_missions": [
+      {
+        "module": "money",
+        "mission": "Own 10+ cash-flowing rental properties generating $10k+/month passive income",
+        "why": "Real estate provides stable, leveraged wealth building and cash flow independence"
+      },
+      {
+        "module": "sales",
+        "mission": "Master enterprise sales with ability to close $100k+ deals consistently",
+        "why": "High-ticket sales skills fund all other ventures and compound over career"
+      },
+      {
+        "module": "business",
+        "mission": "Launch and scale a productized service to $1M ARR",
+        "why": "Business equity is the fastest path to wealth and impact"
+      },
+      {
+        "module": "mindset",
+        "mission": "Achieve unshakeable mental resilience and equanimity regardless of circumstances",
+        "why": "Inner peace is the foundation that makes external success sustainable"
+      }
+    ],
+    "success_metrics": {
+      "net_worth": 2000000,
+      "annual_passive_income": 150000,
+      "business_revenue": 500000,
+      "rental_properties": 10,
+      "deep_relationships": 20,
+      "custom_metrics": [
+        {"name": "Books read", "target": 250},
+        {"name": "People mentored", "target": 100}
+      ]
+    }
+  },
+  "annual_themes": {
+    "2026": {
+      "theme": "Year of Foundation",
+      "focus_modules": ["sales", "money", "business", "productivity"],
+      "key_question": "What systems and skills must I build this year to enable everything else?",
+      "annual_objectives": [
+        {
+          "id": "ao_2026_1",
+          "objective": "Generate $150k in sales revenue",
+          "module": "sales",
+          "q1_target": 50000,
+          "q2_target": 75000,
+          "q3_target": 100000,
+          "q4_target": 150000
+        },
+        {
+          "id": "ao_2026_2",
+          "objective": "Acquire first 3 rental properties",
+          "module": "money",
+          "q1_target": 1,
+          "q2_target": 2,
+          "q3_target": 2,
+          "q4_target": 3
+        },
+        {
+          "id": "ao_2026_3",
+          "objective": "Launch productized service MVP and get 10 paying customers",
+          "module": "business",
+          "q1_target": "MVP designed",
+          "q2_target": "MVP launched",
+          "q3_target": "5 customers",
+          "q4_target": "10 customers"
+        },
+        {
+          "id": "ao_2026_4",
+          "objective": "Establish consistent 20+ hour deep work weeks",
+          "module": "productivity",
+          "q1_target": 15,
+          "q2_target": 18,
+          "q3_target": 20,
+          "q4_target": 22
+        }
+      ]
+    }
+  }
+}

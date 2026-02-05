@@ -35,8 +35,45 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         elif self.path == '/api/habits':
             self.send_habits()
             return
+        elif self.path == '/api/planning':
+            self.send_planning_data()
+            return
+        elif self.path.startswith('/data/') and self.path.endswith('.json'):
+            self.serve_data_file()
+            return
 
         return super().do_GET()
+
+    def serve_data_file(self):
+        """Serve JSON files from the data directory."""
+        filename = self.path.split('/data/')[-1]
+        filepath = os.path.join(BASE_PATH, 'data', filename)
+
+        if os.path.exists(filepath):
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                self.send_json(data)
+            except Exception as e:
+                self.send_error(500, f"Error reading file: {str(e)}")
+        else:
+            self.send_error(404, "File not found")
+
+    def send_planning_data(self):
+        """Send all planning data (vision, OKRs, weekly plans)."""
+        planning = {}
+
+        for filename in ['vision.json', 'quarterly_okrs.json', 'weekly_plans.json']:
+            filepath = os.path.join(BASE_PATH, 'data', filename)
+            if os.path.exists(filepath):
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        key = filename.replace('.json', '').replace('_', '')
+                        planning[key] = json.load(f)
+                except Exception:
+                    pass
+
+        self.send_json(planning)
 
     def send_json(self, data):
         """Send JSON response."""

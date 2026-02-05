@@ -1,0 +1,139 @@
+{
+  "version": "1.0",
+  "current_quarter": "2026-Q1",
+  "quarters": {
+    "2026-Q1": {
+      "start_date": "2026-01-01",
+      "end_date": "2026-03-31",
+      "theme": "Build Foundation",
+      "objectives": [
+        {
+          "id": "obj_001",
+          "objective": "Establish predictable revenue system",
+          "module": "sales",
+          "confidence_level": 7,
+          "why": "Need consistent income to fund real estate investments and build financial freedom",
+          "key_results": [
+            {
+              "id": "kr_001",
+              "description": "Close deals worth $50k+ total revenue",
+              "target": 50000,
+              "current": 12000,
+              "unit": "dollars",
+              "measurement_frequency": "weekly",
+              "last_updated": "2026-02-05"
+            },
+            {
+              "id": "kr_002",
+              "description": "Build qualified outreach list of 500+ leads",
+              "target": 500,
+              "current": 180,
+              "unit": "leads",
+              "measurement_frequency": "weekly",
+              "last_updated": "2026-02-05"
+            },
+            {
+              "id": "kr_003",
+              "description": "Achieve 20% cold outreach response rate",
+              "target": 20,
+              "current": 12,
+              "unit": "percent",
+              "measurement_frequency": "weekly",
+              "last_updated": "2026-02-05"
+            }
+          ],
+          "dependencies": [],
+          "risks": [
+            "Low conversion rate could delay revenue goals",
+            "Lead quality might be poor without proper qualification"
+          ]
+        },
+        {
+          "id": "obj_002",
+          "objective": "Launch first real estate investment",
+          "module": "money",
+          "confidence_level": 6,
+          "why": "Start building passive income streams and wealth through leveraged assets",
+          "key_results": [
+            {
+              "id": "kr_004",
+              "description": "Save $30k for down payment fund",
+              "target": 30000,
+              "current": 18500,
+              "unit": "dollars",
+              "measurement_frequency": "weekly",
+              "last_updated": "2026-02-05"
+            },
+            {
+              "id": "kr_005",
+              "description": "Analyze 50+ properties using BRRRR method",
+              "target": 50,
+              "current": 15,
+              "unit": "properties",
+              "measurement_frequency": "weekly",
+              "last_updated": "2026-02-05"
+            },
+            {
+              "id": "kr_006",
+              "description": "Submit 5 offers on qualifying properties",
+              "target": 5,
+              "current": 0,
+              "unit": "offers",
+              "measurement_frequency": "monthly",
+              "last_updated": "2026-02-05"
+            }
+          ],
+          "dependencies": ["obj_001"],
+          "risks": [
+            "Market conditions might worsen",
+            "Deal analysis skills still developing"
+          ]
+        },
+        {
+          "id": "obj_003",
+          "objective": "Design and validate productized service MVP",
+          "module": "business",
+          "confidence_level": 5,
+          "why": "Business equity is the fastest path to wealth; need to start building now",
+          "key_results": [
+            {
+              "id": "kr_007",
+              "description": "Complete customer discovery with 20+ interviews",
+              "target": 20,
+              "current": 5,
+              "unit": "interviews",
+              "measurement_frequency": "weekly",
+              "last_updated": "2026-02-05"
+            },
+            {
+              "id": "kr_008",
+              "description": "Define MVP feature set and pricing",
+              "target": 1,
+              "current": 0,
+              "unit": "document",
+              "measurement_frequency": "monthly",
+              "last_updated": "2026-02-05"
+            },
+            {
+              "id": "kr_009",
+              "description": "Get 3 pre-launch commitments from potential customers",
+              "target": 3,
+              "current": 0,
+              "unit": "commitments",
+              "measurement_frequency": "monthly",
+              "last_updated": "2026-02-05"
+            }
+          ],
+          "dependencies": [],
+          "risks": [
+            "Might build something nobody wants",
+            "Time constraints with sales focus"
+          ]
+        }
+      ],
+      "quarter_score": null,
+      "review_completed": false,
+      "review_date": null
+    }
+  }
+}

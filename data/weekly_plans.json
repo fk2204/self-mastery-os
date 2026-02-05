@@ -1,0 +1,98 @@
+{
+  "version": "1.0",
+  "current_week": "2026-W06",
+  "weeks": {
+    "2026-W06": {
+      "start_date": "2026-02-02",
+      "end_date": "2026-02-08",
+      "week_theme": "Close 2 deals and analyze 10 properties",
+      "linked_okrs": ["obj_001", "obj_002"],
+      "battle_plan": [
+        {
+          "id": "wp_001",
+          "outcome": "Close Deal A with Client X ($8k)",
+          "module": "sales",
+          "priority": 1,
+          "estimated_hours": 6,
+          "tasks": [
+            "Send final proposal Monday AM",
+            "Handle objections call Tuesday",
+            "Close and get deposit by Friday"
+          ],
+          "success_criteria": "Contract signed and deposit received",
+          "status": "in_progress",
+          "completed": false,
+          "actual_hours": 0,
+          "notes": ""
+        },
+        {
+          "id": "wp_002",
+          "outcome": "Analyze 10 multi-family properties using BRRRR",
+          "module": "money",
+          "priority": 2,
+          "estimated_hours": 5,
+          "tasks": [
+            "Pull 15 listings from Zillow/Redfin",
+            "Run each through BRRRR calculator",
+            "Identify top 3 that meet 1% rule",
+            "Deep dive financials on top 3"
+          ],
+          "success_criteria": "3 properties identified that meet all criteria",
+          "status": "pending",
+          "completed": false,
+          "actual_hours": 0,
+          "notes": ""
+        },
+        {
+          "id": "wp_003",
+          "outcome": "Complete 3 customer discovery interviews",
+          "module": "business",
+          "priority": 3,
+          "estimated_hours": 4,
+          "tasks": [
+            "Schedule 5 interviews (expect 3 to happen)",
+            "Prepare interview script with key questions",
+            "Conduct interviews and take notes",
+            "Update hypothesis document"
+          ],
+          "success_criteria": "3 interviews completed with insights documented",
+          "status": "pending",
+          "completed": false,
+          "actual_hours": 0,
+          "notes": ""
+        },
+        {
+          "id": "wp_004",
+          "outcome": "Send 100 cold outreach messages",
+          "module": "sales",
+          "priority": 4,
+          "estimated_hours": 5,
+          "tasks": [
+            "Research and qualify 100 prospects",
+            "Personalize messages using Aaron Ross template",
+            "Send 20/day Mon-Fri",
+            "Track responses in CRM"
+          ],
+          "success_criteria": "100 messages sent with 15%+ response rate",
+          "status": "pending",
+          "completed": false,
+          "actual_hours": 0,
+          "notes": ""
+        }
+      ],
+      "deep_work_target": 20,
+      "deep_work_actual": 0,
+      "focus_modules": ["sales", "money", "business"],
+      "energy_allocation": {
+        "high_energy": ["Close Deal A", "Discovery interviews", "Cold outreach"],
+        "medium_energy": ["Property analysis", "CRM updates"],
+        "low_energy": ["Email follow-ups", "Admin tasks"]
+      },
+      "weekly_score": null,
+      "reflection_completed": false,
+      "wins": [],
+      "lessons": [],
+      "next_week_focus": null
+    }
+  }
+}

@@ -3046,6 +3046,324 @@
             }
         }
 
+        /* ============================================
+           COMMAND CENTER - Vision, OKRs, Battle Plan
+           ============================================ */
+        .command-center {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+
+        .command-center-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.25rem;
+            background: linear-gradient(135deg, rgba(212, 168, 71, 0.08) 0%, transparent 60%);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .command-center-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.15em;
+            color: var(--gold-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .command-center-week {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            padding: 0.25rem 0.5rem;
+            background: var(--bg-elevated);
+            border-radius: 4px;
+        }
+
+        .vision-statement {
+            padding: 1rem 1.25rem;
+            background: rgba(212, 168, 71, 0.03);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .vision-label {
+            font-size: 0.6rem;
+            color: var(--gold-dim);
+            letter-spacing: 0.15em;
+            margin-bottom: 0.35rem;
+        }
+
+        .vision-text {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1rem;
+            font-style: italic;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+
+        .okr-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--border-subtle);
+        }
+
+        .okr-card {
+            background: var(--bg-surface);
+            padding: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .okr-card:hover {
+            background: var(--bg-elevated);
+        }
+
+        .okr-module-badge {
+            font-size: 0.55rem;
+            letter-spacing: 0.1em;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .okr-module-sales { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+        .okr-module-money { background: rgba(34, 197, 94, 0.15); color: #4ade80; }
+        .okr-module-business { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+        .okr-module-productivity { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
+        .okr-module-mindset { background: rgba(251, 191, 36, 0.15); color: #fcd34d; }
+
+        .okr-objective {
+            font-size: 0.8rem;
+            color: var(--text-primary);
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .okr-progress-bar {
+            height: 6px;
+            background: var(--bg-hover);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 0.35rem;
+        }
+
+        .okr-progress-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+
+        .okr-progress-fill.green { background: var(--success); }
+        .okr-progress-fill.yellow { background: var(--warning); }
+        .okr-progress-fill.red { background: var(--danger); }
+
+        .okr-progress-text {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .battle-plan-section {
+            padding: 1rem 1.25rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .battle-plan-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .battle-plan-title {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            letter-spacing: 0.15em;
+        }
+
+        .battle-plan-stats {
+            font-size: 0.7rem;
+            color: var(--gold-primary);
+        }
+
+        .battle-plan-items {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .battle-plan-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.6rem 0.75rem;
+            background: var(--bg-elevated);
+            border-radius: 6px;
+            border-left: 3px solid var(--border-accent);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .battle-plan-item:hover {
+            background: var(--bg-hover);
+            border-left-color: var(--gold-primary);
+        }
+
+        .battle-plan-item.completed {
+            opacity: 0.6;
+            border-left-color: var(--success);
+        }
+
+        .battle-plan-item.in-progress {
+            border-left-color: var(--warning);
+        }
+
+        .battle-plan-priority {
+            width: 20px;
+            height: 20px;
+            background: var(--gold-primary);
+            color: var(--bg-void);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.65rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .battle-plan-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .battle-plan-outcome {
+            font-size: 0.85rem;
+            color: var(--text-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .battle-plan-module {
+            font-size: 0.6rem;
+            color: var(--text-muted);
+            margin-top: 0.15rem;
+        }
+
+        .battle-plan-hours {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        /* Deep Work Tracker */
+        .deep-work-tracker {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 1.25rem;
+            background: rgba(139, 92, 246, 0.05);
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .deep-work-label {
+            font-size: 0.65rem;
+            color: var(--accent-purple);
+            letter-spacing: 0.1em;
+        }
+
+        .deep-work-progress {
+            flex: 1;
+            height: 8px;
+            background: var(--bg-hover);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .deep-work-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .deep-work-count {
+            font-size: 0.85rem;
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        /* OKR Detail Modal Styles */
+        .okr-detail-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .okr-detail-objective {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .okr-detail-why {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .key-results-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .key-result-item {
+            background: var(--bg-elevated);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .key-result-desc {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .key-result-progress {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .key-result-bar {
+            flex: 1;
+            height: 10px;
+            background: var(--bg-hover);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .key-result-fill {
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .key-result-values {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            min-width: 80px;
+            text-align: right;
+        }
+
         @media (max-width: 600px) {
             .journal-mode-tab span:not(.journal-mode-tab svg) {
                 display: none;
@@ -3316,34 +3634,48 @@
                     </div>
                 </div>
 
-                <!-- Systems & Plans Preview (Collapsible) -->
-                <div class="collapsible-section" style="margin-top: 1.5rem;">
-                    <div class="collapsible-header" onclick="toggleCollapsible('systemsPlansSection')">
-                        <div class="card-title">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v10"/>
+                <!-- Command Center: Vision, OKRs, Weekly Battle Plan -->
+                <div class="command-center" style="margin-top: 1.5rem;">
+                    <div class="command-center-header">
+                        <div class="command-center-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
+                                <line x1="12" y1="22" x2="12" y2="15.5"/><polyline points="22 8.5 12 15.5 2 8.5"/>
                             </svg>
-                            SYSTEMS & PLANS
+                            COMMAND CENTER
                         </div>
-                        <svg class="collapsible-arrow" id="systemsPlansArrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"/>
-                        </svg>
+                        <span class="command-center-week" id="currentWeekBadge">Week 6</span>
                     </div>
-                    <div class="collapsible-content" id="systemsPlansSection" style="display: none;">
-                        <div class="grid-2" style="margin-top: 1rem;">
-                            <div>
-                                <div class="mini-section-label">ACTIVE SYSTEMS</div>
-                                <div id="dashSystemsPreview">
-                                    <div style="color: var(--text-muted); font-size: 0.85rem;">No systems yet</div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="mini-section-label">CURRENT PLANS</div>
-                                <div id="dashPlansPreview">
-                                    <div style="color: var(--text-muted); font-size: 0.85rem;">No active plans</div>
-                                </div>
-                            </div>
+
+                    <!-- Vision Statement -->
+                    <div class="vision-statement">
+                        <div class="vision-label">10-YEAR VISION</div>
+                        <div class="vision-text" id="visionStatement">Loading vision...</div>
+                    </div>
+
+                    <!-- Quarter OKR Progress -->
+                    <div class="okr-grid" id="okrGrid">
+                        <!-- OKR cards rendered here -->
+                    </div>
+
+                    <!-- Weekly Battle Plan -->
+                    <div class="battle-plan-section">
+                        <div class="battle-plan-header">
+                            <div class="battle-plan-title">THIS WEEK'S BATTLE PLAN</div>
+                            <div class="battle-plan-stats" id="battlePlanStats">0/0 complete</div>
                         </div>
+                        <div class="battle-plan-items" id="battlePlanItems">
+                            <!-- Battle plan items rendered here -->
+                        </div>
+                    </div>
+
+                    <!-- Deep Work Progress -->
+                    <div class="deep-work-tracker">
+                        <div class="deep-work-label">DEEP WORK</div>
+                        <div class="deep-work-progress">
+                            <div class="deep-work-fill" id="deepWorkFill" style="width: 0%;"></div>
+                        </div>
+                        <div class="deep-work-count" id="deepWorkCount">0/20 hrs</div>
                     </div>
                 </div>
 
@@ -3370,36 +3702,57 @@
 
             <!-- Plans Page -->
             <section class="page-section" id="page-plans">
-                <div class="grid-2">
-                    <div>
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="card-title">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-                                    </svg>
-                                    ACTIVE PLANS
-                                </div>
-                                <button class="btn" onclick="openCreatePlanModal()">+ New Plan</button>
-                            </div>
-                            <div id="plansActiveList">
-                                <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
-                                    No active plans. Create your first plan to get started!
-                                </div>
-                            </div>
+                <!-- Vision & Mission Header -->
+                <div class="card" style="margin-bottom: 1.5rem; background: linear-gradient(135deg, rgba(212, 168, 71, 0.08) 0%, var(--bg-surface) 60%);">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                        <div style="flex: 1;">
+                            <div style="font-size: 0.65rem; color: var(--gold-dim); letter-spacing: 0.15em; margin-bottom: 0.5rem;">10-YEAR VISION</div>
+                            <div style="font-family: 'Crimson Pro', serif; font-size: 1.2rem; font-style: italic; color: var(--text-primary); line-height: 1.4; margin-bottom: 1.25rem;" id="plansVisionFull">Loading...</div>
+                            <div style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.15em; margin-bottom: 0.35rem;">5-YEAR MISSION</div>
+                            <div style="font-size: 0.95rem; color: var(--text-secondary);" id="plansMissionFull">Loading...</div>
+                        </div>
+                        <div style="text-align: right; padding-left: 2rem;">
+                            <div style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--gold-primary);" id="plansQuarterLabel">Q1</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);" id="plansQuarterTheme">Build Foundation</div>
                         </div>
                     </div>
-                    <div>
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="card-title">COMPLETED PLANS</div>
+                </div>
+
+                <!-- OKR Cards -->
+                <div style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.15em; margin-bottom: 0.75rem;">QUARTERLY OBJECTIVES</div>
+                <div class="grid-3" id="plansOkrGrid" style="margin-bottom: 1.5rem;">
+                    <!-- Full OKR cards rendered here -->
+                </div>
+
+                <!-- Weekly Battle Plan Full View -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                            WEEKLY BATTLE PLAN
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span id="plansWeekLabel" style="font-size: 0.75rem; color: var(--text-muted);">Week 6</span>
+                            <span id="plansWeekTheme" style="font-size: 0.8rem; color: var(--gold-primary);"></span>
+                        </div>
+                    </div>
+                    <div id="plansWeeklyItems">
+                        <!-- Weekly battle plan items rendered here -->
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+                        <div style="display: flex; gap: 2rem;">
+                            <div>
+                                <div style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.1em;">DEEP WORK TARGET</div>
+                                <div style="font-size: 1.25rem; color: var(--accent-purple); font-weight: 600;" id="plansDeepWorkTarget">20h</div>
                             </div>
-                            <div id="plansCompletedList">
-                                <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
-                                    Complete a plan to see it here
-                                </div>
+                            <div>
+                                <div style="font-size: 0.6rem; color: var(--text-muted); letter-spacing: 0.1em;">ESTIMATED HOURS</div>
+                                <div style="font-size: 1.25rem; color: var(--text-primary); font-weight: 600;" id="plansTotalHours">0h</div>
                             </div>
                         </div>
+                        <button class="btn btn-primary" onclick="openWeeklyReview()">Weekly Review</button>
                     </div>
                 </div>
             </section>
@@ -5209,12 +5562,45 @@
         // ============================================
         // MODALS
         // ============================================
-        function openModal(modalId) {
-            document.getElementById(modalId).classList.add('active');
+        function openModal(titleOrId, content = null) {
+            if (content === null) {
+                // Legacy behavior: open modal by ID
+                document.getElementById(titleOrId).classList.add('active');
+            } else {
+                // New behavior: dynamic modal with title and content
+                openDynamicModal(titleOrId, content);
+            }
         }
 
         function closeModal(modalId) {
             document.getElementById(modalId).classList.remove('active');
+        }
+
+        function openDynamicModal(title, content) {
+            let modal = document.getElementById('dynamicModal');
+            if (!modal) {
+                modal = document.createElement('div');
+                modal.id = 'dynamicModal';
+                modal.className = 'modal-overlay';
+                modal.innerHTML = `
+                    <div class="modal" style="max-width: 600px;">
+                        <div class="modal-header">
+                            <h2 id="dynamicModalTitle"></h2>
+                            <button class="modal-close" onclick="closeDynamicModal()">&times;</button>
+                        </div>
+                        <div class="modal-body" id="dynamicModalContent"></div>
+                    </div>
+                `;
+                document.body.appendChild(modal);
+            }
+            document.getElementById('dynamicModalTitle').textContent = title;
+            document.getElementById('dynamicModalContent').innerHTML = content;
+            modal.classList.add('active');
+        }
+
+        function closeDynamicModal() {
+            const modal = document.getElementById('dynamicModal');
+            if (modal) modal.classList.remove('active');
         }
 
         // ============================================
@@ -6455,50 +6841,405 @@
         }
 
         // ============================================
-        // PLANS & SYSTEMS
+        // PLANNING SYSTEM - Vision, OKRs, Weekly Plans
         // ============================================
-        function loadPlansPage() {
-            renderPlans();
+        let planningData = {
+            vision: null,
+            okrs: null,
+            weeklyPlan: null
+        };
+
+        async function loadPlanningData() {
+            try {
+                // Try to load from server first
+                const [visionRes, okrsRes, weeklyRes] = await Promise.all([
+                    fetch('/data/vision.json').catch(() => null),
+                    fetch('/data/quarterly_okrs.json').catch(() => null),
+                    fetch('/data/weekly_plans.json').catch(() => null)
+                ]);
+
+                if (visionRes?.ok) planningData.vision = await visionRes.json();
+                if (okrsRes?.ok) planningData.okrs = await okrsRes.json();
+                if (weeklyRes?.ok) planningData.weeklyPlan = await weeklyRes.json();
+
+                // Fall back to localStorage
+                if (!planningData.vision) {
+                    const saved = localStorage.getItem('selfMasteryVision');
+                    if (saved) planningData.vision = JSON.parse(saved);
+                }
+                if (!planningData.okrs) {
+                    const saved = localStorage.getItem('selfMasteryOKRs');
+                    if (saved) planningData.okrs = JSON.parse(saved);
+                }
+                if (!planningData.weeklyPlan) {
+                    const saved = localStorage.getItem('selfMasteryWeeklyPlan');
+                    if (saved) planningData.weeklyPlan = JSON.parse(saved);
+                }
+
+                // Use defaults if nothing loaded
+                if (!planningData.vision) planningData.vision = getDefaultVision();
+                if (!planningData.okrs) planningData.okrs = getDefaultOKRs();
+                if (!planningData.weeklyPlan) planningData.weeklyPlan = getDefaultWeeklyPlan();
+
+            } catch (e) {
+                console.log('Loading planning data from defaults');
+                planningData.vision = getDefaultVision();
+                planningData.okrs = getDefaultOKRs();
+                planningData.weeklyPlan = getDefaultWeeklyPlan();
+            }
+
+            renderCommandCenter();
         }
 
-        function loadSystemsPage() {
-            renderSystems();
+        function getDefaultVision() {
+            return {
+                ten_year_vision: {
+                    identity_statement: "A self-made millionaire with multiple businesses, deep relationships, and complete lifestyle freedom."
+                },
+                five_year_mission: {
+                    primary_objective: "Build a portfolio of 3 businesses generating $500k+ combined annual revenue"
+                },
+                annual_themes: {
+                    "2026": { theme: "Year of Foundation" }
+                }
+            };
         }
 
-        function renderPlans() {
-            const activeList = document.getElementById('plansActiveList');
-            const completedList = document.getElementById('plansCompletedList');
+        function getDefaultOKRs() {
+            return {
+                current_quarter: "2026-Q1",
+                quarters: {
+                    "2026-Q1": {
+                        theme: "Build Foundation",
+                        objectives: []
+                    }
+                }
+            };
+        }
 
-            if (!appData.plans || appData.plans.length === 0) {
-                activeList.innerHTML = '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">No active plans. Create your first plan!</div>';
-                completedList.innerHTML = '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">Complete a plan to see it here</div>';
+        function getDefaultWeeklyPlan() {
+            const weekNum = getISOWeek(new Date());
+            return {
+                current_week: `2026-W${String(weekNum).padStart(2, '0')}`,
+                weeks: {}
+            };
+        }
+
+        function getISOWeek(date) {
+            const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+            const dayNum = d.getUTCDay() || 7;
+            d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+            const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+            return Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+        }
+
+        function renderCommandCenter() {
+            const vision = planningData.vision;
+            const okrs = planningData.okrs;
+            const weekly = planningData.weeklyPlan;
+
+            // Vision statement
+            const visionEl = document.getElementById('visionStatement');
+            if (visionEl && vision?.ten_year_vision?.identity_statement) {
+                visionEl.textContent = vision.ten_year_vision.identity_statement;
+            }
+
+            // Current week badge
+            const weekBadge = document.getElementById('currentWeekBadge');
+            if (weekBadge && weekly?.current_week) {
+                const weekNum = weekly.current_week.split('-W')[1];
+                weekBadge.textContent = `Week ${parseInt(weekNum)}`;
+            }
+
+            // OKR Grid
+            renderOKRGrid();
+
+            // Battle Plan
+            renderBattlePlan();
+
+            // Deep Work Progress
+            renderDeepWorkProgress();
+        }
+
+        function renderOKRGrid() {
+            const okrs = planningData.okrs;
+            const grid = document.getElementById('okrGrid');
+            if (!grid || !okrs?.quarters) return;
+
+            const quarter = okrs.quarters[okrs.current_quarter];
+            if (!quarter?.objectives?.length) {
+                grid.innerHTML = '<div style="grid-column: 1/-1; padding: 2rem; text-align: center; color: var(--text-muted);">Set your quarterly objectives in the Plans page</div>';
                 return;
             }
 
-            const activePlans = appData.plans.filter(p => !p.completed);
-            const completedPlans = appData.plans.filter(p => p.completed);
-
-            activeList.innerHTML = activePlans.length > 0
-                ? activePlans.map(p => renderPlanCard(p)).join('')
-                : '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">No active plans</div>';
-
-            completedList.innerHTML = completedPlans.length > 0
-                ? completedPlans.map(p => renderPlanCard(p)).join('')
-                : '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">Complete a plan to see it here</div>';
+            grid.innerHTML = quarter.objectives.map(obj => {
+                const avgProgress = calculateOKRProgress(obj);
+                const colorClass = avgProgress >= 70 ? 'green' : avgProgress >= 40 ? 'yellow' : 'red';
+                return `
+                    <div class="okr-card" onclick="openOKRDetail('${obj.id}')">
+                        <span class="okr-module-badge okr-module-${obj.module}">${obj.module.toUpperCase()}</span>
+                        <div class="okr-objective">${obj.objective}</div>
+                        <div class="okr-progress-bar">
+                            <div class="okr-progress-fill ${colorClass}" style="width: ${avgProgress}%;"></div>
+                        </div>
+                        <div class="okr-progress-text">
+                            <span>${avgProgress}%</span>
+                            <span>${obj.key_results?.length || 0} KRs</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
         }
 
-        function renderPlanCard(plan) {
-            const progress = plan.milestones ? Math.round((plan.milestones.filter(m => m.done).length / plan.milestones.length) * 100) : 0;
-            return `
-                <div class="plan-card" onclick="openPlanDetail('${plan.id}')">
-                    <div class="plan-title">${plan.name}</div>
-                    <div class="plan-meta">${plan.targetDate ? 'Target: ' + plan.targetDate : ''}</div>
-                    <div class="plan-progress-bar">
-                        <div class="plan-progress-fill" style="width: ${progress}%;"></div>
+        function calculateOKRProgress(objective) {
+            if (!objective.key_results?.length) return 0;
+            const total = objective.key_results.reduce((sum, kr) => {
+                const progress = kr.target > 0 ? Math.min(100, (kr.current / kr.target) * 100) : 0;
+                return sum + progress;
+            }, 0);
+            return Math.round(total / objective.key_results.length);
+        }
+
+        function renderBattlePlan() {
+            const weekly = planningData.weeklyPlan;
+            const container = document.getElementById('battlePlanItems');
+            const stats = document.getElementById('battlePlanStats');
+            if (!container) return;
+
+            const week = weekly?.weeks?.[weekly?.current_week];
+            if (!week?.battle_plan?.length) {
+                container.innerHTML = '<div style="padding: 1rem; text-align: center; color: var(--text-muted);">No battle plan set for this week</div>';
+                if (stats) stats.textContent = '0/0 complete';
+                return;
+            }
+
+            const completed = week.battle_plan.filter(item => item.completed).length;
+            if (stats) stats.textContent = `${completed}/${week.battle_plan.length} complete`;
+
+            container.innerHTML = week.battle_plan.map(item => {
+                const statusClass = item.completed ? 'completed' : item.status === 'in_progress' ? 'in-progress' : '';
+                return `
+                    <div class="battle-plan-item ${statusClass}" onclick="toggleBattlePlanItem('${item.id}')">
+                        <div class="battle-plan-priority">${item.priority}</div>
+                        <div class="battle-plan-content">
+                            <div class="battle-plan-outcome">${item.outcome}</div>
+                            <div class="battle-plan-module">${item.module.toUpperCase()}</div>
+                        </div>
+                        <div class="battle-plan-hours">${item.estimated_hours}h</div>
                     </div>
-                    <div class="plan-progress-text">${progress}% complete</div>
+                `;
+            }).join('');
+        }
+
+        function renderDeepWorkProgress() {
+            const weekly = planningData.weeklyPlan;
+            const week = weekly?.weeks?.[weekly?.current_week];
+
+            const target = week?.deep_work_target || 20;
+            const actual = week?.deep_work_actual || 0;
+            const percentage = Math.min(100, (actual / target) * 100);
+
+            const fill = document.getElementById('deepWorkFill');
+            const count = document.getElementById('deepWorkCount');
+
+            if (fill) fill.style.width = `${percentage}%`;
+            if (count) count.textContent = `${actual}/${target} hrs`;
+        }
+
+        function toggleBattlePlanItem(itemId) {
+            const weekly = planningData.weeklyPlan;
+            const week = weekly?.weeks?.[weekly?.current_week];
+            if (!week?.battle_plan) return;
+
+            const item = week.battle_plan.find(i => i.id === itemId);
+            if (item) {
+                item.completed = !item.completed;
+                item.status = item.completed ? 'completed' : 'pending';
+                savePlanningData();
+                renderBattlePlan();
+            }
+        }
+
+        function savePlanningData() {
+            localStorage.setItem('selfMasteryVision', JSON.stringify(planningData.vision));
+            localStorage.setItem('selfMasteryOKRs', JSON.stringify(planningData.okrs));
+            localStorage.setItem('selfMasteryWeeklyPlan', JSON.stringify(planningData.weeklyPlan));
+        }
+
+        function openOKRDetail(okrId) {
+            const okrs = planningData.okrs;
+            const quarter = okrs?.quarters?.[okrs?.current_quarter];
+            const objective = quarter?.objectives?.find(o => o.id === okrId);
+            if (!objective) return;
+
+            const modalContent = `
+                <div class="okr-detail-header">
+                    <span class="okr-module-badge okr-module-${objective.module}">${objective.module.toUpperCase()}</span>
+                    <div class="okr-detail-objective">${objective.objective}</div>
+                    <div class="okr-detail-why">${objective.why || ''}</div>
+                </div>
+                <div class="key-results-list">
+                    ${objective.key_results?.map(kr => {
+                        const progress = kr.target > 0 ? Math.min(100, (kr.current / kr.target) * 100) : 0;
+                        const colorClass = progress >= 70 ? 'green' : progress >= 40 ? 'yellow' : 'red';
+                        return `
+                            <div class="key-result-item">
+                                <div class="key-result-desc">${kr.description}</div>
+                                <div class="key-result-progress">
+                                    <div class="key-result-bar">
+                                        <div class="key-result-fill okr-progress-fill ${colorClass}" style="width: ${progress}%;"></div>
+                                    </div>
+                                    <div class="key-result-values">${kr.current} / ${kr.target} ${kr.unit || ''}</div>
+                                </div>
+                            </div>
+                        `;
+                    }).join('') || '<div style="color: var(--text-muted);">No key results defined</div>'}
                 </div>
             `;
+
+            openModal('Objective Details', modalContent);
+        }
+
+        function loadPlansPage() {
+            renderPlansPageFull();
+        }
+
+        function renderPlansPageFull() {
+            const vision = planningData.vision;
+            const okrs = planningData.okrs;
+            const weekly = planningData.weeklyPlan;
+
+            // Vision and Mission
+            const visionFull = document.getElementById('plansVisionFull');
+            const missionFull = document.getElementById('plansMissionFull');
+            if (visionFull && vision?.ten_year_vision?.identity_statement) {
+                visionFull.textContent = vision.ten_year_vision.identity_statement;
+            }
+            if (missionFull && vision?.five_year_mission?.primary_objective) {
+                missionFull.textContent = vision.five_year_mission.primary_objective;
+            }
+
+            // Quarter label and theme
+            const quarterLabel = document.getElementById('plansQuarterLabel');
+            const quarterTheme = document.getElementById('plansQuarterTheme');
+            if (okrs?.current_quarter) {
+                const q = okrs.current_quarter.split('-')[1];
+                if (quarterLabel) quarterLabel.textContent = q;
+                const quarter = okrs.quarters?.[okrs.current_quarter];
+                if (quarterTheme && quarter?.theme) quarterTheme.textContent = quarter.theme;
+            }
+
+            // Full OKR grid
+            renderPlansOKRGrid();
+
+            // Weekly items
+            renderPlansWeeklyItems();
+        }
+
+        function renderPlansOKRGrid() {
+            const okrs = planningData.okrs;
+            const grid = document.getElementById('plansOkrGrid');
+            if (!grid || !okrs?.quarters) return;
+
+            const quarter = okrs.quarters[okrs.current_quarter];
+            if (!quarter?.objectives?.length) {
+                grid.innerHTML = '<div class="card" style="grid-column: 1/-1; padding: 2rem; text-align: center; color: var(--text-muted);">No objectives set. Define your quarterly OKRs to get started.</div>';
+                return;
+            }
+
+            grid.innerHTML = quarter.objectives.map(obj => {
+                const avgProgress = calculateOKRProgress(obj);
+                const colorClass = avgProgress >= 70 ? 'green' : avgProgress >= 40 ? 'yellow' : 'red';
+                return `
+                    <div class="card" style="cursor: pointer;" onclick="openOKRDetail('${obj.id}')">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <span class="okr-module-badge okr-module-${obj.module}">${obj.module.toUpperCase()}</span>
+                            <span style="font-size: 1.5rem; font-weight: 600; color: ${colorClass === 'green' ? 'var(--success)' : colorClass === 'yellow' ? 'var(--warning)' : 'var(--danger)'};">${avgProgress}%</span>
+                        </div>
+                        <div style="font-size: 1rem; color: var(--text-primary); font-weight: 500; margin-bottom: 0.75rem; line-height: 1.3;">${obj.objective}</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1rem;">${obj.why || ''}</div>
+                        ${obj.key_results?.map(kr => {
+                            const krProgress = kr.target > 0 ? Math.min(100, (kr.current / kr.target) * 100) : 0;
+                            return `
+                                <div style="margin-bottom: 0.5rem;">
+                                    <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 0.25rem;">
+                                        <span>${kr.description.substring(0, 30)}${kr.description.length > 30 ? '...' : ''}</span>
+                                        <span>${kr.current}/${kr.target}</span>
+                                    </div>
+                                    <div class="okr-progress-bar">
+                                        <div class="okr-progress-fill ${krProgress >= 70 ? 'green' : krProgress >= 40 ? 'yellow' : 'red'}" style="width: ${krProgress}%;"></div>
+                                    </div>
+                                </div>
+                            `;
+                        }).join('') || ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderPlansWeeklyItems() {
+            const weekly = planningData.weeklyPlan;
+            const container = document.getElementById('plansWeeklyItems');
+            const weekLabel = document.getElementById('plansWeekLabel');
+            const weekTheme = document.getElementById('plansWeekTheme');
+            const deepWorkTarget = document.getElementById('plansDeepWorkTarget');
+            const totalHours = document.getElementById('plansTotalHours');
+
+            if (!container) return;
+
+            const week = weekly?.weeks?.[weekly?.current_week];
+
+            if (weekLabel && weekly?.current_week) {
+                const weekNum = weekly.current_week.split('-W')[1];
+                weekLabel.textContent = `Week ${parseInt(weekNum)}`;
+            }
+            if (weekTheme && week?.week_theme) {
+                weekTheme.textContent = week.week_theme;
+            }
+            if (deepWorkTarget) {
+                deepWorkTarget.textContent = `${week?.deep_work_target || 20}h`;
+            }
+
+            if (!week?.battle_plan?.length) {
+                container.innerHTML = '<div style="padding: 2rem; text-align: center; color: var(--text-muted);">No battle plan items for this week</div>';
+                if (totalHours) totalHours.textContent = '0h';
+                return;
+            }
+
+            const estTotal = week.battle_plan.reduce((sum, item) => sum + (item.estimated_hours || 0), 0);
+            if (totalHours) totalHours.textContent = `${estTotal}h`;
+
+            container.innerHTML = week.battle_plan.map(item => {
+                const statusClass = item.completed ? 'completed' : item.status === 'in_progress' ? 'in-progress' : '';
+                return `
+                    <div class="battle-plan-item ${statusClass}" style="margin-bottom: 0.75rem;" onclick="toggleBattlePlanItem('${item.id}')">
+                        <div class="battle-plan-priority">${item.priority}</div>
+                        <div class="battle-plan-content" style="flex: 1;">
+                            <div class="battle-plan-outcome" style="white-space: normal;">${item.outcome}</div>
+                            <div class="battle-plan-module">${item.module.toUpperCase()} · ${item.estimated_hours}h estimated</div>
+                            ${item.tasks?.length ? `
+                                <div style="margin-top: 0.5rem; padding-left: 0.5rem; border-left: 2px solid var(--border-accent);">
+                                    ${item.tasks.map(task => `<div style="font-size: 0.75rem; color: var(--text-muted); margin: 0.25rem 0;">• ${task}</div>`).join('')}
+                                </div>
+                            ` : ''}
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 0.7rem; color: ${item.completed ? 'var(--success)' : item.status === 'in_progress' ? 'var(--warning)' : 'var(--text-muted)'};">
+                                ${item.completed ? '✓ DONE' : item.status === 'in_progress' ? '● IN PROGRESS' : '○ PENDING'}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function openWeeklyReview() {
+            showToast('Weekly review modal coming soon!');
+        }
+
+        // Systems functions
+        function loadSystemsPage() {
+            renderSystems();
         }
 
         function renderSystems() {
@@ -6513,7 +7254,6 @@
 
             list.innerHTML = appData.systems.map(s => renderSystemCard(s)).join('');
 
-            // Calculate performance metrics
             const avgSuccess = appData.systems.reduce((acc, s) => acc + (s.successRate || 0), 0) / appData.systems.length;
             performance.innerHTML = `
                 <div class="system-stat">
@@ -6537,44 +7277,12 @@
             `;
         }
 
-        function openCreatePlanModal() {
-            showToast('Plan creation coming soon!');
-        }
-
         function openCreateSystemModal() {
             showToast('System builder coming soon!');
         }
 
-        function openPlanDetail(planId) {
-            showToast('Plan details coming soon!');
-        }
-
         function openSystemDetail(systemId) {
             showToast('System details coming soon!');
-        }
-
-        function renderDashboardPreviews() {
-            const plansPreview = document.getElementById('dashPlansPreview');
-            const systemsPreview = document.getElementById('dashSystemsPreview');
-
-            // Plans preview
-            if (appData.plans && appData.plans.filter(p => !p.completed).length > 0) {
-                const activePlans = appData.plans.filter(p => !p.completed).slice(0, 2);
-                plansPreview.innerHTML = activePlans.map(p => `
-                    <div style="font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.5rem;">
-                        ${p.name} <span style="color: var(--gold-primary);">${p.targetDate ? '→ ' + p.targetDate : ''}</span>
-                    </div>
-                `).join('');
-            }
-
-            // Systems preview
-            if (appData.systems && appData.systems.length > 0) {
-                systemsPreview.innerHTML = appData.systems.slice(0, 2).map(s => `
-                    <div style="font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.5rem;">
-                        ${s.name} <span style="color: var(--success);">[${s.successRate || 0}%]</span>
-                    </div>
-                `).join('');
-            }
         }
 
         // ============================================
@@ -6637,6 +7345,9 @@
             // Load enhanced masters data from JSON files (non-blocking)
             loadEnhancedMastersData().catch(() => console.log('Enhanced data not loaded - using fallbacks'));
 
+            // Load planning data (Vision, OKRs, Weekly Plans)
+            loadPlanningData().catch(() => console.log('Planning data not loaded - using defaults'));
+
             // Initialize new data structures
             if (!appData.plans) appData.plans = [];
             if (!appData.systems) appData.systems = [];
@@ -6651,7 +7362,6 @@
             loadTodayGratitude();
             loadTodaysPlan();
             initQuickJournal();
-            renderDashboardPreviews();
 
             // Generate and render 10 power words
             const powerWords = generatePowerWords();
