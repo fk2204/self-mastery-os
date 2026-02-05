@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SELF-MASTERY OS</title>
+    <title>MASTERMIND ALLIANCE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -74,6 +74,12 @@
             opacity: 0.1;
             pointer-events: none;
             z-index: -1;
+        }
+
+        /* Utility Classes */
+        .text-muted {
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
 
         /* Layout */
@@ -289,6 +295,322 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+        }
+
+        /* Dashboard Main Grid (40/60 split) */
+        .dashboard-main-grid {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: 1.5rem;
+        }
+
+        .dashboard-left, .dashboard-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Full Habits Tracker Card */
+        .habits-tracker-card {
+            flex-grow: 1;
+        }
+
+        .habits-progress-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .full-habits-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        /* Today's Plan Styles */
+        .todays-priorities {
+            margin-bottom: 1rem;
+        }
+
+        .priority-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .priority-item:last-child {
+            border-bottom: none;
+        }
+
+        .priority-number {
+            width: 24px;
+            height: 24px;
+            background: var(--gold-primary);
+            color: var(--bg-void);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .priority-text {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        .todays-win {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 8px;
+            padding: 0.75rem 1rem;
+            margin-top: 0.75rem;
+        }
+
+        .win-label {
+            font-size: 0.65rem;
+            color: var(--success);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.25rem;
+        }
+
+        .win-text {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        /* Quick Journal */
+        .quick-journal-input {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .quick-journal-status {
+            transition: all 0.3s ease;
+        }
+
+        .quick-journal-status.saving {
+            background: var(--warning);
+        }
+
+        .quick-journal-status.saved {
+            background: var(--success);
+        }
+
+        /* Collapsible Sections */
+        .collapsible-section {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .collapsible-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.25rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .collapsible-header:hover {
+            background: var(--bg-elevated);
+        }
+
+        .collapsible-arrow {
+            transition: transform 0.3s ease;
+            color: var(--text-muted);
+        }
+
+        .collapsible-arrow.rotated {
+            transform: rotate(180deg);
+        }
+
+        .collapsible-content {
+            padding: 0 1.25rem 1.25rem;
+        }
+
+        .mini-section-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Power Words Accordion */
+        .power-words-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .power-word-item {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .power-word-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .power-word-header:hover {
+            background: var(--bg-hover);
+        }
+
+        .power-word-term {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1rem;
+            color: var(--gold-primary);
+            letter-spacing: 0.05em;
+        }
+
+        .power-word-module {
+            font-size: 0.6rem;
+            padding: 0.2rem 0.5rem;
+            background: rgba(139, 92, 246, 0.15);
+            border-radius: 4px;
+            color: var(--accent-purple);
+        }
+
+        .power-word-content {
+            padding: 0 1rem 1rem;
+            display: none;
+        }
+
+        .power-word-content.expanded {
+            display: block;
+        }
+
+        .power-word-definition {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .power-word-example {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-style: italic;
+            padding-top: 0.5rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        /* Plans Cards */
+        .plan-card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .plan-card:hover {
+            border-color: var(--gold-dim);
+        }
+
+        .plan-title {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .plan-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .plan-progress-bar {
+            height: 6px;
+            background: var(--bg-deep);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 0.25rem;
+        }
+
+        .plan-progress-fill {
+            height: 100%;
+            background: var(--gold-primary);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .plan-progress-text {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        /* Systems Cards */
+        .system-card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .system-card:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .system-name {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .system-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .system-success-rate {
+            font-size: 0.8rem;
+            color: var(--success);
+            margin-top: 0.5rem;
+        }
+
+        .system-stat {
+            display: inline-block;
+            text-align: center;
+            padding: 1rem;
+            margin-right: 1rem;
+        }
+
+        .system-stat-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2rem;
+            color: var(--gold-primary);
+        }
+
+        .system-stat-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+        }
+
+        @media (max-width: 1200px) {
+            .dashboard-main-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .grid-3 {
@@ -2058,6 +2380,682 @@
             letter-spacing: 0.1em;
         }
 
+        /* ============================================
+           PROACTIVE JOURNAL STYLES
+           ============================================ */
+
+        /* Proactive Context Banner */
+        .proactive-banner {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, rgba(212, 168, 71, 0.15) 0%, rgba(212, 168, 71, 0.05) 100%);
+            border: 1px solid rgba(212, 168, 71, 0.3);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            animation: bannerPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes bannerPulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(212, 168, 71, 0.2); }
+            50% { box-shadow: 0 0 20px 5px rgba(212, 168, 71, 0.1); }
+        }
+
+        .proactive-banner-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dim) 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .proactive-banner-icon svg {
+            width: 20px;
+            height: 20px;
+            color: var(--bg-void);
+        }
+
+        .proactive-banner-content {
+            flex-grow: 1;
+        }
+
+        .proactive-banner-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            color: var(--gold-primary);
+        }
+
+        .proactive-banner-message {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .proactive-banner-action {
+            flex-shrink: 0;
+        }
+
+        .proactive-banner-dismiss {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: color 0.2s ease;
+        }
+
+        .proactive-banner-dismiss:hover {
+            color: var(--text-primary);
+        }
+
+        .proactive-banner-dismiss svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* Mode Selector */
+        .journal-mode-selector {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            padding: 0.25rem;
+            background: var(--bg-surface);
+            border-radius: 12px;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .journal-mode-tab {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1rem;
+            background: transparent;
+            border: none;
+            border-radius: 10px;
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .journal-mode-tab:hover {
+            background: var(--bg-elevated);
+            color: var(--text-primary);
+        }
+
+        .journal-mode-tab.active {
+            background: var(--bg-elevated);
+            color: var(--gold-primary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .journal-mode-tab svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Journal Panels */
+        .journal-panel {
+            display: none;
+        }
+
+        .journal-panel.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        /* Daily Ops Grid */
+        .journal-daily-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Framework Card */
+        .framework-card {
+            position: relative;
+            background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(212, 168, 71, 0.08) 100%);
+            border-top: 3px solid transparent;
+            border-image: linear-gradient(90deg, var(--gold-dim), var(--gold-primary), var(--gold-dim)) 1;
+        }
+
+        .framework-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .framework-source {
+            font-size: 0.7rem;
+            color: var(--gold-dim);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .framework-shuffle-btn {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 0.5rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .framework-shuffle-btn:hover {
+            border-color: var(--gold-primary);
+            color: var(--gold-primary);
+        }
+
+        .framework-shuffle-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .framework-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .framework-description {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .framework-power {
+            font-family: 'Crimson Pro', serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--gold-primary);
+            padding: 0.75rem 1rem;
+            background: rgba(212, 168, 71, 0.1);
+            border-radius: 8px;
+            border-left: 3px solid var(--gold-primary);
+        }
+
+        /* Journal Section Cards */
+        .journal-section-card {
+            background: var(--bg-surface);
+        }
+
+        .journal-textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .execution-notes {
+            min-height: 120px;
+        }
+
+        /* Framework Prompts */
+        .framework-prompts-card {
+            background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(139, 92, 246, 0.05) 100%);
+        }
+
+        .framework-prompt-item {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .framework-prompt-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .framework-prompt-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 0.9rem;
+            color: var(--accent-purple);
+            margin-bottom: 0.5rem;
+        }
+
+        .framework-prompt-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .framework-prompt-input {
+            width: 100%;
+            padding: 0.75rem;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .framework-prompt-input:focus {
+            outline: none;
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+        }
+
+        /* AAR Card */
+        .aar-card {
+            background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(34, 197, 94, 0.05) 100%);
+        }
+
+        .aar-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Journal Actions */
+        .journal-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        /* Deep Dive Selector */
+        .deep-dive-selector {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .deep-dive-type-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .deep-dive-type-card:hover {
+            border-color: var(--gold-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .deep-dive-type-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--bg-elevated);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .deep-dive-type-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--gold-primary);
+        }
+
+        .deep-dive-type-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .deep-dive-type-source {
+            font-size: 0.75rem;
+            color: var(--gold-dim);
+            margin-bottom: 0.5rem;
+        }
+
+        .deep-dive-type-desc {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* Deep Dive Modal */
+        .deep-dive-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .deep-dive-source {
+            font-size: 0.75rem;
+            color: var(--gold-dim);
+            letter-spacing: 0.1em;
+        }
+
+        .deep-dive-progress {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .deep-dive-step-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.25rem;
+            letter-spacing: 0.05em;
+            color: var(--gold-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .deep-dive-step-prompt {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .deep-dive-textarea {
+            width: 100%;
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Patterns Grid */
+        .patterns-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .pattern-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: var(--bg-elevated);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .pattern-item-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--bg-surface);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .pattern-item-content {
+            flex-grow: 1;
+        }
+
+        .pattern-item-name {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        .pattern-item-count {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .pattern-item-bar {
+            height: 4px;
+            background: var(--bg-surface);
+            border-radius: 2px;
+            margin-top: 0.25rem;
+            overflow: hidden;
+        }
+
+        .pattern-item-bar-fill {
+            height: 100%;
+            background: var(--gold-primary);
+            border-radius: 2px;
+        }
+
+        /* Blind spot items */
+        .blind-spot-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .blind-spot-item:hover {
+            background: rgba(239, 68, 68, 0.15);
+            border-color: rgba(239, 68, 68, 0.5);
+        }
+
+        .blind-spot-icon {
+            color: var(--danger);
+        }
+
+        .blind-spot-name {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        .blind-spot-days {
+            font-size: 0.75rem;
+            color: var(--danger);
+            margin-left: auto;
+        }
+
+        /* History Filters */
+        .history-filters {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .history-filter {
+            width: auto;
+            min-width: 140px;
+        }
+
+        .history-search {
+            flex-grow: 1;
+        }
+
+        /* History List */
+        .history-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .history-entry {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .history-entry:hover {
+            border-color: var(--gold-primary);
+            background: var(--bg-elevated);
+        }
+
+        .history-entry-type {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-elevated);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .history-entry-type svg {
+            width: 20px;
+            height: 20px;
+            color: var(--gold-primary);
+        }
+
+        .history-entry-type.deep-dive {
+            background: rgba(139, 92, 246, 0.2);
+        }
+
+        .history-entry-type.deep-dive svg {
+            color: var(--accent-purple);
+        }
+
+        .history-entry-content {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .history-entry-title {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .history-entry-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .history-entry-framework {
+            color: var(--gold-dim);
+        }
+
+        .history-entry-score {
+            margin-left: auto;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.25rem;
+            color: var(--text-muted);
+        }
+
+        .history-entry-score.high {
+            color: var(--success);
+        }
+
+        .history-entry-score.medium {
+            color: var(--warning);
+        }
+
+        .history-entry-score.low {
+            color: var(--danger);
+        }
+
+        /* Journal View Modal Content */
+        .journal-view-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .journal-view-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .journal-view-label {
+            font-size: 0.7rem;
+            color: var(--gold-dim);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .journal-view-content {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            padding: 0.75rem 1rem;
+            background: var(--bg-elevated);
+            border-radius: 8px;
+        }
+
+        .journal-view-framework {
+            padding: 1rem;
+            background: linear-gradient(135deg, rgba(212, 168, 71, 0.1) 0%, rgba(212, 168, 71, 0.05) 100%);
+            border-radius: 8px;
+            border-left: 3px solid var(--gold-primary);
+        }
+
+        .journal-view-framework-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.1rem;
+            color: var(--gold-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .journal-view-framework-source {
+            font-size: 0.75rem;
+            color: var(--gold-dim);
+        }
+
+        /* Responsive Journal */
+        @media (max-width: 900px) {
+            .deep-dive-selector {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .patterns-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .aar-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .history-filters {
+                flex-wrap: wrap;
+            }
+
+            .history-filter {
+                flex: 1;
+                min-width: 120px;
+            }
+
+            .history-search {
+                width: 100%;
+                flex: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .journal-mode-tab span:not(.journal-mode-tab svg) {
+                display: none;
+            }
+
+            .deep-dive-selector {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Responsive */
         @media (max-width: 1200px) {
             .grid-3 { grid-template-columns: repeat(2, 1fr); }
@@ -2101,12 +3099,12 @@
             <div class="sidebar-header">
                 <div class="logo">
                     <div class="logo-icon"></div>
-                    MASTERY OS
+                    MASTERMIND ALLIANCE
                 </div>
             </div>
 
             <nav class="nav-section">
-                <div class="nav-label">Daily</div>
+                <div class="nav-label">Main</div>
                 <div class="nav-item active" onclick="showPage('dashboard')">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
@@ -2114,54 +3112,23 @@
                     </svg>
                     <span class="nav-item-text">Dashboard</span>
                 </div>
-                <div class="nav-item" onclick="showPage('wisdom')">
+                <div class="nav-item" onclick="showPage('journal')">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>
+                        <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
                     </svg>
-                    <span class="nav-item-text">Daily Wisdom</span>
-                    <span class="nav-badge">NEW</span>
+                    <span class="nav-item-text">Journal</span>
                 </div>
-                <div class="nav-item" onclick="openMorningCheckin()">
+                <div class="nav-item" onclick="showPage('plans')">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
                     </svg>
-                    <span class="nav-item-text">Morning Check-in</span>
+                    <span class="nav-item-text">Plans</span>
                 </div>
-                <div class="nav-item" onclick="openEveningReflection()">
+                <div class="nav-item" onclick="showPage('systems')">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
                     </svg>
-                    <span class="nav-item-text">Evening Reflection</span>
-                </div>
-
-                <div class="nav-label">Track</div>
-                <div class="nav-item" onclick="showPage('habits')">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                    <span class="nav-item-text">Habits</span>
-                    <span class="nav-badge" id="habitsBadge">0/0</span>
-                </div>
-                <div class="nav-item" onclick="showPage('modules')">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
-                    </svg>
-                    <span class="nav-item-text">Modules</span>
-                </div>
-
-                <div class="nav-label">Review</div>
-                <div class="nav-item" onclick="openWeeklyReview()">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                        <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-                    </svg>
-                    <span class="nav-item-text">Weekly Review</span>
-                </div>
-                <div class="nav-item" onclick="showPage('stats')">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-                    </svg>
-                    <span class="nav-item-text">Analytics</span>
+                    <span class="nav-item-text">Systems</span>
                 </div>
 
                 <div class="nav-label">Learn</div>
@@ -2171,18 +3138,11 @@
                     </svg>
                     <span class="nav-item-text">Masters Library</span>
                 </div>
-                <a href="mentor_chat.html" class="nav-item" style="text-decoration: none;">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-                    </svg>
-                    <span class="nav-item-text">Mentor Conversations</span>
-                    <span class="nav-badge">NEW</span>
-                </a>
 
-                <div class="nav-label">Settings</div>
+                <div class="nav-label">Config</div>
                 <div class="nav-item" onclick="showPage('settings')">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>
                     </svg>
                     <span class="nav-item-text">Settings</span>
                 </div>
@@ -2204,18 +3164,19 @@
 
             <!-- Dashboard Page -->
             <section class="page-section active" id="page-dashboard">
+                <!-- Command Center Stats Bar -->
                 <div class="grid-4" style="margin-bottom: 1.5rem;">
                     <div class="stat-card">
                         <div class="stat-value" id="statStreak">0</div>
                         <div class="stat-label">DAY STREAK</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-value" id="statDeepWork">0h</div>
-                        <div class="stat-label">DEEP WORK TODAY</div>
-                    </div>
-                    <div class="stat-card">
                         <div class="stat-value" id="statHabits">0%</div>
                         <div class="stat-label">HABITS COMPLETE</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="statDeepWork">0h</div>
+                        <div class="stat-label">DEEP WORK TODAY</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-value" id="statAvgScore">0</div>
@@ -2223,8 +3184,10 @@
                     </div>
                 </div>
 
-                <div class="grid-2">
-                    <div>
+                <!-- Main Dashboard Grid: Left (40%) / Right (60%) -->
+                <div class="dashboard-main-grid">
+                    <!-- LEFT COLUMN: Wisdom, Plan, Mantra -->
+                    <div class="dashboard-left">
                         <!-- Today's Wisdom -->
                         <div class="wisdom-hero">
                             <div class="master-badge">
@@ -2236,418 +3199,243 @@
                                 <div class="practice-label">APPLY TODAY</div>
                                 <div class="practice-text" id="dashPractice">Loading...</div>
                             </div>
-
-                            <!-- Daily Insights Strip -->
-                            <div class="daily-insights-strip">
-                                <!-- Daily Vocabulary -->
-                                <div class="insight-card insight-vocabulary">
-                                    <div class="insight-label">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                                        </svg>
-                                        DAILY VOCABULARY
-                                    </div>
-                                    <div class="insight-term" id="dashVocabTerm">Loading...</div>
-                                    <div class="insight-definition" id="dashVocabDef">Loading definition...</div>
-                                    <div class="insight-example" id="dashVocabExample">Loading example...</div>
-                                    <div class="insight-module-tag" id="dashVocabModule">MODULE</div>
-                                </div>
-
-                                <!-- Daily Mantra -->
-                                <div class="insight-card insight-mantra">
-                                    <div class="insight-label">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
-                                        </svg>
-                                        DAILY MANTRA
-                                    </div>
-                                    <div class="insight-mantra-text" id="dashMantraText">"Loading mantra..."</div>
-                                </div>
-
-                                <!-- Daily Quote -->
-                                <div class="insight-card insight-quote">
-                                    <div class="insight-label">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"/>
-                                            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/>
-                                        </svg>
-                                        DAILY QUOTE
-                                    </div>
-                                    <div class="insight-quote-text" id="dashQuoteText">"Loading quote..."</div>
-                                    <div class="insight-quote-author" id="dashQuoteAuthor">- Author</div>
-                                </div>
-                            </div>
-
-                            <!-- Wisdom Expansion -->
-                            <div class="wisdom-expansion">
-                                <!-- Today's Book -->
-                                <div class="book-card">
-                                    <div class="book-label">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                                        </svg>
-                                        TODAY'S BOOK
-                                    </div>
-                                    <div class="book-title" id="dashBookTitle">Loading...</div>
-                                    <div class="book-author" id="dashBookAuthor">by Author</div>
-                                    <div class="book-insight" id="dashBookInsight">"Loading key insight..."</div>
-                                    <div class="book-category" id="dashBookCategory">Category</div>
-                                </div>
-
-                                <!-- Billionaire Trait -->
-                                <div class="trait-card">
-                                    <div class="trait-label">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                                        </svg>
-                                        BILLIONAIRE TRAIT
-                                    </div>
-                                    <div class="trait-name" id="dashTraitName">Loading...</div>
-                                    <div class="trait-description" id="dashTraitDesc">Loading description...</div>
-                                    <div class="trait-examples" id="dashTraitExamples">
-                                        <!-- Examples rendered here -->
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
-                        <!-- Quick Actions -->
+                        <!-- Today's Plan (from morning check-in) -->
                         <div class="card">
                             <div class="card-header">
                                 <div class="card-title">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                        <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
                                     </svg>
-                                    QUICK ACTIONS
+                                    TODAY'S PLAN
                                 </div>
                             </div>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                            <div id="todaysPlanContent">
+                                <div class="todays-priorities" id="todaysPriorities">
+                                    <div style="color: var(--text-muted); font-size: 0.9rem; padding: 1rem 0;">
+                                        Complete your morning check-in to set today's priorities
+                                    </div>
+                                </div>
+                                <div class="todays-win" id="todaysWin" style="display: none;">
+                                    <div class="win-label">TODAY'S WIN</div>
+                                    <div class="win-text" id="todaysWinText"></div>
+                                </div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 1rem;">
                                 <button class="btn btn-primary" onclick="openMorningCheckin()">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <circle cx="12" cy="12" r="5"/><path d="M12 1v2"/>
                                     </svg>
-                                    Morning Check-in
+                                    Morning
                                 </button>
                                 <button class="btn" onclick="openEveningReflection()">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M21 12.79A9 9 0 1 1 11.21 3"/>
                                     </svg>
-                                    Evening Reflection
-                                </button>
-                                <button class="btn" onclick="refreshWisdom()">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
-                                    </svg>
-                                    New Wisdom
-                                </button>
-                                <button class="btn" onclick="showPage('masters')">
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                                    </svg>
-                                    Masters
+                                    Evening
                                 </button>
                             </div>
                         </div>
+
+                        <!-- Daily Mantra -->
+                        <div class="insight-card insight-mantra" style="margin-top: 1rem;">
+                            <div class="insight-label">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>
+                                </svg>
+                                DAILY MANTRA
+                            </div>
+                            <div class="insight-mantra-text" id="dashMantraText">"Loading mantra..."</div>
+                        </div>
                     </div>
 
-                    <div>
-                        <!-- Today's Habits -->
-                        <div class="card">
+                    <!-- RIGHT COLUMN: Full Habits Tracker + Quick Journal -->
+                    <div class="dashboard-right">
+                        <!-- Full Habits Tracker -->
+                        <div class="card habits-tracker-card">
                             <div class="card-header">
                                 <div class="card-title">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                                     </svg>
-                                    TODAY'S HABITS
+                                    HABIT TRACKER
                                 </div>
                                 <span class="card-badge" id="dashHabitProgress">0/0</span>
                             </div>
-                            <div id="dashHabitList">
-                                <!-- Habits rendered here -->
+
+                            <!-- Progress Ring -->
+                            <div class="habits-progress-section">
+                                <div class="progress-ring-container" style="padding: 0.5rem;">
+                                    <div class="progress-ring" style="width: 120px; height: 120px;">
+                                        <svg width="120" height="120" viewBox="0 0 120 120">
+                                            <circle class="progress-ring-bg" cx="60" cy="60" r="50" style="stroke-width: 8;"/>
+                                            <circle class="progress-ring-fill" id="habitProgressRing" cx="60" cy="60" r="50" style="stroke-width: 8; stroke-dasharray: 314.159; stroke-dashoffset: 314.159;"/>
+                                        </svg>
+                                        <div class="progress-ring-text">
+                                            <div class="progress-ring-value" id="habitProgressValue" style="font-size: 2rem;">0%</div>
+                                            <div class="progress-ring-label">DONE</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
+                            <!-- All Habits List -->
+                            <div id="dashHabitList" class="full-habits-list">
+                                <!-- All habits rendered here -->
+                            </div>
+
+                            <!-- Add Habit Button -->
+                            <button class="btn btn-block" onclick="openAddHabitModal()" style="margin-top: 1rem;">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                Add New Habit
+                            </button>
                         </div>
 
-                        <!-- Skill Challenge -->
-                        <div class="challenge-card">
+                        <!-- Quick Journal -->
+                        <div class="card" style="margin-top: 1rem;">
                             <div class="card-header">
                                 <div class="card-title">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                                        <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
                                     </svg>
-                                    TODAY'S CHALLENGE
+                                    QUICK JOURNAL
                                 </div>
+                                <span class="card-badge quick-journal-status" id="quickJournalStatus">Saved</span>
                             </div>
-                            <div class="challenge-module" id="dashChallengeModule">LOADING</div>
-                            <div class="challenge-text" id="dashChallengeText">Loading challenge...</div>
-                            <div class="challenge-response">
-                                <div class="challenge-response-label">Your Response / Notes</div>
-                                <textarea class="challenge-input" id="dashChallengeResponse" placeholder="Write your answer, notes, or results here..."></textarea>
-                                <div class="challenge-actions">
-                                    <button class="btn" onclick="saveChallengeResponse('dash')">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
-                                        </svg>
-                                        Save Progress
-                                    </button>
-                                    <button class="btn btn-success" onclick="completeChallenge('dash')">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <polyline points="20 6 9 17 4 12"/>
-                                        </svg>
-                                        Complete
-                                    </button>
-                                </div>
-                                <div id="dashChallengeSaved" style="display: none;"></div>
+                            <textarea class="form-textarea quick-journal-input" id="quickJournalInput" placeholder="Capture your thoughts, observations, wins, lessons..." rows="4"></textarea>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.75rem;">
+                                <button class="btn" onclick="showPage('journal')" style="font-size: 0.8rem;">
+                                    View Past Entries
+                                </button>
+                                <span class="text-muted" style="font-size: 0.75rem;" id="quickJournalTimestamp"></span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Gratitude Journal -->
-                <div class="card gratitude-card" style="margin-top: 1.5rem; position: relative;">
-                    <div class="card-header">
+                <!-- Systems & Plans Preview (Collapsible) -->
+                <div class="collapsible-section" style="margin-top: 1.5rem;">
+                    <div class="collapsible-header" onclick="toggleCollapsible('systemsPlansSection')">
                         <div class="card-title">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                <circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v10"/>
                             </svg>
-                            DAILY GRATITUDE
+                            SYSTEMS & PLANS
                         </div>
-                        <div class="card-badge" id="gratitudeStreak">0 day streak</div>
-                    </div>
-                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
-                        What are you grateful for today?
-                    </p>
-                    <div class="gratitude-list">
-                        <div class="gratitude-item">
-                            <span class="gratitude-number">1</span>
-                            <input type="text" class="gratitude-input" id="gratitude1" placeholder="I'm grateful for...">
-                        </div>
-                        <div class="gratitude-item">
-                            <span class="gratitude-number">2</span>
-                            <input type="text" class="gratitude-input" id="gratitude2" placeholder="I'm grateful for...">
-                        </div>
-                        <div class="gratitude-item">
-                            <span class="gratitude-number">3</span>
-                            <input type="text" class="gratitude-input" id="gratitude3" placeholder="I'm grateful for...">
-                        </div>
-                    </div>
-                    <button class="btn btn-primary btn-block" onclick="saveGratitude()">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
+                        <svg class="collapsible-arrow" id="systemsPlansArrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
                         </svg>
-                        Save Gratitude
-                    </button>
-                    <div id="gratitudeSaved" style="display: none;"></div>
-                </div>
-            </section>
-
-            <!-- Wisdom Page -->
-            <section class="page-section" id="page-wisdom">
-                <div class="wisdom-hero" style="margin-bottom: 2rem;">
-                    <div class="master-badge">
-                        <span class="master-name" id="wisdomMasterName">Loading...</span>
-                        <span class="master-expertise" id="wisdomMasterExpertise"></span>
                     </div>
-                    <div class="wisdom-quote" id="wisdomQuote">"Loading wisdom..."</div>
-                    <div class="wisdom-practice">
-                        <div class="practice-label">APPLY TODAY</div>
-                        <div class="practice-text" id="wisdomPractice">Loading...</div>
-                    </div>
-                </div>
-
-                <div class="grid-2">
-                    <div class="challenge-card">
-                        <div class="card-header">
-                            <div class="card-title">TODAY'S SKILL CHALLENGE</div>
-                        </div>
-                        <div class="challenge-module" id="wisdomChallengeModule">LOADING</div>
-                        <div class="challenge-text" id="wisdomChallengeText">Loading challenge...</div>
-                        <div class="challenge-response">
-                            <div class="challenge-response-label">Your Response / Notes</div>
-                            <textarea class="challenge-input" id="wisdomChallengeResponse" placeholder="Write your answer, notes, or results here..."></textarea>
-                            <div class="challenge-actions">
-                                <button class="btn" onclick="saveChallengeResponse('wisdom')">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
-                                    </svg>
-                                    Save Progress
-                                </button>
-                                <button class="btn btn-success" onclick="completeChallenge('wisdom')">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="20 6 9 17 4 12"/>
-                                    </svg>
-                                    Complete
-                                </button>
+                    <div class="collapsible-content" id="systemsPlansSection" style="display: none;">
+                        <div class="grid-2" style="margin-top: 1rem;">
+                            <div>
+                                <div class="mini-section-label">ACTIVE SYSTEMS</div>
+                                <div id="dashSystemsPreview">
+                                    <div style="color: var(--text-muted); font-size: 0.85rem;">No systems yet</div>
+                                </div>
                             </div>
-                            <div id="wisdomChallengeSaved" style="display: none;"></div>
-                        </div>
-                    </div>
-
-                    <div class="card power-question-card">
-                        <div class="card-header">
-                            <div class="card-title">POWER QUESTION</div>
-                        </div>
-                        <div class="power-question-text" id="wisdomQuestion">"Loading..."</div>
-                        <div class="challenge-response" style="margin-top: 1.5rem;">
-                            <div class="challenge-response-label">Your Reflection</div>
-                            <textarea class="challenge-input" id="powerQuestionResponse" placeholder="Reflect on this question..."></textarea>
-                            <button class="btn btn-block" onclick="savePowerQuestionResponse()">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/>
-                                </svg>
-                                Save Reflection
-                            </button>
+                            <div>
+                                <div class="mini-section-label">CURRENT PLANS</div>
+                                <div id="dashPlansPreview">
+                                    <div style="color: var(--text-muted); font-size: 0.85rem;">No active plans</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card" style="margin-top: 1.5rem;">
-                    <div class="card-header">
-                        <div class="card-title">MINDSET SHIFT</div>
-                    </div>
-                    <div class="mindset-grid">
-                        <div class="mindset-box mindset-from">
-                            <div class="mindset-label">STOP THINKING</div>
-                            <div class="mindset-text" id="wisdomMindsetFrom">"Loading..."</div>
+                <!-- 10 Power Words (Collapsible Accordion) -->
+                <div class="collapsible-section" style="margin-top: 1rem;">
+                    <div class="collapsible-header" onclick="toggleCollapsible('powerWordsSection')">
+                        <div class="card-title">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                            </svg>
+                            10 POWER WORDS
                         </div>
-                        <div class="mindset-arrow">→</div>
-                        <div class="mindset-box mindset-to">
-                            <div class="mindset-label">START THINKING</div>
-                            <div class="mindset-text" id="wisdomMindsetTo">"Loading..."</div>
-                        </div>
-                    </div>
-                    <div class="mindset-why" id="wisdomMindsetWhy">Loading...</div>
-                </div>
-
-                <div style="text-align: center; margin-top: 2rem;">
-                    <button class="btn btn-primary btn-lg" onclick="refreshWisdom()">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+                        <svg class="collapsible-arrow" id="powerWordsArrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
                         </svg>
-                        Get New Wisdom
-                    </button>
+                    </div>
+                    <div class="collapsible-content" id="powerWordsSection" style="display: none;">
+                        <div class="power-words-accordion" id="powerWordsAccordion">
+                            <!-- 10 vocabulary words rendered here -->
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <!-- Habits Page -->
-            <section class="page-section" id="page-habits">
+            <!-- Plans Page -->
+            <section class="page-section" id="page-plans">
                 <div class="grid-2">
                     <div>
                         <div class="card">
                             <div class="card-header">
-                                <div class="card-title">TODAY'S PROGRESS</div>
-                            </div>
-                            <div class="progress-ring-container">
-                                <div class="progress-ring">
-                                    <svg width="160" height="160" viewBox="0 0 160 160">
-                                        <circle class="progress-ring-bg" cx="80" cy="80" r="70"/>
-                                        <circle class="progress-ring-fill" id="habitProgressRing" cx="80" cy="80" r="70"/>
+                                <div class="card-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
                                     </svg>
-                                    <div class="progress-ring-text">
-                                        <div class="progress-ring-value" id="habitProgressValue">0%</div>
-                                        <div class="progress-ring-label">COMPLETE</div>
-                                    </div>
+                                    ACTIVE PLANS
+                                </div>
+                                <button class="btn" onclick="openCreatePlanModal()">+ New Plan</button>
+                            </div>
+                            <div id="plansActiveList">
+                                <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
+                                    No active plans. Create your first plan to get started!
                                 </div>
                             </div>
                         </div>
-
-                        <button class="btn btn-block" onclick="openAddHabitModal()" style="margin-top: 1rem;">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-                            </svg>
-                            Add New Habit
-                        </button>
                     </div>
-
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="card-title">ALL HABITS</div>
-                            <span class="card-badge" id="allHabitProgress">0/0</span>
-                        </div>
-                        <div id="allHabitList">
-                            <!-- All habits rendered here -->
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">COMPLETED PLANS</div>
+                            </div>
+                            <div id="plansCompletedList">
+                                <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
+                                    Complete a plan to see it here
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Modules Page -->
-            <section class="page-section" id="page-modules">
-                <div class="grid-3" id="moduleGrid">
-                    <!-- Module cards rendered here -->
-                </div>
-            </section>
-
-            <!-- Stats Page -->
-            <section class="page-section" id="page-stats">
-                <div class="grid-4" style="margin-bottom: 2rem;">
-                    <div class="stat-card">
-                        <div class="stat-value" id="statsStreak">0</div>
-                        <div class="stat-label">TOTAL DAYS</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value" id="statsDeepWork">0h</div>
-                        <div class="stat-label">TOTAL DEEP WORK</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value" id="statsHabits">0%</div>
-                        <div class="stat-label">HABIT COMPLETION</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value" id="statsAvgScore">0</div>
-                        <div class="stat-label">AVG DAY SCORE</div>
-                    </div>
-                </div>
-
+            <!-- Systems Page -->
+            <section class="page-section" id="page-systems">
                 <div class="grid-2">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="card-title">MODULE PROGRESS</div>
-                        </div>
-                        <div id="statsModuleList">
-                            <!-- Module stats rendered here -->
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="card-title">TOP STREAKS</div>
-                        </div>
-                        <div id="statsStreakList">
-                            <!-- Streak stats rendered here -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card" style="margin-top: 1.5rem;">
-                    <div class="card-header">
-                        <div class="card-title">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
-                            </svg>
-                            CHALLENGE HISTORY
-                        </div>
-                        <div class="card-badge" id="challengeCount">0 completed</div>
-                    </div>
-                    <div id="challengeHistoryList">
-                        <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
-                            Complete challenges to see your history here
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6m0 6v10"/>
+                                    </svg>
+                                    MY SYSTEMS
+                                </div>
+                                <button class="btn" onclick="openCreateSystemModal()">+ New System</button>
+                            </div>
+                            <div id="systemsList">
+                                <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
+                                    No systems yet. Build your first repeatable system!
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="card" style="margin-top: 1.5rem;">
-                    <div class="card-header">
-                        <div class="card-title">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-                            </svg>
-                            GRATITUDE JOURNAL
-                        </div>
-                        <div class="card-badge" id="gratitudeCount">0 entries</div>
-                    </div>
-                    <div id="gratitudeHistoryList">
-                        <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
-                            Write your daily gratitudes to see your history here
+                    <div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">SYSTEM PERFORMANCE</div>
+                            </div>
+                            <div id="systemsPerformance">
+                                <div style="color: var(--text-muted); text-align: center; padding: 2rem;">
+                                    Track your systems to see performance metrics
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2657,6 +3445,208 @@
             <section class="page-section" id="page-masters">
                 <div class="grid-3" id="mastersGrid">
                     <!-- Master cards rendered here -->
+                </div>
+            </section>
+
+            <!-- Proactive Journal Page -->
+            <section class="page-section" id="page-journal">
+                <!-- Proactive Context Banner -->
+                <div class="proactive-banner" id="proactiveBanner" style="display: none;">
+                    <div class="proactive-banner-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="proactive-banner-content">
+                        <div class="proactive-banner-title" id="proactiveBannerTitle">Framework Recommended</div>
+                        <div class="proactive-banner-message" id="proactiveBannerMessage">Based on your recent activity...</div>
+                    </div>
+                    <button class="btn btn-primary proactive-banner-action" id="proactiveBannerAction">Apply Framework</button>
+                    <button class="proactive-banner-dismiss" onclick="dismissProactiveBanner()">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mode Selector -->
+                <div class="journal-mode-selector">
+                    <button class="journal-mode-tab active" data-mode="daily" onclick="setJournalMode('daily')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        Daily Ops
+                    </button>
+                    <button class="journal-mode-tab" data-mode="deepdive" onclick="setJournalMode('deepdive')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                        Deep Dive
+                    </button>
+                    <button class="journal-mode-tab" data-mode="patterns" onclick="setJournalMode('patterns')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                        Patterns
+                    </button>
+                    <button class="journal-mode-tab" data-mode="history" onclick="setJournalMode('history')">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/>
+                        </svg>
+                        History
+                    </button>
+                </div>
+
+                <!-- Daily Ops Panel -->
+                <div class="journal-panel active" id="journalPanelDaily">
+                    <div class="journal-daily-grid">
+                        <!-- Framework Card -->
+                        <div class="card framework-card" id="frameworkCard">
+                            <div class="framework-card-header">
+                                <div class="framework-source" id="frameworkSource">Marcus Aurelius / Seneca</div>
+                                <button class="framework-shuffle-btn" onclick="shuffleFramework()" title="Try different framework">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="1 4 1 10 7 10"/><polyline points="23 20 23 14 17 14"/>
+                                        <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="framework-name" id="frameworkName">Stoic Premeditatio Malorum</div>
+                            <div class="framework-description" id="frameworkDescription">Mentally rehearse potential obstacles to eliminate surprise and prepare responses.</div>
+                            <div class="framework-power" id="frameworkPower">"I am prepared for whatever comes. Nothing will surprise me."</div>
+                        </div>
+
+                        <!-- Situation Analysis -->
+                        <div class="card journal-section-card">
+                            <div class="card-header">
+                                <div class="card-title">SITUATION ANALYSIS</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Current Reality (1-2 sentences)</label>
+                                <textarea class="form-textarea journal-textarea" id="journalSituation" placeholder="What is the state of things right now?"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Strategic Intent -->
+                        <div class="card journal-section-card">
+                            <div class="card-header">
+                                <div class="card-title">STRATEGIC INTENT</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Specific Outcome Being Engineered</label>
+                                <textarea class="form-textarea journal-textarea" id="journalIntent" placeholder="What specific result are you creating today?"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Framework Prompts -->
+                        <div class="card journal-section-card framework-prompts-card">
+                            <div class="card-header">
+                                <div class="card-title">FRAMEWORK APPLICATION</div>
+                            </div>
+                            <div id="frameworkPrompts">
+                                <!-- Framework prompts rendered here -->
+                            </div>
+                        </div>
+
+                        <!-- Execution Notes -->
+                        <div class="card journal-section-card">
+                            <div class="card-header">
+                                <div class="card-title">EXECUTION NOTES</div>
+                                <span class="card-subtitle">Capture throughout the day</span>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-textarea journal-textarea execution-notes" id="journalExecution" placeholder="Real-time capture: what happened, what you learned, observations..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- After-Action Review -->
+                        <div class="card journal-section-card aar-card">
+                            <div class="card-header">
+                                <div class="card-title">AFTER-ACTION REVIEW</div>
+                                <span class="card-subtitle">Complete at end of day</span>
+                            </div>
+                            <div class="aar-grid">
+                                <div class="form-group">
+                                    <label class="form-label">What Worked</label>
+                                    <textarea class="form-textarea journal-textarea" id="journalAarWorked" placeholder="What went well today?"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">What Didn't Work</label>
+                                    <textarea class="form-textarea journal-textarea" id="journalAarFailed" placeholder="What fell short?"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Intent vs Outcome Delta</label>
+                                <textarea class="form-textarea journal-textarea" id="journalAarDelta" placeholder="Did you achieve your strategic intent? What was the gap?"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Day Score (1-10)</label>
+                                <input type="range" class="form-range" id="journalDayScore" min="1" max="10" value="7">
+                                <div class="range-value" id="journalDayScoreValue">7</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="journal-actions">
+                        <button class="btn" onclick="saveJournalDraft()">Save Draft</button>
+                        <button class="btn btn-primary" onclick="saveJournalEntry('daily')">Complete Entry</button>
+                    </div>
+                </div>
+
+                <!-- Deep Dive Panel -->
+                <div class="journal-panel" id="journalPanelDeepdive">
+                    <div class="deep-dive-selector" id="deepDiveSelector">
+                        <!-- Deep dive type cards rendered here -->
+                    </div>
+                </div>
+
+                <!-- Patterns Panel -->
+                <div class="journal-panel" id="journalPanelPatterns">
+                    <div class="patterns-grid">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">RECURRING THEMES</div>
+                            </div>
+                            <div id="patternThemes">
+                                <p class="text-muted">Complete 5+ entries to see patterns</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">BLIND SPOTS</div>
+                            </div>
+                            <div id="patternBlindSpots">
+                                <p class="text-muted">Modules you haven't journaled about</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="margin-top: 1.5rem;">
+                        <div class="card-header">
+                            <div class="card-title">FRAMEWORK USAGE</div>
+                        </div>
+                        <div id="patternFrameworks">
+                            <p class="text-muted">Which frameworks are you using most?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- History Panel -->
+                <div class="journal-panel" id="journalPanelHistory">
+                    <div class="history-filters">
+                        <select class="form-select history-filter" id="historyTypeFilter" onchange="filterJournalHistory()">
+                            <option value="all">All Types</option>
+                            <option value="daily">Daily Ops</option>
+                            <option value="deepdive">Deep Dives</option>
+                        </select>
+                        <select class="form-select history-filter" id="historyModuleFilter" onchange="filterJournalHistory()">
+                            <option value="all">All Modules</option>
+                        </select>
+                        <input type="text" class="form-input history-search" id="historySearch" placeholder="Search entries..." oninput="filterJournalHistory()">
+                    </div>
+                    <div class="history-list" id="historyList">
+                        <p class="text-muted">No journal entries yet. Start your first Daily Ops entry!</p>
+                    </div>
                 </div>
             </section>
 
@@ -2900,6 +3890,93 @@
         </div>
     </div>
 
+    <!-- Deep Dive Modal -->
+    <div class="modal-overlay" id="deepDiveModal">
+        <div class="modal" style="max-width: 700px;">
+            <div class="modal-header">
+                <h2 class="modal-title" id="deepDiveTitle">DECISION FRAMEWORK</h2>
+                <button class="modal-close" onclick="closeModal('deepDiveModal')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="deep-dive-meta">
+                    <span class="deep-dive-source" id="deepDiveSource">Charlie Munger + Bezos</span>
+                    <span class="deep-dive-progress" id="deepDiveProgress">Step 1 of 7</span>
+                </div>
+                <div class="step-indicator" id="deepDiveStepIndicator">
+                    <!-- Step dots rendered dynamically -->
+                </div>
+                <div class="deep-dive-step" id="deepDiveStepContent">
+                    <h3 class="deep-dive-step-title" id="deepDiveStepTitle">Define the Decision</h3>
+                    <p class="deep-dive-step-prompt" id="deepDiveStepPrompt">What decision are you facing? Write it as a clear question.</p>
+                    <textarea class="form-textarea deep-dive-textarea" id="deepDiveResponse" placeholder="Write your response..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="deepDivePrevBtn" onclick="prevDeepDiveStep()" style="display: none;">Previous</button>
+                <button class="btn btn-primary" id="deepDiveNextBtn" onclick="nextDeepDiveStep()">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Journal Entry View Modal -->
+    <div class="modal-overlay" id="journalViewModal">
+        <div class="modal" style="max-width: 700px;">
+            <div class="modal-header">
+                <h2 class="modal-title" id="journalViewTitle">JOURNAL ENTRY</h2>
+                <button class="modal-close" onclick="closeModal('journalViewModal')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body" id="journalViewContent">
+                <!-- Entry content rendered here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Habit Modal -->
+    <div class="modal-overlay" id="addHabitModal">
+        <div class="modal" style="max-width: 500px;">
+            <div class="modal-header">
+                <h2 class="modal-title">ADD NEW HABIT</h2>
+                <button class="modal-close" onclick="closeModal('addHabitModal')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label">Habit Name</label>
+                    <input type="text" class="form-input" id="newHabitName" placeholder="e.g., Meditate for 10 minutes">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Related Module</label>
+                    <select class="form-select" id="newHabitModule">
+                        <option value="productivity">Productivity</option>
+                        <option value="mindset">Mindset</option>
+                        <option value="money">Money</option>
+                        <option value="sales">Sales</option>
+                        <option value="business">Business</option>
+                        <option value="finance">Finance</option>
+                        <option value="lifestyle">Lifestyle</option>
+                        <option value="health">Health</option>
+                        <option value="dating">Dating & Social</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('addHabitModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="addNewHabit()">Add Habit</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Toast Container -->
     <div class="toast-container" id="toastContainer"></div>
 
@@ -2938,7 +4015,17 @@
                 amCheckin: null,
                 pmReflection: null
             },
-            currentWisdom: null
+            currentWisdom: null,
+            journalEntries: [],
+            journalPatterns: {},
+            journalStats: {
+                totalEntries: 0,
+                dailyOpsCount: 0,
+                deepDiveCount: 0,
+                frameworkUsage: {}
+            },
+            journalStreak: 0,
+            journalDraft: null
         };
 
         const moduleConfig = {
@@ -2998,6 +4085,406 @@
                 { name: "Peter Attia", expertise: "Longevity, healthspan, medicine 3.0", principles: ["The goal is to die young as old as possible.", "Zone 2 cardio is the foundation of metabolic health.", "Stability and mobility are non-negotiable as you age."], practices: ["150+ minutes of Zone 2 cardio weekly", "Train for the Centenarian Decathlon"] }
             ]
         };
+
+        // ============================================
+        // JOURNAL FRAMEWORKS & HISTORICAL TITANS
+        // ============================================
+
+        const journalFrameworks = {
+            daily_ops: [
+                {
+                    id: "stoic_premeditatio",
+                    name: "Stoic Premeditatio Malorum",
+                    source: "Marcus Aurelius / Seneca",
+                    description: "Mentally rehearse potential obstacles to eliminate surprise and prepare responses.",
+                    prompts: [
+                        "What could go wrong today? List 3 realistic obstacles.",
+                        "For each obstacle, what is your prepared response?",
+                        "What is completely outside your control that you must accept?",
+                        "What negative emotion might arise? How will you regulate it?"
+                    ],
+                    power_statement: "I am prepared for whatever comes. Nothing will surprise me."
+                },
+                {
+                    id: "ooda_loop",
+                    name: "OODA Loop",
+                    source: "John Boyd",
+                    description: "Observe-Orient-Decide-Act cycle for rapid, adaptive decision-making.",
+                    prompts: [
+                        "OBSERVE: What is the current reality? What data do I have?",
+                        "ORIENT: How does this connect to my goals? What patterns do I see?",
+                        "DECIDE: What is my best course of action given this context?",
+                        "ACT: What is my immediate next action? Commit to it now."
+                    ],
+                    power_statement: "I move faster than my environment. I adapt and overcome."
+                },
+                {
+                    id: "munger_inversion",
+                    name: "Munger Inversion",
+                    source: "Charlie Munger",
+                    description: "Invert the problem to find blind spots and failure modes.",
+                    prompts: [
+                        "What does success look like today? Define it clearly.",
+                        "Now invert: How could I guarantee FAILURE today?",
+                        "What behaviors/decisions would destroy this goal?",
+                        "Which of these failure modes am I most at risk of? How will I prevent it?"
+                    ],
+                    power_statement: "All I want to know is where I'm going to die, so I never go there."
+                },
+                {
+                    id: "franklin_virtues",
+                    name: "Franklin's Virtue Focus",
+                    source: "Benjamin Franklin",
+                    description: "Select one virtue to emphasize and track throughout the day.",
+                    prompts: [
+                        "Which virtue needs the most attention today? (Temperance, Silence, Order, Resolution, Frugality, Industry, Sincerity, Justice, Moderation, Cleanliness, Tranquility, Chastity, Humility)",
+                        "What specific situation will test this virtue?",
+                        "What does perfect execution of this virtue look like?",
+                        "How will you measure your adherence tonight?"
+                    ],
+                    power_statement: "I am not born excellent. I build excellence through daily practice."
+                },
+                {
+                    id: "musashi_mastery",
+                    name: "Musashi's Way",
+                    source: "Miyamoto Musashi",
+                    description: "Single-minded pursuit of mastery with no wasted motion.",
+                    prompts: [
+                        "What ONE skill am I sharpening today?",
+                        "How can I practice this skill 10 times today in different contexts?",
+                        "What am I doing that is not essential? Cut it.",
+                        "Where am I deceiving myself about my true level?"
+                    ],
+                    power_statement: "The Way is in training. A thousand days of practice, ten thousand days of refinement."
+                }
+            ],
+            deep_dive: {
+                decision: {
+                    name: "Decision Framework",
+                    source: "Charlie Munger + Bezos",
+                    description: "Make high-quality decisions by considering second-order effects and reversibility.",
+                    steps: [
+                        { title: "Define the Decision", prompt: "What decision are you facing? Write it as a clear question." },
+                        { title: "Identify Options", prompt: "What are your 3-5 realistic options? Include 'do nothing' if applicable." },
+                        { title: "First-Order Effects", prompt: "For each option, what happens immediately?" },
+                        { title: "Second-Order Effects", prompt: "What happens as a RESULT of those first-order effects? Think 6-12 months out." },
+                        { title: "Reversibility Check", prompt: "Is this a one-way door (irreversible) or two-way door (reversible)? One-way doors need more analysis." },
+                        { title: "Inversion", prompt: "How could each option lead to disaster? Which failure mode is most likely?" },
+                        { title: "Decision & Commitment", prompt: "Based on this analysis, what is your decision? What is your first action?" }
+                    ]
+                },
+                stuck: {
+                    name: "First Principles Breakdown",
+                    source: "Aristotle / Elon Musk",
+                    description: "Break down problems to fundamental truths and rebuild from there.",
+                    steps: [
+                        { title: "State the Problem", prompt: "What are you stuck on? Describe it in one sentence." },
+                        { title: "Surface Assumptions", prompt: "What assumptions are you making? List everything you 'know' about this problem." },
+                        { title: "Question Each Assumption", prompt: "For each assumption, ask: Is this actually true? Says who? What evidence supports it?" },
+                        { title: "Find Bedrock Truths", prompt: "What remains after questioning? What is undeniably true?" },
+                        { title: "Rebuild from Truth", prompt: "Starting only from bedrock truths, what solutions become possible?" },
+                        { title: "Next Action", prompt: "What is the smallest experiment to test your new approach?" }
+                    ]
+                },
+                negotiate: {
+                    name: "Tactical Negotiation Prep",
+                    source: "Chris Voss",
+                    description: "Prepare for negotiations using FBI hostage negotiation techniques.",
+                    steps: [
+                        { title: "Define the Objective", prompt: "What specifically do you want from this negotiation? What is your ideal outcome?" },
+                        { title: "Map Their World", prompt: "What does the other side want? What pressures are they under? What are their constraints?" },
+                        { title: "Identify Black Swans", prompt: "What unknown information could change everything? What questions would reveal it?" },
+                        { title: "Prepare Calibrated Questions", prompt: "Write 3 'How' or 'What' questions to make them solve your problems. (e.g., 'How am I supposed to do that?')" },
+                        { title: "Plan Your Labels", prompt: "Write 3 tactical empathy labels. ('It seems like...', 'It sounds like...', 'It looks like...')" },
+                        { title: "Prepare for 'No'", prompt: "What is your response when they say no? Remember: 'No' is the start of negotiation, not the end." }
+                    ]
+                },
+                habit: {
+                    name: "Atomic Habit Installation",
+                    source: "James Clear",
+                    description: "Design a new habit using the Four Laws framework.",
+                    steps: [
+                        { title: "Define the Habit", prompt: "What habit do you want to build? Be specific. (Behavior + Time + Location)" },
+                        { title: "Make It Obvious (Cue)", prompt: "What existing habit will you stack this on? Use: 'After I [CURRENT HABIT], I will [NEW HABIT].'" },
+                        { title: "Make It Attractive (Craving)", prompt: "How will you make this habit appealing? What reward or pairing can you add?" },
+                        { title: "Make It Easy (Response)", prompt: "How can you reduce friction? Apply the 2-minute rule: What does the habit look like in 2 minutes or less?" },
+                        { title: "Make It Satisfying (Reward)", prompt: "How will you track this? How will you celebrate immediately after completing it?" },
+                        { title: "Environment Design", prompt: "How will you change your physical environment to make this habit automatic?" }
+                    ]
+                },
+                perspective: {
+                    name: "Stoic Evening Review",
+                    source: "Marcus Aurelius / Seneca",
+                    description: "Reflect on the day with Stoic wisdom to extract lessons and find peace.",
+                    steps: [
+                        { title: "What Went Well?", prompt: "What virtue did you display today? Where did you act with excellence?" },
+                        { title: "What Disturbed You?", prompt: "What emotion took control today? What triggered it? Was it within your control?" },
+                        { title: "Apply the Stoic Test", prompt: "For each disturbance: Did this harm my character? Or only my circumstances? What would Marcus say?" },
+                        { title: "Lesson Extraction", prompt: "What will you do differently tomorrow? What specific commitment do you make?" },
+                        { title: "Evening Gratitude", prompt: "What 3 things from today will you never get back? Appreciate them now." }
+                    ]
+                },
+                planning: {
+                    name: "Strategic Planning Protocol",
+                    source: "Jeff Bezos + Premortem",
+                    description: "Plan major initiatives using regret minimization and premortem analysis.",
+                    steps: [
+                        { title: "Define the Initiative", prompt: "What are you planning? What does success look like in 1 year? 5 years?" },
+                        { title: "Regret Minimization", prompt: "You are 80 years old, looking back. Will you regret NOT doing this? Will you regret the attempt even if you fail?" },
+                        { title: "Premortem: It Failed", prompt: "Imagine it is 1 year from now and this failed spectacularly. What went wrong? List all failure modes." },
+                        { title: "Mitigate Top Risks", prompt: "For your top 3 failure modes, what can you do NOW to prevent them?" },
+                        { title: "Define Milestones", prompt: "What are the key milestones that prove you are on track? How will you know if you should pivot or persist?" },
+                        { title: "First 72 Hours", prompt: "What will you do in the next 72 hours to begin? Commit to specific actions." }
+                    ]
+                }
+            }
+        };
+
+        const historicalTitans = [
+            {
+                name: "Marcus Aurelius",
+                expertise: "Stoicism, self-discipline, duty, leadership under pressure",
+                principles: [
+                    "You have power over your mind, not outside events. Realize this, and you will find strength.",
+                    "The happiness of your life depends upon the quality of your thoughts.",
+                    "Waste no more time arguing about what a good man should be. Be one.",
+                    "Very little is needed to make a happy life; it is all within yourself, in your way of thinking."
+                ],
+                practices: [
+                    "Morning: Remind yourself of what is in your control and what is not",
+                    "Evening: Review the day - where did you act with virtue? Where did you fall short?"
+                ],
+                era: "121-180 AD",
+                category: "philosophy"
+            },
+            {
+                name: "Benjamin Franklin",
+                expertise: "Self-improvement, virtue ethics, practical wisdom, polymathy",
+                principles: [
+                    "An investment in knowledge pays the best interest.",
+                    "By failing to prepare, you are preparing to fail.",
+                    "Energy and persistence conquer all things.",
+                    "Well done is better than well said."
+                ],
+                practices: [
+                    "Morning: Ask 'What good shall I do today?'",
+                    "Evening: Ask 'What good have I done today?' Track your 13 virtues"
+                ],
+                era: "1706-1790",
+                category: "self_improvement"
+            },
+            {
+                name: "Leonardo da Vinci",
+                expertise: "Curiosity, observation, synthesis across disciplines, relentless experimentation",
+                principles: [
+                    "Learning never exhausts the mind.",
+                    "Simplicity is the ultimate sophistication.",
+                    "I have been impressed with the urgency of doing. Knowing is not enough; we must apply.",
+                    "The noblest pleasure is the joy of understanding."
+                ],
+                practices: [
+                    "Fill pages of observation - draw, write, question everything you see",
+                    "Connect ideas from different fields - what can art teach science? What can science teach art?"
+                ],
+                era: "1452-1519",
+                category: "creativity"
+            },
+            {
+                name: "Sun Tzu",
+                expertise: "Strategy, competitive positioning, winning without fighting",
+                principles: [
+                    "The supreme art of war is to subdue the enemy without fighting.",
+                    "Appear weak when you are strong, and strong when you are weak.",
+                    "Know yourself and know your enemy, and you will never be defeated.",
+                    "Opportunities multiply as they are seized."
+                ],
+                practices: [
+                    "Before any conflict, know your position, your opponent, and the terrain",
+                    "Look for the path of least resistance - the best victories feel effortless"
+                ],
+                era: "544-496 BC",
+                category: "strategy"
+            },
+            {
+                name: "Seneca",
+                expertise: "Stoicism, managing adversity, wealth and virtue, time management",
+                principles: [
+                    "We suffer more often in imagination than in reality.",
+                    "It is not that we have a short time to live, but that we waste a lot of it.",
+                    "Luck is what happens when preparation meets opportunity.",
+                    "Difficulties strengthen the mind, as labor does the body."
+                ],
+                practices: [
+                    "Practice voluntary discomfort - fast, cold exposure, or deprivation to build resilience",
+                    "Guard your time jealously. Say no to what doesn't matter."
+                ],
+                era: "4 BC - 65 AD",
+                category: "philosophy"
+            },
+            {
+                name: "Epictetus",
+                expertise: "Stoicism, freedom through acceptance, the dichotomy of control",
+                principles: [
+                    "It's not what happens to you, but how you react to it that matters.",
+                    "We cannot choose our external circumstances, but we can choose how we respond.",
+                    "First say to yourself what you would be; then do what you have to do.",
+                    "No man is free who is not master of himself."
+                ],
+                practices: [
+                    "Each morning, remind yourself what is in your control and what is not",
+                    "When disturbed, ask: Is this within my power or not?"
+                ],
+                era: "50-135 AD",
+                category: "philosophy"
+            },
+            {
+                name: "Miyamoto Musashi",
+                expertise: "Mastery, strategy, single-minded dedication, the warrior's way",
+                principles: [
+                    "There is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter. Everything is within.",
+                    "Do nothing which is of no use.",
+                    "You must understand that there is more than one path to the top of the mountain.",
+                    "The ultimate aim of martial arts is not having to use them."
+                ],
+                practices: [
+                    "Practice your craft every single day without exception",
+                    "Remove all that is unnecessary from your life and technique"
+                ],
+                era: "1584-1645",
+                category: "mastery"
+            },
+            {
+                name: "Theodore Roosevelt",
+                expertise: "Bold action, resilience, the strenuous life, leadership",
+                principles: [
+                    "Do what you can, with what you have, where you are.",
+                    "It is not the critic who counts; the credit belongs to the man in the arena.",
+                    "Believe you can and you're halfway there.",
+                    "The only man who never makes mistakes is the man who never does anything."
+                ],
+                practices: [
+                    "Take on one thing today that tests your limits",
+                    "Embrace 'the strenuous life' - seek challenge, not comfort"
+                ],
+                era: "1858-1919",
+                category: "leadership"
+            },
+            {
+                name: "Winston Churchill",
+                expertise: "Persistence, oratory, leadership in crisis, resilience",
+                principles: [
+                    "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+                    "Never, never, never give up.",
+                    "If you're going through hell, keep going.",
+                    "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty."
+                ],
+                practices: [
+                    "When facing your darkest hour, speak courage into existence",
+                    "Study history to understand the present and shape the future"
+                ],
+                era: "1874-1965",
+                category: "leadership"
+            },
+            {
+                name: "Nikola Tesla",
+                expertise: "Innovation, visualization, deep work, relentless invention",
+                principles: [
+                    "The present is theirs; the future, for which I really worked, is mine.",
+                    "I do not think there is any thrill that can go through the human heart like that felt by the inventor.",
+                    "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.",
+                    "Our virtues and our failings are inseparable."
+                ],
+                practices: [
+                    "Visualize your invention in complete detail before building",
+                    "Work in complete isolation on your most important problems"
+                ],
+                era: "1856-1943",
+                category: "innovation"
+            },
+            {
+                name: "Andrew Carnegie",
+                expertise: "Wealth building, industry, philanthropy, leverage",
+                principles: [
+                    "The man who dies rich dies disgraced.",
+                    "Teamwork is the ability to work together toward a common vision.",
+                    "Do your duty and a little more and the future will take care of itself.",
+                    "The first man gets the oyster, the second man gets the shell."
+                ],
+                practices: [
+                    "Surround yourself with people smarter than you",
+                    "Invest in capabilities that compound over decades"
+                ],
+                era: "1835-1919",
+                category: "business"
+            },
+            {
+                name: "Niccolo Machiavelli",
+                expertise: "Power dynamics, political strategy, realism, human nature",
+                principles: [
+                    "It is better to be feared than loved, if you cannot be both.",
+                    "Everyone sees what you appear to be, few experience what you really are.",
+                    "The lion cannot protect himself from traps, and the fox cannot defend himself from wolves.",
+                    "Never attempt to win by force what can be won by deception."
+                ],
+                practices: [
+                    "Study the people around you - what do they truly want? What motivates them?",
+                    "Prepare for the worst in others while hoping for the best"
+                ],
+                era: "1469-1527",
+                category: "strategy"
+            },
+            {
+                name: "Lao Tzu",
+                expertise: "Taoism, effortless action (wu wei), harmony, leadership through non-action",
+                principles: [
+                    "The journey of a thousand miles begins with a single step.",
+                    "When I let go of what I am, I become what I might be.",
+                    "A leader is best when people barely know he exists.",
+                    "Nature does not hurry, yet everything is accomplished."
+                ],
+                practices: [
+                    "Practice wu wei - act without forcing, lead without dominating",
+                    "Observe nature and align your actions with its rhythms"
+                ],
+                era: "6th century BC",
+                category: "philosophy"
+            },
+            {
+                name: "Confucius",
+                expertise: "Ethics, social harmony, self-cultivation, virtuous leadership",
+                principles: [
+                    "It does not matter how slowly you go as long as you do not stop.",
+                    "The man who moves a mountain begins by carrying away small stones.",
+                    "To see what is right and not do it is a lack of courage.",
+                    "He who learns but does not think, is lost. He who thinks but does not learn is in great danger."
+                ],
+                practices: [
+                    "Examine yourself daily - have you been loyal? Have you kept your word?",
+                    "Treat others as you would wish to be treated"
+                ],
+                era: "551-479 BC",
+                category: "ethics"
+            },
+            {
+                name: "Aristotle",
+                expertise: "Logic, virtue ethics, practical wisdom (phronesis), first principles",
+                principles: [
+                    "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+                    "Knowing yourself is the beginning of all wisdom.",
+                    "It is the mark of an educated mind to entertain a thought without accepting it.",
+                    "The more you know, the more you realize you don't know."
+                ],
+                practices: [
+                    "Build excellence through daily habits, not occasional efforts",
+                    "Seek the 'golden mean' - virtue lies between extremes"
+                ],
+                era: "384-322 BC",
+                category: "philosophy"
+            }
+        ];
+
+        // Add historical module to moduleConfig
+        moduleConfig.historical = { name: "Historical Titans", color: "#9d8758", icon: "H" };
 
         const challenges = {
             money: ["Identify one skill that would 2x your income. Spend 30 minutes learning it today.", "Calculate your true hourly rate. Find one way to increase it.", "Reach out to someone who makes 10x what you make."],
@@ -3700,10 +5187,9 @@
             // Update title
             const titles = {
                 dashboard: ['COMMAND CENTER', 'Your daily mission control'],
-                wisdom: ['DAILY WISDOM', 'Teachings from the masters'],
-                habits: ['HABIT TRACKER', 'Build your daily systems'],
-                modules: ['LIFE MODULES', 'Track your growth areas'],
-                stats: ['ANALYTICS', 'Your performance data'],
+                journal: ['JOURNAL', 'Framework-driven strategic journaling'],
+                plans: ['PLANS', 'Your goals and milestones'],
+                systems: ['SYSTEMS', 'Build repeatable processes'],
                 masters: ['MASTERS LIBRARY', 'Learn from the greats'],
                 settings: ['SETTINGS', 'Customize your experience']
             };
@@ -3713,11 +5199,11 @@
             document.getElementById('pageSubtitle').textContent = subtitle;
 
             // Load page-specific data
-            if (pageId === 'habits') loadHabitsPage();
-            if (pageId === 'modules') loadModulesPage();
-            if (pageId === 'stats') loadStatsPage();
             if (pageId === 'masters') loadMastersPage();
             if (pageId === 'settings') loadSettingsPage();
+            if (pageId === 'journal') loadJournalPage();
+            if (pageId === 'plans') loadPlansPage();
+            if (pageId === 'systems') loadSystemsPage();
         }
 
         // ============================================
@@ -3796,70 +5282,28 @@
 
         function updateWisdomUI(wisdom) {
             // Dashboard - Main wisdom
-            document.getElementById('dashMasterName').textContent = wisdom.master;
-            document.getElementById('dashMasterExpertise').textContent = wisdom.expertise;
-            document.getElementById('dashWisdomQuote').textContent = `"${wisdom.teaching}"`;
-            document.getElementById('dashPractice').textContent = wisdom.practice;
-            document.getElementById('dashChallengeModule').textContent = wisdom.challengeModule.toUpperCase();
-            document.getElementById('dashChallengeText').textContent = wisdom.challenge;
+            const dashMasterName = document.getElementById('dashMasterName');
+            const dashMasterExpertise = document.getElementById('dashMasterExpertise');
+            const dashWisdomQuote = document.getElementById('dashWisdomQuote');
+            const dashPractice = document.getElementById('dashPractice');
 
-            // Dashboard - Daily Vocabulary
-            if (wisdom.vocabulary) {
-                document.getElementById('dashVocabTerm').textContent = wisdom.vocabulary.term;
-                document.getElementById('dashVocabDef').textContent = wisdom.vocabulary.definition;
-                document.getElementById('dashVocabExample').textContent = `"${wisdom.vocabulary.example}"`;
-                document.getElementById('dashVocabModule').textContent = wisdom.vocabulary.module.toUpperCase();
-            }
+            if (dashMasterName) dashMasterName.textContent = wisdom.master;
+            if (dashMasterExpertise) dashMasterExpertise.textContent = wisdom.expertise;
+            if (dashWisdomQuote) dashWisdomQuote.textContent = `"${wisdom.teaching}"`;
+            if (dashPractice) dashPractice.textContent = wisdom.practice;
 
             // Dashboard - Daily Mantra
             if (wisdom.mantra) {
-                document.getElementById('dashMantraText').textContent = `"${wisdom.mantra}"`;
+                const dashMantraText = document.getElementById('dashMantraText');
+                if (dashMantraText) dashMantraText.textContent = `"${wisdom.mantra}"`;
             }
-
-            // Dashboard - Daily Quote
-            if (wisdom.dailyQuote) {
-                document.getElementById('dashQuoteText').textContent = `"${wisdom.dailyQuote.text}"`;
-                document.getElementById('dashQuoteAuthor').textContent = `- ${wisdom.dailyQuote.author}`;
-            }
-
-            // Dashboard - Today's Book
-            if (wisdom.book) {
-                document.getElementById('dashBookTitle').textContent = wisdom.book.title;
-                document.getElementById('dashBookAuthor').textContent = `by ${wisdom.book.author}`;
-                document.getElementById('dashBookInsight').textContent = `"${wisdom.book.insight}"`;
-                document.getElementById('dashBookCategory').textContent = wisdom.book.category;
-            }
-
-            // Dashboard - Billionaire Trait
-            if (wisdom.trait) {
-                document.getElementById('dashTraitName').textContent = wisdom.trait.trait;
-                document.getElementById('dashTraitDesc').textContent = wisdom.trait.description;
-                const examplesHtml = wisdom.trait.examples.map(ex => `
-                    <div class="trait-example-item">
-                        <span class="trait-example-name">${ex.name}:</span>
-                        <span class="trait-example-text">${ex.example}</span>
-                    </div>
-                `).join('');
-                document.getElementById('dashTraitExamples').innerHTML = examplesHtml;
-            }
-
-            // Wisdom page
-            document.getElementById('wisdomMasterName').textContent = wisdom.master;
-            document.getElementById('wisdomMasterExpertise').textContent = wisdom.expertise;
-            document.getElementById('wisdomQuote').textContent = `"${wisdom.teaching}"`;
-            document.getElementById('wisdomPractice').textContent = wisdom.practice;
-            document.getElementById('wisdomChallengeModule').textContent = wisdom.challengeModule.toUpperCase();
-            document.getElementById('wisdomChallengeText').textContent = wisdom.challenge;
-            document.getElementById('wisdomQuestion').textContent = `"${wisdom.question}"`;
-            document.getElementById('wisdomMindsetFrom').textContent = `"${wisdom.shift.from}"`;
-            document.getElementById('wisdomMindsetTo').textContent = `"${wisdom.shift.to}"`;
-            document.getElementById('wisdomMindsetWhy').textContent = wisdom.shift.why;
         }
 
         function saveChallengeResponse(source) {
-            const inputId = source === 'dash' ? 'dashChallengeResponse' : 'wisdomChallengeResponse';
-            const savedId = source === 'dash' ? 'dashChallengeSaved' : 'wisdomChallengeSaved';
-            const response = document.getElementById(inputId).value.trim();
+            const inputEl = document.getElementById('dashChallengeResponse');
+            if (!inputEl) return;
+
+            const response = inputEl.value.trim();
 
             if (!response) {
                 showToast('Please write something before saving', 'warning');
@@ -3892,32 +5336,12 @@
             }
 
             saveToStorage();
-
-            // Show saved confirmation
-            const savedDiv = document.getElementById(savedId);
-            savedDiv.innerHTML = `
-                <div class="challenge-saved">
-                    <div class="challenge-saved-label">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        PROGRESS SAVED
-                    </div>
-                    <div class="challenge-saved-text">${response.substring(0, 100)}${response.length > 100 ? '...' : ''}</div>
-                </div>
-            `;
-            savedDiv.style.display = 'block';
-
             showToast('Progress saved!');
-
-            // Sync both inputs
-            document.getElementById('dashChallengeResponse').value = response;
-            document.getElementById('wisdomChallengeResponse').value = response;
         }
 
         function completeChallenge(source) {
-            const inputId = source === 'dash' ? 'dashChallengeResponse' : 'wisdomChallengeResponse';
-            const response = document.getElementById(inputId).value.trim();
+            const inputEl = document.getElementById('dashChallengeResponse');
+            const response = inputEl ? inputEl.value.trim() : '';
 
             // Save the response first
             if (response) {
@@ -3993,8 +5417,8 @@
             if (appData.todayLog.challenges?.length > 0) {
                 const lastChallenge = appData.todayLog.challenges[appData.todayLog.challenges.length - 1];
                 if (lastChallenge.challenge === appData.currentWisdom?.challenge && lastChallenge.response) {
-                    document.getElementById('dashChallengeResponse').value = lastChallenge.response;
-                    document.getElementById('wisdomChallengeResponse').value = lastChallenge.response;
+                    const dashInput = document.getElementById('dashChallengeResponse');
+                    if (dashInput) dashInput.value = lastChallenge.response;
                 }
             }
         }
@@ -4003,10 +5427,15 @@
         // GRATITUDE JOURNAL
         // ============================================
         function saveGratitude() {
+            const g1 = document.getElementById('gratitude1');
+            const g2 = document.getElementById('gratitude2');
+            const g3 = document.getElementById('gratitude3');
+            if (!g1 || !g2 || !g3) return;
+
             const gratitudes = [
-                document.getElementById('gratitude1').value.trim(),
-                document.getElementById('gratitude2').value.trim(),
-                document.getElementById('gratitude3').value.trim()
+                g1.value.trim(),
+                g2.value.trim(),
+                g3.value.trim()
             ].filter(g => g);
 
             if (gratitudes.length === 0) {
@@ -4048,20 +5477,23 @@
 
             // Show saved confirmation
             const savedDiv = document.getElementById('gratitudeSaved');
-            savedDiv.innerHTML = `
-                <div class="gratitude-saved">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                    Gratitude saved! Keep the positive momentum going.
-                </div>
-            `;
-            savedDiv.style.display = 'block';
+            if (savedDiv) {
+                savedDiv.innerHTML = `
+                    <div class="gratitude-saved">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                        Gratitude saved! Keep the positive momentum going.
+                    </div>
+                `;
+                savedDiv.style.display = 'block';
+            }
 
             showToast('Gratitude saved! You\'re building a powerful habit.');
         }
 
         function loadTodayGratitude() {
+            // Gratitude section removed from dashboard - function kept for compatibility
             const today = new Date().toISOString().split('T')[0];
 
             if (appData.gratitudeHistory) {
@@ -4072,17 +5504,18 @@
                         if (input) input.value = g;
                     });
 
-                    // Show that it's already saved
                     const savedDiv = document.getElementById('gratitudeSaved');
-                    savedDiv.innerHTML = `
-                        <div class="gratitude-saved">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"/>
-                            </svg>
-                            Today's gratitude saved
-                        </div>
-                    `;
-                    savedDiv.style.display = 'block';
+                    if (savedDiv) {
+                        savedDiv.innerHTML = `
+                            <div class="gratitude-saved">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Today's gratitude saved
+                            </div>
+                        `;
+                        savedDiv.style.display = 'block';
+                    }
                 }
             }
 
@@ -4090,8 +5523,9 @@
         }
 
         function updateGratitudeStreak() {
+            const streakEl = document.getElementById('gratitudeStreak');
             if (!appData.gratitudeHistory || appData.gratitudeHistory.length === 0) {
-                document.getElementById('gratitudeStreak').textContent = '0 day streak';
+                if (streakEl) streakEl.textContent = '0 day streak';
                 return;
             }
 
@@ -4120,7 +5554,7 @@
             }
 
             const streakText = streak === 1 ? '1 day streak' : `${streak} day streak`;
-            document.getElementById('gratitudeStreak').textContent = streakText;
+            if (streakEl) streakEl.textContent = streakText;
 
             // Store streak in appData
             appData.gratitudeStreak = streak;
@@ -4193,10 +5627,39 @@
                     habit.streak++;
                     showToast(`${habit.name} completed! Streak: ${habit.streak} days`);
                 }
-                renderHabits('dashHabitList');
-                renderHabits('allHabitList', true);
+                renderHabits('dashHabitList', true);
                 saveToStorage();
             }
+        }
+
+        function openAddHabitModal() {
+            document.getElementById('newHabitName').value = '';
+            document.getElementById('newHabitModule').value = 'productivity';
+            openModal('addHabitModal');
+        }
+
+        function addNewHabit() {
+            const name = document.getElementById('newHabitName').value.trim();
+            const module = document.getElementById('newHabitModule').value;
+
+            if (!name) {
+                showToast('Please enter a habit name', 'warning');
+                return;
+            }
+
+            const newId = Math.max(...appData.habits.map(h => h.id), 0) + 1;
+            appData.habits.push({
+                id: newId,
+                name: name,
+                module: module,
+                streak: 0,
+                completed: false
+            });
+
+            saveToStorage();
+            renderHabits('dashHabitList', true);
+            closeModal('addHabitModal');
+            showToast(`Added habit: ${name}`);
         }
 
         function updateHabitProgress() {
@@ -4205,23 +5668,14 @@
             const percentage = Math.round((completed / total) * 100);
 
             document.getElementById('dashHabitProgress').textContent = `${completed}/${total}`;
-            document.getElementById('habitsBadge').textContent = `${completed}/${total}`;
             document.getElementById('statHabits').textContent = `${percentage}%`;
 
-            if (document.getElementById('allHabitProgress')) {
-                document.getElementById('allHabitProgress').textContent = `${completed}/${total}`;
-            }
-
             if (document.getElementById('habitProgressRing')) {
-                const circumference = 2 * Math.PI * 70;
+                const circumference = 2 * Math.PI * 50;
                 const offset = circumference - (percentage / 100) * circumference;
                 document.getElementById('habitProgressRing').style.strokeDashoffset = offset;
                 document.getElementById('habitProgressValue').textContent = `${percentage}%`;
             }
-        }
-
-        function loadHabitsPage() {
-            renderHabits('allHabitList', true);
         }
 
         // ============================================
@@ -4789,6 +6243,7 @@
             };
 
             saveToStorage();
+            loadTodaysPlan();
             closeModal('morningModal');
             showToast('Morning check-in complete! Let\'s crush it today.');
         }
@@ -4900,20 +6355,307 @@
         // ============================================
         // INITIALIZATION
         // ============================================
+        // ============================================
+        // COLLAPSIBLE SECTIONS
+        // ============================================
+        function toggleCollapsible(sectionId) {
+            const content = document.getElementById(sectionId);
+            const arrow = document.getElementById(sectionId + 'Arrow');
+
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow?.classList.add('rotated');
+            } else {
+                content.style.display = 'none';
+                arrow?.classList.remove('rotated');
+            }
+        }
+
+        // ============================================
+        // QUICK JOURNAL
+        // ============================================
+        let quickJournalAutosaveTimer = null;
+
+        function initQuickJournal() {
+            const input = document.getElementById('quickJournalInput');
+            if (!input) return;
+
+            // Load today's quick journal
+            const today = new Date().toISOString().split('T')[0];
+            if (appData.quickJournalToday && appData.quickJournalDate === today) {
+                input.value = appData.quickJournalToday;
+            }
+
+            // Set up autosave
+            input.addEventListener('input', () => {
+                const status = document.getElementById('quickJournalStatus');
+                status.textContent = 'Saving...';
+                status.classList.add('saving');
+                status.classList.remove('saved');
+
+                clearTimeout(quickJournalAutosaveTimer);
+                quickJournalAutosaveTimer = setTimeout(() => {
+                    saveQuickJournal();
+                }, 2000);
+            });
+
+            updateQuickJournalTimestamp();
+        }
+
+        function saveQuickJournal() {
+            const input = document.getElementById('quickJournalInput');
+            const status = document.getElementById('quickJournalStatus');
+            const today = new Date().toISOString().split('T')[0];
+
+            appData.quickJournalToday = input.value;
+            appData.quickJournalDate = today;
+            appData.quickJournalLastSaved = new Date().toISOString();
+            saveToStorage();
+
+            status.textContent = 'Saved';
+            status.classList.remove('saving');
+            status.classList.add('saved');
+            updateQuickJournalTimestamp();
+        }
+
+        function updateQuickJournalTimestamp() {
+            const timestamp = document.getElementById('quickJournalTimestamp');
+            if (appData.quickJournalLastSaved) {
+                const saved = new Date(appData.quickJournalLastSaved);
+                timestamp.textContent = `Last saved: ${saved.toLocaleTimeString()}`;
+            }
+        }
+
+        // ============================================
+        // TODAY'S PLAN
+        // ============================================
+        function loadTodaysPlan() {
+            const prioritiesContainer = document.getElementById('todaysPriorities');
+            const winContainer = document.getElementById('todaysWin');
+            const winText = document.getElementById('todaysWinText');
+
+            if (appData.todayLog?.amCheckin) {
+                const checkin = appData.todayLog.amCheckin;
+                const priorities = checkin.priorities || [];
+
+                if (priorities.length > 0) {
+                    prioritiesContainer.innerHTML = priorities.map((p, i) => `
+                        <div class="priority-item">
+                            <span class="priority-number">${i + 1}</span>
+                            <span class="priority-text">${p}</span>
+                        </div>
+                    `).join('');
+                }
+
+                if (checkin.winDefinition) {
+                    winText.textContent = checkin.winDefinition;
+                    winContainer.style.display = 'block';
+                }
+            }
+        }
+
+        // ============================================
+        // PLANS & SYSTEMS
+        // ============================================
+        function loadPlansPage() {
+            renderPlans();
+        }
+
+        function loadSystemsPage() {
+            renderSystems();
+        }
+
+        function renderPlans() {
+            const activeList = document.getElementById('plansActiveList');
+            const completedList = document.getElementById('plansCompletedList');
+
+            if (!appData.plans || appData.plans.length === 0) {
+                activeList.innerHTML = '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">No active plans. Create your first plan!</div>';
+                completedList.innerHTML = '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">Complete a plan to see it here</div>';
+                return;
+            }
+
+            const activePlans = appData.plans.filter(p => !p.completed);
+            const completedPlans = appData.plans.filter(p => p.completed);
+
+            activeList.innerHTML = activePlans.length > 0
+                ? activePlans.map(p => renderPlanCard(p)).join('')
+                : '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">No active plans</div>';
+
+            completedList.innerHTML = completedPlans.length > 0
+                ? completedPlans.map(p => renderPlanCard(p)).join('')
+                : '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">Complete a plan to see it here</div>';
+        }
+
+        function renderPlanCard(plan) {
+            const progress = plan.milestones ? Math.round((plan.milestones.filter(m => m.done).length / plan.milestones.length) * 100) : 0;
+            return `
+                <div class="plan-card" onclick="openPlanDetail('${plan.id}')">
+                    <div class="plan-title">${plan.name}</div>
+                    <div class="plan-meta">${plan.targetDate ? 'Target: ' + plan.targetDate : ''}</div>
+                    <div class="plan-progress-bar">
+                        <div class="plan-progress-fill" style="width: ${progress}%;"></div>
+                    </div>
+                    <div class="plan-progress-text">${progress}% complete</div>
+                </div>
+            `;
+        }
+
+        function renderSystems() {
+            const list = document.getElementById('systemsList');
+            const performance = document.getElementById('systemsPerformance');
+
+            if (!appData.systems || appData.systems.length === 0) {
+                list.innerHTML = '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">No systems yet. Build your first repeatable system!</div>';
+                performance.innerHTML = '<div style="color: var(--text-muted); text-align: center; padding: 2rem;">Track your systems to see performance metrics</div>';
+                return;
+            }
+
+            list.innerHTML = appData.systems.map(s => renderSystemCard(s)).join('');
+
+            // Calculate performance metrics
+            const avgSuccess = appData.systems.reduce((acc, s) => acc + (s.successRate || 0), 0) / appData.systems.length;
+            performance.innerHTML = `
+                <div class="system-stat">
+                    <div class="system-stat-value">${appData.systems.length}</div>
+                    <div class="system-stat-label">Total Systems</div>
+                </div>
+                <div class="system-stat">
+                    <div class="system-stat-value">${Math.round(avgSuccess)}%</div>
+                    <div class="system-stat-label">Avg Success Rate</div>
+                </div>
+            `;
+        }
+
+        function renderSystemCard(system) {
+            return `
+                <div class="system-card" onclick="openSystemDetail('${system.id}')">
+                    <div class="system-name">${system.name}</div>
+                    <div class="system-meta">${system.steps?.length || 0} steps</div>
+                    <div class="system-success-rate">${system.successRate || 0}% success</div>
+                </div>
+            `;
+        }
+
+        function openCreatePlanModal() {
+            showToast('Plan creation coming soon!');
+        }
+
+        function openCreateSystemModal() {
+            showToast('System builder coming soon!');
+        }
+
+        function openPlanDetail(planId) {
+            showToast('Plan details coming soon!');
+        }
+
+        function openSystemDetail(systemId) {
+            showToast('System details coming soon!');
+        }
+
+        function renderDashboardPreviews() {
+            const plansPreview = document.getElementById('dashPlansPreview');
+            const systemsPreview = document.getElementById('dashSystemsPreview');
+
+            // Plans preview
+            if (appData.plans && appData.plans.filter(p => !p.completed).length > 0) {
+                const activePlans = appData.plans.filter(p => !p.completed).slice(0, 2);
+                plansPreview.innerHTML = activePlans.map(p => `
+                    <div style="font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.5rem;">
+                        ${p.name} <span style="color: var(--gold-primary);">${p.targetDate ? '→ ' + p.targetDate : ''}</span>
+                    </div>
+                `).join('');
+            }
+
+            // Systems preview
+            if (appData.systems && appData.systems.length > 0) {
+                systemsPreview.innerHTML = appData.systems.slice(0, 2).map(s => `
+                    <div style="font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.5rem;">
+                        ${s.name} <span style="color: var(--success);">[${s.successRate || 0}%]</span>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // ============================================
+        // 10 POWER WORDS
+        // ============================================
+        function generatePowerWords() {
+            const focusModules = appData.profile.focusModules;
+            const words = [];
+            const usedTerms = new Set();
+
+            // Get 10 unique vocabulary words from focus modules
+            while (words.length < 10) {
+                const module = getRandomItem(focusModules.filter(m => dailyVocabulary[m])) || 'mindset';
+                const vocabList = dailyVocabulary[module] || dailyVocabulary.mindset;
+                const word = getRandomItem(vocabList);
+
+                if (!usedTerms.has(word.term)) {
+                    usedTerms.add(word.term);
+                    words.push({ ...word, module });
+                }
+
+                // Prevent infinite loop if not enough words
+                if (words.length + usedTerms.size > 50) break;
+            }
+
+            return words;
+        }
+
+        function renderPowerWords(words) {
+            const accordion = document.getElementById('powerWordsAccordion');
+            if (!accordion) return;
+
+            accordion.innerHTML = words.map((word, i) => `
+                <div class="power-word-item">
+                    <div class="power-word-header" onclick="togglePowerWord(${i})">
+                        <span class="power-word-term">${word.term}</span>
+                        <span class="power-word-module">${word.module.toUpperCase()}</span>
+                    </div>
+                    <div class="power-word-content" id="powerWord${i}">
+                        <div class="power-word-definition">${word.definition}</div>
+                        <div class="power-word-example">"${word.example}"</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function togglePowerWord(index) {
+            const content = document.getElementById('powerWord' + index);
+            content.classList.toggle('expanded');
+        }
+
         async function init() {
             loadFromStorage();
             updateDateTime();
             setInterval(updateDateTime, 1000);
 
+            // Merge historical titans into mastersData
+            mastersData.historical = historicalTitans;
+
             // Load enhanced masters data from JSON files (non-blocking)
             loadEnhancedMastersData().catch(() => console.log('Enhanced data not loaded - using fallbacks'));
 
+            // Initialize new data structures
+            if (!appData.plans) appData.plans = [];
+            if (!appData.systems) appData.systems = [];
+            if (!appData.quickJournalToday) appData.quickJournalToday = '';
+            if (!appData.vocabularyLearned) appData.vocabularyLearned = [];
+
             const wisdom = generateWisdom();
             updateWisdomUI(wisdom);
-            renderHabits('dashHabitList');
+            renderHabits('dashHabitList', true);
             updateDashboardStats();
             loadTodayChallengeProgress();
             loadTodayGratitude();
+            loadTodaysPlan();
+            initQuickJournal();
+            renderDashboardPreviews();
+
+            // Generate and render 10 power words
+            const powerWords = generatePowerWords();
+            renderPowerWords(powerWords);
 
             // Set up range input listeners
             ['amSleepHours', 'amSleepQuality', 'amEnergy', 'pmDayScore'].forEach(id => {
@@ -4922,9 +6664,828 @@
                     el.dispatchEvent(new Event('input'));
                 }
             });
+
+            // Initialize journal data if not present
+            if (!appData.journalEntries) appData.journalEntries = [];
+            if (!appData.journalPatterns) appData.journalPatterns = {};
+            if (!appData.journalStats) appData.journalStats = { totalEntries: 0, dailyOpsCount: 0, deepDiveCount: 0, frameworkUsage: {} };
+            if (typeof appData.journalStreak !== 'number') appData.journalStreak = 0;
         }
 
         document.addEventListener('DOMContentLoaded', init);
+
+        // ============================================
+        // PROACTIVE JOURNAL SYSTEM
+        // ============================================
+
+        let currentJournalMode = 'daily';
+        let currentDailyFramework = null;
+        let currentDeepDive = null;
+        let deepDiveStep = 1;
+        let deepDiveResponses = [];
+
+        function loadJournalPage() {
+            loadDailyOpsFramework();
+            renderDeepDiveSelector();
+            loadTodayDraftIfExists();
+            loadJournalHistory();
+            detectProactiveContext();
+            populateHistoryModuleFilter();
+            setupJournalDayScoreListener();
+        }
+
+        function setJournalMode(mode) {
+            currentJournalMode = mode;
+            document.querySelectorAll('.journal-mode-tab').forEach(tab => {
+                tab.classList.toggle('active', tab.dataset.mode === mode);
+            });
+            document.querySelectorAll('.journal-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+            const panelId = `journalPanel${mode.charAt(0).toUpperCase() + mode.slice(1)}`;
+            document.getElementById(panelId)?.classList.add('active');
+
+            if (mode === 'patterns') {
+                runPatternAnalysis();
+            } else if (mode === 'history') {
+                loadJournalHistory();
+            }
+        }
+
+        function loadDailyOpsFramework() {
+            const frameworks = journalFrameworks.daily_ops;
+            currentDailyFramework = getRandomItem(frameworks);
+            renderDailyOpsFramework();
+        }
+
+        function shuffleFramework() {
+            const frameworks = journalFrameworks.daily_ops;
+            let newFramework;
+            do {
+                newFramework = getRandomItem(frameworks);
+            } while (newFramework.id === currentDailyFramework?.id && frameworks.length > 1);
+            currentDailyFramework = newFramework;
+            renderDailyOpsFramework();
+            showToast('Framework shuffled', 'success');
+        }
+
+        function renderDailyOpsFramework() {
+            if (!currentDailyFramework) return;
+
+            document.getElementById('frameworkSource').textContent = currentDailyFramework.source;
+            document.getElementById('frameworkName').textContent = currentDailyFramework.name;
+            document.getElementById('frameworkDescription').textContent = currentDailyFramework.description;
+            document.getElementById('frameworkPower').textContent = `"${currentDailyFramework.power_statement}"`;
+
+            const promptsContainer = document.getElementById('frameworkPrompts');
+            promptsContainer.innerHTML = currentDailyFramework.prompts.map((prompt, i) => `
+                <div class="framework-prompt-item">
+                    <div class="framework-prompt-number">PROMPT ${i + 1}</div>
+                    <div class="framework-prompt-text">${prompt}</div>
+                    <textarea class="framework-prompt-input" id="frameworkPrompt${i}" placeholder="Your response..."></textarea>
+                </div>
+            `).join('');
+        }
+
+        function collectDailyOpsFormData() {
+            const prompts = [];
+            if (currentDailyFramework) {
+                currentDailyFramework.prompts.forEach((_, i) => {
+                    const el = document.getElementById(`frameworkPrompt${i}`);
+                    prompts.push(el ? el.value : '');
+                });
+            }
+
+            return {
+                type: 'daily',
+                date: new Date().toISOString().split('T')[0],
+                timestamp: new Date().toISOString(),
+                framework: currentDailyFramework ? {
+                    id: currentDailyFramework.id,
+                    name: currentDailyFramework.name,
+                    source: currentDailyFramework.source
+                } : null,
+                situation: document.getElementById('journalSituation')?.value || '',
+                intent: document.getElementById('journalIntent')?.value || '',
+                frameworkPromptResponses: prompts,
+                execution: document.getElementById('journalExecution')?.value || '',
+                aar: {
+                    worked: document.getElementById('journalAarWorked')?.value || '',
+                    failed: document.getElementById('journalAarFailed')?.value || '',
+                    delta: document.getElementById('journalAarDelta')?.value || '',
+                    score: parseInt(document.getElementById('journalDayScore')?.value || 7)
+                }
+            };
+        }
+
+        function saveJournalDraft() {
+            const draft = collectDailyOpsFormData();
+            draft.isDraft = true;
+            appData.journalDraft = draft;
+            saveToStorage();
+            showToast('Draft saved', 'success');
+        }
+
+        function saveJournalEntry(type) {
+            let entry;
+            if (type === 'daily') {
+                entry = collectDailyOpsFormData();
+                if (!entry.situation && !entry.intent) {
+                    showToast('Please fill in at least the situation or intent', 'warning');
+                    return;
+                }
+            }
+
+            entry.id = Date.now().toString();
+            entry.isDraft = false;
+
+            autoTagEntry(entry);
+
+            appData.journalEntries.unshift(entry);
+
+            if (appData.journalEntries.length > 180) {
+                appData.journalEntries = appData.journalEntries.slice(0, 180);
+            }
+
+            appData.journalDraft = null;
+            updateJournalStats(entry);
+            updateJournalStreak();
+            saveToStorage();
+
+            clearDailyOpsForm();
+            loadDailyOpsFramework();
+            showToast('Entry saved!', 'success');
+
+            if (appData.journalEntries.length % 5 === 0) {
+                runPatternAnalysis();
+            }
+        }
+
+        function clearDailyOpsForm() {
+            document.getElementById('journalSituation').value = '';
+            document.getElementById('journalIntent').value = '';
+            document.getElementById('journalExecution').value = '';
+            document.getElementById('journalAarWorked').value = '';
+            document.getElementById('journalAarFailed').value = '';
+            document.getElementById('journalAarDelta').value = '';
+            document.getElementById('journalDayScore').value = 7;
+            document.getElementById('journalDayScoreValue').textContent = '7';
+            if (currentDailyFramework) {
+                currentDailyFramework.prompts.forEach((_, i) => {
+                    const el = document.getElementById(`frameworkPrompt${i}`);
+                    if (el) el.value = '';
+                });
+            }
+        }
+
+        function loadTodayDraftIfExists() {
+            const draft = appData.journalDraft;
+            if (!draft) return;
+
+            const today = new Date().toISOString().split('T')[0];
+            if (draft.date !== today) {
+                appData.journalDraft = null;
+                saveToStorage();
+                return;
+            }
+
+            if (draft.framework?.id) {
+                const framework = journalFrameworks.daily_ops.find(f => f.id === draft.framework.id);
+                if (framework) {
+                    currentDailyFramework = framework;
+                    renderDailyOpsFramework();
+                }
+            }
+
+            document.getElementById('journalSituation').value = draft.situation || '';
+            document.getElementById('journalIntent').value = draft.intent || '';
+            document.getElementById('journalExecution').value = draft.execution || '';
+            document.getElementById('journalAarWorked').value = draft.aar?.worked || '';
+            document.getElementById('journalAarFailed').value = draft.aar?.failed || '';
+            document.getElementById('journalAarDelta').value = draft.aar?.delta || '';
+            document.getElementById('journalDayScore').value = draft.aar?.score || 7;
+            document.getElementById('journalDayScoreValue').textContent = draft.aar?.score || '7';
+
+            if (draft.frameworkPromptResponses && draft.frameworkPromptResponses.length > 0) {
+                setTimeout(() => {
+                    draft.frameworkPromptResponses.forEach((response, i) => {
+                        const el = document.getElementById(`frameworkPrompt${i}`);
+                        if (el) el.value = response;
+                    });
+                }, 100);
+            }
+
+            showToast('Draft restored', 'success');
+        }
+
+        function setupJournalDayScoreListener() {
+            const scoreEl = document.getElementById('journalDayScore');
+            const valueEl = document.getElementById('journalDayScoreValue');
+            if (scoreEl && valueEl) {
+                scoreEl.addEventListener('input', (e) => {
+                    valueEl.textContent = e.target.value;
+                });
+            }
+        }
+
+        function updateJournalStats(entry) {
+            appData.journalStats.totalEntries++;
+            if (entry.type === 'daily') {
+                appData.journalStats.dailyOpsCount++;
+            } else if (entry.type === 'deepdive') {
+                appData.journalStats.deepDiveCount++;
+            }
+
+            if (entry.framework?.id) {
+                const frameworkId = entry.framework.id;
+                appData.journalStats.frameworkUsage[frameworkId] = (appData.journalStats.frameworkUsage[frameworkId] || 0) + 1;
+            }
+        }
+
+        function updateJournalStreak() {
+            const today = new Date().toISOString().split('T')[0];
+            const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+
+            const todayEntries = appData.journalEntries.filter(e => e.date === today);
+            const yesterdayEntries = appData.journalEntries.filter(e => e.date === yesterday);
+
+            if (todayEntries.length > 0) {
+                if (yesterdayEntries.length > 0 || appData.journalStreak === 0) {
+                    if (todayEntries.length === 1) {
+                        appData.journalStreak++;
+                    }
+                } else {
+                    appData.journalStreak = 1;
+                }
+            }
+        }
+
+        // ============================================
+        // PROACTIVE CONTEXT DETECTION
+        // ============================================
+
+        function detectProactiveContext() {
+            const banner = document.getElementById('proactiveBanner');
+            const titleEl = document.getElementById('proactiveBannerTitle');
+            const messageEl = document.getElementById('proactiveBannerMessage');
+            const actionBtn = document.getElementById('proactiveBannerAction');
+
+            const hour = new Date().getHours();
+            const lastScore = getLastDayScore();
+            const avoidedModules = detectAvoidedModules();
+
+            let context = null;
+
+            if (lastScore !== null && lastScore <= 4) {
+                context = {
+                    title: 'Resilience Protocol',
+                    message: `Yesterday scored ${lastScore}/10. Time for a Stoic perspective check.`,
+                    action: 'Start Perspective Deep Dive',
+                    framework: 'perspective'
+                };
+            } else if (avoidedModules.length > 0) {
+                const avoided = avoidedModules[0];
+                context = {
+                    title: 'Blind Spot Alert',
+                    message: `You haven't journaled about ${moduleConfig[avoided]?.name || avoided} in 7+ days.`,
+                    action: 'Explore This Area',
+                    module: avoided
+                };
+            } else if (hour < 10) {
+                context = {
+                    title: 'Morning Protocol',
+                    message: 'Set your strategic intent with the OODA Loop framework.',
+                    action: 'Apply Framework',
+                    dailyFramework: 'ooda_loop'
+                };
+            } else if (hour >= 18) {
+                context = {
+                    title: 'Evening Review',
+                    message: 'Complete your After-Action Review before the day ends.',
+                    action: 'Focus on AAR',
+                    section: 'aar'
+                };
+            }
+
+            if (context) {
+                banner.style.display = 'flex';
+                titleEl.textContent = context.title;
+                messageEl.textContent = context.message;
+                actionBtn.textContent = context.action;
+                actionBtn.onclick = () => applyProactiveFramework(context);
+            } else {
+                banner.style.display = 'none';
+            }
+        }
+
+        function getLastDayScore() {
+            const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+            const yesterdayEntries = appData.journalEntries.filter(e => e.date === yesterday && e.type === 'daily');
+            if (yesterdayEntries.length > 0) {
+                return yesterdayEntries[0].aar?.score || null;
+            }
+            return null;
+        }
+
+        function detectAvoidedModules() {
+            const modules = Object.keys(moduleConfig).filter(m => m !== 'historical');
+            const sevenDaysAgo = new Date(Date.now() - 7 * 86400000).toISOString().split('T')[0];
+
+            const recentEntries = appData.journalEntries.filter(e => e.date >= sevenDaysAgo);
+            const mentionedModules = new Set();
+
+            recentEntries.forEach(entry => {
+                if (entry.linkedModules) {
+                    entry.linkedModules.forEach(m => mentionedModules.add(m));
+                }
+            });
+
+            return modules.filter(m => !mentionedModules.has(m) && appData.profile.focusModules.includes(m));
+        }
+
+        function applyProactiveFramework(context) {
+            dismissProactiveBanner();
+
+            if (context.framework) {
+                setJournalMode('deepdive');
+                setTimeout(() => startDeepDive(context.framework), 100);
+            } else if (context.dailyFramework) {
+                const framework = journalFrameworks.daily_ops.find(f => f.id === context.dailyFramework);
+                if (framework) {
+                    currentDailyFramework = framework;
+                    renderDailyOpsFramework();
+                }
+                setJournalMode('daily');
+            } else if (context.section === 'aar') {
+                setJournalMode('daily');
+                setTimeout(() => {
+                    document.querySelector('.aar-card')?.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            } else if (context.module) {
+                setJournalMode('daily');
+                document.getElementById('journalSituation').value = `Exploring ${moduleConfig[context.module]?.name || context.module}: `;
+                document.getElementById('journalSituation').focus();
+            }
+        }
+
+        function dismissProactiveBanner() {
+            document.getElementById('proactiveBanner').style.display = 'none';
+        }
+
+        // ============================================
+        // DEEP DIVE SYSTEM
+        // ============================================
+
+        function renderDeepDiveSelector() {
+            const container = document.getElementById('deepDiveSelector');
+            const deepDives = journalFrameworks.deep_dive;
+
+            const icons = {
+                decision: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>',
+                stuck: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>',
+                negotiate: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+                habit: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>',
+                perspective: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>',
+                planning: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>'
+            };
+
+            container.innerHTML = Object.entries(deepDives).map(([key, dive]) => `
+                <div class="deep-dive-type-card" onclick="startDeepDive('${key}')">
+                    <div class="deep-dive-type-icon">${icons[key] || ''}</div>
+                    <div class="deep-dive-type-name">${dive.name}</div>
+                    <div class="deep-dive-type-source">${dive.source}</div>
+                    <div class="deep-dive-type-desc">${dive.description}</div>
+                </div>
+            `).join('');
+        }
+
+        function startDeepDive(type) {
+            currentDeepDive = journalFrameworks.deep_dive[type];
+            if (!currentDeepDive) return;
+
+            currentDeepDive.type = type;
+            deepDiveStep = 1;
+            deepDiveResponses = new Array(currentDeepDive.steps.length).fill('');
+
+            document.getElementById('deepDiveTitle').textContent = currentDeepDive.name.toUpperCase();
+            document.getElementById('deepDiveSource').textContent = currentDeepDive.source;
+
+            renderDeepDiveSteps();
+            openModal('deepDiveModal');
+        }
+
+        function renderDeepDiveSteps() {
+            const step = currentDeepDive.steps[deepDiveStep - 1];
+            const totalSteps = currentDeepDive.steps.length;
+
+            document.getElementById('deepDiveProgress').textContent = `Step ${deepDiveStep} of ${totalSteps}`;
+            document.getElementById('deepDiveStepTitle').textContent = step.title;
+            document.getElementById('deepDiveStepPrompt').textContent = step.prompt;
+            document.getElementById('deepDiveResponse').value = deepDiveResponses[deepDiveStep - 1] || '';
+
+            const indicatorContainer = document.getElementById('deepDiveStepIndicator');
+            indicatorContainer.innerHTML = currentDeepDive.steps.map((_, i) => {
+                const classes = ['step-dot'];
+                if (i + 1 === deepDiveStep) classes.push('active');
+                if (i + 1 < deepDiveStep) classes.push('completed');
+                return `<div class="${classes.join(' ')}"></div>`;
+            }).join('');
+
+            const prevBtn = document.getElementById('deepDivePrevBtn');
+            const nextBtn = document.getElementById('deepDiveNextBtn');
+
+            prevBtn.style.display = deepDiveStep > 1 ? 'inline-flex' : 'none';
+            nextBtn.textContent = deepDiveStep === totalSteps ? 'Complete' : 'Next';
+        }
+
+        function nextDeepDiveStep() {
+            deepDiveResponses[deepDiveStep - 1] = document.getElementById('deepDiveResponse').value;
+
+            if (deepDiveStep === currentDeepDive.steps.length) {
+                saveDeepDiveEntry();
+                return;
+            }
+
+            deepDiveStep++;
+            renderDeepDiveSteps();
+        }
+
+        function prevDeepDiveStep() {
+            if (deepDiveStep <= 1) return;
+            deepDiveResponses[deepDiveStep - 1] = document.getElementById('deepDiveResponse').value;
+            deepDiveStep--;
+            renderDeepDiveSteps();
+        }
+
+        function saveDeepDiveEntry() {
+            const entry = {
+                id: Date.now().toString(),
+                type: 'deepdive',
+                date: new Date().toISOString().split('T')[0],
+                timestamp: new Date().toISOString(),
+                deepDiveType: currentDeepDive.type,
+                framework: {
+                    id: currentDeepDive.type,
+                    name: currentDeepDive.name,
+                    source: currentDeepDive.source
+                },
+                steps: currentDeepDive.steps.map((step, i) => ({
+                    title: step.title,
+                    prompt: step.prompt,
+                    response: deepDiveResponses[i] || ''
+                }))
+            };
+
+            autoTagEntry(entry);
+
+            appData.journalEntries.unshift(entry);
+            if (appData.journalEntries.length > 180) {
+                appData.journalEntries = appData.journalEntries.slice(0, 180);
+            }
+
+            updateJournalStats(entry);
+            updateJournalStreak();
+            saveToStorage();
+
+            closeModal('deepDiveModal');
+            showToast('Deep Dive completed!', 'success');
+
+            currentDeepDive = null;
+            deepDiveStep = 1;
+            deepDiveResponses = [];
+        }
+
+        // ============================================
+        // PATTERN RECOGNITION & HISTORY
+        // ============================================
+
+        function autoTagEntry(entry) {
+            const themes = {
+                procrastination: ['procrastinate', 'avoid', 'delay', 'put off', 'later', 'tomorrow'],
+                fear: ['afraid', 'fear', 'scared', 'anxious', 'worry', 'nervous'],
+                discipline: ['discipline', 'consistent', 'routine', 'habit', 'daily', 'commit'],
+                overwhelm: ['overwhelm', 'too much', 'stressed', 'burnout', 'exhausted', 'tired'],
+                growth: ['learn', 'improve', 'grow', 'progress', 'better', 'succeed', 'achieve']
+            };
+
+            const allText = [
+                entry.situation,
+                entry.intent,
+                entry.execution,
+                entry.aar?.worked,
+                entry.aar?.failed,
+                entry.aar?.delta,
+                ...(entry.frameworkPromptResponses || []),
+                ...(entry.steps?.map(s => s.response) || [])
+            ].filter(Boolean).join(' ').toLowerCase();
+
+            entry.detectedThemes = [];
+            Object.entries(themes).forEach(([theme, keywords]) => {
+                if (keywords.some(kw => allText.includes(kw))) {
+                    entry.detectedThemes.push(theme);
+                }
+            });
+
+            entry.linkedModules = detectLinkedModules(allText);
+        }
+
+        function detectLinkedModules(text) {
+            const moduleKeywords = {
+                money: ['money', 'wealth', 'income', 'invest', 'rich', 'financial'],
+                sales: ['sales', 'sell', 'close', 'prospect', 'customer', 'deal'],
+                finance: ['budget', 'save', 'debt', 'expense', 'bank'],
+                productivity: ['productive', 'focus', 'deep work', 'task', 'time', 'efficient'],
+                business: ['business', 'startup', 'company', 'entrepreneur', 'revenue'],
+                mindset: ['mindset', 'think', 'belief', 'attitude', 'mental', 'stoic'],
+                dating: ['social', 'date', 'relationship', 'connect', 'people', 'conversation'],
+                lifestyle: ['lifestyle', 'habit', 'routine', 'environment', 'design'],
+                health: ['health', 'fitness', 'exercise', 'sleep', 'energy', 'workout']
+            };
+
+            const linked = [];
+            Object.entries(moduleKeywords).forEach(([module, keywords]) => {
+                if (keywords.some(kw => text.includes(kw))) {
+                    linked.push(module);
+                }
+            });
+
+            return linked;
+        }
+
+        function runPatternAnalysis() {
+            const entries = appData.journalEntries;
+            if (entries.length < 5) {
+                document.getElementById('patternThemes').innerHTML = '<p class="text-muted">Complete 5+ entries to see patterns</p>';
+                document.getElementById('patternBlindSpots').innerHTML = '<p class="text-muted">Complete more entries to detect blind spots</p>';
+                document.getElementById('patternFrameworks').innerHTML = '<p class="text-muted">Use more frameworks to see usage patterns</p>';
+                return;
+            }
+
+            const themeCounts = {};
+            entries.forEach(entry => {
+                (entry.detectedThemes || []).forEach(theme => {
+                    themeCounts[theme] = (themeCounts[theme] || 0) + 1;
+                });
+            });
+
+            renderPatternThemes(themeCounts);
+
+            const avoidedModules = detectAvoidedModules();
+            renderPatternBlindSpots(avoidedModules);
+
+            renderPatternFrameworks();
+        }
+
+        function renderPatternThemes(themeCounts) {
+            const container = document.getElementById('patternThemes');
+            const sorted = Object.entries(themeCounts).sort((a, b) => b[1] - a[1]);
+            const maxCount = sorted[0]?.[1] || 1;
+
+            const themeIcons = {
+                procrastination: '⏰',
+                fear: '😰',
+                discipline: '💪',
+                overwhelm: '😵',
+                growth: '📈'
+            };
+
+            if (sorted.length === 0) {
+                container.innerHTML = '<p class="text-muted">No recurring themes detected yet</p>';
+                return;
+            }
+
+            container.innerHTML = sorted.map(([theme, count]) => `
+                <div class="pattern-item">
+                    <div class="pattern-item-icon">${themeIcons[theme] || '📌'}</div>
+                    <div class="pattern-item-content">
+                        <div class="pattern-item-name">${theme.charAt(0).toUpperCase() + theme.slice(1)}</div>
+                        <div class="pattern-item-count">${count} entries</div>
+                        <div class="pattern-item-bar">
+                            <div class="pattern-item-bar-fill" style="width: ${(count / maxCount) * 100}%"></div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderPatternBlindSpots(avoidedModules) {
+            const container = document.getElementById('patternBlindSpots');
+
+            if (avoidedModules.length === 0) {
+                container.innerHTML = '<p class="text-muted" style="color: var(--success);">No blind spots detected - you are covering all focus modules!</p>';
+                return;
+            }
+
+            container.innerHTML = avoidedModules.map(module => `
+                <div class="blind-spot-item" onclick="focusOnModule('${module}')">
+                    <svg class="blind-spot-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <span class="blind-spot-name">${moduleConfig[module]?.name || module}</span>
+                    <span class="blind-spot-days">7+ days</span>
+                </div>
+            `).join('');
+        }
+
+        function focusOnModule(module) {
+            setJournalMode('daily');
+            document.getElementById('journalSituation').value = `Exploring ${moduleConfig[module]?.name || module}: `;
+            document.getElementById('journalSituation').focus();
+        }
+
+        function renderPatternFrameworks() {
+            const container = document.getElementById('patternFrameworks');
+            const usage = appData.journalStats.frameworkUsage || {};
+            const sorted = Object.entries(usage).sort((a, b) => b[1] - a[1]);
+
+            if (sorted.length === 0) {
+                container.innerHTML = '<p class="text-muted">Use more frameworks to see usage patterns</p>';
+                return;
+            }
+
+            const allFrameworks = [
+                ...journalFrameworks.daily_ops,
+                ...Object.values(journalFrameworks.deep_dive)
+            ];
+
+            container.innerHTML = sorted.map(([frameworkId, count]) => {
+                const framework = allFrameworks.find(f => f.id === frameworkId || f.type === frameworkId);
+                const name = framework?.name || frameworkId;
+                return `
+                    <div class="pattern-item">
+                        <div class="pattern-item-icon">📋</div>
+                        <div class="pattern-item-content">
+                            <div class="pattern-item-name">${name}</div>
+                            <div class="pattern-item-count">Used ${count} times</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function populateHistoryModuleFilter() {
+            const select = document.getElementById('historyModuleFilter');
+            select.innerHTML = '<option value="all">All Modules</option>';
+            Object.entries(moduleConfig).filter(([key]) => key !== 'historical').forEach(([key, config]) => {
+                select.innerHTML += `<option value="${key}">${config.name}</option>`;
+            });
+        }
+
+        function loadJournalHistory() {
+            filterJournalHistory();
+        }
+
+        function filterJournalHistory() {
+            const typeFilter = document.getElementById('historyTypeFilter')?.value || 'all';
+            const moduleFilter = document.getElementById('historyModuleFilter')?.value || 'all';
+            const searchText = document.getElementById('historySearch')?.value?.toLowerCase() || '';
+
+            let entries = [...appData.journalEntries];
+
+            if (typeFilter !== 'all') {
+                entries = entries.filter(e => e.type === typeFilter);
+            }
+
+            if (moduleFilter !== 'all') {
+                entries = entries.filter(e => e.linkedModules?.includes(moduleFilter));
+            }
+
+            if (searchText) {
+                entries = entries.filter(e => {
+                    const text = [
+                        e.situation,
+                        e.intent,
+                        e.execution,
+                        e.framework?.name,
+                        ...(e.steps?.map(s => s.response) || [])
+                    ].filter(Boolean).join(' ').toLowerCase();
+                    return text.includes(searchText);
+                });
+            }
+
+            renderJournalHistory(entries);
+        }
+
+        function renderJournalHistory(entries) {
+            const container = document.getElementById('historyList');
+
+            if (entries.length === 0) {
+                container.innerHTML = '<p class="text-muted">No journal entries found. Start your first Daily Ops entry!</p>';
+                return;
+            }
+
+            container.innerHTML = entries.map(entry => {
+                const isDeepDive = entry.type === 'deepdive';
+                const title = entry.framework?.name || 'Daily Ops Entry';
+                const date = new Date(entry.timestamp).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+                const preview = entry.situation || entry.intent || entry.steps?.[0]?.response || '';
+                const scoreClass = entry.aar?.score >= 7 ? 'high' : entry.aar?.score >= 5 ? 'medium' : 'low';
+
+                return `
+                    <div class="history-entry" onclick="viewJournalEntry('${entry.id}')">
+                        <div class="history-entry-type ${isDeepDive ? 'deep-dive' : ''}">
+                            ${isDeepDive
+                                ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>'
+                                : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>'
+                            }
+                        </div>
+                        <div class="history-entry-content">
+                            <div class="history-entry-title">${title}</div>
+                            <div class="history-entry-meta">
+                                <span>${date}</span>
+                                <span class="history-entry-framework">${entry.framework?.source || ''}</span>
+                            </div>
+                        </div>
+                        ${!isDeepDive && entry.aar?.score
+                            ? `<div class="history-entry-score ${scoreClass}">${entry.aar.score}</div>`
+                            : ''
+                        }
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function viewJournalEntry(entryId) {
+            const entry = appData.journalEntries.find(e => e.id === entryId);
+            if (!entry) return;
+
+            const modal = document.getElementById('journalViewModal');
+            const title = document.getElementById('journalViewTitle');
+            const content = document.getElementById('journalViewContent');
+
+            const date = new Date(entry.timestamp).toLocaleDateString('en-US', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            title.textContent = date;
+
+            if (entry.type === 'deepdive') {
+                content.innerHTML = `
+                    <div class="journal-view-section">
+                        <div class="journal-view-framework">
+                            <div class="journal-view-framework-name">${entry.framework?.name || 'Deep Dive'}</div>
+                            <div class="journal-view-framework-source">${entry.framework?.source || ''}</div>
+                        </div>
+                    </div>
+                    ${(entry.steps || []).map(step => `
+                        <div class="journal-view-section">
+                            <div class="journal-view-label">${step.title}</div>
+                            <div class="journal-view-content">${step.response || '<em>No response</em>'}</div>
+                        </div>
+                    `).join('')}
+                `;
+            } else {
+                content.innerHTML = `
+                    <div class="journal-view-section">
+                        <div class="journal-view-framework">
+                            <div class="journal-view-framework-name">${entry.framework?.name || 'Daily Ops'}</div>
+                            <div class="journal-view-framework-source">${entry.framework?.source || ''}</div>
+                        </div>
+                    </div>
+                    ${entry.situation ? `
+                        <div class="journal-view-section">
+                            <div class="journal-view-label">Situation Analysis</div>
+                            <div class="journal-view-content">${entry.situation}</div>
+                        </div>
+                    ` : ''}
+                    ${entry.intent ? `
+                        <div class="journal-view-section">
+                            <div class="journal-view-label">Strategic Intent</div>
+                            <div class="journal-view-content">${entry.intent}</div>
+                        </div>
+                    ` : ''}
+                    ${(entry.frameworkPromptResponses || []).filter(r => r).length > 0 ? `
+                        <div class="journal-view-section">
+                            <div class="journal-view-label">Framework Responses</div>
+                            ${entry.frameworkPromptResponses.filter(r => r).map((r, i) => `
+                                <div class="journal-view-content" style="margin-bottom: 0.5rem;">${r}</div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                    ${entry.execution ? `
+                        <div class="journal-view-section">
+                            <div class="journal-view-label">Execution Notes</div>
+                            <div class="journal-view-content">${entry.execution}</div>
+                        </div>
+                    ` : ''}
+                    ${entry.aar?.worked || entry.aar?.failed || entry.aar?.delta ? `
+                        <div class="journal-view-section">
+                            <div class="journal-view-label">After-Action Review</div>
+                            ${entry.aar.worked ? `<div class="journal-view-content" style="margin-bottom: 0.5rem;"><strong>Worked:</strong> ${entry.aar.worked}</div>` : ''}
+                            ${entry.aar.failed ? `<div class="journal-view-content" style="margin-bottom: 0.5rem;"><strong>Didn't work:</strong> ${entry.aar.failed}</div>` : ''}
+                            ${entry.aar.delta ? `<div class="journal-view-content" style="margin-bottom: 0.5rem;"><strong>Intent vs Outcome:</strong> ${entry.aar.delta}</div>` : ''}
+                            ${entry.aar.score ? `<div class="journal-view-content"><strong>Day Score:</strong> ${entry.aar.score}/10</div>` : ''}
+                        </div>
+                    ` : ''}
+                `;
+            }
+
+            openModal('journalViewModal');
+        }
 
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {
@@ -4932,6 +7493,7 @@
             if (e.key === 'r') refreshWisdom();
             if (e.key === 'm') openMorningCheckin();
             if (e.key === 'e') openEveningReflection();
+            if (e.key === 'j') showPage('journal');
         });
     </script>
 </body>
