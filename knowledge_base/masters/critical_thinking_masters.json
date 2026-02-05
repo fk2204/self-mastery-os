@@ -523,6 +523,7 @@
     {
       "id": "daniel_kahneman",
       "name": "Daniel Kahneman",
+      "expertise": "Cognitive biases, decision-making under uncertainty, dual-process theory",
       "title": "Nobel Laureate and Father of Behavioral Economics",
       "specialty": "Cognitive biases, decision-making under uncertainty, dual-process theory",
       "key_works": ["Thinking, Fast and Slow", "Judgment under Uncertainty (with Tversky)", "Noise (with Sibony and Sunstein)"],
@@ -727,6 +728,7 @@
     {
       "id": "shane_parrish",
       "name": "Shane Parrish",
+      "expertise": "Mental models, first principles thinking, decision-making frameworks",
       "title": "Founder of Farnam Street, Mental Models Synthesizer",
       "specialty": "Mental models, first principles thinking, decision-making frameworks",
       "key_works": ["The Great Mental Models series", "Farnam Street blog", "The Knowledge Project podcast", "Clear Thinking"],
@@ -983,6 +985,7 @@
     {
       "id": "annie_duke",
       "name": "Annie Duke",
+      "expertise": "Thinking in bets, decision quality vs outcome quality, uncertainty management",
       "title": "Former Professional Poker Player, Decision Strategist",
       "specialty": "Thinking in bets, decision quality vs outcome quality, uncertainty management",
       "key_works": ["Thinking in Bets", "How to Decide", "Quit: The Power of Knowing When to Walk Away"],

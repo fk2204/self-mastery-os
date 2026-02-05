@@ -562,6 +562,7 @@
   "masters": [
     {
       "name": "Patrick King",
+      "expertise": "Conversation skills, social intelligence, and charisma",
       "specialty": "Conversation Skills & Social Intelligence",
       "background": "Social interaction specialist and bestselling author of numerous books on conversation, charisma, and social skills. Known for practical, actionable advice based on psychology and real-world testing.",
       "core_philosophy": "Social skills are learnable skills. Anyone can become charismatic through understanding the mechanics of connection and practicing deliberately.",
@@ -782,6 +783,7 @@
 
     {
       "name": "Julian Treasure",
+      "expertise": "Conscious listening, powerful speaking, and sonic communication",
       "specialty": "Sound, Listening & Speaking Powerfully",
       "background": "Sound and communication expert whose TED talks have been viewed over 100 million times. Founder of The Sound Agency. Pioneer of 'sonic branding' and conscious listening.",
       "core_philosophy": "We are losing our listening. In a world of increasing noise and distraction, the ability to listen consciously is both rare and transformative. Combined with powerful speaking, it creates profound communication.",
@@ -1049,6 +1051,7 @@
 
     {
       "name": "Vinh Giang",
+      "expertise": "Presentation mastery, stage presence, and audience engagement",
       "specialty": "Presentation Mastery & Stage Presence",
       "background": "Award-winning magician turned communication expert. Has delivered over 1,500 presentations across 40+ countries. Combines the principles of magic and performance with business communication. Known for theatrical, engaging presentation style.",
       "core_philosophy": "Your message is only as good as your ability to deliver it. The magic of communication lies in making your audience feel something. Logic tells, emotion sells.",
@@ -1390,6 +1393,7 @@
 
     {
       "name": "Marshall Rosenberg",
+      "expertise": "Nonviolent communication, empathy, and conflict resolution",
       "specialty": "Nonviolent Communication (NVC)",
       "background": "American psychologist who developed Nonviolent Communication, also called Compassionate Communication. Founded the Center for Nonviolent Communication. Worked in conflict resolution across 60+ countries. His approach has been used in war zones, schools, prisons, and families worldwide.",
       "core_philosophy": "All human beings share the same fundamental needs, and all behavior is an attempt to meet needs. When we connect at the level of needs, resolution becomes possible. Violence - whether physical or verbal - arises when we lose sight of each other's humanity.",

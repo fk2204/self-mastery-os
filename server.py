@@ -114,18 +114,13 @@ def run_server(port=8080):
     server = HTTPServer(('localhost', port), DashboardHandler)
     url = f'http://localhost:{port}'
 
-    print(f"""
-╔══════════════════════════════════════════════════════════════╗
-║               SELF-MASTERY OS DASHBOARD                      ║
-╠══════════════════════════════════════════════════════════════╣
-║  Server running at: {url:<38} ║
-║                                                              ║
-║  Press Ctrl+C to stop the server                             ║
-╚══════════════════════════════════════════════════════════════╝
-""")
-
-    # Open browser
-    webbrowser.open(url)
+    print("\n================================================================")
+    print("           SELF-MASTERY OS DASHBOARD")
+    print("================================================================")
+    print(f"  Server running at: {url}")
+    print("")
+    print("  Press Ctrl+C to stop the server")
+    print("================================================================\n")
 
     try:
         server.serve_forever()
