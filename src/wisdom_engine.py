@@ -71,12 +71,13 @@ class WisdomEngine:
 
         master = random.choice(masters)
         principles = master.get("key_principles", [])
+        daily_practices = master.get("daily_practices", ["Apply this today."])
 
         return {
             "master": master.get("name", "Unknown"),
             "expertise": master.get("expertise", ""),
             "teaching": random.choice(principles) if principles else "No teaching available.",
-            "practice": random.choice(master.get("daily_practices", ["Apply this today."])),
+            "practice": random.choice(daily_practices) if daily_practices else "Apply this today.",
             "module": module
         }
 
@@ -183,7 +184,10 @@ class WisdomEngine:
                 break
 
         if not relevant_module:
-            relevant_module = random.choice(list(self.masters_data.keys()))
+            if self.masters_data:
+                relevant_module = random.choice(list(self.masters_data.keys()))
+            else:
+                return "Take action despite uncertainty. Clarity comes from doing, not thinking."
 
         # Get advice from that module's masters
         module_data = self.masters_data.get(relevant_module, {})
