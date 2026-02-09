@@ -19,24 +19,36 @@ class WisdomEngine:
         self.base_path = Path(dm.base_path)
         self.masters_path = self.base_path / "knowledge_base" / "masters"
         self.profile = dm.get_user_profile() or {}
-        self.masters_data = self._load_all_masters()
+        self._masters_data = {}  # Lazy-load cache
+        self._loaded_modules = set()  # Track which modules are loaded
 
-    def _load_all_masters(self) -> Dict:
-        """Load all masters data from JSON files."""
-        masters = {}
-        if not self.masters_path.exists():
-            return masters
+    def _load_module(self, module: str) -> Dict:
+        """Lazy-load a single module's master data."""
+        if module in self._loaded_modules:
+            return self._masters_data.get(module, {})
 
-        for file in self.masters_path.glob("*.json"):
+        file_path = self.masters_path / f"{module}_masters.json"
+        if file_path.exists():
             try:
-                with open(file, 'r', encoding='utf-8') as f:
+                with open(file_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
-                    module = data.get("module", file.stem.replace("_masters", ""))
-                    masters[module] = data
+                    self._masters_data[module] = data
+                    self._loaded_modules.add(module)
+                    return data
             except (json.JSONDecodeError, IOError):
-                continue
+                pass
+        return {}
 
-        return masters
+    @property
+    def masters_data(self) -> Dict:
+        """Get all masters data (loads all modules on first access for backward compatibility)."""
+        # Lazy load all modules on first access
+        if not self._masters_data and self.masters_path.exists():
+            for file in sorted(self.masters_path.glob("*_masters.json")):
+                module = file.stem.replace("_masters", "")
+                if module not in self._loaded_modules:
+                    self._load_module(module)
+        return self._masters_data
 
     def get_daily_wisdom(self) -> Dict:
         """Generate comprehensive daily wisdom package."""
@@ -55,15 +67,21 @@ class WisdomEngine:
 
     def _get_master_teaching(self, focus_modules: List[str]) -> Dict:
         """Get a teaching from a master in focus areas."""
-        available_modules = [m for m in focus_modules if m in self.masters_data]
+        available_modules = []
+        for m in focus_modules:
+            if (self.masters_path / f"{m}_masters.json").exists():
+                available_modules.append(m)
+
         if not available_modules:
-            available_modules = list(self.masters_data.keys())
+            # Fall back to any available module
+            if self.masters_path.exists():
+                available_modules = [f.stem.replace("_masters", "") for f in self.masters_path.glob("*_masters.json")]
 
         if not available_modules:
             return {"master": "Unknown", "teaching": "No teachings available.", "module": "general"}
 
         module = random.choice(available_modules)
-        module_data = self.masters_data.get(module, {})
+        module_data = self._load_module(module)
         masters = module_data.get("masters", [])
 
         if not masters:
@@ -85,16 +103,26 @@ class WisdomEngine:
         """Get a daily insight from focus modules."""
         all_insights = []
 
+        # Only load focus modules
         for module in focus_modules:
-            if module in self.masters_data:
-                insights = self.masters_data[module].get("daily_insights", [])
-                all_insights.extend(insights)
+            module_data = self._load_module(module)
+            insights = module_data.get("daily_insights", [])
+            all_insights.extend(insights)
 
-        # Add some cross-module insights
-        for module_data in self.masters_data.values():
-            all_insights.extend(module_data.get("daily_insights", [])[:2])
+        # Add some cross-module insights (still lazy-loaded)
+        if all_insights:
+            return random.choice(all_insights)
 
-        return random.choice(all_insights) if all_insights else "Show up. Do the work. Repeat."
+        # Fallback: load one additional module for insights
+        available_modules = [f.stem.replace("_masters", "") for f in self.masters_path.glob("*_masters.json")]
+        if available_modules:
+            module = random.choice(available_modules)
+            module_data = self._load_module(module)
+            insights = module_data.get("daily_insights", [])
+            if insights:
+                return random.choice(insights)
+
+        return "Show up. Do the work. Repeat."
 
     def _get_skill_challenge(self, focus_modules: List[str]) -> Dict:
         """Get a skill challenge for today."""

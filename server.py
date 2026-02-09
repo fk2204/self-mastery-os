@@ -20,6 +20,10 @@ from wisdom_engine import WisdomEngine
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 dm = DataManager(BASE_PATH)
 
+# Simple caching for wisdom data (cached by date)
+_wisdom_cache = {}
+_wisdom_cache_date = None
+
 class DashboardHandler(SimpleHTTPRequestHandler):
     """Custom handler that serves dashboard with dynamic data."""
 
@@ -133,9 +137,21 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         self.send_json(data)
 
     def send_wisdom(self):
-        """Send wisdom data."""
+        """Send wisdom data (cached by date)."""
+        global _wisdom_cache, _wisdom_cache_date
+
+        today = datetime.now().strftime("%Y-%m-%d")
+
+        # Return cached wisdom if available for today
+        if _wisdom_cache_date == today and _wisdom_cache:
+            self.send_json(_wisdom_cache)
+            return
+
+        # Generate new wisdom and cache it
         wisdom = WisdomEngine(dm)
         daily = wisdom.get_daily_wisdom()
+        _wisdom_cache = daily
+        _wisdom_cache_date = today
         self.send_json(daily)
 
     def send_habits(self):
