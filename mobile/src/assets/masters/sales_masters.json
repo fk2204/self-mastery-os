@@ -1,0 +1,635 @@
+{
+  "module": "sales",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You understand that sales is a learnable skill, not an innate talent",
+      "capabilities": ["Recognize that everyone sells something", "Understand basic objection categories", "Accept rejection as part of the process"],
+      "milestone": "Complete your first 10 cold outreach attempts"
+    },
+    "2": {
+      "name": "Foundation",
+      "description": "Building basic sales communication skills",
+      "capabilities": ["Open conversations effectively", "Ask basic qualifying questions", "Handle simple objections"],
+      "milestone": "Book your first meeting from cold outreach"
+    },
+    "3": {
+      "name": "Active Learner",
+      "description": "Consistently practicing and improving sales fundamentals",
+      "capabilities": ["Use a structured sales framework", "Handle common objections confidently", "Follow up systematically"],
+      "milestone": "Close your first deal from cold outreach"
+    },
+    "4": {
+      "name": "Competent Closer",
+      "description": "Reliably closing deals with a predictable process",
+      "capabilities": ["Navigate full sales conversations", "Handle complex objections", "Create urgency ethically"],
+      "milestone": "Maintain 20%+ close rate on qualified opportunities"
+    },
+    "5": {
+      "name": "Skilled Persuader",
+      "description": "Mastering the art and science of ethical persuasion",
+      "capabilities": ["Use advanced negotiation tactics", "Read and respond to buying signals", "Control frame and tonality"],
+      "milestone": "Consistently hit or exceed sales targets"
+    },
+    "6": {
+      "name": "Strategic Seller",
+      "description": "Thinking strategically about deals and relationships",
+      "capabilities": ["Navigate complex multi-stakeholder deals", "Build and leverage referral networks", "Create custom solutions for clients"],
+      "milestone": "Build a referral pipeline that generates 30%+ of leads"
+    },
+    "7": {
+      "name": "Deal Architect",
+      "description": "Designing and closing high-value complex deals",
+      "capabilities": ["Structure creative deal terms", "Negotiate at executive level", "Turn competitors into partners"],
+      "milestone": "Close deals 5x your starting average deal size"
+    },
+    "8": {
+      "name": "Sales Leader",
+      "description": "Leading and developing sales teams and systems",
+      "capabilities": ["Build repeatable sales processes", "Coach others to success", "Scale sales operations"],
+      "milestone": "Build a sales system that works without your daily involvement"
+    },
+    "9": {
+      "name": "Master Influencer",
+      "description": "Effortless influence and persuasion in any context",
+      "capabilities": ["Sell ideas at any level", "Build strategic partnerships", "Turn any conversation into opportunity"],
+      "milestone": "Close partnerships or deals that transform your business"
+    },
+    "10": {
+      "name": "Sales Master",
+      "description": "Legendary ability to create value through persuasion",
+      "capabilities": ["Teach and mentor others at scale", "Build sales organizations", "Influence markets and industries"],
+      "milestone": "Your sales philosophy and methods are taught to others"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "The Rejection Collection",
+        "difficulty": 1,
+        "time_minutes": 30,
+        "instructions": "Make 10 cold outreach attempts today with the goal of collecting rejections, not closes. Track each rejection. This reframes failure as progress.",
+        "success_criteria": "Complete 10 outreach attempts and log each response (or non-response)"
+      },
+      {
+        "title": "Mirror Practice",
+        "difficulty": 1,
+        "time_minutes": 15,
+        "instructions": "Practice Chris Voss's mirroring technique in 3 real conversations today. Simply repeat the last 1-3 words of what someone says as a question. Notice how it encourages them to elaborate.",
+        "success_criteria": "Used mirroring 3+ times and noted the responses in your journal"
+      },
+      {
+        "title": "Objection Scripting",
+        "difficulty": 1,
+        "time_minutes": 45,
+        "instructions": "Write down the 5 most common objections you hear. For each one, write 2-3 response options. Practice saying them out loud until they feel natural.",
+        "success_criteria": "5 objections with 2-3 responses each, practiced verbally"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Record and Review",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Record your next sales call (with permission). Listen back and critique: Where did you talk too much? Miss buying signals? Let objections derail you? Create 3 specific improvements.",
+        "success_criteria": "One recorded call with written self-critique and 3 action items"
+      },
+      {
+        "title": "Role Play Gauntlet",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Partner with someone (colleague, friend, coach). Have them throw your top 5 objections at you in rapid fire. Practice responding for 5 minutes per objection. Get feedback.",
+        "success_criteria": "Complete 5 objection role plays with documented feedback"
+      },
+      {
+        "title": "Zombie Lead Revival",
+        "difficulty": 2,
+        "time_minutes": 30,
+        "instructions": "Go through your CRM/contacts and find 10 'dead' leads you gave up on. Send a creative re-engagement message to each. Track responses.",
+        "success_criteria": "10 re-engagement messages sent with different approaches tested"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Straight Line Mastery",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Map out your complete sales process as a 'straight line' from opening to close. Identify every point where prospects fall off. Create specific recovery tactics for each dropout point.",
+        "success_criteria": "Visual sales process map with recovery tactics documented"
+      },
+      {
+        "title": "Tactical Empathy Deep Dive",
+        "difficulty": 3,
+        "time_minutes": 60,
+        "instructions": "Before your next high-stakes conversation, write a full 'accusation audit' - list every negative thing the other person might think about you or your offer. Then craft labels for each one to defuse them proactively.",
+        "success_criteria": "Complete accusation audit with 5+ proactive labels written and delivered"
+      },
+      {
+        "title": "Build Your Sales Playbook",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Create a comprehensive sales playbook: ideal customer profile, opening scripts, qualifying questions, objection responses, closing techniques, follow-up sequences. This becomes your training manual.",
+        "success_criteria": "Written playbook covering all phases of your sales process"
+      },
+      {
+        "title": "Complex Deal Stakeholder Mapping",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Take your largest active opportunity and map every stakeholder involved. For each person, document: their role in the decision, what they care about, their biggest concern, your relationship strength (1-5), and your specific strategy to win them over. Identify gaps and create action items.",
+        "success_criteria": "Complete stakeholder map with 5+ stakeholders documented and specific action plan for each"
+      },
+      {
+        "title": "Enterprise Multi-Threading Exercise",
+        "difficulty": 3,
+        "time_minutes": 120,
+        "instructions": "Select a target enterprise account you want to win. Research 5-7 people across different functions (sales, ops, finance, IT, executive). For each, craft a personalized outreach message that speaks to their specific role and concerns. Execute a coordinated multi-touch campaign over 2 weeks.",
+        "success_criteria": "5+ personalized messages sent across multiple roles, with tracking of responses and next steps"
+      },
+      {
+        "title": "Build Your Predictable Revenue Engine",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Design your own outbound sales system: Define your ICP (ideal customer profile), build a target account list of 50 companies, create a 10-12 touch prospecting cadence with templates for each touch, define handoff criteria to closing, and set up tracking metrics. This is your sales machine blueprint.",
+        "success_criteria": "Complete system documented: ICP definition, 50 target accounts, full cadence with templates, handoff criteria, and KPI dashboard"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "money",
+      "insight": "Sales is the highest-leverage skill for income - every other skill is limited by your ability to sell it",
+      "combined_exercise": "Calculate how much more you'd earn if you closed 20% more deals. Use that number as motivation for practice."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Sales rejection feels personal but isn't - mental toughness training directly improves sales performance",
+      "combined_exercise": "Before each sales block, do 5 minutes of mindset priming: visualize success, review past wins, affirm your value"
+    },
+    {
+      "connected_module": "social",
+      "insight": "Social skills and sales skills overlap heavily - rapport building and active listening work everywhere",
+      "combined_exercise": "Practice tactical empathy in 3 non-sales conversations today. Notice how it improves all relationships."
+    },
+    {
+      "connected_module": "productivity",
+      "insight": "Protected selling time dramatically outperforms scattered efforts - treat sales like deep work",
+      "combined_exercise": "Block 2 hours of uninterrupted prospecting time. No email, no slack, just outreach."
+    }
+  ],
+  "masters": [
+    {
+      "name": "Jordan Belfort",
+      "expertise": "Straight line persuasion, tonality, closing",
+      "key_principles": [
+        "The only thing standing between you and your goal is the story you keep telling yourself.",
+        "Sales is a transfer of emotion. You must believe before they can.",
+        "Tonality is 90% of communication. Words are just 10%.",
+        "Every sale has five basic obstacles: no need, no money, no hurry, no desire, no trust.",
+        "Act as if you're a wealthy person, and you'll become one.",
+        "Logic makes people think. Emotion makes people act."
+      ],
+      "daily_practices": [
+        "Practice your pitch with power and conviction",
+        "Record yourself and analyze your tonality",
+        "Handle 10 objections out loud daily"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Straight Line Cold Call",
+          "scenario": "You need to make cold calls but keep getting blown off in the first 10 seconds.",
+          "framework_applied": "Straight Line System - Open, Qualify, Close while managing certainty levels",
+          "step_by_step": [
+            "Tonality first: Sound like you belong on the phone, not like a telemarketer. Confident, curious, direct.",
+            "Pattern interrupt: Don't start with 'Hi, is this a bad time?' - Start with value or a question that makes them think",
+            "Quick value statement: In one sentence, explain why they should keep listening",
+            "Qualify fast: Within 30 seconds, determine if they have the need, authority, and ability to buy",
+            "Build certainty: On the product (does it work?), on you (can I trust this person?), on the company (is this legitimate?)",
+            "Loop objections: When they object, don't argue - acknowledge, deflect, and return to your line",
+            "Close with urgency: Give them a reason to act now, not 'think about it'"
+          ],
+          "outcome": "Cold calls go from <10% answer rate to 30%+ by using proper tonality and pattern interrupts"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Cold Call Opening Script",
+          "context": "Use when making B2B cold calls to get past the first 10 seconds",
+          "template": "[ENTHUSIASTIC TONE]\n\"Hey [NAME], this is [YOUR NAME] with [COMPANY].\n\nHey, did I catch you at a bad time?\"\n\n[WHEN THEY SAY 'YES' OR 'WHAT IS THIS ABOUT']\n\n\"I figured. Look, I'll be brief - I'm calling because [SPECIFIC REASON RELEVANT TO THEM].\n\nI've been working with [SIMILAR COMPANIES/ROLES] who were struggling with [PAIN POINT].\n\nI'm not sure if that's even on your radar, but if it is, I have an idea that might help.\n\nWould you be opposed to hearing it?\"",
+          "example_filled": "\"Hey Sarah, this is Mike with GrowthForce.\n\nHey, did I catch you at a bad time?\"\n\n[She says: 'Yeah, what is this about?']\n\n\"I figured. Look, I'll be brief - I'm calling because I noticed you recently raised Series A.\n\nI've been working with post-Series A startups who were struggling to build their first outbound sales motion.\n\nI'm not sure if that's even on your radar, but if it is, I have an idea that might help.\n\nWould you be opposed to hearing it?\""
+        },
+        {
+          "title": "Tonality Practice Script",
+          "context": "Use to practice the three core tonalities that close deals",
+          "template": "TONALITY 1: CERTAINTY\nPractice saying: \"This is absolutely going to work for you.\"\n[Record yourself. Does it sound certain or hesitant?]\n\nTONALITY 2: SCARCITY\nPractice saying: \"We only have a few spots left this quarter.\"\n[Does it sound urgent or desperate?]\n\nTONALITY 3: REASONABLE\nPractice saying: \"Fair enough, I totally understand.\"\n[Does it sound empathetic or dismissive?]\n\nNow string them together:\n\"I totally understand your concern [REASONABLE]. That said, this is going to work [CERTAINTY], and we should probably move forward while [SCARCITY].\"",
+          "example_filled": "[After 10 practice rounds, recording and listening back]\nCertainty: Now sounds confident, not arrogant\nScarcity: Now sounds urgent, not pushy\nReasonable: Now sounds empathetic, not weak\nFull delivery smooth and natural"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Way of the Wolf", "author": "Jordan Belfort", "key_takeaway": "The complete Straight Line System for ethical persuasion"},
+          {"title": "Catching the Wolf of Wall Street", "author": "Jordan Belfort", "key_takeaway": "Lessons from both success and failure in sales"}
+        ],
+        "podcasts": [
+          {"title": "Jordan Belfort Sales Training", "key_takeaway": "Direct application of Straight Line techniques"}
+        ]
+      }
+    },
+    {
+      "name": "Grant Cardone",
+      "expertise": "10X action, massive outreach, follow-up",
+      "key_principles": [
+        "10X your goals and 10X your actions.",
+        "Success is your duty, obligation, and responsibility.",
+        "Most people fail because they're not taking enough action.",
+        "Be obsessed or be average.",
+        "The fortune is in the follow-up. Follow up until they buy or die.",
+        "Never lower your target. Increase your actions."
+      ],
+      "daily_practices": [
+        "Make 10X the calls you think you need",
+        "Follow up with every lead at least 5 times",
+        "Treat every 'no' as 'not yet'"
+      ],
+      "worked_examples": [
+        {
+          "title": "The 10X Follow-Up System",
+          "scenario": "You send proposals but only follow up once or twice, then give up.",
+          "framework_applied": "10X Rule + Fortune in Follow-up",
+          "step_by_step": [
+            "Diagnose: Most salespeople give up after 1-2 follow-ups. 80% of sales require 5+ touches.",
+            "Commit to 10X: Instead of 2 follow-ups, commit to 12-15 touches over 30 days",
+            "Vary the channel: Call, email, LinkedIn, text, video message, voicemail drop",
+            "Add value each time: Don't just 'check in' - share relevant content, insights, case studies",
+            "Track obsessively: Know exactly where each prospect is and when you last touched them",
+            "Never stop: Move to monthly follow-up after 30 days, but never fully give up"
+          ],
+          "outcome": "Close rate increases 30-40% just from systematic follow-up. Deals that seemed dead come back to life."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "10X Follow-Up Sequence",
+          "context": "Use after sending a proposal or having an initial conversation",
+          "template": "DAY 1: Send proposal + \"Looking forward to discussing\"\nDAY 2: Call + voicemail \"Just wanted to make sure you received...\"\nDAY 3: Email with additional value (case study, article)\nDAY 5: LinkedIn message \"Saw this and thought of your situation...\"\nDAY 7: Call + voicemail \"Still want to connect on...\"\nDAY 10: Video message (personal, 60 seconds)\nDAY 14: Email \"Quick question about your timeline...\"\nDAY 17: Call (different time of day)\nDAY 21: Email with ROI calculation specific to them\nDAY 25: LinkedIn voice message\nDAY 30: \"Closing the loop\" email with deadline\n\nAfter Day 30: Monthly touch with value",
+          "example_filled": "DAY 1: Proposal sent + \"Excited to help you hit your Q2 targets\"\nDAY 2: Call at 8am + VM \"Hi John, Mike here. Making sure the proposal landed. Key thing I want to discuss is the ROI on page 3. Call me back.\"\nDAY 3: Email with competitor case study showing 40% improvement\nDAY 5: LinkedIn: Shared article about their industry challenge\nDAY 7: Call at 4pm + VM with specific question about their timeline\n... [continued for all 30 days]"
+        },
+        {
+          "title": "The 10X Daily Activity Tracker",
+          "context": "Track your activity to ensure you're doing enough volume",
+          "template": "DATE: ___\n\nOUTBOUND ACTIVITY:\n- Cold calls made: ___ (Target: 50)\n- Emails sent: ___ (Target: 30)\n- LinkedIn touches: ___ (Target: 20)\n- Follow-ups completed: ___ (Target: 25)\n\nRESULTS:\n- Conversations: ___\n- Meetings booked: ___\n- Proposals sent: ___\n- Deals closed: ___\n\nREFLECTION:\n- What worked: ___\n- What to improve: ___\n- Tomorrow's priority: ___",
+          "example_filled": "DATE: Monday Feb 3\n\nOUTBOUND ACTIVITY:\n- Cold calls: 45 (5 short of target)\n- Emails: 35 (exceeded)\n- LinkedIn: 22 (exceeded)\n- Follow-ups: 30 (exceeded)\n\nRESULTS:\n- Conversations: 8\n- Meetings booked: 3\n- Proposals sent: 2\n- Deals closed: 0\n\nREFLECTION:\n- What worked: Morning calling block was productive\n- What to improve: Need to hit call target - no excuses\n- Tomorrow's priority: Call first, email second"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The 10X Rule", "author": "Grant Cardone", "key_takeaway": "Set targets 10X higher, take 10X more action"},
+          {"title": "Sell or Be Sold", "author": "Grant Cardone", "key_takeaway": "Everything is sales - master it or be mastered by it"}
+        ],
+        "podcasts": [
+          {"title": "The Cardone Zone", "key_takeaway": "Daily motivation and tactical sales advice"}
+        ]
+      }
+    },
+    {
+      "name": "Chris Voss",
+      "expertise": "FBI negotiation, tactical empathy, hostage techniques",
+      "key_principles": [
+        "Never split the difference. Fight for the best outcome.",
+        "Tactical empathy is understanding the feelings and mindset of another.",
+        "No is the start of the negotiation, not the end.",
+        "Mirror words to build rapport and get more information.",
+        "Label emotions: 'It seems like...' 'It sounds like...'",
+        "The person who has learned to disagree without being disagreeable has the upper hand."
+      ],
+      "daily_practices": [
+        "Use mirroring in 3 conversations today",
+        "Label someone's emotion out loud",
+        "Ask 'How am I supposed to do that?' instead of saying no"
+      ],
+      "worked_examples": [
+        {
+          "title": "Tactical Empathy to Handle Price Objection",
+          "scenario": "Prospect says 'That's too expensive' and you need to navigate without dropping price.",
+          "framework_applied": "Labeling + Calibrated Questions + That's Right",
+          "step_by_step": [
+            "Don't defend the price immediately. Pause.",
+            "Label their concern: 'It sounds like budget is really tight right now.'",
+            "Wait for 'that's right' (not 'you're right' - that's dismissive)",
+            "Ask calibrated question: 'What would make this work for you?'",
+            "Mirror their response: They say 'Well, we'd need payment terms.' You say 'Payment terms?'",
+            "Label again: 'It seems like cash flow timing is the real issue here.'",
+            "Offer creative solution: 'What if we structured this as quarterly payments?'"
+          ],
+          "outcome": "Full price preserved, deal closed with creative terms. Client feels heard, not pressured."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Top 5 Objection Responses Using Tactical Empathy",
+          "context": "Handle the most common sales objections with FBI-trained techniques",
+          "template": "OBJECTION 1: \"It's too expensive\"\n- Label: \"It sounds like you're concerned about the investment.\"\n- Calibrated Q: \"What would you need to see to feel confident about the ROI?\"\n- Reframe: \"How much is NOT solving this problem costing you?\"\n\nOBJECTION 2: \"I need to think about it\"\n- Label: \"It seems like there's something holding you back.\"\n- Calibrated Q: \"What's the one thing that would make this a clear yes?\"\n- Push: \"What's your gut telling you?\"\n\nOBJECTION 3: \"I need to talk to my [partner/boss/team]\"\n- Label: \"It sounds like you're not the only decision-maker here.\"\n- Calibrated Q: \"What concerns do you think they'll have?\"\n- Prepare: \"How can I help you make the case to them?\"\n\nOBJECTION 4: \"We're already working with someone\"\n- Label: \"It sounds like you have a relationship that's working.\"\n- Calibrated Q: \"What would need to change for you to consider alternatives?\"\n- Plant seed: \"If things ever change, what would be the trigger?\"\n\nOBJECTION 5: \"Now's not a good time\"\n- Label: \"It seems like you've got a lot on your plate right now.\"\n- Calibrated Q: \"When would be a better time to revisit this?\"\n- Create urgency: \"What happens if this waits 6 months?\"",
+          "example_filled": "[Prospect: 'It's too expensive']\n\nYou: [Pause 3 seconds] \"It sounds like you're concerned about the investment.\"\n\nProspect: \"Yeah, it's just more than we budgeted.\"\n\nYou: \"More than you budgeted...\"\n\nProspect: \"Right, we allocated $10k and this is $15k.\"\n\nYou: \"What would you need to see to feel confident this $15k delivers $50k in value?\"\n\nProspect: \"I'd need to know it actually works.\"\n\nYou: \"It seems like you've been burned before by promises that didn't deliver.\"\n\nProspect: \"That's right.\"\n\nYou: \"What if we structured a pilot program with performance guarantees?\""
+        },
+        {
+          "title": "Accusation Audit Template",
+          "context": "Use before high-stakes negotiations to defuse objections before they're raised",
+          "template": "NEGATIVE THINGS THEY MIGHT THINK:\n1. ___\n2. ___\n3. ___\n4. ___\n5. ___\n\nPROACTIVE LABELS TO DEFUSE EACH:\n1. \"You probably think...\"\n2. \"It might seem like...\"\n3. \"You might be wondering...\"\n4. \"I know it looks like...\"\n5. \"You're probably feeling...\"\n\nDELIVERY: Front-load these at the START of the conversation",
+          "example_filled": "NEGATIVE THINGS THEY MIGHT THINK:\n1. This is another salesperson trying to hit quota\n2. The price is going to be outrageous\n3. They don't understand our specific situation\n4. This will be a waste of time\n5. They're going to be pushy\n\nPROACTIVE LABELS:\n1. \"You probably think I'm just another salesperson calling to hit my numbers...\"\n2. \"You might be worried this is going to be way out of your budget...\"\n3. \"It might seem like we don't understand your specific challenges...\"\n4. \"You're probably wondering if this is going to be worth your time...\"\n5. \"I know it might feel like I'm going to be pushy...\"\n\n[Then pause and let them respond. Most will say 'No, no...' and open up]"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Never Split the Difference", "author": "Chris Voss", "key_takeaway": "FBI hostage negotiation techniques for business and life"},
+          {"title": "The Full Fee Agent", "author": "Chris Voss & Steve Shull", "key_takeaway": "Applying negotiation to maintain pricing power"}
+        ],
+        "podcasts": [
+          {"title": "The Art of Negotiation with Chris Voss", "key_takeaway": "Ongoing tactical advice for everyday negotiations"}
+        ]
+      }
+    },
+    {
+      "name": "Zig Ziglar",
+      "expertise": "Relationship selling, motivation, ethics",
+      "key_principles": [
+        "You can have everything in life you want, if you help enough other people get what they want.",
+        "Stop selling. Start helping.",
+        "Every sale has five obstacles: no need, no money, no hurry, no desire, no trust.",
+        "People don't buy for logical reasons. They buy for emotional reasons.",
+        "You don't have to be great to start, but you have to start to be great.",
+        "F.E.A.R. has two meanings: Forget Everything And Run, or Face Everything And Rise."
+      ],
+      "daily_practices": [
+        "Find out what your prospect really wants",
+        "Focus on serving, not selling",
+        "Build genuine relationships before asking for anything"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Helper's Close",
+          "scenario": "You're in a sales conversation but it feels pushy and transactional.",
+          "framework_applied": "Stop Selling, Start Helping",
+          "step_by_step": [
+            "Shift your mindset: You're not here to sell, you're here to solve their problem",
+            "Ask about their goals: 'What would success look like for you?'",
+            "Understand their obstacles: 'What's standing in the way right now?'",
+            "Connect genuinely: Find something you relate to in their situation",
+            "Offer help: 'Based on what you've told me, here's how I might be able to help...'",
+            "Let them decide: 'Does this sound like something worth exploring?'",
+            "Follow up regardless: Whether they buy or not, send them something valuable"
+          ],
+          "outcome": "Conversion goes up because you're not 'selling' - you're having a genuine conversation about their needs"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "The Needs Discovery Script",
+          "context": "Use at the start of any sales conversation to understand what they really want",
+          "template": "\"Before I tell you anything about what we do, I'd love to understand your situation better.\"\n\n1. \"What made you take this call/meeting today?\"\n2. \"What does success look like for you in [area]?\"\n3. \"What's working well right now?\"\n4. \"What's the biggest challenge you're facing?\"\n5. \"If we could wave a magic wand, what would you want to be different?\"\n6. \"What have you already tried?\"\n7. \"What's this costing you - in time, money, or stress?\"\n8. \"Who else is affected by this?\"\n\n\"Based on what you've shared, let me explain how we might be able to help...\"",
+          "example_filled": "\"Before I tell you anything about our coaching program, I'd love to understand your situation better.\"\n\n1. \"What made you book this call today?\" - \"I saw your content and it resonated\"\n2. \"What does success look like for you?\" - \"Closing more deals without feeling sleazy\"\n3. \"What's working well?\" - \"I'm good at building rapport, but weak at closing\"\n4. \"Biggest challenge?\" - \"I have lots of conversations but few convert\"\n5. \"Magic wand?\" - \"I'd be confident asking for the sale\"\n6. \"What have you tried?\" - \"Read some books, nothing stuck\"\n7. \"What's it costing you?\" - \"Probably $50k+ in missed commissions\"\n8. \"Who else is affected?\" - \"My family - I'm stressed about income\"\n\n\"Based on what you've shared, it sounds like you need a structured closing framework. Let me show you exactly how we help with that...\""
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Secrets of Closing the Sale", "author": "Zig Ziglar", "key_takeaway": "The ethics and techniques of relationship-based selling"},
+          {"title": "See You at the Top", "author": "Zig Ziglar", "key_takeaway": "The mindset foundation for sales success"}
+        ],
+        "podcasts": [
+          {"title": "Zig Ziglar's Born to Win", "key_takeaway": "Timeless motivation and sales wisdom"}
+        ]
+      }
+    },
+    {
+      "name": "Jeb Blount",
+      "expertise": "Fanatical prospecting, pipeline, rejection-proof mindset",
+      "key_principles": [
+        "The enduring mantra of all top salespeople is: One more call.",
+        "Prospecting is the lifeblood of sales success.",
+        "Rejection is not failure. It's just part of the process.",
+        "The three Ps: Protect prime selling time, Prioritize prospects, Push through resistance.",
+        "The more you prospect, the luckier you get.",
+        "Your pipeline is your lifeline. Never stop filling it."
+      ],
+      "daily_practices": [
+        "Protect your first 2 hours for outreach only",
+        "Make prospecting non-negotiable daily",
+        "Aim for 'nos' - they lead to 'yeses'"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Fanatical Prospecting Block",
+          "scenario": "Your pipeline is feast or famine because you only prospect when desperate.",
+          "framework_applied": "Protect Prime Time + Fanatical Consistency",
+          "step_by_step": [
+            "Block sacred time: First 2 hours of your day = prospecting. No exceptions.",
+            "Prepare the night before: List of names, numbers, and email drafts ready to go",
+            "Start immediately: Don't check email, don't warm up - just start dialing",
+            "Track velocity: How many dials/emails per hour? Increase by 10% weekly",
+            "One more call: At the end of each session, do ONE MORE call",
+            "Never negotiate: This time is sacred. Meetings, emails, fires - all wait.",
+            "Compound daily: 2 hours × 5 days × 50 weeks = 500 hours of prospecting = full pipeline forever"
+          ],
+          "outcome": "Pipeline becomes consistently full. No more feast/famine cycles. Income stabilizes and grows."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "The Prospecting Power Hour Template",
+          "context": "Structure your daily prospecting for maximum effectiveness",
+          "template": "PRE-SESSION (Night Before):\n- List prepared: ___\n- Scripts reviewed: ___\n- Mindset: 'Rejection is just information'\n\nSESSION 1 (Hour 1): CALLS\n- Goal: ___ dials\n- Actual: ___\n- Conversations: ___\n- Meetings booked: ___\n\nSESSION 2 (Hour 2): MULTI-TOUCH\n- Emails sent: ___\n- LinkedIn messages: ___\n- Follow-ups completed: ___\n\nPOST-SESSION:\n- Log all activity in CRM\n- Update tomorrow's list\n- Celebrate wins\n\nMANTRA: \"One more call.\"",
+          "example_filled": "PRE-SESSION (Night Before):\n- List prepared: 40 names with phone numbers\n- Scripts reviewed: Cold call opener, objection responses\n- Mindset: 'I need to hear 20 nos to find 2 yeses'\n\nSESSION 1 (Hour 1): CALLS\n- Goal: 30 dials\n- Actual: 32 dials\n- Conversations: 6\n- Meetings booked: 2\n\nSESSION 2 (Hour 2): MULTI-TOUCH\n- Emails sent: 25\n- LinkedIn messages: 15\n- Follow-ups completed: 20\n\nPOST-SESSION:\n- All logged in HubSpot\n- Tomorrow's list: 35 names ready\n- Win: Booked meeting with target account!"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Fanatical Prospecting", "author": "Jeb Blount", "key_takeaway": "The ultimate guide to filling your pipeline consistently"},
+          {"title": "Objections", "author": "Jeb Blount", "key_takeaway": "The art and science of getting past no"}
+        ],
+        "podcasts": [
+          {"title": "Sales Gravy", "key_takeaway": "Weekly tactical advice for modern sales professionals"}
+        ]
+      }
+    },
+    {
+      "name": "Jill Konrath",
+      "expertise": "Complex sales, enterprise selling, decision-makers",
+      "key_principles": [
+        "Selling is about creating value, not pitching products.",
+        "Buyers are crazy-busy. Respect their time or lose the deal.",
+        "Be a resource, not a pest. Bring insights, not brochures.",
+        "Get to the decision-maker fast. Don't get stuck in gatekeepers.",
+        "Your job is to make it easy for them to buy, not hard for them to say no.",
+        "Complex sales require mapping the buying process, not just pushing your sales process."
+      ],
+      "daily_practices": [
+        "Research prospects deeply before reaching out",
+        "Lead with insights and value, not product features",
+        "Focus on the business problem, not your solution"
+      ],
+      "worked_examples": [
+        {
+          "title": "Breaking Into Complex Enterprise Accounts",
+          "scenario": "You're trying to sell to a large enterprise but can't get past gatekeepers.",
+          "framework_applied": "Value-First Prospecting + Executive Framing",
+          "step_by_step": [
+            "Research the company's strategic priorities (earnings calls, press releases, LinkedIn)",
+            "Identify the pain: What challenge is costing them money or opportunity?",
+            "Map the power structure: Who owns this problem? Who has budget authority?",
+            "Craft an executive-level message: Skip features, speak to business outcomes",
+            "Example: 'I noticed you're expanding in APAC. Companies like yours typically struggle with X. We help reduce Y by 40%.'",
+            "Request a brief conversation (15 min) to share insights, not pitch",
+            "Bring a diagnostic framework or industry insights they don't have",
+            "Position as a resource: 'Even if we don't work together, this might be helpful'"
+          ],
+          "outcome": "You get in the door because you're bringing value, not asking for time. Decision-makers respond to business impact."
+        },
+        {
+          "title": "Navigating Multi-Stakeholder Sales",
+          "scenario": "You have one champion, but the deal requires approval from multiple stakeholders you haven't met.",
+          "framework_applied": "Stakeholder Mapping + Champion Enablement",
+          "step_by_step": [
+            "With your champion, map all stakeholders: Who has a say? What do they care about?",
+            "For each stakeholder: What's their win? What's their risk?",
+            "CFO cares about ROI and risk. CTO cares about implementation and integration. End-users care about ease of use.",
+            "Create tailored talking points for your champion to use with each stakeholder",
+            "Build a business case document that addresses each stakeholder's concerns",
+            "Request to present directly to key stakeholders - don't rely solely on your champion",
+            "In presentation, address each person's priorities explicitly",
+            "Example: 'Sarah, I know integration complexity is your concern. Here's how we handle that...'"
+          ],
+          "outcome": "Deal moves forward because every stakeholder feels heard and their concerns are addressed. Your champion has ammunition to sell internally."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Value-First Outreach Email",
+          "context": "Use for cold outreach to busy executives",
+          "template": "SUBJECT: [Insight/Trend] affecting [Their Industry/Company]\n\nHi [Name],\n\nI've been following [Company]'s [specific initiative/challenge] and noticed [specific insight from research].\n\nCompanies in [industry] typically face [specific challenge] when [doing X]. The cost is usually [quantified impact - time/money/opportunity].\n\nWe've helped [similar companies] [specific outcome with numbers].\n\nI have a 15-minute framework that might give you some ideas - even if we never work together.\n\nWorth a quick call?\n\n[Your Name]\n\nP.S. [One more insight or relevant case study]",
+          "example_filled": "SUBJECT: Series B SaaS companies and the 40% rule\n\nHi Jennifer,\n\nI've been following Acme's Series B announcement and noticed you're planning to triple ARR in 18 months.\n\nCompanies at your stage typically hit a wall around $10M ARR when founder-led sales stops scaling. The cost is 6-12 months of missed targets while you figure out repeatable sales.\n\nWe've helped 12 Series B SaaS companies build scalable sales motions - average result is hitting that growth target 4 months faster.\n\nI have a 15-minute diagnostic framework for Series B sales challenges that might give you some ideas - even if we never work together.\n\nWorth a quick call Thursday?\n\nMike\n\nP.S. Here's a case study of how we helped CloudCo go from $8M to $25M ARR in 14 months."
+        },
+        {
+          "title": "Stakeholder Analysis Template",
+          "context": "Use for complex deals with multiple decision-makers",
+          "template": "STAKEHOLDER MAP:\n\n[Name] - [Title]\nRole in Decision: [ ] Economic Buyer [ ] Technical Buyer [ ] User [ ] Influencer [ ] Blocker\n\nWhat they care about:\n- ___\n- ___\n\nTheir win if we succeed:\n___\n\nTheir risk if we fail:\n___\n\nTheir likely objections:\n1. ___\n2. ___\n\nHow we address their concerns:\n1. ___\n2. ___\n\nOur champion's relationship with them:\n___\n\nOur strategy for this stakeholder:\n___\n\n[Repeat for each stakeholder]",
+          "example_filled": "STAKEHOLDER MAP:\n\nSarah Chen - VP Engineering\nRole: [x] Technical Buyer\n\nCares about:\n- Implementation complexity\n- Team adoption\n- Technical debt\n\nHer win: Smooth rollout, happy team, no fires\n\nHer risk: Implementation disaster, team rebellion, her reputation\n\nLikely objections:\n1. 'Our team is already overloaded'\n2. 'Integration will be a nightmare'\n\nHow we address:\n1. We handle 90% of implementation, minimal eng time\n2. Pre-built integrations for their stack, proven in 50+ companies\n\nChampion relationship: Works closely, trusts her technical judgment\n\nStrategy: Get 30-min technical deep dive. Bring solutions engineer. Address integration concerns directly."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "SNAP Selling", "author": "Jill Konrath", "key_takeaway": "Speed up sales and win over crazy-busy buyers"},
+          {"title": "Agile Selling", "author": "Jill Konrath", "key_takeaway": "Get up to speed quickly in today's ever-changing sales world"}
+        ],
+        "podcasts": [
+          {"title": "Selling to Big Companies Podcast", "key_takeaway": "Tactical advice for enterprise sales"}
+        ]
+      }
+    },
+    {
+      "name": "Aaron Ross",
+      "expertise": "Predictable revenue, outbound prospecting, sales systems",
+      "key_principles": [
+        "Predictable Revenue: Separate prospecting from closing. Specialists beat generalists.",
+        "Cold calling 2.0: Target the right people at the right companies, not spray and pray.",
+        "Seed, Net, Spear: Three types of leads require three different motions.",
+        "Your sales team should never prospect. Have dedicated SDRs (Sales Development Reps).",
+        "Measure activity, not just results. Track calls, emails, conversations.",
+        "Build a machine, not a hero culture. Systems beat rock stars."
+      ],
+      "daily_practices": [
+        "Separate prospecting from closing in your calendar",
+        "Track leading indicators (activity) not just lagging (deals closed)",
+        "Focus on ideal customer profile, not any customer"
+      ],
+      "worked_examples": [
+        {
+          "title": "Building a Predictable Revenue Engine",
+          "scenario": "Your sales are feast or famine. You need consistent pipeline.",
+          "framework_applied": "Predictable Revenue Model",
+          "step_by_step": [
+            "Separate roles: Prospectors (SDRs) find and qualify. Closers (AEs) sell.",
+            "Define your Ideal Customer Profile (ICP): Company size, industry, role, pain",
+            "Build a targeted list: 100-500 companies that match ICP perfectly",
+            "Create a cadence: Day 1 email, Day 3 call, Day 5 LinkedIn, Day 7 email, etc.",
+            "SDRs goal: Book qualified meetings, not close deals",
+            "Qualified = has the problem, has budget, has authority, has timeline",
+            "Track metrics: Calls made, emails sent, conversations, meetings booked",
+            "Optimize weekly: What messaging works? What doesn't? Iterate."
+          ],
+          "outcome": "Pipeline becomes predictable. You can forecast: X activity → Y meetings → Z deals. Scale by adding more SDRs."
+        },
+        {
+          "title": "Cold Calling 2.0 - Targeted Outreach",
+          "scenario": "You're wasting time calling the wrong people at the wrong companies.",
+          "framework_applied": "Seed/Net/Spear Lead Generation",
+          "step_by_step": [
+            "SEED (Inbound): People who come to you. Nurture with content and follow-up.",
+            "NET (Referrals): Ask every happy customer for introductions. This is your best source.",
+            "SPEAR (Outbound): Target specific accounts you want to win.",
+            "For SPEAR: Don't spray. Pick 10 dream accounts. Research deeply.",
+            "Multi-thread: Find 3-5 people at each target account. Reach out to all.",
+            "Personalize: Reference company news, mutual connections, specific pain",
+            "Example: 'Saw you're hiring 50 engineers. That usually creates X problem. We help with Y.'",
+            "Persistent: 10-12 touches over 4 weeks. Most give up after 2-3."
+          ],
+          "outcome": "You land bigger deals because you're targeting the right accounts and sticking with them long enough to break through."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Cold Email 2.0 Template",
+          "context": "Use for targeted outbound to ideal customers",
+          "template": "SUBJECT: [Company Name] + [Your Company] ?\n\nHi [First Name],\n\n[Specific compliment or observation about their company]\n\n[Relevant pain point or challenge they likely face]\n\nWe help [companies like theirs] [specific outcome with number].\n\n[Social proof - similar company or impressive metric]\n\nWorth a 15-minute conversation?\n\n[Your Name]\n[Title]\n[Phone]",
+          "example_filled": "SUBJECT: Acme + SalesForce ?\n\nHi Mark,\n\nCongrats on the Series B! Saw you're planning to triple sales headcount.\n\nMost companies at your stage struggle to ramp new reps fast enough - average is 4-6 months to productivity.\n\nWe help high-growth SaaS companies cut ramp time in half through structured onboarding.\n\nChartMogul used our system and got new reps to quota in 8 weeks instead of 16.\n\nWorth a 15-minute conversation?\n\nSarah\nVP Sales, RampFast\n555-1234"
+        },
+        {
+          "title": "SDR Activity Dashboard",
+          "context": "Track leading indicators for predictable pipeline",
+          "template": "DAILY ACTIVITY TRACKER:\n\nDATE: ___\n\nPROSPECTING ACTIVITY:\n- Calls made: ___ (Target: 50)\n- Emails sent: ___ (Target: 30)\n- LinkedIn touches: ___ (Target: 20)\n- Voicemails: ___ (Target: 20)\n\nOUTCOMES:\n- Conversations: ___ (Target: 5)\n- Meetings booked: ___ (Target: 2)\n- Qualification rate: ___% (booked / conversations)\n\nTOP 10 ACCOUNTS STATUS:\n1. [Company] - Status: ___\n2. [Company] - Status: ___\n[...]\n\nWHAT WORKED:\n___\n\nWHAT TO TEST TOMORROW:\n___\n\nWEEKLY METRICS (rolling):\n- Meetings booked: ___ (Target: 10)\n- Show rate: ___% (Target: 80%)\n- Qualified to AE: ___ (Target: 7)\n\nFORECAST:\nAt current activity levels:\n- This week: ___ meetings\n- This month: ___ pipeline created\n- This quarter: ___ closed deals (based on conversion rate)",
+          "example_filled": "DATE: Feb 4, 2026\n\nACTIVITY:\n- Calls: 52 ✓\n- Emails: 35 ✓\n- LinkedIn: 18 (missed target)\n- Voicemails: 22 ✓\n\nOUTCOMES:\n- Conversations: 7 ✓\n- Meetings booked: 3 ✓\n- Qualification: 43% (3/7)\n\nTOP 10:\n1. Acme Corp - Had convo, meeting Thursday\n2. BigCo - Left VM, will try again tomorrow\n3. TechStart - Email opened 3x, no response yet\n\nWORKED:\n- Referencing their recent funding announcement got attention\n- Calling at 8am PST caught more people\n\nTEST TOMORROW:\n- Try video emails for top 5 accounts\n- Call between 4-5pm (end of their day)\n\nWEEKLY:\n- Meetings booked: 12 ✓ (target 10)\n- Show rate: 83% ✓\n- Qualified to AE: 8 ✓\n\nFORECAST:\n- This week: 15 meetings (trending up)\n- This month: $250K pipeline\n- This quarter: 5 closed deals (~$150K)"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Predictable Revenue", "author": "Aaron Ross", "key_takeaway": "Turn your business into a sales machine with Cold Calling 2.0"},
+          {"title": "From Impossible to Inevitable", "author": "Aaron Ross & Jason Lemkin", "key_takeaway": "How to scale a SaaS business from $1M to $100M"}
+        ],
+        "podcasts": [
+          {"title": "Predictable Revenue Podcast", "key_takeaway": "Weekly insights on building scalable sales systems"}
+        ]
+      }
+    }
+  ],
+  "daily_insights": [
+    "Every conversation is a sale. You're either selling them on your idea, or they're selling you on theirs.",
+    "The person who cares least about the outcome has the most power.",
+    "Objections are just requests for more information. Welcome them.",
+    "If you're not getting rejected, you're not asking enough.",
+    "People buy from people they like, trust, and believe can help them.",
+    "The best closers ask the best questions. Shut up and listen.",
+    "Your confidence is contagious. So is your doubt.",
+    "Follow-up is where fortunes are made. Most quit too early.",
+    "Selling is serving. If you believe in your product, you owe it to them to be persistent.",
+    "Volume covers all sins. Do more, learn faster, win bigger.",
+    "In B2B sales, you're not selling to a person - you're selling to a committee. Map every stakeholder.",
+    "Busy executives buy outcomes, not products. Lead with the business impact, not features.",
+    "Consultative selling means becoming a trusted advisor. Diagnose before you prescribe.",
+    "The best enterprise deals are won before the RFP. Build relationships when they're not buying.",
+    "Specialization beats generalization. The SDR who prospects all day beats the AE who does it part-time."
+  ],
+  "skill_challenges": [
+    "Make 10 cold outreach touches today. Track responses.",
+    "Write down the top 5 objections you hear. Script killer responses for each.",
+    "Record your next sales call. Listen back and critique yourself.",
+    "Practice the 'mirroring' technique in 3 conversations today.",
+    "Role-play a difficult objection with a friend for 10 minutes.",
+    "Send 5 follow-ups to leads you thought were dead.",
+    "Study one sales call from a master. Write down 3 techniques to steal.",
+    "Ask one open-ended question in every conversation today.",
+    "Pitch your product to yourself in the mirror with full conviction.",
+    "Identify your biggest sales weakness. Spend 20 minutes drilling it.",
+    "Map a complex deal: list every stakeholder, their priorities, and your strategy for each.",
+    "Build a prospecting cadence: design a 12-touch sequence across email, phone, and LinkedIn.",
+    "Create your Ideal Customer Profile: define the 5 characteristics of your best-fit accounts.",
+    "Track your pipeline velocity: measure days from first touch to closed deal for your last 5 wins.",
+    "Build a champion enablement deck: create materials your internal champion can use to sell for you."
+  ]
+}

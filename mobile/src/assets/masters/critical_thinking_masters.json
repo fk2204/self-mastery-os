@@ -1,0 +1,1972 @@
+{
+  "module": "critical_thinking",
+  "version": "1.0",
+  "description": "Comprehensive critical thinking and decision-making mastery module",
+
+  "level_definitions": {
+    "1": {
+      "name": "Reactive Thinker",
+      "description": "Decisions made primarily on instinct and emotion without conscious analysis",
+      "characteristics": [
+        "Relies heavily on gut feelings",
+        "Rarely questions initial assumptions",
+        "Often falls prey to obvious cognitive biases",
+        "Makes impulsive decisions under pressure"
+      ],
+      "advancement_criteria": "Begin recognizing when you're making automatic vs deliberate decisions"
+    },
+    "2": {
+      "name": "Awareness Beginner",
+      "description": "Starting to recognize that thinking has patterns and biases",
+      "characteristics": [
+        "Can identify some cognitive biases after the fact",
+        "Beginning to pause before major decisions",
+        "Aware that System 1 thinking exists",
+        "Starting to question obvious assumptions"
+      ],
+      "advancement_criteria": "Identify 5 cognitive biases in your own thinking over 2 weeks"
+    },
+    "3": {
+      "name": "Deliberate Novice",
+      "description": "Actively practicing slower, more deliberate thinking",
+      "characteristics": [
+        "Uses basic decision frameworks occasionally",
+        "Can apply 5-10 mental models",
+        "Keeps a simple decision journal",
+        "Recognizes confirmation bias in real-time sometimes"
+      ],
+      "advancement_criteria": "Maintain a decision journal for 30 days with at least 20 entries"
+    },
+    "4": {
+      "name": "Framework User",
+      "description": "Regularly applies structured thinking frameworks",
+      "characteristics": [
+        "Uses pre-mortems for important decisions",
+        "Can explain prospect theory basics",
+        "Applies first principles thinking to problems",
+        "Separates process quality from outcome quality"
+      ],
+      "advancement_criteria": "Successfully use pre-mortem analysis on 5 decisions and review outcomes"
+    },
+    "5": {
+      "name": "Bias Detective",
+      "description": "Actively hunts for biases in self and others",
+      "characteristics": [
+        "Identifies 15+ cognitive biases reliably",
+        "Uses mental models fluently (20+)",
+        "Practices thinking in probabilities",
+        "Regularly updates beliefs with new evidence"
+      ],
+      "advancement_criteria": "Conduct 10 post-mortem analyses on past decisions"
+    },
+    "6": {
+      "name": "Systems Thinker",
+      "description": "Sees interconnections and second-order effects",
+      "characteristics": [
+        "Maps complex systems and feedback loops",
+        "Considers long-term consequences naturally",
+        "Applies inversion thinking regularly",
+        "Comfortable with uncertainty and ranges"
+      ],
+      "advancement_criteria": "Create system maps for 5 complex personal or professional situations"
+    },
+    "7": {
+      "name": "Probabilistic Reasoner",
+      "description": "Thinks naturally in probabilities and expected values",
+      "characteristics": [
+        "Assigns probabilities to outcomes routinely",
+        "Updates priors with Bayesian-like thinking",
+        "Distinguishes luck from skill consistently",
+        "Uses reference class forecasting"
+      ],
+      "advancement_criteria": "Track 50 predictions and calibrate your confidence levels"
+    },
+    "8": {
+      "name": "Decision Architect",
+      "description": "Designs decision processes for self and others",
+      "characteristics": [
+        "Creates custom frameworks for recurring decisions",
+        "Teaches mental models effectively",
+        "Facilitates pre-mortems and retrospectives",
+        "Balances analysis with action effectively"
+      ],
+      "advancement_criteria": "Design and implement 3 decision processes that improve outcomes"
+    },
+    "9": {
+      "name": "Metacognitive Master",
+      "description": "Thinks about thinking at a sophisticated level",
+      "characteristics": [
+        "Recognizes limits of own rationality",
+        "Adapts thinking strategies to context",
+        "Integrates multiple frameworks seamlessly",
+        "Maintains intellectual humility consistently"
+      ],
+      "advancement_criteria": "Mentor 3 people through levels 1-5 of critical thinking"
+    },
+    "10": {
+      "name": "Wisdom Practitioner",
+      "description": "Integrates rational thinking with practical wisdom",
+      "characteristics": [
+        "Knows when to trust intuition vs analysis",
+        "Balances speed and accuracy appropriately",
+        "Makes peace with irreducible uncertainty",
+        "Demonstrates consistently good judgment across domains"
+      ],
+      "advancement_criteria": "Continuous practice and teaching; recognized by others for sound judgment"
+    }
+  },
+
+  "mental_models": [
+    {
+      "name": "First Principles Thinking",
+      "category": "reasoning",
+      "description": "Breaking down complex problems into fundamental truths and reasoning up from there",
+      "when_to_use": "When facing novel problems or questioning conventional wisdom",
+      "practice_scenario": "You want to start a business but everyone says the market is saturated. Use first principles to identify what customers actually need vs what current solutions provide.",
+      "example": "Elon Musk questioning why batteries are expensive by breaking down to raw material costs"
+    },
+    {
+      "name": "Inversion",
+      "category": "reasoning",
+      "description": "Thinking about problems backward - what would guarantee failure?",
+      "when_to_use": "When stuck on how to succeed, or to stress-test plans",
+      "practice_scenario": "Instead of asking 'how do I build a great relationship?' ask 'what would destroy this relationship?' Then avoid those things.",
+      "example": "Charlie Munger: 'Tell me where I'm going to die, so I won't go there'"
+    },
+    {
+      "name": "Circle of Competence",
+      "category": "self-awareness",
+      "description": "Knowing the boundaries of your genuine expertise vs perceived knowledge",
+      "when_to_use": "Before making decisions, especially high-stakes ones",
+      "practice_scenario": "Map your true expertise areas. Where do you have real edge? Where are you a tourist pretending to be a local?",
+      "example": "Warren Buffett avoiding tech stocks for decades because they were outside his circle"
+    },
+    {
+      "name": "Second-Order Thinking",
+      "category": "systems",
+      "description": "Considering the consequences of consequences",
+      "when_to_use": "Before any significant decision or policy change",
+      "practice_scenario": "You're considering a price cut to boost sales. What happens next? Competitors respond, margins shrink, then what?",
+      "example": "Rent control intended to help renters often reduces housing supply long-term"
+    },
+    {
+      "name": "Probabilistic Thinking",
+      "category": "uncertainty",
+      "description": "Assigning likelihoods to outcomes rather than thinking in certainties",
+      "when_to_use": "Any decision involving uncertainty (which is most decisions)",
+      "practice_scenario": "Don't say 'this investment will succeed.' Say 'I estimate 60% chance of 2x return, 30% chance of breaking even, 10% chance of total loss.'",
+      "example": "Weather forecasting moving from 'rain tomorrow' to '70% chance of rain'"
+    },
+    {
+      "name": "Bayesian Updating",
+      "category": "uncertainty",
+      "description": "Adjusting beliefs proportionally to new evidence strength",
+      "when_to_use": "When receiving new information about something you have beliefs about",
+      "practice_scenario": "You believe a colleague is unreliable (70% confidence). They deliver a project early. How much should this update your belief?",
+      "example": "Medical diagnosis updating probability of disease based on test results"
+    },
+    {
+      "name": "Map vs Territory",
+      "category": "epistemology",
+      "description": "The model of reality is not reality itself",
+      "when_to_use": "When relying heavily on models, theories, or abstractions",
+      "practice_scenario": "Your financial model shows the project is profitable. But the model excludes what? What reality does the map miss?",
+      "example": "GPS showing a road that was destroyed years ago"
+    },
+    {
+      "name": "Occam's Razor",
+      "category": "reasoning",
+      "description": "Among competing explanations, prefer the simplest one that fits the facts",
+      "when_to_use": "When evaluating multiple possible explanations",
+      "practice_scenario": "A friend doesn't text back. Is it: (a) they're busy, (b) they hate you now, (c) elaborate conspiracy? Start with (a).",
+      "example": "Most unexplained phenomena have mundane explanations"
+    },
+    {
+      "name": "Hanlon's Razor",
+      "category": "social",
+      "description": "Never attribute to malice what can be adequately explained by ignorance or incompetence",
+      "when_to_use": "When someone does something that harms or annoys you",
+      "practice_scenario": "Your coworker didn't CC you on an important email. Before assuming sabotage, consider they simply forgot.",
+      "example": "Most customer service failures are system problems, not personal attacks"
+    },
+    {
+      "name": "Opportunity Cost",
+      "category": "economics",
+      "description": "The cost of any choice is the value of the best alternative foregone",
+      "when_to_use": "Any resource allocation decision (time, money, attention)",
+      "practice_scenario": "That 3-hour meeting isn't just 3 hours - it's the deep work you could have done instead. What's that worth?",
+      "example": "Choosing to attend college means 4 years of foregone salary and experience"
+    },
+    {
+      "name": "Margin of Safety",
+      "category": "risk",
+      "description": "Building in buffer room for errors in judgment or unforeseen events",
+      "when_to_use": "Any plan where failure has significant consequences",
+      "practice_scenario": "The project 'should' take 3 months. Build in margin - estimate 4.5 months. If wrong, you're early. If right, you're safe.",
+      "example": "Engineers designing bridges to handle 3x expected load"
+    },
+    {
+      "name": "Feedback Loops",
+      "category": "systems",
+      "description": "Understanding how outputs become inputs that amplify or dampen effects",
+      "when_to_use": "Analyzing any dynamic system or long-term trend",
+      "practice_scenario": "Map the feedback loops in your productivity: good work leads to recognition leads to better projects leads to...",
+      "example": "Compound interest (positive) or death spirals (negative)"
+    },
+    {
+      "name": "Regression to the Mean",
+      "category": "statistics",
+      "description": "Extreme outcomes tend to be followed by more average ones",
+      "when_to_use": "After unusually good or bad performance/results",
+      "practice_scenario": "Your new hire had an amazing first month. Before assuming you found a superstar, consider they may regress to average.",
+      "example": "Sports Illustrated cover jinx - athletes featured after peak performance naturally decline"
+    },
+    {
+      "name": "Survivorship Bias",
+      "category": "bias",
+      "description": "Focusing on successes while overlooking failures that didn't survive to be counted",
+      "when_to_use": "When learning from examples of success",
+      "practice_scenario": "You read about successful dropouts like Gates and Zuckerberg. But what about the millions of dropouts you never hear about?",
+      "example": "WWII planes returning with bullet holes - the ones shot elsewhere didn't return"
+    },
+    {
+      "name": "The Lindy Effect",
+      "category": "prediction",
+      "description": "For non-perishable things, life expectancy increases with each period of survival",
+      "when_to_use": "Predicting longevity of ideas, technologies, businesses",
+      "practice_scenario": "A book that's been in print 50 years will likely be read in another 50. A bestseller from last year? Uncertain.",
+      "example": "The Bible, Shakespeare, and Stoic philosophy have survived millennia and will likely survive millennia more"
+    },
+    {
+      "name": "Asymmetric Risk/Reward",
+      "category": "risk",
+      "description": "Seeking situations where potential upside greatly exceeds potential downside",
+      "when_to_use": "Evaluating opportunities and bets",
+      "practice_scenario": "Sending a cold email to your dream mentor: downside is a few minutes and maybe rejection. Upside is a life-changing relationship.",
+      "example": "Venture capital model - most investments fail but winners 100x"
+    },
+    {
+      "name": "Compounding",
+      "category": "growth",
+      "description": "Small consistent gains accumulate to massive results over time",
+      "when_to_use": "Evaluating long-term strategies and habits",
+      "practice_scenario": "1% improvement daily = 37x improvement yearly. What skill could you improve 1% daily?",
+      "example": "Warren Buffett's wealth - 99% earned after age 50 through compounding"
+    },
+    {
+      "name": "Leverage",
+      "category": "systems",
+      "description": "Finding points where small inputs create large outputs",
+      "when_to_use": "Deciding where to focus effort for maximum impact",
+      "practice_scenario": "In your job, what's the 20% of activities that produce 80% of your value? Focus there.",
+      "example": "Software as leverage - write once, deploy to millions"
+    },
+    {
+      "name": "Emergence",
+      "category": "systems",
+      "description": "Complex behaviors arising from simple rules and interactions",
+      "when_to_use": "Understanding complex systems that seem to have 'intent'",
+      "practice_scenario": "A traffic jam with no apparent cause - emergence from individual driving decisions interacting.",
+      "example": "Ant colonies exhibiting intelligent behavior from simple individual rules"
+    },
+    {
+      "name": "Local vs Global Optima",
+      "category": "optimization",
+      "description": "The best nearby solution may not be the best overall solution",
+      "when_to_use": "When feeling stuck in a pretty-good situation",
+      "practice_scenario": "Your career is 'fine' - good salary, decent work. But is it a local maximum? Would a temporary step down lead to higher peaks?",
+      "example": "Companies pivoting from profitable-but-limited products to larger opportunities"
+    },
+    {
+      "name": "Skin in the Game",
+      "category": "incentives",
+      "description": "Having personal stake in the outcomes of your decisions and advice",
+      "when_to_use": "Evaluating advisors, experts, and your own commitment",
+      "practice_scenario": "Your financial advisor recommends a product. Do they own it themselves? What's their commission?",
+      "example": "Surgeons who would choose the same treatment for themselves"
+    },
+    {
+      "name": "Via Negativa",
+      "category": "improvement",
+      "description": "Improvement through removal rather than addition",
+      "when_to_use": "When trying to improve a system, habit, or process",
+      "practice_scenario": "Instead of adding more productivity tools, what should you eliminate? Meetings? Notifications? Decisions?",
+      "example": "Sculpture as removing stone to reveal the form within"
+    },
+    {
+      "name": "Antifragility",
+      "category": "risk",
+      "description": "Systems that gain from disorder, stress, and volatility",
+      "when_to_use": "Designing systems, careers, or portfolios for uncertainty",
+      "practice_scenario": "How can you structure your income so that market volatility helps you rather than hurts you?",
+      "example": "Exercise stressing muscles makes them stronger"
+    },
+    {
+      "name": "Falsification",
+      "category": "epistemology",
+      "description": "Seeking evidence that could prove you wrong, not just right",
+      "when_to_use": "Testing any hypothesis or belief you hold",
+      "practice_scenario": "You believe your marketing campaign is working. What evidence would prove you wrong? Actively seek it.",
+      "example": "Karl Popper: a theory that can't be falsified isn't scientific"
+    },
+    {
+      "name": "Thought Experiments",
+      "category": "reasoning",
+      "description": "Testing ideas through imagined scenarios",
+      "when_to_use": "When empirical testing is impossible or too costly",
+      "practice_scenario": "Would you still do this work if no one ever knew you did it? Would you take this risk if the outcome were 10x larger?",
+      "example": "Einstein's riding a beam of light, the trolley problem"
+    },
+    {
+      "name": "Steel Manning",
+      "category": "reasoning",
+      "description": "Constructing the strongest version of an opposing argument",
+      "when_to_use": "Before criticizing or dismissing an opposing view",
+      "practice_scenario": "Before arguing against a political position you oppose, state it in the way its smartest proponents would.",
+      "example": "Formal debate teams must argue both sides effectively"
+    },
+    {
+      "name": "Reference Class Forecasting",
+      "category": "prediction",
+      "description": "Predicting based on outcomes of similar past situations rather than inside view",
+      "when_to_use": "Making predictions about your projects or plans",
+      "practice_scenario": "How long will your home renovation take? Look at how long similar renovations typically take, not your optimistic estimate.",
+      "example": "Large IT projects - plan says 2 years, reference class says 3-4 years with cost overruns"
+    },
+    {
+      "name": "Chesterton's Fence",
+      "category": "prudence",
+      "description": "Don't remove something until you understand why it was put there",
+      "when_to_use": "Before eliminating rules, processes, or traditions",
+      "practice_scenario": "That annoying company policy exists. Before abolishing it, understand what problem it originally solved. Still relevant?",
+      "example": "Removing financial regulations without understanding why they were created"
+    },
+    {
+      "name": "The Planning Fallacy",
+      "category": "bias",
+      "description": "Tendency to underestimate time, costs, and risks while overestimating benefits",
+      "when_to_use": "Making any plans or estimates",
+      "practice_scenario": "Your project estimate is 6 months. Now honestly ask: what's your track record on estimates? Probably add 50%.",
+      "example": "Sydney Opera House: planned 4 years and $7M, actual 14 years and $102M"
+    },
+    {
+      "name": "Incentive-Caused Bias",
+      "category": "bias",
+      "description": "People's conclusions align with their incentives",
+      "when_to_use": "Evaluating any advice or analysis",
+      "practice_scenario": "The real estate agent says it's a great time to buy. Remember: they get paid when you buy.",
+      "example": "Studies funded by industry tend to favor that industry"
+    },
+    {
+      "name": "Availability Heuristic",
+      "category": "bias",
+      "description": "Judging likelihood by how easily examples come to mind",
+      "when_to_use": "When your fear or confidence seems disproportionate",
+      "practice_scenario": "You're terrified of plane crashes after recent news coverage. But driving to the airport is statistically far more dangerous.",
+      "example": "Overestimating risk of terrorism, underestimating risk of heart disease"
+    },
+    {
+      "name": "Anchoring",
+      "category": "bias",
+      "description": "Over-relying on the first piece of information encountered",
+      "when_to_use": "Any negotiation or estimation",
+      "practice_scenario": "The asking price for the house anchors all further negotiation. Generate your own anchor before seeing theirs.",
+      "example": "Arbitrary numbers on a wheel influenced expert real estate valuations"
+    },
+    {
+      "name": "Sunk Cost Fallacy",
+      "category": "bias",
+      "description": "Continuing because of past investment rather than future value",
+      "when_to_use": "Deciding whether to continue or quit",
+      "practice_scenario": "You've watched 90 minutes of a bad movie. Should you finish? The 90 minutes are gone regardless. Only future enjoyment matters.",
+      "example": "Continuing to throw money at failing projects because 'we've invested so much'"
+    },
+    {
+      "name": "Confirmation Bias",
+      "category": "bias",
+      "description": "Seeking information that confirms existing beliefs, ignoring contradictory evidence",
+      "when_to_use": "Constantly, but especially when you feel certain",
+      "practice_scenario": "You think your business idea is great. Now actively search for 'why [your idea] fails' and read the critics.",
+      "example": "Political news consumption gravitating to agreeable sources"
+    },
+    {
+      "name": "Fundamental Attribution Error",
+      "category": "bias",
+      "description": "Attributing others' behavior to character while attributing own behavior to situation",
+      "when_to_use": "Judging why someone did something",
+      "practice_scenario": "They're late because they're irresponsible. You're late because of traffic. Really? Same situation, different attribution.",
+      "example": "Judging someone as 'rude' when they might just be having a terrible day"
+    },
+    {
+      "name": "Hindsight Bias",
+      "category": "bias",
+      "description": "Believing past events were more predictable than they actually were",
+      "when_to_use": "Evaluating past decisions and learning from them",
+      "practice_scenario": "The startup failed - 'obvious' in hindsight. But what did you actually believe before? Check your decision journal.",
+      "example": "'I knew the housing market would crash' - but did you bet on it?"
+    },
+    {
+      "name": "Status Quo Bias",
+      "category": "bias",
+      "description": "Preference for the current state of affairs",
+      "when_to_use": "When considering change vs staying the same",
+      "practice_scenario": "Would you actively choose your current job if you didn't already have it? Your current city? Relationship?",
+      "example": "People keep default retirement contributions even when suboptimal"
+    },
+    {
+      "name": "Loss Aversion",
+      "category": "bias",
+      "description": "Losses feel roughly twice as painful as equivalent gains feel good",
+      "when_to_use": "Making risk decisions and evaluating trade-offs",
+      "practice_scenario": "Would you take a coin flip bet: heads you win $150, tails you lose $100? Most say no, though it has positive expected value.",
+      "example": "People refuse to sell losing stocks while quickly selling winners"
+    },
+    {
+      "name": "Framing Effect",
+      "category": "bias",
+      "description": "Decisions influenced by how options are presented rather than substance",
+      "when_to_use": "Making decisions or presenting options to others",
+      "practice_scenario": "90% survival rate sounds better than 10% death rate. Same facts, different frame. Reframe both ways before deciding.",
+      "example": "Ground beef labeled '80% lean' vs '20% fat'"
+    },
+    {
+      "name": "Dunning-Kruger Effect",
+      "category": "bias",
+      "description": "Unskilled people overestimate ability; skilled people often underestimate",
+      "when_to_use": "Assessing your own competence in any domain",
+      "practice_scenario": "Early in learning, you feel confident. As expertise grows, you realize how much you don't know. Where are you on this curve?",
+      "example": "Novice investors certain of their stock picks"
+    },
+    {
+      "name": "Naive Realism",
+      "category": "bias",
+      "description": "Believing you see reality objectively while others are biased",
+      "when_to_use": "Disagreements where you're sure you're right",
+      "practice_scenario": "You see the political issue clearly and rationally. They're blinded by ideology. But they think the same about you.",
+      "example": "Both sides of any controversial debate"
+    },
+    {
+      "name": "The Affect Heuristic",
+      "category": "bias",
+      "description": "Letting current emotions influence judgments about unrelated matters",
+      "when_to_use": "Making important decisions when in strong emotional states",
+      "practice_scenario": "You're angry at your spouse. This is not the time to make financial decisions. Cool down first.",
+      "example": "Good weather makes people more optimistic about the economy"
+    },
+    {
+      "name": "Scope Insensitivity",
+      "category": "bias",
+      "description": "Not scaling emotional response proportionally to magnitude",
+      "when_to_use": "Evaluating problems of different scales",
+      "practice_scenario": "You'd donate $100 to save 1 bird from an oil spill. Would you donate $10,000 to save 100 birds? Probably not proportionally.",
+      "example": "Similar outrage for tragedies affecting hundreds vs millions"
+    },
+    {
+      "name": "Peak-End Rule",
+      "category": "bias",
+      "description": "Experiences judged by their peak intensity and ending, not total sum",
+      "when_to_use": "Designing experiences or evaluating past events",
+      "practice_scenario": "A vacation with a terrible last day feels worse than one with a mediocre week but great finale.",
+      "example": "Colonoscopy study - longer procedure felt better if it ended with less pain"
+    },
+    {
+      "name": "Bandwagon Effect",
+      "category": "bias",
+      "description": "Tendency to do or believe things because many others do",
+      "when_to_use": "When your opinion seems to match the crowd perfectly",
+      "practice_scenario": "Everyone at work agrees with the strategy. Is it genuinely good, or is everyone just going along? Play devil's advocate.",
+      "example": "Market bubbles, fashion trends, political movements"
+    },
+    {
+      "name": "Authority Bias",
+      "category": "bias",
+      "description": "Over-valuing opinions of authority figures",
+      "when_to_use": "Receiving advice from experts or leaders",
+      "practice_scenario": "The CEO says the strategy is sound. But are they an expert in this domain? What's their track record?",
+      "example": "Milgram experiment - people shocking others because authority said to"
+    },
+    {
+      "name": "Zero-Risk Bias",
+      "category": "bias",
+      "description": "Preferring complete elimination of risk over larger risk reduction",
+      "when_to_use": "Making risk management decisions",
+      "practice_scenario": "Would you prefer reducing car deaths from 10,000 to 0, or reducing heart disease deaths from 100,000 to 50,000? The second saves more lives.",
+      "example": "Spending disproportionately on airport security vs highway safety"
+    },
+    {
+      "name": "Normalcy Bias",
+      "category": "bias",
+      "description": "Underestimating likelihood and impact of disasters or major changes",
+      "when_to_use": "Planning for rare but significant events",
+      "practice_scenario": "Your industry hasn't been disrupted yet. But what if it is? Have a plan for discontinuous change.",
+      "example": "People staying in path of hurricanes, ignoring evacuation orders"
+    },
+    {
+      "name": "Present Bias",
+      "category": "bias",
+      "description": "Overvaluing immediate rewards relative to future rewards",
+      "when_to_use": "Any decision trading present for future (saving, health, learning)",
+      "practice_scenario": "Would you rather have $50 today or $100 in a year? Most choose $50. But $100 in a year vs $50 in 11 months? Suddenly $100 looks better.",
+      "example": "Procrastination, under-saving, poor health choices"
+    },
+    {
+      "name": "WYSIATI (What You See Is All There Is)",
+      "category": "bias",
+      "description": "Building confident narratives from incomplete information",
+      "when_to_use": "Whenever you feel certain based on limited data",
+      "practice_scenario": "You met someone briefly and formed a strong impression. But you only saw a tiny slice of who they are. What are you missing?",
+      "example": "Job interviews predicting success from 30-minute conversations"
+    }
+  ],
+
+  "masters": [
+    {
+      "id": "daniel_kahneman",
+      "name": "Daniel Kahneman",
+      "expertise": "Cognitive biases, decision-making under uncertainty, dual-process theory",
+      "title": "Nobel Laureate and Father of Behavioral Economics",
+      "specialty": "Cognitive biases, decision-making under uncertainty, dual-process theory",
+      "key_works": ["Thinking, Fast and Slow", "Judgment under Uncertainty (with Tversky)", "Noise (with Sibony and Sunstein)"],
+      "core_philosophy": "Our intuitive System 1 thinking is powerful but systematically biased. Understanding these biases doesn't make you immune, but it helps you design better decision environments.",
+
+      "key_principles": [
+        {
+          "name": "System 1 vs System 2",
+          "description": "Two modes of thinking: fast/automatic/intuitive vs slow/deliberate/analytical",
+          "application": "Recognize which system is active. For important decisions, deliberately engage System 2.",
+          "example": "System 1: 'This feels like a good investment.' System 2: 'Let me analyze the fundamentals and consider alternatives.'"
+        },
+        {
+          "name": "Prospect Theory",
+          "description": "Losses loom larger than gains; we evaluate outcomes relative to reference points, not absolute values",
+          "application": "Notice when loss aversion is driving decisions. Reframe from different reference points.",
+          "example": "A $50 fee feels worse than a $50 discount foregone, though economically identical."
+        },
+        {
+          "name": "WYSIATI",
+          "description": "What You See Is All There Is - we build coherent stories from incomplete information",
+          "application": "Before concluding, ask: 'What information am I missing? What would I think if I knew more?'",
+          "example": "Reading one glowing review and deciding to buy, ignoring that you only saw one data point."
+        },
+        {
+          "name": "The Planning Fallacy",
+          "description": "Systematic underestimation of time, costs, and risks; overestimation of benefits",
+          "application": "Use reference class forecasting. How long did similar projects actually take?",
+          "example": "Your home renovation 'will take 3 months' but similar projects average 6 months."
+        },
+        {
+          "name": "Overconfidence",
+          "description": "We are systematically more confident than our accuracy warrants",
+          "application": "Widen confidence intervals. If you're 90% sure, you're probably wrong 30%+ of the time.",
+          "example": "Experts predicting economic indicators are barely better than chance but highly confident."
+        },
+        {
+          "name": "Substitution",
+          "description": "When facing a hard question, we often answer an easier related question instead",
+          "application": "Notice when you're answering a different question than was asked.",
+          "example": "Asked 'How happy are you with your life?' you might answer 'How am I feeling right now?'"
+        },
+        {
+          "name": "Noise",
+          "description": "Variability in judgments that should be identical is a major source of error",
+          "application": "Use structured decision processes to reduce noise between decision-makers and over time.",
+          "example": "Same judge, same crime type: wildly different sentences depending on time of day."
+        }
+      ],
+
+      "daily_practices": [
+        {
+          "name": "System Check",
+          "frequency": "Multiple times daily",
+          "duration": "30 seconds",
+          "description": "Before important decisions, pause and ask: 'Is this System 1 or System 2 thinking? Do I need to slow down?'",
+          "prompt": "Notice your confidence level. High confidence with little analysis = System 1. Maybe engage System 2."
+        },
+        {
+          "name": "Reference Class Check",
+          "frequency": "For any estimate or prediction",
+          "duration": "5 minutes",
+          "description": "Find the base rate. How often do similar projects/situations/investments actually succeed?",
+          "prompt": "What's the outside view here? What does the data say about situations like this?"
+        },
+        {
+          "name": "Premortem Analysis",
+          "frequency": "Before major decisions",
+          "duration": "15-30 minutes",
+          "description": "Imagine the decision failed spectacularly. Now explain why. This surfaces risks that optimism obscures.",
+          "prompt": "It's one year later and this was a disaster. Write the story of what went wrong."
+        },
+        {
+          "name": "Confidence Calibration",
+          "frequency": "Weekly",
+          "duration": "10 minutes",
+          "description": "Track predictions and confidence levels. Review to calibrate future confidence.",
+          "prompt": "For 90% confidence predictions, you should be right about 90% of the time. Are you?"
+        },
+        {
+          "name": "Loss Frame Reframe",
+          "frequency": "When facing difficult trade-offs",
+          "duration": "5 minutes",
+          "description": "Reframe the decision from both gain and loss perspectives to reduce framing effects.",
+          "prompt": "How does this look as a potential gain? As avoiding a loss? Do your preferences change?"
+        }
+      ],
+
+      "worked_examples": [
+        {
+          "title": "Investment Decision: Buying Individual Stocks",
+          "scenario": "You're confident that a particular stock will outperform based on recent news and your industry knowledge.",
+          "kahneman_analysis": [
+            "System 1 at work: The story feels compelling. Good narrative = false confidence.",
+            "WYSIATI: You're seeing public information. What do you know that the market doesn't?",
+            "Overconfidence: Even professional fund managers underperform indices. Why would you beat them?",
+            "Substitution: You may be answering 'Is this a good company?' instead of 'Is this a good investment at this price?'"
+          ],
+          "better_process": [
+            "Reference class: What percentage of confident stock picks actually outperform?",
+            "Premortem: Imagine the stock drops 50%. What happened? Was the info already priced in?",
+            "Consider: For you to profit, someone else must lose. Why do you have edge over the seller?"
+          ],
+          "outcome": "Most individual stock picking is losing game. This process often leads to index investing or extreme humility."
+        },
+        {
+          "title": "Career Decision: Taking a New Job Offer",
+          "scenario": "You received a job offer with 30% higher salary but have to relocate and leave a stable position.",
+          "kahneman_analysis": [
+            "Anchoring: The 30% anchors the entire analysis. But is salary the right frame?",
+            "Loss aversion: Leaving current job feels like losing stability, relationships, status.",
+            "Focusing illusion: You're focused on the delta. But day-to-day life is mostly the same anywhere.",
+            "Planning fallacy: Underestimating the friction and stress of major life changes."
+          ],
+          "better_process": [
+            "Expand the frame: What will typical Tuesday look like in each scenario?",
+            "Reference class: Talk to 5 people who made similar moves. What was their experience?",
+            "Reduce loss aversion: Would you take this job if you didn't already have the current one?",
+            "Premortem: It's one year later and you regret the move. Why?"
+          ],
+          "outcome": "Often reveals that the decision is closer than it first appears, and highlights overlooked factors."
+        },
+        {
+          "title": "Project Estimation: Software Development Timeline",
+          "scenario": "Your team estimates a new feature will take 6 weeks to build.",
+          "kahneman_analysis": [
+            "Planning fallacy: Inside view is optimistic. Team imagines the best-case scenario.",
+            "Anchoring: The first estimate anchors all subsequent discussions.",
+            "Overconfidence: High confidence despite terrible historical accuracy of estimates."
+          ],
+          "better_process": [
+            "Reference class forecasting: How long did the last 10 '6-week' projects actually take?",
+            "Ask: 'If we're honest, what could go wrong?' List 10 things and estimate delay from each.",
+            "Use premortem: 'It's 4 months later and we're still not done. Why?'",
+            "Final estimate: Multiply initial estimate by historical accuracy ratio."
+          ],
+          "outcome": "Typical ratio is 1.5-2x. '6 weeks' becomes '9-12 weeks' which is usually more accurate."
+        }
+      ],
+
+      "scripts_templates": {
+        "premortem_script": {
+          "title": "Kahneman Premortem Protocol",
+          "steps": [
+            "1. Gather the team. State: 'We're about to make this decision. Assume it's made.'",
+            "2. Time travel: 'It's [1 year] later. This decision was a disaster. Total failure.'",
+            "3. Individual writing (5-10 min): 'Each person write down all the reasons why it failed.'",
+            "4. Round robin: Each person shares one reason, continue until all are shared.",
+            "5. Group discussion: Which failure modes are most likely? What can we do about them?",
+            "6. Document: Update the plan to address the most critical risks identified."
+          ],
+          "key_insight": "The premortem overcomes groupthink by making it safe to voice concerns."
+        },
+        "reference_class_template": {
+          "title": "Reference Class Forecasting",
+          "structure": {
+            "question": "What am I trying to estimate/predict?",
+            "reference_class": "What category does this belong to? (e.g., 'home renovations', 'startup valuations', 'diet attempts')",
+            "base_rate": "What are the actual outcomes for this reference class? (success rate, average duration, typical cost overruns)",
+            "my_estimate": "What does my inside view say?",
+            "adjusted_estimate": "Anchor on base rate, adjust modestly for specific factors",
+            "specific_factors": "What makes my situation different? (Be skeptical - we always think we're special)"
+          }
+        },
+        "confidence_calibration_log": {
+          "title": "Prediction Tracking Sheet",
+          "columns": ["Date", "Prediction", "Confidence %", "Date to evaluate", "Actual outcome", "Calibration notes"],
+          "usage": "Log 10+ predictions per month. Review quarterly. Adjust future confidence based on accuracy.",
+          "target": "For 70% confidence predictions, you should be right about 70% of the time."
+        },
+        "system_1_2_audit": {
+          "title": "System 1 vs System 2 Decision Audit",
+          "template": "DECISION: ___\n\nSHOULD I USE SYSTEM 1 (fast, intuitive)?\n- Is this familiar?\n- Is it low-stakes?\n- Do I have deep expertise here?\n- Is speed more important than accuracy?\n\nOR SYSTEM 2 (slow, analytical)?\n- Is this high-stakes?\n- Am I in an emotional state?\n- Do I lack expertise?\n- Are there traps I might miss?\n\nBIAS CHECK:\n- Am I overconfident?\n- What am I not seeing (WYSIATI)?\n- Am I substituting an easy question for a hard one?\n\nDECISION: Use System ___"
+        },
+        "cognitive_bias_checklist": {
+          "title": "Cognitive Bias Checklist",
+          "template": "COMMON BIASES TO CHECK:\n\n[ ] Confirmation bias: Am I only seeking info that confirms what I already believe?\n[ ] Availability bias: Am I overweighting recent/memorable events?\n[ ] Anchoring: Am I stuck on the first number I heard?\n[ ] Loss aversion: Am I avoiding losses more than seeking gains?\n[ ] Sunk cost: Am I considering money/time already spent?\n[ ] Overconfidence: What's my margin of error? Am I sure I'm right?\n[ ] Halo effect: Is one good trait coloring everything?\n[ ] Recency bias: Am I overweighting what just happened?\n[ ] Outcome bias: Am I judging the decision by the result, not the process?\n\nWHICH BIASES MIGHT BE AFFECTING ME?\n___\n\nHOW CAN I CORRECT FOR THEM?\n___"
+        }
+      },
+
+      "resources": {
+        "essential_reading": [
+          {"title": "Thinking, Fast and Slow", "author": "Daniel Kahneman", "note": "The definitive synthesis of decades of research"},
+          {"title": "Noise", "author": "Kahneman, Sibony, Sunstein", "note": "On reducing variability in judgment"},
+          {"title": "The Undoing Project", "author": "Michael Lewis", "note": "Engaging narrative of Kahneman-Tversky collaboration"}
+        ],
+        "papers": [
+          {"title": "Judgment under Uncertainty: Heuristics and Biases", "year": 1974, "note": "Foundational paper"},
+          {"title": "Prospect Theory: An Analysis of Decision under Risk", "year": 1979, "note": "Nobel Prize winning work"},
+          {"title": "Conditions for Intuitive Expertise: A Failure to Disagree", "year": 2009, "note": "When to trust expert intuition"}
+        ],
+        "talks": [
+          {"title": "The riddle of experience vs. memory", "platform": "TED", "url": "https://www.ted.com/talks/daniel_kahneman_the_riddle_of_experience_vs_memory"},
+          {"title": "Thinking, Fast and Slow - Talks at Google", "platform": "YouTube"}
+        ],
+        "tools": [
+          {"name": "Calibration Training", "description": "Practice at https://www.openphilanthropy.org/calibration"},
+          {"name": "Good Judgment Open", "description": "Forecasting tournaments to test and improve prediction"}
+        ]
+      }
+    },
+    {
+      "id": "shane_parrish",
+      "name": "Shane Parrish",
+      "expertise": "Mental models, first principles thinking, decision-making frameworks",
+      "title": "Founder of Farnam Street, Mental Models Synthesizer",
+      "specialty": "Mental models, first principles thinking, decision-making frameworks",
+      "key_works": ["The Great Mental Models series", "Farnam Street blog", "The Knowledge Project podcast", "Clear Thinking"],
+      "core_philosophy": "The quality of your thinking determines the quality of your life. Build a latticework of mental models from multiple disciplines to make better decisions.",
+
+      "key_principles": [
+        {
+          "name": "First Principles Thinking",
+          "description": "Break down problems to fundamental truths and reason up from there",
+          "application": "Don't accept 'that's how it's always been done.' Ask: What's actually true here?",
+          "example": "SpaceX: Instead of buying rockets, ask 'What are rockets made of? What do those materials cost?'"
+        },
+        {
+          "name": "The Latticework of Mental Models",
+          "description": "Collect models from multiple disciplines; more models = better thinking",
+          "application": "For any problem, run it through multiple mental models from different fields.",
+          "example": "A business problem viewed through physics (leverage), biology (evolution), psychology (incentives)."
+        },
+        {
+          "name": "Inversion",
+          "description": "Think forward and backward. What do I want to avoid? What guarantees failure?",
+          "application": "Before asking how to succeed, ask how to definitely fail. Then don't do those things.",
+          "example": "Want a great relationship? List what destroys relationships. Avoid those behaviors."
+        },
+        {
+          "name": "Circle of Competence",
+          "description": "Know the boundaries of your real expertise vs perceived knowledge",
+          "application": "Operate inside your circle. Expand it deliberately. Know when you're outside it.",
+          "example": "A great surgeon shouldn't assume they understand investing equally well."
+        },
+        {
+          "name": "Second-Order Thinking",
+          "description": "First-order: What happens next? Second-order: And then what?",
+          "application": "Most people stop at first-order. Competitive advantage lives in second+ order effects.",
+          "example": "Price cuts boost sales (1st order) but competitors respond and margins collapse (2nd order)."
+        },
+        {
+          "name": "Map is Not the Territory",
+          "description": "Our models of reality are simplifications, not reality itself",
+          "application": "All models are wrong but some are useful. Know the limits of your maps.",
+          "example": "GDP is a map of economic health, but misses inequality, sustainability, well-being."
+        },
+        {
+          "name": "Margin of Safety",
+          "description": "Build in buffer for errors and unforeseen circumstances",
+          "application": "If something must be true for your plan to work, you need margin.",
+          "example": "Bridge designed for 10x expected load. Project timeline with 50% buffer."
+        }
+      ],
+
+      "daily_practices": [
+        {
+          "name": "Mental Model Journal",
+          "frequency": "Daily",
+          "duration": "10 minutes",
+          "description": "Each day, identify one situation where a mental model was useful (or would have been)",
+          "prompt": "Today I noticed [situation]. The relevant mental model was [model]. This changed my thinking by [how]."
+        },
+        {
+          "name": "The Five Whys",
+          "frequency": "When facing problems",
+          "duration": "10 minutes",
+          "description": "Ask 'why' five times to get to root causes, not symptoms",
+          "prompt": "Problem -> Why? -> Why? -> Why? -> Why? -> Why? -> Root cause revealed."
+        },
+        {
+          "name": "Weekly Inversion Exercise",
+          "frequency": "Weekly",
+          "duration": "15 minutes",
+          "description": "Take your main goal and invert it. What would guarantee failure? Avoid those.",
+          "prompt": "Goal: [X]. To guarantee failure I would: [list]. Therefore I must avoid: [list]."
+        },
+        {
+          "name": "Circle of Competence Mapping",
+          "frequency": "Monthly",
+          "duration": "30 minutes",
+          "description": "Update your map of true expertise vs assumed expertise",
+          "prompt": "Draw three circles: Strong competence (experts respect you), Basic competence (functional), Outside (know you don't know)."
+        },
+        {
+          "name": "Decision Journal Entry",
+          "frequency": "For every significant decision",
+          "duration": "15 minutes",
+          "description": "Record the decision context, reasoning, and expected outcomes before knowing results",
+          "prompt": "Situation, options considered, decision made, reasoning, confidence level, date to review."
+        }
+      ],
+
+      "worked_examples": [
+        {
+          "title": "First Principles: Should I Go Back to School?",
+          "scenario": "You're considering an MBA to advance your career. It costs $150k and 2 years.",
+          "farnam_street_approach": [
+            "First Principles: What does an MBA actually provide? Network, credentials, knowledge, signal.",
+            "Break it down: Can each component be obtained more efficiently?",
+            "Network: Industry events, cold outreach, joining communities ($5k/year?)",
+            "Knowledge: Books, courses, mentors ($2k/year?)",
+            "Signal: Track record of results, portfolio, testimonials (free with time)",
+            "Credential: This is the hard part. Do you actually need it, or is it assumed?"
+          ],
+          "questions_to_ask": [
+            "Of the last 10 people hired for roles I want, how many had MBAs?",
+            "What would I do with $150k and 2 years if not school?",
+            "Is there a way to test the credential value before committing?"
+          ],
+          "outcome": "Often the MBA is about signaling and network. Those can be built other ways, unless credential is truly required."
+        },
+        {
+          "title": "Inversion: How to Build a Great Team",
+          "scenario": "You're promoted to lead a team of 8. How do you create a high-performing team?",
+          "farnam_street_approach": [
+            "Invert: How do you guarantee a dysfunctional team?",
+            "Hire for credentials over culture fit",
+            "Micromanage and remove autonomy",
+            "Punish failure, creating fear of experimentation",
+            "Communicate inconsistently and create uncertainty",
+            "Play favorites and create political dynamics",
+            "Never give feedback or recognition",
+            "Make decisions in isolation without input"
+          ],
+          "inversion_to_action": [
+            "Avoid: Hire for culture and ability to learn, not just credentials",
+            "Avoid: Set clear outcomes, let people figure out the how",
+            "Avoid: Celebrate learning from failure, distinguish from carelessness",
+            "Avoid: Over-communicate, create predictability",
+            "Avoid: Consistent standards applied to everyone including yourself",
+            "Avoid: Regular feedback, public recognition",
+            "Avoid: Involve team in decisions, explain reasoning"
+          ],
+          "outcome": "The inversion generates a concrete playbook for what TO do by clarifying what to avoid."
+        },
+        {
+          "title": "Second-Order Thinking: Remote Work Policy",
+          "scenario": "Company is deciding whether to go fully remote.",
+          "farnam_street_approach": [
+            "First-order effects (obvious):",
+            "- Save on office costs",
+            "- Employees save commute time",
+            "- Can hire from anywhere",
+            "",
+            "Second-order effects (and then what?):",
+            "- Culture: What happens to spontaneous collaboration?",
+            "- Training: How do new employees learn by osmosis?",
+            "- Competition: If we can hire anywhere, anyone can hire our people anywhere",
+            "- Management: How do you build trust without in-person interaction?",
+            "- Work/life: Without boundaries, does work expand to fill all time?",
+            "",
+            "Third-order effects (and then what after that?):",
+            "- If everyone's remote, living in high-cost cities loses appeal. Real estate shifts.",
+            "- Companies that master remote gain talent advantage over those that don't",
+            "- The skills for managing become different; current managers may not have them"
+          ],
+          "outcome": "Decision becomes nuanced. Maybe hybrid is better. Or maybe commit fully to remote and solve the second-order problems deliberately."
+        }
+      ],
+
+      "scripts_templates": {
+        "first_principles_breakdown": {
+          "title": "First Principles Analysis Template",
+          "steps": [
+            "1. Define the problem/assumption: What are we trying to solve/challenge?",
+            "2. List current beliefs: What do 'everyone knows' about this?",
+            "3. Question each belief: Is this actually true? Why do we believe it?",
+            "4. Identify fundamentals: What do we know is definitely true?",
+            "5. Build up: From these truths, what follows logically?",
+            "6. Compare: How does the first-principles answer differ from conventional wisdom?"
+          ],
+          "example_questions": [
+            "What are the raw components of this?",
+            "What does physics/math/logic require to be true?",
+            "What can be removed while still achieving the goal?",
+            "What would I do if I started from scratch with no history?"
+          ]
+        },
+        "mental_model_application_checklist": {
+          "title": "Multi-Model Problem Analysis",
+          "process": [
+            "State the problem clearly in one sentence.",
+            "Run through each lens:",
+            "- Inversion: What would make this worse? What guarantees failure?",
+            "- First Principles: What's actually true vs assumed?",
+            "- Second-Order: What are the consequences of consequences?",
+            "- Circle of Competence: Am I qualified to have a strong opinion here?",
+            "- Opportunity Cost: What am I giving up with each option?",
+            "- Margin of Safety: Where do I have buffer for being wrong?",
+            "- Incentives: What behaviors are the current incentives encouraging?",
+            "Synthesize: What insights emerged from multiple models?"
+          ]
+        },
+        "decision_journal_template": {
+          "title": "Shane Parrish Decision Journal",
+          "fields": {
+            "date": "",
+            "decision": "What decision am I making?",
+            "situation": "What's the context? What led to this decision point?",
+            "problem_statement": "What problem am I trying to solve?",
+            "variables": "What factors are influencing this decision?",
+            "complications": "What makes this decision hard?",
+            "options": "What alternatives did I consider?",
+            "reasoning": "Why am I choosing this option over alternatives?",
+            "expected_outcome": "What do I think will happen? With what probability?",
+            "confidence": "How confident am I? (1-10)",
+            "what_would_change_my_mind": "What evidence would make me reconsider?",
+            "review_date": "When will I evaluate this decision?"
+          },
+          "review_section": {
+            "actual_outcome": "What actually happened?",
+            "was_reasoning_good": "Was my process sound, regardless of outcome?",
+            "what_did_i_miss": "What factors did I overlook?",
+            "updated_model": "How should I update my thinking for similar decisions?"
+          }
+        },
+        "circle_of_competence_audit": {
+          "title": "Circle of Competence Audit",
+          "template": "INSIDE MY CIRCLE (Deep expertise):\n- ___\n- ___\n- ___\n\nON THE EDGE (Some knowledge, could improve):\n- ___\n- ___\n\nOUTSIDE MY CIRCLE (Know little, dangerous territory):\n- ___\n- ___\n\nCURRENT DECISION: ___\n\nIS THIS INSIDE MY CIRCLE? ___\n\nIF OUTSIDE:\n- How can I stay in my circle?\n- Or, how can I expand my circle first?\n- Or, who can I partner with who has this in their circle?"
+        },
+        "mental_models_toolkit": {
+          "title": "Essential 20 Mental Models",
+          "categories": {
+            "decision_making": ["Second-Order Thinking", "Inversion", "Opportunity Cost", "Margin of Safety"],
+            "systems": ["Feedback Loops", "Bottlenecks", "Leverage Points"],
+            "psychology": ["Incentives", "Social Proof", "Commitment & Consistency"],
+            "probability": ["Bayesian Updating", "Regression to Mean", "Survivorship Bias"],
+            "strategy": ["Comparative Advantage", "Creative Destruction", "Network Effects"],
+            "physics": ["Critical Mass", "Activation Energy", "Compounding"]
+          }
+        }
+      },
+
+      "resources": {
+        "essential_reading": [
+          {"title": "The Great Mental Models: General Thinking Concepts", "author": "Shane Parrish", "note": "Vol 1 of the series - foundational models"},
+          {"title": "The Great Mental Models: Physics, Chemistry, Biology", "author": "Shane Parrish", "note": "Vol 2 - scientific thinking models"},
+          {"title": "Clear Thinking", "author": "Shane Parrish", "note": "2023 book on avoiding poor decisions"}
+        ],
+        "farnam_street_articles": [
+          {"title": "First Principles Thinking", "url": "https://fs.blog/first-principles/"},
+          {"title": "Mental Models: The Best Way to Make Intelligent Decisions", "url": "https://fs.blog/mental-models/"},
+          {"title": "Inversion: The Power of Avoiding Stupidity", "url": "https://fs.blog/inversion/"},
+          {"title": "Second-Order Thinking", "url": "https://fs.blog/second-order-thinking/"},
+          {"title": "Circle of Competence", "url": "https://fs.blog/circle-of-competence/"}
+        ],
+        "podcast": [
+          {"title": "The Knowledge Project", "note": "Interviews with world-class thinkers on decision-making and learning"},
+          {"episodes_to_start": ["Naval Ravikant", "Annie Duke", "Daniel Kahneman", "James Clear"]}
+        ],
+        "cross_reference": [
+          {"master": "Charlie Munger", "module": "money_masters.json", "note": "Original latticework concept - see for worldly wisdom approach"},
+          {"master": "Daniel Kahneman", "note": "Behavioral economics foundation for many mental models"},
+          {"master": "Nassim Taleb", "note": "Antifragility, skin in the game, black swans"}
+        ]
+      }
+    },
+    {
+      "id": "annie_duke",
+      "name": "Annie Duke",
+      "expertise": "Thinking in bets, decision quality vs outcome quality, uncertainty management",
+      "title": "Former Professional Poker Player, Decision Strategist",
+      "specialty": "Thinking in bets, decision quality vs outcome quality, uncertainty management",
+      "key_works": ["Thinking in Bets", "How to Decide", "Quit: The Power of Knowing When to Walk Away"],
+      "core_philosophy": "Life is poker, not chess. Embrace uncertainty, separate decision quality from outcome quality, and treat beliefs as bets to update with new information.",
+
+      "key_principles": [
+        {
+          "name": "Resulting",
+          "description": "The error of judging decision quality by outcome quality",
+          "application": "A good decision can have a bad outcome, and vice versa. Judge the process, not the result.",
+          "example": "Going all-in with pocket aces and losing to a lucky draw doesn't mean the decision was wrong."
+        },
+        {
+          "name": "Thinking in Bets",
+          "description": "Treat beliefs as bets - you're wagering on what's true",
+          "application": "Ask: 'What would I bet on this?' Suddenly you become more honest about uncertainty.",
+          "example": "'I think this will work' vs 'Would I bet $10,000 that this will work?' Different answers."
+        },
+        {
+          "name": "Probabilistic Thinking",
+          "description": "Express confidence in percentages, not certainties",
+          "application": "Instead of 'I think X will happen,' say 'I think there's a 70% chance X will happen.'",
+          "example": "This forces you to consider alternative outcomes and their probabilities."
+        },
+        {
+          "name": "The Decision/Outcome Matrix",
+          "description": "Four quadrants: good decision+good outcome, good decision+bad outcome, bad decision+good outcome, bad decision+bad outcome",
+          "application": "Learn from the process across all quadrants, not just the outcomes.",
+          "example": "A drunk driver who gets home safely made a bad decision with a good outcome - still bad decision."
+        },
+        {
+          "name": "Backcasting vs Premortems",
+          "description": "Backcasting: imagine success and work backward. Premortem: imagine failure and find causes.",
+          "application": "Use both. Backcasting for planning, premortem for risk identification.",
+          "example": "Product launch: Backcast the successful launch, premortem the failure."
+        },
+        {
+          "name": "Quitting as a Skill",
+          "description": "Knowing when to quit is as important as perseverance",
+          "application": "Set kill criteria in advance. When do you quit? Decide before sunk costs accumulate.",
+          "example": "Before starting a business: 'If we don't have X customers by Y date, we shut down.'"
+        },
+        {
+          "name": "Truth-Seeking Groups",
+          "description": "Create environments where accuracy is valued over ego protection",
+          "application": "Build a group with explicit norms: challenge ideas, welcome disagreement, seek disconfirming evidence.",
+          "example": "Poker players form 'mastermind' groups where brutal honesty about play is expected."
+        }
+      ],
+
+      "daily_practices": [
+        {
+          "name": "The Bet Test",
+          "frequency": "Multiple times daily",
+          "duration": "30 seconds",
+          "description": "When stating a belief, ask: 'Would I bet money on this? How much? At what odds?'",
+          "prompt": "I believe [X]. Would I bet $100 on it? What odds would I need?"
+        },
+        {
+          "name": "Probability Assignment",
+          "frequency": "For any prediction or belief",
+          "duration": "1 minute",
+          "description": "Assign actual percentages to outcomes instead of vague words like 'probably'",
+          "prompt": "'Probably' means what to me? 60%? 80%? Pin it down. 'This project will probably succeed' = X%"
+        },
+        {
+          "name": "Decision Journal (Annie Duke Style)",
+          "frequency": "For significant decisions",
+          "duration": "15 minutes",
+          "description": "Record decision, reasoning, probabilities, and expected value BEFORE knowing outcome",
+          "prompt": "This captures the decision quality independent of outcome - the only thing you control."
+        },
+        {
+          "name": "Outcome Audit",
+          "frequency": "Weekly",
+          "duration": "20 minutes",
+          "description": "Review decisions from past week. Categorize each into the 4 quadrants: good/bad decision x good/bad outcome",
+          "prompt": "What decisions had good process? Did outcomes match? What can I learn about my process?"
+        },
+        {
+          "name": "Kill Criteria Setting",
+          "frequency": "When starting any commitment",
+          "duration": "10 minutes",
+          "description": "Define in advance: Under what conditions will I quit this? Write it down.",
+          "prompt": "I will quit if [specific conditions]. Review date: [date]"
+        },
+        {
+          "name": "10-10-10 Analysis",
+          "frequency": "For emotionally charged decisions",
+          "duration": "5 minutes",
+          "description": "How will I feel about this decision in 10 minutes? 10 months? 10 years?",
+          "prompt": "This creates temporal distance from present emotional state."
+        }
+      ],
+
+      "worked_examples": [
+        {
+          "title": "The Resulting Trap: Evaluating a Hiring Decision",
+          "scenario": "You hired someone who turned out to be a bad fit. Your boss says you made a bad decision.",
+          "annie_duke_approach": [
+            "Separate decision quality from outcome quality:",
+            "At the time of decision, what information did you have?",
+            "Did you follow a good process? (Structured interviews, reference checks, skills assessment?)",
+            "What was the probability this would work? 80%? That means 20% of the time it fails.",
+            "If you followed good process and had reasonable probability of success, the decision was GOOD even though the outcome was bad.",
+            "Bad outcome from good decision = bad luck, learn but don't overhaul everything.",
+            "Bad outcome from bad decision (skipped references, gut feel only) = fix the process."
+          ],
+          "lesson": "Your boss is 'resulting' - judging decision by outcome. Gently educate them about process quality."
+        },
+        {
+          "title": "Thinking in Bets: Career Move",
+          "scenario": "You're offered a role at a hot startup vs staying at stable BigCorp.",
+          "annie_duke_approach": [
+            "Frame as a bet: What are you wagering and what are the odds?",
+            "Wager: 2 years of career, some financial security, BigCorp promotion path",
+            "Startup outcomes (assign probabilities):",
+            "- 10%: Massive success, 10x career acceleration, significant equity",
+            "- 30%: Moderate success, good learning, some upside",
+            "- 40%: It's fine, comparable to BigCorp, lateral move",
+            "- 20%: Fails, back to job market, lost time",
+            "",
+            "BigCorp outcomes:",
+            "- 70%: Steady progression, predictable but limited upside",
+            "- 20%: Get stuck, bureaucracy, missed external opportunities",
+            "- 10%: Layoffs, forced change anyway",
+            "",
+            "Expected value calculation:",
+            "Is the 10% chance of 10x worth the 20% chance of significant downside?",
+            "What's your risk tolerance? Runway? Obligations?"
+          ],
+          "outcome": "The explicit probabilities make the bet concrete. No right answer, but now it's a clear bet you're making."
+        },
+        {
+          "title": "Setting Kill Criteria: Starting a Side Business",
+          "scenario": "You want to start a business while employed. When do you quit the side project?",
+          "annie_duke_approach": [
+            "Set kill criteria BEFORE starting (while objective):",
+            "Time kill: 'If after 12 months I haven't hit $2k MRR, I stop.'",
+            "Money kill: 'If I've spent $5k with no customers, I stop.'",
+            "Energy kill: 'If I'm neglecting health, relationships, or main job, I pause and reassess.'",
+            "Opportunity kill: 'If a better opportunity comes along, I evaluate objectively.'",
+            "",
+            "Write these down. Share with accountability partner.",
+            "When the moment comes, you'll want to keep going (sunk cost). That's when you check the list.",
+            "",
+            "The criteria aren't about giving up - they're about preventing throwing good resources after bad."
+          ],
+          "outcome": "Kill criteria are actually liberating - they give you permission to quit without shame when criteria are met."
+        },
+        {
+          "title": "Using Backcasting AND Premortem Together",
+          "scenario": "Planning a product launch",
+          "annie_duke_approach": [
+            "BACKCAST (plan for success):",
+            "It's 6 months from now and the launch was a huge success. What happened?",
+            "- We built the three features customers actually needed",
+            "- We launched to a beta group first and iterated",
+            "- Marketing message resonated with target audience",
+            "- We had strong customer testimonials at launch",
+            "Work backward: What do we need to do to make each of these true?",
+            "",
+            "PREMORTEM (identify risks):",
+            "It's 6 months from now and the launch was a disaster. What happened?",
+            "- We built features based on assumptions, not customer research",
+            "- Technical debt caused launch delays and bugs",
+            "- Competitors launched something better first",
+            "- Key team member left mid-project",
+            "Identify: How do we prevent or mitigate each of these?",
+            "",
+            "Synthesis: Backcast tells you what to do. Premortem tells you what to prevent. Both needed."
+          ],
+          "outcome": "You have a plan (backcast) and a risk register (premortem). Much more robust than either alone."
+        }
+      ],
+
+      "scripts_templates": {
+        "decision_journal_template_duke": {
+          "title": "Annie Duke Decision Journal",
+          "pre_decision_entry": {
+            "date": "",
+            "decision": "What decision am I making?",
+            "state_of_mind": "Am I tired? Emotional? Rushed? (note any factors affecting judgment)",
+            "options": "What are all my options? (list at least 3)",
+            "for_each_option": {
+              "possible_outcomes": "List outcomes and assign probabilities (must sum to ~100%)",
+              "expected_value": "What's the weighted value of these outcomes?",
+              "reversibility": "How reversible is this? (1-10 scale)"
+            },
+            "chosen_option": "Which option and why?",
+            "confidence": "How confident am I? (percentage)",
+            "what_would_change_mind": "What information would make me change this decision?",
+            "potential_biases": "What biases might be affecting me? (confirmation, sunk cost, etc.)"
+          },
+          "post_outcome_review": {
+            "outcome": "What actually happened?",
+            "decision_quality": "Was the decision process good, independent of outcome?",
+            "outcome_quadrant": "Good decision/good outcome, good decision/bad outcome, etc.",
+            "luck_vs_skill": "How much was outcome due to factors I controlled?",
+            "learnings": "What do I update in my mental models?"
+          }
+        },
+        "resulting_check_protocol": {
+          "title": "Anti-Resulting Protocol",
+          "when_evaluating_past_decisions": [
+            "1. What information did I have at the time? (not what I know now)",
+            "2. What was my process? (did I follow good decision hygiene?)",
+            "3. What probability did I assign? (what was reasonable to expect?)",
+            "4. If I followed good process and the probability was reasonable, the decision was good regardless of outcome.",
+            "5. Only update process if process was actually flawed - not just because outcome was bad."
+          ],
+          "red_flags_for_resulting": [
+            "Changing strategy after one bad outcome",
+            "Feeling like you 'should have known'",
+            "Hindsight making the outcome seem obvious",
+            "Others judging your decision by its outcome alone"
+          ]
+        },
+        "kill_criteria_template": {
+          "title": "Kill Criteria Setting",
+          "structure": {
+            "commitment": "What am I committing to?",
+            "success_criteria": "What does success look like?",
+            "time_limit": "By what date will I evaluate?",
+            "money_limit": "What's the maximum I'll spend?",
+            "energy_limit": "What's the maximum effort before reassessing?",
+            "opportunity_cost_trigger": "What alternative opportunity would make me reconsider?",
+            "external_check": "Who will hold me accountable to these criteria?",
+            "review_schedule": "When do I check progress against criteria?"
+          },
+          "important_note": "Write these BEFORE starting when you're objective. When you're in the middle, sunk costs will cloud judgment."
+        },
+        "probability_calibration_exercise": {
+          "title": "Probability Vocabulary Calibration",
+          "exercise": "Assign percentages to each phrase. Compare with others. Notice differences.",
+          "phrases": {
+            "almost_certain": "____%",
+            "very_likely": "____%",
+            "likely": "____%",
+            "probably": "____%",
+            "possible": "____%",
+            "unlikely": "____%",
+            "very_unlikely": "____%",
+            "almost_impossible": "____%"
+          },
+          "typical_ranges": {
+            "almost_certain": "90-99%",
+            "very_likely": "80-90%",
+            "likely": "65-80%",
+            "probably": "55-70%",
+            "possible": "25-50%",
+            "unlikely": "15-30%",
+            "very_unlikely": "5-15%",
+            "almost_impossible": "1-5%"
+          },
+          "lesson": "People have wildly different definitions. Use numbers instead."
+        },
+        "decision_bet_worksheet": {
+          "title": "Decision Bet Worksheet",
+          "template": "DECISION: ___\n\nOPTIONS:\nA. ___\nB. ___\nC. ___\n\nFOR EACH OPTION:\n\nProbability of success: ___%\nIf it works, upside: ___\n\nProbability of failure: ___%\nIf it fails, downside: ___\n\nExpected value: (Success% x Upside) - (Failure% x Downside) = ___\n\nBASE RATE CHECK:\nHow often does this work for people in general? ___%\nWhy do I think I'm different? ___\n\nBEST BET: Option ___ with ___% confidence"
+        },
+        "decision_quality_review": {
+          "title": "Decision Quality Review",
+          "template": "DECISION MADE: ___\n\nOUTCOME: ___\n\nQUALITY OF DECISION PROCESS (separate from outcome):\n\n1. Did I gather enough information? [ ]\n2. Did I consider alternatives? [ ]\n3. Did I check for biases? [ ]\n4. Did I think probabilistically? [ ]\n5. Did I have clear criteria? [ ]\n6. Did I rush or was I thoughtful? [ ]\n7. Did I consult people who disagree? [ ]\n\nGIVEN WHAT I KNEW THEN:\nWas this a good decision? ___\nWould I make it again? ___\n\nWHAT TO IMPROVE IN PROCESS:\n___"
+        }
+      },
+
+      "resources": {
+        "essential_reading": [
+          {"title": "Thinking in Bets", "author": "Annie Duke", "note": "Core framework for treating decisions as bets"},
+          {"title": "How to Decide", "author": "Annie Duke", "note": "Practical workbook for decision-making tools"},
+          {"title": "Quit", "author": "Annie Duke", "note": "The overlooked skill of knowing when to stop"}
+        ],
+        "talks_and_interviews": [
+          {"title": "Making Smart Decisions in a World of Uncertainty", "platform": "TEDx"},
+          {"title": "Annie Duke on The Knowledge Project", "platform": "Podcast", "note": "Deep dive on resulting and decision process"},
+          {"title": "Annie Duke on EconTalk", "platform": "Podcast"}
+        ],
+        "tools_and_exercises": [
+          {"name": "Decision Journal App", "description": "Track decisions using Annie Duke's framework"},
+          {"name": "Calibration Training", "description": "Practice assigning and testing probabilities"},
+          {"name": "Pre-commitment devices", "description": "Tools for setting kill criteria (like Beeminder)"}
+        ],
+        "related_thinkers": [
+          {"name": "Daniel Kahneman", "connection": "Behavioral economics foundation for understanding bias"},
+          {"name": "Philip Tetlock", "connection": "Superforecasting and calibration research"},
+          {"name": "Shane Parrish", "connection": "Mental models and decision frameworks"},
+          {"name": "Charlie Munger", "module": "money_masters.json", "connection": "Original 'psychology of human misjudgment'"}
+        ]
+      }
+    }
+  ],
+
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "name": "Bias Spotting Journal",
+        "duration": "1 week",
+        "description": "Each day, identify one cognitive bias in your own thinking or decisions",
+        "instructions": [
+          "Carry a small notebook or use phone notes",
+          "When you notice a thought or decision, pause and ask: 'What bias might be operating here?'",
+          "Write down: situation, the bias, and what the unbiased perspective might be",
+          "Start with easy ones: confirmation bias, sunk cost, availability"
+        ],
+        "success_criteria": "Identify at least 7 biases over the week with specific examples"
+      },
+      {
+        "name": "First Mental Model Deep Dive",
+        "duration": "1 week",
+        "description": "Pick ONE mental model and apply it to everything for a week",
+        "instructions": [
+          "Choose from: Inversion, First Principles, or Second-Order Thinking",
+          "Each morning, set intention to notice opportunities to apply it",
+          "Each evening, write one example of how you used (or could have used) the model",
+          "End of week: Write a summary of what you learned about this model"
+        ],
+        "success_criteria": "7 genuine applications documented with insights"
+      },
+      {
+        "name": "Probability Practice",
+        "duration": "2 weeks",
+        "description": "Replace vague words with probability percentages",
+        "instructions": [
+          "Notice when you or others say 'probably,' 'likely,' 'might,' etc.",
+          "Convert to percentages: 'probably' = what specific %?",
+          "Write down 10 predictions with probabilities",
+          "At the end, check how calibrated you were"
+        ],
+        "success_criteria": "10 predictions with probabilities tracked and reviewed"
+      },
+      {
+        "name": "System 1 vs System 2 Awareness",
+        "duration": "1 week",
+        "description": "Practice noticing which thinking system is active",
+        "instructions": [
+          "Set 3 random reminders per day",
+          "When reminder goes off, note what you were thinking/deciding",
+          "Label it: System 1 (fast, automatic) or System 2 (slow, deliberate)",
+          "For System 1 decisions, ask: Should I engage System 2?"
+        ],
+        "success_criteria": "21 entries categorized, 3+ instances where you deliberately engaged System 2"
+      },
+      {
+        "name": "Five Whys Practice",
+        "duration": "1 week",
+        "description": "Use the Five Whys technique on 3 different problems",
+        "instructions": [
+          "Pick a problem you're facing or a decision you need to make",
+          "Ask 'Why?' five times to get to the root cause",
+          "Document each level of 'why' and your answer",
+          "Identify the root cause and potential solutions"
+        ],
+        "success_criteria": "3 problems analyzed with five levels of why, root causes identified"
+      }
+    ],
+    "intermediate": [
+      {
+        "name": "Decision Journal Implementation",
+        "duration": "30 days",
+        "description": "Start a proper decision journal and use it consistently",
+        "instructions": [
+          "Use the provided template",
+          "Log every significant decision (at least 20 over the month)",
+          "Include: situation, options, reasoning, confidence, expected outcome",
+          "At month end, review: What patterns do you see in your decision-making?"
+        ],
+        "success_criteria": "20 decision entries with full details, plus pattern analysis"
+      },
+      {
+        "name": "Premortem Practice",
+        "duration": "3 decisions",
+        "description": "Run premortems on your next three significant decisions",
+        "instructions": [
+          "Before finalizing each decision, run Kahneman's premortem",
+          "Imagine it's 1 year later and the decision was a disaster",
+          "Write 5-10 reasons why it failed",
+          "Adjust your plan based on the most likely/severe failure modes"
+        ],
+        "success_criteria": "3 documented premortems with plan adjustments"
+      },
+      {
+        "name": "Multi-Model Analysis",
+        "duration": "2 weeks",
+        "description": "Analyze problems through multiple mental model lenses",
+        "instructions": [
+          "Identify 3 current challenges or decisions in your life",
+          "For each, apply at least 5 different mental models",
+          "Document what each model reveals that others miss",
+          "Synthesize: What's your integrated view?"
+        ],
+        "success_criteria": "3 challenges analyzed with 5+ models each, documented insights"
+      },
+      {
+        "name": "Confidence Calibration Training",
+        "duration": "4 weeks",
+        "description": "Track predictions to calibrate your confidence",
+        "instructions": [
+          "Make 50 predictions over 4 weeks with confidence levels (50-99%)",
+          "Predictions should resolve within the 4 weeks",
+          "Track: prediction, confidence %, actual outcome",
+          "Analyze: For 70% confidence predictions, were you right ~70% of the time?"
+        ],
+        "success_criteria": "50 predictions logged, calibration analysis completed"
+      },
+      {
+        "name": "Reference Class Forecasting Project",
+        "duration": "2 weeks",
+        "description": "Use reference class forecasting for a personal project estimate",
+        "instructions": [
+          "Choose a project you're planning (home improvement, learning goal, etc.)",
+          "Research: How long/how much did similar projects take for others?",
+          "Find at least 5 data points from outside sources",
+          "Compare reference class estimate to your inside view estimate",
+          "Track actual outcome to compare"
+        ],
+        "success_criteria": "Reference class identified, data gathered, estimates compared"
+      },
+      {
+        "name": "Steel Man Exercise",
+        "duration": "2 weeks",
+        "description": "Practice building the strongest version of opposing arguments",
+        "instructions": [
+          "Identify 3 opinions or positions you disagree with",
+          "For each, write the strongest possible version of that argument",
+          "Include evidence that supports it and explain why reasonable people believe it",
+          "Note if your view shifted at all after this exercise"
+        ],
+        "success_criteria": "3 steel man arguments written with genuine effort"
+      }
+    ],
+    "advanced": [
+      {
+        "name": "Teach Mental Models",
+        "duration": "1 month",
+        "description": "Solidify understanding by teaching others",
+        "instructions": [
+          "Identify 3 people who would benefit from mental models",
+          "Teach each person one mental model (different models for each)",
+          "Create simple explanations they can actually use",
+          "Follow up to see if they applied it"
+        ],
+        "success_criteria": "3 people taught, each applying the model at least once"
+      },
+      {
+        "name": "Decision Process Design",
+        "duration": "1 month",
+        "description": "Design a custom decision process for a recurring decision type",
+        "instructions": [
+          "Identify a decision you make repeatedly (hiring, investments, etc.)",
+          "Design a structured process incorporating: checklists, biases to watch, information to gather",
+          "Document the process formally",
+          "Use it for 5 instances of the decision",
+          "Iterate based on results"
+        ],
+        "success_criteria": "Formal process documented, used 5 times, one iteration completed"
+      },
+      {
+        "name": "Facilitated Premortem",
+        "duration": "1 instance",
+        "description": "Lead a premortem session for a team or group",
+        "instructions": [
+          "Find a decision context where you can facilitate (work, community, etc.)",
+          "Plan the session using Kahneman's protocol",
+          "Facilitate: frame the decision, time-travel, individual writing, sharing, synthesis",
+          "Document learnings about facilitation"
+        ],
+        "success_criteria": "Successfully facilitated session with documented outcomes and learnings"
+      },
+      {
+        "name": "Year of Decisions Retrospective",
+        "duration": "1 day intensive",
+        "description": "Review all significant decisions from past year",
+        "instructions": [
+          "List all significant decisions from the past 12 months",
+          "Categorize each into Annie Duke's four quadrants",
+          "Identify patterns: Where are you strong? Weak?",
+          "Update your decision-making approach based on patterns"
+        ],
+        "success_criteria": "Comprehensive review with pattern identification and updated approach"
+      },
+      {
+        "name": "Build a Truth-Seeking Group",
+        "duration": "3 months",
+        "description": "Create a group with explicit truth-seeking norms",
+        "instructions": [
+          "Recruit 3-5 people committed to improving thinking",
+          "Establish explicit norms: challenge ideas, seek disconfirming evidence, no ego protection",
+          "Meet regularly (bi-weekly) to review decisions and thinking",
+          "Rotate who presents a decision for group analysis"
+        ],
+        "success_criteria": "Group established, 6 meetings held, improved decisions demonstrated"
+      }
+    ]
+  },
+
+  "daily_insights": [
+    {
+      "id": "insight_1",
+      "text": "The map is not the territory. Your mental model of reality is not reality itself. Every model has limitations - know them.",
+      "application": "Before relying heavily on any model, framework, or theory, ask: 'What does this miss? Where might it be wrong?'"
+    },
+    {
+      "id": "insight_2",
+      "text": "You can be right for the wrong reasons and wrong for the right reasons. Process matters more than outcome in the long run.",
+      "application": "Judge your decisions by the quality of your reasoning at the time, not by whether you got lucky or unlucky."
+    },
+    {
+      "id": "insight_3",
+      "text": "Confidence is not evidence. Feeling certain doesn't make you correct - it might mean you haven't considered alternatives.",
+      "application": "When you feel absolutely certain about something, that's exactly when to ask: 'What if I'm wrong?'"
+    },
+    {
+      "id": "insight_4",
+      "text": "The first solution you think of is usually the one that comes to mind most easily, not necessarily the best one.",
+      "application": "Before committing to the first idea, force yourself to generate at least two more alternatives."
+    },
+    {
+      "id": "insight_5",
+      "text": "Inversion: Instead of asking how to achieve success, ask what would guarantee failure. Then don't do those things.",
+      "application": "For your current goal, list 5 things that would definitely cause failure. Are you doing any of them?"
+    },
+    {
+      "id": "insight_6",
+      "text": "Sunk costs are sunk. The money, time, or effort already spent should not influence future decisions - only future value matters.",
+      "application": "Ask: 'If I were starting fresh today with no history, would I make this same choice?'"
+    },
+    {
+      "id": "insight_7",
+      "text": "We consistently overweight vivid, recent, and emotional information while underweighting statistical base rates.",
+      "application": "Before deciding based on an example that comes to mind, ask: 'What's actually typical? What does the data say?'"
+    },
+    {
+      "id": "insight_8",
+      "text": "Your brain is a prediction machine that runs on incomplete information. Acknowledging uncertainty is not weakness - it's accuracy.",
+      "application": "Replace 'I think X will happen' with 'I think there's about Y% chance X will happen.'"
+    },
+    {
+      "id": "insight_9",
+      "text": "The opposite of a good idea can also be a good idea. Reality is complex enough to support multiple truths.",
+      "application": "When someone disagrees with you, genuinely consider: 'What would have to be true for them to be right?'"
+    },
+    {
+      "id": "insight_10",
+      "text": "First-order effects are obvious; second-order effects are where the interesting things happen. Always ask 'and then what?'",
+      "application": "For any change you're considering, trace the chain: if X then Y, if Y then Z, if Z then..."
+    },
+    {
+      "id": "insight_11",
+      "text": "The premortem: Imagine your plan has already failed. Now explain why. This surfaces risks that optimism obscures.",
+      "application": "Before any important decision, spend 10 minutes assuming it failed and listing all the reasons."
+    },
+    {
+      "id": "insight_12",
+      "text": "Incentives drive behavior. Before trusting advice, understand what the advisor gains from your following it.",
+      "application": "Ask: 'What does this person get if I follow their advice? How does that shape what they recommend?'"
+    },
+    {
+      "id": "insight_13",
+      "text": "Circle of competence: Knowing what you don't know is more valuable than knowing what you know.",
+      "application": "For major decisions, honestly assess: 'Is this inside my circle of competence or am I pretending it is?'"
+    },
+    {
+      "id": "insight_14",
+      "text": "The planning fallacy is universal: we systematically underestimate time, costs, and risks. Adjust accordingly.",
+      "application": "Whatever you estimate, look at the base rate for similar projects and adjust toward it."
+    },
+    {
+      "id": "insight_15",
+      "text": "Loss aversion: We feel losses about twice as intensely as equivalent gains. This biases us toward inaction and status quo.",
+      "application": "When evaluating a trade-off, ask: 'Am I avoiding this because the downside is truly bad, or because I'm overweighting the loss?'"
+    },
+    {
+      "id": "insight_16",
+      "text": "Hindsight is 20/20, but that's an illusion. The past always looks more predictable than it was.",
+      "application": "Keep a decision journal recording your reasoning BEFORE outcomes are known. Review to see reality."
+    },
+    {
+      "id": "insight_17",
+      "text": "Falsification: One disconfirming fact is worth a thousand confirming ones. Seek to disprove your beliefs, not prove them.",
+      "application": "For any strong belief, actively search for evidence against it. 'What would prove me wrong?'"
+    },
+    {
+      "id": "insight_18",
+      "text": "Mental models from different disciplines illuminate different aspects of reality. Build a diverse latticework.",
+      "application": "For any complex problem, apply models from at least three different fields (physics, biology, psychology, economics, etc.)."
+    }
+  ],
+
+  "skill_challenges": [
+    {
+      "id": "challenge_1",
+      "name": "The Bias Buster",
+      "difficulty": "Beginner",
+      "description": "Identify and document 10 distinct cognitive biases in your own thinking over 2 weeks",
+      "instructions": [
+        "Create a log with columns: Date, Situation, Bias Identified, What I Initially Thought, Unbiased Perspective",
+        "Each entry must be a real situation from your life",
+        "Must include at least 5 different types of biases",
+        "Write a short reflection on which biases affect you most"
+      ],
+      "success_criteria": "10 documented biases with specific examples and final reflection",
+      "time_limit": "2 weeks"
+    },
+    {
+      "id": "challenge_2",
+      "name": "Probability Calibrator",
+      "difficulty": "Beginner",
+      "description": "Make 20 predictions with probability estimates and track your calibration",
+      "instructions": [
+        "Make predictions about things that will resolve within 2 weeks",
+        "Assign specific probability to each (60%, 75%, 90%, etc.)",
+        "Record before the outcome is known",
+        "After resolution, calculate: For your 80% confidence predictions, were you right about 80% of the time?"
+      ],
+      "success_criteria": "20 predictions tracked with calibration analysis",
+      "time_limit": "2 weeks"
+    },
+    {
+      "id": "challenge_3",
+      "name": "Decision Journal Initiate",
+      "difficulty": "Beginner",
+      "description": "Start a decision journal and maintain it for 30 days",
+      "instructions": [
+        "Use the provided template",
+        "Log at least 15 decisions over the month",
+        "Include: situation, options, reasoning, confidence, expected outcome",
+        "At month end: Review and write pattern analysis"
+      ],
+      "success_criteria": "15 decision entries plus pattern analysis document",
+      "time_limit": "30 days"
+    },
+    {
+      "id": "challenge_4",
+      "name": "Mental Model Sprint",
+      "difficulty": "Intermediate",
+      "description": "Learn and apply 10 new mental models in 30 days",
+      "instructions": [
+        "Select 10 mental models from the module list you don't currently use",
+        "For each: Read about it, find 2 real-world examples, apply it to a current situation",
+        "Document each application",
+        "At end: Which 3 models were most valuable? Why?"
+      ],
+      "success_criteria": "10 models documented with applications, top 3 analysis",
+      "time_limit": "30 days"
+    },
+    {
+      "id": "challenge_5",
+      "name": "The Inversion Master",
+      "difficulty": "Intermediate",
+      "description": "Apply inversion thinking to 5 significant goals or problems",
+      "instructions": [
+        "Identify 5 important goals or problems in your life",
+        "For each: List 10 ways to guarantee failure",
+        "Convert each failure mode into an avoidance strategy",
+        "Implement at least one avoidance strategy for each goal"
+      ],
+      "success_criteria": "5 inversions documented with 10 failure modes each, 5 implementations",
+      "time_limit": "3 weeks"
+    },
+    {
+      "id": "challenge_6",
+      "name": "Premortem Champion",
+      "difficulty": "Intermediate",
+      "description": "Run premortems on 5 significant decisions or projects",
+      "instructions": [
+        "Identify 5 decisions or projects currently in progress",
+        "Run full Kahneman premortem on each",
+        "Imagine failure, list causes, identify mitigations",
+        "Implement at least one mitigation per project"
+      ],
+      "success_criteria": "5 documented premortems with mitigations implemented",
+      "time_limit": "4 weeks"
+    },
+    {
+      "id": "challenge_7",
+      "name": "Reference Class Researcher",
+      "difficulty": "Intermediate",
+      "description": "Use reference class forecasting for 3 personal estimates",
+      "instructions": [
+        "Identify 3 things you need to estimate (time, cost, likelihood)",
+        "For each: Find the appropriate reference class",
+        "Gather at least 5 data points from outside view",
+        "Compare reference class estimate to your inside view",
+        "Track actual outcomes"
+      ],
+      "success_criteria": "3 reference class analyses with data, comparison to inside view",
+      "time_limit": "4 weeks"
+    },
+    {
+      "id": "challenge_8",
+      "name": "Second-Order Thinker",
+      "difficulty": "Intermediate",
+      "description": "Map second and third-order effects for 5 decisions",
+      "instructions": [
+        "Identify 5 decisions (past or upcoming)",
+        "For each: Map first-order effects (obvious consequences)",
+        "Then: Map second-order effects (consequences of consequences)",
+        "Then: Map third-order effects where possible",
+        "Identify at least one non-obvious insight per decision"
+      ],
+      "success_criteria": "5 decision maps with 2-3 levels of effects, insights documented",
+      "time_limit": "3 weeks"
+    },
+    {
+      "id": "challenge_9",
+      "name": "The Resulting Detective",
+      "difficulty": "Intermediate",
+      "description": "Analyze 10 past decisions separating process from outcome",
+      "instructions": [
+        "List 10 significant past decisions with known outcomes",
+        "For each: Document what you knew at the time (not hindsight)",
+        "Categorize into the 4 quadrants: good/bad decision x good/bad outcome",
+        "Identify any cases of 'good decision, bad outcome' or 'bad decision, good outcome'",
+        "Write analysis of what you learned about decision vs outcome quality"
+      ],
+      "success_criteria": "10 decisions analyzed, quadrant categorization, written analysis",
+      "time_limit": "2 weeks"
+    },
+    {
+      "id": "challenge_10",
+      "name": "Kill Criteria Setter",
+      "difficulty": "Intermediate",
+      "description": "Set and commit to kill criteria for 3 ongoing commitments",
+      "instructions": [
+        "Identify 3 ongoing projects, relationships, or investments",
+        "For each: Define specific, measurable kill criteria",
+        "Write them down and share with an accountability partner",
+        "Set calendar reminders for review dates",
+        "If any criteria are met during challenge, follow through on quitting"
+      ],
+      "success_criteria": "3 kill criteria documented, shared, review dates set",
+      "time_limit": "2 weeks to set, ongoing to evaluate"
+    },
+    {
+      "id": "challenge_11",
+      "name": "Steel Man Debater",
+      "difficulty": "Advanced",
+      "description": "Steel man 5 positions you disagree with",
+      "instructions": [
+        "Identify 5 opinions or positions you strongly disagree with",
+        "For each: Write the strongest possible version of that position",
+        "Include evidence that supports it",
+        "Explain why smart, reasonable people might hold it",
+        "Note if your view changed at all after steel manning"
+      ],
+      "success_criteria": "5 steel man arguments written, self-reflection on each",
+      "time_limit": "3 weeks"
+    },
+    {
+      "id": "challenge_12",
+      "name": "First Principles Breaker",
+      "difficulty": "Advanced",
+      "description": "Apply first principles thinking to challenge 5 'best practices'",
+      "instructions": [
+        "Identify 5 'best practices' or conventional wisdom in your field/life",
+        "For each: Break down to fundamental truths",
+        "Question each assumption: Is this actually true? Why do we believe it?",
+        "Rebuild from first principles: What would you do starting from scratch?",
+        "Document where first principles differs from conventional wisdom"
+      ],
+      "success_criteria": "5 best practices challenged, first principles alternatives documented",
+      "time_limit": "4 weeks"
+    },
+    {
+      "id": "challenge_13",
+      "name": "Multi-Model Master",
+      "difficulty": "Advanced",
+      "description": "Analyze 3 complex problems through 8+ mental models each",
+      "instructions": [
+        "Identify 3 complex challenges in your life or work",
+        "For each: Apply at least 8 different mental models",
+        "Document what each model uniquely reveals",
+        "Synthesize: What's your integrated understanding?",
+        "Create an action plan based on multi-model analysis"
+      ],
+      "success_criteria": "3 problems with 8+ model analyses each, synthesis and action plans",
+      "time_limit": "4 weeks"
+    },
+    {
+      "id": "challenge_14",
+      "name": "Decision Process Designer",
+      "difficulty": "Advanced",
+      "description": "Design a repeatable decision process for a recurring decision type",
+      "instructions": [
+        "Identify a decision you make repeatedly (hiring, investing, project selection, etc.)",
+        "Design a structured process with: information gathering checklist, criteria weighting, bias checks",
+        "Document the process formally",
+        "Use the process for at least 5 instances",
+        "Review and iterate based on results"
+      ],
+      "success_criteria": "Formal process documented, used 5 times, one iteration completed",
+      "time_limit": "6 weeks"
+    },
+    {
+      "id": "challenge_15",
+      "name": "Thinking Group Founder",
+      "difficulty": "Advanced",
+      "description": "Create and run a truth-seeking group for 3 months",
+      "instructions": [
+        "Recruit 3-5 people committed to improving thinking",
+        "Establish explicit norms: challenge ideas, seek disconfirming evidence, no ego protection",
+        "Meet at least bi-weekly for 3 months",
+        "Rotate who presents a decision for group analysis",
+        "Document group learnings and improvements"
+      ],
+      "success_criteria": "Group running for 3 months, 6+ meetings, documented improvements",
+      "time_limit": "3 months"
+    },
+    {
+      "id": "challenge_16",
+      "name": "The Metacognition Logger",
+      "difficulty": "Advanced",
+      "description": "Keep a metacognition log - thinking about your thinking - for 30 days",
+      "instructions": [
+        "Daily: Log one instance of noticing your own thinking process",
+        "Document: What was I thinking? What triggered awareness? What bias/heuristic was operating?",
+        "Weekly: Review patterns in your metacognition",
+        "End of month: Write analysis of your thinking patterns"
+      ],
+      "success_criteria": "30 daily entries, 4 weekly reviews, final pattern analysis",
+      "time_limit": "30 days"
+    },
+    {
+      "id": "challenge_17",
+      "name": "Scenario Planner",
+      "difficulty": "Advanced",
+      "description": "Create detailed scenarios for 3 major uncertainties in your life",
+      "instructions": [
+        "Identify 3 major uncertainties (career, economy, technology, etc.)",
+        "For each: Create 3-4 plausible scenarios with different outcomes",
+        "Assign rough probabilities to each scenario",
+        "Identify signals that would indicate which scenario is emerging",
+        "Create contingency plans for each scenario"
+      ],
+      "success_criteria": "3 uncertainties with 3-4 scenarios each, signals, and contingency plans",
+      "time_limit": "4 weeks"
+    }
+  ],
+
+  "cross_module_connections": [
+    {
+      "from": "critical_thinking",
+      "to": "money_masters.json",
+      "connection_type": "foundation",
+      "description": "Critical thinking is foundational to sound financial decisions",
+      "specific_links": [
+        {
+          "this_module": "Prospect Theory",
+          "other_module": "Loss aversion in investing",
+          "application": "Understanding why selling winners too early and holding losers too long is psychologically driven"
+        },
+        {
+          "this_module": "First Principles Thinking",
+          "other_module": "Charlie Munger's worldly wisdom",
+          "application": "Munger's latticework approach is first principles applied to investment analysis"
+        },
+        {
+          "this_module": "Reference Class Forecasting",
+          "other_module": "Business valuation",
+          "application": "Using base rates of business success rather than optimistic projections"
+        }
+      ]
+    },
+    {
+      "from": "critical_thinking",
+      "to": "productivity",
+      "connection_type": "application",
+      "description": "Better thinking leads to better prioritization and execution",
+      "specific_links": [
+        {
+          "this_module": "Opportunity Cost",
+          "other_module": "Time management",
+          "application": "Every yes is a no to something else - applies to time allocation"
+        },
+        {
+          "this_module": "Second-Order Thinking",
+          "other_module": "Goal setting",
+          "application": "Consider consequences of consequences when setting goals"
+        }
+      ]
+    },
+    {
+      "from": "critical_thinking",
+      "to": "relationships",
+      "connection_type": "application",
+      "description": "Understanding biases improves interpersonal interactions",
+      "specific_links": [
+        {
+          "this_module": "Fundamental Attribution Error",
+          "other_module": "Conflict resolution",
+          "application": "Understanding that we over-attribute others' behavior to character rather than situation"
+        },
+        {
+          "this_module": "Steel Manning",
+          "other_module": "Communication",
+          "application": "Building the strongest version of the other person's argument before responding"
+        },
+        {
+          "this_module": "Hanlon's Razor",
+          "other_module": "Relationship trust",
+          "application": "Assuming mistake rather than malice preserves relationships"
+        }
+      ]
+    },
+    {
+      "from": "critical_thinking",
+      "to": "career_development",
+      "connection_type": "application",
+      "description": "Critical thinking skills are high-value career differentiators",
+      "specific_links": [
+        {
+          "this_module": "Circle of Competence",
+          "other_module": "Career positioning",
+          "application": "Build career around genuine strengths, not perceived ones"
+        },
+        {
+          "this_module": "Kill Criteria",
+          "other_module": "Career pivots",
+          "application": "Know when to quit a job or career path"
+        }
+      ]
+    },
+    {
+      "from": "critical_thinking",
+      "to": "sales_masters.json",
+      "connection_type": "application",
+      "description": "Understanding cognitive biases helps both in selling and avoiding being manipulated",
+      "specific_links": [
+        {
+          "this_module": "Anchoring",
+          "other_module": "Pricing and negotiation",
+          "application": "Set anchors deliberately in negotiations"
+        },
+        {
+          "this_module": "Loss Aversion",
+          "other_module": "Sales messaging",
+          "application": "Frame offers in terms of what customers lose by not buying"
+        }
+      ]
+    },
+    {
+      "from": "critical_thinking",
+      "to": "mindset_masters.json",
+      "connection_type": "synergy",
+      "description": "Clear thinking requires emotional regulation; emotional wisdom requires accurate perception",
+      "specific_links": [
+        {
+          "this_module": "The Affect Heuristic",
+          "other_module": "Emotional regulation",
+          "application": "Don't make important decisions in strong emotional states"
+        },
+        {
+          "this_module": "Metacognition",
+          "other_module": "Self-awareness",
+          "application": "Thinking about thinking is a form of mindfulness"
+        }
+      ]
+    }
+  ],
+
+  "metadata": {
+    "created": "2024",
+    "last_updated": "2024",
+    "author": "Self-Mastery OS",
+    "version": "1.0",
+    "sources": [
+      "Thinking, Fast and Slow - Daniel Kahneman",
+      "Noise - Kahneman, Sibony, Sunstein",
+      "Thinking in Bets - Annie Duke",
+      "How to Decide - Annie Duke",
+      "Quit - Annie Duke",
+      "The Great Mental Models - Shane Parrish",
+      "Clear Thinking - Shane Parrish",
+      "Farnam Street blog",
+      "Poor Charlie's Almanack - Charlie Munger (reference only)"
+    ],
+    "notes": [
+      "Charlie Munger content resides in money_masters.json - this module references but does not duplicate",
+      "Mental models list is intentionally extensive for comprehensive coverage",
+      "Daily insights designed for rotation - use one per day for 18 days"
+    ]
+  }
+}

@@ -1,0 +1,443 @@
+{
+  "module": "lifestyle",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You recognize that your environment and habits shape your life",
+      "capabilities": ["Notice how environment affects behavior", "Identify friction in daily routines", "Understand the compound effect of small choices"],
+      "milestone": "Complete a 24-hour audit of how you spend time"
+    },
+    "2": {
+      "name": "Declutterer",
+      "description": "Removing what doesn't serve you",
+      "capabilities": ["Identify possessions that don't add value", "Recognize draining commitments", "Say no to non-essential additions"],
+      "milestone": "Declutter one major area of your life (physical space, digital, commitments)"
+    },
+    "3": {
+      "name": "Routine Builder",
+      "description": "Creating foundational daily routines",
+      "capabilities": ["Design morning routine", "Implement evening shutdown", "Create consistent structure"],
+      "milestone": "Maintain morning and evening routines for 30 days"
+    },
+    "4": {
+      "name": "Environment Designer",
+      "description": "Intentionally designing spaces for desired behaviors",
+      "capabilities": ["Remove friction from good habits", "Add friction to bad habits", "Design workspaces for focus"],
+      "milestone": "Redesign one environment to support a key behavior change"
+    },
+    "5": {
+      "name": "Essentialist",
+      "description": "Systematically eliminating the non-essential",
+      "capabilities": ["Say no by default", "Focus on vital few activities", "Create space for what matters"],
+      "milestone": "Eliminate 50% of low-value commitments"
+    },
+    "6": {
+      "name": "Digital Minimalist",
+      "description": "Mastering your relationship with technology",
+      "capabilities": ["Control notification systems", "Batch and schedule digital activities", "Replace low-quality digital with high-quality analog"],
+      "milestone": "Achieve intentional technology use with clear boundaries"
+    },
+    "7": {
+      "name": "Lifestyle Architect",
+      "description": "Designing life around your values and goals",
+      "capabilities": ["Align spending with values", "Structure time for priorities", "Build supportive relationships into life design"],
+      "milestone": "Create and follow a complete life design document"
+    },
+    "8": {
+      "name": "Freedom Designer",
+      "description": "Creating genuine freedom through intentional design",
+      "capabilities": ["Design location-independent work", "Build passive systems", "Create optionality in all life areas"],
+      "milestone": "Have significant flexibility in when/where/how you work"
+    },
+    "9": {
+      "name": "Life Artist",
+      "description": "Living as a continuous creative project",
+      "capabilities": ["Regularly experiment with lifestyle changes", "Optimize life experiences not just productivity", "Integrate work and life seamlessly"],
+      "milestone": "Life feels like a creative expression rather than a routine"
+    },
+    "10": {
+      "name": "Lifestyle Master",
+      "description": "Complete intentionality in all life design",
+      "capabilities": ["Your life inspires others", "Perfect alignment between values and actions", "Effortless maintenance of designed life"],
+      "milestone": "Others seek your guidance on life design"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "Environment Trigger Audit",
+        "difficulty": 1,
+        "time_minutes": 30,
+        "instructions": "Walk through your home/workspace. For each area, note: What behavior does this trigger? Is that serving me? Identify 3 changes that would make good behaviors easier.",
+        "success_criteria": "Completed audit with 3 actionable environment changes"
+      },
+      {
+        "title": "Digital Detox Day",
+        "difficulty": 1,
+        "time_minutes": 480,
+        "instructions": "Spend one full day without social media. Put phone in drawer except for essential calls. Notice: What urges arise? What do you do instead? How do you feel at end of day?",
+        "success_criteria": "Complete 24 hours without social media with written reflection"
+      },
+      {
+        "title": "Time Allocation Reality Check",
+        "difficulty": 1,
+        "time_minutes": 20,
+        "instructions": "Track yesterday's time in 30-minute blocks. Categorize: Essential, Valuable, Neutral, Wasteful. Calculate percentages. What's one change you could make?",
+        "success_criteria": "Complete time categorization with one specific change identified"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Design Your Ideal Day",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Write out your ideal ordinary day (not vacation). Include: Wake time, routines, work blocks, meals, relationships, recovery, sleep. Now identify the biggest gaps between ideal and current.",
+        "success_criteria": "Written ideal day template with gap analysis"
+      },
+      {
+        "title": "Fear-Setting for Life Change",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Pick one lifestyle change you've been considering but haven't made. Use Tim Ferriss's fear-setting: Define worst case, prevent/repair strategies, and cost of inaction. Make a decision.",
+        "success_criteria": "Complete fear-setting worksheet with committed decision"
+      },
+      {
+        "title": "Environment Design Sprint",
+        "difficulty": 2,
+        "time_minutes": 90,
+        "instructions": "Pick one behavior you want to change. Design your environment to make it automatic: Visual cues, reduced friction for good behavior, increased friction for bad. Implement immediately.",
+        "success_criteria": "One environment fully redesigned for target behavior"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Complete Life Audit",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Rate satisfaction (1-10) in each area: Health, Relationships, Work, Finance, Fun, Environment, Personal Growth. For each low score, identify root cause and one action. Create 90-day improvement plan.",
+        "success_criteria": "Full life audit with 90-day action plan"
+      },
+      {
+        "title": "Commitment Purge",
+        "difficulty": 3,
+        "time_minutes": 120,
+        "instructions": "List every recurring commitment (subscriptions, meetings, obligations, relationships). For each, ask: If I wasn't already doing this, would I start? Eliminate at least 3 that fail the test.",
+        "success_criteria": "3+ commitments eliminated or renegotiated"
+      },
+      {
+        "title": "Life Operating System Design",
+        "difficulty": 3,
+        "time_minutes": 240,
+        "instructions": "Document your complete Life OS: Core values, life goals, annual/quarterly/weekly/daily systems, decision frameworks, review cadences. Create a manual for living your ideal life.",
+        "success_criteria": "Complete written Life Operating System document"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "productivity",
+      "insight": "Environment beats willpower every time - design for productivity rather than relying on discipline",
+      "combined_exercise": "Redesign your workspace to make your most important work frictionless and distractions friction-full."
+    },
+    {
+      "connected_module": "health",
+      "insight": "Lifestyle design determines health outcomes - your environment makes health easy or hard",
+      "combined_exercise": "Stock your kitchen with only foods you want to eat. Remove the decision-making that leads to bad choices."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Your physical environment reflects and reinforces your mental state - clutter outside, clutter inside",
+      "combined_exercise": "Declutter one space completely. Notice how it affects your mental clarity and stress levels."
+    },
+    {
+      "connected_module": "finance",
+      "insight": "Lifestyle inflation is the enemy of freedom - design a life that doesn't require ever-increasing income",
+      "combined_exercise": "Calculate your 'enough' number. Design a lifestyle that's fulfilling at that level, not chasing more."
+    }
+  ],
+  "masters": [
+    {
+      "name": "Tim Ferriss",
+      "expertise": "Lifestyle design, 4-hour philosophy, optimization",
+      "key_principles": [
+        "The goal is not to simply eliminate the bad, but to pursue and experience the best.",
+        "Life doesn't have to be so hard. Most people choose to make it hard.",
+        "What we fear doing most is usually what we most need to do.",
+        "Being busy is a form of laziness—lazy thinking and indiscriminate action.",
+        "Focus on being productive instead of busy.",
+        "People will choose unhappiness over uncertainty."
+      ],
+      "daily_practices": [
+        "Define the worst case—it's usually not that bad",
+        "Design your ideal day, then engineer it",
+        "Eliminate before optimizing"
+      ],
+      "worked_examples": [
+        {
+          "title": "Fear-Setting to Enable Life Change",
+          "scenario": "You want to make a big life change (quit job, move cities, start business) but fear keeps you stuck.",
+          "framework_applied": "Fear-Setting (Premeditatio Malorum)",
+          "step_by_step": [
+            "Define: What's the absolute worst case if you do this?",
+            "Prevent: What could you do to decrease the likelihood of each worst case?",
+            "Repair: If the worst happened, how could you get back to where you are now?",
+            "Benefits: What are the potential positive outcomes?",
+            "Cost of Inaction: What will your life look like in 6 months, 1 year, 3 years if you don't act?",
+            "Comparison: Is the cost of trying less than the cost of not trying?",
+            "The answer is usually: the downside is manageable and the cost of inaction is high"
+          ],
+          "outcome": "Fear becomes actionable by making it specific and planning for it. Most fears shrink when examined closely."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Fear-Setting Worksheet",
+          "context": "Use before any major life decision where fear is holding you back",
+          "template": "WHAT I WANT TO DO BUT FEAR:\n___\n\nDEFINE THE WORST CASE (be specific):\n1. ___\n2. ___\n3. ___\n\nPREVENT - How could I prevent or minimize each?\n1. ___\n2. ___\n3. ___\n\nREPAIR - If worst case happened, how could I fix it?\n1. ___\n2. ___\n3. ___\n\nBENEFITS - What are potential positive outcomes?\n1. ___\n2. ___\n3. ___\n\nCOST OF INACTION:\n6 months from now: ___\n1 year from now: ___\n3 years from now: ___\n\nDECISION: ___",
+          "example_filled": "WHAT I FEAR: Quitting my job to travel for 6 months\n\nWORST CASE:\n1. Run out of money faster than expected\n2. Can't find a job when I return\n3. Miss out on promotion opportunity\n\nPREVENT:\n1. Budget conservatively, have 9 months of expenses saved\n2. Stay connected with network, do some freelance while traveling\n3. I've already been passed over twice - this promotion isn't guaranteed anyway\n\nREPAIR:\n1. I have skills - could freelance or get a job within 2-3 months\n2. The gap year is common now, could frame it as intentional growth\n3. If I'm valuable enough, companies will want me; if not, I should leave anyway\n\nBENEFITS:\n1. See places I've dreamed about my whole life\n2. Clarity on what I actually want\n3. Break from burnout, come back energized\n\nCOST OF INACTION:\n6 months: Still fantasizing about travel while resentful at work\n1 year: More burned out, watching others do what I want to do\n3 years: Full regret, probably more stuck than now\n\nDECISION: Do it. The downside is manageable. The upside is life-changing. The cost of inaction is high."
+        },
+        {
+          "title": "Ideal Day Design Template",
+          "context": "Design your perfect ordinary day as a template for life design",
+          "template": "MY IDEAL ORDINARY DAY:\n(Not a vacation day - a regular day you'd be happy to repeat)\n\nMORNING RITUAL (wake to work):\nWake: ___\nFirst 30 min: ___\nExercise/Movement: ___\nMorning fuel: ___\n\nPRODUCTIVE HOURS:\nDeep work block 1: ___ to ___\nBreak: ___\nDeep work block 2: ___ to ___\n\nMIDDAY:\nLunch: ___\nRecovery: ___\n\nAFTERNOON:\nAdmin/shallow work: ___ to ___\nCreative/learning time: ___\n\nEVENING:\nEnd of work: ___\nRelationships: ___\nPersonal enjoyment: ___\n\nNIGHT:\nWind down: ___\nSleep: ___\n\nNON-NEGOTIABLES FOR THIS DAY:\n1. ___\n2. ___\n3. ___\n\nCURRENT GAPS:\n___\n\nFIRST CHANGE TO MAKE:\n___",
+          "example_filled": "IDEAL DAY:\n\nMORNING:\nWake: 6:00am naturally (no alarm)\nFirst 30 min: Coffee on balcony, journaling\nMovement: 45 min workout or run\nFuel: High-protein breakfast\n\nPRODUCTIVE:\nDeep work 1: 8:00-11:00 (3 hours creative work)\nBreak: Walk, no phone\nDeep work 2: 11:30-1:00 (strategic/planning work)\n\nMIDDAY:\nLunch: Healthy meal, maybe with a friend\nRecovery: 20 min nap or meditation\n\nAFTERNOON:\nAdmin: 2:00-3:30 (emails, calls, shallow work)\nLearning: 4:00-5:00 (reading, course, skill-building)\n\nEVENING:\nEnd work: 5:00 hard stop\nRelationships: Dinner with partner, call family\nEnjoyment: 1 hour hobby (guitar, reading fiction)\n\nNIGHT:\nWind down: 9:00 (no screens, reading)\nSleep: 10:00\n\nNON-NEGOTIABLES:\n1. 3+ hours deep work before any admin\n2. Hard stop at 5pm\n3. No phone first hour, last hour of day\n\nCURRENT GAPS:\n- Wake at 7, rushed morning\n- No protected deep work time\n- Work bleeds into evening\n\nFIRST CHANGE:\nMove wake time to 6:30, protect 8-10am for deep work"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The 4-Hour Workweek", "author": "Tim Ferriss", "key_takeaway": "Escape 9-5, live anywhere, join the new rich through lifestyle design"},
+          {"title": "Tribe of Mentors", "author": "Tim Ferriss", "key_takeaway": "Life advice from 130+ world-class performers"}
+        ],
+        "podcasts": [
+          {"title": "The Tim Ferriss Show", "key_takeaway": "Deep-dive interviews deconstructing world-class performers"}
+        ]
+      }
+    },
+    {
+      "name": "Essentialism (Greg McKeown)",
+      "expertise": "Less but better, disciplined pursuit of less",
+      "key_principles": [
+        "Less but better.",
+        "If it isn't a clear yes, then it's a clear no.",
+        "Essentialism is not about how to get more things done; it's about how to get the right things done.",
+        "The pursuit of success can be a catalyst for failure.",
+        "You cannot overestimate the unimportance of practically everything.",
+        "If you don't prioritize your life, someone else will."
+      ],
+      "daily_practices": [
+        "Say no to anything that isn't essential",
+        "Create space to think and reflect",
+        "Do fewer things better"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Essentialist Decision Filter",
+          "scenario": "You're overwhelmed with opportunities and requests, saying yes to everything.",
+          "framework_applied": "90% Rule + Clear Yes or Clear No",
+          "step_by_step": [
+            "For each opportunity, ask: Is this a clear YES?",
+            "If you're not 90%+ enthusiastic, it's a no",
+            "Write down what you'd have to sacrifice to say yes",
+            "Ask: What's the tradeoff? What won't get done?",
+            "Remember: Every yes is a no to something else",
+            "Create a 'Not To-Do List' - things you've committed to NOT doing",
+            "The goal is to do less, better - not more, worse"
+          ],
+          "outcome": "Your time goes to vital few activities instead of trivial many. Quality of life and output dramatically increases."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "The Essential Decision Matrix",
+          "context": "Use to evaluate any opportunity or commitment",
+          "template": "OPPORTUNITY: ___\n\n90% TEST: Am I 90%+ excited about this?\n[ ] Yes → Consider it\n[ ] No → Decline\n\nIF CONSIDERING:\n\nWhat would I have to give up to do this well?\n___\n\nIs this the very best use of my time?\n[ ] Yes [ ] No\n\nIf I didn't already have this commitment, would I take it on?\n[ ] Yes [ ] No\n\nWhat is the opportunity cost? (What vital thing won't get done?)\n___\n\nDECISION: ___\n\nHOW TO SAY NO (if declining):\n'Thank you for thinking of me. This isn't the right fit right now, but I appreciate the opportunity.'",
+          "example_filled": "OPPORTUNITY: Serve on industry advisory board\n\n90% TEST: 70% excited - interesting but not essential\n[x] No → Decline\n\nIF CONSIDERING:\nWould give up: 10 hrs/month of creative work time\nBest use of time: No - my book project is the priority\nWould I take it on: Probably not - it's nice for ego but not essential\nOpportunity cost: Slower progress on book, which is my #1 goal\n\nDECISION: Decline gracefully\n\nSCRIPT: 'I'm honored you thought of me for this. I'm currently focused on a major project that needs my full attention. I'd love to stay connected for future opportunities when my bandwidth allows.'"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Essentialism: The Disciplined Pursuit of Less", "author": "Greg McKeown", "key_takeaway": "Systematically eliminate the non-essential to focus on what matters"},
+          {"title": "Effortless", "author": "Greg McKeown", "key_takeaway": "Make the essential things easier to do"}
+        ],
+        "podcasts": [
+          {"title": "Greg McKeown's Podcast", "key_takeaway": "Ongoing exploration of essentialism in practice"}
+        ]
+      }
+    },
+    {
+      "name": "Marie Kondo",
+      "expertise": "Decluttering, spark joy, intentional living",
+      "key_principles": [
+        "The space in which we live should be for the person we are becoming now.",
+        "Keep only those things that speak to the heart and discard items that no longer spark joy.",
+        "Tidying is a celebration, a grand send-off for those things that served their purpose.",
+        "When you put your house in order, you put your affairs and your past in order too.",
+        "The question of what you want to own is actually the question of how you want to live your life.",
+        "Life truly begins after you have put your house in order."
+      ],
+      "daily_practices": [
+        "Before buying, ask: Does this spark joy?",
+        "Return everything to its home after use",
+        "Regularly purge what no longer serves you"
+      ],
+      "worked_examples": [
+        {
+          "title": "The KonMari Method Applied",
+          "scenario": "Your space is cluttered with years of accumulated stuff, causing background stress.",
+          "framework_applied": "Spark Joy + Category Decluttering",
+          "step_by_step": [
+            "Commit completely: This is a one-time event, not ongoing tidying",
+            "Declutter by category, not location: All clothes together, all books together, etc.",
+            "Order of categories: Clothes → Books → Papers → Miscellaneous → Sentimental",
+            "For each item, hold it and ask: Does this spark joy?",
+            "If no joy, thank it and let it go",
+            "Designate a home for everything that stays",
+            "The result: You're surrounded only by things you love"
+          ],
+          "outcome": "Your space transforms from cluttered to curated. You feel lighter, clearer, and the environment supports who you want to become."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Spark Joy Decision Framework",
+          "context": "Use for every possession and potential purchase",
+          "template": "FOR EXISTING ITEMS:\n1. Pick up the item\n2. Ask: Does this spark joy?\n3. If YES: Keep it, designate a home for it\n4. If NO: Thank it for its service, let it go\n\nFOR PURCHASES:\n1. Before buying, ask: Does this spark joy?\n2. Do I already own something that serves this purpose?\n3. Where will this live in my space?\n4. Am I buying this for who I am, or who I want to be?\n\nCATEGORY CHECKLIST:\n[ ] Clothes - Keep only what makes you feel confident\n[ ] Books - Keep only unread essentials and true favorites\n[ ] Papers - Digitize or discard almost everything\n[ ] Miscellaneous - Be ruthless; most aren't essential\n[ ] Sentimental - Save for last; keep only what truly matters",
+          "example_filled": "ITEM: Conference t-shirts (12 of them)\n\nSpark joy? No - I never wear them, they sit in a drawer\nWhy have I kept them? Guilt, memories of events\nThank them: 'Thank you for reminding me of those experiences'\nDecision: Keep 2 meaningful ones, donate the rest\n\nResult: Drawer now has space for clothes I actually wear"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Life-Changing Magic of Tidying Up", "author": "Marie Kondo", "key_takeaway": "The Japanese art of decluttering and organizing"}
+        ],
+        "podcasts": [
+          {"title": "Tidying Up with Marie Kondo (Netflix)", "key_takeaway": "Visual demonstration of the KonMari method"}
+        ]
+      }
+    },
+    {
+      "name": "James Clear (on environment)",
+      "expertise": "Environment design, behavior architecture",
+      "key_principles": [
+        "Environment is the invisible hand that shapes behavior.",
+        "Make the cues of good habits obvious in your environment.",
+        "Reduce the friction associated with good behaviors.",
+        "Increase the friction associated with bad behaviors.",
+        "People often choose products not because of what they are, but because of where they are.",
+        "Redesign your environment rather than relying on willpower."
+      ],
+      "daily_practices": [
+        "Design your environment for success",
+        "Remove friction from good habits",
+        "Add friction to bad habits"
+      ],
+      "worked_examples": [
+        {
+          "title": "Environment Design for Behavior Change",
+          "scenario": "You want to read more but spend evenings scrolling your phone instead.",
+          "framework_applied": "Friction Manipulation + Cue Design",
+          "step_by_step": [
+            "Identify the bad behavior: Phone scrolling in the evening",
+            "Add friction: Put phone in a different room after 7pm, delete apps",
+            "Identify the good behavior: Reading",
+            "Remove friction: Put book on couch where you sit, have good lighting ready",
+            "Add cue: Place book where you'd normally reach for phone",
+            "Prime the environment: Each night, set up for the next day",
+            "The behavior shift happens because you've made the right choice the easy choice"
+          ],
+          "outcome": "Reading becomes the default because it's what's available. Phone scrolling requires effort. Behavior changes without willpower."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Environment Design Audit",
+          "context": "Systematically design your space for desired behaviors",
+          "template": "BEHAVIOR I WANT: ___\n\nCURRENT ENVIRONMENT:\n- What cues trigger the opposite behavior?\n- What friction prevents the desired behavior?\n- What's the default option in my space?\n\nENVIRONMENT REDESIGN:\n\nMAKE IT OBVIOUS:\n- How can I add cues for the desired behavior?\n- Where can I place reminders?\n\nMAKE IT EASY:\n- How can I reduce friction to 0-1 steps?\n- Can I prepare in advance?\n\nFRICTION FOR BAD BEHAVIOR:\n- How can I add steps to the unwanted behavior?\n- Can I remove cues entirely?\n\nSPECIFIC CHANGES:\n1. ___\n2. ___\n3. ___",
+          "example_filled": "BEHAVIOR I WANT: Work out every morning\n\nCURRENT ENVIRONMENT:\n- Cues for opposite: Comfortable bed, no workout clothes visible\n- Friction: Workout clothes in closet, have to find equipment\n- Default: Hit snooze, stay in bed\n\nENVIRONMENT REDESIGN:\n\nMAKE IT OBVIOUS:\n- Lay workout clothes next to bed night before\n- Put gym bag by door\n- Set multiple alarms\n\nMAKE IT EASY:\n- Sleep in workout clothes\n- Have water bottle filled\n- Equipment laid out\n\nFRICTION FOR BAD:\n- Alarm across the room\n- No phone within reach at night\n\nSPECIFIC CHANGES:\n1. Lay out workout clothes before bed (do tonight)\n2. Move phone charger to desk across room\n3. Put resistance bands on doorknob as visual cue"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Atomic Habits", "author": "James Clear", "key_takeaway": "The chapter on environment design is particularly powerful for lifestyle change"}
+        ],
+        "podcasts": [
+          {"title": "James Clear on Tim Ferriss", "key_takeaway": "Deep dive on environment design and behavior change"}
+        ]
+      }
+    },
+    {
+      "name": "Cal Newport (on digital life)",
+      "expertise": "Digital minimalism, intentional tech use",
+      "key_principles": [
+        "Digital minimalism: A philosophy of technology use based on understanding the value of each tool.",
+        "The key is to see solitude as a positive state—not loneliness but a gift.",
+        "The cost of a thing is the amount of life you exchange for it.",
+        "Clutter is the enemy of clarity.",
+        "High-quality leisure beats digital distraction every time.",
+        "Reclaim your attention as your most valuable resource."
+      ],
+      "daily_practices": [
+        "No phone for first and last hour of day",
+        "Schedule social media, don't react to it",
+        "Replace low-quality digital with high-quality analog"
+      ],
+      "worked_examples": [
+        {
+          "title": "Digital Declutter Sprint",
+          "scenario": "You realize you spend 4+ hours daily on your phone, mostly on low-value activities.",
+          "framework_applied": "30-Day Digital Declutter",
+          "step_by_step": [
+            "Commit: 30 days without optional technology (social media, news, streaming)",
+            "Define optional: What's genuinely required for work/life? Keep only that.",
+            "Rediscover analog: List 20 high-quality leisure activities (reading, hobbies, in-person time)",
+            "During 30 days: When urge to check phone arises, do analog activity instead",
+            "Week 1-2: Uncomfortable, lots of urges, lots of time",
+            "Week 3-4: New habits form, appreciate analog pleasures",
+            "Day 31: Reintroduce technology consciously, one by one, with clear rules"
+          ],
+          "outcome": "You realize most digital activity added nothing. You return only to tools that genuinely serve your values."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Technology Rules Framework",
+          "context": "Set intentional rules for each technology in your life",
+          "template": "FOR EACH TECHNOLOGY, ANSWER:\n\nTOOL: ___\n\n1. Does this tool genuinely support something I deeply value?\nValue it supports: ___\n\n2. Is this the best way to support that value?\n[ ] Yes - keep with rules\n[ ] No - eliminate or replace\n\n3. What specific rules will govern my use?\n- When: ___\n- Where: ___\n- How long: ___\n- What for: ___\n\n4. What will I do instead when I get the urge?\n___\n\nEVALUATE MONTHLY: Is this serving me or am I serving it?",
+          "example_filled": "TOOL: Twitter/X\n\n1. Does it support something I value? Partially - staying informed in my industry\nValue: Professional learning and connection\n\n2. Is it the best way? No - most of my time is scrolling, not learning\nDecision: Keep with strict rules\n\n3. Rules:\n- When: Only during lunch break (12-12:30pm)\n- Where: Only on desktop, not phone\n- How long: 30 minutes maximum, timer set\n- What for: Only following 50 high-value accounts\n\n4. When I get the urge (outside lunch): Open my Kindle app instead\n\nMONTHLY CHECK: Delete if I'm still scrolling mindlessly even with rules"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Digital Minimalism", "author": "Cal Newport", "key_takeaway": "Choosing a focused life in a noisy world"},
+          {"title": "Deep Work", "author": "Cal Newport", "key_takeaway": "The relationship between digital distraction and focus"}
+        ],
+        "podcasts": [
+          {"title": "Deep Questions Podcast", "key_takeaway": "Weekly advice on digital minimalism and the deep life"}
+        ]
+      }
+    }
+  ],
+  "daily_insights": [
+    "Your environment shapes your behavior more than your willpower.",
+    "Saying no to good things lets you say yes to great things.",
+    "Every item you own owns a piece of your attention.",
+    "Design your space for who you want to become, not who you were.",
+    "The phone is the greatest distraction device ever invented. Control it.",
+    "Friction is the difference between what you should do and what you actually do.",
+    "Clutter is postponed decisions. Make them now.",
+    "Your morning routine is your day in miniature. Design it with intention.",
+    "The cost of everything is the life you exchange for it.",
+    "Less options, better outcomes. Constrain to liberate."
+  ],
+  "skill_challenges": [
+    "Remove one item from your environment that tempts bad behavior.",
+    "Make one good habit more obvious (put workout clothes by bed, etc.).",
+    "Go 24 hours without social media. Notice the urges.",
+    "Declutter one drawer, shelf, or area completely.",
+    "Design your ideal morning routine on paper. Try it tomorrow.",
+    "Identify your biggest distraction. Add friction to access it.",
+    "Unsubscribe from 10 emails that don't add value.",
+    "Set up your workspace for deep focus. Remove all distractions.",
+    "Delete one app that wastes your time.",
+    "Audit your last 24 hours. How much was intentional vs reactive?"
+  ]
+}

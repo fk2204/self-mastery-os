@@ -1,0 +1,454 @@
+{
+  "module": "health",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You recognize that health is foundational to everything else",
+      "capabilities": ["Understand basic health principles", "Recognize sleep debt and energy patterns", "Know the cost of neglecting health"],
+      "milestone": "Track sleep for one week and identify patterns"
+    },
+    "2": {
+      "name": "Foundation",
+      "description": "Building basic healthy habits",
+      "capabilities": ["Consistent sleep schedule", "Regular movement", "Basic nutrition awareness"],
+      "milestone": "Maintain 7+ hours sleep for 2 weeks straight"
+    },
+    "3": {
+      "name": "Habit Builder",
+      "description": "Health habits becoming automatic",
+      "capabilities": ["Morning routine with movement", "Meal prep basics", "Stress awareness and management"],
+      "milestone": "Exercise 3x per week for one month"
+    },
+    "4": {
+      "name": "Consistent Practitioner",
+      "description": "Reliable health practices regardless of circumstances",
+      "capabilities": ["Travel doesn't derail health", "Recover quickly from off days", "Energy is generally stable"],
+      "milestone": "Maintain health habits through a stressful period"
+    },
+    "5": {
+      "name": "Optimizer",
+      "description": "Actively optimizing health protocols",
+      "capabilities": ["Track and improve sleep quality", "Periodized exercise approach", "Intentional nutrition for goals"],
+      "milestone": "Implement one advanced health protocol (cold exposure, fasting, etc.)"
+    },
+    "6": {
+      "name": "Peak Performer",
+      "description": "High energy and performance is the norm",
+      "capabilities": ["Consistent high energy levels", "Quick recovery from workouts", "Mental clarity most of the day"],
+      "milestone": "Sustain high performance for 3+ months"
+    },
+    "7": {
+      "name": "Biohacker",
+      "description": "Using data and experimentation to optimize",
+      "capabilities": ["Track key health metrics", "N=1 experiments with protocols", "Understand your unique responses"],
+      "milestone": "Complete a 30-day health experiment with measurable results"
+    },
+    "8": {
+      "name": "Health Athlete",
+      "description": "Training for longevity and performance",
+      "capabilities": ["Cardio, strength, mobility all addressed", "Zone 2 training for metabolic health", "Recovery is as prioritized as training"],
+      "milestone": "Complete a physical challenge that seemed impossible 2 years ago"
+    },
+    "9": {
+      "name": "Longevity Player",
+      "description": "Playing the long game for healthspan",
+      "capabilities": ["Decisions filter through longevity lens", "Proactive health measures", "Health is a competitive advantage"],
+      "milestone": "Biological age tests younger than chronological age"
+    },
+    "10": {
+      "name": "Health Master",
+      "description": "Peak health is effortlessly maintained",
+      "capabilities": ["Body performs optimally", "Others seek your health advice", "Health never limits your potential"],
+      "milestone": "Health is something you no longer think about - it just works"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "Sleep Audit",
+        "difficulty": 1,
+        "time_minutes": 30,
+        "instructions": "Track your sleep for one week: bed time, wake time, quality (1-10), energy next day (1-10). Identify: What affects sleep quality? What's your optimal sleep duration? What's stealing your sleep?",
+        "success_criteria": "7-day sleep log with patterns identified and one change to implement"
+      },
+      {
+        "title": "Morning Sunlight Protocol",
+        "difficulty": 1,
+        "time_minutes": 15,
+        "instructions": "Within 30 minutes of waking, get 10 minutes of natural sunlight (not through windows). Do this for 7 consecutive days. Note your energy and mood.",
+        "success_criteria": "7 consecutive days of morning sunlight with noted effects"
+      },
+      {
+        "title": "Hydration Reset",
+        "difficulty": 1,
+        "time_minutes": 10,
+        "instructions": "For one week, drink a full glass of water immediately upon waking, and track total water intake. Aim for at least 2 liters daily. Notice energy and focus changes.",
+        "success_criteria": "7 days of tracked water intake with energy observations"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Cold Exposure Introduction",
+        "difficulty": 2,
+        "time_minutes": 15,
+        "instructions": "End your regular shower with 30 seconds of cold water. Build to 2 minutes over 2 weeks. Focus on breathing through the discomfort. This builds resilience and improves mood.",
+        "success_criteria": "2 weeks of daily cold exposure with documented progression"
+      },
+      {
+        "title": "Sleep Optimization Sprint",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Implement the sleep optimization protocol: Room at 65-68°F, blackout curtains, no screens 1 hour before bed, no caffeine after 2pm, no alcohol, consistent bed/wake time. Measure impact.",
+        "success_criteria": "Full protocol implemented for 1 week with sleep quality ratings"
+      },
+      {
+        "title": "Zone 2 Cardio Baseline",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Do 30 minutes of Zone 2 cardio (can hold conversation, nose breathing possible). Could be walking, cycling, swimming. Track heart rate if possible. Do 3x this week.",
+        "success_criteria": "3 Zone 2 sessions completed with heart rate data or perceived exertion"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Complete Health Protocol Audit",
+        "difficulty": 3,
+        "time_minutes": 120,
+        "instructions": "Audit all aspects: Sleep (quality, duration, consistency), Nutrition (macros, timing, quality), Exercise (cardio, strength, mobility), Stress (management, recovery), Supplementation. Score each 1-10. Create improvement plan for lowest areas.",
+        "success_criteria": "Full health audit with scores and 90-day improvement plan"
+      },
+      {
+        "title": "Time-Restricted Eating Experiment",
+        "difficulty": 3,
+        "time_minutes": 30,
+        "instructions": "Implement 16:8 intermittent fasting (16 hour fast, 8 hour eating window) for 2 weeks. Track: energy, hunger, focus, sleep quality, any challenges. Evaluate if this protocol works for you.",
+        "success_criteria": "14 days of TRE with documented effects and decision about continuation"
+      },
+      {
+        "title": "Build Your Centenarian Decathlon",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Following Peter Attia's framework: Define 10 physical activities you want to be able to do at age 100 (play with grandkids, carry groceries up stairs, etc.). Work backward to determine what training you need NOW to maintain that capacity.",
+        "success_criteria": "Centenarian decathlon defined with current training program aligned"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "productivity",
+      "insight": "Energy management is more important than time management - you can't focus your way out of exhaustion",
+      "combined_exercise": "Track your energy levels hourly for 3 days. Schedule your most important work for your peak energy windows."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Physical discomfort training (cold, exercise) directly builds mental toughness",
+      "combined_exercise": "Use your cold shower as a Stoic practice - 30 seconds of voluntary discomfort to start each day."
+    },
+    {
+      "connected_module": "lifestyle",
+      "insight": "Your environment determines your health choices - make healthy the default",
+      "combined_exercise": "Stock your kitchen with only foods you want to eat. Remove the decision-making that leads to poor choices."
+    },
+    {
+      "connected_module": "money",
+      "insight": "Health is the ultimate wealth - without it, nothing else matters",
+      "combined_exercise": "Calculate what you spend on health (gym, food quality, supplements) as an investment, not an expense."
+    }
+  ],
+  "masters": [
+    {
+      "name": "Andrew Huberman",
+      "expertise": "Neuroscience, sleep optimization, protocols",
+      "key_principles": [
+        "Get sunlight in your eyes within the first hour of waking. It sets your circadian rhythm.",
+        "Avoid bright lights between 10pm and 4am. It suppresses melatonin and disrupts sleep.",
+        "Non-sleep deep rest (NSDR) is a powerful tool for recovery and focus.",
+        "Cold exposure increases dopamine by 250% for hours. It builds resilience.",
+        "Caffeine should be delayed 90-120 minutes after waking for optimal energy.",
+        "Exercise is the most powerful tool we have for brain health and neuroplasticity."
+      ],
+      "daily_practices": [
+        "Morning sunlight exposure (10-30 min)",
+        "Cold shower or cold exposure",
+        "Delay caffeine 90 min after waking"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Huberman Morning Protocol",
+          "scenario": "You wake up groggy and rely on caffeine to function, but crash by afternoon.",
+          "framework_applied": "Circadian Rhythm Optimization + Adenosine Management",
+          "step_by_step": [
+            "Wake at consistent time: Anchor your circadian rhythm",
+            "First 10 minutes: Get outside, get sunlight in your eyes (not through glass)",
+            "Movement: Light walking or exercise outdoors amplifies the light effect",
+            "Delay caffeine: Wait 90-120 minutes to let adenosine clear naturally",
+            "Cold exposure: End shower with 1-2 minutes cold for dopamine boost",
+            "First caffeine: Now it works better and lasts longer",
+            "Result: Natural energy, no afternoon crash, better sleep that night"
+          ],
+          "outcome": "Sustainable energy throughout the day without the crash. Sleep improves because circadian rhythm is properly set."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Morning Sunlight Protocol Template",
+          "context": "Use within 30-60 minutes of waking to set your circadian rhythm",
+          "template": "IDEAL PROTOCOL:\n- Within 30 min of waking: Get outside\n- Duration: 10 minutes (cloudy) to 5 minutes (sunny)\n- Eyes: Face toward sun direction (don't stare at sun)\n- Glass: Does NOT count - must be direct sunlight\n- Sunglasses: No - light needs to hit eyes\n\nVARIATIONS:\n- If cloudy: Double the time (20 min)\n- If raining: Still beneficial, face window while drinking coffee\n- If very early/dark: Use 10,000 lux light box for 10 min\n\nSTACKING:\n- Combine with morning walk\n- Combine with outdoor coffee\n- Combine with morning journaling outside\n\nTRACKING:\n[ ] Mon [ ] Tue [ ] Wed [ ] Thu [ ] Fri [ ] Sat [ ] Sun\nEnergy rating: ___",
+          "example_filled": "Week 1 Log:\n[x] Mon - 8 min sunny, felt great by 9am\n[x] Tue - 15 min cloudy, noticed less need for coffee\n[x] Wed - 12 min, combined with walk\n[x] Thu - 10 min, cold but worth it\n[x] Fri - Missed (rushed), felt difference all day\n[x] Sat - 20 min, went for walk\n[x] Sun - 15 min on porch with coffee\n\nEnergy: Noticeably better by day 4. Friday showed how much I now rely on this."
+        },
+        {
+          "title": "Sleep Optimization Checklist",
+          "context": "Use to maximize sleep quality",
+          "template": "EVENING (2 hours before bed):\n[ ] Dim lights after sunset\n[ ] No screens 1 hour before bed (or use blue blockers)\n[ ] No caffeine after 2pm\n[ ] No alcohol (or 3+ hours before bed)\n[ ] Room temperature: 65-68°F (18-20°C)\n\nBEDROOM SETUP:\n[ ] Pitch black (blackout curtains)\n[ ] No blue/white light from devices\n[ ] Phone charging outside room (or airplane mode)\n[ ] Cool temperature\n[ ] Clean, organized space\n\nTIMING:\n[ ] Consistent bed time: ___\n[ ] Consistent wake time: ___\n[ ] 7-8 hours sleep opportunity\n\nIF HAVING TROUBLE:\n- NSDR (non-sleep deep rest) protocol on YouTube\n- 20 min magnesium threonate before bed\n- No food 3 hours before bed\n- Write down tomorrow's worries before bed",
+          "example_filled": "My sleep stack:\n- 8pm: Dim lights, orange bulbs in bedroom\n- 9pm: No more screens\n- 9:30pm: Reading or stretching\n- 10pm: In bed\n- Room: 67°F, blackout curtains, phone in living room\n- 6am: Wake same time every day (even weekends)\n\nResult: Sleep quality went from 5 to 8 in 2 weeks"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Huberman Lab Podcast", "author": "Andrew Huberman", "key_takeaway": "Comprehensive science-based protocols for all aspects of health (free resource)"}
+        ],
+        "podcasts": [
+          {"title": "Huberman Lab", "key_takeaway": "Deep-dive episodes on sleep, exercise, dopamine, and every health topic"}
+        ]
+      }
+    },
+    {
+      "name": "Matthew Walker",
+      "expertise": "Sleep science, recovery, performance",
+      "key_principles": [
+        "Sleep is the single most effective thing you can do to reset your brain and body.",
+        "Routinely sleeping less than 6 hours a night weakens your immune system substantially.",
+        "The shorter your sleep, the shorter your life.",
+        "There is no major organ in the body or brain that isn't enhanced by sleep.",
+        "REM sleep is critical for emotional regulation and creativity.",
+        "Alcohol is one of the most powerful suppressors of REM sleep."
+      ],
+      "daily_practices": [
+        "Keep a consistent sleep schedule, even weekends",
+        "Keep bedroom cool (65-68°F / 18-20°C)",
+        "Avoid alcohol and caffeine before bed"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Sleep Debt Recovery Plan",
+          "scenario": "You've been sleeping 5-6 hours for weeks and feel it accumulating.",
+          "framework_applied": "Sleep Pressure + Circadian Rhythm Reset",
+          "step_by_step": [
+            "Acknowledge: You can't fully 'catch up' but can recover substantially",
+            "Weekend extension: Sleep until you wake naturally (no alarm) to assess true need",
+            "Set consistent schedule: Go to bed and wake at same time every day",
+            "Prioritize: Treat 8 hours sleep as non-negotiable for 2 weeks",
+            "Environment: Optimize bedroom (cool, dark, quiet)",
+            "No alcohol: Even 'moderate' drinking destroys REM sleep",
+            "After 2 weeks: Assess energy, mood, cognition - they should all improve"
+          ],
+          "outcome": "After 2 weeks of prioritized sleep, you'll realize how impaired you were. This becomes your new normal."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Sleep Quality Assessment",
+          "context": "Use weekly to track and improve sleep",
+          "template": "WEEK OF: ___\n\nMETRICS:\n- Average bed time: ___\n- Average wake time: ___\n- Average hours: ___\n- Days hitting 7+ hours: ___/7\n\nQUALITY INDICATORS:\n- Fall asleep within 20 min? [ ] Yes [ ] No\n- Wake up feeling refreshed? [ ] Yes [ ] No\n- No waking during night? [ ] Yes [ ] No\n- Dream recall (indicates REM)? [ ] Yes [ ] No\n\nDISRUPTORS THIS WEEK:\n- Alcohol: ___ nights\n- Late caffeine: ___ days\n- Screens in bed: ___ nights\n- Irregular schedule: ___ nights\n\nLAST WEEK'S CHANGE: ___\nRESULT: ___\n\nTHIS WEEK'S FOCUS: ___",
+          "example_filled": "WEEK OF: Jan 27 - Feb 2\n\nMETRICS:\n- Bed: 10:30pm avg\n- Wake: 6:30am avg\n- Hours: 7.5 avg\n- Days 7+ hours: 6/7\n\nQUALITY:\n[x] Fall asleep quickly\n[x] Refreshed mornings\n[ ] Some waking (usually 3am)\n[x] Dream recall 4/7 nights\n\nDISRUPTORS:\n- Alcohol: 2 nights (Friday, Saturday)\n- Late caffeine: 1 day (Wednesday meeting)\n- Screens in bed: 0\n- Irregular schedule: 1 (Friday late)\n\nLAST WEEK'S CHANGE: Removed phone from bedroom\nRESULT: Fell asleep faster, less morning scrolling\n\nTHIS WEEK'S FOCUS: No alcohol to compare REM quality"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Why We Sleep", "author": "Matthew Walker", "key_takeaway": "The comprehensive science of sleep and why you need more of it"}
+        ],
+        "podcasts": [
+          {"title": "Matthew Walker on Huberman Lab", "key_takeaway": "Detailed protocols for optimizing sleep"}
+        ]
+      }
+    },
+    {
+      "name": "Peter Attia",
+      "expertise": "Longevity, metabolic health, performance",
+      "key_principles": [
+        "The four horsemen of chronic disease: heart disease, cancer, neurodegenerative disease, metabolic disease.",
+        "Zone 2 cardio is the foundation of metabolic health and longevity.",
+        "Muscle is the organ of longevity. Preserve and build it.",
+        "Stability and mobility decline with age unless actively maintained.",
+        "What you do in your 40s determines your health in your 80s.",
+        "Emotional health is the fifth horseman. Don't neglect it."
+      ],
+      "daily_practices": [
+        "Zone 2 cardio (3-4 hours per week)",
+        "Strength training to maintain muscle",
+        "Focus on stability and mobility, not just strength"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Centenarian Decathlon",
+          "scenario": "You want to be healthy and functional at 100, not just alive.",
+          "framework_applied": "Backwards Planning from Marginal Decade",
+          "step_by_step": [
+            "Define your 'marginal decade': The last decade of your life (90-100, or 85-95)",
+            "List 10 activities you want to do in that decade: Play with grandkids, carry groceries upstairs, get up from floor, etc.",
+            "Work backward: What physical capacity do those require?",
+            "Account for decline: You'll lose 10-15% per decade. What do you need NOW?",
+            "Example: To carry 20 lbs up stairs at 90, you might need to lift 80 lbs now",
+            "Design training: Create program that builds/maintains required capacity",
+            "The key insight: Start building now because you'll lose capacity over time"
+          ],
+          "outcome": "Training becomes purposeful - you're not just exercising, you're building the capacity to live fully in your final decades."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Centenarian Decathlon Design",
+          "context": "Plan physical capacity for your final decade of life",
+          "template": "MY TARGET 'MARGINAL DECADE': Age ___ to ___\n\n10 ACTIVITIES I WANT TO DO:\n1. ___\n2. ___\n3. ___\n4. ___\n5. ___\n6. ___\n7. ___\n8. ___\n9. ___\n10. ___\n\nPHYSICAL REQUIREMENTS:\n(What capacity does each require?)\n1. ___\n2. ___\n[etc.]\n\nCURRENT CAPACITY vs. REQUIRED:\n(With 10-15% decline per decade factored in)\n\nCARDIO:\n- Required at 90: ___\n- Required now: ___\n- Current: ___\n- Gap: ___\n\nSTRENGTH:\n- Required at 90: ___\n- Required now: ___\n- Current: ___\n- Gap: ___\n\nMOBILITY:\n- Required at 90: ___\n- Required now: ___\n- Current: ___\n- Gap: ___",
+          "example_filled": "TARGET: Age 90-100\n\n10 ACTIVITIES:\n1. Play actively with great-grandchildren\n2. Carry groceries (20 lbs) up a flight of stairs\n3. Get up from floor without assistance\n4. Walk 18 holes of golf\n5. Swim in the ocean\n6. Travel independently (carry luggage)\n7. Maintain my garden\n8. Cook standing for 30 minutes\n9. Hike 3 miles on varied terrain\n10. Dance at family weddings\n\nREQUIREMENTS:\n- Cardiovascular: Maintain Zone 2 for 45+ minutes\n- Lower body: Squat bodyweight, deadlift 1.5x BW\n- Upper body: Carry 40 lbs, push up from floor\n- Mobility: Full range hip hinge, overhead reach\n- Balance: Single leg stand 30 seconds\n\nCURRENT vs REQUIRED (age 45):\nCardio: Need 25 min zone 2 at 90 → Need 45 min now → Currently 30 min → GAP: Build up\nStrength: Need 100 lb deadlift at 90 → Need 200 lb now → Currently 185 → Close, maintain\nMobility: Need floor sit-to-stand → Need full squat now → Currently tight hips → GAP: Priority"
+        },
+        {
+          "title": "Zone 2 Cardio Protocol",
+          "context": "Build metabolic health through proper aerobic training",
+          "template": "WHAT IS ZONE 2:\nIntensity where you can hold a conversation but it's getting difficult.\nTypically: 60-70% of max heart rate\nNose breathing: Possible but challenging\n\nTEST YOUR ZONE 2:\n- Max HR estimate: 220 - age = ___\n- Zone 2 range: 60-70% = ___ to ___\n- Or use talk test: Can speak sentences, not paragraphs\n\nWEEKLY TARGET: 3-4 hours total\nExample: 4 x 45 min sessions\n\nACTIVITIES:\n- Walking (brisk uphill)\n- Cycling (easy pace)\n- Swimming (continuous laps)\n- Rowing (sustainable pace)\n\nPROGRESSION:\nWeek 1: 3 x 30 min\nWeek 2: 3 x 35 min\nWeek 3: 3 x 40 min\nWeek 4: 4 x 40 min\n[Build to 4 x 45-60 min]\n\nKEY: If you can't hold a conversation, you're going too hard.",
+          "example_filled": "MY ZONE 2:\nAge: 40\nMax HR: 180\nZone 2: 108-126 bpm\n\nWEEKLY PLAN:\n- Mon: 45 min cycling (trainer), avg 115 bpm\n- Wed: 45 min brisk walk (hills), avg 118 bpm\n- Sat: 60 min easy hike, avg 110 bpm\n- Sun: 30 min swim, perceived easy effort\n\nTotal: 3 hours\n\nPROGRESS:\nWeek 1: Hard to stay in zone, wanted to push\nWeek 4: Feels natural, pace is faster at same HR\nWeek 8: Noticeable improvement in recovery"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Outlive: The Science and Art of Longevity", "author": "Peter Attia", "key_takeaway": "Comprehensive guide to extending healthspan, not just lifespan"}
+        ],
+        "podcasts": [
+          {"title": "The Drive", "key_takeaway": "Deep dives into longevity, medicine, and performance"}
+        ]
+      }
+    },
+    {
+      "name": "Rhonda Patrick",
+      "expertise": "Nutrition, longevity, micronutrients",
+      "key_principles": [
+        "Time-restricted eating can improve metabolic health significantly.",
+        "Sulforaphane (from broccoli sprouts) is one of the most powerful natural compounds.",
+        "Omega-3 fatty acids are critical for brain health and reducing inflammation.",
+        "Heat shock proteins from sauna use improve cardiovascular and brain health.",
+        "Vitamin D deficiency is widespread and linked to many chronic diseases.",
+        "Exercise creates new brain cells. It's the closest thing to a fountain of youth."
+      ],
+      "daily_practices": [
+        "Eat nutrient-dense whole foods",
+        "Consider time-restricted eating (10-12 hour window)",
+        "Prioritize omega-3s and vitamin D"
+      ],
+      "worked_examples": [
+        {
+          "title": "Implementing Time-Restricted Eating",
+          "scenario": "You eat from 7am to 10pm, snacking throughout. Energy is inconsistent.",
+          "framework_applied": "Circadian Rhythm + Metabolic Health",
+          "step_by_step": [
+            "Current state: 15+ hour eating window, likely metabolic stress",
+            "Goal: 10-12 hour eating window, aligned with circadian rhythm",
+            "Start gradual: Compress by 30 min per week",
+            "Week 1: 8am - 9pm (13 hours)",
+            "Week 2: 8am - 8pm (12 hours)",
+            "Week 3: 9am - 8pm (11 hours)",
+            "Week 4: 9am - 7pm (10 hours)",
+            "Key: Last meal 3 hours before bed for sleep quality",
+            "Note: This isn't about calories - it's about metabolic rest"
+          ],
+          "outcome": "Improved metabolic flexibility, better sleep, more stable energy, potential body composition improvements."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Nutrition Foundation Checklist",
+          "context": "Basic nutrition principles to optimize health",
+          "template": "DAILY PRIORITIES:\n\nPROTEIN:\n[ ] 1g per lb of ideal body weight\n[ ] Protein at every meal\n[ ] Target: ___ grams/day\n\nOMEGA-3s:\n[ ] Fatty fish 2-3x/week (salmon, sardines, mackerel)\n[ ] Or: Quality fish oil supplement (2-3g EPA+DHA)\n\nVEGETABLES:\n[ ] Cruciferous vegetables daily (broccoli, cauliflower, cabbage)\n[ ] Leafy greens daily\n[ ] Variety of colors\n\nMINIMIZE:\n[ ] Ultra-processed foods\n[ ] Refined sugar\n[ ] Industrial seed oils\n\nVITAMIN D:\n[ ] Get blood levels tested (target: 40-60 ng/mL)\n[ ] Supplement if needed (most people do)\n\nFIBER:\n[ ] 30+ grams daily from whole foods\n\nEATING WINDOW:\n[ ] Consistent eating window: ___ to ___\n[ ] No eating 3 hours before bed",
+          "example_filled": "MY DAILY TARGETS:\n\nPROTEIN: 160g (I weigh 180, want to be 160)\n- Breakfast: 40g (eggs, Greek yogurt)\n- Lunch: 50g (chicken or fish)\n- Dinner: 50g (meat or fish)\n- Snack: 20g (protein shake or cottage cheese)\n\nOMEGA-3s:\n- Salmon: Tuesday, Thursday\n- Sardines: Saturday (with eggs)\n- Fish oil: Other days (3g)\n\nVEGETABLES:\n- Broccoli or cauliflower with lunch\n- Large salad with dinner\n- Spinach in morning smoothie\n\nEATING WINDOW: 8am - 6pm (10 hours)\n\nWEEKLY PREP:\n- Sunday: Prep proteins and vegetables for week\n- This makes it automatic"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "FoundMyFitness Website", "author": "Rhonda Patrick", "key_takeaway": "Free, comprehensive articles on nutrition and health optimization"}
+        ],
+        "podcasts": [
+          {"title": "FoundMyFitness Podcast", "key_takeaway": "Deep dives into nutrition science and longevity research"}
+        ]
+      }
+    },
+    {
+      "name": "Wim Hof",
+      "expertise": "Cold exposure, breathing, mental resilience",
+      "key_principles": [
+        "The cold is your warm friend.",
+        "Breathwork can directly influence your autonomic nervous system.",
+        "We can consciously influence our immune response through practice.",
+        "Discomfort is the way. Embrace it.",
+        "The mind is the master. The body will follow.",
+        "Go into the cold. It will show you who you really are."
+      ],
+      "daily_practices": [
+        "End showers with 30-60 seconds of cold",
+        "Practice breathwork (Wim Hof method)",
+        "Embrace discomfort as training"
+      ],
+      "worked_examples": [
+        {
+          "title": "Building a Cold Exposure Practice",
+          "scenario": "You want to try cold exposure but the idea of cold water terrifies you.",
+          "framework_applied": "Gradual Adaptation + Breathwork",
+          "step_by_step": [
+            "Week 1: End regular shower with 15 seconds cold. Just 15. Breathe through it.",
+            "Week 2: 30 seconds cold. Focus on your breath, not the cold.",
+            "Week 3: 45 seconds cold. Notice it's getting easier.",
+            "Week 4: 60 seconds cold. You're now someone who does cold exposure.",
+            "Key technique: Breathe slowly and deeply. Don't gasp or hyperventilate.",
+            "Mental: Tell yourself 'I am in control' during exposure",
+            "After: Notice the 2-3 hour dopamine and energy boost"
+          ],
+          "outcome": "Cold becomes a tool, not a threat. You've built resilience that transfers to other challenges."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Cold Exposure Progression Protocol",
+          "context": "Build cold tolerance gradually and safely",
+          "template": "SAFETY FIRST:\n- Never do cold water near electrical equipment\n- Never hyperventilate then submerge (shallow water blackout risk)\n- Start with shower, progress to bath/ice bath later\n- Stop if you feel numbness, confusion, or extreme discomfort\n\nWEEK 1: 15 seconds cold end to regular shower\n- Breathe deeply, don't panic\n- Focus: Just survive it\n\nWEEK 2: 30 seconds\n- Begin to relax into it\n- Focus: Control your breath\n\nWEEK 3: 45 seconds\n- Notice it's getting easier\n- Focus: Embrace the sensation\n\nWEEK 4: 60 seconds\n- You're now a 'cold person'\n- Focus: Enjoy the afterglow\n\nWEEK 5+: 2 minutes or progress to ice bath\n\nBREATHING PROTOCOL:\n- Before: 3 deep breaths\n- During: Long exhales, controlled\n- After: Normal breathing, notice energy\n\nMINDSET:\n'I am in control. This is my choice. I am getting stronger.'",
+          "example_filled": "MY PROGRESS:\n\nWeek 1: 15 sec - HATED it, gasped, survived\nWeek 2: 30 sec - Still hard but found breath control\nWeek 3: 45 sec - Turned down temp further, feeling powerful\nWeek 4: 60 sec - Actually kind of enjoy it now??\nWeek 6: 2 min - This is just part of my morning now\n\nBENEFITS NOTICED:\n- Alert immediately after (no coffee needed)\n- Better mood all morning\n- Feel mentally tougher in other situations\n- Cold weather doesn't bother me as much"
+        },
+        {
+          "title": "Wim Hof Breathing Method",
+          "context": "Practice breathwork for energy, focus, and resilience",
+          "template": "PROTOCOL (do on empty stomach):\n\nROUND 1-3:\n1. 30-40 deep breaths:\n   - Inhale fully through nose or mouth\n   - Exhale passive release (don't force)\n   - Pace: Controlled but fairly fast\n\n2. Retention:\n   - After last exhale, hold breath\n   - Time: As long as comfortable (often 1-2 min)\n   - Stay relaxed, don't strain\n\n3. Recovery breath:\n   - Inhale fully, hold 15 seconds\n   - Release\n   - Begin next round\n\nSENSATIONS (normal):\n- Tingling in hands/feet\n- Light-headedness\n- Temperature changes\n\nWARNINGS:\n- Never do in water or while driving\n- Stop if you feel faint\n- Don't force retention times\n\nRECOMMENDED: Use guided audio for first month",
+          "example_filled": "MY SESSION TODAY:\n\nRound 1: 35 breaths, held 1:15\nRound 2: 38 breaths, held 1:45\nRound 3: 40 breaths, held 2:10\n\nFelt: Tingling in hands, very calm after\n\nSchedule: Every morning before shower"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Wim Hof Method", "author": "Wim Hof", "key_takeaway": "Comprehensive guide to cold exposure and breathing practices"}
+        ],
+        "podcasts": [
+          {"title": "Wim Hof on Joe Rogan", "key_takeaway": "Introduction to the method and the science behind it"}
+        ]
+      }
+    }
+  ],
+  "daily_insights": [
+    "Sleep is when your brain cleans itself. Shortcut it at your peril.",
+    "Your body is adapting to whatever you consistently do. Make it count.",
+    "Energy is not something you have. It's something you create through habits.",
+    "The best workout is the one you actually do consistently.",
+    "Sunlight, movement, and sleep are free. Use them.",
+    "Recovery is when gains happen. Training is just the stimulus.",
+    "You can't outwork a bad diet or outsupplement bad sleep.",
+    "Small daily health habits compound into massive long-term results.",
+    "Your energy level dictates everything else. Protect it.",
+    "The body keeps the score. Take care of it."
+  ],
+  "skill_challenges": [
+    "Get 10 minutes of sunlight within 1 hour of waking.",
+    "End your shower with 30 seconds of cold water.",
+    "Track your sleep for one week. Identify one improvement.",
+    "Drink 2 liters of water today. Notice your energy.",
+    "Take a 20-minute walk. No phone.",
+    "Go to bed 30 minutes earlier tonight.",
+    "Do 5 minutes of stretching or mobility work.",
+    "Eat protein with every meal today.",
+    "No screens 1 hour before bed tonight.",
+    "Do 3 minutes of deep breathing exercises."
+  ]
+}

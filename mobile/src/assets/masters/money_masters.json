@@ -1,0 +1,654 @@
+{
+  "module": "money",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You're becoming aware that trading time for money has limits",
+      "capabilities": ["Understand the difference between income and wealth", "Identify your current hourly rate", "Recognize leverage opportunities"],
+      "milestone": "Calculate your true hourly rate and identify one skill gap"
+    },
+    "2": {
+      "name": "Foundation",
+      "description": "Building basic wealth-creation knowledge",
+      "capabilities": ["Understand compound interest", "Identify high-value skills", "Recognize income vs wealth"],
+      "milestone": "Create a personal skill development plan"
+    },
+    "3": {
+      "name": "Skill Builder",
+      "description": "Actively developing income-multiplying skills",
+      "capabilities": ["Learning one high-leverage skill", "Understanding market value", "Basic networking for opportunities"],
+      "milestone": "Complete one paid project using a new skill"
+    },
+    "4": {
+      "name": "Value Creator",
+      "description": "Creating value beyond direct time exchange",
+      "capabilities": ["Package skills into offers", "Basic pricing strategy", "Client acquisition fundamentals"],
+      "milestone": "Generate first income from packaged knowledge/skill"
+    },
+    "5": {
+      "name": "Leverage Seeker",
+      "description": "Actively building leverage through code, media, or capital",
+      "capabilities": ["Creating content or code that works without you", "Building small systems", "Delegating low-value tasks"],
+      "milestone": "Create one asset that generates income while you sleep"
+    },
+    "6": {
+      "name": "System Builder",
+      "description": "Building repeatable systems for wealth creation",
+      "capabilities": ["Multiple income streams", "Team or automation leverage", "Strategic time allocation"],
+      "milestone": "Income from systems exceeds 25% of total income"
+    },
+    "7": {
+      "name": "Equity Thinker",
+      "description": "Thinking in terms of ownership and equity",
+      "capabilities": ["Building or acquiring equity stakes", "Long-term compounding mindset", "Strategic partnership building"],
+      "milestone": "Own equity in at least one revenue-generating asset"
+    },
+    "8": {
+      "name": "Wealth Architect",
+      "description": "Designing and building wealth systems at scale",
+      "capabilities": ["Multiple leverage types combined", "Capital allocation strategy", "Building lasting business moats"],
+      "milestone": "Passive income covers basic living expenses"
+    },
+    "9": {
+      "name": "Freedom Builder",
+      "description": "Wealth systems provide significant freedom",
+      "capabilities": ["Work is optional", "Capital compounds automatically", "Mentoring others in wealth creation"],
+      "milestone": "Can take 6+ months off without income impact"
+    },
+    "10": {
+      "name": "Wealth Master",
+      "description": "Complete financial freedom with generational wealth potential",
+      "capabilities": ["Wealth grows faster than spending", "Creating opportunities for others", "Legacy building"],
+      "milestone": "Net worth compounds automatically; focus shifts to impact"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "Calculate Your True Hourly Rate",
+        "difficulty": 1,
+        "time_minutes": 20,
+        "instructions": "Add up ALL hours you spend on work (commute, prep, recovery, thinking about work). Divide your annual income by total hours. Compare to what you thought your hourly rate was.",
+        "success_criteria": "Written calculation showing true hourly rate and reflection on the gap"
+      },
+      {
+        "title": "Identify Your Specific Knowledge",
+        "difficulty": 1,
+        "time_minutes": 30,
+        "instructions": "List 10 things you know that feel obvious to you but others frequently ask about. These are clues to your specific knowledge.",
+        "success_criteria": "List of 10 items with at least 3 that could potentially be monetized"
+      },
+      {
+        "title": "Wealth vs Income Audit",
+        "difficulty": 1,
+        "time_minutes": 15,
+        "instructions": "List all your income sources. Mark which ones require your time (income) vs which generate money without you (wealth). Calculate the ratio.",
+        "success_criteria": "Complete income audit with wealth/income ratio calculated"
+      },
+      {
+        "title": "Quick Property Analysis with the 1% Rule",
+        "difficulty": 1,
+        "time_minutes": 25,
+        "instructions": "Find 5 rental property listings on Zillow or Redfin. For each, calculate: Monthly Rent / Purchase Price. Mark which ones pass the 1% rule (result >= 0.01). This quick filter eliminates 80% of bad deals.",
+        "success_criteria": "5 properties analyzed with 1% rule calculations, notes on which pass/fail"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Create Your First Digital Asset",
+        "difficulty": 2,
+        "time_minutes": 120,
+        "instructions": "Turn one piece of your specific knowledge into a digital asset: a template, checklist, mini-guide, or video. Something that can help others without requiring your live presence.",
+        "success_criteria": "One completed digital asset ready to share or sell"
+      },
+      {
+        "title": "Build a Value Equation Offer",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Using Hormozi's Value Equation, design an offer for your skill. Calculate Dream Outcome, Perceived Likelihood, Time Delay, and Effort/Sacrifice for your client.",
+        "success_criteria": "Written offer with all four value equation components optimized"
+      },
+      {
+        "title": "Network Up Challenge",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Identify 5 people who earn 10x what you earn. Research how you could provide value to them. Reach out to at least 2 with a value-first message.",
+        "success_criteria": "2 personalized outreach messages sent to high-value connections"
+      },
+      {
+        "title": "Full Rental Property Deal Analysis",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Pick one rental property that passed the 1% rule. Do a complete analysis: calculate all expenses (mortgage, taxes, insurance, maintenance 10%, vacancy 5%, property management 10%, CapEx), subtract from gross rent to get net cash flow. Calculate Cash-on-Cash return (annual cash flow / total cash invested).",
+        "success_criteria": "Complete deal analysis worksheet with all numbers, cash flow projection, and go/no-go decision"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Design Your Leverage Stack",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Map out how you'll combine the four types of leverage: Labor, Capital, Code, Media. Create a 12-month plan to build at least 2 leverage types.",
+        "success_criteria": "Written 12-month leverage building plan with specific milestones"
+      },
+      {
+        "title": "Grand Slam Offer Workshop",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Build a complete Grand Slam Offer: Define your target market, list all their problems, create solutions for each, add bonuses that reduce risk, set pricing that feels like a steal.",
+        "success_criteria": "Complete Grand Slam Offer document ready to test with prospects"
+      },
+      {
+        "title": "Passive Income Machine Blueprint",
+        "difficulty": 3,
+        "time_minutes": 120,
+        "instructions": "Design a system that could generate $1000/month passively within 12 months. Map every component: product, traffic, conversion, delivery, support.",
+        "success_criteria": "Complete blueprint with realistic timeline and required resources"
+      },
+      {
+        "title": "House Hack Business Plan",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Create a complete house hacking plan: Research FHA loan requirements (3.5% down), find 3 multi-family properties (2-4 units) in your area, analyze each fully (purchase price, down payment, mortgage, rental income from other units, your net housing cost), compare to your current rent, calculate first-year wealth building (equity, appreciation, tax benefits).",
+        "success_criteria": "Complete house hack business plan with 3 property options analyzed, financing plan, and timeline to execute"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "sales",
+      "insight": "Sales skills are the fastest path to increased income - you can double your rates with better positioning and negotiation",
+      "combined_exercise": "Practice pitching your specific knowledge in a 60-second value statement. Test it on 5 people this week."
+    },
+    {
+      "connected_module": "productivity",
+      "insight": "Deep work compounds wealth - one focused hour can produce more value than 8 distracted hours",
+      "combined_exercise": "Block 2 hours for your highest-value skill development. Track what you produce vs unfocused time."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Your beliefs about money determine your ceiling - most wealth limits are self-imposed",
+      "combined_exercise": "Write down 5 beliefs you hold about wealth. Challenge each one: is this a fact or a limiting belief?"
+    },
+    {
+      "connected_module": "business",
+      "insight": "Wealth at scale requires business thinking - individual income has natural limits",
+      "combined_exercise": "Take your best skill and design a business model around it that doesn't require your time for every dollar"
+    }
+  ],
+  "masters": [
+    {
+      "name": "Naval Ravikant",
+      "expertise": "Wealth creation, leverage, startups",
+      "key_principles": [
+        "Seek wealth, not money or status. Wealth is having assets that earn while you sleep.",
+        "You're not going to get rich renting out your time. You must own equity.",
+        "Arm yourself with specific knowledge, accountability, and leverage.",
+        "Code and media are permissionless leverage. They're the leverage of the new rich.",
+        "Play long-term games with long-term people.",
+        "Pick an industry where you can play long-term games with long-term people.",
+        "The Internet has massively broadened the possible space of careers. Most people haven't figured this out yet."
+      ],
+      "daily_practices": [
+        "Spend 1 hour learning something that compounds",
+        "Build something that can work without you",
+        "Invest in relationships with high-integrity people"
+      ],
+      "worked_examples": [
+        {
+          "title": "Building Leverage Through Content",
+          "scenario": "You're a software developer earning $150k trading time for money. You want to break free from the time-for-money trap.",
+          "framework_applied": "Specific knowledge + Media leverage + Code leverage",
+          "step_by_step": [
+            "Identify your specific knowledge: You've debugged hundreds of production systems and developed intuitions others lack",
+            "Start creating content: Write Twitter threads about debugging war stories (media leverage - costs nothing to replicate)",
+            "Build tools: Create open-source debugging utilities that showcase your expertise (code leverage)",
+            "Attract opportunities: Companies start reaching out for consulting at 3x your hourly rate",
+            "Productize: Turn your debugging framework into a course/product that sells while you sleep",
+            "Scale: The content keeps working, the tools keep attracting users, the course keeps selling"
+          ],
+          "outcome": "Within 2 years: consulting income at 3x previous rate, plus $5k/month from products, working fewer hours"
+        },
+        {
+          "title": "Compounding Through Specific Knowledge",
+          "scenario": "You notice you're always the one people ask about a specific topic at work, but you never thought to monetize it.",
+          "framework_applied": "Specific knowledge identification + Accountability + Long-term games",
+          "step_by_step": [
+            "Recognize the signal: When colleagues constantly ask you about X, that's your specific knowledge",
+            "Take accountability: Put your name on it publicly - start a newsletter, podcast, or blog about X",
+            "Play long-term: Don't expect immediate returns, compound your reputation over 2-3 years",
+            "Document everything: Turn your knowledge into reusable assets (templates, frameworks, processes)",
+            "Let opportunities find you: As your reputation grows, high-value opportunities appear"
+          ],
+          "outcome": "Your specific knowledge becomes your moat - others can't compete because they don't have your unique combination of skills and experience"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Specific Knowledge Discovery Script",
+          "context": "Use to identify your unique differentiator that can become the foundation for wealth creation",
+          "template": "1. What do I know that feels obvious to me but confuses others? ___\n2. What do people consistently ask me for help with? ___\n3. What could I talk about for 30 minutes without preparation? ___\n4. What skills did I develop through unique life experiences? ___\n5. Where do my interests and abilities intersect with market needs? ___",
+          "example_filled": "1. How to debug production systems under pressure - it's intuitive to me now\n2. Code architecture decisions, system design, incident response\n3. Distributed systems failure modes and recovery patterns\n4. Learned resilience from years of on-call rotations at fast-growing startups\n5. Companies desperately need people who can fix systems fast - I can teach this"
+        },
+        {
+          "title": "Leverage Audit Template",
+          "context": "Evaluate your current leverage situation and identify opportunities",
+          "template": "LABOR LEVERAGE:\n- Do I have a team? ___\n- Am I building others' skills? ___\n\nCAPITAL LEVERAGE:\n- Do I have money working for me? ___\n- Am I reinvesting in growth? ___\n\nCODE LEVERAGE:\n- Have I built software/tools? ___\n- Can I automate my expertise? ___\n\nMEDIA LEVERAGE:\n- Am I creating content? ___\n- Does my content work while I sleep? ___\n\nBIGGEST OPPORTUNITY: ___",
+          "example_filled": "LABOR: No team yet, but could hire VA for $500/month to 10x output\nCAPITAL: Investing 20% of income, could increase to 30%\nCODE: Built internal tools - could open source or productize\nMEDIA: Zero content creation - BIGGEST GAP\nBIGGEST OPPORTUNITY: Start creating content around my debugging expertise"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Almanack of Naval Ravikant", "author": "Eric Jorgenson", "key_takeaway": "Wealth is assets that earn while you sleep - focus on equity, not income"},
+          {"title": "How to Get Rich (without getting lucky)", "author": "Naval Ravikant (Tweetstorm)", "key_takeaway": "The complete framework for modern wealth creation through leverage and specific knowledge"}
+        ],
+        "podcasts": [
+          {"title": "Naval on The Knowledge Project", "key_takeaway": "Deep dive on specific knowledge and playing long-term games"},
+          {"title": "Naval on Joe Rogan", "key_takeaway": "Accessible introduction to Naval's wealth and happiness philosophy"}
+        ]
+      }
+    },
+    {
+      "name": "Alex Hormozi",
+      "expertise": "Business scaling, offers, value creation",
+      "key_principles": [
+        "The goal is to make your offer so good people feel stupid saying no.",
+        "Volume negates luck. Do more.",
+        "Skills are the only assets that can't be taken from you.",
+        "The fastest way to get rich is to solve a painful problem for people who can pay.",
+        "Price is what you pay, value is what you get. Increase the gap.",
+        "Most businesses fail because of obscurity, not because the product sucks.",
+        "Discipline is choosing between what you want now and what you want most."
+      ],
+      "daily_practices": [
+        "Do 100 outreach touches",
+        "Improve your offer daily",
+        "Stack skills that multiply each other"
+      ],
+      "worked_examples": [
+        {
+          "title": "Building a Grand Slam Offer",
+          "scenario": "You're a fitness coach charging $100/month and struggling to get clients. You need to transform your offer.",
+          "framework_applied": "Value Equation: (Dream Outcome × Perceived Likelihood) / (Time Delay × Effort & Sacrifice)",
+          "step_by_step": [
+            "Define the Dream Outcome: Not 'fitness coaching' but 'Lose 30 lbs in 90 days and keep it off forever'",
+            "Increase Perceived Likelihood: Add guarantee - 'Lose 30 lbs or I'll coach you free until you do'",
+            "Decrease Time Delay: 'See changes in your first week or money back'",
+            "Decrease Effort: 'I'll create your meal plan, shopping lists, and tell you exactly what to eat each day'",
+            "Add bonuses that address objections: Recipe book, accountability check-ins, private community",
+            "Name it powerfully: 'The 90-Day Total Body Transformation System'",
+            "Price based on value, not time: If client values losing 30 lbs at $10k, price at $2k feels like a steal"
+          ],
+          "outcome": "Price increases from $100/month to $2000 for 90 days, close rate actually increases because offer is irresistible"
+        },
+        {
+          "title": "Volume Negates Luck in Action",
+          "scenario": "You're trying to grow your consulting business but only doing 2-3 outreach messages per day.",
+          "framework_applied": "Volume × Conversion Rate = Results",
+          "step_by_step": [
+            "Diagnose: At 3 outreach/day with 1% response rate = 0.03 conversations/day = ~1/month",
+            "10X the volume: 30 outreach/day = 300/month = 3 conversations/month",
+            "Further 10X: 100 outreach/day = 3000/month = 30 conversations/month",
+            "Improve quality while scaling: Test different messages, track what works",
+            "Compound: Better targeting + better message + more volume = exponential results",
+            "Systematize: Create templates, hire help, automate where possible"
+          ],
+          "outcome": "Going from 3 to 100 daily touches increases pipeline by 33x. Even with lower conversion, results compound dramatically."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Value Equation Calculator",
+          "context": "Use to design offers that feel like a steal at any price point",
+          "template": "DREAM OUTCOME (What do they really want?):\n___\n\nPERCEIVED LIKELIHOOD (Why will they believe it's possible?):\n- Social proof: ___\n- Guarantee: ___\n- Credentials: ___\n\nTIME DELAY (How fast will they see results?):\n- First win: ___\n- Full transformation: ___\n\nEFFORT & SACRIFICE (What do you do FOR them?):\n- Done-for-you elements: ___\n- Reduced friction: ___\n\nFINAL OFFER NAME: ___\nPRICE POINT: ___",
+          "example_filled": "DREAM OUTCOME: Land a $150k+ software job without a CS degree\n\nPERCEIVED LIKELIHOOD:\n- Social proof: 47 students hired at FAANG in last 6 months\n- Guarantee: Get hired or get your money back + I'll coach you free for 6 more months\n- Credentials: Former Google interviewer, hired 100+ engineers\n\nTIME DELAY:\n- First win: Mock interview confidence in week 1\n- Full transformation: Job offer within 90 days\n\nEFFORT & SACRIFICE:\n- Done-for-you: Custom study plan, resume rewrite, LinkedIn optimization\n- Reduced friction: Daily 15-min modules, not 4-hour lectures\n\nFINAL OFFER NAME: The $150K Engineer Accelerator\nPRICE POINT: $3,000 (2% of first year salary increase)"
+        },
+        {
+          "title": "100 Touches Daily System",
+          "context": "Framework for hitting massive outreach volume consistently",
+          "template": "MORNING BLOCK (50 touches):\n- Platform 1: ___ touches of type ___\n- Platform 2: ___ touches of type ___\n\nAFTERNOON BLOCK (30 touches):\n- Follow-ups: ___\n- Warm outreach: ___\n\nEVENING BLOCK (20 touches):\n- Engagement: ___\n- Community: ___\n\nTRACKING:\n- Total sent: ___\n- Responses: ___\n- Conversations: ___\n- Conversion rate: ___",
+          "example_filled": "MORNING BLOCK (50 touches):\n- LinkedIn: 30 connection requests + personalized notes\n- Email: 20 cold emails to target list\n\nAFTERNOON BLOCK (30 touches):\n- Follow-ups: 15 day-3 follow-ups, 10 day-7 follow-ups\n- Warm outreach: 5 referral requests from happy clients\n\nEVENING BLOCK (20 touches):\n- Engagement: 10 thoughtful comments on prospect posts\n- Community: 10 value-add comments in industry groups\n\nTRACKING: Spreadsheet updated daily, weekly review every Sunday"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "$100M Offers", "author": "Alex Hormozi", "key_takeaway": "How to create offers so good people feel stupid saying no"},
+          {"title": "$100M Leads", "author": "Alex Hormozi", "key_takeaway": "How to get strangers to want to buy your stuff"}
+        ],
+        "podcasts": [
+          {"title": "The Game Podcast", "key_takeaway": "Weekly tactical business advice from Hormozi's experience scaling businesses"}
+        ]
+      }
+    },
+    {
+      "name": "Warren Buffett",
+      "expertise": "Investing, compounding, value",
+      "key_principles": [
+        "The most important investment you can make is in yourself.",
+        "Risk comes from not knowing what you're doing.",
+        "It's better to hang out with people better than you.",
+        "The difference between successful people and really successful people is that really successful people say no to almost everything.",
+        "Someone is sitting in the shade today because someone planted a tree a long time ago.",
+        "Price is what you pay. Value is what you get."
+      ],
+      "daily_practices": [
+        "Read 500 pages a day",
+        "Think in decades, not days",
+        "Say no to protect your time for what matters"
+      ],
+      "worked_examples": [
+        {
+          "title": "Compounding Knowledge Over Decades",
+          "scenario": "You're early in your career and wondering whether to spend time learning or earning more now.",
+          "framework_applied": "Invest in yourself + Compound interest on knowledge",
+          "step_by_step": [
+            "Recognize: Knowledge compounds like money - each new piece connects to existing pieces",
+            "Commit to reading: Even 1 hour/day = 365 hours/year = 30+ books = top 1% of learners",
+            "Be patient: The first year feels slow, by year 5 you're making connections others can't see",
+            "Choose wisely: Focus on timeless knowledge (psychology, economics, history) over trends",
+            "Apply immediately: Read something, apply it that day, compound the learning",
+            "Build a latticework: Connect knowledge across disciplines like Munger's mental models"
+          ],
+          "outcome": "After 10 years of consistent learning, your decision-making quality is dramatically higher than peers who stopped learning after school"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Investment in Self Audit",
+          "context": "Evaluate whether you're prioritizing the highest-ROI investment: yourself",
+          "template": "SKILL INVESTMENTS THIS MONTH:\n- Hours spent learning: ___\n- Books/courses completed: ___\n- Skills actively developing: ___\n\nRELATIONSHIP INVESTMENTS:\n- Time with people better than me: ___\n- Mentors/advisors consulted: ___\n- Valuable connections made: ___\n\nHEALTH INVESTMENTS:\n- Protecting my ability to compound: ___\n\nBIGGEST GAP: ___\nNEXT ACTION: ___",
+          "example_filled": "SKILL INVESTMENTS: 20 hours learning, 2 books, developing sales skills\nRELATIONSHIP INVESTMENTS: 4 hours with mentor, joined mastermind group\nHEALTH INVESTMENTS: Consistent sleep, daily exercise\nBIGGEST GAP: Not enough time with people 10x ahead of me\nNEXT ACTION: Attend industry conference next month"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Essays of Warren Buffett", "author": "Warren Buffett", "key_takeaway": "Timeless principles on value, patience, and long-term thinking"},
+          {"title": "The Snowball", "author": "Alice Schroeder", "key_takeaway": "How Buffett built his wealth through decades of compounding"}
+        ],
+        "podcasts": [
+          {"title": "Berkshire Hathaway Annual Meeting", "key_takeaway": "Direct wisdom from Buffett and Munger on business and life"}
+        ]
+      }
+    },
+    {
+      "name": "Charlie Munger",
+      "expertise": "Mental models, decision-making, multidisciplinary thinking",
+      "key_principles": [
+        "Spend each day trying to be a little wiser than you were when you woke up.",
+        "The best thing a human can do is to help another human know more.",
+        "Invert, always invert. Turn a situation or problem upside down.",
+        "You don't have to be brilliant, only a little bit wiser than the other guys, on average, for a long time.",
+        "Knowing what you don't know is more useful than being brilliant.",
+        "Take a simple idea and take it seriously."
+      ],
+      "daily_practices": [
+        "Read across disciplines",
+        "Invert problems to find solutions",
+        "Avoid stupidity rather than seeking brilliance"
+      ],
+      "worked_examples": [
+        {
+          "title": "Inversion in Career Decisions",
+          "scenario": "You're trying to figure out how to succeed in your career.",
+          "framework_applied": "Inversion - instead of asking how to succeed, ask how to fail",
+          "step_by_step": [
+            "Invert the question: Instead of 'How do I succeed?' ask 'How would I guarantee failure?'",
+            "List failure paths: Be unreliable, stop learning, burn bridges, avoid hard conversations, blame others",
+            "Invert each one: Be relentlessly reliable, never stop learning, build relationships carefully, have hard conversations early, take ownership",
+            "Focus on avoiding failure: Often easier than achieving brilliance",
+            "Apply daily: Each morning, ask 'What would make today a disaster?' and avoid those things"
+          ],
+          "outcome": "By systematically avoiding ways to fail, you end up in the top percentile almost automatically"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Inversion Problem-Solving Template",
+          "context": "Use when stuck on a problem or decision",
+          "template": "GOAL: ___\n\nINVERTED QUESTION: How would I guarantee the opposite?\n\nFAILURE PATHS:\n1. ___\n2. ___\n3. ___\n4. ___\n5. ___\n\nINVERTED SOLUTIONS (avoid these failures):\n1. ___\n2. ___\n3. ___\n4. ___\n5. ___\n\nSIMPLE RULE TO FOLLOW: ___",
+          "example_filled": "GOAL: Build a successful consulting business\n\nINVERTED QUESTION: How would I guarantee my consulting business fails?\n\nFAILURE PATHS:\n1. Overpromise and underdeliver\n2. Take on any client with a pulse\n3. Never ask for referrals\n4. Compete on price\n5. Stop learning and become obsolete\n\nINVERTED SOLUTIONS:\n1. Underpromise, overdeliver every time\n2. Only work with ideal clients who value expertise\n3. Systematically ask every happy client for referrals\n4. Compete on value and specialization\n5. Dedicate 20% of time to learning and R&D\n\nSIMPLE RULE: Do the opposite of what would make me fail"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Poor Charlie's Almanack", "author": "Charlie Munger", "key_takeaway": "The complete collection of Munger's mental models and wisdom"},
+          {"title": "Seeking Wisdom", "author": "Peter Bevelin", "key_takeaway": "Organized compilation of Munger's thinking frameworks"}
+        ],
+        "podcasts": [
+          {"title": "Daily Journal Annual Meeting", "key_takeaway": "Annual Q&A where Munger shares unfiltered wisdom"}
+        ]
+      }
+    },
+    {
+      "name": "MrBeast (Jimmy Donaldson)",
+      "expertise": "Content leverage, virality, reinvestment",
+      "key_principles": [
+        "Reinvest everything back into getting better.",
+        "Study your craft obsessively. Watch 1000 videos, analyze what works.",
+        "The first 100 videos will suck. Make them anyway.",
+        "Optimize for the long term. Short-term thinking kills businesses.",
+        "Surround yourself with people who are obsessed like you.",
+        "Every video should be better than the last."
+      ],
+      "daily_practices": [
+        "Study your industry obsessively",
+        "Reinvest in your skills and assets",
+        "Get 1% better every single day"
+      ],
+      "worked_examples": [
+        {
+          "title": "Obsessive Improvement in Your Craft",
+          "scenario": "You want to build media leverage but don't know where to start.",
+          "framework_applied": "Deliberate practice + Reinvestment + Long-term thinking",
+          "step_by_step": [
+            "Study obsessively: Watch/read 100 pieces of content in your niche, analyze what works",
+            "Start creating: Accept the first 50-100 will be bad - that's the cost of admission",
+            "Reinvest everything: Put revenue back into better equipment, skills, team",
+            "Find obsessed peers: Join or create a group of people as committed as you",
+            "Optimize for learning: Each piece of content is an experiment, track what works",
+            "Play long-term: Think in years, not weeks - compound improvement over time"
+          ],
+          "outcome": "After 2-3 years of consistent improvement, you'll be in the top 1% of your niche simply because most people quit"
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Content Reinvestment Calculator",
+          "context": "Plan how to reinvest revenue back into growth",
+          "template": "CURRENT REVENUE: $___/month\n\nREINVESTMENT ALLOCATION:\n- Equipment/Tools (___%)): $___\n- Skills/Education (___%)): $___\n- Team/Delegation (___%)): $___\n- Promotion/Growth (___%)): $___\n- Savings/Buffer (___%)): $___\n\nCOMPOUND EFFECT:\n- If I reinvest ___% for ___ months...\n- Expected improvement: ___",
+          "example_filled": "CURRENT REVENUE: $5,000/month\n\nREINVESTMENT ALLOCATION:\n- Equipment/Tools (20%): $1,000 - better camera, lighting\n- Skills/Education (15%): $750 - courses, coaching\n- Team/Delegation (30%): $1,500 - editor, VA\n- Promotion/Growth (20%): $1,000 - ads, collaborations\n- Savings/Buffer (15%): $750 - runway and emergencies\n\nCOMPOUND EFFECT:\nReinvesting 85% for 12 months = 10x improvement in quality and reach"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "MrBeast's Creator Philosophy", "author": "Various Interviews", "key_takeaway": "Obsessive improvement and long-term thinking beat talent"}
+        ],
+        "podcasts": [
+          {"title": "MrBeast on Colin and Samir", "key_takeaway": "Deep dive into content strategy and business building"},
+          {"title": "MrBeast on Lex Fridman", "key_takeaway": "Philosophy behind becoming the biggest YouTuber"}
+        ]
+      }
+    },
+    {
+      "name": "Brandon Turner",
+      "expertise": "Real estate investing, BiggerPockets methodology, rental properties",
+      "key_principles": [
+        "House hacking: Live in one unit, rent the others. Your tenant pays your mortgage.",
+        "The 1% rule: Monthly rent should be at least 1% of purchase price for good cash flow.",
+        "BRRRR method: Buy, Rehab, Rent, Refinance, Repeat - infinite returns possible.",
+        "Real estate creates wealth through four ways: cash flow, appreciation, tax benefits, and loan paydown.",
+        "Start small, learn cheap. Your first deal doesn't have to be perfect.",
+        "Location, location, location is wrong. Cash flow, cash flow, cash flow is right."
+      ],
+      "daily_practices": [
+        "Analyze one property deal daily - build your evaluation muscle",
+        "Network with real estate investors regularly",
+        "Study market trends in your target areas"
+      ],
+      "worked_examples": [
+        {
+          "title": "House Hacking for Near-Zero Living Costs",
+          "scenario": "You're paying $2000/month in rent and it feels like throwing money away. You want to build wealth but have limited capital.",
+          "framework_applied": "House Hacking + FHA 3.5% Down",
+          "step_by_step": [
+            "BUY: Purchase a duplex/triplex/fourplex with FHA loan (3.5% down, must live there 1 year)",
+            "EXAMPLE: $300K fourplex, $10,500 down payment, $2,100/month mortgage",
+            "RENT: Rent 3 units at $800 each = $2,400/month income",
+            "RESULT: $2,400 income - $2,100 mortgage = $300/month positive cash flow",
+            "BONUS: You live for free (or get paid $300 to live there)",
+            "WEALTH BUILD: Tenants pay down your mortgage, you gain equity and appreciation",
+            "AFTER 1 YEAR: Move out, rent all 4 units, repeat with next property"
+          ],
+          "outcome": "In one year: Near-zero housing costs, building equity, learning landlording, positioned to scale. This is how you build a real estate empire from nothing."
+        },
+        {
+          "title": "BRRRR Method for Infinite Returns",
+          "scenario": "You have $50K and want to maximize your real estate investing impact.",
+          "framework_applied": "BRRRR - Buy, Rehab, Rent, Refinance, Repeat",
+          "step_by_step": [
+            "BUY: Find distressed property for $100K (worth $150K fixed up)",
+            "REHAB: Invest $25K in renovations, now worth $150K",
+            "RENT: Get tenants in place, generates $1,200/month",
+            "REFINANCE: Bank appraises at $150K, lends 75% = $112,500",
+            "RECOVER: Get back your $100K purchase + $25K rehab = $125K, keep $12,500 difference",
+            "REPEAT: Use that $125K to do it again, while first property cash flows",
+            "SCALE: Do this 3-4 times with same $50K, now own $600K+ in real estate"
+          ],
+          "outcome": "You've turned $50K into a portfolio generating monthly cash flow, with most or all of your capital recovered to deploy again."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Property Analysis Worksheet",
+          "context": "Quickly evaluate if a rental property is a good investment",
+          "template": "PROPERTY ADDRESS: ___\n\nPURCHASE ANALYSIS:\nPurchase price: $___\nDown payment (____%): $___\nClosing costs: $___\nRehab budget: $___\nTOTAL CASH IN: $___\n\nINCOME:\nMonthly rent: $___\nOther income: $___\nGROSS MONTHLY INCOME: $___\n\nEXPENSES:\nMortgage (P&I): $___\nProperty tax: $___\nInsurance: $___\nHOA/Condo fees: $___\nMaintenance (10%): $___\nVacancy (5-10%): $___\nProperty mgmt (10%): $___\nCapEx reserve: $___\nTOTAL MONTHLY EXPENSES: $___\n\nCASH FLOW:\nGross income - Total expenses = $___\n\nRETURN METRICS:\nCash-on-Cash Return: (Annual cash flow / Total cash in) = ___%\n1% Rule: Monthly rent / Purchase price = ___% (want >1%)\n50% Rule: Expenses ≈ 50% of gross rent? ___\n\nDECISION: [ ] Buy [ ] Pass [ ] Negotiate",
+          "example_filled": "PROPERTY: 123 Main St, 3-unit\n\nPURCHASE:\nPrice: $250,000\nDown (25%): $62,500\nClosing: $5,000\nRehab: $15,000\nTOTAL CASH: $82,500\n\nINCOME:\nRent (3 units × $900): $2,700\nOther: $0\nGROSS: $2,700\n\nEXPENSES:\nMortgage: $1,050\nTax: $250\nInsurance: $100\nHOA: $0\nMaintenance: $270\nVacancy (5%): $135\nProp Mgmt: $270\nCapEx: $150\nTOTAL: $2,225\n\nCASH FLOW: $2,700 - $2,225 = $475/month = $5,700/year\n\nRETURNS:\nCash-on-Cash: $5,700 / $82,500 = 6.9% (decent)\n1% Rule: $2,700 / $250,000 = 1.08% (PASS)\n50% Rule: $2,225 / $2,700 = 82% expenses (high but manageable with prop mgmt)\n\nDECISION: [x] Buy - good cash flow, meets 1% rule"
+        },
+        {
+          "title": "House Hacking Calculator",
+          "context": "Determine if house hacking makes sense vs renting",
+          "template": "CURRENT SITUATION:\nRent you pay now: $___/month\nAnnual rent: $___\n\nHOUSE HACK OPTION:\nProperty price: $___\nDown payment (3.5% FHA): $___\nMonthly mortgage (P&I + tax + ins): $___\nNumber of rentable units: ___\nRent per unit: $___\nTotal rental income: $___\n\nYOUR HOUSING COST:\nMortgage: $___\nMinus rental income: -$___\nNET COST: $___\n\nCOMPARISON:\nCurrent rent: $___/month\nHouse hack cost: $___/month\nMONTHLY SAVINGS: $___\nANNUAL SAVINGS: $___\n\nWEALTH BUILDING:\nEquity gained (Year 1): $___\nAppreciation (3%): $___\nTax benefits: $___\n\nDECISION: Is house hacking worth it? ___",
+          "example_filled": "CURRENT:\nRent: $1,800/month\nAnnual: $21,600\n\nHOUSE HACK:\nPrice: $350,000 (fourplex)\nDown (3.5%): $12,250\nMortgage: $2,450/month\nUnits to rent: 3\nRent per unit: $1,000\nTotal income: $3,000\n\nMY COST:\nMortgage: $2,450\nRental income: -$3,000\nNET: -$550 (I get paid $550 to live there!)\n\nCOMPARISON:\nCurrent rent: $1,800\nHouse hack: -$550\nSAVINGS: $2,350/month = $28,200/year\n\nWEALTH:\nEquity: ~$8,000 (loan paydown)\nAppreciation: $10,500 (3%)\nTax benefits: ~$5,000\nTOTAL YEAR 1 BENEFIT: ~$52,000\n\nDECISION: Absolutely worth it. Live free AND build wealth."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Book on Rental Property Investing", "author": "Brandon Turner", "key_takeaway": "Complete guide to building wealth through rental properties"},
+          {"title": "The Book on Managing Rental Properties", "author": "Brandon Turner & Heather Turner", "key_takeaway": "How to find, screen, and manage tenants"}
+        ],
+        "podcasts": [
+          {"title": "BiggerPockets Podcast", "key_takeaway": "Weekly real estate investing strategies and interviews"}
+        ]
+      }
+    },
+    {
+      "name": "Nic Carter",
+      "expertise": "Bitcoin, crypto fundamentals, monetary theory, digital assets",
+      "key_principles": [
+        "Bitcoin is digital scarcity - the first time in history we can prove ownership of digital assets.",
+        "Not your keys, not your coins. Self-custody is fundamental to crypto ownership.",
+        "Bitcoin is a hedge against monetary debasement and currency devaluation.",
+        "Most altcoins are securities or outright scams. Bitcoin is the only truly decentralized crypto.",
+        "Crypto is about separating money from state - it's a political statement, not just technology.",
+        "Time preference: Bitcoin teaches you to think long-term, not trade for quick gains."
+      ],
+      "daily_practices": [
+        "Dollar-cost average into Bitcoin consistently",
+        "Learn about self-custody and security best practices",
+        "Study monetary history and why Bitcoin matters"
+      ],
+      "worked_examples": [
+        {
+          "title": "Bitcoin as Savings Technology",
+          "scenario": "You have savings in a bank account earning 0.5% while inflation is 7%. You're losing purchasing power.",
+          "framework_applied": "Bitcoin as Inflation Hedge + Time Preference",
+          "step_by_step": [
+            "UNDERSTAND: Fiat currency loses value over time due to unlimited printing",
+            "RECOGNIZE: Bitcoin has a hard cap of 21 million coins - provably scarce",
+            "STRATEGY: Allocate 5-10% of savings to Bitcoin as long-term store of value",
+            "APPROACH: Dollar-cost average (DCA) - buy fixed amount weekly/monthly regardless of price",
+            "EXAMPLE: $100/week into Bitcoin, regardless if it's $30K or $60K",
+            "HOLD: Think in 5-10 year timeframes, not days or weeks",
+            "CUSTODY: Learn self-custody (hardware wallet) - 'not your keys, not your coins'",
+            "TAX: Understand that selling triggers capital gains - holding long-term preferred"
+          ],
+          "outcome": "Over 10+ years, Bitcoin has outperformed all assets. You've protected purchasing power and potentially grown wealth significantly."
+        },
+        {
+          "title": "Self-Custody Best Practices",
+          "scenario": "You bought Bitcoin on Coinbase but heard 'not your keys, not your coins.' You want to control your assets.",
+          "framework_applied": "Self-Custody + Security Best Practices",
+          "step_by_step": [
+            "LEARN: When Bitcoin is on an exchange, you don't own it - the exchange does",
+            "HARDWARE WALLET: Buy a Ledger or Trezor (cost: $50-200)",
+            "SETUP: Initialize wallet, write down seed phrase (12-24 words)",
+            "SECURE SEED: Store seed phrase offline (metal backup, multiple secure locations)",
+            "TRANSFER: Move Bitcoin from exchange to your hardware wallet",
+            "VERIFY: Confirm you control the private keys by testing a small transaction",
+            "NEVER: Share seed phrase with anyone, type it on a computer, take a photo of it",
+            "MULTISIG (advanced): Use multisig wallets requiring 2-of-3 or 3-of-5 keys for extra security"
+          ],
+          "outcome": "You now truly own your Bitcoin. No exchange can freeze, confiscate, or lose your funds. You're your own bank."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Bitcoin Allocation Framework",
+          "context": "Determine appropriate Bitcoin allocation in your portfolio",
+          "template": "PORTFOLIO CONTEXT:\nTotal investable assets: $___\nRisk tolerance: [ ] Conservative [ ] Moderate [ ] Aggressive\nTime horizon: ___ years\nCurrent Bitcoin exposure: ___%\n\nALLOCATION GUIDELINES:\n- Conservative (10+ year horizon): 2-5%\n- Moderate (10+ year horizon): 5-10%\n- Aggressive (can stomach 80% drawdowns): 10-20%+\n\nMY TARGET ALLOCATION: ___%\nDollar amount: $___\n\nDCA STRATEGY:\nMonthly investment: $___\nPurchase frequency: [ ] Weekly [ ] Bi-weekly [ ] Monthly\nPlatform: ___\nAutomatic? [ ] Yes [ ] No\n\nEXIT STRATEGY:\nWhen/if I'll sell: ___\nTarget price (if any): $___\nOr holding indefinitely? [ ]\n\nSECURITY:\nCustody plan: [ ] Exchange [ ] Hardware wallet [ ] Multisig\nSeed phrase backup locations: ___",
+          "example_filled": "PORTFOLIO:\nTotal assets: $200,000\nRisk: [x] Moderate\nHorizon: 15 years (retirement)\nCurrent BTC: 2%\n\nTARGET: 8% ($16,000)\n\nDCA:\nMonthly: $500\nFrequency: [x] Weekly ($125/week)\nPlatform: Swan Bitcoin (auto DCA)\nAutomatic: [x] Yes\n\nEXIT:\nNo plan to sell before retirement (15 years)\nTarget: None, evaluating in 2035\nHolding: [x] Indefinitely unless emergency\n\nSECURITY:\nCustody: [x] Hardware wallet (Trezor)\nSeed: Metal backup in home safe + bank safety deposit box\nOnce over $50K in BTC: Consider multisig"
+        },
+        {
+          "title": "Crypto vs Bitcoin Decision Tree",
+          "context": "Should you buy altcoins or stick with Bitcoin?",
+          "template": "INVESTMENT THESIS QUESTIONS:\n\n1. Do you understand the technology deeply? [ ]\n2. Is it truly decentralized (no company/foundation controls it)? [ ]\n3. Has it been around 5+ years without major hacks? [ ]\n4. Is there a real use case beyond speculation? [ ]\n5. Can you explain why it's better than Bitcoin? [ ]\n6. Would regulators classify it as a security? [ ]\n7. Are you investing or speculating? [ ]\n\nIF MOSTLY NO: Stick with Bitcoin\nIF MOSTLY YES: Maybe allocate small % to that specific altcoin\n\nRED FLAGS:\n- Promises of guaranteed returns\n- Anonymous team\n- Lacks audit trail\n- Pre-mine or founder holdings >20%\n- Marketing > technology\n\nBITCOIN ADVANTAGES:\n- Most decentralized\n- Longest track record\n- Most secure network\n- Regulatory clarity\n- Digital gold narrative",
+          "example_filled": "Evaluating Ethereum:\n\n1. Understand tech? [~] Somewhat\n2. Decentralized? [~] Less than Bitcoin (foundation, Vitalik influence)\n3. 5+ years, no hacks? [x] Yes (launched 2015)\n4. Real use case? [x] Smart contracts, DeFi\n5. Better than Bitcoin? [ ] Different purpose, not better\n6. Security classification? [?] Unclear, possible\n7. Investing or speculating? [~] Bit of both\n\nDECISION: Ethereum has real utility but higher risk than Bitcoin\nAPPROACH: 80% Bitcoin, 15% Ethereum, 5% cash for dips\nRATIONALE: Bitcoin as savings, Ethereum as tech bet, mostly Bitcoin for safety"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Bitcoin Standard", "author": "Saifedean Ammous", "key_takeaway": "The decentralized alternative to central banking"},
+          {"title": "Layered Money", "author": "Nik Bhatia", "key_takeaway": "Understanding Bitcoin in the context of monetary history"}
+        ],
+        "podcasts": [
+          {"title": "What Bitcoin Did", "key_takeaway": "Deep conversations on Bitcoin fundamentals"},
+          {"title": "On The Brink with Nic Carter", "key_takeaway": "Nic's podcast on crypto, markets, and monetary policy"}
+        ]
+      }
+    }
+  ],
+  "daily_insights": [
+    "Your income is directly proportional to the value you provide times the number of people you provide it to.",
+    "Skills compound. Every hour you invest in learning pays dividends forever.",
+    "The bottleneck to your income is usually a skill you're avoiding learning.",
+    "Rich people buy time. Poor people sell time. Which are you doing?",
+    "If you can't explain how you'll make money while you sleep, you'll work until you die.",
+    "The market pays for value, not effort. Focus on outcomes, not hours.",
+    "Your network is your net worth. But only if you provide value first.",
+    "The best investment is in skills that produce income. Everything else is secondary.",
+    "Don't trade time for money. Trade value for money, then scale the value.",
+    "Every rich person got rich by solving problems. What problem are you solving?",
+    "Real estate is the one asset class where you can use leverage, get tax benefits, and have someone else pay your mortgage.",
+    "Your first rental property doesn't need to be perfect - it needs to teach you the game.",
+    "Bitcoin is the first digital asset with provable scarcity. Understanding this changes how you think about money.",
+    "House hacking turns your biggest expense (housing) into your first wealth-building asset.",
+    "Diversification across asset classes (stocks, real estate, crypto) protects you from any single system failing."
+  ],
+  "skill_challenges": [
+    "Identify one skill that would 2x your income. Spend 30 minutes learning it today.",
+    "Find one way to add value to someone more successful than you. Do it today.",
+    "Calculate your true hourly rate (annual income / hours worked). Now find one way to increase it.",
+    "List 3 ways you could make money while you sleep. Pick one to start building.",
+    "Reach out to someone who makes 10x what you make. Ask one specific question.",
+    "Find something you do manually that could be automated or delegated. Start the process.",
+    "Identify your most profitable skill. Spend 1 hour getting better at it.",
+    "Write down exactly how you will make your next $1000. Be specific.",
+    "Find one expense that doesn't contribute to your growth. Eliminate it.",
+    "Study one successful person in your field for 30 minutes. Extract one actionable insight.",
+    "Analyze one rental property listing today using the 1% rule (rent should be 1% of purchase price).",
+    "Calculate how much you're paying in rent annually. Research if a house hack could reduce this to zero.",
+    "Set up a recurring Bitcoin purchase (DCA) of any amount - $10, $50, $100/week. Start building the habit.",
+    "Use the 50% rule on a property listing: estimate expenses as 50% of rent, then calculate cash flow.",
+    "Research one hardware wallet (Ledger or Trezor) and understand why 'not your keys, not your coins' matters."
+  ]
+}

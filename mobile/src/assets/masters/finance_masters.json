@@ -1,0 +1,440 @@
+{
+  "module": "finance",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You're becoming aware of where your money actually goes",
+      "capabilities": ["Track basic income and expenses", "Understand difference between needs and wants", "Know your net worth (even if negative)"],
+      "milestone": "Complete one month of expense tracking"
+    },
+    "2": {
+      "name": "Foundation",
+      "description": "Building basic financial stability",
+      "capabilities": ["Create and follow a basic budget", "Build starter emergency fund ($1000)", "Understand compound interest"],
+      "milestone": "Save $1000 emergency fund"
+    },
+    "3": {
+      "name": "Debt Destroyer",
+      "description": "Actively eliminating high-interest debt",
+      "capabilities": ["Use debt avalanche or snowball method", "Negotiate interest rates", "Avoid new debt accumulation"],
+      "milestone": "Pay off all high-interest debt"
+    },
+    "4": {
+      "name": "Consistent Saver",
+      "description": "Saving is automatic and non-negotiable",
+      "capabilities": ["Automated savings system", "3-6 month emergency fund", "Live below your means consistently"],
+      "milestone": "Save 15%+ of income automatically"
+    },
+    "5": {
+      "name": "Conscious Spender",
+      "description": "Spending aligns with values and goals",
+      "capabilities": ["Track spending by category", "Cut mercilessly on non-priorities", "Spend extravagantly on what matters"],
+      "milestone": "Create a 'conscious spending plan' aligned with values"
+    },
+    "6": {
+      "name": "Active Investor",
+      "description": "Putting money to work for you",
+      "capabilities": ["Max out tax-advantaged accounts", "Understand index investing", "Avoid common investing mistakes"],
+      "milestone": "Investing 20%+ of income in diversified portfolio"
+    },
+    "7": {
+      "name": "Wealth Builder",
+      "description": "Building significant assets through multiple channels",
+      "capabilities": ["Multiple investment accounts optimized", "Real estate or alternative investments", "Tax optimization strategies"],
+      "milestone": "Net worth equals 5x annual expenses"
+    },
+    "8": {
+      "name": "Financial Independence Tracker",
+      "description": "On a clear path to financial independence",
+      "capabilities": ["Calculate and track FI number", "Optimize all aspects of financial life", "Build passive income streams"],
+      "milestone": "FI number within 10 years at current trajectory"
+    },
+    "9": {
+      "name": "Almost FI",
+      "description": "Financial independence within reach",
+      "capabilities": ["Coast FI or Barista FI achieved", "Work is optional for basic needs", "Focus on optimization and withdrawal strategy"],
+      "milestone": "Could stop working and maintain lifestyle with lean budget"
+    },
+    "10": {
+      "name": "Financial Master",
+      "description": "Complete financial freedom achieved",
+      "capabilities": ["Work is purely optional", "Wealth compounds faster than spending", "Focus shifts to legacy and impact"],
+      "milestone": "4% withdrawal rate covers desired lifestyle indefinitely"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "Net Worth Snapshot",
+        "difficulty": 1,
+        "time_minutes": 30,
+        "instructions": "List all assets (savings, investments, property) and all debts. Calculate: Assets - Debts = Net Worth. This is your starting point.",
+        "success_criteria": "Written net worth statement with all accounts listed"
+      },
+      {
+        "title": "Subscription Audit",
+        "difficulty": 1,
+        "time_minutes": 20,
+        "instructions": "List every recurring subscription (apps, services, memberships). For each, ask: 'Would I actively buy this today?' Cancel at least 2 that don't pass the test.",
+        "success_criteria": "Complete subscription list with at least 2 cancellations"
+      },
+      {
+        "title": "True Cost Calculator",
+        "difficulty": 1,
+        "time_minutes": 15,
+        "instructions": "Take your hourly rate. For the next purchase you consider, calculate: Price / Hourly Rate = Hours of Life. Is it worth that many hours of your life?",
+        "success_criteria": "Calculate life-cost of 3 potential purchases, reconsider at least one"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Automate Your Finances",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Set up automatic transfers: Paycheck -> Bills -> Savings -> Investments. Money should flow automatically without decisions. 'Make it invisible.'",
+        "success_criteria": "All regular saving and investing automated"
+      },
+      {
+        "title": "Salary Negotiation Prep",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Research market rates for your role. Document your accomplishments and value. Draft a salary increase request with specific numbers and rationale.",
+        "success_criteria": "Complete negotiation preparation document ready to use"
+      },
+      {
+        "title": "Calculate Your FI Number",
+        "difficulty": 2,
+        "time_minutes": 30,
+        "instructions": "Calculate annual expenses × 25 = FI Number. Then calculate: (FI Number - Current Investments) / Annual Savings = Years to FI. Adjust as needed.",
+        "success_criteria": "FI number calculated with estimated timeline"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Tax Optimization Audit",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Review all tax-advantaged accounts (401k, IRA, HSA, etc.). Are you maximizing? Calculate tax savings from each. Identify one optimization opportunity.",
+        "success_criteria": "Complete tax optimization review with one action item"
+      },
+      {
+        "title": "Build a Complete Financial Plan",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Document: Current state, goals (1/5/10 year), saving/investing strategy, debt payoff plan, insurance needs, estate basics. This is your financial roadmap.",
+        "success_criteria": "Written financial plan covering all major areas"
+      },
+      {
+        "title": "Investment Policy Statement",
+        "difficulty": 3,
+        "time_minutes": 60,
+        "instructions": "Write your investment rules: Asset allocation, rebalancing frequency, what triggers buy/sell, risk tolerance. Having rules prevents emotional decisions.",
+        "success_criteria": "Written IPS that will guide all investment decisions"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "money",
+      "insight": "Personal finance manages the money; the money module helps you earn more to manage. Defense and offense.",
+      "combined_exercise": "For every dollar increase in income, decide in advance what percentage goes to each priority before you see it."
+    },
+    {
+      "connected_module": "productivity",
+      "insight": "Time spent on financial optimization has huge ROI - one hour researching could save thousands",
+      "combined_exercise": "Schedule a monthly 'money hour' - one focused hour on financial optimization, negotiation, or review."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Most financial problems are behavioral, not mathematical. Mindset determines financial outcomes.",
+      "combined_exercise": "Write down 3 money beliefs from your childhood. Examine which ones serve you and which limit you."
+    },
+    {
+      "connected_module": "lifestyle",
+      "insight": "Lifestyle design determines spending needs - design life intentionally to align spending with values",
+      "combined_exercise": "List your top 5 values. Analyze your spending - does it reflect these values or contradict them?"
+    }
+  ],
+  "masters": [
+    {
+      "name": "Dave Ramsey",
+      "expertise": "Debt elimination, budgeting, financial peace",
+      "key_principles": [
+        "Live like no one else so later you can live like no one else.",
+        "Debt is dumb. Cash is king.",
+        "A budget is telling your money where to go instead of wondering where it went.",
+        "The paid-off home mortgage has replaced the BMW as the status symbol of choice.",
+        "You must gain control over your money or the lack of it will forever control you.",
+        "Act your wage."
+      ],
+      "daily_practices": [
+        "Check your budget daily",
+        "Use cash for discretionary spending",
+        "Say no to debt, always"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Debt Snowball in Action",
+          "scenario": "You have multiple debts and feel overwhelmed: credit cards, car loan, student loans.",
+          "framework_applied": "Baby Steps + Debt Snowball Method",
+          "step_by_step": [
+            "List all debts smallest to largest (ignore interest rates for now)",
+            "Make minimum payments on everything except the smallest",
+            "Attack the smallest debt with every extra dollar - 'gazelle intensity'",
+            "When smallest is paid, roll that payment to the next smallest",
+            "Repeat until debt-free",
+            "Quick wins build momentum - psychology matters more than math"
+          ],
+          "outcome": "Debts eliminated one by one, each payoff providing motivation for the next. Typically debt-free in 18-24 months with intensity."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Zero-Based Budget Template",
+          "context": "Give every dollar a job before the month begins",
+          "template": "MONTHLY INCOME:\n+ Primary job: $___\n+ Side income: $___\n+ Other: $___\nTOTAL INCOME: $___\n\nGIVING (10%):\n- Charity: $___\n\nSAVING (minimum 15%):\n- Emergency fund: $___\n- Retirement: $___\n\nNECESSITIES:\n- Housing: $___ (≤25% of take-home)\n- Utilities: $___\n- Food: $___\n- Transportation: $___\n- Insurance: $___\n- Minimum debt payments: $___\n\nEXTRA DEBT PAYMENT:\n- $___ to [smallest debt]\n\nLIFESTYLE (whatever's left):\n- Entertainment: $___\n- Dining: $___\n- Personal: $___\n\nTOTAL EXPENSES: $___\nREMAINING: $0 (every dollar assigned)",
+          "example_filled": "MONTHLY INCOME:\n+ Primary job: $5,500\n+ Side income: $500\nTOTAL: $6,000\n\nGIVING: $600\nSAVING: $900\n\nNECESSITIES:\n- Housing: $1,400\n- Utilities: $200\n- Food: $500\n- Transport: $400\n- Insurance: $200\n- Min payments: $400\n\nEXTRA DEBT: $800 to smallest credit card\n\nLIFESTYLE:\n- Entertainment: $200\n- Dining: $200\n- Personal: $200\n\nTOTAL: $6,000 | REMAINING: $0"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Total Money Makeover", "author": "Dave Ramsey", "key_takeaway": "Step-by-step plan to get out of debt and build wealth"},
+          {"title": "Financial Peace", "author": "Dave Ramsey", "key_takeaway": "The philosophy behind getting control of your money"}
+        ],
+        "podcasts": [
+          {"title": "The Ramsey Show", "key_takeaway": "Daily advice on debt, budgeting, and building wealth"}
+        ]
+      }
+    },
+    {
+      "name": "Morgan Housel",
+      "expertise": "Psychology of money, behavioral finance, long-term thinking",
+      "key_principles": [
+        "Wealth is what you don't see. It's the cars not bought, the diamonds not purchased.",
+        "Saving is the gap between your ego and your income.",
+        "Compounding works best when you give it decades.",
+        "Getting money and keeping money are two different skills.",
+        "Reasonable is more realistic than rational.",
+        "Room for error is the most important part of any financial plan."
+      ],
+      "daily_practices": [
+        "Automate savings before spending",
+        "Think in decades, not days",
+        "Build a margin of safety in all decisions"
+      ],
+      "worked_examples": [
+        {
+          "title": "Building Wealth Invisibly",
+          "scenario": "You got a raise and everyone expects you to upgrade your lifestyle.",
+          "framework_applied": "Wealth = What You Don't See + Reasonable > Rational",
+          "step_by_step": [
+            "Resist lifestyle inflation: The raise doesn't have to change your spending",
+            "Calculate the compound value: $500/month invested at 8% = $750k in 30 years",
+            "Make wealth invisible: The cars you don't buy, the upgrades you skip",
+            "Stay reasonable: A little lifestyle improvement is fine - don't optimize to the point of misery",
+            "Build margin of safety: Save more than you 'need' because life is unpredictable",
+            "Remember: People who look rich often aren't. People who are rich often don't look it."
+          ],
+          "outcome": "Decades of consistent below-means living compounds into generational wealth, while those who 'looked' rich stayed on the treadmill."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Lifestyle Inflation Guard",
+          "context": "Use when income increases to prevent lifestyle creep",
+          "template": "INCOME INCREASE: $___ / month\n\nBEFORE SPENDING ANYTHING:\n\nAuto-split:\n- 50% to investments: $___\n- 30% to savings goals: $___\n- 20% to lifestyle upgrade: $___\n\nLIFESTYLE UPGRADE RULES:\n- Must wait 30 days before spending\n- Must genuinely improve quality of life\n- Must not create recurring expenses\n\nTHE COMPOUND QUESTION:\nThis $__ invested for 30 years at 8% = $__\nIs the purchase worth more than that future amount?",
+          "example_filled": "INCOME INCREASE: $1,000 / month\n\nAuto-split:\n- 50% to investments: $500\n- 30% to savings goals: $300\n- 20% to lifestyle: $200\n\nLIFESTYLE UPGRADE RULES:\n- Waited 30 days - still want it? Yes\n- Better mattress - genuinely improves life\n- One-time purchase, not recurring\n\nTHE COMPOUND QUESTION:\n$500/month × 30 years @ 8% = $750,000\nIs the daily latte worth $750k? No. Investing instead."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Psychology of Money", "author": "Morgan Housel", "key_takeaway": "Timeless lessons on wealth, greed, and happiness"},
+          {"title": "Same as Ever", "author": "Morgan Housel", "key_takeaway": "Focus on what doesn't change in a changing world"}
+        ],
+        "podcasts": [
+          {"title": "Morgan Housel on The Knowledge Project", "key_takeaway": "Deep dive into behavioral finance and long-term thinking"}
+        ]
+      }
+    },
+    {
+      "name": "JL Collins",
+      "expertise": "Simple investing, FIRE, index funds",
+      "key_principles": [
+        "The stock market is the most powerful wealth-building tool ever created.",
+        "Spend less than you earn. Invest the surplus. Avoid debt.",
+        "F-you money is the most important money you'll ever have.",
+        "Nobody can consistently predict what the market will do.",
+        "Your savings rate is more important than your investment returns.",
+        "VTSAX and chill. Keep it simple."
+      ],
+      "daily_practices": [
+        "Automate investments into index funds",
+        "Ignore market news",
+        "Focus on increasing savings rate"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Simple Path to Wealth",
+          "scenario": "You're overwhelmed by investment options and analysis paralysis is keeping you from starting.",
+          "framework_applied": "VTSAX and Chill + Savings Rate Focus",
+          "step_by_step": [
+            "Open a brokerage account (Vanguard, Fidelity, or Schwab)",
+            "Choose one total market index fund (VTSAX, FXAIX, or SWTSX)",
+            "Set up automatic monthly investment",
+            "Ignore all market news and predictions",
+            "Focus energy on increasing income and savings rate",
+            "Continue for 10-30 years",
+            "Congratulations, you beat 80% of professional investors"
+          ],
+          "outcome": "Simple, automated investing in index funds historically outperforms most active strategies with far less effort and stress."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "FI Number Calculator",
+          "context": "Calculate how much you need to be financially independent",
+          "template": "STEP 1: Calculate Annual Expenses\n- Housing: $___\n- Food: $___\n- Transportation: $___\n- Healthcare: $___\n- Insurance: $___\n- Utilities: $___\n- Other: $___\nTOTAL ANNUAL EXPENSES: $___\n\nSTEP 2: Calculate FI Number\nAnnual Expenses × 25 = FI Number\n$___ × 25 = $___\n\nSTEP 3: Calculate Years to FI\nCurrent investments: $___\nFI Number - Current: $___\nAnnual savings: $___\n(FI Number - Current) / Annual Savings = ___ years\n\nTo accelerate: Increase savings rate by ___% = ___ fewer years",
+          "example_filled": "STEP 1: Annual Expenses\n- Housing: $18,000\n- Food: $6,000\n- Transportation: $4,000\n- Healthcare: $3,000\n- Insurance: $2,000\n- Utilities: $2,400\n- Other: $4,600\nTOTAL: $40,000\n\nSTEP 2: FI Number\n$40,000 × 25 = $1,000,000\n\nSTEP 3: Years to FI\nCurrent: $200,000\nGap: $800,000\nSaving: $40,000/year\n$800,000 / $40,000 = 20 years\n\nAccelerate: +$10k savings = 16 years"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Simple Path to Wealth", "author": "JL Collins", "key_takeaway": "Your road map to financial independence and a rich, free life"}
+        ],
+        "podcasts": [
+          {"title": "ChooseFI", "key_takeaway": "Community and tactics for the Financial Independence journey"}
+        ]
+      }
+    },
+    {
+      "name": "Ramit Sethi",
+      "expertise": "Conscious spending, automation, big wins",
+      "key_principles": [
+        "Focus on Big Wins, not small details like lattes.",
+        "Spend extravagantly on things you love, cut mercilessly on things you don't.",
+        "Automate everything. Remove yourself from the equation.",
+        "The best time to negotiate your salary was 3 years ago. The second best time is now.",
+        "There's a limit to how much you can cut, but no limit to how much you can earn.",
+        "Make your money invisible. Automate savings before you see it."
+      ],
+      "daily_practices": [
+        "Focus on earning more, not just cutting",
+        "Automate bills, savings, investments",
+        "Negotiate one thing this week"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Salary Negotiation Win",
+          "scenario": "You've been at your job for a year and haven't asked for a raise despite good performance.",
+          "framework_applied": "Big Wins + Negotiation Framework",
+          "step_by_step": [
+            "Research: Find market rate for your role (Glassdoor, Levels.fyi, talking to recruiters)",
+            "Document wins: List specific accomplishments with numbers if possible",
+            "Calculate ask: 10-20% above current if underpaid, or market rate",
+            "Schedule the conversation: Request a meeting specifically about compensation",
+            "Use the script: State your case, name your number, then be quiet",
+            "Negotiate everything: If salary is capped, ask for bonus, equity, title, PTO",
+            "Follow up in writing: Confirm what was agreed"
+          ],
+          "outcome": "Even a 10% raise compounds dramatically over a career. One conversation can be worth $100k+ over time."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Salary Negotiation Email Template",
+          "context": "Use to initiate a salary discussion or follow up after verbal conversation",
+          "template": "Subject: Compensation Discussion - [Your Name]\n\nHi [Manager Name],\n\nI've been reflecting on my contributions over the past [time period] and would like to discuss my compensation.\n\nKey accomplishments:\n• [Specific win with numbers]\n• [Specific win with numbers]\n• [Specific win with numbers]\n\nBased on my research of market rates for [role] in [location], and given my performance, I'd like to discuss adjusting my compensation to [$ amount or range].\n\nI love working here and am excited about [upcoming project/company direction]. I believe this adjustment reflects the value I bring to the team.\n\nWhen would be a good time to discuss this?\n\nBest,\n[Your Name]",
+          "example_filled": "Subject: Compensation Discussion - Sarah Chen\n\nHi Mike,\n\nI've been reflecting on my contributions over the past 14 months and would like to discuss my compensation.\n\nKey accomplishments:\n• Led the checkout redesign that increased conversion by 15% ($2.3M annual impact)\n• Reduced page load time by 40%, improving user satisfaction scores\n• Mentored 2 junior developers who are now contributing independently\n\nBased on my research of market rates for Senior Software Engineers in Austin, and given my performance, I'd like to discuss adjusting my salary from $145k to $165k.\n\nI love working here and am excited about the mobile app launch. I believe this adjustment reflects the value I bring to the team.\n\nWhen would be a good time to discuss this?\n\nBest,\nSarah"
+        },
+        {
+          "title": "Conscious Spending Plan Template",
+          "context": "Allocate money based on what you love, not arbitrary percentages",
+          "template": "MONTHLY TAKE-HOME: $___\n\nFIXED COSTS (50-60% target):\n- Rent/mortgage: $___\n- Utilities: $___\n- Debt payments: $___\n- Insurance: $___\n- Subscriptions I love: $___\nFIXED TOTAL: $___ (___% of income)\n\nINVESTMENTS (minimum 10%):\n- 401k/IRA: $___\n- Brokerage: $___\nINVESTMENT TOTAL: $___ (___% of income)\n\nSAVINGS GOALS (5-10%):\n- Emergency fund: $___\n- Vacation: $___\n- Big purchase: $___\nSAVINGS TOTAL: $___ (___% of income)\n\nGUILT-FREE SPENDING (20-35%):\n- [Thing you love]: $___\n- [Thing you love]: $___\n- [Thing you love]: $___\nSPENDING TOTAL: $___ (___% of income)\n\nTHE RULE: Spend extravagantly on what you love. Cut mercilessly on what you don't.",
+          "example_filled": "MONTHLY TAKE-HOME: $6,000\n\nFIXED COSTS:\n- Rent: $1,800\n- Utilities: $150\n- Car payment: $300\n- Insurance: $200\n- Subscriptions: $100 (only ones I actually use)\nFIXED TOTAL: $2,550 (42.5%)\n\nINVESTMENTS:\n- 401k: $500\n- Roth IRA: $500\nINVESTMENT TOTAL: $1,000 (16.7%)\n\nSAVINGS:\n- Emergency: $200\n- Japan trip: $300\nSAVINGS TOTAL: $500 (8.3%)\n\nGUILT-FREE:\n- Dining out (I love food): $600\n- Hobbies: $350\n- Random fun: $300\nSPENDING TOTAL: $1,950 (32.5%)\n\nI cut cable, gym I never used, coffee subscriptions. I spend freely on great meals and experiences."
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "I Will Teach You to Be Rich", "author": "Ramit Sethi", "key_takeaway": "No guilt, no excuses - a 6-week program to master your money"}
+        ],
+        "podcasts": [
+          {"title": "I Will Teach You to Be Rich Podcast", "key_takeaway": "Real couples working through real money problems"}
+        ]
+      }
+    },
+    {
+      "name": "Ray Dalio",
+      "expertise": "Principles-based investing, macro cycles, risk parity",
+      "key_principles": [
+        "Pain + Reflection = Progress",
+        "He who lives by the crystal ball will eat shattered glass.",
+        "Diversification is the only free lunch in investing.",
+        "The biggest mistake investors make is to believe that what happened in the recent past is likely to persist.",
+        "Don't confuse what you wish were true with what is true.",
+        "Time is like a river that carries us forward into encounters with reality."
+      ],
+      "daily_practices": [
+        "Write down your investment principles",
+        "Diversify across uncorrelated assets",
+        "Review decisions to learn from mistakes"
+      ],
+      "worked_examples": [
+        {
+          "title": "Building an All-Weather Portfolio",
+          "scenario": "You want a portfolio that performs reasonably well in any economic environment.",
+          "framework_applied": "Risk Parity + Diversification across economic scenarios",
+          "step_by_step": [
+            "Identify the four economic environments: rising growth, falling growth, rising inflation, falling inflation",
+            "Choose assets that perform well in each: stocks (growth), long bonds (falling growth/inflation), commodities (inflation), cash/TIPS (falling growth)",
+            "Allocate based on risk, not dollars: aim for equal risk contribution from each asset class",
+            "Rebalance periodically: annually or when allocations drift significantly",
+            "Stay the course: the portfolio will lag in strong bull markets but protect in crashes",
+            "Think in decades: this is about reducing volatility over long periods"
+          ],
+          "outcome": "A portfolio that performs adequately in any environment, reducing the chance of catastrophic losses while still building wealth."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Investment Decision Journal",
+          "context": "Document investment decisions to learn from them over time",
+          "template": "DATE: ___\nDECISION: ___\n\nRATIONALE:\n- What do I believe? ___\n- What evidence supports this? ___\n- What could make me wrong? ___\n\nPREDICTED OUTCOME:\n- If right: ___\n- If wrong: ___\n\nALTERNATIVE CONSIDERED: ___\n\n[REVIEW AFTER 6-12 MONTHS]\n\nACTUAL OUTCOME: ___\nWAS I RIGHT? ___\nWHAT DID I LEARN? ___\nWHAT WOULD I DO DIFFERENTLY? ___",
+          "example_filled": "DATE: Feb 2025\nDECISION: Increase international stock allocation from 20% to 30%\n\nRATIONALE:\n- Belief: US stocks overvalued relative to international\n- Evidence: CAPE ratios, dollar strength\n- Wrong if: US tech continues dominant performance\n\nPREDICTED OUTCOME:\n- Right: International outperforms US over 5 years\n- Wrong: Miss continued US gains\n\nALTERNATIVE: Stay the course with current allocation\n\n[REVIEW IN FEB 2026]\n\nACTUAL: International up 12%, US up 8%\nWAS I RIGHT? Yes, so far\nLEARNED: Valuation matters over longer periods\nDIFFERENT: Maybe smaller adjustment (20% to 25%)"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Principles", "author": "Ray Dalio", "key_takeaway": "Life and work principles from one of the world's most successful investors"},
+          {"title": "Principles for Dealing with the Changing World Order", "author": "Ray Dalio", "key_takeaway": "Understanding economic and geopolitical cycles"}
+        ],
+        "podcasts": [
+          {"title": "Ray Dalio on Masters in Business", "key_takeaway": "Investment philosophy and principles from Bridgewater's founder"}
+        ]
+      }
+    }
+  ],
+  "daily_insights": [
+    "Every dollar you save is a soldier working for you. Send more soldiers to work.",
+    "The best time to start investing was 10 years ago. The second best time is today.",
+    "Lifestyle inflation is the silent killer of wealth. Guard against it.",
+    "Your savings rate matters more than your returns. Focus on the gap.",
+    "Compound interest is the eighth wonder of the world. He who understands it, earns it.",
+    "The goal isn't to be rich. It's to have options. Money buys freedom.",
+    "Never invest in anything you don't understand.",
+    "Pay yourself first. Automate it so it's not a decision.",
+    "The stock market is a device for transferring money from the impatient to the patient.",
+    "Financial freedom isn't about being rich. It's about having enough that money isn't the reason you do things."
+  ],
+  "skill_challenges": [
+    "Calculate your current savings rate. Set a goal 5% higher.",
+    "Review all subscriptions. Cancel at least one.",
+    "Automate one additional savings transfer today.",
+    "Calculate your net worth. Write it down. Track monthly.",
+    "Read one chapter of a personal finance book.",
+    "Increase your 401k contribution by 1%.",
+    "Find your biggest expense category. Find one way to reduce it.",
+    "Set up automatic investing if you haven't already.",
+    "Calculate how much you need for financial independence.",
+    "Negotiate one bill or service this week."
+  ]
+}

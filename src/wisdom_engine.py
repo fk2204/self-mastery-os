@@ -53,20 +53,24 @@ class WisdomEngine:
     def get_daily_wisdom(self) -> Dict:
         """Generate comprehensive daily wisdom package."""
         focus_modules = self.profile.get("focus_modules", list(self.masters_data.keys())[:3])
+        rng = self._get_seeded_rng()  # Get seeded RNG once per day
 
         wisdom = {
             "date": datetime.now().strftime("%Y-%m-%d"),
-            "master_teaching": self._get_master_teaching(focus_modules),
-            "daily_insight": self._get_daily_insight(focus_modules),
-            "skill_challenge": self._get_skill_challenge(focus_modules),
-            "power_question": self._get_power_question(),
-            "mindset_shift": self._get_mindset_shift()
+            "master_teaching": self._get_master_teaching(focus_modules, rng),
+            "daily_insight": self._get_daily_insight(focus_modules, rng),
+            "skill_challenge": self._get_skill_challenge(focus_modules, rng),
+            "power_question": self._get_power_question(rng),
+            "mindset_shift": self._get_mindset_shift(rng)
         }
 
         return wisdom
 
-    def _get_master_teaching(self, focus_modules: List[str]) -> Dict:
-        """Get a teaching from a master in focus areas."""
+    def _get_master_teaching(self, focus_modules: List[str], rng: random.Random = None) -> Dict:
+        """Get a teaching from a master in focus areas (deterministic via seeded RNG)."""
+        if rng is None:
+            rng = self._get_seeded_rng()
+
         available_modules = []
         for m in focus_modules:
             if (self.masters_path / f"{m}_masters.json").exists():
@@ -80,27 +84,30 @@ class WisdomEngine:
         if not available_modules:
             return {"master": "Unknown", "teaching": "No teachings available.", "module": "general"}
 
-        module = random.choice(available_modules)
+        module = rng.choice(available_modules)
         module_data = self._load_module(module)
         masters = module_data.get("masters", [])
 
         if not masters:
             return {"master": "Unknown", "teaching": "No masters found.", "module": module}
 
-        master = random.choice(masters)
+        master = rng.choice(masters)
         principles = master.get("key_principles", [])
         daily_practices = master.get("daily_practices", ["Apply this today."])
 
         return {
             "master": master.get("name", "Unknown"),
             "expertise": master.get("expertise", ""),
-            "teaching": random.choice(principles) if principles else "No teaching available.",
-            "practice": random.choice(daily_practices) if daily_practices else "Apply this today.",
+            "teaching": rng.choice(principles) if principles else "No teaching available.",
+            "practice": rng.choice(daily_practices) if daily_practices else "Apply this today.",
             "module": module
         }
 
-    def _get_daily_insight(self, focus_modules: List[str]) -> str:
+    def _get_daily_insight(self, focus_modules: List[str], rng: random.Random = None) -> str:
         """Get a daily insight from focus modules."""
+        if rng is None:
+            rng = self._get_seeded_rng()
+
         all_insights = []
 
         # Only load focus modules
@@ -111,23 +118,26 @@ class WisdomEngine:
 
         # Add some cross-module insights (still lazy-loaded)
         if all_insights:
-            return random.choice(all_insights)
+            return rng.choice(all_insights)
 
         # Fallback: load one additional module for insights
         available_modules = [f.stem.replace("_masters", "") for f in self.masters_path.glob("*_masters.json")]
         if available_modules:
-            module = random.choice(available_modules)
+            module = rng.choice(available_modules)
             module_data = self._load_module(module)
             insights = module_data.get("daily_insights", [])
             if insights:
-                return random.choice(insights)
+                return rng.choice(insights)
 
         return "Show up. Do the work. Repeat."
 
-    def _get_skill_challenge(self, focus_modules: List[str]) -> Dict:
+    def _get_skill_challenge(self, focus_modules: List[str], rng: random.Random = None) -> Dict:
         """Get a skill challenge for today."""
+        if rng is None:
+            rng = self._get_seeded_rng()
+
         # Prioritize focus modules
-        module = random.choice(focus_modules) if focus_modules else "productivity"
+        module = rng.choice(focus_modules) if focus_modules else "productivity"
 
         if module in self.masters_data:
             challenges = self.masters_data[module].get("skill_challenges", [])
@@ -135,7 +145,7 @@ class WisdomEngine:
                 return {
                     "module": module,
                     "module_name": MODULE_NAMES.get(module, module.title()),
-                    "challenge": random.choice(challenges)
+                    "challenge": rng.choice(challenges)
                 }
 
         return {
@@ -144,8 +154,11 @@ class WisdomEngine:
             "challenge": "Complete your #1 priority before noon."
         }
 
-    def _get_power_question(self) -> str:
-        """Get a power question for self-reflection."""
+    def _get_power_question(self, rng: random.Random = None) -> str:
+        """Get a power question for self-reflection (cyclic rotation by day)."""
+        if rng is None:
+            rng = self._get_seeded_rng()
+
         questions = [
             "What would the best version of me do right now?",
             "What am I avoiding that I know I should do?",
@@ -168,10 +181,15 @@ class WisdomEngine:
             "If I had 6 months to live, would I be doing this?",
             "What's the smallest step I can take right now?"
         ]
-        return random.choice(questions)
+        # Cyclic rotation: day 1 = question 0, day 2 = question 1, etc.
+        day_num = int(rng.random() * 1000000) % len(questions)
+        return questions[day_num]
 
-    def _get_mindset_shift(self) -> Dict:
+    def _get_mindset_shift(self, rng: random.Random = None) -> Dict:
         """Get a mindset reframe for the day."""
+        if rng is None:
+            rng = self._get_seeded_rng()
+
         shifts = [
             {"from": "I don't have time", "to": "It's not a priority", "why": "Own your choices. If it mattered, you'd find time."},
             {"from": "I can't do this", "to": "I can't do this YET", "why": "Growth mindset. Skills are built, not born."},
@@ -186,10 +204,11 @@ class WisdomEngine:
             {"from": "It's too hard", "to": "It's supposed to be hard", "why": "Hard is what makes it valuable."},
             {"from": "I'm not talented enough", "to": "I haven't practiced enough", "why": "Talent is overrated. Reps are underrated."}
         ]
-        return random.choice(shifts)
+        return rng.choice(shifts)
 
     def get_master_advice_for_situation(self, situation: str) -> str:
         """Get relevant master advice for a specific situation."""
+        rng = self._get_seeded_rng()
         situation_lower = situation.lower()
 
         # Map situations to modules
@@ -213,7 +232,7 @@ class WisdomEngine:
 
         if not relevant_module:
             if self.masters_data:
-                relevant_module = random.choice(list(self.masters_data.keys()))
+                relevant_module = rng.choice(list(self.masters_data.keys()))
             else:
                 return "Take action despite uncertainty. Clarity comes from doing, not thinking."
 
@@ -222,9 +241,9 @@ class WisdomEngine:
         masters = module_data.get("masters", [])
 
         if masters:
-            master = random.choice(masters)
-            principle = random.choice(master.get("key_principles", ["Keep pushing forward."]))
-            practice = random.choice(master.get("daily_practices", ["Take action now."]))
+            master = rng.choice(masters)
+            principle = rng.choice(master.get("key_principles", ["Keep pushing forward."]))
+            practice = rng.choice(master.get("daily_practices", ["Take action now."]))
 
             return f'{master["name"]} says: "{principle}"\n\nApply it: {practice}'
 
@@ -313,6 +332,8 @@ class WisdomEngine:
 
     def get_worked_example(self, module: str = None) -> Optional[Dict]:
         """Get a random worked example from a module or focus modules."""
+        rng = self._get_seeded_rng()
+
         if module:
             modules_to_check = [module]
         else:
@@ -330,10 +351,12 @@ class WisdomEngine:
                             "module": mod
                         })
 
-        return random.choice(all_examples) if all_examples else None
+        return rng.choice(all_examples) if all_examples else None
 
     def get_script_template(self, module: str = None) -> Optional[Dict]:
         """Get a random script/template from a module or focus modules."""
+        rng = self._get_seeded_rng()
+
         if module:
             modules_to_check = [module]
         else:
@@ -351,7 +374,7 @@ class WisdomEngine:
                             "module": mod
                         })
 
-        return random.choice(all_templates) if all_templates else None
+        return rng.choice(all_templates) if all_templates else None
 
     def get_level_definition(self, module: str, level: int) -> Optional[Dict]:
         """Get level definition for a module at a specific level."""
@@ -363,6 +386,8 @@ class WisdomEngine:
 
     def get_progressive_exercise(self, module: str, difficulty: str = "beginner") -> Optional[Dict]:
         """Get a progressive exercise from a module at specified difficulty."""
+        rng = self._get_seeded_rng()
+
         if module not in self.masters_data:
             return None
 
@@ -372,7 +397,7 @@ class WisdomEngine:
         if not difficulty_exercises:
             return None
 
-        exercise = random.choice(difficulty_exercises)
+        exercise = rng.choice(difficulty_exercises)
         return {
             **exercise,
             "module": module,
@@ -381,11 +406,13 @@ class WisdomEngine:
 
     def get_cross_module_connection(self, module: str) -> Optional[Dict]:
         """Get a cross-module connection insight for a module."""
+        rng = self._get_seeded_rng()
+
         if module not in self.masters_data:
             return None
 
         connections = self.masters_data[module].get("cross_module_connections", [])
-        return random.choice(connections) if connections else None
+        return rng.choice(connections) if connections else None
 
     def get_master_resources(self, module: str, master_name: str) -> Optional[Dict]:
         """Get resources (books, podcasts) for a specific master."""

@@ -1,0 +1,664 @@
+{
+  "module": "dating",
+  "level_definitions": {
+    "1": {
+      "name": "Awareness",
+      "description": "You recognize that social skills can be developed through practice",
+      "capabilities": ["Understand that charisma is learnable", "Recognize basic social dynamics", "Accept that improvement requires uncomfortable practice"],
+      "milestone": "Start one conversation with a stranger this week"
+    },
+    "2": {
+      "name": "Beginner",
+      "description": "Taking first steps to improve social interactions",
+      "capabilities": ["Make basic small talk", "Remember names with intention", "Show genuine interest through questions"],
+      "milestone": "Have a meaningful conversation with someone new at an event"
+    },
+    "3": {
+      "name": "Practitioner",
+      "description": "Actively practicing social skills in daily interactions",
+      "capabilities": ["Use active listening consistently", "Give genuine compliments", "Navigate group conversations"],
+      "milestone": "Initiate and maintain a new friendship"
+    },
+    "4": {
+      "name": "Connector",
+      "description": "Building genuine connections with a variety of people",
+      "capabilities": ["Build rapport quickly", "Read social situations", "Create comfortable environments for others"],
+      "milestone": "Be introduced to someone as 'great at connecting with people'"
+    },
+    "5": {
+      "name": "Influencer",
+      "description": "Naturally influencing social dynamics positively",
+      "capabilities": ["Lead conversations effectively", "Handle difficult social situations", "Make others feel valued and heard"],
+      "milestone": "Become someone others seek out for social advice"
+    },
+    "6": {
+      "name": "Network Builder",
+      "description": "Building and maintaining a strong social network",
+      "capabilities": ["Create valuable connections for others", "Maintain relationships systematically", "Navigate professional and personal social worlds"],
+      "milestone": "Have a network of 50+ meaningful connections"
+    },
+    "7": {
+      "name": "Social Artist",
+      "description": "Effortlessly navigating any social situation",
+      "capabilities": ["Command attention when needed", "Make anyone feel comfortable", "Turn strangers into friends quickly"],
+      "milestone": "Feel confident walking into any social situation"
+    },
+    "8": {
+      "name": "Relationship Architect",
+      "description": "Building deep, lasting relationships strategically",
+      "capabilities": ["Create lasting bonds", "Navigate complex relationship dynamics", "Balance authenticity with social intelligence"],
+      "milestone": "Have multiple deep friendships that enrich your life"
+    },
+    "9": {
+      "name": "Social Leader",
+      "description": "Leading social groups and creating community",
+      "capabilities": ["Bring people together", "Resolve social conflicts", "Create inclusive environments"],
+      "milestone": "Lead a community or group that people love being part of"
+    },
+    "10": {
+      "name": "Social Master",
+      "description": "Effortless, authentic connection with anyone",
+      "capabilities": ["Genuine comfort with all people", "Deep emotional intelligence", "Your presence elevates any social situation"],
+      "milestone": "People describe you as someone who makes everyone feel important"
+    }
+  },
+  "progressive_exercises": {
+    "beginner": [
+      {
+        "title": "The Name Game",
+        "difficulty": 1,
+        "time_minutes": 15,
+        "instructions": "When you meet someone new, repeat their name immediately: 'Nice to meet you, Sarah.' Use it twice more in the conversation. After, write it down with one memorable fact about them.",
+        "success_criteria": "Remember and use 3 new names correctly this week"
+      },
+      {
+        "title": "Compliment Challenge",
+        "difficulty": 1,
+        "time_minutes": 20,
+        "instructions": "Give 3 genuine, specific compliments today. Not 'nice shirt' but 'that's a bold color choice, it really suits you.' Notice their reaction.",
+        "success_criteria": "3 genuine compliments given with positive reception"
+      },
+      {
+        "title": "Question Deep Dive",
+        "difficulty": 1,
+        "time_minutes": 30,
+        "instructions": "In your next conversation, ask 3 follow-up questions for every statement they make. Go from 'What do you do?' to 'What got you into that?' to 'What do you enjoy most about it?'",
+        "success_criteria": "Complete one conversation with 3-level follow-up questions"
+      },
+      {
+        "title": "Daily Appreciation Practice",
+        "difficulty": 1,
+        "time_minutes": 10,
+        "instructions": "For one week, tell your partner (or close friend/family member) one specific thing you appreciate about them each day. Be specific: not 'I appreciate you' but 'I appreciated how you made me coffee this morning without me asking.'",
+        "success_criteria": "7 consecutive days of specific appreciations given"
+      }
+    ],
+    "intermediate": [
+      {
+        "title": "Mirroring Practice",
+        "difficulty": 2,
+        "time_minutes": 30,
+        "instructions": "Practice Chris Voss's mirroring technique in 5 conversations. Repeat the last 1-3 words they said as a question. Watch how it opens people up.",
+        "success_criteria": "5 conversations using mirroring with noted responses"
+      },
+      {
+        "title": "Vulnerability Exchange",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "In a conversation with someone you'd like to know better, share something slightly vulnerable about yourself. Notice if they reciprocate. This builds trust and connection.",
+        "success_criteria": "One vulnerable share with positive reciprocation"
+      },
+      {
+        "title": "Conversation Starter Toolkit",
+        "difficulty": 2,
+        "time_minutes": 60,
+        "instructions": "Create a personal toolkit of 10 conversation starters that work for you. Test each in real situations. Keep the ones that consistently work.",
+        "success_criteria": "10 tested conversation starters with notes on effectiveness"
+      },
+      {
+        "title": "Weekly Relationship Check-In",
+        "difficulty": 2,
+        "time_minutes": 45,
+        "instructions": "Schedule a weekly 'state of the union' conversation with your partner. Use this structure: (1) What went well this week in our relationship? (2) What's one thing I could do better? (3) Is there anything unresolved we need to address? (4) What are you looking forward to together? Keep it positive and solution-focused.",
+        "success_criteria": "Complete 4 weekly check-ins with documented insights and improvements"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Tactical Empathy Deep Dive",
+        "difficulty": 3,
+        "time_minutes": 60,
+        "instructions": "In a high-stakes conversation (negotiation, difficult relationship discussion), use labeling: 'It seems like you're feeling...' or 'It sounds like...' Track how it defuses tension.",
+        "success_criteria": "Used tactical empathy to navigate a difficult conversation successfully"
+      },
+      {
+        "title": "Host Your Own Event",
+        "difficulty": 3,
+        "time_minutes": 180,
+        "instructions": "Organize a small gathering (dinner party, activity, meetup). Practice being the social hub: introduce people, ensure everyone feels included, facilitate conversations.",
+        "success_criteria": "Successfully hosted an event where guests connected meaningfully"
+      },
+      {
+        "title": "Network Audit and Outreach",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "List your top 20 relationships. Rate each on depth (1-10) and recency of contact. Reach out to 5 who scored low but matter to you. Rekindle the connections.",
+        "success_criteria": "5 meaningful reconnections made with follow-up plans"
+      },
+      {
+        "title": "Perpetual Problem Dialogue",
+        "difficulty": 3,
+        "time_minutes": 90,
+        "instructions": "Identify a recurring conflict in your relationship that never seems to resolve (69% of conflicts are perpetual). Instead of trying to 'win,' have a conversation about the dreams and values behind each position. Use this structure: (1) Each person shares their position without interruption. (2) Each person explores: 'What does this represent to me? What's my deeper need?' (3) Find the overlapping values. (4) Brainstorm compromises that honor both dreams. The goal is understanding, not agreement.",
+        "success_criteria": "Complete the dialogue on one perpetual problem with documented compromises and reduced conflict intensity"
+      }
+    ]
+  },
+  "cross_module_connections": [
+    {
+      "connected_module": "sales",
+      "insight": "Social skills and sales skills are nearly identical - both are about understanding others and creating trust",
+      "combined_exercise": "Use active listening techniques in a sales conversation. Notice how it improves outcomes."
+    },
+    {
+      "connected_module": "mindset",
+      "insight": "Social anxiety is a mindset issue - confidence comes from reframing rejection and embracing discomfort",
+      "combined_exercise": "Before a social event, practice Stoic premeditatio: visualize handling any awkward situation with grace."
+    },
+    {
+      "connected_module": "business",
+      "insight": "Your network is your net worth - relationships are the foundation of business success",
+      "combined_exercise": "Reach out to someone in your network with a genuine offer to help them, expecting nothing in return."
+    },
+    {
+      "connected_module": "lifestyle",
+      "insight": "Your social environment shapes who you become - design it intentionally",
+      "combined_exercise": "Audit your top 5 relationships. Are they elevating you? Consider how to spend more time with people who inspire you."
+    }
+  ],
+  "masters": [
+    {
+      "name": "Dale Carnegie",
+      "expertise": "Winning friends, influence, likeability",
+      "key_principles": [
+        "You can make more friends in two months by becoming interested in other people than in two years trying to get people interested in you.",
+        "A person's name is to that person the sweetest sound in any language.",
+        "Talk in terms of the other person's interests.",
+        "Make the other person feel important—and do it sincerely.",
+        "Be a good listener. Encourage others to talk about themselves.",
+        "The only way to get the best of an argument is to avoid it."
+      ],
+      "daily_practices": [
+        "Remember and use people's names",
+        "Ask questions and truly listen to answers",
+        "Give genuine appreciation daily"
+      ],
+      "worked_examples": [
+        {
+          "title": "The Interest Formula",
+          "scenario": "You're at a networking event and don't know how to start conversations.",
+          "framework_applied": "Become genuinely interested + Let them talk about themselves",
+          "step_by_step": [
+            "Shift your goal: Not 'make them like me' but 'learn something interesting about them'",
+            "Open with genuine curiosity: 'What brings you here tonight?'",
+            "Follow the energy: Notice what they light up about and go deeper there",
+            "Use their name: 'That's fascinating, Sarah. How did you get into that?'",
+            "Make them feel important: 'I've never thought about it that way before'",
+            "The conversation flows because they're talking about their favorite subject: themselves",
+            "They walk away thinking YOU were interesting (because you were interested)"
+          ],
+          "outcome": "You become the person everyone remembers because you made them feel heard and valued."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Conversation Starter Kit",
+          "context": "Use these proven openers and follow-ups in any social situation",
+          "template": "OPENERS (pick one):\n- 'What brings you here tonight?'\n- 'I don't think we've met - I'm [name]'\n- 'That's a great [item/accessory] - what's the story behind it?'\n- 'What's keeping you busy these days?'\n\nFOLLOW-UP QUESTIONS:\n- 'What do you enjoy most about that?'\n- 'How did you get into that?'\n- 'What's been the biggest surprise about it?'\n- 'What would you do differently if you started over?'\n\nDEEPENING QUESTIONS:\n- 'What made you decide to pursue that?'\n- 'What advice would you give to someone just starting?'\n- 'What's next for you?'\n\nCLOSING:\n- 'This has been really interesting. I'd love to continue this conversation - can I get your contact?'",
+          "example_filled": "At a conference:\n\nOPENER: 'What brings you to this conference?'\nResponse: 'I'm speaking on panel about AI in healthcare.'\n\nFOLLOW-UP: 'That's fascinating - how did you get into that intersection?'\nResponse: 'I was a doctor who got frustrated with how slow healthcare adopted tech...'\n\nDEEPENING: 'What's the biggest misconception people have about AI in healthcare?'\nResponse: [They go deep, feel heard, and remember you]'\n\nCLOSING: 'I've learned more in 10 minutes than in the last session. Could we grab coffee sometime?'"
+        },
+        {
+          "title": "Remembering Names System",
+          "context": "Never forget a name again with this systematic approach",
+          "template": "WHEN YOU HEAR THEIR NAME:\n1. Repeat it immediately: 'Nice to meet you, ___'\n2. Use it in conversation twice more\n3. Make a mental association (rhyme, visual, celebrity)\n\nBEFORE YOU PART:\n4. Use their name again: 'Great talking with you, ___'\n\nIMMEDIATELY AFTER:\n5. Write it down with:\n   - Context (where/when)\n   - One memorable fact\n   - Physical characteristic\n   - Anything they mentioned caring about\n\nBEFORE NEXT MEETING:\n6. Review your notes\n\nASSOCIATION EXAMPLES:\n- Sarah = Sarah Jessica Parker\n- Mike = Microphone (he's a speaker)\n- Grace = She was graceful in her movements",
+          "example_filled": "MET: Sarah Chen at marketing conference\nCONTEXT: Panel on content strategy, sat next to me\nFACT: Just moved to Austin from SF, loves hiking\nPHYSICAL: Bright red glasses, very animated\nCARES ABOUT: Building authentic brand communities\n\nASSOCIATION: Sarah Chen = 'Chen' sounds like 'Zen', she had a calm presence despite being animated\n\nNEXT TIME: 'Sarah! How's Austin treating you? Found any good hiking spots yet?'"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "How to Win Friends and Influence People", "author": "Dale Carnegie", "key_takeaway": "The timeless classic on building relationships through genuine interest in others"}
+        ],
+        "podcasts": [
+          {"title": "Carnegie Institute Podcast", "key_takeaway": "Modern applications of Carnegie's principles"}
+        ]
+      }
+    },
+    {
+      "name": "Robert Greene",
+      "expertise": "Power dynamics, seduction, mastery",
+      "key_principles": [
+        "Never outshine the master.",
+        "Always say less than necessary.",
+        "Make other people come to you—use bait if necessary.",
+        "Learn to keep people dependent on you.",
+        "Avoid the unhappy and unlucky.",
+        "Win through your actions, never through argument."
+      ],
+      "daily_practices": [
+        "Observe social dynamics before acting",
+        "Speak less, listen more",
+        "Create value that makes others seek you out"
+      ],
+      "worked_examples": [
+        {
+          "title": "Strategic Social Positioning",
+          "scenario": "You're in a competitive environment and need to build influence without seeming threatening.",
+          "framework_applied": "Never outshine the master + Win through actions",
+          "step_by_step": [
+            "Observe the power structure: Who has real influence? Who are the gatekeepers?",
+            "Make allies of those in power by making them look good",
+            "Never compete directly for credit - let your work speak",
+            "Build your reputation through results, not words",
+            "When you do speak, say less than necessary - create mystery",
+            "Let others come to you by being uniquely valuable",
+            "The position you want comes through strategic patience"
+          ],
+          "outcome": "You build influence steadily without triggering competitive responses that could derail your progress."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Social Dynamics Observation Template",
+          "context": "Use when entering a new social environment",
+          "template": "BEFORE ENGAGING:\n\nWho holds actual power here?\n- ___\n\nWho are the gatekeepers?\n- ___\n\nWhat are the unwritten rules?\n- ___\n\nWhat value can I uniquely provide?\n- ___\n\nWho should I NOT outshine?\n- ___\n\nMY STRATEGY:\n- I will position myself as: ___\n- I will avoid: ___\n- I will be known for: ___",
+          "example_filled": "New job at tech company:\n\nWho holds power: CEO obviously, but also VP of Engineering (everyone respects her opinion)\n\nGatekeepers: EA to CEO, Senior Architect who's been here 10 years\n\nUnwritten rules: Don't suggest changes until you've been here 3 months. Recognition goes to team, not individuals.\n\nMy unique value: Deep expertise in scaling systems, which they struggle with\n\nDon't outshine: My direct manager - make him look good first\n\nSTRATEGY:\n- Position: Helpful expert who makes others successful\n- Avoid: Showing off knowledge in meetings\n- Known for: Being the person who solves hard problems quietly"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The 48 Laws of Power", "author": "Robert Greene", "key_takeaway": "Understanding power dynamics throughout history"},
+          {"title": "The Laws of Human Nature", "author": "Robert Greene", "key_takeaway": "Understanding yourself and others through psychology and history"}
+        ],
+        "podcasts": [
+          {"title": "Robert Greene on The Knowledge Project", "key_takeaway": "How to develop social intelligence and strategic thinking"}
+        ]
+      }
+    },
+    {
+      "name": "Chris Voss",
+      "expertise": "Tactical empathy, negotiation, connection",
+      "key_principles": [
+        "Empathy is not about agreeing—it's about understanding.",
+        "The fastest way to build rapport is to make the other person feel heard.",
+        "Labeling emotions defuses them.",
+        "Mirroring creates connection without effort.",
+        "Never be mean to someone who could hurt you by doing nothing.",
+        "The key to gaining the upper hand is giving the other side the illusion of control."
+      ],
+      "daily_practices": [
+        "Mirror someone's last 3 words in conversation",
+        "Label emotions: 'It seems like you...'",
+        "Aim to understand before being understood"
+      ],
+      "worked_examples": [
+        {
+          "title": "Using Tactical Empathy to Defuse Conflict",
+          "scenario": "Someone is angry at you and attacking. Your natural response is to defend or counter-attack.",
+          "framework_applied": "Labeling + Active Listening + 'That's right'",
+          "step_by_step": [
+            "Don't defend. Let them finish completely.",
+            "Label their emotion: 'It sounds like you're really frustrated about this.'",
+            "Wait for them to confirm with words or body language",
+            "Mirror their words: Repeat their last few words as a question",
+            "They will elaborate and feel heard",
+            "Continue labeling and mirroring until they say 'That's right'",
+            "'That's right' means they feel understood. Now productive conversation can begin."
+          ],
+          "outcome": "Conflict defuses because people can't stay angry when they feel genuinely understood."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Active Listening Toolkit",
+          "context": "Techniques to make anyone feel deeply heard",
+          "template": "MIRRORING:\nRepeat their last 1-3 words as a question.\nThem: 'I'm just exhausted from this project.'\nYou: 'Exhausted from this project?'\n[They elaborate]\n\nLABELING:\n'It seems like...'\n'It sounds like...'\n'It looks like...'\n\nExamples:\n- 'It seems like this has been weighing on you.'\n- 'It sounds like you're caught between two priorities.'\n- 'It looks like you're not getting the support you need.'\n\nTHE GOAL: Get them to say 'That's right'\nNot 'You're right' (that's dismissive)\nBut 'That's right' (that means they feel understood)\n\nAFTER 'THAT'S RIGHT':\nNow they're ready to listen to you.",
+          "example_filled": "Colleague: 'I'm so frustrated. I've been working on this for weeks and nobody seems to care.'\n\nMirror: 'Nobody seems to care?'\n\nColleague: 'Yeah, I present updates and people are on their phones. The project keeps getting deprioritized.'\n\nLabel: 'It sounds like you're feeling invisible despite doing important work.'\n\nColleague: 'That's right. Exactly.'\n\n[Now they're ready to hear your perspective or help]"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Never Split the Difference", "author": "Chris Voss", "key_takeaway": "FBI hostage negotiation techniques for everyday life"}
+        ],
+        "podcasts": [
+          {"title": "The Chris Voss Show", "key_takeaway": "Weekly practical negotiation and communication advice"}
+        ]
+      }
+    },
+    {
+      "name": "Vanessa Van Edwards",
+      "expertise": "People science, charisma, body language",
+      "key_principles": [
+        "Charisma is a learnable skill, not a born trait.",
+        "First impressions are made in 7 seconds and are very hard to change.",
+        "Facial expressions are the most powerful communication tool.",
+        "Warmth + competence = the charisma formula.",
+        "Hand gestures increase trust and understanding by 60%.",
+        "Vocal power matters: lower pitch conveys confidence."
+      ],
+      "daily_practices": [
+        "Use hand gestures when speaking",
+        "Triple your nods—it encourages others to talk",
+        "Make eye contact for 60-70% of conversation"
+      ],
+      "worked_examples": [
+        {
+          "title": "Engineering a Great First Impression",
+          "scenario": "You have an important meeting and need to make a strong first impression.",
+          "framework_applied": "7-Second Window + Warmth-Competence Matrix",
+          "step_by_step": [
+            "The 7 seconds: Your first impression is made before you speak",
+            "Preparation: Know their name, have one thing in common ready",
+            "Body language: Square your body toward them, make eye contact, genuine smile",
+            "The launch stance: Hands visible (not in pockets), shoulders back, chin level",
+            "First words: Use their name, give a genuine micro-compliment",
+            "Show warmth: Eyebrow flash (quick raise), nodding, open posture",
+            "Show competence: Steady voice, purposeful gestures, confident handshake"
+          ],
+          "outcome": "You control the frame of the interaction from the first moment, making everything that follows easier."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Charisma Checklist",
+          "context": "Run through before any important social situation",
+          "template": "BEFORE THE INTERACTION:\n[ ] Know their name and one fact about them\n[ ] Clear intention for the conversation\n[ ] Power pose for 2 minutes (if possible)\n\nFIRST 7 SECONDS:\n[ ] Eyebrow flash (quick raise) when you see them\n[ ] Genuine smile (reaches your eyes)\n[ ] Square your body toward them\n[ ] Hands visible, open posture\n[ ] Clear, confident 'Hi [Name]!'\n\nDURING:\n[ ] Eye contact 60-70% of time\n[ ] Triple your nods (encourages them to talk)\n[ ] Use hand gestures when making points\n[ ] Lean in slightly when they share something important\n[ ] Use their name 2-3 times\n\nCLOSING:\n[ ] Use their name one more time\n[ ] Clear next step if appropriate\n[ ] Leave them feeling good",
+          "example_filled": "Job interview prep:\n\nBEFORE:\n[x] Know: Sarah Chen, VP Product, was at Google, passionate about accessibility\n[x] Intention: Learn about role and demonstrate strategic thinking\n[x] Power posed in bathroom for 2 min\n\nFIRST 7 SECONDS:\n[x] Eyebrow flash when she opened door\n[x] Genuine smile, thought of something funny to trigger real smile\n[x] Squared toward her, not angled\n[x] Hands visible, confident handshake\n[x] 'Sarah, great to finally meet you in person!'\n\nDURING:\n[x] Maintained eye contact, especially when she was speaking\n[x] Nodded to encourage her\n[x] Used hands for emphasis on key points\n[x] Leaned in when she mentioned accessibility challenges\n\nCLOSING:\n[x] 'Sarah, this has been a great conversation.'\n[x] Asked about next steps\n[x] Left her smiling"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Captivate", "author": "Vanessa Van Edwards", "key_takeaway": "The science of succeeding with people"},
+          {"title": "Cues", "author": "Vanessa Van Edwards", "key_takeaway": "Master the secret language of charismatic communication"}
+        ],
+        "podcasts": [
+          {"title": "Science of People", "key_takeaway": "Research-backed tips on communication and body language"}
+        ]
+      }
+    },
+    {
+      "name": "Mark Manson",
+      "expertise": "Honesty, boundaries, authentic connection",
+      "key_principles": [
+        "The only way to be truly confident is to simply become comfortable with being unconfident.",
+        "You are defined by what you're willing to struggle for.",
+        "Healthy relationships are built on boundaries, not neediness.",
+        "Rejection is just information, not a verdict on your worth.",
+        "Stop looking for the right person. Become the right person.",
+        "Vulnerability is not weakness—it's the birthplace of connection."
+      ],
+      "daily_practices": [
+        "Express your genuine opinion, even if unpopular",
+        "Set and maintain clear boundaries",
+        "Be vulnerable—share real thoughts and feelings"
+      ],
+      "worked_examples": [
+        {
+          "title": "Building Connection Through Vulnerability",
+          "scenario": "Your conversations stay surface level and you never form deep connections.",
+          "framework_applied": "Strategic Vulnerability + Authenticity",
+          "step_by_step": [
+            "Recognize: Surface conversations create surface relationships",
+            "Take the first step: Share something mildly vulnerable about yourself",
+            "The vulnerability should be real but not overwhelming",
+            "Example: 'I'm actually kind of nervous about this presentation tomorrow'",
+            "This gives permission for them to be vulnerable too",
+            "Match their level: If they open up more, you can too",
+            "The connection deepens because you're both being real"
+          ],
+          "outcome": "Deep, authentic relationships instead of a collection of acquaintances."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Boundary-Setting Script",
+          "context": "How to say no and set boundaries without damaging relationships",
+          "template": "THE SITUATION: ___\n\nWHAT I WANT TO SAY NO TO: ___\n\nMY HONEST REASON: ___\n\nTHE SCRIPT:\n'Thank you for [acknowledging their ask]. I'm not going to be able to [specific thing], because [honest reason]. What I can do is [alternative if appropriate].'\n\nNO JUSTIFICATION NEEDED:\nYou don't need to explain or apologize excessively. A simple, direct answer is respectful.\n\nIF THEY PUSH BACK:\n'I understand, and I appreciate you asking. The answer is still no.'\n\nREMEMBER:\nSaying no to this is saying yes to something else you value more.",
+          "example_filled": "SITUATION: Friend wants me to help them move on Saturday, but I desperately need rest\n\nSAYING NO TO: Spending my Saturday moving boxes\n\nHONEST REASON: I've been running on empty and need recovery time\n\nSCRIPT: 'I appreciate you thinking of me. I'm not going to be able to help Saturday - I'm running on empty and need to recover. I can help you find a moving company though, or I could be available next weekend for unpacking.'\n\nIF PUSH BACK: 'I hear you, and I wish I could help. But I need to take care of myself right now. The answer is still no.'"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Subtle Art of Not Giving a F*ck", "author": "Mark Manson", "key_takeaway": "A counterintuitive approach to living a good life"},
+          {"title": "Models: Attract Women Through Honesty", "author": "Mark Manson", "key_takeaway": "How to be attractive through authenticity, not manipulation"}
+        ],
+        "podcasts": [
+          {"title": "Mark Manson's Blog/Newsletter", "key_takeaway": "Regular essays on relationships, self-improvement, and life philosophy"}
+        ]
+      }
+    },
+    {
+      "name": "John Gottman",
+      "expertise": "Relationship science, conflict resolution, Four Horsemen",
+      "key_principles": [
+        "The Four Horsemen of relationship apocalypse: Criticism, Contempt, Defensiveness, Stonewalling.",
+        "The antidotes: Gentle start-up, Build culture of appreciation, Take responsibility, Self-soothe.",
+        "The magic ratio is 5:1 - five positive interactions for every negative one.",
+        "Successful couples turn toward each other's bids for attention, not away.",
+        "69% of relationship conflict is perpetual - not solvable. Learn to manage it.",
+        "Small things often: Regular positive moments matter more than grand gestures."
+      ],
+      "daily_practices": [
+        "Make a bid for connection daily: Share something, ask a question, invite interaction",
+        "Respond to partner's bids: Turn toward, not away or against",
+        "Five-to-one rule: Five positives for every negative interaction"
+      ],
+      "worked_examples": [
+        {
+          "title": "Recognizing and Stopping the Four Horsemen",
+          "scenario": "Your arguments always escalate and you don't know why.",
+          "framework_applied": "Four Horsemen + Antidotes",
+          "step_by_step": [
+            "RECOGNIZE the Horseman: Which one shows up in your conflicts?",
+            "1. CRITICISM: Attacking character ('You always...', 'You never...')",
+            "   Antidote: Gentle start-up with 'I' statements. 'I feel X when Y happens'",
+            "2. CONTEMPT: Mockery, sarcasm, name-calling, eye-rolling (most toxic)",
+            "   Antidote: Build culture of appreciation. Express what you admire daily.",
+            "3. DEFENSIVENESS: Playing victim, making excuses, counter-attacking",
+            "   Antidote: Take responsibility, even for 5% of the issue",
+            "4. STONEWALLING: Shutting down, silent treatment, walking away",
+            "   Antidote: Self-soothe when flooded. Take 20-min break, then return",
+            "Practice the antidotes BEFORE the next conflict"
+          ],
+          "outcome": "Conflicts become productive discussions instead of escalating battles. The relationship stabilizes and deepens."
+        },
+        {
+          "title": "The Art of the Repair Attempt",
+          "scenario": "Arguments spiral and you can't de-escalate once they start.",
+          "framework_applied": "Repair Attempts + Emotional Flooding",
+          "step_by_step": [
+            "Notice when you're getting flooded (heart rate >100, can't think clearly)",
+            "Make a repair attempt: A statement or action that de-escalates",
+            "Examples: 'I'm feeling defensive', 'Can we start over?', 'I love you', humor",
+            "Your partner must ACCEPT the repair attempt for it to work",
+            "If repairs keep failing, your friendship foundation is damaged",
+            "Rebuild friendship: Daily check-ins, appreciate out loud, ask open questions",
+            "Practice repairs during calm times so they're easier during conflict"
+          ],
+          "outcome": "You develop a circuit breaker for arguments. Conflicts de-escalate before they cause lasting damage."
+        },
+        {
+          "title": "Managing Perpetual Problems",
+          "scenario": "You keep having the same argument over and over. Nothing changes.",
+          "framework_applied": "Perpetual vs Solvable Problems + Dreams Within Conflict",
+          "step_by_step": [
+            "Realize: 69% of problems are perpetual (based on personality differences)",
+            "These aren't meant to be 'solved' - they're meant to be managed with humor and acceptance",
+            "Example: One partner is neat, one is messy. This won't change.",
+            "Instead of trying to change them, understand the dream behind their position",
+            "Neat partner's dream: 'A calm, organized home makes me feel safe'",
+            "Messy partner's dream: 'Spontaneity and creativity matter more than order'",
+            "Honor both dreams: Create neat zones and creative zones",
+            "The goal isn't agreement, it's understanding and compromise"
+          ],
+          "outcome": "You stop trying to win the argument and start understanding each other. The conflict loses its charge."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Four Horsemen Awareness Checklist",
+          "context": "Use after conflicts to identify patterns",
+          "template": "RECENT CONFLICT ABOUT: ___\n\nDid I use CRITICISM? (Attacking character vs complaining about behavior)\n[ ] Example: ___\nAntidote: How could I have used gentle start-up?\n___\n\nDid I show CONTEMPT? (Disrespect, mockery, superiority)\n[ ] Example: ___\nAntidote: What do I appreciate about my partner?\n___\n\nWas I DEFENSIVE? (Denying responsibility, making excuses)\n[ ] Example: ___\nAntidote: What was my 5% responsibility?\n___\n\nDid I STONEWALL? (Shut down, withdraw, silent treatment)\n[ ] Example: ___\nAntidote: Was I flooded? Did I need a break?\n___\n\nREPAIR ATTEMPTS:\nDid I try to de-escalate? ___\nDid my partner try? ___\nWere repairs accepted? ___\n\nNEXT TIME I WILL:\n___",
+          "example_filled": "CONFLICT: About household chores distribution\n\nCRITICISM?\n[x] 'You never help out around here'\nAntidote: 'I feel overwhelmed when the dishes pile up. Can we figure out a system together?'\n\nCONTEMPT?\n[x] Eye roll when they tried to explain\nAntidote: They work hard too. I appreciate that they cook most dinners.\n\nDEFENSIVE?\n[x] 'Well you don't do X either!'\nAntidote: 'You're right, I haven't been doing my share. Let's both improve.'\n\nSTONEWALL?\n[ ] No\n\nREPAIRS:\nI tried: 'Can we talk about this calmly?' - ignored\nThey tried: 'I'm sorry' - I rejected it because I was still angry\nOutcome: Fight escalated\n\nNEXT TIME:\n1. Notice when I'm flooded, take a break\n2. Start with appreciation, not criticism\n3. Accept repair attempts even when upset"
+        },
+        {
+          "title": "Bid for Connection Tracker",
+          "context": "Build friendship through small daily moments",
+          "template": "BIDS I MADE TODAY:\n1. [Time] [What I said/did] → Partner response: [ ] Toward [ ] Away [ ] Against\n2. [Time] [What I said/did] → Partner response: [ ] Toward [ ] Away [ ] Against\n3. [Time] [What I said/did] → Partner response: [ ] Toward [ ] Away [ ] Against\n\nBIDS PARTNER MADE:\n1. [Time] [What they said/did] → My response: [ ] Toward [ ] Away [ ] Against\n2. [Time] [What they said/did] → My response: [ ] Toward [ ] Away [ ] Against\n3. [Time] [What they said/did] → My response: [ ] Toward [ ] Away [ ] Against\n\nTURN TOWARD RATE:\nMe: ___% (Target: 86%+)\nPartner: ___% (Target: 86%+)\n\nOBSERVATIONS:\n___\n\nTOMORROW I WILL:\n___",
+          "example_filled": "BIDS I MADE:\n1. 7am 'Check out this article' → [x] Toward (read it, commented)\n2. 6pm 'How was your day?' → [x] Toward (shared story for 5 min)\n3. 9pm 'Want to watch that show?' → [ ] Away (said they were tired)\n\nBIDS PARTNER MADE:\n1. 7:30am 'Did you sleep okay?' → [x] Toward (shared I had weird dreams)\n2. 8pm 'Look at this meme' → [ ] Away (was on my phone, just said 'cool')\n3. 9:30pm 'Come cuddle?' → [x] Toward (put down phone, joined)\n\nMy rate: 67% (2/3 toward)\nPartner rate: 67% (2/3 toward)\n\nOBSERVATIONS:\nWe're both turning away when on devices. Need phone-free time.\n\nTOMORROW:\nPut phone down when they talk. Make three bids before noon."
+        },
+        {
+          "title": "Perpetual Problem Discussion",
+          "context": "Use for recurring issues that won't 'solve'",
+          "template": "THE PERPETUAL PROBLEM:\n___\n\nMY POSITION:\n___\n\nMY PARTNER'S POSITION:\n___\n\nTHE DREAM BEHIND MY POSITION:\nWhat does this represent to me? What need does it meet?\n___\n\nTHE DREAM BEHIND THEIR POSITION:\nWhat might this represent to them? What need does it meet?\n___\n\nAREAS OF COMMON GROUND:\n___\n\nPOSSIBLE COMPROMISES THAT HONOR BOTH DREAMS:\n1. ___\n2. ___\n3. ___\n\nWHAT I'M WILLING TO ACCEPT:\n___\n\nQUESTIONS TO ASK MY PARTNER:\n___",
+          "example_filled": "PROBLEM:\nMoney - I want to save aggressively, they want to enjoy life now\n\nMY POSITION:\nSave 50%+ of income, minimal discretionary spending\n\nTHEIR POSITION:\nSave some, but also travel and enjoy experiences now\n\nMY DREAM:\nFinancial security makes me feel safe. I grew up with money stress and never want that again.\n\nTHEIR DREAM:\nLife is short. They saw their parent die young with money saved but unused. Want to live fully now.\n\nCOMMON GROUND:\nWe both want financial stability AND a good life. Neither wants poverty or to waste money.\n\nCOMPROMISES:\n1. Save 40% (between our positions), use 10% for experiences\n2. Fully fund emergency fund and retirement, then loosen up\n3. Budget for experiences: two trips per year, reasonable dining out\n\nI'M WILLING TO:\nAccept that saving less doesn't mean we'll be broke. Their dream is valid too.\n\nQUESTIONS:\n'What's your biggest fear about money?'\n'What would make you feel financially secure?'\n'How can we honor both our needs?'"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "The Seven Principles for Making Marriage Work", "author": "John Gottman", "key_takeaway": "Research-based framework for building lasting relationships"},
+          {"title": "The Four Horsemen", "author": "John Gottman", "key_takeaway": "Identifying and stopping destructive patterns in relationships"}
+        ],
+        "podcasts": [
+          {"title": "The Gottman Relationship Blog", "key_takeaway": "Weekly research-based relationship advice"}
+        ]
+      }
+    },
+    {
+      "name": "Esther Perel",
+      "expertise": "Intimacy, desire, modern relationships",
+      "key_principles": [
+        "The quality of your relationships determines the quality of your life.",
+        "Desire needs mystery, but love needs closeness. The tension between them is healthy.",
+        "Erotic intimacy isn't about how often, but about presence and attention.",
+        "Affairs happen in good relationships too - they're about seeking a new version of self.",
+        "The secret to desire: Maintain separateness, autonomy, and individual identity.",
+        "Conflict is inevitable. Repair is everything."
+      ],
+      "daily_practices": [
+        "Create space for both closeness and autonomy in relationships",
+        "Be present - put down devices, make eye contact, really see your partner",
+        "Cultivate individual interests and friendships outside the relationship"
+      ],
+      "worked_examples": [
+        {
+          "title": "Rekindling Desire Through Mystery",
+          "scenario": "Long-term relationship feels like roommates, not lovers. Desire has faded.",
+          "framework_applied": "Mating in Captivity - Balancing Closeness and Mystery",
+          "step_by_step": [
+            "Recognize: Too much closeness can kill desire. We need both.",
+            "Closeness: Comfort, security, knowing. 'I love you because I know you.'",
+            "Mystery: Curiosity, distance, unknown. 'I desire you because I don't fully know you.'",
+            "The paradox: We want security AND excitement from the same person",
+            "Create space: Have separate interests, friends, experiences",
+            "Return with stories: 'You went where? Tell me about it.' Be curious.",
+            "Watch your partner in their element: At work, with friends, pursuing passion",
+            "This reminds you they're a whole person, not just 'your partner'",
+            "Desire returns when you see them as separate, not merged"
+          ],
+          "outcome": "Desire reignites because you've created the space that allows you to miss and want each other again."
+        },
+        {
+          "title": "Navigating Betrayal and Repair",
+          "scenario": "Trust has been broken (infidelity, major lie). Can the relationship survive?",
+          "framework_applied": "The State of Affairs - Understanding Betrayal",
+          "step_by_step": [
+            "The hurt partner needs: Truth, acknowledgment, understanding why",
+            "The one who strayed needs: To be able to explain without being shut down",
+            "Create a safe container: Set time to talk (not ambush conversations)",
+            "The strayer explains: What was I seeking? What was I running from?",
+            "Often it's not about the partner - it's about wanting a new version of self",
+            "The hurt partner: Express pain without contempt (hard but necessary)",
+            "Both: Can we create a new relationship from this?",
+            "This isn't about going back to before - that relationship is dead",
+            "It's about consciously building something new, together"
+          ],
+          "outcome": "Some relationships become stronger post-betrayal because they finally address what wasn't working. Others end, but with understanding."
+        },
+        {
+          "title": "The Art of Erotic Intimacy",
+          "scenario": "Physical intimacy feels routine, obligatory, or disconnected.",
+          "framework_applied": "Presence, Attention, and Anticipation",
+          "step_by_step": [
+            "Eroticism isn't about technique, it's about presence",
+            "BEFORE: Anticipation builds desire. Think about your partner during the day.",
+            "Create space: Don't transition from chores to intimacy instantly",
+            "Ritual: Shower, music, candles - mark the transition from daily to erotic",
+            "DURING: Be present. Put away the to-do list in your mind.",
+            "Eye contact. Slow down. Notice your partner.",
+            "Communicate: 'I like when...' 'More of that...' 'Try this...'",
+            "AFTER: Stay present. Don't immediately return to logistics.",
+            "The goal isn't performance, it's connection and mutual pleasure"
+          ],
+          "outcome": "Physical intimacy becomes an experience of real connection instead of a routine task to check off."
+        }
+      ],
+      "scripts_templates": [
+        {
+          "title": "Relationship Health Check-In",
+          "context": "Use monthly to maintain relationship vitality",
+          "template": "CLOSENESS (Security, Knowing, Comfort):\nHow connected do we feel? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nMYSTERY (Autonomy, Curiosity, Desire):\nHow much individual space do we have? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nDESIRE:\nHow's our physical intimacy? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nCONFLICT & REPAIR:\nHow do we handle disagreements? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nGROWTH:\nAre we evolving together or apart? (1-10): ___\nWhat's working: ___\nWhat needs attention: ___\n\nONE THING TO TRY THIS MONTH:\n___",
+          "example_filled": "CLOSENESS: 8/10\nWorking: Daily check-ins, good communication\nNeeds: More quality time without screens\n\nMYSTERY: 4/10\nWorking: I started rock climbing\nNeeds: We do everything together, need more separation\n\nDESIRE: 5/10\nWorking: We're affectionate\nNeeds: Physical intimacy feels routine, lacking anticipation\n\nCONFLICT: 7/10\nWorking: We talk things out eventually\nNeeds: Still get defensive too quickly\n\nGROWTH: 6/10\nWorking: We're both pursuing careers\nNeeds: Not sharing our individual growth with each other enough\n\nONE THING:\nWeekly 'date report' where we share what we experienced separately"
+        },
+        {
+          "title": "Creating Erotic Space",
+          "context": "Use to transition from daily life to intimate connection",
+          "template": "THE TRANSITION:\nHow do I want to feel? ___\nWhat helps me get there? ___\n\nPRE-RITUAL (Creating Anticipation):\n- Text/message during day: ___\n- Get ready: ___\n- Create environment: ___\n\nTHE APPROACH:\n- First touch: ___\n- First words: ___\n- Setting the tone: ___\n\nDURING (Presence):\n- Stay present by: ___\n- Communicate: ___\n- Notice: ___\n\nAFTER (Connection):\n- Stay a while: ___\n- Express: ___\n- Connect: ___\n\nREFLECTION:\nWhat worked: ___\nWhat to try next time: ___",
+          "example_filled": "TRANSITION:\nFeel: Desired, present, playful\nHelps: Music, dimmed lights, no rush\n\nPRE-RITUAL:\n- Text: 'Thinking about you... see you at 8'\n- Get ready: Shower, nice outfit, feel good\n- Environment: Clean room, candles, music\n\nAPPROACH:\n- First touch: Slow, intentional\n- First words: 'I've been thinking about this all day'\n- Tone: Playful, present, not rushed\n\nDURING:\n- Present by: Eye contact, notice their reactions\n- Communicate: 'I love when you...', 'More of that'\n- Notice: Their sounds, movements, pleasure\n\nAFTER:\n- Stay: 15+ minutes, cuddle, talk\n- Express: 'I love connecting with you like this'\n- Connect: Share something vulnerable\n\nREFLECTION:\nWorked: Taking time to transition made it feel special\nNext: Try morning intimacy instead of always evening"
+        }
+      ],
+      "resources": {
+        "books": [
+          {"title": "Mating in Captivity", "author": "Esther Perel", "key_takeaway": "Reconciling the domestic and the erotic"},
+          {"title": "The State of Affairs", "author": "Esther Perel", "key_takeaway": "Rethinking infidelity and what affairs reveal about relationships"}
+        ],
+        "podcasts": [
+          {"title": "Where Should We Begin?", "key_takeaway": "Real couples therapy sessions - learn from others' challenges"}
+        ]
+      }
+    }
+  ],
+  "daily_insights": [
+    "The person who needs the interaction least has the most power.",
+    "Confidence is not 'they will like me.' It's 'I'll be fine either way.'",
+    "You can't connect if you're performing. Be real.",
+    "The best conversationalists ask great questions and actually listen.",
+    "Your body language speaks before your mouth opens.",
+    "Rejection is redirection. It's saving you from the wrong fit.",
+    "People remember how you made them feel, not what you said.",
+    "Quality over quantity. One deep connection beats ten shallow ones.",
+    "Social skills are skills. They can be practiced and improved.",
+    "The most attractive trait is genuine interest in others.",
+    "In long-term relationships, bids for connection matter more than grand gestures. Turn toward, not away.",
+    "Healthy boundaries aren't walls - they're the fences that let you know where you end and others begin.",
+    "Desire needs mystery, but love needs closeness. The tension between them is where great relationships live.",
+    "The goal isn't to avoid all conflict - it's to repair quickly when ruptures happen.",
+    "Your partner isn't responsible for making you happy. They're responsible for not making you miserable."
+  ],
+  "skill_challenges": [
+    "Start a conversation with one stranger today.",
+    "Give three genuine compliments to different people.",
+    "Practice active listening: don't plan your response while they talk.",
+    "Use someone's name three times in conversation today.",
+    "Make eye contact with confidence in your next interaction.",
+    "Ask follow-up questions instead of waiting to talk.",
+    "Approach someone who intimidates you and say hello.",
+    "Share one vulnerable truth about yourself with someone.",
+    "Attend a social event and talk to at least 3 new people.",
+    "Practice mirroring body language in your next conversation.",
+    "The next time conflict arises, use a gentle start-up: 'I feel ___ when ___ happens' instead of 'You always...'",
+    "Make three repair attempts today in any difficult conversation: 'Can we start over?', 'I hear you', or use humor.",
+    "Practice the 5:1 ratio: Give five genuine appreciations to your partner before raising one concern.",
+    "Have a conversation about needs without criticism: Share what you want more of, not what's missing.",
+    "Create intimacy through presence: Put away all devices and give your partner 20 minutes of undivided attention."
+  ]
+}

@@ -1,0 +1,40 @@
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+.env
+.env.local
+.DS_Store
+coverage/
+.yarn/
+*.log
+dist-ssr/
+# macOS
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.coverage/
+coverage/
+*.lcov
+
+# Dependency directories
+node_modules
+/.pnp
+.pnp.js
