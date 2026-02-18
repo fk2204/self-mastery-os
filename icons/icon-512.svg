@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="hexGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c565"/>
+      <stop offset="45%" stop-color="#d4a847"/>
+      <stop offset="100%" stop-color="#a67c1a"/>
+    </linearGradient>
+    <linearGradient id="hexEdge512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0d478"/>
+      <stop offset="100%" stop-color="#c49b30"/>
+    </linearGradient>
+    <filter id="hexGlow512" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#d4a847" flood-opacity="0.35"/>
+    </filter>
+    <filter id="hexShadow512" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="mShadow512" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <radialGradient id="bgGlow512" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#18181c"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="#0a0a0b"/>
+  <rect width="512" height="512" rx="64" fill="url(#bgGlow512)"/>
+  <!-- Outer glow hexagon -->
+  <polygon
+    points="256,75 437,165 437,347 256,437 75,347 75,165"
+    fill="url(#hexGrad512)"
+    filter="url(#hexGlow512)"/>
+  <!-- Main hexagon with shadow -->
+  <polygon
+    points="256,80 432,168 432,344 256,432 80,344 80,168"
+    fill="url(#hexGrad512)"
+    filter="url(#hexShadow512)"/>
+  <!-- Hexagon inner bevel highlight -->
+  <polygon
+    points="256,90 422,174 422,338 256,422 90,338 90,174"
+    fill="none"
+    stroke="rgba(255,255,255,0.1)"
+    stroke-width="1.5"/>
+  <!-- Subtle inner depth -->
+  <polygon
+    points="256,96 416,178 416,334 256,416 96,334 96,178"
+    fill="rgba(0,0,0,0.06)"/>
+  <!-- Bold stylized "M" in dark color -->
+  <path
+    d="M 155,345 L 155,190 L 205,190 L 256,268 L 307,190 L 357,190 L 357,345 L 315,345 L 315,258 L 276,314 L 236,314 L 197,258 L 197,345 Z"
+    fill="#0a0a0b"
+    filter="url(#mShadow512)"
+    opacity="0.85"/>
+</svg>

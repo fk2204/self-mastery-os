@@ -7,6 +7,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192.svg">
     <title>MASTERMIND ALLIANCE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -719,6 +721,23 @@
             .current-time { font-size: 1.5rem; }
             .master-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; }
             .master-tab { white-space: nowrap; }
+
+            /* Smooth page transitions */
+            .page-section {
+                transition: opacity 0.2s ease;
+            }
+
+            /* Better stat cards on mobile */
+            .grid-4 {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 0.75rem !important;
+            }
+            .stat-card {
+                padding: 0.875rem !important;
+            }
+            .stat-value {
+                font-size: 1.75rem !important;
+            }
         }
 
         @media (max-width: 480px) {
@@ -3500,6 +3519,272 @@
 
         /* Desktop-only: 900px+ handled by default sidebar styles */
         /* Mobile handled by 768px breakpoint above */
+
+        /* ============================================
+           BOTTOM NAVIGATION (Mobile PWA)
+           ============================================ */
+        .bottom-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: calc(60px + env(safe-area-inset-bottom, 0px));
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+            background: var(--bg-surface);
+            border-top: 1px solid var(--border-subtle);
+            z-index: 300;
+            justify-content: space-around;
+            align-items: center;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(24, 24, 27, 0.92);
+        }
+
+        .bottom-nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+            padding: 6px 0;
+            flex: 1;
+            border: none;
+            background: none;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+            transition: color 0.15s ease;
+            position: relative;
+        }
+
+        .bottom-nav-item svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .bottom-nav-item.active {
+            color: var(--gold-primary);
+        }
+
+        .bottom-nav-item:active {
+            transform: scale(0.92);
+            transition: transform 0.1s ease;
+        }
+
+        /* Center action button (Check-in) */
+        .bottom-nav-action {
+            position: relative;
+        }
+
+        .bottom-nav-action svg {
+            width: 26px;
+            height: 26px;
+            background: var(--gold-primary);
+            color: var(--bg-void);
+            stroke: var(--bg-void);
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        .bottom-nav-action span {
+            color: var(--gold-primary);
+            font-weight: 600;
+        }
+
+        /* Quick Action Menu (shown when Check-in tapped) */
+        .quick-action-menu {
+            display: none;
+            position: fixed;
+            bottom: calc(70px + env(safe-area-inset-bottom, 0px));
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-accent);
+            border-radius: 16px;
+            padding: 0.5rem;
+            z-index: 301;
+            flex-direction: column;
+            gap: 0.25rem;
+            min-width: 200px;
+            box-shadow: 0 -8px 32px rgba(0,0,0,0.4);
+        }
+
+        .quick-action-menu.show {
+            display: flex;
+            animation: slideUp 0.2s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+
+        .quick-action-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.875rem 1rem;
+            border: none;
+            background: none;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            cursor: pointer;
+            border-radius: 12px;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+
+        .quick-action-btn:active {
+            background: var(--bg-hover);
+        }
+
+        .quick-action-btn svg {
+            width: 20px;
+            height: 20px;
+            color: var(--gold-primary);
+        }
+
+        /* PWA Install Banner */
+        .install-banner {
+            display: none;
+            position: fixed;
+            bottom: calc(70px + env(safe-area-inset-bottom, 0px));
+            left: 1rem;
+            right: 1rem;
+            background: linear-gradient(135deg, var(--bg-elevated) 0%, var(--bg-surface) 100%);
+            border: 1px solid var(--gold-dim);
+            border-radius: 16px;
+            padding: 1rem 1.25rem;
+            z-index: 299;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 -4px 24px rgba(0,0,0,0.3);
+            animation: slideUp 0.3s ease-out;
+        }
+
+        .install-banner.show { display: flex; }
+
+        .install-banner-text {
+            flex: 1;
+        }
+
+        .install-banner-text strong {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--gold-primary);
+            margin-bottom: 2px;
+        }
+
+        .install-banner-text span {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .install-banner-btn {
+            padding: 0.6rem 1.25rem;
+            background: var(--gold-primary);
+            color: var(--bg-void);
+            border: none;
+            border-radius: 10px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .install-banner-close {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.25rem;
+            cursor: pointer;
+            padding: 4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Offline Indicator */
+        .offline-indicator {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 28px;
+            background: var(--danger);
+            color: white;
+            font-size: 0.7rem;
+            font-family: 'JetBrains Mono', monospace;
+            align-items: center;
+            justify-content: center;
+            z-index: 400;
+            letter-spacing: 0.1em;
+        }
+
+        .offline-indicator.show { display: flex; }
+
+        /* When offline indicator is shown, push everything down */
+        body.offline .mobile-header { top: 28px; }
+        body.offline .sidebar { top: 28px; }
+        body.offline .main-content { padding-top: calc(56px + 28px + 1rem); }
+
+        @media (max-width: 768px) {
+            .bottom-nav { display: flex; }
+
+            /* Hide hamburger menu on mobile - bottom nav replaces it */
+            .mobile-header {
+                justify-content: center;
+            }
+            .hamburger { display: none; }
+
+            /* Add padding at bottom for bottom nav */
+            .main-content {
+                padding-bottom: calc(70px + env(safe-area-inset-bottom, 0px)) !important;
+            }
+
+            /* Full-screen modals on mobile */
+            .modal-overlay {
+                align-items: flex-end;
+            }
+            .modal {
+                width: 100% !important;
+                max-width: 100% !important;
+                max-height: 90vh;
+                border-radius: 20px 20px 0 0 !important;
+                margin: 0 !important;
+                padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px)) !important;
+            }
+
+            /* Improve touch feedback on cards */
+            .card:active, .habit-item:active, .master-card:active {
+                transform: scale(0.98);
+                transition: transform 0.1s ease;
+            }
+
+            /* Scrollable content areas with momentum */
+            .page-section {
+                -webkit-overflow-scrolling: touch;
+                overscroll-behavior-y: contain;
+            }
+        }
+
+        /* Standalone mode adjustments (when installed as PWA) */
+        @media (display-mode: standalone) {
+            .mobile-header {
+                padding-top: env(safe-area-inset-top, 0px);
+                height: calc(56px + env(safe-area-inset-top, 0px));
+            }
+            .main-content {
+                padding-top: calc(56px + env(safe-area-inset-top, 0px) + 1rem);
+            }
+        }
     </style>
 </head>
 <body>
@@ -5192,6 +5477,14 @@
             _pageSections.forEach(page => page.classList.remove('active'));
             document.getElementById(`page-${pageId}`).classList.add('active');
 
+            // Update bottom nav
+            document.querySelectorAll('.bottom-nav-item[data-page]').forEach(item => {
+                item.classList.toggle('active', item.dataset.page === pageId);
+            });
+            // Close quick action menu if open
+            const qam = document.getElementById('quickActionMenu');
+            if (qam) qam.classList.remove('show');
+
             // Close sidebar on mobile
             if (window.innerWidth <= 768) closeSidebar();
 
@@ -6757,6 +7050,63 @@
             content.classList.toggle('expanded');
         }
 
+        // Quick Action Menu (Check-in button)
+        function openQuickAction() {
+            const menu = document.getElementById('quickActionMenu');
+            if (menu) {
+                menu.classList.toggle('show');
+            }
+        }
+
+        // Close quick action when clicking outside
+        document.addEventListener('click', (e) => {
+            const menu = document.getElementById('quickActionMenu');
+            const btn = document.getElementById('quickActionBtn');
+            if (menu && !menu.contains(e.target) && !btn.contains(e.target)) {
+                menu.classList.remove('show');
+            }
+        });
+
+        // PWA Install handling
+        let deferredPrompt = null;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            // Show install banner after 3 seconds
+            setTimeout(() => {
+                const banner = document.getElementById('installBanner');
+                if (banner && !localStorage.getItem('pwa-install-dismissed')) {
+                    banner.classList.add('show');
+                }
+            }, 3000);
+        });
+
+        function installPWA() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then(choice => {
+                    deferredPrompt = null;
+                    document.getElementById('installBanner')?.classList.remove('show');
+                });
+            }
+        }
+
+        function dismissInstallBanner() {
+            document.getElementById('installBanner')?.classList.remove('show');
+            localStorage.setItem('pwa-install-dismissed', '1');
+        }
+
+        // Offline detection
+        window.addEventListener('online', () => {
+            document.body.classList.remove('offline');
+            document.getElementById('offlineIndicator')?.classList.remove('show');
+        });
+        window.addEventListener('offline', () => {
+            document.body.classList.add('offline');
+            document.getElementById('offlineIndicator')?.classList.add('show');
+        });
+
         async function init() {
             loadFromStorage();
 
@@ -6817,6 +7167,17 @@
                 if (!appData.journalStats) appData.journalStats = { totalEntries: 0, dailyOpsCount: 0, deepDiveCount: 0, frameworkUsage: {} };
                 if (typeof appData.journalStreak !== 'number') appData.journalStreak = 0;
             });
+
+            // Register service worker
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
+            }
+
+            // Check initial online status
+            if (!navigator.onLine) {
+                document.body.classList.add('offline');
+                document.getElementById('offlineIndicator')?.classList.add('show');
+            }
         }
 
         document.addEventListener('DOMContentLoaded', init);
@@ -7645,5 +8006,54 @@
             if (e.key === 'j') showPage('journal');
         });
     </script>
+
+<!-- Quick Action Menu -->
+<div class="quick-action-menu" id="quickActionMenu">
+    <button class="quick-action-btn" onclick="openMorningCheckin(); document.getElementById('quickActionMenu').classList.remove('show');">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        Morning Check-in
+    </button>
+    <button class="quick-action-btn" onclick="openEveningReflection(); document.getElementById('quickActionMenu').classList.remove('show');">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        Evening Reflection
+    </button>
+</div>
+
+<!-- PWA Install Banner -->
+<div class="install-banner" id="installBanner">
+    <div class="install-banner-text">
+        <strong>Install Mastermind</strong>
+        <span>Add to home screen for instant access</span>
+    </div>
+    <button class="install-banner-btn" onclick="installPWA()">Install</button>
+    <button class="install-banner-close" onclick="dismissInstallBanner()">&times;</button>
+</div>
+
+<!-- Offline Indicator -->
+<div class="offline-indicator" id="offlineIndicator">OFFLINE MODE</div>
+
+<!-- Mobile Bottom Navigation -->
+<nav class="bottom-nav" id="bottomNav">
+    <button class="bottom-nav-item active" data-page="dashboard" onclick="showPage('dashboard')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <span>Home</span>
+    </button>
+    <button class="bottom-nav-item" data-page="journal" onclick="showPage('journal')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <span>Journal</span>
+    </button>
+    <button class="bottom-nav-item bottom-nav-action" id="quickActionBtn" onclick="openQuickAction()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        <span>Check-in</span>
+    </button>
+    <button class="bottom-nav-item" data-page="masters" onclick="showPage('masters')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        <span>Masters</span>
+    </button>
+    <button class="bottom-nav-item" data-page="plans" onclick="showPage('plans')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        <span>Plans</span>
+    </button>
+</nav>
 </body>
 </html>

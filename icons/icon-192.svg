@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <defs>
+    <linearGradient id="hexGrad192" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c565"/>
+      <stop offset="50%" stop-color="#d4a847"/>
+      <stop offset="100%" stop-color="#b8922e"/>
+    </linearGradient>
+    <filter id="glow192" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#d4a847" flood-opacity="0.4"/>
+    </filter>
+    <filter id="mShadow192" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <radialGradient id="bgGlow192" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#151517"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="192" height="192" rx="28" fill="#0a0a0b"/>
+  <rect width="192" height="192" rx="28" fill="url(#bgGlow192)"/>
+  <!-- Gold hexagon: center 96,96 radius ~64 -->
+  <!-- Hexagon points: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) scaled -->
+  <polygon
+    points="96,32 160,64 160,128 96,160 32,128 32,64"
+    fill="url(#hexGrad192)"
+    filter="url(#glow192)"/>
+  <!-- Inner highlight edge -->
+  <polygon
+    points="96,36 156,66 156,126 96,156 36,126 36,66"
+    fill="none"
+    stroke="rgba(255,255,255,0.12)"
+    stroke-width="0.75"/>
+  <!-- Bold "M" in dark color inside the hexagon -->
+  <path
+    d="M 60,126 L 60,74 L 76,74 L 96,102 L 116,74 L 132,74 L 132,126 L 118,126 L 118,96 L 104,116 L 88,116 L 74,96 L 74,126 Z"
+    fill="#0a0a0b"
+    filter="url(#mShadow192)"
+    opacity="0.85"/>
+</svg>
