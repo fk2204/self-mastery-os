@@ -16,12 +16,17 @@ const DYNAMIC_CACHE = `mastermind-dynamic-${CACHE_VERSION}`;
 
 // Assets to precache during the install event.
 // These form the minimal "app shell" needed to boot offline.
+// Derive the base path from the service worker's own location so precache
+// URLs resolve correctly on both root deployments and subdirectory deployments
+// (e.g. GitHub Pages at /self-mastery-os/).
+const SW_BASE = self.registration.scope;
+
 const PRECACHE_URLS = [
-  '/dashboard.html',
-  '/data/masters-data.js',
-  '/manifest.json',
-  '/icons/icon-192.svg',
-  '/icons/icon-512.svg'
+  new URL('dashboard.html', SW_BASE).pathname,
+  new URL('data/masters-data.js', SW_BASE).pathname,
+  new URL('manifest.json', SW_BASE).pathname,
+  new URL('icons/icon-192.svg', SW_BASE).pathname,
+  new URL('icons/icon-512.svg', SW_BASE).pathname
 ];
 
 // ---------------------------------------------------------------------------
@@ -110,7 +115,7 @@ self.addEventListener('fetch', (event) => {
   //    Strategy: Network-first with cache fallback
   //    These files may be updated between versions, so prefer fresh data,
   //    but serve the cached copy if the network is unavailable.
-  if (url.pathname.startsWith('/knowledge_base/')) {
+  if (url.pathname.includes('/knowledge_base/')) {
     event.respondWith(networkFirst(request, DYNAMIC_CACHE));
     return;
   }
@@ -237,7 +242,8 @@ async function networkFirst(request, cacheName) {
 // ---------------------------------------------------------------------------
 async function offlineFallback() {
   try {
-    const cachedDashboard = await caches.match('/dashboard.html');
+    const dashboardUrl = new URL('dashboard.html', self.registration.scope).pathname;
+    const cachedDashboard = await caches.match(dashboardUrl);
     if (cachedDashboard) {
       return cachedDashboard;
     }
@@ -277,12 +283,12 @@ function isStaticAsset(url) {
 
   // JSON files under /data/ (e.g., masters-data.js is already caught above,
   // but other data JSONs should also be cache-first)
-  if (pathname.startsWith('/data/') && pathname.endsWith('.json')) {
+  if (pathname.includes('/data/') && pathname.endsWith('.json')) {
     return true;
   }
 
   // The manifest.json at root
-  if (pathname === '/manifest.json') {
+  if (pathname.endsWith('/manifest.json')) {
     return true;
   }
 
