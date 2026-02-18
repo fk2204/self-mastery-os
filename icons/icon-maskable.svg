@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="hexGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c565"/>
+      <stop offset="45%" stop-color="#d4a847"/>
+      <stop offset="100%" stop-color="#a67c1a"/>
+    </linearGradient>
+    <filter id="hexGlowMask" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#d4a847" flood-opacity="0.3"/>
+    </filter>
+    <filter id="mShadowMask" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <radialGradient id="bgGlowMask" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#151517"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </radialGradient>
+  </defs>
+  <!-- Full bleed background - maskable icons get cropped to various shapes -->
+  <rect width="512" height="512" fill="#0a0a0b"/>
+  <rect width="512" height="512" fill="url(#bgGlowMask)"/>
+  <!-- Hexagon sized to fit within 80% safe zone -->
+  <!-- Safe zone: 51px to 461px on each axis (center 256, safe radius 205) -->
+  <!-- Hexagon: center 256, vertical radius ~145 to stay well inside safe zone -->
+  <!-- Points: top=111, bottom=401, left=115, right=397 (all within 51-461) -->
+  <polygon
+    points="256,111 397,183 397,329 256,401 115,329 115,183"
+    fill="url(#hexGradMask)"
+    filter="url(#hexGlowMask)"/>
+  <!-- Inner bevel highlight -->
+  <polygon
+    points="256,119 389,188 389,324 256,393 123,324 123,188"
+    fill="none"
+    stroke="rgba(255,255,255,0.1)"
+    stroke-width="1.5"/>
+  <!-- Subtle inner depth layer -->
+  <polygon
+    points="256,124 385,191 385,321 256,389 127,321 127,191"
+    fill="rgba(0,0,0,0.06)"/>
+  <!-- Bold "M" in dark color - sized to fit within the smaller hexagon -->
+  <path
+    d="M 178,336 L 178,196 L 220,196 L 256,256 L 292,196 L 334,196 L 334,336 L 300,336 L 300,260 L 270,308 L 242,308 L 212,260 L 212,336 Z"
+    fill="#0a0a0b"
+    filter="url(#mShadowMask)"
+    opacity="0.85"/>
+</svg>
