@@ -2,14 +2,16 @@
 """
 Self-Mastery OS - Dashboard Server
 Serves the web dashboard with live data from your profile.
+Optimized: gzip compression, cache headers, parallel I/O, pre-serialized JSON.
 """
 import os
 import sys
 import json
-import webbrowser
+import gzip
+import io
 from http.server import HTTPServer, SimpleHTTPRequestHandler
-from pathlib import Path
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
 
 # Add src to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
@@ -20,12 +22,49 @@ from wisdom_engine import WisdomEngine
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 dm = DataManager(BASE_PATH)
 
+# Thread pool for parallel file reads
+_executor = ThreadPoolExecutor(max_workers=4)
+
 # Simple caching for wisdom data (cached by date)
 _wisdom_cache = {}
 _wisdom_cache_date = None
 
+# File read cache (path -> (mtime, data))
+_file_cache = {}
+
+# MIME type overrides for common static files
+_MIME_TYPES = {
+    '.html': 'text/html; charset=utf-8',
+    '.css': 'text/css; charset=utf-8',
+    '.js': 'application/javascript; charset=utf-8',
+    '.json': 'application/json; charset=utf-8',
+    '.svg': 'image/svg+xml',
+    '.png': 'image/png',
+    '.ico': 'image/x-icon',
+    '.woff2': 'font/woff2',
+}
+
+
+def read_json_cached(filepath):
+    """Read a JSON file with mtime-based caching."""
+    try:
+        mtime = os.path.getmtime(filepath)
+        if filepath in _file_cache and _file_cache[filepath][0] == mtime:
+            return _file_cache[filepath][1]
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        _file_cache[filepath] = (mtime, data)
+        return data
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
 class DashboardHandler(SimpleHTTPRequestHandler):
-    """Custom handler that serves dashboard with dynamic data."""
+    """Custom handler with gzip, caching headers, and optimized responses."""
+
+    # Suppress per-request logging for speed
+    def log_message(self, format, *args):
+        pass
 
     def do_GET(self):
         if self.path == '/' or self.path == '/dashboard':
@@ -48,44 +87,63 @@ class DashboardHandler(SimpleHTTPRequestHandler):
 
         return super().do_GET()
 
-    def serve_data_file(self):
-        """Serve JSON files from the data directory."""
-        filename = self.path.split('/data/')[-1]
-        filepath = os.path.join(BASE_PATH, 'data', filename)
+    def _accepts_gzip(self):
+        return 'gzip' in self.headers.get('Accept-Encoding', '')
 
-        if os.path.exists(filepath):
-            try:
-                with open(filepath, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                self.send_json(data)
-            except Exception as e:
-                self.send_error(500, f"Error reading file: {str(e)}")
+    def serve_data_file(self):
+        """Serve JSON files from the data directory with caching."""
+        filename = self.path.split('/data/')[-1]
+        # Sanitize path to prevent directory traversal
+        if '..' in filename or '/' in filename:
+            self.send_error(403, "Forbidden")
+            return
+        filepath = os.path.join(BASE_PATH, 'data', filename)
+        data = read_json_cached(filepath)
+        if data is not None:
+            self.send_json(data, cache_seconds=60)
         else:
             self.send_error(404, "File not found")
 
     def send_planning_data(self):
-        """Send all planning data (vision, OKRs, weekly plans)."""
+        """Send all planning data in parallel."""
+        filenames = ['vision.json', 'quarterly_okrs.json', 'weekly_plans.json']
+        filepaths = [os.path.join(BASE_PATH, 'data', f) for f in filenames]
+        keys = [f.replace('.json', '').replace('_', '') for f in filenames]
+
+        # Read all files in parallel
+        futures = [_executor.submit(read_json_cached, fp) for fp in filepaths]
         planning = {}
+        for key, future in zip(keys, futures):
+            data = future.result()
+            if data is not None:
+                planning[key] = data
 
-        for filename in ['vision.json', 'quarterly_okrs.json', 'weekly_plans.json']:
-            filepath = os.path.join(BASE_PATH, 'data', filename)
-            if os.path.exists(filepath):
-                try:
-                    with open(filepath, 'r', encoding='utf-8') as f:
-                        key = filename.replace('.json', '').replace('_', '')
-                        planning[key] = json.load(f)
-                except Exception:
-                    pass
+        self.send_json(planning, cache_seconds=30)
 
-        self.send_json(planning)
+    def send_json(self, data, cache_seconds=0):
+        """Send JSON response with optional gzip and cache headers."""
+        body = json.dumps(data, separators=(',', ':')).encode('utf-8')
 
-    def send_json(self, data):
-        """Send JSON response."""
         self.send_response(200)
-        self.send_header('Content-Type', 'application/json')
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
         self.send_header('Access-Control-Allow-Origin', '*')
+
+        if cache_seconds > 0:
+            self.send_header('Cache-Control', f'public, max-age={cache_seconds}')
+        else:
+            self.send_header('Cache-Control', 'no-cache')
+
+        # Gzip if client supports it and body is large enough
+        if self._accepts_gzip() and len(body) > 512:
+            buf = io.BytesIO()
+            with gzip.GzipFile(fileobj=buf, mode='wb', compresslevel=6) as gz:
+                gz.write(body)
+            body = buf.getvalue()
+            self.send_header('Content-Encoding', 'gzip')
+
+        self.send_header('Content-Length', str(len(body)))
         self.end_headers()
-        self.wfile.write(json.dumps(data).encode())
+        self.wfile.write(body)
 
     def send_api_data(self):
         """Send all dashboard data."""
@@ -94,22 +152,20 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         stats = dm.get_stats()
         goals = dm.get_goals()
 
-        # Get today's log
         today = datetime.now().strftime("%Y-%m-%d")
         today_log = dm.get_daily_log(today) or {}
 
-        # Build habits list with completion status
-        habits_list = []
-        today_completions = habits_data.get("completions", {}).get(today, [])
-
-        for habit in habits_data.get("habits", []):
-            habits_list.append({
-                "id": habit["id"],
-                "name": habit["name"],
-                "module": habit.get("module", "productivity"),
-                "streak": habit.get("current_streak", 0),
-                "completed": habit["id"] in today_completions
-            })
+        today_completions = set(habits_data.get("completions", {}).get(today, []))
+        habits_list = [
+            {
+                "id": h["id"],
+                "name": h["name"],
+                "module": h.get("module", "productivity"),
+                "streak": h.get("current_streak", 0),
+                "completed": h["id"] in today_completions
+            }
+            for h in habits_data.get("habits", [])
+        ]
 
         data = {
             "profile": {
@@ -142,22 +198,25 @@ class DashboardHandler(SimpleHTTPRequestHandler):
 
         today = datetime.now().strftime("%Y-%m-%d")
 
-        # Return cached wisdom if available for today
         if _wisdom_cache_date == today and _wisdom_cache:
-            self.send_json(_wisdom_cache)
+            self.send_json(_wisdom_cache, cache_seconds=3600)
             return
 
-        # Generate new wisdom and cache it
         wisdom = WisdomEngine(dm)
         daily = wisdom.get_daily_wisdom()
         _wisdom_cache = daily
         _wisdom_cache_date = today
-        self.send_json(daily)
+        self.send_json(daily, cache_seconds=3600)
 
     def send_habits(self):
         """Toggle habit completion."""
-        # This would handle POST in a more complete implementation
         self.send_json({"status": "ok"})
+
+    def end_headers(self):
+        """Add security and performance headers."""
+        self.send_header('X-Content-Type-Options', 'nosniff')
+        self.send_header('Referrer-Policy', 'strict-origin-when-cross-origin')
+        super().end_headers()
 
 
 def run_server(port=8080):
@@ -180,6 +239,7 @@ def run_server(port=8080):
     except KeyboardInterrupt:
         print("\nServer stopped.")
         server.shutdown()
+        _executor.shutdown(wait=False)
 
 
 if __name__ == '__main__':
